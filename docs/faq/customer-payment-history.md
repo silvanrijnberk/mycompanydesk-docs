@@ -11,7 +11,7 @@ chatbot:
 
 Om de betalingsgeschiedenis van een klant te bekijken:
 1. Open Klanten en selecteer de klant
-2. Bekijk de kaart "Recente facturen" op het klantprofiel; daar zie je per factuur het nummer, de datum, het totaal en de status
-3. Open een factuur vanuit die kaart voor de betaalgegevens, zoals wanneer en hoe er is betaald
+2. Bekijk de kaart "Geschiedenis" op het klantprofiel; daar staan de laatste facturen, offertes, projecten en uren van deze klant, elk met nummer of naam, datum, status en bedrag
+3. Klik op "Bekijk alles" voor alle facturen van deze klant, en open een factuur voor de betaalgegevens, zoals wanneer en hoe er is betaald
 
 De volledige betaalinformatie vind je op de detailpagina van de factuur; het klantprofiel geeft je het snelle statusoverzicht.

@@ -1,7 +1,7 @@
 ---
 title: "Offertenummering"
 description: "Offertenummers worden automatisch toegekend: maak een offerte; MyCompanyDesk geeft die het volgende nummer in je reeks."
-last_verified: 2026-08-05
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "quote number"
@@ -27,11 +27,5 @@ Offertenummers worden automatisch toegekend:
 1. Maak een offerte; MyCompanyDesk geeft die het volgende nummer in je reeks
 2. Er is geen nummeringsformaat om in te stellen, de reeks blijft vanzelf netjes op volgorde
 3. Wil je een eigen nummer op een concept? Open de offerte in het formulier en klik in de zijbalk op "Eigen nummer invoeren"
-
-## Handmatige nummeringsmodus
-
-Standaard nummert MyCompanyDesk offertes automatisch. Als je werkruimte handmatige nummering gebruikt, krijgt een offerte pas een nummer wanneer je hem afrondt of verstuurt.
-
-Op dat moment opent een dialoog waarin je het offertenummer invult. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
 
 Tip: Zodra een offerte is verstuurd, is die vergrendeld, inclusief het nummer. Stel een eigen nummer dus in zolang het document nog een concept is.

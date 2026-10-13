@@ -1,16 +1,16 @@
 ---
 title: Rendez-vous en ligne
-description: Permettez aux clients de prendre rendez-vous directement via votre site avec Site Bookings.
-last_verified: 2026-10-11
+description: Laissez vos clients réserver un rendez-vous ou demander une date via le bloc de réservation de votre site, avec acompte en option.
+last_verified: 2026-10-13
 ---
 
 # Rendez-vous en ligne
 
-**Site Bookings** ajoute un bloc à votre site web permettant aux visiteurs de prendre rendez-vous directement avec vous. Que ce soit pour une prise de contact, un rendez-vous de devis ou une visite de service : le client choisit un service, un créneau disponible et confirme sa demande. C'est vous qui décidez quels services sont proposés, quand vous êtes disponible et si chaque rendez-vous doit d'abord être approuvé.
+Le bloc **Online boeken (afspraak plannen)** (réservation en ligne) ajoute un bloc à votre site web permettant aux visiteurs de prendre rendez-vous directement avec vous. Que ce soit pour une prise de contact, un rendez-vous de devis ou une visite de service : le client choisit un service, un créneau disponible et confirme sa demande. C'est vous qui décidez quels services sont proposés, quand vous êtes disponible et si chaque rendez-vous doit d'abord être approuvé.
 
 ## À qui cela s'adresse-t-il ?
 
-- Les indépendants et les PME qui souhaitent que les clients réserver via leur site.
+- Les indépendants et freelances qui souhaitent que leurs clients réservent via leur site.
 - Les entreprises qui veulent rendre leur agenda accessible en un clic.
 - Toute personne souhaitant proposer des types de rendez-vous récurrents sous forme de services.
 
@@ -18,14 +18,14 @@ last_verified: 2026-10-11
 
 - Un site web créé avec le **Constructeur de site**.
 - Un agenda MyCompanyDesk dans lequel les rendez-vous seront enregistrés.
-- Au moins un service que vous souhaitez proposer comme rendez-vous réservable.
+- Au moins un service de votre **Catalogue** que vous souhaitez proposer comme rendez-vous réservable.
 
 ## Horaires disponibles et heures d'ouverture
 
-Les horaires que les visiteurs peuvent réserver proviennent d'une source centrale : **Paramètres** > **Données de l'entreprise** > **Heures d'ouverture**.
+Les horaires que les visiteurs peuvent réserver proviennent d'une source centrale : **Paramètres** › **Données de l'entreprise** › **Heures d'ouverture**.
 
 - Réglez chaque jour comme ouvert ou fermé, et indiquez un ou deux créneaux par jour ouvert.
-- Utilisez les **jours spéciaux** pour les fêtes, vacances ou changements ponctuels; ceux-ci influencent aussi l'affichage d'un jour dans le bloc de réservation.
+- Utilisez **Jours de congé et exceptions** pour les fêtes, vacances ou changements ponctuels; ceux-ci influencent aussi l'affichage d'un jour dans le bloc de réservation.
 - Le bloc de rendez-vous respecte automatiquement vos heures d'ouverture et votre calendrier connecté, pour éviter les doubles réservations ou les créneaux impossibles.
 
 Voir [Paramètres de l'entreprise](/fr/settings/company) pour configurer vos heures d'ouverture.
@@ -34,7 +34,7 @@ Voir [Paramètres de l'entreprise](/fr/settings/company) pour configurer vos heu
 
 1. Ouvrez le **Constructeur de site** depuis l'application.
 2. Modifiez la page sur laquelle vous souhaitez placer le bloc.
-3. Recherchez le bloc **Rendez-vous** ou **Site Bookings** dans la bibliothèque de blocs.
+3. Recherchez le bloc **Online boeken (afspraak plannen)** dans la bibliothèque de blocs.
 4. Glissez-déposez le bloc à l'emplacement souhaité sur la page.
 5. Cliquez sur le bloc pour ouvrir ses paramètres.
 
@@ -44,12 +44,12 @@ Une fois la page publiée, votre site affiche le formulaire de rendez-vous.
 
 Dans les paramètres du bloc, vous contrôlez comment les clients peuvent réserver :
 
-- **Service** : donnez un nom au rendez-vous, par exemple « Prise de contact » ou « Visite d'installation ».
-- **Prix (optionnel)** : indiquez un prix si le rendez-vous doit être payant.
-- **Durée** : choisissez la durée du rendez-vous, par exemple 30 ou 60 minutes.
-- **Réservation anticipée** : définissez jusqu'à quand à l'avance un client peut réserver.
-- **Approbation requise** : activez cette option si vous souhaitez approuver chaque demande manuellement.
-- **Bloquer l'agenda externe** : laissez l'outil vérifier votre agenda existant pour éviter les doubles réservations.
+- **Hoe boeken klanten?** (comment les clients réservent) : choisissez **Direct boeken (vrije tijden)** (réservation directe, créneaux libres) si les visiteurs choisissent eux-mêmes un moment libre, ou **Aanvraag (jij bevestigt)** (demande, vous confirmez) s'ils demandent un moment que vous confirmez. Une demande arrive comme prospect dans votre boîte de réception, avec une notification.
+- **Services** : le bloc affiche les services de votre Catalogue, chacun avec sa propre durée. Pour d'autres services dans ce bloc, remplissez **Diensten met eigen duur (optioneel)** (services avec leur propre durée) avec un nom, une durée et un prix facultatif. L'ordre se règle dans le Catalogue.
+- **Duur per afspraak (minuten)** et **Pauze tussen afspraken (minuten)** : la durée d'un rendez-vous quand le service n'a pas de durée propre, et la marge entre deux rendez-vous.
+- **Minimaal vooraf boeken (uren)** et **Online te boeken tot (dagen vooruit)** : le délai minimum pour réserver et jusqu'à quand à l'avance.
+- **Zelf accepteren voor de afspraak vaststaat** (accepter vous-même d'abord) : le créneau est retenu et vous confirmez ou refusez sous **Agenda › Rendez-vous**. Dès votre accord, le visiteur reçoit automatiquement la confirmation avec une invitation d'agenda.
+- **Gekoppelde agenda blokkeert tijden** (l'agenda connecté bloque des créneaux) : les rendez-vous de votre agenda Google ou Outlook connecté rendent ces créneaux non réservables. Les événements sur la journée entière ne comptent pas ici ; utilisez pour cela les jours de congé de vos heures d'ouverture.
 
 Les **créneaux disponibles** proviennent des heures d'ouverture centrales définies dans [Données de l'entreprise](/fr/settings/company). Le bloc masque les jours et créneaux qui n'y sont pas ouverts.
 
@@ -61,11 +61,11 @@ Liez le bloc à une **adresse e-mail** pour que les visiteurs reçoivent une con
 
 ## Demandes sur une date seule
 
-Tous les métiers ne vendent pas des créneaux horaires. Un DJ, un food truck ou un photographe de mariage perd des journées, et la question d'un visiteur n'est pas « mardi à 14 h ? » mais « le 14 juin est-il encore libre ? ». Pour ces métiers, réglez **Hoe boeken klanten?** (comment les clients réservent) sur **Aanvraag (jij bevestigt)** (demande, vous confirmez) et activez **Alleen een datum vragen** (demander une date seule, sans heure). Le formulaire ne demande alors qu'une date.
+Tous les métiers ne vendent pas des créneaux horaires. Un DJ, un food truck ou un photographe de mariage perd des journées, et la question d'un visiteur n'est pas « mardi à 14 h ? » mais « le 14 juin est-il encore libre ? ». Pour ces métiers, réglez **Hoe boeken klanten?** (comment les clients réservent) sur **Aanvraag (jij bevestigt)** (demande, vous confirmez) et activez **Alleen een datum vragen (geen tijd)** (demander une date seule, sans heure). Le formulaire ne demande alors qu'une date. **Op welke dagen kun je?** (quels jours êtes-vous disponible) fixe les jours de la semaine sur lesquels une demande peut tomber.
 
 Sous la date, le bloc indique au visiteur si ce jour est encore libre. La réponse vient de votre propre agenda :
 
-- **Un jour est occupé s'il porte déjà quelque chose** : une réservation passée via votre site, une séance de groupe, une entrée de votre propre agenda MCD (planifiée ou tracée), un rendez-vous dans votre calendrier Google ou Outlook connecté (journées entières comprises), ou une journée marquée **fermée** dans les Jours exceptionnels.
+- **Un jour est occupé s'il porte déjà quelque chose** : une réservation passée via votre site, une séance de groupe, une entrée de votre propre agenda MyCompanyDesk (planifiée ou tracée), un rendez-vous dans votre calendrier Google ou Outlook connecté (journées entières comprises), ou une journée marquée **fermée** dans les Jours exceptionnels.
 - **Non comptés** : vos horaires hebdomadaires fixes (en mode demande, ils ne limitent rien : le visiteur peut demander n'importe quel jour de votre semaine), les anniversaires et lieux de travail de vos calendriers connectés, les calendriers partagés avec vous ou que vous suivez seulement (par exemple un calendrier des jours fériés), les événements que vous avez refusés ou marqués comme libres, et une soirée de la veille qui se termine au plus tard à 6 h : cette nuit appartient à la veille, pas au lendemain.
 - Le site regarde environ deux ans plus loin. Au-delà, il ne dit rien au lieu de déclarer le jour occupé.
 - La réponse se limite à libre ou occupé : votre site ne révèle jamais à un visiteur ce qui figure sur votre journée.
@@ -73,7 +73,7 @@ Sous la date, le bloc indique au visiteur si ce jour est encore libre. La répon
 
 Les visiteurs ne peuvent pas envoyer une date passée, et un champ de date sur un formulaire de demande ordinaire refuse les dates passées de la même façon.
 
-Le bloc peut aussi donner aux demandes leur propre rythme. Dans les réglages du bloc, **Minimaal van tevoren aanvragen (dagen)** (proposé avec « uniquement une date ») règle le nombre de jours entiers d'avance à partir duquel la première date proposée par la sélection commence : 0 = à partir d'aujourd'hui, une date plus ancienne n'est simplement pas choisissable. Quand une heure figure sur le bloc, **Minimaal van tevoren aanvragen (uren)** refuse une demande pour un moment plus proche. Sans valeur, il n'y a pas de délai au-delà de la règle contre le passé ; la sélection et le serveur appliquent la même règle, donc ce que le site propose et ce qui est enregistré ne se contredisent jamais. Avec « uniquement une date », **Maximaal aantal aanvragen per week (optioneel)** plafonne les demandes ouvertes ou acceptées de ce bloc pour des jours d'une même semaine (du lundi au dimanche) ; une semaine pleine affiche ses jours sur votre site comme non libres, et une demande mise sur fermée cesse de compter. Vide ou 0 veut dire aucune limite. La confirmation porte aussi le jour de la semaine à côté de la date demandée, pour qu'une demande arrive avec un jour nommé, et pas seulement comme une date nue.
+Le bloc peut aussi donner aux demandes leur propre rythme. Dans les réglages du bloc, **Minimaal aantal dagen van tevoren** (délai minimum en jours, proposé avec « uniquement une date ») règle le nombre de jours entiers d'avance à partir duquel la première date proposée par la sélection commence : 0 = à partir d'aujourd'hui, une date plus ancienne n'est simplement pas choisissable. Quand une heure figure sur le bloc, **Minimaal van tevoren** (délai minimum, en heures ou en jours) refuse une demande pour un moment plus proche. Sans valeur, il n'y a pas de délai au-delà de la règle contre le passé ; la sélection et le serveur appliquent la même règle, donc ce que le site propose et ce qui est enregistré ne se contredisent jamais. **Maximaal aantal aanvragen per week (optioneel)** plafonne les demandes ouvertes ou acceptées de ce bloc pour des jours d'une même semaine (du lundi au dimanche) ; une semaine pleine affiche ses jours sur votre site comme non libres, et une demande mise sur fermée cesse de compter. Vide ou 0 veut dire aucune limite. La confirmation porte aussi le jour de la semaine à côté de la date demandée, pour qu'une demande arrive avec un jour nommé, et pas seulement comme une date nue.
 
 ## Séances de groupe
 
@@ -113,9 +113,9 @@ Un client peut annuler en ligne tant que le rendez-vous n'a pas commencé. Un re
 
 ## Acompte
 
-Le bloc de rendez-vous peut demander un acompte aux visiteurs qui réservent. Activez **Acompte** dans les réglages du bloc et choisissez un montant fixe ou un pourcentage du prix du service. Un acompte exige un prestataire de paiement connecté (Mollie ou Stripe) ; sans lui, le bloc se contente de réserver sans acompte.
+Le bloc de rendez-vous peut demander un acompte aux visiteurs qui réservent. Activez **Aanbetaling vragen** (demander un acompte) dans les réglages du bloc et choisissez un montant fixe ou un pourcentage du prix du service. Un acompte exige un prestataire de paiement connecté (Mollie ou Stripe) ; sans lui, le bloc se contente de réserver sans acompte.
 
-Tant que l'acompte n'est pas payé, la réservation reste en attente : l'application affiche **En attente de paiement** à la place du bouton Accepter, et l'acceptation est refusée tant que l'argent n'est pas arrivé. Vous pouvez quand même refuser la demande pendant ce temps ; sur une demande non payée, ce bouton figure seul. Quand vous refusez une demande, ou qu'une demande expire, l'acompte payé est remboursé tout seul. Un paiement qui arrive plus tard pour une demande entre-temps refusée, retirée ou expirée est remboursé de la même façon. Une annulation par le visiteur rembourse aussi le montant d'elle-même, tant qu'elle tombe dans la fenêtre de remboursement que vous réglez dans les paramètres du bloc. Par défaut, cette fenêtre va jusqu'à un jour avant le début ; vous pouvez l'élargir à tout votre horizon de réservation, pour que chaque annulation avant le début soit remboursée, ou la ramener à zéro : rien ne part alors automatiquement et vous remboursez vous-même avec le bouton **Rembourser l'acompte** du rendez-vous.
+Tant que l'acompte n'est pas payé, la réservation reste en attente : l'application affiche **En attente de paiement** à la place du bouton Accepter, et l'acceptation est refusée tant que l'argent n'est pas arrivé. Vous pouvez quand même refuser la demande pendant ce temps ; sur une demande non payée, ce bouton figure seul. Quand vous refusez une demande, ou qu'une demande expire, l'acompte payé est remboursé tout seul. Un paiement qui arrive plus tard pour une demande entre-temps refusée, retirée ou expirée est remboursé de la même façon. Une annulation par le visiteur rembourse aussi le montant d'elle-même, tant que le visiteur annule à temps selon **Kosteloos annuleren** (annulation gratuite) dans les paramètres du bloc : jusqu'à 24 heures avant (par défaut), jusqu'à 48 heures avant, jusqu'à une semaine avant, toujours rembourser (toute annulation avant le début) ou ne jamais rembourser automatiquement : vous décidez alors vous-même avec le bouton **Rembourser l'acompte** du rendez-vous.
 
 La replanification d'un rendez-vous ne rouvre jamais sa fenêtre de remboursement.
 
@@ -126,13 +126,13 @@ MyCompanyDesk peut envoyer automatiquement un e-mail de rappel avant le rendez-v
 ## Questions fréquentes
 
 **Pourquoi ne vois-je aucun créneau disponible ?**
-Vérifiez que vous avez créé au moins un service, qu'il possède une durée, et que vos créneaux sont dans le futur. Une approbation activée peut aussi faire que les créneaux ne sont visibles qu'après votre confirmation de la demande.
+Vérifiez que vous avez au moins un service dans votre Catalogue, qu'il possède une durée, et que vos heures d'ouverture comptent des jours ouverts dans la période à venir. Si le bloc est réglé sur **Aanvraag (jij bevestigt)**, le visiteur ne choisit pas de créneau libre mais demande un moment ou une date.
 
 **Puis-je proposer plusieurs services ?**
-Oui. Vous pouvez afficher un ou plusieurs services par bloc de rendez-vous. Chaque service a son propre nom, sa propre durée et son propre prix.
+Oui. Le bloc affiche les services de votre Catalogue, ou ceux que vous saisissez dans le bloc lui-même. Chaque service a son propre nom, sa propre durée et son propre prix.
 
 **Un paiement est-il demandé lors de la réservation ?**
-Uniquement si vous associez un prix au service. Sans prix, la réservation est gratuite et vous recevez simplement une réservation.
+Uniquement si vous activez **Aanbetaling vragen** et avez connecté Mollie ou Stripe. Le prix d'un service est seulement affiché ; sans acompte, la réservation est une simple réservation et vous facturez ensuite depuis le rendez-vous.
 
 ## Sujets connexes
 

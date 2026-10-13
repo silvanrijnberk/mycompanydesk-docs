@@ -1,138 +1,138 @@
 ---
-title: Facturation electronique Peppol
+title: Facturation électronique Peppol
 description: "Envoyez factures et avoirs en facture électronique structurée via Peppol, directement dans la comptabilité de votre client, et recevez-les de même."
-last_verified: 2026-08-15
+last_verified: 2026-10-13
 ---
 
-# Facturation electronique Peppol
+# Facturation électronique Peppol
 
-Envoyez des factures et des avoirs sous forme de factures electroniques structurees via le reseau Peppol. Votre client les recoit directement dans son logiciel de comptabilite, sans dependre uniquement des PDF ou des e-mails.
+Envoyez des factures et des avoirs sous forme de factures électroniques structurées via le réseau Peppol. Votre client les reçoit directement dans son logiciel de comptabilité, sans dépendre uniquement des PDF ou des e-mails.
 
 ## Vue d'ensemble
 
-La facturation electronique Peppol vous permet d'envoyer des factures et des avoirs comme factures electroniques structurees via le reseau Peppol, et de recevoir des factures d'achat de vos fournisseurs de la meme maniere. Quand vous envoyez une facture, vous choisissez par facture de la livrer par e-mail ou en tant que facture electronique via Peppol. La facture reste le meme document dans MyCompanyDesk; seul le canal de livraison change.
+La facturation électronique Peppol vous permet d'envoyer des factures et des avoirs comme factures électroniques structurées via le réseau Peppol, et de recevoir des factures d'achat de vos fournisseurs de la même manière. Quand vous envoyez une facture, vous choisissez par facture de la livrer par e-mail ou en tant que facture électronique via Peppol. La facture reste le même document dans MyCompanyDesk; seul le canal de livraison change.
 
 L'envoi est utile lorsque votre client demande des factures électroniques. La réception place les factures fournisseurs directement dans vos dépenses comme brouillons pré-remplis, prêts à être vérifiés.
 
-Si le fournisseur utilise également MyCompanyDesk, vous pouvez recevoir sa facture structurée directement sans passer par Peppol. Voir [Recevoir des factures d'autres utilisateurs MyCompanyDesk](/fr/features/invoices#recevoir-des-factures-dautres-utilisateurs-mycompanydesk).
+Si le fournisseur utilise également MyCompanyDesk, vous pouvez recevoir sa facture structurée directement sans passer par Peppol. Voir [Recevoir des factures d'autres utilisateurs MyCompanyDesk](/fr/features/invoices#recevoir-des-factures-d-autres-utilisateurs-mycompanydesk).
 
-## Disponibilite
+## Disponibilité
 
-La facturation electronique Peppol est disponible avec le plan Office. Les workspaces sur le plan Desk ne voient pas les options d'envoi et de reception de factures electroniques.
+La facturation électronique Peppol est disponible avec le plan Office. Sur Desk, les paramètres de facturation affichent un bouton pour changer d'abonnement à la place des paramètres Peppol.
 
 ## Avant de pouvoir envoyer
 
-Avant votre premier envoi Peppol, MyCompanyDesk a besoin des informations de votre entreprise. Celles-ci servent a vous enregistrer sur le reseau Peppol via le point d'acces connecte:
+Avant votre premier envoi Peppol, MyCompanyDesk a besoin des informations de votre entreprise. Celles-ci servent à vous enregistrer sur le réseau Peppol via le point d'accès connecté :
 
 - Nom de l'entreprise
-- Numero d'immatriculation au registre du commerce
-- Numero de TVA
+- Numéro d'immatriculation au registre du commerce
+- Numéro de TVA
 - IBAN
 - Adresse de l'entreprise (rue, code postal, ville)
 
-S'il manque une valeur, la page des parametres de facturation vous demande de la completer avant de pouvoir activer la facturation electronique. Les champs existants de votre profil d'entreprise sont reutilises, vous n'avez donc pas a les saisir deux fois.
+S'il manque une valeur, la page des paramètres de facturation vous demande de la compléter avant de pouvoir activer la facturation électronique. Les champs existants de votre profil d'entreprise sont réutilisés, vous n'avez donc pas à les saisir deux fois.
 
-Lorsque vous activez la facturation electronique, vous consentez a l'enregistrement de votre numero d'immatriculation, de votre numero de TVA et de votre adresse professionnelle aupres du point d'acces Peppol. MyCompanyDesk se connecte au reseau via un point d'acces Recommand.
+Lorsque vous activez la facturation électronique, vous consentez à l'enregistrement de votre numéro d'immatriculation, de votre numéro de TVA et de votre adresse professionnelle auprès du point d'accès Peppol. MyCompanyDesk se connecte au réseau via un point d'accès Recommand. Peppol exige en outre une vérification d'identité unique par une personne habilitée à signer pour l'entreprise : le bouton **Vérifiez votre identité** ouvre cette vérification dans un nouvel onglet. Tant qu'elle n'est pas terminée, vous ne pouvez pas encore envoyer ni recevoir de factures électroniques.
 
-## Envoyer une facture electronique
+## Envoyer une facture électronique
 
-1. Creez une facture ou un avoir comme d'habitude
-2. Ouvrez la page de detail
+1. Créez une facture ou un avoir comme d'habitude
+2. Ouvrez la page de détail
 3. Cliquez sur **Envoyer**
-4. Choisissez **Facture electronique (Peppol)** comme mode de livraison
-5. Verifiez l'apercu
-6. Cliquez sur **Envoyer la facture electronique via Peppol**
+4. Choisissez **Facture électronique (Peppol)** comme mode de livraison
+5. Vérifiez l'aperçu
+6. Cliquez sur **Envoyer la facture électronique via Peppol**
 
-La facture est livree numeriquement dans le systeme comptable de votre client. Une livraison reussie est confirmee dans MyCompanyDesk; si la livraison echoue, vous voyez un message d'erreur et pouvez reessayer ou envoyer par e-mail a la place.
+La facture est livrée numériquement dans le système comptable de votre client. Une livraison réussie est confirmée dans MyCompanyDesk; si la livraison échoue, vous voyez un message d'erreur et pouvez réessayer ou envoyer par e-mail à la place.
 
-L'e-mail et Peppol ne s'excluent pas mutuellement. Vous pouvez envoyer par e-mail aujourd'hui et en facture electronique demain, en choisissant par facture ce qui convient au client.
+L'e-mail et Peppol ne s'excluent pas mutuellement. Vous pouvez envoyer par e-mail aujourd'hui et en facture électronique demain, en choisissant par facture ce qui convient au client.
 
-## Renvoyer une facture electronique
+## Renvoyer une facture électronique
 
-Un envoi Peppol est une veritable facture electronique juridiquement contraignante sur le reseau, pas seulement une copie d'un e-mail. Par consequent, envoyer deux fois la meme facture cree deux factures electroniques distinctes. MyCompanyDesk bloque un second envoi Peppol accidentel : si la facture a deja ete envoyee ou livree via Peppol, cliquer a nouveau sur **Envoyer la facture electronique via Peppol** affiche une fenetre de confirmation au lieu d'envoyer immediatement.
+Un envoi Peppol est une véritable facture électronique juridiquement contraignante sur le réseau, pas seulement une copie d'un e-mail. Par conséquent, envoyer deux fois la même facture crée deux factures électroniques distinctes. MyCompanyDesk bloque un second envoi Peppol accidentel : si la facture a déjà été envoyée ou livrée via Peppol, cliquer à nouveau sur **Envoyer la facture électronique via Peppol** affiche une fenêtre de confirmation au lieu d'envoyer immédiatement.
 
-La fenetre indique quand la facture a ete envoyee pour la premiere fois et demande de confirmer que vous voulez vraiment envoyer une seconde facture electronique. Si vous confirmez, une nouvelle facture electronique Peppol est expediee. Si vous annulez, rien n'est envoye et la livraison Peppol existante reste inchangee.
+La fenêtre indique quand la facture a été envoyée pour la première fois et demande de confirmer que vous voulez vraiment envoyer une seconde facture électronique. Si vous confirmez, une nouvelle facture électronique Peppol est expédiée. Si vous annulez, rien n'est envoyé et la livraison Peppol existante reste inchangée.
 
-Si vous voulez seulement envoyer un rappel ou un PDF a jour, utilisez plutot l'e-mail. Les renvois par e-mail ne creent pas de factures electroniques Peppol en double.
+Si vous voulez seulement envoyer un rappel ou un PDF à jour, utilisez plutôt l'e-mail. Les renvois par e-mail ne créent pas de factures électroniques Peppol en double.
 
-## Recevoir des factures electroniques
+## Recevoir des factures électroniques
 
-Lorsque la reception est activee, vos fournisseurs peuvent vous envoyer des factures electroniques via Peppol. MyCompanyDesk transforme chaque facture electronique entrante en brouillon de depense pre-rempli avec le fournisseur, le montant, la TVA et la date. Le brouillon apparait dans vos depenses pour verification; vous pouvez l'examiner, le modifier et le comptabiliser comme n'importe quelle autre depense.
+Lorsque la réception est activée, vos fournisseurs peuvent vous envoyer des factures électroniques via Peppol. MyCompanyDesk transforme chaque facture électronique entrante en brouillon de dépense pré-rempli avec le fournisseur, le montant, la TVA et la date. Le brouillon apparaît dans vos dépenses pour vérification; vous pouvez l'examiner, le modifier et le comptabiliser comme n'importe quelle autre dépense.
 
-### Disponibilite
+### Disponibilité
 
-La reception fait partie de la facturation electronique Peppol et est disponible avec le plan Office. Vous devez deja avoir active l'envoi de factures electroniques avant de pouvoir activer la reception.
+La réception fait partie de la facturation électronique Peppol et est disponible avec le plan Office. Vous devez déjà avoir activé l'envoi de factures électroniques avant de pouvoir activer la réception.
 
 ### Avant de pouvoir recevoir
 
-Assurez-vous que votre profil d'entreprise contient les memes informations que pour l'envoi:
+Assurez-vous que votre profil d'entreprise contient les mêmes informations que pour l'envoi :
 
 - Nom de l'entreprise
-- Numero d'immatriculation au registre du commerce
-- Numero de TVA
+- Numéro d'immatriculation au registre du commerce
+- Numéro de TVA
 - IBAN
 - Adresse de l'entreprise (rue, code postal, ville)
 
-Quand vous activez la reception, votre numero d'immatriculation et votre numero de TVA sont enregistres comme recepteur Peppol. Une entreprise ne peut recevoir que via un seul logiciel de comptabilite a la fois, car le meme numero d'immatriculation et numero de TVA ne peuvent pas etre enregistres chez plusieurs fournisseurs.
+Quand vous activez la réception, votre numéro d'immatriculation et votre numéro de TVA sont enregistrés comme récepteur Peppol. Une entreprise ne peut recevoir que via un seul logiciel de comptabilité à la fois, car le même numéro d'immatriculation et numéro de TVA ne peuvent pas être enregistrés chez plusieurs fournisseurs.
 
-### Activer la reception
+### Activer la réception
 
-1. Ouvrez **Parametres > Factures** (`/settings/facturen`)
-2. Dans la section Peppol, cliquez sur **Activer la reception**
-3. Confirmez que votre numero d'immatriculation et votre numero de TVA peuvent etre enregistres comme recepteur sur le reseau Peppol
+1. Ouvrez **Paramètres › Factures et devis** (`/settings/facturen`)
+2. Dans la section Peppol, cliquez sur **Activer la réception**
+3. Confirmez que votre numéro d'immatriculation et votre numéro de TVA peuvent être enregistrés comme récepteur sur le réseau Peppol
 
-Des lors, les factures electroniques entrantes arrivent automatiquement comme brouillons de depenses. Aucune importation manuelle n'est necessaire.
+Dès lors, les factures électroniques entrantes arrivent automatiquement comme brouillons de dépenses. Aucune importation manuelle n'est nécessaire.
 
 ### Devises prises en charge
 
-MyCompanyDesk n'accepte que les factures electroniques Peppol entrantes en euros (EUR). Les factures electroniques reçues dans une autre devise sont rejetées.
+MyCompanyDesk n'accepte que les factures électroniques Peppol entrantes en euros (EUR). Les factures électroniques reçues dans une autre devise sont rejetées.
 
-### Verifier les factures electroniques recues
+### Vérifier les factures électroniques reçues
 
-Chaque facture electronique atterrit comme brouillon sous **Depenses**. Le brouillon est pre-rempli avec le fournisseur, la description, le montant, la TVA et la date de facture provenant de la facture electronique entrante. Lorsque le fournisseur a applique la TVA d'autoliquidation, MyCompanyDesk la classe comme autoliquidation et maintient le taux de TVA a 0 % afin qu'elle se place dans la bonne rubrique de votre declaration TVA. Verifiez les informations, joignez un recu si necessaire et enregistrez-le comme depense reguliere.
+Chaque facture électronique atterrit comme brouillon sous **Dépenses**. Le brouillon est pré-rempli avec le fournisseur, la description, le montant, la TVA et la date de facture provenant de la facture électronique entrante. Lorsque le fournisseur a appliqué la TVA d'autoliquidation, MyCompanyDesk la classe comme autoliquidation et maintient le taux de TVA à 0 % afin qu'elle se place dans la bonne rubrique de votre déclaration TVA. Vérifiez les informations, joignez un reçu si nécessaire et enregistrez-le comme dépense régulière.
 
-### Desactiver la reception
+### Désactiver la réception
 
-Ouvrez **Parametres > Factures**, allez a la section Peppol et cliquez sur **Desactiver la reception**. Vous ne recevrez plus de nouvelles factures electroniques via Peppol, mais les brouillons et depenses comptabilisees existants restent inchanges. Vous pouvez reactiver la reception a tout moment.
+Ouvrez **Paramètres › Factures et devis**, allez à la section Peppol et cliquez sur **Désactiver la réception**. Vous ne recevrez plus de nouvelles factures électroniques via Peppol, mais les brouillons et dépenses comptabilisées existants restent inchangés. Vous pouvez réactiver la réception à tout moment.
 
-## Desactiver la facturation electronique Peppol
+## Désactiver la facturation électronique Peppol
 
-Si vous ne souhaitez plus envoyer ou recevoir de factures electroniques via MyCompanyDesk, vous pouvez desactiver entierement la facturation electronique Peppol. Cela supprime l'enregistrement de votre entreprise sur le reseau Peppol et libere vos identifiants pour les utiliser ailleurs. Les factures deja envoyees et les depenses deja comptabilisees restent inchanges.
+Si vous ne souhaitez plus envoyer ou recevoir de factures électroniques via MyCompanyDesk, vous pouvez désactiver entièrement la facturation électronique Peppol. Cela supprime l'enregistrement de votre entreprise sur le réseau Peppol et libère vos identifiants pour les utiliser ailleurs. Les factures déjà envoyées et les dépenses déjà comptabilisées restent inchangées.
 
-Pour desactiver la facturation electronique Peppol :
+Pour désactiver la facturation électronique Peppol :
 
-1. Ouvrez **Parametres > Factures** (`/settings/facturen`)
-2. Dans la section Peppol, cliquez sur **Desactiver la facturation electronique**
-3. Confirmez que vous voulez desinscrire votre entreprise du reseau Peppol
+1. Ouvrez **Paramètres › Factures et devis** (`/settings/facturen`)
+2. Dans la section Peppol, cliquez sur **Désactiver la facturation électronique**
+3. Confirmez que vous voulez désinscrire votre entreprise du réseau Peppol
 
-Apres confirmation, l'envoi et la reception s'arretent immediatement. Si vous souhaitez reutiliser Peppol plus tard, vous pouvez reactiver la facturation electronique depuis la meme page. Comme votre enregistrement precedent aura ete supprime, vous devrez refaire la verification d'identite.
+Après confirmation, l'envoi et la réception s'arrêtent immédiatement. Si vous souhaitez réutiliser Peppol plus tard, vous pouvez réactiver la facturation électronique depuis la même page. Comme votre enregistrement précédent aura été supprimé, vous devrez refaire la vérification d'identité.
 
 ## Types de documents pris en charge
 
-- **Facture** — document de facturation standard
-- **Avoir** — ajustement pour remboursements ou corrections
+- **Facture**: document de facturation standard
+- **Avoir**: ajustement pour remboursements ou corrections
 
 ## Ce dont votre client a besoin
 
-Votre client doit etre joignable sur le reseau Peppol. En pratique, cela signifie que son logiciel de comptabilite est connecte a Peppol et qu'il vous a communique son identifiant de recepteur Peppol. MyCompanyDesk valide le recepteur avant l'envoi; si le client n'est pas joignable, l'envoi echoue et vous pouvez revenir a l'e-mail.
+Votre client doit être joignable sur le réseau Peppol. En pratique, cela signifie que son logiciel de comptabilité est connecté à Peppol et qu'il vous a communiqué son identifiant de récepteur Peppol. MyCompanyDesk valide le récepteur avant l'envoi; si le client n'est pas joignable, l'envoi échoue et vous pouvez revenir à l'e-mail.
 
-## Depannage
+## Dépannage
 
-**L'option Peppol n'apparait pas.** Verifiez que votre workspace est sur le plan Office et que la facturation electronique est activee dans les parametres de facturation. Verifiez aussi que votre profil d'entreprise contient tous les champs requis.
+**L'option Peppol n'apparaît pas.** Vérifiez que votre workspace est sur le plan Office et que la facturation électronique est activée dans les paramètres de facturation. Vérifiez aussi que votre profil d'entreprise contient tous les champs requis.
 
-**L'envoi a echoue.** Un echec d'envoi Peppol signifie generalement que le recepteur n'etait pas joignable sur le reseau, ou qu'un champ obligatoire de la facture manquait. Resolvez le probleme et reessayez, ou envoyez par e-mail pour poursuivre le workflow.
+**L'envoi a échoué.** Un échec d'envoi Peppol signifie généralement que le récepteur n'était pas joignable sur le réseau, ou qu'un champ obligatoire de la facture manquait. Résolvez le problème et réessayez, ou envoyez par e-mail pour poursuivre le workflow.
 
-**J'ai active la facturation electronique mais je veux la desactiver.** Ouvrez les parametres de facturation et cliquez sur **Desactiver la facturation electronique**. Votre enregistrement Peppol est alors supprime et l'envoi ainsi que la reception s'arretent. Les factures existantes et les depenses comptabilisees restent inchanges. Si vous la reactivez plus tard, vous devrez refaire la verification d'identite.
+**J'ai activé la facturation électronique mais je veux la désactiver.** Ouvrez les paramètres de facturation et cliquez sur **Désactiver la facturation électronique**. Votre enregistrement Peppol est alors supprimé et l'envoi ainsi que la réception s'arrêtent. Les factures existantes et les dépenses comptabilisées restent inchangées. Si vous la réactivez plus tard, vous devrez refaire la vérification d'identité.
 
-**La reception ne s'active pas a cause d'un conflit.** Votre numero d'immatriculation ou numero de TVA est deja enregistre comme recepteur Peppol chez un autre logiciel de comptabilite ou fournisseur. Desactivez d'abord la reception la-bas, puis activez-la dans MyCompanyDesk. D'ici la, vous pouvez toujours envoyer des factures electroniques depuis MyCompanyDesk.
+**La réception ne s'active pas à cause d'un conflit.** Votre numéro d'immatriculation ou numéro de TVA est déjà enregistré comme récepteur Peppol chez un autre logiciel de comptabilité ou fournisseur. Désactivez d'abord la réception là-bas, puis activez-la dans MyCompanyDesk. D'ici là, vous pouvez toujours envoyer des factures électroniques depuis MyCompanyDesk.
 
-**La reception ne peut pas s'activer : details de l'entreprise manquants.** Si la reception Peppol ne peut pas etre activee parce que votre profil d'entreprise ne contient pas de numero d'immatriculation ou de numero de TVA, MyCompanyDesk renvoie une erreur 422 explicite. Ajoutez le numero manquant dans votre profil d'entreprise, puis re-activez la reception.
+**La réception ne peut pas s'activer : détails de l'entreprise manquants.** Si la réception Peppol ne peut pas être activée parce que votre profil d'entreprise ne contient pas de numéro d'immatriculation ou de numéro de TVA, MyCompanyDesk renvoie une erreur 422 explicite. Ajoutez le numéro manquant dans votre profil d'entreprise, puis réactivez la réception.
 
-**Une facture electronique recue est incorrecte.** Ouvrez le brouillon de depense, corrigez le fournisseur, le montant, la TVA ou la description, puis enregistrez-le. Les donnees originales de la facture electronique restent dans les notes de la depense pour reference.
+**Une facture électronique reçue est incorrecte.** Ouvrez le brouillon de dépense, corrigez le fournisseur, le montant, la TVA ou la description, puis enregistrez-le. Les données originales de la facture électronique restent dans les notes de la dépense pour référence.
 
-**J'ai desactive la reception mais des brouillons apparaissent encore.** Les brouillons deja arrives avant la desactivation restent dans vos depenses; la desactivation ne bloque que l'arrivee de nouvelles factures electroniques.
+**J'ai désactivé la réception mais des brouillons apparaissent encore.** Les brouillons déjà arrivés avant la désactivation restent dans vos dépenses; la désactivation ne bloque que l'arrivée de nouvelles factures électroniques.
 
 ## Voir aussi
 
-- [Factures](/fr/features/invoices) — creer et envoyer des factures
-- [Parametres: abonnement et paiements](/fr/settings/billing) — quels abonnements incluent la facturation electronique Peppol
+- [Factures](/fr/features/invoices): créer et envoyer des factures
+- [Abonnement et paiements](/fr/settings/billing): quels abonnements incluent la facturation électronique Peppol

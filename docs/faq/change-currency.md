@@ -7,8 +7,8 @@ chatbot:
   follow_up: ["How do I invoice in a different currency?", "How do I change my language?"]
 ---
 
-Er is geen valuta-instelling om te wijzigen. MyCompanyDesk werkt bewust alleen in euro's: alle facturen, offertes, uitgaven en rapportages staan in EUR. Dit kun je nergens aanpassen, ook niet onder Mijn account.
+Er is geen valuta-instelling om te wijzigen. MyCompanyDesk werkt bewust alleen in euro's: alle facturen, offertes, uitgaven en rapportages staan in EUR. Dit kun je nergens aanpassen.
 
 Kijk bij [Meerdere valuta](/faq/multi-currency) voor hoe dit werkt als je klanten in het buitenland factureert.
 
-Tip: Je kunt facturen wel in het Engels, Duits of Frans versturen; alleen de bedragen zijn altijd in euro's.
+Tip: Met Office kun je facturen wel in het Engels, Duits of Frans versturen (zie [Taal wijzigen](/faq/change-language)); de bedragen zijn altijd in euro's.

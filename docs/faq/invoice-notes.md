@@ -15,4 +15,6 @@ Om notities toe te voegen aan een factuur:
 3. Voeg de tekst toe die je bij deze factuur wilt bewaren
 4. Sla de factuur op
 
+Notities staan op de factuur zelf, dus je klant ziet ze. Wil je iets alleen voor jezelf vastleggen, gebruik dan de kaart "Interne notities" op de detailpagina van de factuur.
+
 Tip: Gebruik notities voor betaalinstructies, projectverwijzingen of voorwaarden die alleen voor deze factuur gelden.

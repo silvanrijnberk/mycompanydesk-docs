@@ -27,6 +27,6 @@ chatbot:
 To export or download a PDF:
 1. Open the invoice from the list
 2. Click the PDF preview or download button
-3. The PDF uses your logo, colour, and layout from Settings → "Logo en kleur" and Settings → "Factuurontwerp"
+3. The PDF uses your logo, colour, and layout from Settings › "Logo and colour" and Settings › "Invoice design"
 
-Tip: Set your logo and brand colour at Settings → "Logo en kleur", and pick the layout, colours, and font of your invoices at Settings → "Factuurontwerp".
+Tip: Set your logo and brand colour at Settings › "Logo and colour", and pick the layout, colours, and font of your invoices at Settings › "Invoice design".

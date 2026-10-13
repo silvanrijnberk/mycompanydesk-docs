@@ -9,11 +9,11 @@ Ein Arbeitsbericht hält fest, was Sie beim Kunden erledigt haben: der Besuch, d
 
 ## Einschalten
 
-Arbeitsberichte sind ein Modul, das Sie selbst einschalten. Das machen Sie unter **Einstellungen > Module**. Es gibt keine Tarifgrenze: das Modul ist in jedem Tarif enthalten, und der Zugriff folgt demselben Seitenrecht wie bei Rechnungen.
+Arbeitsberichte sind ein Modul, das Sie selbst einschalten. Das machen Sie unter **Einstellungen › Module**. Es gibt keine Tarifgrenze: das Modul ist in jedem Tarif enthalten, und der Zugriff folgt demselben Seitenrecht wie bei Rechnungen.
 
 ## Die Liste der Arbeitsberichte
 
-Die Liste finden Sie unter **Arbeitsberichte** in der Navigation. Tabs oben filtern nach Status: **Alle**, **Entwurf**, **Unterschrieben** und **Fakturiert**. Jede Zeile zeigt die Berichtsnummer, den Kunden, die Arbeitsadresse und den Status als farbigen Chip. Im Suchfeld finden Sie einen Bericht über Nummer, Kunde oder Adresse.
+Die Liste finden Sie unter **Arbeitsberichte** in der Navigation. Reiter oben ordnen die Arbeitsberichte danach, was noch zu tun ist: **Alle** (zuerst, was Sie tun müssen), **Noch unterschreiben lassen** und **Noch abrechnen**. In der Liste sind die Arbeitsberichte gruppiert: zuerst **Noch abrechnen** und **Noch unterschreiben lassen**, danach das bereits Abgerechnete, pro Monat. Jede Zeile zeigt die Berichtsnummer, den Kunden, die Arbeitsadresse und in der Spalte **Stand**, wo der Bericht steht. Im Suchfeld finden Sie einen Bericht über Nummer, Kunde oder Adresse.
 
 ## Einen Arbeitsbericht erstellen
 
@@ -56,6 +56,6 @@ Beim Zusammenführen von zwei Kunden wandern die Arbeitsberichte mit den übrige
 
 ## Tipps
 
-- Ein Arbeitsbericht bleibt Entwurf, bis er unterschrieben ist. Nutzen Sie die Status-Tabs, um zu sehen, was noch eine Unterschrift braucht.
+- Ein Arbeitsbericht bleibt Entwurf, bis er unterschrieben ist. Nutzen Sie den Reiter **Noch unterschreiben lassen**, um zu sehen, was noch eine Unterschrift braucht.
 - Die Arbeitsberichtseite zeigt pro Status den nächsten Schritt: ausfüllen und unterschreiben lassen, dann fakturieren oder senden, dann den Rechnungsentwurf prüfen.
 - Erstellen Sie einen Arbeitsbericht aus einem Angebot, kommen die Positionen mit: Stundenpositionen werden Arbeit, der Rest wird Material, und Positionsrabatte kommen mit.

@@ -1,6 +1,6 @@
 ---
 title: "Rechnung stornieren"
-description: "So stornieren Sie eine versendete Rechnung: öffnen Sie die Rechnung aus Ihrer Rechnungsliste, scrollen Sie in der Seitenleiste zum Bereich Gefahrenzone."
+description: "So stornieren Sie eine versendete Rechnung: Öffnen Sie die Rechnung, wählen Sie im Menü Mehr oben Als storniert markieren und bestätigen Sie."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
@@ -11,15 +11,15 @@ chatbot:
 
 So stornieren Sie eine versendete Rechnung:
 1. Öffnen Sie die Rechnung aus Ihrer Rechnungsliste
-2. Scrollen Sie in der Seitenleiste zum Bereich "Gefahrenzone"
-3. Klicken Sie auf "Als storniert markieren"
+2. Öffnen Sie das Menü „Mehr“ im Kopf der Seite (auf dem Smartphone das ⋯-Menü)
+3. Klicken Sie auf „Als storniert markieren“ und bestätigen Sie
 4. Der Status der Rechnung wechselt zu Storniert
 
 Auch zugehörige Benachrichtigungen für die Rechnung, wie überfällig, Termin oder Entwurf, werden aufgelöst, sodass die Aktion "Erinnerung senden" in der Glocke nicht mehr erscheint. Das gilt auch, wenn Sie mehrere Rechnungen auf einmal aus der Rechnungsliste stornieren.
 
 Wurde auf die Rechnung bereits ein oder mehrere Zahlungseingänge gebucht, zeigt das Bestätigungsdialog den eingegangenen Betrag und warnt, dass Sie ihn dem Kunden noch erstatten müssen. Nach der Stornierung erscheint auf der Detailseite ein Hinweis, dass eine Erstattung offensteht.
 
-Ist die Rechnung bereits ganz oder teilweise bezahlt, öffnen Sie die Originalrechnung und nutzen Sie stattdessen "Gutschrift / Korrektur erstellen".
+Ist die Rechnung bereits vollständig bezahlt oder gibt es schon eine Gutschrift dazu, können Sie sie nicht stornieren. Öffnen Sie die Originalrechnung und nutzen Sie stattdessen „Gutschrift / Korrektur erstellen“.
 
 Stornierte Rechnungen können nicht mit einer Gutschrift korrigiert werden. Wenn Sie dennoch eine Korrektur für eine bereits stornierte Rechnung ausstellen möchten, duplizieren Sie die stornierte Rechnung, nehmen Sie die Korrektur vor und senden Sie sie erneut.
 

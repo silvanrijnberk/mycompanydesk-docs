@@ -1,214 +1,107 @@
 ---
 title: AI Features
-description: "Every AI surface in MyCompanyDesk, what it does and which provider handles it. The default chain is EU-only: Gemini on Vertex AI europe-west1 first."
-last_verified: 2026-10-09
+description: "Every AI feature in MyCompanyDesk, what it does, what Desk and Office include, and how Google Gemini keeps your data in the EU."
+last_verified: 2026-10-13
 ---
 
 # AI Features
 
-MyCompanyDesk uses AI in several places to speed up data entry, surface answers from your own books, and lower the cost of writing copy in four languages. This page lists every AI surface that ships in the product today and how it behaves.
+MyCompanyDesk uses AI in a few places to make your work faster: an assistant that thinks along, receipts that fill themselves in, and suggestions for categories and invoice lines. This page lists every AI feature, what it does and which plan it belongs to.
 
-Provider routing is intentional and changes per surface. The default chain is EU-only: Gemini (free quota) on Vertex AI `europe-west1` first, local Ollama as last resort. Ollama Cloud (US-hosted) is disabled by default because MyCompanyDesk does not have a signed Data Processing Agreement with Ollama Inc. It can be re-enabled for workloads that demonstrably carry no customer personal data, but the LLM router falls through to Vertex EU otherwise. Plan gating, where it applies, is enforced at the API layer through entitlements.
+All AI features run on Google Gemini through Google Cloud's Vertex AI, in EU data centres. There is no second AI provider.
 
-## Contextual guide (in-app chatbot)
+## Assistant
 
-The assistant icon in the topbar opens a chat panel that knows which page you are on, what records you are looking at, and what your workspace data looks like. It is built as a tool-using agent: instead of guessing at numbers, it asks for them. On desktop the panel opens as a drawer pinned to the right edge of the screen; on mobile it opens as a bottom sheet from the sparkles button in the mobile header.
+The assistant icon at the top opens a chat panel. On desktop it slides in from the right, on your phone it opens from the bottom. Which assistant you get depends on your plan:
 
-- **Model.** Default chat model is Gemini on Vertex AI `europe-west1`, served over Cloudflare AI Gateway. When Ollama Cloud is explicitly enabled at the workspace level, `deepseek-v4-pro:cloud` takes over as the primary tier. Both paths fall back to the next tier on rate-limit or outage; the swap is transparent to the conversation.
-- **Streaming.** Replies stream over `POST /api/contextual-guide/stream` (Server-Sent Events). The web client renders incoming tokens as a typewriter effect so first tokens appear in well under a second.
-- **FAQ short-circuit.** Before the model is called, the query is matched against the workspace FAQ corpus using SymSpell-corrected keyword search and a vector cosine fallback (Workers AI `bge-m3` primary, Gemini embeddings fallback). A confident match returns the curated FAQ answer with no LLM round-trip -- fast and free.
-- **Page context.** The current route, the visible entity, and a compact app-state summary are injected into the system prompt. The guide answers about what you are seeing, not in the abstract.
-- **Conversation memory.** The last 6 turns are kept verbatim; older turns are summarised into a rolling memory.
-- **Pre-filter, no router.** A small deterministic filter catches forbidden topics, casual messages, and empty input before the model is called. Beyond that there is **no DATA/FAQ/GENERAL classifier in front of the agent** -- the model sees the full tool catalog and picks tools itself, including a tool that searches the help knowledge base. One question can naturally use multiple tools (e.g. "how do I file my Q2 VAT and what's my saldo" calls `search_help` and `vat_aangifte_rubrieken` in the same loop).
+- **Desk: Desky.** A guide to the app. Desky knows which page you are on and helps with questions like "where do I find..." and "how do I...".
+- **Office: Financial Assistant.** An assistant that works with your own figures. Ask what is still outstanding, where your VAT stands or which customer brings in the most, and have it set up a quote or invoice for you. You check it yourself before you save it.
 
-### Ask a human (Vraag het Sil)
+### Message limit
 
-At the bottom of the conversation sits a block titled "Kom je er niet uit?" (Stuck?): the people who currently answer questions, with name and photo, next to a WhatsApp button. The assistant stays the fastest route for most questions; this block keeps a human one click away. It does not appear the moment you open a panel. In the contextual guide it shows up after the first complete answer. The Financial Assistant panel on Office is a chat about your own figures and for drafting quotes and invoices, not a helpdesk: there the block appears once the conversation turns into a help question (the answer comes from the FAQ or the help pages), once the assistant runs into an error, or as soon as you ask for a person yourself. Type something like "customer service" or "a real human" and the block comes up immediately.
-
-Choosing one of them opens a short form: your question, plus a checkbox, ticked by default, to include your conversation with the assistant. Sending turns the question into a regular support ticket, and the answer arrives in the app and by email, with the promise of an answer within one working day, usually within a few hours. A link to the ticket appears after sending. The WhatsApp button opens a chat with a short introduction already filled in: who you are, which page your question is about, and the question itself.
-
-### EU AI Act disclosure (art. 50)
-
-The EU AI Act (Regulation 2024/1689) classifies the contextual guide as a limited-risk AI system under article 50. Limited-risk systems must transparently disclose to end users that they are interacting with AI. Two disclosure mechanisms ship in the guide:
-
-- **AI badge.** A small "AI" pill sits next to the assistant name in the drawer header. It is always visible while the guide is open, satisfying the continuous-disclosure requirement. A tooltip on the badge names the underlying provider (Google Gemini).
-- **Intro disclosure text.** A short line appears under the welcome prompt in the empty chat state: "You are talking to an AI assistant. Answers may contain errors; always verify financial or tax conclusions yourself."
-
-These disclosures also appear in Dutch, German, and French in their respective locale builds. The obligation takes effect in August 2026; the disclosures shipped ahead of the deadline.
-
-### Office visual skin
-
-Office workspaces get a premium assistant skin that replaces the generic styling with a violet accent. When your workspace is on Office, the assistant panel changes visually:
-
-- The "AI" pill becomes a violet pill that marks the Office assistant.
-- The panel border, avatar ring, online-dot, and send button shift to violet (`#a855f7`).
-- The status line shows an Office-specific greeting instead of the generic "Ready to help."
-
-The Office skin is purely cosmetic. The underlying model selector, tool catalog, and EU AI Act disclosures remain identical across plans. The difference is the limit: Office has 1 000 chat messages per month, Desk has 10.
-
-### Tool catalog
-
-When the question needs a number, page-help, or a VAT-specific aggregate, the model calls one of approximately 18 parameterised tools. Each handler is a hand-written, RLS-protected `SELECT` (or a wrapper around an existing aggregate service) -- the model picks the tool name and arguments, it cannot author SQL. Read-only by design. The same catalog is exposed to Gemini (function declarations) and to Ollama Cloud (OpenAI-compatible `tools` array), so a fallback between providers keeps capabilities identical.
-
-**Data tools** -- accept `period` of `this_month` / `last_month` / `this_quarter` / `this_year` / `last_year`:
-
-| Tool | Returns |
+| Plan | Assistant messages per month |
 |---|---|
-| `revenue_summary` | Revenue, expenses, profit for a period |
-| `top_customers` | Top customers by revenue or outstanding |
-| `overdue_invoices` | List of currently overdue invoices |
-| `vat_summary` | VAT collected, paid, and net for a period |
-| `monthly_breakdown` | Per-month totals across the year |
-| `expense_summary` | Expense totals grouped by category |
-| `time_summary` | Time-registration totals per project |
-| `invoice_list` | Invoices filtered by status/date/customer |
-| `customer_aging` | Receivables aging buckets per customer |
-| `tax_summary` | Country-aware tax position for the period |
+| Desk | 10 |
+| Office | 1,000 |
 
-**VAT tools** -- accept `year` plus `period` of `Q1`/`Q2`/`Q3`/`Q4`/`year`:
+Once the limit is reached on Desk, you still get answers from the frequently asked questions. AI limits are monthly, not daily, and reset on the first of the month.
 
-| Tool | Returns |
-|---|---|
-| `vat_aangifte_rubrieken` | Unified NL aangifte sheet (sections 1-5, codes 1a-5g) |
-| `vat_pre_filing_checks` | Concrete blockers before filing (drafts, missing receipts, ICP pending) |
-| `vat_kor_status` | KOR threshold tracker -- YTD revenue versus EUR 20 000 limit |
-| `vat_kia_status` | KIA bracket tracker -- investments and deduction amount |
-| `vat_icp_opgaaf` | Per-customer intra-EU B2B sales |
-| `vat_oss_breakdown` | Per-country EU OSS B2C sales |
-| `vat_foreign_refundables` | Foreign VAT refundables, EU procedure deadline |
+### Ask a human
 
-**Help tool**:
+At the bottom of the conversation the **Stuck?** block can appear: the people who currently answer questions, with name and photo, next to a WhatsApp button. In Desky it shows up after the first complete answer. The Office Financial Assistant is a chat about your own figures, not a helpdesk: there the block appears once the conversation turns into a help question, the assistant gets stuck, or you ask for a person yourself. Type something like "customer service" or "a real human" and the block comes up straight away.
 
-| Tool | Returns |
-|---|---|
-| `search_help` | Best-matching FAQ entry (semantic-search wrapper). Used for "how do I X" questions. |
+Click someone (**Ask** followed by their name) and a short form opens: your question, plus the checkbox **Include my conversation with the assistant**, ticked by default. Sending turns your question into a support ticket. The answer arrives in the app and by email, within one working day and usually within a few hours. The WhatsApp button opens a chat with a short introduction already filled in: who you are, which page your question is about, and the question itself.
 
-The chat defaults to Gemini on Vertex AI `europe-west1`. When a workspace explicitly enables Ollama Cloud, the chat is pinned to `deepseek-v4-pro:cloud` -- empirical bench showed deepseek lands a 2-tool plan + synthesis in approximately 3 seconds, faster than `qwen3-coder-next:cloud` and `gpt-oss:120b-cloud` on this workload. Gemini is the fallback path when Ollama Cloud is unavailable or disabled.
+### You are talking to AI
 
-The standalone `/api/vat-assistant/*` route is **gone** as of May 2026 -- VAT questions go through the same unified contextual-guide endpoint and the `vat_*` tools above. There is no separate model or panel.
+The assistant always shows that you are talking to AI, as the EU AI Act (article 50) requires. A label sits next to its name, and an empty conversation shows the line "Answers are indicative and may contain mistakes." Always check financial and tax conclusions yourself.
 
-## Vendor classifier (expenses)
+## AI suggestions
 
-When you enter an expense, the **vendor classifier** suggests the right category from your workspace's `expense_categories` table -- not a fixed built-in list. It runs through Gemini Flash-Lite with a Dutch SME bookkeeping prompt that:
+The **AI Suggestions** switch in **Settings › Modules** lets AI help with your bookkeeping. This switch belongs to Office and is off by default.
 
-- Matches the vendor against existing category keys before creating new ones.
-- Picks a `vat_treatment` (`standard` / `b2b_reverse_charge` / `foreign_vat_charged` / `import` / `kor`) based on the vendor's domain and country.
-- Auto-flags potential investments (hardware/equipment over EUR 450 ex-VAT) so depreciation kicks in.
+- **Category and VAT on expenses.** When you type a description or supplier, MyCompanyDesk suggests a category and VAT rate.
+- **Improve.** On an expense, the **Improve** button suggests a clearer description and better field values. You see the current and the proposed value side by side and choose **Apply** or **Dismiss** per field.
+- **Draft lines.** In a quote or invoice, describe in plain words what you will do or have done. **Draft lines** fills in the lines and prices for you, based on your own offering, earlier invoices or your hourly rate. You then adjust them as usual.
 
-The classifier is invoked from `expense-categories.service.classifyVendor(companyId, { vendor, domain })` and is wired to the expense form's category field.
+Applying works exactly like editing by hand. An expense in the trash, a locked VAT period or an archived category blocks the change, just as with a manual edit, and the change is recorded in the audit log. VAT, reports and the dashboard show the new value straight away.
 
-## AI suggestions (with RLHF-lite feedback loop)
+When a quote request comes in through your website, AI prepares a draft quote for it, with lines and estimated prices. This also works on Desk, without the switch. The draft quote has no number and is not sent: you review it.
 
-After an entity is created, the AI-suggestions service queues a low-priority LLM analysis and writes results into `ai_suggestions`. Surfaces include category fixes for expenses set to `other` and description-quality improvements for invoice line items, expenses, and customer notes.
+All these suggestions count towards the monthly limit: 10 AI suggestions on Desk and 2,000 on Office.
 
-Applying a suggestion writes through the same expense update path as a manual edit. A trashed expense, a locked VAT period, or an archived/invalid category blocks the apply action with the same error codes you see when editing manually. When the update succeeds, MyCompanyDesk records an audit log entry for the changed fields, just like a regular edit.
+## Receipt scanning
 
-Endpoints that act on a specific suggestion or expense now validate their path parameters as UUIDs. Requests with an invalid `entityId` or suggestion `id` return `400 VALIDATION_ERROR` before the service layer is reached, so malformed URLs do not produce unexpected 500 responses.
+Take a photo of a receipt or upload a PDF, and the date, amount, supplier, VAT rate and description are filled in for you. Receipt scanning is part of every plan: 3 scans per month on Desk, 200 on Office.
 
-The interesting bit is the **feedback loop**:
+See [Receipt Scanning](/en/advanced/receipt-scanning) for the steps.
 
-1. When you accept a suggestion, the input text is embedded (Workers AI `bge-m3` primary, Gemini fallback) and stored in `suggestion_examples` with the accepted value.
-2. The next time the same task fires for your workspace, the new input is embedded and the top-K nearest neighbours are pulled in as few-shot examples.
-3. The prompt picks up your house style automatically -- "prior examples this user accepted" becomes part of the system message.
+## Typo check
 
-A FIFO cap of 50 examples per `(company_id, task)` keeps lookup at microseconds without `pgvector`. Embeddings are stamped with provider + dimension so a provider swap doesn't poison the lookup; mismatched rows are skipped, not crashed on.
+The **Typo & Grammar Check** (a switch in **Settings › Modules**) checks the text fields in your forms for typos as you type, in Dutch, English, German and French. It does not check grammar. This check runs on MyCompanyDesk's own servers, without an AI provider, and belongs to Office.
 
-Applying a suggestion invalidates the cached financial totals that depend on the changed record, so VAT, reports and the dashboard refresh straight away and reflect the new category, VAT treatment or description.
+## Dashboard briefing (Office)
 
-## Industry detection
+On Office, the top of your dashboard shows a short briefing, written by AI from your own figures: what matters most right now, one or two supporting points and a concrete next step, such as "send Atelier Norden a reminder today". The briefing is created once a day, in your own language. Amounts are rounded to whole euros before they reach the model. If it cannot be created, you see the regular dashboard summary. The figures themselves are available on every plan; only the AI text belongs to Office.
 
-The local **E2B** model (Gemini Flash-Lite primary, Workers AI fallback for both processing modes; Ollama Cloud as an additional fallback in Optimise mode only) classifies your workspace's industry from invoice and expense history. It re-evaluates progressively:
+On Office you also get a short AI commentary with your reports and in the monthly overview email you receive at the start of each month.
 
-| Workspace state | Behaviour |
-|---|---|
-| 0-2 entities | Skip -- not enough signal |
-| 3+ entities, no profile | First detection |
-| Confidence < 0.6 and entity count doubled | Re-evaluate |
-| Confidence >= 0.6 and doubled again | Re-evaluate |
-| Confidence >= 0.8 | Stop |
+## Inbox reply help (Office)
 
-The detected industry feeds back into the AI-suggestion prompts so categorisation matches how shops in your industry actually book things.
+In the inbox, AI can draft the reply to a customer email for you. You can have it write a new reply, optionally with a short instruction, or polish your own draft without changing its meaning or language.
 
-## Receipt scanner
+- The reply is written in the language of the last incoming email, in the first person, signed with your name.
+- Only mail that actually arrived and replies that were actually sent are taken into account. Drafts and failed sends are not.
+- When the AI does not know a detail, it leaves a placeholder such as `[date]` instead of making something up.
+- Nothing is sent automatically. You read and edit the reply yourself first.
+- For an email flagged as suspicious, reply help is not available.
 
-Receipts and supplier invoices are extracted to structured expense data via `POST /api/receipt-scanner`.
+## What each plan includes
 
-- **Primary path.** PDFs and images go straight to Gemini multimodal as `inlineData`. No `tesseract.js`, no `unpdf`, no preprocessing -- Gemini reads the document.
-- **Fallback path.** When AI privacy mode is on, the file is over 15 MB, or Gemini is rate-limited, the scanner falls back to local Ollama: PDFs through `unpdf` for text, images through `tesseract.js`, parsing by Gemma 4 E2B.
-- **Output.** Date, supplier, amount, line items, suggested category, VAT rate. Pre-LLM page filtering (keywords) keeps long PDFs cheap; a post-LLM exact-match filter is the safety net.
-
-See [Receipt Scanning](/en/advanced/receipt-scanning) for the user-facing flow.
-
-## Entity suggestions
-
-The entity-suggestions service powers autocomplete-style inline hints on customer, project, and expense forms. It runs purely on database queries -- no LLM -- so it is instant and works offline. It complements the AI-suggestions service rather than competing with it: entity-suggestions is "remember what you typed last time", AI-suggestions is "what should this look like".
-
-## Text check (typo correction)
-
-Form fields run an in-process **SymSpell** typo correction on debounce as you type. It is wired into nine entity forms (invoices, quotes, expenses, customers, projects, contracts, objects, recurring entries, time entries).
-
-- **Endpoint.** `POST /api/text-check` returns `{ corrected, hasCorrections, grammarAvailable: false }`.
-- **Languages.** Dutch is the dictionary default; English, German, and French are supported.
-- **No grammar.** Sentence-level grammar checking via LanguageTool was removed -- keystroke-grade grammar was a continuous tax for marginal value. A button-triggered "Improve" action may return as a separate feature.
-
-## Translation (Gemini Flash-Lite)
-
-Runtime translation of short snippets goes through `translate.service` which wraps Gemini Flash-Lite. Three call sites use it today:
-
-- **Chatbot.** Pre-processing translates non-English questions to English before the model call, then translates the reply back to the company language.
-- **Support / feedback.** Inbound messages are normalised to English for the operations team.
-- **AI suggestions.** Description prompts run in English, output is translated back.
-
-Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/fr`) is **not** in this service -- it lives in the Huisbot weekly cron which opens PRs against `development` autonomously. The in-app UI never blocks on translation drift.
-
-## Dashboard briefing insight (Office)
-
-The dashboard briefing hero shows a short, personal AI-written briefing for Office workspaces. The server generates it once per calendar day and caches it for the rest of the day.
-
-- **Voice.** The briefing speaks in the first person ("ik") and addresses the user informally ("je"). It opens with the single most urgent action, adds at most one or two supporting points, and closes with a concrete suggested next step (e.g. "stuur Atelier Norden vandaag een herinnering"). Warm, confident, concise — the tone of a smart assistant who knows the business.
-- **Model.** The endpoint `POST /api/dashboard/briefing-insight` runs on Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud is not used for this path.
-- **Input signals.** The client sends a full digest of the day's business data: liquidity and runway, revenue and profit (MTD + YTD), overdue receivables (count, total, worst customer), bills (due soon + overdue), draft counts, project margins, VAT position (balance, deadline, checklist progress, reserve), unbilled hours, recent payments, and new customers. All amounts are rounded to whole euros before reaching the model.
-- **Locales.** The model generates the briefing in `nl/de/en/fr` based on the user's locale. The client includes the ISO 639-1 code with the request.
-- **Plan gating.** The endpoint is gated on the `ai_insights` feature flag, which requires Office. When a workspace is not entitled, the client keeps the deterministic lede alone.
-- **Fallback.** On any failure (model unavailable, 403, network error) the client uses the existing deterministic lede. No error is shown to the user.
-- **Client UX.** While the AI briefing loads, the hero shows the previous day's cached deterministic lede. When the AI version arrives, a cross-fade transition (opacity + slide) replaces it. The AI briefing appears with a sparkle icon and primary text color. A layout-matched skeleton shimmer (`BriefingSkeleton`) holds the entire dashboard shape until core data settles, then dissolves into a coordinated staggered entrance animation. Reduced-motion users get no animations.
-
-## Inbox reply drafts (Office)
-
-The inbox composer can draft the reply of a customer email for you. The endpoint `POST /api/inbox/threads/:id/generate-reply` runs through the same LLM router as the other surfaces (`inbox-generate-reply` workload) with two modes: `reply`, which writes a full answer from scratch (optionally steered by a short instruction or a one-tap direction chip), and `rewrite`, which polishes the user's own draft without changing its meaning or language.
-
-- **Model.** Gemini on Vertex AI `europe-west1` over the standard router chain, like the other chat surfaces.
-- **Input.** The triage-built, clipped thread context: inbound mail that actually arrived and replies that really went out. Drafts, failed sends and bounces are excluded, so a generated concept or a mail that errored is never treated as if the customer had read it.
-- **Output.** Plain text only (the composer wraps it into HTML), written in the language of the last inbound message, first person singular, signed with the owner's name. Unknown details become placeholders like `[datum]` instead of inventions. Markdown that slips through is stripped to plain dashes and inline emphasis markers removed.
-- **Gating.** `ai_insights`, so Office only; the client hides the whole toolbox when the entitlement is missing or the thread is flagged as suspicious.
-- **Failure behaviour.** Any model failure returns `{ ok: false }` without throwing; the composer shows a toast and leaves the editor untouched.
-- **EU AI Act.** The draft is fully visible and editable before any send, so there is nothing to disclose per art. 50 beyond the general AI transparency of the app.
-
-## Plan gating
-
-| Surface | Desk | Office |
+| Feature | Desk | Office |
 |---|---|---|
-| Contextual guide (incl. VAT tools) | 10 chat messages per month, FAQ-only after that | 1 000 chat messages per month |
-| AI suggestions | On (10 per month) | On (2 000 per month) |
-| Vendor classifier | On | On |
-| Receipt scanner | On (3 per month) | On (200 per month) |
-| Text check | On | On |
-| Translation | On (UI strings only) | On |
-| Inbox reply drafts | Off | On |
-| Briefing insight | Off | On |
+| Assistant | Desky, the app guide: 10 messages per month | Financial Assistant with your own figures: 1,000 messages per month |
+| AI suggestions (category, VAT, Improve, Draft lines) | No | Yes |
+| Draft quote for a quote request through your website | Yes | Yes |
+| Receipt scanning | 3 per month | 200 per month |
+| Typo check | No | Yes |
+| Dashboard briefing and AI commentary on reports | No | Yes |
+| Inbox reply help | No | Yes |
 
-## AI usage caps (monthly)
+Monthly limits at a glance:
 
-AI caps are monthly, not daily. A bookkeeper who batches 40 receipts on a Friday does not blow through a daily quota that resets at midnight. Cap tracking uses `ai_usage.date` with the first-of-month date. Monthly caps:
-
-| Metric | Desk | Office |
+| Monthly limit | Desk | Office |
 |---|---|---|
-| AI chat messages | 10 | 1 000 |
-| AI receipt scans | 3 | 200 |
-| AI suggestions | 10 | 2 000 |
+| Assistant messages | 10 | 1,000 |
+| Receipt scans | 3 | 200 |
+| AI suggestions | 10 | 2,000 |
 
-## Privacy
+## Privacy and data protection
 
-All cloud AI paths route through Vertex AI in `europe-west1` (EU) by default. MyCompanyDesk has a signed DPA with Google Cloud for Vertex AI usage. Ollama Cloud (ollama.com, US-hosted) is disabled by default because no DPA or Standard Contractual Clauses exist with Ollama Inc. Workspaces can enable it explicitly, but it is off by default for all plans.
+All AI features run on Google Gemini through Vertex AI, in Google Cloud EU regions. MyCompanyDesk has a data processing agreement with Google Cloud for this. There is no second AI provider and no fallback outside the EU: if an AI request fails, you get a message or fill it in yourself.
 
-When `ai_processing_mode` is set to `local_only` on the workspace, every AI path that supports it (receipt scanner, AI suggestions, text check, vendor classifier, industry detection) routes through the local Ollama instance and never leaves the server. The contextual guide is cloud-only by design -- it requires the chat-tier model and is disabled in `local_only` mode rather than degraded.
+## Tips
+
+- Turn on AI suggestions once and they work along automatically.
+- Receipt scanning is especially handy for paper receipts: just take a photo.
+- Desky answers most "how do I..." questions about the app.

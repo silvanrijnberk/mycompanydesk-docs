@@ -1,6 +1,6 @@
 ---
 title: "Donkere modus"
-description: "Om je thema te wisselen: ga naar Instellingen > Weergave, kies Licht, Donker of Vanzelf (volgt je apparaat)."
+description: "Om je thema te wisselen: ga naar Instellingen › Weergave, kies Licht, Donker of Vanzelf (volgt je apparaat)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
@@ -11,22 +11,23 @@ chatbot:
 ## Donkere modus in de app
 
 Om je thema te wisselen:
-1. Ga naar Instellingen → "Weergave"
+1. Ga naar Instellingen › "Weergave"
 2. Kies Licht, Donker of Vanzelf (volgt je apparaat)
 3. De wijziging wordt direct toegepast en automatisch opgeslagen
 
-Tip: je kunt ook de thema-schakelaar in het navigatiemenu gebruiken voor een snelle wissel.
+Tip: voor een snelle wissel gebruik je **Donkere modus** of **Lichte modus** in je accountmenu in de bovenbalk.
 
 ## Donkere modus voor je website
 
-Heb je een gehoste zakelijke website? Dan kun je ook voor je bezoekers een donkere modus instellen. Open het onderdeel **Website** in de app, ga naar de pagina **Stijl** en zoek de donkere-modusinstelling in de sectie **Kleuren**.
+Heb je een website via MyCompanyDesk? Dan kun je je site ook donker maken. Open **Website** in de app, ga in de editor naar het scherm **Stijl** en zoek de sectie **Donkere kleuren**.
 
-Drie opties:
+Vier opties:
 
-- **Uit** (standaard): Geen donkere modus. Je site blijft in het lichte palet.
-- **Knop**: Bezoekers zien een zon/maan-knop in de navigatiebalk. De standaard is altijd licht, dus bezoekers die donker willen moeten de knop zelf aanzetten. Eenmaal gekozen, wordt de voorkeur opgeslagen in hun browser voor een volgend bezoek.
-- **Volg systeem**: De site volgt automatisch de OS-voorkeur van de bezoeker. Past zich aan zodra de bezoeker zijn systeeminstelling wijzigt.
+- **Uit** (standaard): je site is altijd licht.
+- **Altijd donker**: iedere bezoeker ziet je site donker.
+- **Knop in menubalk**: bezoekers kiezen zelf licht of donker met een knop in de menubalk.
+- **Volgt het toestel**: donker voor wie zijn telefoon of computer op donker heeft staan, anders licht.
 
-Zet je donkere modus aan, dan verschijnt er een donker palet waarin je per merkkleur een nachtversie kunt instellen. Het palet leeg laten is prima; de site gebruikt dan een automatische inversie waarbij je merk- en accentkleuren behouden blijven.
+Kies je iets anders dan Uit, dan kies je bij **Kies een donkere set** een kant-en-klare set (Bijna zwart, Nachtblauw, Donkergroen of Warm antraciet). Je kunt daarnaast per kleur een eigen nachtversie instellen. Bovenaan het Stijl-scherm staat ook de kaart **Liever een donkere site?** met **Maak mijn site donker** als snelle route.
 
 Zie [Sitebouwer](/advanced/business-page) voor meer over het vormgeven van je website.

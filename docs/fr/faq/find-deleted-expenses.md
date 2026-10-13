@@ -1,6 +1,6 @@
 ---
 title: "Trouver les dépenses supprimées"
-description: "Les dépenses supprimées se trouvent dans Dépenses > Corbeille. Si vous êtes déjà dans la liste des dépenses, passez à la vue Corbeille."
+description: "Les dépenses supprimées se trouvent dans Dépenses : cliquez sur Filtres et choisissez la vue Corbeille sous Afficher."
 last_verified: 2026-08-16
 chatbot:
   triggers:
@@ -27,7 +27,7 @@ chatbot:
     - "How do I restore an expense?"
 ---
 
-Les dépenses supprimées se trouvent dans Dépenses -> Corbeille. Si vous êtes déjà dans la liste des dépenses, passez à la vue Corbeille.
+Les dépenses supprimées se trouvent dans Dépenses : cliquez sur Filtres au-dessus de la liste et choisissez la vue Corbeille sous Afficher. Sur votre téléphone, utilisez le bouton de filtre en haut.
 
 Gardez à l'esprit que la suppression se fait par étapes : la première suppression d'une dépense active l'archive. Donc si une dépense n'est pas dans la Corbeille, regardez la vue Archives. Supprimer une dépense archivée la déplace vers la Corbeille, et la supprimer depuis la Corbeille la retire définitivement.
 

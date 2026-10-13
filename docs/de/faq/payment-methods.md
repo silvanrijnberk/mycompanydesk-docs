@@ -1,7 +1,7 @@
 ---
 title: "Zahlungsmethoden"
-description: "So verwalten Sie Zahlungsmethoden auf Dokumenten: gehen Sie zu Einstellungen und öffnen Sie Zahlung."
-last_verified: 2026-10-01
+description: "So verwalten Sie Zahlungsmethoden auf Dokumenten: gehen Sie zu Einstellungen und öffnen Sie Bezahlung."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "payment methods"
@@ -22,7 +22,7 @@ chatbot:
 ---
 
 So verwalten Sie Zahlungsmethoden auf Dokumenten:
-1. Gehen Sie zu Einstellungen und öffnen Sie „Zahlung“
+1. Gehen Sie zu Einstellungen und öffnen Sie „Bezahlung“
 2. Tragen Sie Ihre IBAN ein, um die Banküberweisung anzubieten; eine eingetragene IBAN aktiviert sie automatisch und setzt einen Zahlungs-QR-Code auf Ihre Rechnungen
 3. Aktivieren Sie PayPal und geben Sie Ihre PayPal-E-Mail-Adresse ein, wenn Sie das anbieten möchten
 4. Verbinden Sie Mollie oder Stripe, wenn Kunden online bezahlen sollen, zum Beispiel mit iDEAL
@@ -35,8 +35,8 @@ Die aktivierten Methoden erscheinen unten auf Ihren Rechnungen.
 Sie können Ihr eigenes Mollie- oder Stripe-Konto verbinden, damit Kunden Rechnungen direkt online bezahlen können. Das Geld geht direkt auf Ihr Konto. MyCompanyDesk stellt nur die Verbindung her.
 
 So verbinden Sie einen Anbieter:
-1. Gehen Sie zu **Einstellungen → Zahlung**
-2. Klicken Sie unter **Online betalingen** auf **Verbind Mollie** oder **Verbind Stripe**
+1. Gehen Sie zu **Einstellungen › Bezahlung**
+2. Klicken Sie unter **Kunden mit iDEAL bezahlen lassen** auf **Verbind Mollie** oder **Verbind Stripe** (diese Schaltflächen erscheinen auf Niederländisch)
 3. Folgen Sie dem OAuth-Vorgang zur Autorisierung Ihres Kontos
 4. Nach der Verbindung enthält jede versendete Rechnung einen Zahlungslink für Ihre Kunden. Rechnungs- und Erinnerungsmails beginnen dann mit einer Schaltfläche **Jetzt bezahlen**, die den Kunden direkt zur Zahlungsseite bringt; die Zahlung startet ausschließlich im Browser des Kunden, deshalb richten Mailscanner keine ein, und der Scan-und-Bezahl-QR-Code auf der Rechnungs-PDF nutzt denselben Link.
 
@@ -44,7 +44,7 @@ Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung, ideal f
 
 ## Online-Zahlungsgebühr bei Desk
 
-Bei Desk zahlen Sie 0,50 EUR inkl. MwSt. pro online bezahlter Rechnung ab 5 EUR, zusätzlich zu den Kosten von Mollie oder Stripe. Bezahlt ein Kunde eine Rechnung online über Ihr Mollie- oder Stripe-Konto, wird die Gebühr pro Zahlung von der Auszahlung einbehalten. Bei Office fällt sie nie an. Die App zeigt die Gebühr neben **Online betalingen** auf `/settings/betalen` an, solange Ihr Arbeitsbereich auf Desk ist.
+Bei Desk zahlen Sie 0,50 € Servicegebühr inkl. MwSt. pro Online-Zahlung ab 5 €, zusätzlich zu den Kosten von Mollie oder Stripe. Bezahlt ein Kunde eine Rechnung online über Ihr Mollie- oder Stripe-Konto, wird die Gebühr pro Zahlung von Ihrer Auszahlung einbehalten. Ihr Kunde zahlt sie nicht, er zahlt einfach den Rechnungsbetrag. Bei Office fällt keine Servicegebühr an. Solange Ihr Arbeitsbereich auf Desk ist, steht die Erklärung bei **Kunden mit iDEAL bezahlen lassen** unter Einstellungen › Bezahlung.
 
 Zum Trennen klicken Sie auf **Loskoppelen** auf der entsprechenden Karte. Wenn in den letzten 24 Stunden Zahlungen eingegangen sind, erscheint eine Warnung, dass möglicherweise noch ausstehende Webhooks eintreffen und dass Rückzahlungen für diese Zahlungen manuell bearbeitet werden müssen. Nach der Trennung können Kunden nicht mehr über diesen Anbieter bezahlen.
 

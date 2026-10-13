@@ -1,7 +1,7 @@
 ---
 title: Peppol E-Rechnung
 description: "Versenden Sie Rechnungen und Gutschriften als strukturierte E-Rechnung über Peppol, direkt in die Buchhaltung Ihres Kunden, und empfangen Sie sie ebenso."
-last_verified: 2026-08-15
+last_verified: 2026-10-13
 ---
 
 # Peppol E-Rechnung
@@ -18,7 +18,7 @@ Wenn der Lieferant ebenfalls MyCompanyDesk nutzt, können Sie seine strukturiert
 
 ## Verfügbarkeit
 
-Peppol E-Rechnung ist im Office-Tarif verfügbar. Workspaces im Desk-Tarif sehen die Optionen zum E-Rechnungsversand und -empfang nicht.
+Peppol E-Rechnung ist im Office-Tarif verfügbar. Im Desk-Tarif zeigen die Rechnungseinstellungen statt der Peppol-Einstellungen eine Schaltfläche zum Wechseln des Tarifs.
 
 ## Bevor Sie senden können
 
@@ -32,7 +32,7 @@ Bevor Sie zum ersten Mal über Peppol senden, benötigt MyCompanyDesk Ihre Unter
 
 Fehlt ein Wert, fragt die Rechnungseinstellungsseite Sie, diesen zu ergänzen, bevor Sie E-Rechnung aktivieren können. Ihre bestehenden Unternehmensprofilfelder werden wiederverwendet, Sie müssen sie nicht zweimal eingeben.
 
-Wenn Sie E-Rechnung aktivieren, stimmen Sie zu, Handelsregisternummer, USt-IdNr. und Geschäftsadresse beim Peppol-Zugangspunkt zu registrieren. MyCompanyDesk verbindet sich über einen Recommand-Zugangspunkt mit dem Netzwerk.
+Wenn Sie E-Rechnung aktivieren, stimmen Sie zu, Handelsregisternummer, USt-IdNr. und Geschäftsadresse beim Peppol-Zugangspunkt zu registrieren. MyCompanyDesk verbindet sich über einen Recommand-Zugangspunkt mit dem Netzwerk. Peppol verlangt außerdem einmalig eine Identitätsprüfung durch eine zeichnungsberechtigte Person des Unternehmens: Die Schaltfläche **Identität bestätigen** öffnet diese Prüfung in einem neuen Tab. Solange sie nicht abgeschlossen ist, können Sie noch keine E-Rechnungen senden oder empfangen.
 
 ## Eine E-Rechnung senden
 
@@ -41,7 +41,7 @@ Wenn Sie E-Rechnung aktivieren, stimmen Sie zu, Handelsregisternummer, USt-IdNr.
 3. Klicken Sie auf **Senden**
 4. Wählen Sie **E-Rechnung (Peppol)** als Zustellmethode
 5. Prüfen Sie die Vorschau
-6. Klicken Sie auf **E-Rechnung über Peppol senden**
+6. Klicken Sie auf **E-Rechnung über Peppol versenden**
 
 Die Rechnung wird digital im Buchhaltungssystem Ihres Kunden zugestellt. Eine erfolgreiche Zustellung wird in MyCompanyDesk bestätigt; wenn die Zustellung fehlschlägt, sehen Sie eine Fehlermeldung und können es erneut versuchen oder stattdessen per E-Mail senden.
 
@@ -49,7 +49,7 @@ E-Mail und Peppol schließen sich nicht aus. Sie können heute per E-Mail senden
 
 ## Eine E-Rechnung erneut senden
 
-Eine Peppol-Sendung ist eine echte, rechtsverbindliche E-Rechnung im Netzwerk, nicht nur eine Kopie einer E-Mail. Deshalb erzeugt ein zweiter Versand derselben Rechnung zwei separate E-Rechnungen. MyCompanyDesk blockt einen versehentlichen zweiten Peppol-Versand: wurde die Rechnung bereits über Peppol gesendet oder zugestellt, erscheint beim erneuten Klick auf **E-Rechnung über Peppol senden** ein Bestätigungsdialog statt sofort zu senden.
+Eine Peppol-Sendung ist eine echte, rechtsverbindliche E-Rechnung im Netzwerk, nicht nur eine Kopie einer E-Mail. Deshalb erzeugt ein zweiter Versand derselben Rechnung zwei separate E-Rechnungen. MyCompanyDesk blockt einen versehentlichen zweiten Peppol-Versand: wurde die Rechnung bereits über Peppol gesendet oder zugestellt, erscheint beim erneuten Klick auf **E-Rechnung über Peppol versenden** ein Bestätigungsdialog statt sofort zu senden.
 
 Der Dialog zeigt an, wann die Rechnung erstmalig gesendet wurde, und fragt, ob Sie wirklich eine zweite E-Rechnung senden möchten. Wenn Sie bestätigen, wird eine neue Peppol-E-Rechnung versandt. Wenn Sie abbrechen, wird nichts gesendet und die bestehende Peppol-Zustellung bleibt unverändert.
 
@@ -77,7 +77,7 @@ Wenn Sie den Empfang aktivieren, werden Handelsregisternummer und USt-IdNr. als 
 
 ### Empfangen aktivieren
 
-1. Öffnen Sie **Einstellungen > Rechnungen** (`/settings/facturen`)
+1. Öffnen Sie **Einstellungen › Rechnungen und Angebote** (`/settings/facturen`)
 2. Klicken Sie im Peppol-Bereich auf **Empfangen aktivieren**
 3. Bestätigen Sie, dass Handelsregisternummer und USt-IdNr. als Empfänger im Peppol-Netzwerk registriert werden dürfen
 
@@ -93,7 +93,7 @@ Jede E-Rechnung landet als Entwurf unter **Ausgaben**. Der Entwurf ist mit Liefe
 
 ### Empfangen deaktivieren
 
-Öffnen Sie **Einstellungen > Rechnungen**, gehen Sie zum Peppol-Bereich und klicken Sie auf **Empfangen deaktivieren**. Sie erhalten keine neuen E-Rechnungen mehr über Peppol, aber bestehende Entwürfe und gebuchte Ausgaben bleiben unverändert. Sie können den Empfang jederzeit wieder aktivieren.
+Öffnen Sie **Einstellungen › Rechnungen und Angebote**, gehen Sie zum Peppol-Bereich und klicken Sie auf **Empfangen deaktivieren**. Sie erhalten keine neuen E-Rechnungen mehr über Peppol, aber bestehende Entwürfe und gebuchte Ausgaben bleiben unverändert. Sie können den Empfang jederzeit wieder aktivieren.
 
 ## Peppol E-Rechnung deaktivieren
 
@@ -101,7 +101,7 @@ Wenn Sie über MyCompanyDesk keine E-Rechnungen mehr senden oder empfangen möch
 
 So deaktivieren Sie Peppol E-Rechnung:
 
-1. Öffnen Sie **Einstellungen > Rechnungen** (`/settings/facturen`)
+1. Öffnen Sie **Einstellungen › Rechnungen und Angebote** (`/settings/facturen`)
 2. Klicken Sie im Peppol-Bereich auf **E-Rechnung deaktivieren**
 3. Bestätigen Sie, dass Sie Ihr Unternehmen aus dem Peppol-Netzwerk abmelden möchten
 
@@ -109,8 +109,8 @@ Nach der Bestätigung stoppen Senden und Empfang sofort. Wenn Sie Peppol später
 
 ## Unterstützte Dokumenttypen
 
-- **Rechnung** — Standard-Abrechnungsdokument
-- **Gutschrift** — Korrektur für Rückerstattungen oder Anpassungen
+- **Rechnung**: Standard-Abrechnungsdokument
+- **Gutschrift**: Korrektur für Rückerstattungen oder Anpassungen
 
 ## Was Ihr Kunde benötigt
 
@@ -134,5 +134,5 @@ Ihr Kunde muss über das Peppol-Netzwerk erreichbar sein. Das bedeutet in der Pr
 
 ## Verwandt
 
-- [Rechnungen](/de/features/invoices) — Rechnungen erstellen und senden
-- [Einstellungen: Abonnement und Zahlungen](/de/settings/billing) — welche Abonnements Peppol E-Rechnung enthalten
+- [Rechnungen](/de/features/invoices): Rechnungen erstellen und senden
+- [Abonnement & Zahlungen](/de/settings/billing): welche Abonnements Peppol E-Rechnung enthalten

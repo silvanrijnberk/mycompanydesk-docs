@@ -9,7 +9,7 @@ Taken houden bij wat je in MyCompanyDesk moet doen. Sommige taken maak je zelf a
 
 ## Takenlijst
 
-De takenpagina toont je openstaande en voltooide taken. Elke rij toont de titel, vervaldatum, status, prioriteit en het gekoppelde record. Taken die uit een offerte, uitgave, project, contract of aan-de-slag-checklist komen, tonen een bron-chip zodat je meteen ziet waar ze vandaan komen.
+De takenpagina groepeert je taken in **Achterstallig**, **Vandaag**, **Deze week**, **Later** en **Afgerond** (de laatste 14 dagen). Elke rij toont de titel, vervaldatum, status, prioriteit en het gekoppelde record. Taken die niet handmatig zijn aangemaakt, tonen een bron-chip zodat je meteen ziet waar ze vandaan komen.
 
 Klik op een taak om de detaildrawer te openen.
 
@@ -20,7 +20,7 @@ De detaildrawer is een alleen-lezen weergave die het hele plaatje toont voordat 
 - Vervaldatum, status en prioriteit
 - De volledige omschrijving
 - Het gekoppelde record
-- De bron van de taak, bijvoorbeeld een offerte, uitgave, project, contract of aan-de-slag-checklist
+- De herkomst van de taak, bijvoorbeeld een factuur, offerte, e-mail of de btw-aangifte
 - Het project, als de taak erbij hoort
 - Tags
 - Wanneer de taak is aangemaakt
@@ -33,13 +33,16 @@ Je kunt de taak direct vanuit de detaildrawer afronden of heropenen. Wil je de t
 Taken kunnen uit verschillende bronnen komen:
 
 - **Handmatig**: taken die je zelf aanmaakt
-- **Offerte**: gegenereerd vanuit een offerte
-- **Uitgave**: gegenereerd vanuit een uitgave
-- **Project**: gegenereerd vanuit een project
-- **Contract**: gegenereerd vanuit een contract
-- **Aan de slag**: onboardingstappen voor een nieuwe werkruimte
+- **Factuur-opvolging**: een factuur die te laat is
+- **Uit offerte**: een offerte die bijna verloopt
+- **Uitgave**: een uitgave die nog een categorie mist
+- **Contract**: een contract dat afloopt
+- **Btw**: een btw-aangifte die eraan komt
+- **Uit e-mail**: een taak die je vanuit een bericht in je inbox maakt
+- **Uit project**: een taak die bij een project hoort
+- **Aan de slag**: opzetstappen voor een nieuwe werkruimte
 
 ## Tips
 
 - Gebruik de bron-chip om naar het record te springen waar een taak over gaat.
-- De **Nu doen**-lijst op het [dashboard](/faq/use-dashboard) zet de taken die vandaag aandacht vragen bovenaan.
+- Zijn er taken te laat, dan vraagt de kaart **Taken** op het [dashboard](/faq/use-dashboard) om aandacht, met een knop naar je takenlijst.

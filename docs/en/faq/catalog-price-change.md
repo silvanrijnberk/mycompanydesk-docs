@@ -1,6 +1,6 @@
 ---
 title: Change all prices at once
-description: "Go to Aanbod, click Prices, and use the raise simulator to see what a price change would do before you apply it."
+description: "Go to Catalog, click Prices, and use the raise simulator to see what a price change would do before you apply it."
 last_verified: 2026-09-03
 chatbot:
   triggers:
@@ -17,7 +17,7 @@ chatbot:
     - "How do I undo a price change?"
 ---
 
-Go to **Aanbod** and click **Prices** to see what you charge, what you actually received for it, and what a price change would yield.
+Go to **Catalog** and click **Prices** to see what you charge, what you actually received for it, and what a price change would yield.
 
 ## How it works
 
@@ -29,19 +29,19 @@ Go to **Aanbod** and click **Prices** to see what you charge, what you actually 
    - **Fixed amount**: add or subtract the same amount from every price.
    - Use a negative value to lower prices.
 3. Choose rounding:
-   - **Exact cents** keeps the normal decimal price.
-   - **Whole euros** rounds the result to whole euros.
-4. Click **Check changes** to open a preview that lists every item with its old and new price.
-5. Review the list, then click **Change prices** to apply it.
+   - **To the cent** keeps the normal decimal price.
+   - **To the nearest euro** rounds the result to whole euros.
+4. Click **Review what changes** to open a preview that lists every item with its old and new price.
+5. Review the list, then click the button with the count, for example **Adjust 12 prices**, to apply it.
 
 The preview also tells you if any items are skipped because they do not have a price (for example, price-on-request items), because they are a bundle whose price follows its components, or because the rounding makes no difference. It warns you when an active promotion would stop being an active promotion after the change. If the selection includes subscriptions, the preview also explains that existing subscribers keep their current price; the new price only applies to the next person who signs up.
 
 ## What changes and what does not
 
-- Only the prices in your **Aanbod** are updated.
+- Only the prices in your **Catalog** are updated.
 - Existing invoices, quotes, and contracts keep the prices they were created with.
 - Running subscriptions keep the price they were signed at. To raise existing subscribers too, change their recurring invoice.
-- You can undo a change right after applying it. A single undo reverses the whole batch in one step.
+- Right after applying, you can reverse the change with **Undo** in the notice. That reverses the whole batch in one step. If a price has been changed again in the meantime, nothing is reverted.
 
 ## Inflation hint when editing one item
 
@@ -53,7 +53,7 @@ The hint only appears in edit mode and only for items with a fixed price. Price-
 
 ## Print a price list
 
-You can also print your catalog as a customer-facing price list. Open **Aanbod** and click **Price list** to open `/aanbod/prijslijst`.
+You can also print your catalog as a customer-facing price list. There is no button for it in the menu: go to `/aanbod/prijslijst` in the app in your browser.
 
 The page lists your active items grouped into **Services**, **Products**, **Packages** and **Subscriptions**, and empty groups are skipped. If your workspace has the website module, you also get the **Only what's on your website** switch, so you print exactly the subset your site builder shows. Without the website module, services and products print as one group without a header, while packages and subscriptions keep their own header. Click **Print or save as PDF** to use the browser print dialog.
 

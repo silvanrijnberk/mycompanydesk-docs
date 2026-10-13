@@ -1,7 +1,7 @@
 ---
 title: Outstanding amount
-description: "To see total outstanding/unpaid amounts: go to Invoices and filter by Open/Sent/Overdue, check totals in the list/KPI header."
-last_verified: 2026-07-02
+description: "To see your total outstanding amount: go to Invoices and check the Awaiting payment tab, or open Reports, Clients."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["outstanding amount", "total unpaid", "money owed", "total outstanding", "how much owed", "openstaand bedrag", "totaal onbetaald", "offener betrag", "montant impaye", "somme due"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 ---
 
 To see total outstanding/unpaid amounts:
-1. Go to Invoices and filter by Open/Sent/Overdue
-2. Check totals in the list/KPI header
-3. For reporting detail, open Reports → Client Report and switch to the "Outstanding" tab
+1. Go to Invoices
+2. The **Awaiting payment** tab shows how many invoices are with your customers and their total amount. If any are late, it also shows how many. The **To send** tab shows what you have not sent yet. On your phone, the **Outstanding** and **Overdue** tiles sit at the top
+3. For detail per client, open Reports › Clients and switch to the "Outstanding" tab (Office)
 
-Tip: If totals look off, first verify date range and status filters.
+Tip: If totals look off, first check the period and status under **Filters**.

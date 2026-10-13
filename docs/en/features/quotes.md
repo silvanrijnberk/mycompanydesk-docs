@@ -13,14 +13,14 @@ The quotes section lets you create, send, and track quotations. Quotes follow a 
 
 ## Creating a quote
 
-1. Go to **Quotes > New Quote**
+1. Go to **Quotes** and click **Create quote**
 2. Select or create a **customer**
 3. Add **line items** with descriptions, quantities, prices, and VAT rates
 4. Set a **valid until** date (how long the quote is valid)
 5. Add optional **notes**
 6. Click **Save**
 
-The quote form is similar to the invoice form — if you know how to create an invoice, you already know how to create a quote.
+The quote form is similar to the invoice form: if you know how to create an invoice, you already know how to create a quote. Quotes are unlimited on every plan, Desk included.
 
 The form carries the same **Amounts incl. VAT** switch as the invoice form. With it on, you type the prices the customer pays and the VAT comes out of them. See [Invoices](/en/features/invoices#prices-including-vat).
 
@@ -41,11 +41,11 @@ Once the quote has been accepted or rejected, is out for signing, or sits in the
 3. Review the email preview
 4. Click **Send** to deliver it to your customer
 
-The send dialog has toggles for the **View button**, **Download button**, and **PDF attachment**. By default the PDF is attached so the customer can review it.
+The send dialog has switches for the **View button (online link)**, the **Download button** and the **PDF attachment**. By default the PDF is attached so the customer can review it.
 
 At least one of these must be turned on for a quote, otherwise the customer has no way to open the quote and the **Send** button is disabled. Invoices always keep a customer portal button as a fallback, but quotes do not.
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+If your workspace has general terms in Documents, the email preview also shows an **Include terms and conditions** switch. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
 A quote also needs at least one line before it can be finalized or sent: the app refuses an empty quote and asks you to add a line first.
 
@@ -60,11 +60,7 @@ Once a quote has been emailed, the quote detail page shows a set of engagement p
 
 A quote never shows a **Paid** pill, because quotes are not paid directly; a signed quote is shown in its own signing card instead.
 
-The pills remain off until the quote is actually emailed. Before that, the activity card stays hidden so it does not clutter the page.
-
-Events are stored in the same `invoice_customer_events` log as invoice events, scoped by an `entity_type` column so quote events are kept separate from invoice events.
-
-Source: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote`; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - `entity_type` column; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
+The pills remain off until the quote is actually emailed. Before that, the activity card stays hidden so it does not clutter the page. Quote and invoice activity are kept apart, so the signals of a quote never mix with those of an invoice.
 
 ## Online quote signing
 
@@ -78,17 +74,21 @@ The signing block in the quote PDF follows the quote's document language: if the
 
 ## Quote detail actions
 
-The top action on the quote detail page depends on the quote status:
+The top action on the quote detail page follows the step the quote is at:
 
-- **Send** — Available for draft and sent quotes, so the quote can reach the customer.
-- **Convert to Invoice** - Available once the customer has accepted the quote, turning it into an invoice with one click. The bottom bar also offers it on a sent or draft quote, and every conversion lands the quote in **Accepted**; a draft is given its quote number at that moment.
-- **Duplicate / Create new version** — Available for rejected or expired quotes so you can reissue them quickly.
+- **Send**: on a draft or finalized quote, so the quote can reach the customer. When the quote is meant to be signed online, **Send for signing** takes its place.
+- **Mark as accepted**: on a sent quote, when the customer said yes outside the signing link.
+- **Convert to invoice**: once the customer has accepted the quote, turning it into an invoice with one click. The more menu also offers it on a sent or draft quote, and every conversion lands the quote in **Accepted**; a draft is given its quote number at that moment.
+- **View invoice**: once the quote has been invoiced.
+- **Duplicate**: on a declined quote, so you can reissue it quickly.
 
-Additional actions live in the overflow menu next to the top action:
+Additional actions live in the more menu next to the top action, depending on the status:
 
-- **Preview PDF** — View the quote PDF in full screen before sending.
-- **Download PDF** — Download the quote as a professionally formatted PDF document with your company logo, branding colors, and all quote details.
-- **Copy quote** — Create a copy of the existing quote.
+- **Preview** and **Download PDF**: view the quote PDF in full screen, or download it as a formatted PDF with your company logo, branding colors and all quote details.
+- **Duplicate**: create a copy of the quote.
+- **Create work order**: start a [work order](/en/features/werkbonnen) with the quote's lines.
+- **Record as contract**: turn the agreement into a [contract](/en/features/contracts) (Office).
+- **Send to accountant**.
 
 ## Document preview
 
@@ -101,18 +101,20 @@ The preview header has a **Download PDF** button, a **Print** button, and a **Ch
 | Status | Description |
 |---|---|
 | **Draft** | Created but not sent |
+| **Finalized** | Numbered and ready, not sent yet |
 | **Sent** | Delivered to the customer |
 | **Accepted** | Customer accepted the quote |
-| **Rejected** | Customer declined the quote |
+| **Declined** | Customer declined the quote |
 | **Expired** | Past the valid-until date |
-| **Invoiced** | Converted to an invoice |
+
+Once you have turned an accepted quote into an invoice, the quote keeps the status **Accepted** and its top action becomes **View invoice**.
 
 ## Convert to invoice
 
 Once a customer accepts your quote, convert it to an invoice with one click:
 
 1. Open the accepted quote
-2. Click **Convert to Invoice**
+2. Click **Convert to invoice**
 3. Review the pre-filled invoice (all line items carry over)
 4. Make any adjustments if needed
 5. Save and send the invoice
@@ -133,11 +135,11 @@ When the customer signs, the deposit invoice is created from the same line items
 
 When you convert the rest of the work to an invoice, the final invoice carries a negative **Settles deposit** line, so the customer only pays what is left. This settlement also applies when the quote's work is invoiced through a work order; that invoice can only be created once the deposit invoice is no longer a draft. Once the work has been invoiced through a work order, adding a deposit to the quote is refused. The deposit invoice itself stays a normal invoice in your lists, with its VAT due in the period of its own invoice date. Remove the settlement and the customer pays the full amount on top of the deposit; you can settle the deposit again later.
 
-You get a notification when the deposit invoice has been sent, is waiting as a draft, or could not be sent. The workspace default lives under **Settings > Invoices and quotes**, under Deposit: the standard percentage on new quotes, the payment term (7 days unless you change it), and whether signing sends the invoice right away or sets it up as a draft. You can adjust or remove the deposit per quote.
+You get a notification when the deposit invoice has been sent, is waiting as a draft, or could not be sent. The workspace default lives under **Settings › Invoices and quotes**, under Deposit: the standard percentage on new quotes, the payment term (7 days unless you change it), and whether signing sends the invoice right away or sets it up as a draft. You can adjust or remove the deposit per quote.
 
 ## Quote requests
 
-Customers can submit requests through your [site builder](/en/advanced/business-page). These appear in **Quotes > Requests**, sorted into their own tab per request kind: quote requests, messages, appointment requests and call-back requests. The kind is part of each request, so the mail, notification and inbox name it the way the visitor meant it.
+Customers can submit requests through your [website](/en/advanced/business-page). Next to **Quotes** sits a second tab, named after the kind of form on your website: **Quote requests**, **Messages**, **Appointment requests** or **Call-back requests**. Every incoming request lands there. The kind is part of each request, so the mail, notification and list name it the way the visitor meant it.
 
 ### Managing requests
 
@@ -149,7 +151,7 @@ Each request shows:
 - Status
 - Photos when the visitor sent any (see below)
 
-The list can filter to quote requests only, so a stream of messages does not bury the quotes you still owe people.
+The list can filter to **Quotes only**, so a stream of messages does not bury the quotes you still owe people.
 
 ### Request statuses
 
@@ -157,33 +159,33 @@ The list can filter to quote requests only, so a stream of messages does not bur
 |---|---|
 | **New** | Just received, unreviewed |
 | **Reviewed** | You've read the request |
-| **Quoted** | You've responded with a quote (for a message: replied; for an appointment: scheduled; for a call-back: called back) |
+| **Quote sent** | You've responded with a quote (for a message: **Replied**; for an appointment: **Scheduled**; for a call-back: **Called back**) |
 | **Closed** | Request resolved (accepted or declined) |
 
 ### Photos on requests
 
-On quote and message forms, the site builder can switch on **Visitors can send photos along**. A visitor then adds up to three photos with the request, each up to 10 MB, as JPEG, PNG or WebP. An iPhone photo in HEIC or HEIF format gets a clear message telling the visitor to pick another format. The photos show on the request card and open full size from there.
+On quote and message forms on your website, you can switch on **Visitors can send photos along**. A visitor then adds up to three photos with the request, each up to 10 MB, as JPEG, PNG or WebP. An iPhone photo in HEIC or HEIF format gets a clear message telling the visitor to pick another format. The photos show on the request card and open full size from there.
 
 Call-back and appointment forms do not accept photos: they ask about a moment, not describing work.
 
 ### Call-back requests
 
-A call-back request is for visitors who prefer a phone call: they leave their name and phone number, and the form does not require an email address at all. Call-back requests land in their own tab with a **Call back** button as the main action, and **Mark as called back** to complete one. When you turn the request into a quote and send it, the status follows the same lifecycle as any other request.
+A call-back request is for visitors who prefer a phone call: they leave their name and phone number, and the form does not require an email address at all. A call-back request carries a **Call back** button as the main action, and **Mark as called back** to complete one. When you turn the request into a quote and send it, the status follows the same lifecycle as any other request.
 
-Call-back is a per-form choice in the site builder; a workspace-wide default only covers the quote, message and appointment kinds. Handy for clients who do not use email: they ask through your site, you call them back.
+Call-back is a per-form choice on your website; a workspace-wide default only covers the quote, message and appointment kinds. Handy for clients who do not use email: they ask through your site, you call them back.
 
 ### Responding to a request
 
 1. Open the request
-2. Click **Mark as Reviewed** after reading
-3. Click **Create Quote** to generate a quote for this customer
+2. Click **Mark as reviewed** after reading
+3. Click **Create quote** to generate a quote for this customer
 4. The quote is pre-filled with the customer's information
 
 When you create a quote from a request, the customer's own message shows read-only above the notes field, marked as visible only to you. It no longer lands in the notes themselves, because notes print on the quote PDF and appear in the customer portal.
 
 ### AI concept quote from a request
 
-When a customer submits a quote request through your site builder or contact form, MyCompanyDesk can draft a concept quote automatically. The AI reads the request text and your own catalog, then proposes line items it can match.
+When a customer submits a quote request through the form on your website, MyCompanyDesk can draft a concept quote automatically. The AI reads the request text and your own catalog, then proposes line items it can match.
 
 - Matched catalog items keep their catalog price, VAT rate and unit. The AI only suggests quantities.
 - Work that does not fit the catalog becomes a description-only line at price 0, so you can price it yourself.
@@ -194,28 +196,25 @@ This is a best-effort draft, not a finished proposal. Always check the prices an
 
 ### Suggested customer from the request
 
-When you click **Create Quote** on a request, the requester's name and email appear as a suggested customer at the top of the customer field. Click **Use** to create the customer and put them on the quote, or ignore the suggestion and pick an existing customer yourself. The requester only becomes a customer once you confirm the suggestion; a customer whose name merely looks similar is never picked silently.
+When you click **Create quote** on a request, the requester's name and email appear as a suggested customer at the top of the customer field. Click **Use** to create the customer and put them on the quote, or ignore the suggestion and pick an existing customer yourself. The requester only becomes a customer once you confirm the suggestion; a customer whose name merely looks similar is never picked silently.
 
 ## Bulk actions
 
 During a selection a checkbox column appears in the list, and nowhere else; an empty list carries no select button at all.
 
-- **Send** — Send multiple quotes at once
-- **Archive** — Move quotes to archive
-- **Delete** — Remove quotes
+- **Mark as sent**: set quotes you delivered outside MyCompanyDesk to sent. No email goes out.
+- **Archive**: move quotes to the archive
+- **Delete**: move quotes to the trash
+
+In the archive and the trash you restore quotes again.
 
 ## Tips
 
-- Quote request metrics (received, quoted, closed) are shown at the top of the requests page
-- Use the quick-add feature for rapid quote creation
+- The top of the requests page shows how many requests are new and how many there are in total
 - Quotes can link to projects for better tracking
-
 
 ## Dashboard context
 
-Quote follow-ups also appear in the dashboard **Good news** tab:
+The **Quotes** card on the dashboard follows the last 30 days from request to job: how many requests came in, how many quotes you issued (with how many are still open or have gone quiet) and how many became jobs. Below that it lists your largest open quotes, each with a **Follow up** button.
 
-- **Open requests**: how many website quote requests are waiting for an answer, plus the oldest waiting time.
-- **Expiring quotes**: how many quotes expire this week, and how many have already expired without an answer.
-
-Website quote requests come from the site-builder form. See [Domains, Website & Inbox](/en/features/domains-website-inbox) for setting up the form.
+Website quote requests come from the form on your website. See [Domains, Website & Inbox](/en/features/domains-website-inbox) for setting up the form.

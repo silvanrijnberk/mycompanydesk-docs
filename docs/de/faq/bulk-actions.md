@@ -8,15 +8,15 @@ chatbot:
   follow_up: ["How do I delete multiple invoices?", "How do I export selected items?"]
 ---
 Um Massenaktionen durchzuführen:
-1. Gehen Sie zur Listenansicht (Rechnungen, Ausgaben oder Kunden)
-2. Wählen Sie mehrere Einträge über die Kontrollkästchen aus
-3. Die Aktionsleiste erscheint unten auf der Seite am Desktop und unten am Bildschirm auf Mobilgeräten
-4. Wählen Sie die Aktion (z. B. Löschen, Senden, Exportieren)
-5. Bestätigen Sie die Massenaktion
+1. Gehen Sie zur Listenansicht (zum Beispiel Rechnungen, Angebote, Ausgaben oder Kunden)
+2. Wählen Sie Einträge aus: Am Desktop erscheint das Kontrollkästchen, wenn Sie mit der Maus über eine Zeile fahren. Sie können auch im Menü einer Zeile „Mehrere auswählen“ wählen; danach stehen alle Kästchen bereit
+3. Unten auf dem Bildschirm erscheint eine Leiste mit der Anzahl ausgewählter Einträge, „Alle auswählen“ und den verfügbaren Aktionen
+4. Wählen Sie die Aktion, zum Beispiel „Als bezahlt markieren“, „Als versendet markieren“, „Als storniert markieren“, „Archivieren“ oder „Löschen“ (welche Aktionen es gibt, hängt von der Liste und Ihrer Auswahl ab)
+5. Bestätigen Sie die Aktion, wenn Sie danach gefragt werden
 
-## Prüfungen bei der Massenfreigabe
+## Prüfungen, wenn Sie Entwürfe gesammelt als versendet markieren
 
-Wenn Sie Rechnungen massenhaft freigeben oder versenden, führt MyCompanyDesk dieselben MwSt.- und Statusprüfungen durch wie bei einer einzelnen Rechnung. Eine Reverse-Charge-Rechnung kann beispielsweise nicht freigegeben werden, wenn der Kunde keine USt-IdNr. hinterlegt hat, und eine Position mit 0% MwSt. (sources/vat-rates.yaml#countries.NL.zero) muss eine eindeutige Begründung haben (Reverse Charge oder ein anerkannter Nulltarif). Rechnungen, die eine Prüfung nicht bestehen, werden übersprungen; die Ergebnisübersicht zeigt Ihnen, um welche Rechnungen es sich handelt und warum.
+Markieren Sie Rechnungsentwürfe gesammelt als versendet, erhalten sie eine Rechnungsnummer, und MyCompanyDesk führt dieselben Prüfungen durch wie bei einer einzelnen Rechnung. Ihre USt-IdNr., IBAN und Firmenadresse müssen hinterlegt sein, eine Reverse-Charge-Rechnung kann nicht abgeschlossen werden, wenn der Kunde keine USt-IdNr. hat, und eine Position mit 0% MwSt. (sources/vat-rates.yaml#countries.NL.zero) braucht eine eindeutige Grundlage (Reverse Charge oder ein anerkannter Nullsatz-Grund). Besteht eine Rechnung eine Prüfung nicht, wird die gesamte Aktion nicht ausgeführt; die Meldung nennt die Rechnung, damit Sie sie zuerst korrigieren können.
 
 ## Ausgaben massenhaft archivieren
 

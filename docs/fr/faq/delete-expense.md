@@ -1,6 +1,6 @@
 ---
 title: "Supprimer une dépense"
-description: "Pour supprimer une dépense : ouvrez la dépense depuis votre liste de dépenses, dans la barre latérale, faites défiler jusqu'à la section Zone de danger."
+description: "Pour supprimer une dépense : ouvrez-la, cliquez sur Plus en haut et choisissez Supprimer. Elle passe d'abord par les Archives et la Corbeille."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]
@@ -11,11 +11,13 @@ chatbot:
 
 Pour supprimer une dépense :
 1. Ouvrez la dépense depuis votre liste de dépenses
-2. Dans la barre latérale, faites défiler jusqu'à la section « Zone de danger »
-3. Cliquez sur « Supprimer »
+2. Cliquez sur « Plus » en haut (sur votre téléphone, le menu aux trois points)
+3. Choisissez « Supprimer »
 4. Confirmez la suppression
 
-La suppression se fait par étapes. Supprimer une dépense active l'archive d'abord, la supprimer à nouveau depuis les Archives la déplace vers la Corbeille, et la supprimer depuis la Corbeille est définitif. Jusqu'à cette dernière étape, vous pouvez toujours restaurer la dépense depuis la vue Archives ou Corbeille. Attention : sélectionner des dépenses dans la liste et y utiliser l'action groupée Supprimer les supprime définitivement tout de suite.
+La suppression se fait par étapes. Supprimer une dépense active l'archive d'abord, la supprimer à nouveau depuis les Archives la déplace vers la Corbeille. Elle n'est supprimée pour de bon que si vous la sélectionnez dans la Corbeille et choisissez « Supprimer définitivement », ou si vous cliquez sur « Vider la corbeille ». Jusqu'à cette dernière étape, vous pouvez toujours restaurer la dépense depuis la vue Archives ou Corbeille (via Filtres, sous Afficher). Si vous sélectionnez des dépenses dans la liste et choisissez Supprimer, elles passent toutes dans la Corbeille, où vous pouvez encore les restaurer.
+
+Si la dépense tombe dans une période de TVA déjà verrouillée, vous ne pouvez ni l'archiver ni la supprimer. Créez plutôt une correction.
 
 Les dépenses dans la Corbeille ne peuvent pas être modifiées. Restaurez la dépense d'abord si vous devez la modifier.
 

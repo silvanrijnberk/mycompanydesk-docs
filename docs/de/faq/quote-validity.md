@@ -1,6 +1,6 @@
 ---
 title: "Gültigkeit von Angeboten"
-description: "Die Angebotsgültigkeit ist eine einzige Einstellung: gehen Sie zu Einstellungen > Rechnungen und Angebote."
+description: "Die Angebotsgültigkeit ist eine einzige Einstellung: gehen Sie zu Einstellungen › Rechnungen und Angebote."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 Die Angebotsgültigkeit ist eine einzige Einstellung:
-1. Gehen Sie zu Einstellungen → "Rechnungen und Angebote"
+1. Gehen Sie zu Einstellungen › "Rechnungen und Angebote"
 2. Wählen Sie unter "Wie lange bleibt ein Angebot gültig?" 2 Wochen, 1 Monat oder 2 Monate
 3. Änderungen werden automatisch gespeichert
 

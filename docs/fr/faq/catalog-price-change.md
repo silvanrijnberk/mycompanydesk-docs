@@ -1,6 +1,6 @@
 ---
 title: Modifier tous les prix en une fois
-description: "Rendez-vous dans Offre et cliquez sur Prix pour voir ce que vous demandez, ce que vous avez réellement reçu et ce qu'une hausse rapporterait."
+description: "Rendez-vous dans Catalogue et cliquez sur Prix pour voir ce que vous demandez, ce que vous avez réellement reçu et ce qu'une hausse rapporterait."
 last_verified: 2026-09-03
 chatbot:
   triggers:
@@ -17,7 +17,7 @@ chatbot:
     - "Puis-je annuler un changement de prix ?"
 ---
 
-Rendez-vous dans **Offre** et cliquez sur **Prix** pour modifier plusieurs prix en une seule fois. La page affiche ce que vous demandez, ce que vous avez réellement reçu pour votre offre cette année et ce qu'une augmentation rapporterait avec les mêmes ventes.
+Rendez-vous dans **Catalogue** et cliquez sur **Prix** pour modifier plusieurs prix en une seule fois. La page affiche ce que vous demandez, ce que vous avez réellement reçu pour votre offre cette année et ce qu'une augmentation rapporterait avec les mêmes ventes.
 
 ## Comment ça marche
 
@@ -29,19 +29,19 @@ Rendez-vous dans **Offre** et cliquez sur **Prix** pour modifier plusieurs prix 
    - **Montant fixe** : ajoute ou retire le même montant à chaque prix.
    - Utilisez un signe moins pour baisser les prix.
 3. Choisissez l'arrondi :
-   - **Au centime près** conserve le prix décimal normal.
-   - **À l'euro près** arrondit à l'euro entier.
-4. Cliquez sur **Voir les changements** pour ouvrir un aperçu qui liste chaque article avec son ancien et son nouveau prix.
-5. Vérifiez la liste, puis cliquez sur **Modifier les prix** pour appliquer.
+   - **Aux centimes** conserve le prix décimal normal.
+   - **Aux euros entiers** arrondit à l'euro entier.
+4. Cliquez sur **Voir ce qui change** pour ouvrir un aperçu qui liste chaque article avec son ancien et son nouveau prix.
+5. Vérifiez la liste, puis cliquez sur le bouton avec le nombre, par exemple **Ajuster 12 prix**, pour appliquer.
 
 L'aperçu indique aussi quels articles restent inchangés et pourquoi : parce qu'ils n'ont pas de prix (par exemple les articles avec prix sur demande), parce qu'il s'agit d'un lot dont le prix suit celui de ses composants, ou parce que l'arrondi ne modifie pas le prix. Il vous avertit si une promotion en cours cesserait d'être active, car le prix promotionnel ne serait alors plus inférieur au prix normal. Si vous sélectionnez des abonnements, l'aperçu explique aussi que les abonnés en cours gardent leur prix actuel; le nouveau prix ne s'applique qu'à la prochaine inscription.
 
 ## Ce qui change et ce qui ne change pas
 
-- Seuls les prix de votre **Offre** sont mis à jour.
+- Seuls les prix de votre **Catalogue** sont mis à jour.
 - Les factures, devis et contrats existants conservent le prix auquel ils ont été créés.
 - Les abonnements en cours conservent le prix auquel ils ont été souscrits. Pour augmenter aussi les abonnés existants, modifiez leur facture récurrente.
-- Vous pouvez annuler un changement juste après l'avoir appliqué. Une seule annulation rétablit tout le lot en une fois.
+- Juste après l'application, vous pouvez revenir en arrière avec **Annuler** dans le message. Tout le lot est alors rétabli en une fois. Si un prix a été modifié entre-temps, rien n'est rétabli.
 
 ## Indication d'inflation lors de la modification d'un article
 
@@ -53,8 +53,8 @@ L'indication n'apparaît qu'en mode modification et seulement pour les articles 
 
 ## Imprimer une liste de prix
 
-Vous pouvez aussi imprimer votre offre sous forme de liste de prix destinée aux clients. Ouvrez **Offre** et cliquez sur **Liste de prix** pour ouvrir `/aanbod/prijslijst`.
+Vous pouvez aussi imprimer votre offre sous forme de liste de prix destinée aux clients. Aucun bouton n'y mène dans le menu : ouvrez `/aanbod/prijslijst` dans l'application depuis votre navigateur.
 
-La page liste vos articles actifs regroupés sous **Services**, **Produits**, **Forfaits** et **Abonnements**, et les groupes vides sont ignorés. Si votre espace de travail a le module de site, vous obtenez en plus le sélecteur **Uniquement ce qui figure sur votre site web**, pour imprimer exactement la sélection que montre votre constructeur de site. Sans le module de site, les services et les produits s'impriment en un seul groupe sans titre, tandis que les forfaits et les abonnements gardent le leur. Cliquez sur **Imprimer ou enregistrer au format PDF** pour utiliser la boîte de dialogue d'impression de votre navigateur.
+La page liste vos articles actifs regroupés sous **Services**, **Produits**, **Forfaits** et **Abonnements**, et les groupes vides sont ignorés. Si votre espace de travail a le module de site, vous obtenez en plus le sélecteur **Uniquement ce qui figure sur votre site web**, pour imprimer exactement la sélection que montre votre constructeur de site. Sans le module de site, les services et les produits s'impriment en un seul groupe sans titre, tandis que les forfaits et les abonnements gardent le leur. Cliquez sur **Imprimer ou enregistrer en pdf** pour utiliser la boîte de dialogue d'impression de votre navigateur.
 
 Les prix sont calculés avec les mêmes aides que partout ailleurs dans l'application, donc la liste montre les mêmes montants qu'un client verrait en ligne. En bas de page, il est indiqué que tous les prix sont hors TVA et qu'aucun droit ne peut être tiré de cette liste.

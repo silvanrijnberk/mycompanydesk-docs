@@ -1,6 +1,6 @@
 ---
 title: "Dark mode"
-description: "To switch your app theme: go to Settings > Weergave (display), choose Licht (light), Donker (dark), or Vanzelf (automatic, follows your device)."
+description: "To switch your app theme: go to Settings › Display, choose Light, Dark, or Automatic (follows your device)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
@@ -11,22 +11,23 @@ chatbot:
 ## App dark mode
 
 To switch your app theme:
-1. Go to Settings → "Weergave" (display)
-2. Choose Licht (light), Donker (dark), or Vanzelf (automatic, follows your device)
+1. Go to Settings › "Display"
+2. Choose Light, Dark, or Automatic (follows your device)
 3. The change is applied immediately and saved automatically
 
-Tip: You can also use the theme toggle from the navigation menu for a quick switch.
+Tip: For a quick switch, use **Dark mode** or **Light mode** in your account menu in the top bar.
 
 ## Website dark mode
 
-If you have a hosted business website, you can also set a dark mode for your visitors. Open the **Website** area of the app, go to the **Stijl** (style) page, and find the dark-mode control in the **Kleuren** (colours) section.
+If you have a website through MyCompanyDesk, you can make it dark too. Open **Website** in the app, go to the **Stijl** (style) screen in the editor, and find the **Donkere kleuren** (dark colours) section. These website-editor labels are shown in Dutch.
 
-Three modes are available:
+Four options:
 
-- **Off** (default): No dark mode. Your site stays in its light color palette.
-- **Button**: Visitors see a sun/moon toggle in the navigation bar. The default is always light, so visitors who prefer dark must toggle it on. Once chosen, the preference is saved in their browser for the next visit.
-- **System**: The site follows the visitor's OS-level preference automatically. Changes when the visitor flips their system setting.
+- **Uit** (off, the default): your site is always light.
+- **Altijd donker** (always dark): every visitor sees your site in dark.
+- **Knop in menubalk** (button in the menu bar): visitors choose light or dark themselves with a button in the menu bar.
+- **Volgt het toestel** (follows the device): dark for visitors whose phone or computer is set to dark, light otherwise.
 
-When you enable dark mode, a dark palette panel appears so you can pick night-optimized versions of each brand color. Leaving the dark palette empty is fine; the site applies a sensible default inversion that keeps your brand and accent colors intact.
+When you pick anything other than Uit, choose a ready-made set under **Kies een donkere set** (choose a dark set): Bijna zwart, Nachtblauw, Donkergroen, or Warm antraciet. You can also set your own night version of each colour. At the top of the Stijl screen, the **Liever een donkere site?** (prefer a dark site?) card offers **Maak mijn site donker** (make my site dark) as a shortcut.
 
 See [Site Builder](/en/advanced/business-page) for more on styling your website.

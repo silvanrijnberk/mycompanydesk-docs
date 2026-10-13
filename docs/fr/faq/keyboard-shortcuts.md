@@ -10,7 +10,7 @@ chatbot:
 
 L'application propose un petit ensemble de raccourcis clavier :
 • Appuyez sur Cmd+K (Mac) ou Ctrl+K (Windows/Linux) pour ouvrir la fenêtre de recherche : recherchez parmi les clients, factures, dépenses et paramètres, ou accédez à n'importe quelle section
-• Appuyez sur Échap pour fermer une boîte de dialogue ou revenir d'une page de détail à la liste
+• Appuyez sur Échap pour fermer une boîte de dialogue ou un menu
 • Dans l'éditeur de site, Cmd/Ctrl+Z annule et Cmd/Ctrl+Maj+Z (ou Ctrl+Y) rétablit
 • Utilisez Tab et Entrée pour naviguer efficacement dans les formulaires
 

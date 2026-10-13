@@ -12,8 +12,8 @@ chatbot:
 Elke factuurregel kan een eigen korting meekrijgen:
 
 1. Bewerk of maak een factuur
-2. Klik op het tag-knopje bij de regel waar je korting op geeft
-3. In het kleine paneel dat opent, kies je het kortingstype: **percentage** of **vast bedrag**
+2. Klik bij de regel waar je korting op geeft op het knopje met het procentteken (**Korting op deze regel**)
+3. In het kleine paneel dat opent, kies je het kortingstype: **%** (percentage) of **€** (vast bedrag)
 4. Vul de kortingswaarde in en kies **Klaar**
 
 Op de regel staat dan een chip met de korting (bijvoorbeeld -10%), en het regeltotaal past zich aan: het oorspronkelijke bedrag staat doorgestreept, met het verlaagde bedrag eronder.

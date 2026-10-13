@@ -1,34 +1,34 @@
 ---
 title: Einführung
-description: "MyCompanyDesk ist eine All-in-one-Plattform für Buchhaltung und Unternehmensführung für Selbstständige, kleine Firmen und Immobilienverwalter."
+description: "MyCompanyDesk ist die All-in-one-Plattform für Selbstständige: Rechnungen, Ausgaben, Stunden, Website, Geschäfts-E-Mail und USt. an einem Ort."
 ---
 
 # Einführung
 
-MyCompanyDesk ist eine All-in-One-Plattform für Buchhaltung und Geschäftsverwaltung, die für Freiberufler, Kleinunternehmen und Verwalter von Mietobjekten entwickelt wurde. Sie hilft Ihnen, Ihren gesamten Finanzworkflow zu verwalten — von der Rechnungserstellung und Ausgabenverfolgung bis zur USt.-Meldung und Kundenverwaltung.
+MyCompanyDesk ist eine All-in-one-Plattform für Selbstständige und Einzelunternehmer. Sie unterstützt Ihren gesamten Finanzworkflow und mehr: von der Rechnungserstellung und Ausgabenerfassung bis zur USt.-Erklärung, Ihren Kunden, Ihrer Website und Ihrer geschäftlichen E-Mail.
 
 ## Was können Sie mit MyCompanyDesk tun?
 
-- **Rechnungen erstellen und versenden** — Professionelle Rechnungen mit Zahlungslinks, PDF-Generierung und E-Mail-Zustellung
-- **Ausgaben verfolgen** — Ausgaben manuell erfassen oder Belege mit KI-gestützter OCR scannen
-- **Kunden verwalten** — Eine vollständige Kundendatenbank mit Kontaktdaten und Verlauf pflegen
-- **Angebote erstellen** — Angebote erstellen und bei Annahme in Rechnungen umwandeln
-- **Projekte verwalten** — Arbeit in Projekte organisieren, Zeit erfassen und Rentabilität überwachen
-- **Verträge verwalten** — Wiederkehrende Dienstleistungs- oder Mietverträge einrichten
-- **Vermögenswerte verfolgen** — Mietobjekte, Fahrzeuge und Ausstattung verwalten
-- **Abrechnung automatisieren** — Wiederkehrende Rechnungen und Ausgaben einrichten
-- **Berichte anzeigen** — Umsatz, Gewinn, Cashflow, USt. und Kundenanalysen
-- **Zusammenarbeiten** — Teammitglieder einladen, Berechtigungen festlegen und mit Ihrem Steuerberater teilen
+- **Rechnungen erstellen und versenden**: professionelle Rechnungen mit Zahlungslinks, PDF und E-Mail-Versand
+- **Ausgaben erfassen**: Ausgaben manuell erfassen oder Belege mit KI scannen
+- **Kunden verwalten**: eine vollständige Kundendatenbank mit Kontaktdaten und Verlauf
+- **Angebote erstellen**: Angebote erstellen und bei Annahme in Rechnungen umwandeln
+- **Projekte verwalten**: Arbeit in Projekten organisieren, Zeit erfassen und die Rentabilität im Blick behalten
+- **Ihre eigene Website**: eine kostenlose Website auf mycompanydesk.site, mit Office auch auf Ihrer eigenen Domain
+- **Verträge verwalten** (Office): feste Vereinbarungen mit Kunden festhalten und automatisch abrechnen
+- **Abrechnung automatisieren** (Office): wiederkehrende Rechnungen und Ausgaben
+- **Berichte anzeigen** (Office): Umsatz, Gewinn, Cashflow und Kundenanalysen. Ihre USt.-Erklärung vorbereiten können Sie in jedem Tarif
+- **Zusammenarbeiten**: geben Sie Ihrem Buchhalter kostenlos Zugang, und laden Sie mit Office Teammitglieder mit eigenen Berechtigungen ein
 
 ## Oberflächensprache
 
 Sie können die MyCompanyDesk-Benutzeroberfläche auf Niederländisch, Englisch, Deutsch oder Französisch verwenden und die Sprache jederzeit wechseln.
 
-Rechnungen, Angebote und E-Mails können ebenfalls auf Niederländisch, Englisch, Deutsch oder Französisch versendet werden. Die Dokumentensprache wird pro Rechnung festgelegt und ist unabhängig von der Oberflächensprache.
+Rechnungen, Angebote und E-Mails können ebenfalls auf Niederländisch, Englisch, Deutsch oder Französisch versendet werden. Diese Dokumentensprache legen Sie für den ganzen Arbeitsbereich unter **Einstellungen › Rechnungen und Angebote** fest, unabhängig von der Oberflächensprache. Dokumente in einer anderen Sprache als Niederländisch gehören zu Office.
 
 ## Tarife
 
-MyCompanyDesk hat zwei Tarife: Desk und Office. Desk ist kostenlos und bleibt kostenlos. Neue Kunden erhalten 60 Tage Office, ohne Kreditkarte; wer nicht umsteigt, wechselt automatisch zu Desk und behält alle Daten.
+MyCompanyDesk hat zwei Tarife: Desk und Office. Desk ist kostenlos und bleibt kostenlos. Jedes neue Konto erhält 60 Tage Office, ohne Kreditkarte; wer nicht umsteigt, wechselt automatisch zu Desk und behält alle Daten. Zahlen Sie Office jährlich und haben Sie noch nie gezahlt, kostet das erste Jahr 35,88 EUR (2,99 EUR pro Monat).
 
 | Funktion | Desk | Office |
 |---|---|---|
@@ -43,9 +43,9 @@ MyCompanyDesk hat zwei Tarife: Desk und Office. Desk ist kostenlos und bleibt ko
 | Wiederkehrende Rechnungen, Verträge und automatische Rechnungsstellung | - | Ja |
 | Bankverbindungen | - | Bis zu 3 |
 | Eigene Domain, auch für Ihre Website | - | Ja |
-| Vollständige Buchhaltung und USt.-Erklärung einreichen | - | Ja |
+| Vollständige Buchhaltung und USt.-Erklärung digital einreichen | - | Ja |
 | Erweiterte Berichte und Sprachwerkzeuge | - | Ja |
-| API-Zugang, Webhooks, Prioritäts-Support | - | Ja |
+| Prioritäts-Support | - | Ja |
 
 Alle Einzelheiten finden Sie unter [Abonnement & Zahlungen](/de/settings/billing).
 

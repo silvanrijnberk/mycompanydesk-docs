@@ -1,7 +1,7 @@
 ---
 title: "Payment methods"
-description: "To configure payment methods on documents: go to Settings and open Betalen."
-last_verified: 2026-10-01
+description: "To configure payment methods on documents: go to Settings and open Payments, then add your IBAN, PayPal, Mollie or Stripe."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "payment methods"
@@ -22,7 +22,7 @@ chatbot:
 ---
 
 To configure payment methods on documents:
-1. Go to Settings and open "Betalen"
+1. Go to Settings and open "Payments"
 2. Enter your IBAN to offer bank transfer; filling in an IBAN enables it automatically and adds a payment QR code to your invoices
 3. Toggle PayPal on and enter your PayPal email address if you want to offer it
 4. Connect Mollie or Stripe if you want customers to pay online, for example with iDEAL
@@ -35,8 +35,8 @@ The enabled methods appear at the bottom of your invoices.
 You can connect your own Mollie or Stripe account so customers can pay invoices directly online. Funds go straight to your own account. MyCompanyDesk only handles the integration.
 
 To connect a processor:
-1. Go to **Settings → Betalen**
-2. Under **Online betalingen**, click **Verbind Mollie** or **Verbind Stripe**
+1. Go to **Settings › Payments**
+2. Under **Let customers pay with iDEAL**, click **Verbind Mollie** or **Verbind Stripe** (these connection buttons are shown in Dutch)
 3. Follow the OAuth flow to authorize your account
 4. Once connected, sent invoices include a payment link your customers can use. Invoice and reminder emails then lead with a **Pay now** button that takes the customer straight to the payment page; the payment only ever starts in the customer's own browser, so email scanners cannot start one, and the scan-to-pay QR on the invoice PDF uses the same link.
 
@@ -44,7 +44,7 @@ Mollie supports iDEAL, Bancontact, credit card, and bank transfer, ideal for Dut
 
 ## Online payment fees on Desk
 
-On Desk you pay €0.50 incl. VAT per invoice paid online of €5 or more, on top of the costs of Mollie or Stripe. When a customer pays an invoice online through your Mollie or Stripe account, the fee is held back from the payout for each payment. On Office there is never a fee. The app shows the fee next to **Online betalingen** on `/settings/betalen` while your workspace is on Desk.
+On Desk you pay a €0.50 service fee including VAT per online payment of €5 or more, on top of the costs of Mollie or Stripe. When a customer pays an invoice online through your Mollie or Stripe account, the fee is held back from your payout for each payment. Your customer does not pay it; they simply pay the invoice amount. On Office there is no service fee. While your workspace is on Desk, the explanation sits next to **Let customers pay with iDEAL** under Settings › Payments.
 
 To disconnect, click **Loskoppelen** on the relevant card. If there are payments from the last 24 hours, a warning appears reminding you that pending webhooks may still arrive and that refunds for those payments must be handled manually. After disconnecting, customers can no longer pay via that processor.
 

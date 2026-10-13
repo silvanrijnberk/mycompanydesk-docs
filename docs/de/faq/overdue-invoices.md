@@ -1,7 +1,7 @@
 ---
 title: "Überfällige Rechnungen"
 description: "Überfällige Rechnungen verwalten: Gehen Sie zu Rechnungen, filtern Sie nach Status Überfällig, sortieren Sie nach Fälligkeitsdatum und mahnen Sie."
-last_verified: 2026-05-09
+last_verified: 2026-10-13
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 
 So sehen und verwalten Sie überfällige Rechnungen:
 1. Gehen Sie zu Rechnungen
-2. Filtern Sie nach Status „Überfällig“
-3. Sortieren Sie nach Fälligkeitsdatum
+2. Ganz oben in der Liste steht die Gruppe **Überfällig**. Möchten Sie nur diese Rechnungen sehen, wählen Sie unter **Filter** den Status „Überfällig“
+3. Klicken Sie auf die Spalte Fälligkeitsdatum, um danach zu sortieren
 4. Öffnen Sie eine Rechnung, um eine Erinnerung zu senden oder Details anzusehen
 
-Das Dashboard führt Sie ebenfalls zu überfälligen Summen und den zugehörigen Listen zurückführen.
+Auch der Tab **Wartet auf Zahlung** zeigt auf einen Blick, wie viele Rechnungen überfällig sind, und das Dashboard führt Sie zu überfälligen Rechnungen zurück.

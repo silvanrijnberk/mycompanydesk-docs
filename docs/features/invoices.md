@@ -1,58 +1,56 @@
 ---
 title: Facturen
-description: "Create professional invoices, send them with payment links, and track them from draft through outstanding to paid, with filters on every status."
+description: "Maak nette facturen, verstuur ze met een betaallink en volg ze van concept tot betaald, met een filter op elke status."
 ---
 
-# Invoices
+# Facturen
 
-Invoices are at the core of MyCompanyDesk. Create professional invoices, send them to customers with payment links, and track payments through to completion.
+Facturen vormen de kern van MyCompanyDesk. Je maakt nette facturen, stuurt ze met een betaallink naar je klant en volgt de betaling tot het geld binnen is. Facturen maken en versturen kan onbeperkt, op elk abonnement, ook op Desk.
 
-## Settings for invoices and quotes
+## Instellingen voor facturen en offertes
 
-Settings → **Facturen en offertes** (Invoices and quotes) holds defaults that apply to every new invoice and quote.
+Onder **Instellingen › Facturen en offertes** staan de standaarden voor elke nieuwe factuur en offerte.
 
-### Payment terms
+### Betaaltermijn
 
-Set the default number of days a customer gets to pay. Choices range from **Direct** to a custom number of days. This value appears on every new invoice, but you can override it per invoice.
+Stel in hoeveel dagen een klant krijgt om te betalen: **14 dagen** (dit kiezen de meeste mensen), **30 dagen**, **60 dagen** of een eigen aantal dagen (0 heet **Direct**). Deze termijn komt op elke nieuwe factuur, maar per factuur kun je ervan afwijken.
 
-### Reminders
+### Herinneringen
 
-Turn on automatic reminders and MyCompanyDesk sends a friendly reminder the day after an invoice becomes overdue, then every week until it is paid.
+Zet **Te laat? Automatisch een herinnering sturen** aan, dan stuurt MyCompanyDesk een vriendelijke herinnering zodra een factuur drie dagen over de vervaldatum is, en daarna elke week opnieuw tot er betaald is. Automatische herinneringen horen bij Office. Zelf een herinnering sturen vanaf de factuur kan op elk abonnement.
 
-### Quote validity
+### Geldigheid van offertes
 
-Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 months**.
+Kies hoe lang een offerte standaard geldig blijft: **2 weken**, **1 maand** of **2 maanden**. Elke nieuwe offerte krijgt automatisch een geldig-tot-datum op basis van deze instelling, zodat een offerte nooit zonder verloopdatum de deur uit gaat.
 
-Elke nieuwe offerte krijgt automatisch een geldig-tot-datum op basis van deze instelling, zodat een offerte nooit zonder verloopdatum de deur uit gaat.
+### Getekende offerte automatisch factureren
 
-### Auto-invoice signed quotes
-
-When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
+Staat **Getekend? Automatisch een conceptfactuur klaarzetten** aan, dan wordt een getekende offerte vanzelf een conceptfactuur. Jij kijkt hem na en bepaalt zelf wanneer hij verstuurd wordt. Deze automatisering hoort bij Office.
 
 ### Voorwaarden standaard meesturen
 
 Houd je jouw algemene voorwaarden in Documenten bij, dan kan elke verzending ze als PDF meesturen. Onder **Algemene voorwaarden** op dezelfde instellingenpagina stel je apart per soort in of het vinkje bij verzending standaard aan staat: offertes en facturen hebben elk een eigen schakelaar. Standaard gaan de voorwaarden mee bij offertes en niet bij facturen. Het vinkje zelf kun je bij elke verzending aanpassen.
 
-### Invoice numbering
+### Factuurnummering
 
-MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
+MyCompanyDesk nummert facturen automatisch, netjes op volgorde zoals de Belastingdienst het wil, tenzij je onder **Nummering** zelf een voorvoegsel of startnummer instelt.
 
-| Field | Dutch label | What it does |
-|---|---|---|
-| **Prefix** | Voorvoegsel | Text in front of the year on every new invoice, for example `INV-` or `2026_`. Sent invoices keep their existing number. |
-| **Next invoice number** | Eerstvolgende factuurnummer | The next number to use. You can only move forward, never back, because lowering the number would create duplicates. |
+| Veld | Wat het doet |
+|---|---|
+| **Voorvoegsel** | Tekst vóór het jaartal op elke nieuwe factuur, bijvoorbeeld `F-` of `FAC-`. Al verstuurde facturen houden hun nummer. |
+| **Eerstvolgende factuurnummer** | Het nummer dat als volgende wordt gebruikt. Alleen vooruit te zetten, nooit terug, want terugzetten zou dubbele nummers geven. |
 
-The preview under the fields shows what your next invoice number will look like. Already sent invoices are never renumbered when you change these settings.
+Onder de velden zie je hoe je volgende factuurnummer eruitziet. Al verstuurde facturen krijgen nooit een ander nummer als je deze instellingen wijzigt.
 
-### Default document language
+### Taal van je documenten
 
-Choose the language used for invoices, quotes and customer emails by default. The default option follows your workspace language; you can change the language per document.
+Bij **In welke taal maak je je documenten?** kies je de taal van je facturen, offertes en e-mails aan klanten. Nederlands is de standaard. Facturen in andere talen horen bij Office. Een factuur die definitief is gemaakt, houdt de taal waarin hij gemaakt is.
 
-### Peppol e-invoicing
+### Peppol e-facturatie
 
-A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol). When you switch it on, your company details are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity verification, receiving, and missing-field checks.
+Met een schakelaar op dezelfde instellingenpagina zet je [Peppol e-facturatie](/features/peppol) aan (Office). Je bedrijfsgegevens worden dan aangemeld bij het Peppol-toegangspunt en je kunt naast e-mail ook e-facturen versturen en ontvangen. Op de Peppol-pagina lees je over de identiteitscontrole, het ontvangen en ontbrekende gegevens.
 
-## Overview
+## Overzicht
 
 De facturenpagina zet je facturen onder tabs: **Alle** ("eerst wat jij moet doen"), **Nog versturen** en **Wacht op betaling**. De tabs dragen live aantallen, de tabbladen met betalingen tonen er ook hun totaalbedrag in euro's bij, en op de wacht-tab staat een rode melding met het aantal te late facturen.
 
@@ -65,268 +63,247 @@ In de lijsten staan de facturen gegroepeerd op waar ze staan, zodat het werk dat
 
 Elke groepskop draagt het aantal van de hele groep en, waar het van toepassing is, het groepstotaal. Met Verberg klap je een groep dicht: de rijen tellen dan niet meer mee voor de paginering, de kop blijft gewoon staan. Een maand die in de toekomst dateert (bijna altijd een typfout in de datum) klapt nooit in: die staat open met zijn eigen kop, zodat de fout zichtbaar blijft.
 
-Naast de data draagt elke rij een kolom **Stand** die de toestand in gewone woorden zegt: "Concept", "Nog versturen", "vervaldatum 12 mei voorbij", "vervalt over 3 dagen", "klant zegt: betaald". Met het filter **Status** in het filterpaneel zet je de lijst nog steeds op één enkele status, inclusief concept, te laat, betaald en geannuleerd, en websiteverkopen hebben hun eigen overzicht van de lijst.
+Naast de data draagt elke rij een kolom **Stand** die de toestand in gewone woorden zegt: "Concept", "Nog versturen", "vervaldatum 12 mei voorbij", "vervalt over 3 dagen", "klant zegt: betaald". Met het filter **Status** in het filterpaneel zet je de lijst nog steeds op één enkele status, inclusief concept, te laat, betaald en geannuleerd. Verkoop je via je website, dan verschijnt naast **Facturen** een tab **Websiteverkopen** met een eigen lijst van die verkopen.
 
-## Creating an invoice
+## Een factuur maken
 
-### Full form
+### Het volledige formulier
 
-1. Go to **Invoices > New Invoice**
-2. Select or create a **customer**
-3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from your workspace tax settings (Geldzaken → Belasting). If a customer has reverse charge enabled, the line automatically uses 0%.
-4. Set the **invoice date** and **due date**
-5. Add optional **notes** or **internal remarks**
-6. Click **Save** to create a draft
+1. Ga naar **Facturen** en klik op **Nieuwe factuur**
+2. Kies of maak een **klant**
+3. Voeg **regels** toe met omschrijving, aantal, prijs per stuk en btw-tarief. Het standaard btw-tarief voor nieuwe regels stel je in onder **Instellingen › Btw**. Staat bij een klant btw verlegd aan, dan krijgt de regel vanzelf 0%.
+4. Stel de **factuurdatum** en de **vervaldatum** in
+5. Voeg eventueel **notities** of **interne opmerkingen** toe
+6. Klik op **Opslaan** om een concept te maken
 
-### Quick Add
+Op de telefoon opent een nieuwe factuur geen lang formulier maar een korte stappenflow: eerst de klant, dan de regels, dan een controlestap voor opslaan en versturen.
 
-For faster creation:
+### Vanuit een sjabloon
 
-1. Click the quick-add button on the invoices list
-2. Select a customer
-3. Add items or choose a template
-4. Save (and optionally send immediately)
+Klik in het factuurformulier op **Vanuit sjabloon** (die knop zie je alleen als je factuursjablonen hebt). Kies een sjabloon en het formulier vult zich ter plekke met de regels, de klant en de andere opgeslagen gegevens. Pas aan wat nodig is, sla op en verstuur. Een factuur bewaar je als sjabloon met **Opslaan als sjabloon** in het menu met meer acties op de factuur.
 
-Op de telefoon start dezelfde knop geen lang formulier maar een korte stappenflow: eerst de klant, dan de regels, dan een controlestap voor opslaan en versturen.
+Een sjabloon bewaart de volledige regel: omschrijving, aantal, eenheid, prijs per stuk, btw-tarief, korting en of de regel vrijgesteld is van btw. De koppeling met een item uit je aanbod bewaart hij bewust niet: dat item kan later verwijderd worden, en dan zou het sjabloon niet meer werken.
 
-### From a template
+## Prijzen inclusief btw
 
-You can start a new invoice from a saved template in two places:
+De schakelaar **Bedragen incl. btw** op het formulier verandert wat je typt. Staat hij aan, dan is een regelprijs wat de klant betaalt, btw inbegrepen, en wordt de btw uit de prijs gehaald in plaats van erbovenop gezet. De schakelaar staat op facturen, offertes en terugkerende facturen, elk document onthoudt zijn eigen keuze, en de hint onder de schakelaar zegt hoe je nu werkt.
 
-- In the **full invoice form**, click **Start from template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send.
-- From the **quick-add drawer**, click **Use Template**, select a saved template, and all line items are pre-filled. Adjust as needed, then save and send.
+- De prijs die je typte blijft staan: wijzig je daarna het btw-tarief op de regel, dan blijft het bedrag incl. btw gelijk en past het bedrag excl. btw zich eronder aan.
+- Een korting in euro's op een regel gaat af van wat de klant betaalt. Een kortingspercentage werkt zoals op elke andere regel.
+- Bij prijzen incl. btw tonen de PDF en de factuur- en offertepagina wat de klant betaalt: de prijs per stuk en het regelbedrag staan er inclusief btw (€ 38,00, niet € 31,40), de prijs excl. btw staat klein onder de prijs per stuk, en het btw-blok noemt de grondslag van elk tarief ("Btw 21% over € 35,54"). Pakketonderdelen staan er ook inclusief btw, zodat ze optellen tot de pakketprijs. De totalen van het document veranderen niet, en de e-factuur draagt dezelfde cijfers.
+- Werk je zonder de schakelaar terwijl je prijzen typte die de klant betaalt? Bij een particuliere klant vraagt het formulier of de prijzen die je typte incl. btw zijn. Met één klik zet je het document om zonder dat je bedragen veranderen. Begin je een nieuw document voor een particuliere klant, dan gaat de schakelaar vanzelf aan (de prijzen die de app uit je aanbod invult houden hun regeltotaal), en onder de schakelaar staat dan "Particuliere klant: je typt nu prijzen incl. btw.", met een knop **Uitzetten** die prijzen excl. btw terugzet.
 
-Saved templates keep the full line: description, quantity, unit, unit price, VAT rate, discount, and whether the line is VAT exempt. They deliberately do not keep the link to a catalog item, because catalog items can be deleted later and the template would then fail when used.
+## Een factuur aan een bezitting koppelen
 
-## Prices including VAT
+Hoort de omzet bij een verhuurpand, voertuig of andere bezitting, kies die bezitting dan in het factuurformulier. De factuur staat dan op de pagina van die bezitting en telt mee in de totale omzet ervan. Dat werkt voor facturen uit een huurcontract en voor een directe koppeling, zoals een afrekening servicekosten, een eenmalige vergoeding of een verkoopfactuur. [Bezittingen](/features/objects) zijn een onderdeel van Office.
 
-The **Amounts incl. VAT** switch on the document form changes what you type. With it on, a line price is the price the customer pays, VAT included, and the VAT is taken back out of the price instead of added on top. The switch exists on invoices, quotes and recurring invoices, and each document remembers its own choice; the hint under the switch says which way you are working.
+## De factuurpagina
 
-- The price you typed is what stays: change the VAT rate on the line afterwards and the amount including VAT remains in place, with the amount excluding VAT adjusting underneath it.
-- A discount in euros on a line discounts what the customer pays. A percentage discount works the same as on any other line.
-- On prices including VAT, the PDF and the invoice and quote detail show what the customer pays: the unit price and the line amount print including VAT (€ 38,00, not € 31,40), the price excluding VAT sits underneath the unit price in small print, and the VAT block names the base of every rate ("VAT 21% on € 35,54"). Package parts print including VAT too, so they add up to the package price. The totals of the document stay unchanged, and the e-invoice carries the same figures.
-- Working without the switch while the prices you typed are the paid kind? When the customer is a private customer, the form asks whether the prices you typed include VAT. One click switches the document over without touching your amounts. Starting a new document for a private customer turns the switch on by itself (the prices the app fills in from your offering keep their line totals), and a notice under the switch then says "Private customer: you are now typing prices including VAT.", with a **Turn off** button that puts prices excluding VAT back.
+Elke factuur heeft een eigen pagina met:
 
-## Attributing an invoice to an object
+- De gegevens van de klant
+- De regels met subtotalen
+- De btw-specificatie
+- Het totaalbedrag
+- De status en het verloop
+- De betaallink (als de factuur verstuurd is)
 
-If the revenue belongs to a rental property, vehicle or other asset, select the object in the invoice form. The invoice is then listed on that object's detail page and included in its total revenue. This works both for invoices generated from a rental contract and for direct attribution, such as service-charge settlements, one-off charges and sale invoices.
+## Voorbeeld van het document
 
-## Invoice details
+Elke opgeslagen factuur heeft op zijn pagina een live PDF-voorbeeld. Je ziet de factuur precies zoals je klant hem ziet: opmaak, regels, totalen, huisstijl en logo.
 
-Each invoice has a detail page showing:
+In de kop van het voorbeeld staan de knoppen **PDF downloaden**, **Afdrukken** en **Ontwerp aanpassen**. Met **Ontwerp aanpassen** ga je direct naar Factuurontwerp en pas je de uitstraling van al je facturen, offertes en herinneringen aan. Ben je klaar, dan kom je terug bij de factuur waar je vandaan kwam. Op de telefoon staat dezelfde actie in het menu met meer acties, zodat de kop van het voorbeeld rustig blijft.
 
-- Customer information
-- Line items with subtotals
-- VAT breakdown
-- Total amount
-- Status and history
-- Payment link (if sent)
+## Acties
 
-## Document preview
+De hoofdknop op de factuurpagina volgt de stap waarin de factuur staat:
 
-Every saved invoice has a live PDF preview on its detail page. The preview shows the invoice exactly as your customer will see it: layout, line items, totals, branding and logo.
+- **Definitief maken**: bij een concept. De factuur krijgt dan zijn vaste nummer.
+- **Versturen**: bij een definitieve factuur die nog niet bij de klant is.
+- **Markeer als betaald**: bij een verstuurde factuur die op betaling wacht, en als de klant zegt dat hij betaald heeft, zodat je dat bevestigt in plaats van de factuur opnieuw te sturen.
+- **Verstuur herinnering**: bij een te late factuur. **Markeer als betaald** staat dan in het menu met meer acties.
+- **Dupliceren**: bij een betaalde of geannuleerde factuur, als tweede knop, zodat je hem snel opnieuw maakt.
 
-The preview header has a **Download PDF** button, a **Print** button, and a **Change design** button. Click **Change design** to jump straight to the invoice design settings and adjust the look of all your invoices, quotes and reminders. When you are done, you return to the invoice you came from. On mobile the same action lives in the page's overflow menu so the preview header stays uncluttered.
+Andere acties staan, afhankelijk van de status, in het menu met meer acties naast de hoofdknop: **Dupliceren**, **Elke maand herhalen** (maakt van de factuur een terugkerende factuur), de mail opnieuw versturen, **Verstuur herinnering**, **Versturen naar boekhouder**, **Opslaan als sjabloon** en de factuur annuleren. Op de telefoon staan ook het voorbeeld, **PDF downloaden** en **Ontwerp aanpassen** in dat menu.
 
-## Actions
+### Versturen
 
-The top action on the invoice detail page depends on the invoice status:
+Verstuur de factuur per e-mail naar je klant. De e-mail bevat:
 
-- **Send** - Available for draft, sent, and overdue invoices. This is the primary next step when the invoice still needs to reach the customer.
-- **Duplicate** - Shown for cancelled invoices so you can recreate them quickly.
-- **Mark as paid** - Shown when a customer reports a payment, letting you confirm it instead of re-sending the invoice.
+- Een bericht dat je kunt aanpassen (op basis van je e-mailsjabloon)
+- De factuur als PDF-bijlage
+- Een betaallink om online te betalen
 
-Additional actions live in the overflow menu next to the top action:
+Voor het versturen laat het e-mailvoorbeeld het bericht zien precies zoals je klant het krijgt. Onder **Opnemen in e-mail** staan schakelaars voor de **Bekijk-knop (online link)**, de **Download-knop**, de **PDF-bijlage** en **Factuurregels opnemen**. Wat je aanzet zie je meteen in het voorbeeld, dus wat je ziet is wat je klant krijgt. Bericht elke keer weer bijgeschaafd? Vink in hetzelfde venster **Gebruik deze tekst voortaan voor facturen** aan, dan begint elke volgende factuurmail vanaf die versie. Zie [E-mailsjablonen](/faq/email-template).
 
-- **Download PDF** - Download the invoice as a professionally formatted PDF document with your company logo, branding colors, and all invoice details.
-- **Cancel** - Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
-- **Duplicate** - Create a copy of an existing invoice, useful for recurring billing to the same customer.
-- **Send reminder** - Send a payment reminder for overdue invoices.
+Heeft je werkruimte algemene voorwaarden in Documenten, dan toont het e-mailvoorbeeld ook de schakelaar **Algemene voorwaarden meesturen**. Of die bij het openen aan staat, volgt de standaard die je onder [Voorwaarden standaard meesturen](#voorwaarden-standaard-meesturen) voor dit soort document hebt ingesteld (uit het hoofd: aan bij offertes, uit bij facturen). Staat hij aan, dan gaat de actuele voorwaarden-PDF als bijlage mee en wordt de verzending vastgelegd als het moment van terhandstelling op het voorwaardendocument.
 
-### Send
+### Versturen als Peppol-e-factuur
 
-Send the invoice to your customer via email. The email includes:
+Zit je werkruimte op Office en staat [Peppol e-facturatie](/features/peppol) aan, dan biedt het verzendvenster ook **E-factuur (Peppol)**. De factuur gaat dan digitaal naar het boekhoudpakket van je klant in plaats van per e-mail. Per factuur kies je welk kanaal je gebruikt.
 
-- A customizable message (based on your email template)
-- The invoice PDF as an attachment
-- A payment link for online payment
+### PDF downloaden
 
-Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Bericht elke keer weer bijgeschaafd? Vink in hetzelfde venster **Gebruik deze tekst voortaan voor facturen** aan, dan begint elke volgende factuurmail vanaf die versie. Zie [E-mailsjablonen](/faq/email-template).
-
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. Of het vinkje start staat bij de standaard die je onder [Voorwaarden standaard meesturen](#voorwaarden-standaard-meesturen) voor dit soort document hebt ingesteld (uit het hoofd: aan bij offertes, uit bij facturen). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
-
-### Send as Peppol e-invoice
-
-If your workspace is on the Office plan and has [Peppol e-invoicing](/en/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's accounting software instead of sending it by email. You choose per invoice which channel to use.
-
-### Download PDF
-
-Download the invoice as a professionally formatted PDF document. The PDF includes your company logo, branding colors, and all invoice details.
+Download de factuur als net opgemaakte PDF met je logo, je huisstijlkleuren en alle factuurgegevens.
 
 Is een factuur langer dan één pagina, dan breekt het PDF hem netjes af: de totalen blijven bij de laatste regels staan, onder een strookje dat meldt dat de factuur verdergaat, en het betaalblok krijgt daarna een blad voor zichzelf. Geen vervolgpagina opent met een lege tabel of een herhaalde kopie van de cijfers.
 
-### Mark as paid
+### Markeer als betaald
 
-Manually confirm payment when a customer pays via bank transfer or other offline method.
+Bevestig zelf een betaling als de klant per overboeking of op een andere manier buiten de app betaalt.
 
-### Cancel
+### Annuleren
 
-Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
+Annuleer een factuur die niet meer betaald hoeft te worden. Geannuleerde facturen blijven in je administratie staan, zodat alles controleerbaar blijft.
 
-### Duplicate
+### Dupliceren
 
-Create a copy of an existing invoice, useful for recurring billing to the same customer.
+Maak een kopie van een bestaande factuur, handig als je dezelfde klant opnieuw factureert.
 
-Credit notes cannot be duplicated. A duplicate would not reference any invoice and would still count as negative revenue in the VAT return, so create a new correction from the invoice you want to correct instead.
+Een creditnota kun je niet dupliceren. Het duplicaat zou naar geen enkele factuur verwijzen en toch als negatieve omzet in je btw-aangifte meetellen. Maak daarom een nieuwe correctie met **Creditnota maken** op de factuur die je wilt corrigeren.
 
-### Send reminder
+### Herinnering sturen
 
-Send a payment reminder for overdue invoices. If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
+Stuur een betalingsherinnering voor een te late factuur. Dat kan op elk abonnement; alleen de automatische herinneringen horen bij Office. Heb je online betalen aan staan, dan geeft de herinneringsmail de klant dezelfde betaalmogelijkheden als de oorspronkelijke factuur: een knop **Bekijk & betaal**, een knop **Betaling bevestigen** en een QR-code om te scannen en betalen op de PDF.
 
-## Bulk actions
+## Bulkacties
 
-Select multiple invoices from the list to perform actions in bulk. A checkbox column appears in the list while the selection is running, and nowhere else; an empty list carries no select button.
+Selecteer meerdere facturen in de lijst om ze in één keer te bewerken. Tijdens een selectie verschijnt er een vinkjeskolom in de lijst, anders nergens; een lege lijst heeft helemaal geen selecteerknop.
 
-- **Mark as sent** - Mark multiple draft invoices as sent at once
-- **Mark as paid** - Record payment for multiple invoices
-- **Archive** - Move invoices to the archive
-- **Delete** - Permanently remove invoices
+- **Markeer als betaald**: leg voor meerdere facturen tegelijk een betaling vast
+- **Markeer als verzonden**: zet facturen die je buiten MyCompanyDesk hebt bezorgd op verzonden. Dit verandert alleen de status en geeft de facturen hun vaste nummer; er gaat geen mail uit.
+- **Markeer als geannuleerd**: annuleer meerdere facturen tegelijk
+- **Archiveren**: verplaats facturen naar het archief
+- **Verwijderen**: verplaats facturen naar de prullenbak
 
-Permanently deleting an invoice (single delete, bulk delete, empty trash, or delete all) releases any attached expenses. They return to the uninvoiced list and can be added to another invoice.
+In het archief en de prullenbak zet je facturen weer terug, en vanuit de prullenbak verwijder je ze definitief.
 
-Bulk finalizing runs the same VAT and status checks as sending a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
+Verwijder je een factuur definitief (los, in bulk, door de prullenbak te legen of alles te verwijderen), dan komen de gekoppelde uitgaven weer vrij. Ze staan dan weer bij de nog niet gefactureerde uitgaven en kunnen op een andere factuur.
 
-If a bulk action is refused because one or more selected rows fall inside a locked VAT period, the error message names the exact period and tells you what to do next. A filed and locked period can only be reopened via a supplementary VAT return. A bare lock (the period's filing deadline has passed but no return was filed) can be unlocked temporarily from the VAT page. Remove rows that fall in that period from your selection, or use the matching correction route, then try again.
+Facturen in bulk op verzonden zetten doorloopt dezelfde btw- en statuscontroles als een losse factuur definitief maken. Facturen die een controle niet halen worden overgeslagen, en het resultaatscherm zegt waarom.
 
-## Payment links
+Weigert de app een bulkactie omdat een of meer geselecteerde rijen in een vergrendelde btw-periode vallen, dan noemt de foutmelding precies die periode en zegt wat je kunt doen. Een ingediende en vergrendelde periode gaat alleen weer open via een suppletie. Een kale vergrendeling (de aangiftetermijn is voorbij maar er is geen aangifte gedaan) kun je tijdelijk opheffen op de btw-pagina. Haal de rijen uit die periode uit je selectie, of gebruik de bijpassende correctieroute, en probeer het opnieuw.
 
-When you send an invoice, a unique payment link is generated. Your customer can:
+## Betaallinks
 
-1. Click the link in the email
-2. View the invoice in the **customer portal**
-3. Pay directly online using your connected Mollie or Stripe account
+Verstuur je een factuur, dan maakt MyCompanyDesk een eigen betaallink. Je klant kan:
 
-Met Mollie of Stripe gekoppeld begint de mail met een **Betaal nu**-knop die rechtstreeks naar de betaalpagina gaat, met **Bekijk factuur** ernaast voor wie eerst wil kijken. De betaling start alleen in de browser van de klant, dus mailscanners maken er geen aan. Meer over dit alles staat bij [het klantportaal](/advanced/customer-portal#betaling).
+1. Op de link in de e-mail klikken
+2. De factuur bekijken in het **klantportaal**
+3. Direct online betalen via jouw gekoppelde Mollie- of Stripe-account
 
-Payment is automatically recorded and the invoice status updates to **Paid**.
+Met Mollie of Stripe gekoppeld begint de mail met een **Betaal nu**-knop die rechtstreeks naar de betaalpagina gaat, met **Bekijk factuur** ernaast voor wie eerst wil kijken. De betaling start alleen in de browser van de klant, dus mailscanners maken er geen aan. Meer hierover staat bij [het klantportaal](/advanced/customer-portal#betaling).
 
-If an invoice is canceled after it was sent, the payment link stops working. If a customer clicks the link in the old email or PDF, they see a message that the invoice was canceled and can no longer be paid online.
+De betaling wordt vanzelf vastgelegd en de factuur gaat op **Betaald**.
 
-## Online payments
+Annuleer je een factuur nadat hij verstuurd is, dan werkt de betaallink niet meer. Klikt een klant op de link in de oude mail of PDF, dan ziet hij dat de factuur geannuleerd is en niet meer online betaald kan worden.
 
-Enable online invoice payments by connecting your own Mollie or Stripe account:
+## Online betalen
 
-1. Go to **Money → Payments** in your workspace sidebar
-2. Under **Online betalingen**, connect your processor of choice
-3. Mollie supports iDEAL, Bancontact, credit card, and bank transfer
-4. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit
+Laat klanten je facturen online betalen door je eigen Mollie- of Stripe-account te koppelen:
 
-Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account. Funds go directly to you. MyCompanyDesk does not handle or hold your payments.
+1. Ga naar **Instellingen › Betalen**
+2. Koppel bij **Klanten laten betalen met iDEAL** Mollie of Stripe
+3. Je klant ziet de betaalmethodes die in jouw eigen Mollie- of Stripe-account aan staan, zoals iDEAL, creditcard of Bancontact
 
-## Payment processor badge
+Is de koppeling gemaakt, dan krijgt elke factuur die je verstuurt een betaallink. Je klanten betalen via jouw eigen account bij de betaalprovider en het geld komt direct bij jou. MyCompanyDesk komt niet aan je geld en houdt het ook niet vast.
 
-When an invoice is fully paid, the payment section header shows a badge identifying which processor the payment came through: "Paid via Mollie" or "Paid via Stripe". The dominant processor is displayed when multiple payment methods were used. This lets you see at a glance where the money landed without scrolling through the payment history.
+Op dezelfde pagina vul je je IBAN in voor overboekingen (de QR-code om te scannen en betalen op de PDF gebruikt die) en, met **Klanten mogen ook via PayPal betalen**, het e-mailadres van je PayPal-account.
 
-## Payment refunds
+## Herkomst van de betaling
 
-Online payments made via Mollie or Stripe can be refunded directly from MyCompanyDesk. When you refund a payment:
+Is een factuur volledig betaald, dan staat er in de kop van het betaalblok een label met de betaalprovider waar het geld via binnenkwam: "Betaald via Mollie" of "Betaald via Stripe". Bij meerdere betaalmethodes zie je de provider waar het meeste via binnenkwam. Zo zie je in één oogopslag waar het geld terechtkwam, zonder door de betaalgeschiedenis te scrollen.
 
-- The full amount is returned to your customer through the same payment provider
-- The refund is processed immediately by Mollie or Stripe
-- The payment is marked as refunded in your records
+## Betalingen terugbetalen
 
-Partial refunds initiated at Mollie or Stripe (for example, when you refund only part of the amount there) now appear in the payment list with the refund date and the remaining booked amount.
+Online betalingen via Mollie of Stripe betaal je rechtstreeks vanuit MyCompanyDesk terug. Betaal je een betaling terug, dan:
 
-Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund. When you void a payment, the invoice status is restored to the state that matches the invoice history. If the invoice had already been emailed to the customer, it returns to **Sent**; if it had never been sent, it returns to **To send**. The original sending history is preserved.
+- Gaat het volledige bedrag via dezelfde betaalprovider terug naar je klant
+- Verwerkt Mollie of Stripe de terugbetaling meteen
+- Staat de betaling in je administratie als terugbetaald
 
-To refund a payment:
+Een gedeeltelijke terugbetaling die je bij Mollie of Stripe zelf doet (bijvoorbeeld als je daar maar een deel van het bedrag terugstort), staat in de betalingslijst met de datum van de terugbetaling en het bedrag dat geboekt blijft.
 
-1. Open the invoice detail page
-2. Locate the payment in the payment list
-3. Click the **refund** button (available for Mollie and Stripe payments only)
-4. Add an optional reason
-5. Confirm the refund
+Betalingen buiten de app om (overboeking, contant) maak je ongedaan zonder terugbetaling via de provider: de betaling wordt als vervallen gemarkeerd. De factuur krijgt dan weer de status die bij zijn verloop past. Was de factuur al naar de klant gemaild, dan gaat hij terug naar **Verzonden**; was hij nooit verstuurd, dan terug naar **Nog versturen**. Het oorspronkelijke verzendverloop blijft bewaard.
 
-## Document types
+Zo betaal je een betaling terug:
 
-The invoice module supports multiple document types:
+1. Open de factuurpagina
+2. Zoek de betaling in de betalingslijst
+3. Klik op **Terugbetalen** (alleen bij betalingen via Mollie en Stripe)
+4. Vul eventueel een reden in
+5. Bevestig de terugbetaling
 
-- **Invoice** - Standard billing document
-- **Credit note** - Adjustment for refunds or corrections
-- **Reminder** - Payment reminder for overdue invoices
+## Soorten documenten
 
-## Filtering and search
+Onder facturen vallen meerdere soorten documenten:
 
-Use the filter bar to narrow down your invoices:
+- **Factuur**: het gewone document om te factureren
+- **Creditnota**: een correctie, bijvoorbeeld bij een terugbetaling
+- **Herinnering**: een betalingsherinnering voor een te late factuur
 
-- **Status** - Draft, Sent, Overdue, Paid, Cancelled
-- **Customer** - Filter by specific customer
-- **Project** - Filter by linked project
-- **Date range** - Filter by invoice or due date
-- **Search**: Search by invoice number, customer name, reference, or notes
-- **Deep links**: Notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
+## Filteren en zoeken
 
-## Receivables ageing card
+Met het filterpaneel en het zoekveld maak je de lijst kleiner:
 
-The **Outstanding** tab shows a receivables ageing card that groups open invoices by how many days they are past their due date. The amounts shown are the remaining collectible balance: the invoice total minus posted payments, with any credit notes already issued against the invoice taken into account.
+- **Status**: nog versturen, concept, wacht op betaling, te laat, klant zegt: betaald, betaald of geannuleerd
+- **Periode**: filter op factuurdatum
+- **Weergave**: actieve facturen, het archief of de prullenbak
+- **Zoeken**: op klant, nummer of kenmerk
+- **Directe links**: meldingen en mails die rechtstreeks naar een factuur linken, wissen bij het openen een actief datumfilter, zodat de factuur niet verstopt raakt achter een filter dat nog aan stond
 
-Because the card only sees the invoices loaded in the current list view, its bucket totals are a snapshot of that page, not a full workspace-lifetime figure. A fully credited invoice no longer appears as money still to collect, so the totals match what your customer sees in the portal and what the invoice detail page shows.
+De facturen van één klant open je vanaf de pagina van die klant.
 
-## Export
+## Hoelang facturen openstaan
 
-Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software. This export is available on every plan.
+Op de computer staat naast de lijst de kaart **Hoelang facturen openstaan**. Die verdeelt openstaande facturen naar hoeveel dagen ze over de vervaldatum zijn: lopend, 1 tot 30, 31 tot 60, 61 tot 90 en meer dan 90 dagen te laat. Klik op een groep om de lijst daartoe te beperken. De bedragen zijn wat er nog te innen is: het factuurtotaal min geboekte betalingen, rekening houdend met creditnota's die al op de factuur zijn gemaakt.
 
-## Finalizing and sending
+De kaart ziet alleen de facturen die in de huidige lijst geladen zijn. De totalen zijn dus een momentopname van die pagina, geen cijfer over de hele werkruimte. Een volledig gecrediteerde factuur telt niet meer als geld dat nog binnen moet komen, zodat de totalen kloppen met wat je klant in het portaal ziet en met de factuurpagina.
 
-When you finalize or send an invoice, MyCompanyDesk checks that your company has a btw-id (VAT number) and IBAN on file. In the Netherlands, a valid invoice requires your btw-id, and your IBAN tells customers where to pay.
+## Exporteren
 
-If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
+Download je facturen als CSV-bestand voor Excel, Google Sheets of je boekhoudpakket via **Instellingen › Gegevens downloaden**. Dat kan op elk abonnement.
 
-The app also blocks finalization if your company details are incomplete (for example a missing business name or address) or if the invoice has no line items. The error message points to exactly what is missing, so you can fix it before the invoice goes to the customer.
+## Definitief maken en versturen
 
-Invoice quantities on the PDF are formatted in the same language as the rest of the document, so an English invoice uses English number formatting and a Dutch invoice uses Dutch formatting.
+Maak je een factuur definitief of verstuur je hem, dan controleert MyCompanyDesk of je btw-id en IBAN bekend zijn. In Nederland hoort je btw-id op een geldige factuur, en je IBAN vertelt klanten waar ze kunnen betalen.
 
-If your workspace uses manual numbering, the app also asks you to enter the invoice number when you finalize or send. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
+Ontbreekt een van beide, dan opent er een venster waarin je ze meteen invult. Na het opslaan wordt je factuur vanzelf definitief.
 
-If you are still waiting for your btw-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your btw-id later once you have it.
+De app houdt het definitief maken ook tegen als je bedrijfsgegevens onvolledig zijn (bijvoorbeeld een ontbrekende bedrijfsnaam of adres) of als de factuur geen regels heeft. De foutmelding zegt precies wat er ontbreekt, zodat je het oplost voordat de factuur naar de klant gaat.
 
-Once an invoice has been finalized, it cannot be archived or deleted in one step, because the invoice number has already been used. Use the cancel or credit-note flow to handle a finalized invoice that should no longer be paid.
+Aantallen op de PDF staan in dezelfde taal als de rest van het document: een Engelse factuur gebruikt Engelse getalnotatie, een Nederlandse factuur Nederlandse.
 
-## Payment method status
+Nummert je werkruimte handmatig, dan vraagt de app bij definitief maken of versturen ook om het factuurnummer. MyCompanyDesk stelt het volgende nummer uit je reeks voor, maar je mag elk nummer typen. Het nummer is verplicht en moet uniek zijn.
 
-Payment methods can be active or inactive in your workspace:
+Wacht je nog op je btw-id van de Belastingdienst, of val je onder de kleineondernemersregeling (KOR), dan kun je dat bevestigen en toch doorgaan. Vul je btw-id later in zodra je hem hebt.
 
-- **Active** methods appear as options when sending an invoice or setting up a customer mandate.
-- **Inactive** methods are hidden from new invoices and mandates. Existing mandates stay valid, but you cannot create new ones for an inactive method.
+Is een factuur eenmaal definitief, dan kun je hem niet in één stap archiveren of verwijderen, want het factuurnummer is al gebruikt. Gebruik annuleren of een creditnota voor een definitieve factuur die niet meer betaald hoeft te worden.
 
-iDEAL, bank transfer (scan-and-pay QR), PayPal, and credit card are available when your connected processor supports them. Availability depends on the processor you connect (Mollie or Stripe) and the country of your account. A method that is not available for your processor/country does not appear at all.
+<a id="receiving-invoices-from-other-mycompanydesk-users"></a>
 
-When an online payment method is inactive, invoices still show the method list, but the inactive option is greyed out or hidden and the customer cannot select it. You can reactivate a method from **Money → Payments → Online payments**.
+## Facturen van andere MyCompanyDesk-gebruikers ontvangen
 
-<!-- TODO(source-missing): confirm exact labels for inactive payment method states and whether PayPal is enabled for both Mollie and Stripe. -->
+Mailt een leverancier die ook MyCompanyDesk gebruikt je een factuur, dan kun je die rechtstreeks als gestructureerd concept in je uitgaven laten landen. De bedragen komen uit de factuur zelf, dus niets scannen of overtypen. Het concept staat altijd op nakijken en wordt pas geboekt als jij het goedkeurt.
 
-## Receiving invoices from other MyCompanyDesk users
+Deze functie staat standaard uit. Zet hem aan onder **Instellingen › Automatisering** bij **Facturen van andere MyCompanyDesk-gebruikers**. Op dezelfde plek zet je hem op elk moment weer uit.
 
-When a supplier who also uses MyCompanyDesk emails you an invoice, you can have it land straight in your expenses as a structured draft. The amounts come from the invoice itself, so there is no scanning or retyping. The draft is always created in review status and is not booked until you approve it.
+Staat de functie aan, dan:
 
-This feature is off by default. Turn it on at **Settings > Automations** (`/settings/automatisering`) under **Invoices from other MyCompanyDesk users**. You can switch it off at any time from the same place.
+- Verschijnt elke binnenkomende factuur als conceptuitgave onder **Uitgaven**, met de naam van de leverancier en de regeltotalen al ingevuld.
+- Zegt de omschrijving uit welke MyCompanyDesk-werkruimte hij komt en dat hij via MyCompanyDesk binnenkwam.
+- Kunnen regels voor vertrouwde leveranciers de categorie alvast invullen, maar blijft het concept op nakijken staan, zodat er niets vanzelf geboekt wordt.
+- Wordt dezelfde factuur nooit twee concepten, ook niet als de afzender de mail opnieuw stuurt.
+- Neemt MyCompanyDesk van dezelfde afzender hooguit tien concepten per 24 uur in je werkruimte aan, zodat je nakijklijst niet overloopt.
 
-When the feature is active:
+De tweede instap vraagt geen instellingen: het klantportaal biedt op de factuur zelf de knop **In mijn administratie** aan, en die klik is de toestemming. MyCompanyDesk zet het concept op dat moment in de werkruimte van de ontvanger, zonder de schakelaar hierboven en zonder de daglimiet, en het werkt op elk postvak waar de factuur binnenkwam. Beide routes delen dezelfde controle op dubbelen, dus een factuur die al automatisch aankwam wordt nooit een tweede keer geboekt. De knop zelf staat beschreven bij [het klantportaal](/advanced/customer-portal#de-factuur-in-je-eigen-administratie).
 
-- Each incoming invoice appears as a draft expense under **Expenses** with the supplier name and the line totals already filled in.
-- The description shows which MyCompanyDesk workspace sent it and that it arrived via MyCompanyDesk.
-- Trusted-vendor rules may prefill the category, but the draft still stays in review so nothing is booked automatically.
-- The same invoice can never be turned into two drafts: a database-level deduplication guard blocks duplicates, even if the sender resends the email.
-- To protect your review queue, MyCompanyDesk limits each sender to at most ten drafts in your workspace per rolling 24-hour window. The cap is enforced in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
-
-De tweede instap vraagt geen instellingen: het klantportaal biedt op de factuur zelf de knop **In mijn administratie** aan, en die klik is de toestemming. MyCompanyDesk zet het concept op dat moment in de werkruimte van de ontvanger, zonder de schakelaar hierboven en zonder de daglimiet, en het werkt op elk postvak waar de factuur binnenkwam. Beide routes delen dezelfde ontdubbeling, dus een factuur die al automatisch aankwam wordt nooit een tweede keer geboekt. De knop zelf staat beschreven bij [het klantportaal](/advanced/customer-portal#de-factuur-in-je-eigen-administratie).
-
-The feature is free on both sides. It only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/en/features/peppol).
+De functie is aan beide kanten gratis. De automatische route werkt alleen als de leverancier de factuur mailt naar een postvak dat MyCompanyDesk voor je host. Liever een netwerk? Je kunt facturen van leveranciers ook ontvangen via [Peppol e-facturatie](/features/peppol).
 
 ## Tips
 
-- Set up your [email templates](/en/settings/email) before sending your first invoice
-- Use [recurring invoices](/en/features/recurring-invoices) for regular billing
-- Check the [reports](/en/features/reports) page for revenue insights
-- Enable [AI suggestions](/en/advanced/ai-features) for smart description improvements
-- Use [Peppol e-invoicing](/en/features/peppol) when your customer prefers digital delivery
+- Stel je [e-mailsjablonen](/settings/email) in voordat je je eerste factuur verstuurt
+- Gebruik [terugkerende facturen](/features/recurring-invoices) (Office) voor vaste facturatie
+- Kijk in [Rapportages](/features/reports) (Office) voor inzicht in je omzet
+- Zet [AI-suggesties](/advanced/ai-features) (Office) aan voor betere omschrijvingen
+- Gebruik [Peppol e-facturatie](/features/peppol) (Office) als je klant digitale bezorging wil

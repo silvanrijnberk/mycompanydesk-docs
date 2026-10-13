@@ -9,7 +9,7 @@ chatbot:
 ---
 
 Wenn Sie Probleme beim Anmelden haben:
-1. Versuchen Sie „Passwort vergessen“ auf der Anmeldeseite
+1. Versuchen Sie „Passwort vergessen?“ auf der Anmeldeseite
 2. Prüfen Sie Ihren Spam-/Junk-Ordner
 3. Stellen Sie sicher, dass Sie die richtige E-Mail verwenden. Wenn Sie von der Anmeldeseite aus eine Verifizierungs-E-Mail erneut senden, zeigt der Bildschirm an, an welche Adresse sie gesendet wurde
 4. Löschen Sie Browser-Cache und Cookies

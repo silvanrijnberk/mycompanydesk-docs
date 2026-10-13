@@ -32,7 +32,7 @@ Ga naar **Aanbod** en klik op **Prijzen** om in één keer meerdere prijzen te w
    - **Op centen** houdt de prijs zoals deze uit de berekening komt.
    - **Op hele euro's** rondt af op hele euro's.
 4. Klik op **Bekijk wat er verandert** om een overzicht te zien met per item de oude en nieuwe prijs.
-5. Controleer het overzicht en klik op **Prijzen aanpassen** om toe te passen.
+5. Controleer het overzicht en klik op de knop met het aantal, bijvoorbeeld **12 prijzen aanpassen**, om toe te passen.
 
 Het overzicht toont ook welke items blijven staan en waarom: omdat ze geen prijs hebben (bijvoorbeeld prijs-op-aanvraag items), omdat het een bundel is die de som van zijn onderdelen volgt, of omdat de afronding de prijs niet verandert. Je krijgt een waarschuwing als een actieve aanbieding hierdoor stopt, omdat de aanbiedingsprijs dan niet meer onder de normale prijs ligt. Als je abonnementen selecteert, legt het overzicht ook uit dat lopende abonnees hun huidige prijs houden; de nieuwe prijs geldt pas voor de volgende aanmelding.
 
@@ -41,7 +41,7 @@ Het overzicht toont ook welke items blijven staan en waarom: omdat ze geen prijs
 - Alleen de prijzen in je **Aanbod** worden gewijzigd.
 - Bestaande facturen, offertes en contracten houden de prijs waarmee ze zijn aangemaakt.
 - Lopende abonnementen houden de prijs waarbij ze zijn afgesloten. Wil je bestaande abonnees mee verhogen, pas dan hun terugkerende factuur aan.
-- Direct na het toepassen kun je de wijziging ongedaan maken. Met één keer ongedaan maken draai je de hele batch in één keer terug.
+- Direct na het toepassen kun je de wijziging terugdraaien met **Ongedaan maken** in de melding. Daarmee draai je de hele batch in één keer terug. Is een prijs intussen opnieuw aangepast, dan wordt er niets teruggezet.
 
 ## Inflatiehint bij één item wijzigen
 
@@ -53,7 +53,7 @@ De hint verschijnt alleen in bewerkmodus en alleen voor items met een vaste prij
 
 ## Prijslijst printen
 
-Je kunt je aanbod ook afdrukken als klantvriendelijke prijslijst. Open **Aanbod** en klik op **Prijslijst** om `/aanbod/prijslijst` te openen.
+Je kunt je aanbod ook afdrukken als klantvriendelijke prijslijst. Er staat geen knop voor in het menu: ga in je browser naar `/aanbod/prijslijst` in de app.
 
 De pagina toont je actieve items, gegroepeerd onder **Diensten**, **Producten**, **Pakketten** en **Abonnementen**; lege groepen worden weggelaten. Heeft je werkruimte de websitemodule, dan krijg je er ook de schakelaar **Alleen wat op je website staat** bij, zodat je precies de selectie print die je sitebouwer toont. Zonder websitemodule verschijnen diensten en producten als één groep zonder kop, terwijl pakketten en abonnementen hun eigen kop houden. Klik op **Printen of opslaan als pdf** om het dialoogvenster van je browser te gebruiken.
 

@@ -1,7 +1,7 @@
 ---
 title: "Herinnering versturen"
-description: "Om een herinnering te versturen voor een onbetaalde factuur: open de factuur, gebruik de actie Herinnering versturen."
-last_verified: 2026-10-09
+description: "Om een herinnering te versturen voor een onbetaalde factuur: open de factuur, klik op Verstuur herinnering."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -11,12 +11,12 @@ chatbot:
 
 Om een herinnering te versturen voor een onbetaalde factuur:
 1. Open de factuur
-2. Gebruik de actie "Herinnering versturen"
+2. Klik op "Verstuur herinnering"
 3. Controleer het bericht en verstuur het
 
 De herinnering vermeldt het resterende openstaande bedrag (factuurbedrag minus de al ontvangen betalingen). Heeft de klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het volledige factuurbedrag.
 
-Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmail de klant dezelfde betaalopties als de originele factuur: een knop **Bekijk & betaal**, een knop **Betaling bevestigen** en een QR-code op de PDF om te scannen en te betalen. Dit geldt voor zowel handmatige als automatische herinneringen.
+Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmail de klant dezelfde betaalopties als de originele factuur: een knop **Betaal nu**, een knop **Bekijk factuur**, de knop **Al betaald? Laat het weten** en een QR-code op de PDF om te scannen en te betalen. Dit geldt voor zowel handmatige als automatische herinneringen.
 
 Je kunt geen herinnering versturen als:
 - de factuur nog een concept is
@@ -28,15 +28,15 @@ Je kunt geen herinnering versturen als:
 - de factuur volledig is gecrediteerd via een creditnota
 - er niets meer openstaat (bijvoorbeeld omdat de klant betaalde terwijl de pagina openstond)
 
-Een melding uit het portaal heeft ook een einde. Komt er vijf werkdagen na de melding niets binnen, dan controleert MyCompanyDesk de feiten (de wachttijd en de terugzetregel staan in `apps/api/src/modules/scheduler/scheduler.service.js#checkStalePaymentClaims`): met een werkende bankkoppeling op het rekeningnummer van de factuur, die sinds rond de factuurdatum geen inkomende betaling toont, zet MyCompanyDesk de factuur terug op verzonden, haalt de melding weg en kan je klant opnieuw betalen of melden; een melding laat jou weten dat dit is gebeurd. In elk ander geval vraagt MyCompanyDesk je een keer of de betaling binnen is, en laat de factuur met rust tot jij beslist. Je kunt ook zelf handelen: op de factuur staat **Betaling bevestigen** als het geld er is, en **Niet binnengekomen** om de factuur terug te zetten naar verzonden, zodat herinneringen weer lopen en je klant opnieuw kan betalen of melden.
+Een melding uit het portaal heeft ook een einde. Komt er vijf werkdagen na de melding niets binnen, dan controleert MyCompanyDesk de feiten: met een werkende bankkoppeling op het rekeningnummer van de factuur, die sinds rond de factuurdatum geen inkomende betaling toont, zet MyCompanyDesk de factuur terug op verzonden, haalt de melding weg en kan je klant opnieuw betalen of melden; een melding laat jou weten dat dit is gebeurd. In elk ander geval vraagt MyCompanyDesk je een keer of de betaling binnen is, en laat de factuur met rust tot jij beslist. Je kunt ook zelf handelen: op de factuur staat **Betaling bevestigen** als het geld er is, en **Niet binnengekomen** om de factuur terug te zetten naar verzonden, zodat herinneringen weer lopen en je klant opnieuw kan betalen of melden.
 
-Wanneer een factuur te laat is, toont de factuurdetailpagina een voorgestelde volgende stap:
+Wanneer een factuur te laat is, toont de factuurdetailpagina onder **Aanbevolen actie** een voorgestelde volgende stap:
 
-- **Herinnering versturen** — voor facturen die net over de vervaldatum zitten
-- **Strengere herinnering versturen** — voor facturen die al een keer zijn herinnerd
-- **Dringende herinnering sturen** — voor facturen die meer dan een paar dagen te laat zijn. De knop opent de herinneringsdialoog; de detailregel adviseert ook om de klant te bellen of een betaalregeling voor te stellen.
-- **Creditnota of correctie aanmaken** — als de klant de factuur betwist of de bedragen zijn gewijzigd
+- **Stuur 1e herinnering**: voor facturen die te laat zijn en nog niet zijn herinnerd
+- **Stuur herinnering #2** (en verder): voor facturen die al eerder zijn herinnerd
+- **Stuur een dringende herinnering**: voor facturen die al lang te laat zijn. De knop opent de herinneringsdialoog; de toelichting raadt ook aan om de klant te bellen of een betaalregeling voor te stellen.
+- **Maak creditnota of correctie**: als de klant de factuur betwist of de bedragen zijn gewijzigd
 
-Voor de meeste gevallen stuur je herinneringen op 1 dag voor de vervaldatum (vriendelijk), 3 dagen erna (strenger) en 10 dagen erna (laatste waarschuwing). Bel daarna na.
+Wil je dit niet zelf bijhouden? Zet dan onder Instellingen › **Facturen en offertes** de schakelaar **Te laat? Automatisch een herinnering sturen** aan (Office). Is een factuur drie dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw tot er betaald is. Blijft het stil, bel je klant dan even.
 
-Je kunt het herinneringssjabloon ook aanpassen via Instellingen → E-mails.
+De tekst van je herinneringsmail pas je aan onder Instellingen › **E-mail** › **Factuur- en offertemails**.

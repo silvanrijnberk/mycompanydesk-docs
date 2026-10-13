@@ -9,11 +9,11 @@ Un bon d'intervention consigne ce que vous avez fait chez un client : la visite,
 
 ## Activer le module
 
-Les bons d'intervention sont un module que vous activez vous-même. Cela se fait dans **Paramètres > Modules**. Aucun palier d'abonnement ne s'applique : le module est gratuit dans chaque offre, et l'accès suit la même permission de page que les factures.
+Les bons d'intervention sont un module que vous activez vous-même. Cela se fait dans **Paramètres › Modules**. Aucun palier d'abonnement ne s'applique : le module est gratuit dans chaque offre, et l'accès suit la même permission de page que les factures.
 
 ## La liste des bons
 
-La liste se trouve sous **Bons d'intervention** dans la navigation. Des onglets en haut filtrent par statut : **Tous**, **Brouillon**, **Signé** et **Facturé**. Chaque ligne affiche le numéro du bon, le client, l'adresse d'intervention et le statut sous forme de pastille colorée. Le champ de recherche trouve un bon par numéro, client ou adresse.
+La liste se trouve sous **Bons d'intervention** dans la navigation. Des onglets en haut classent les bons selon ce qui reste à faire : **Tous** (d'abord ce que vous devez faire), **À faire signer** et **À facturer**. Dans la liste, les bons sont regroupés : d'abord **À facturer** et **À faire signer**, puis ce qui est déjà facturé, mois par mois. Chaque ligne affiche le numéro du bon, le client, l'adresse d'intervention et, dans la colonne **État**, où en est le bon. Le champ de recherche trouve un bon par numéro, client ou adresse.
 
 ## Créer un bon d'intervention
 
@@ -56,6 +56,6 @@ Lorsque vous fusionnez deux clients, les bons passent au client restant, avec le
 
 ## Conseils
 
-- Un bon reste en brouillon tant qu'il n'est pas signé. Utilisez les onglets de statut pour voir ce qui attend encore une signature.
+- Un bon reste en brouillon tant qu'il n'est pas signé. Utilisez l'onglet **À faire signer** pour voir ce qui attend encore une signature.
 - La page du bon montre la prochaine étape pour chaque statut : remplir et faire signer, puis facturer ou envoyer, puis vérifier le brouillon de facture.
 - Si vous créez un bon à partir d'un devis, les lignes sont reprises : les lignes d'heures deviennent de la main-d'œuvre, les autres des fournitures, et les remises par ligne sont conservées.

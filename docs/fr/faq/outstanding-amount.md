@@ -1,7 +1,7 @@
 ---
 title: "Montant impayé"
-description: "Pour voir le total des montants impayés : allez dans Factures et filtrez sur Ouvert, Envoyée ou En retard."
-last_verified: 2026-07-02
+description: "Pour voir le total impayé : allez dans Factures et regardez l'onglet En attente de paiement, ou ouvrez Rapports, Clients."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["outstanding amount", "total unpaid", "money owed", "total outstanding", "how much owed", "openstaand bedrag", "totaal onbetaald", "offener betrag", "montant impaye", "somme due"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 ---
 
 Pour voir le total des montants impayés :
-1. Allez dans Factures et filtrez sur Ouvert, Envoyée ou En retard
-2. Consultez les totaux dans la liste ou l'en-tête KPI
-3. Pour le détail, ouvrez Rapports → Rapport clients et passez à l'onglet "En souffrance"
+1. Allez dans Factures
+2. L'onglet **En attente de paiement** indique combien de factures sont chez vos clients et pour quel montant total. Si certaines sont en retard, il indique aussi combien. L'onglet **À envoyer** montre ce que vous n'avez pas encore envoyé. Sur téléphone, les tuiles **En attente** et **En retard** se trouvent en haut
+3. Pour le détail par client, ouvrez Rapports › Clients et passez à l'onglet « En souffrance » (Office)
 
-Astuce : si les totaux semblent incorrects, vérifiez d'abord la période et les filtres de statut.
+Astuce : si les totaux semblent incorrects, vérifiez d'abord la période et le statut sous **Filtres**.

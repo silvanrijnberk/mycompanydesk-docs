@@ -1,14 +1,14 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox: what is included in Desk and Office and how they work together."
-last_verified: 2026-10-09
+last_verified: 2026-10-13
 ---
 
 # Domains, Website, and Inbox
 
 > **Available to everyone.** The website on a free mycompanydesk.site address and an inbox for reading and replying are included in Desk. Custom domains and the full inbox are included in Office.
 
-Custom domains, the hosted business website, and the shared email inbox ship as one product. The reason: they share state. The same `domains` row that proves you control `acme.nl` also makes `acme.nl` your website's URL and lets `info@acme.nl` start receiving mail. There is one onboarding flow, one settings tree, and one place in the app to manage all of it.
+Custom domains, the hosted business website, and the shared email inbox ship as one product. The reason: they share state. The same connected domain that proves you control `acme.nl` also makes `acme.nl` your website's URL and lets `info@acme.nl` start receiving mail. There is one onboarding flow, one settings tree, and one place in the app to manage all of it.
 
 ## The bundled value
 
@@ -18,55 +18,55 @@ Add a domain once and you get three things:
 - **A live website.** The hosted business page is automatically published on the verified domain.
 - **A working inbox.** `info@acme.nl`, plus `support@`, `sales@` and a send-only `noreply@` alias, start catching mail and sending replies.
 
-You can run the bundled flow from the [Setup wizard](/en/getting-started/company-setup) (`/setup`, the "Your web address" step), or piece-by-piece from `Company › Your own .com address` and the Inbox.
+You can run the bundled flow from the inbox setup (`/inbox/setup`), which connects your domain and switches the inbox on in one flow, or piece by piece from **Settings › Your website and domain** (`/settings/domein`). If you pick "Your own website" or "Email on your own domain" at "What do you want to start with?" in the [Setup wizard](/en/getting-started/company-setup), the wizard then hands you over to your website or to the inbox setup.
 
 ## One onboarding flow
 
-The wizard step at `/setup` is the recommended entry point. It applies through `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` in a single submit, so the user answers a few questions and the platform wires everything underneath.
+The inbox setup at `/inbox/setup` is the recommended entry point. It runs every step in one go, so you answer a few questions and the platform wires everything underneath.
 
-### Step 1 — Add a domain
+### Step 1: Add a domain
 
-Two paths in the wizard, both stored on the `domains` table:
+Two paths:
 
 - **Free workspace subdomain**: `your-slug.mycompanydesk.site`. No DNS work; the slug (a plain form of your company name) is registered as a Cloudflare Pages custom domain and the website is live within seconds. The subdomain is applied when you publish the website, not before. This address is part of Desk: the website carries a small "Made with MyCompanyDesk" badge and stays online permanently. On your own domain (Office) there is no badge.
-- **Your own domain** — paste `acme.nl`. Two setup modes are supported:
-  - **Nameserver mode** (recommended) — a Cloudflare zone is created for the domain. You change your registrar's nameservers to the two `*.ns.cloudflare.com` hostnames the wizard shows. Cloudflare becomes authoritative DNS for the domain, which is what unlocks email, SSL and DNS-record management inside MyCompanyDesk.
+- **Your own domain**: paste `acme.nl`. Two setup modes are supported:
+  - **Nameserver mode** (recommended): a Cloudflare zone is created for the domain. You change your registrar's nameservers to the two `*.ns.cloudflare.com` hostnames the wizard shows. Cloudflare becomes authoritative DNS for the domain, which is what unlocks email, SSL and DNS-record management inside MyCompanyDesk.
   - **CNAME mode** covers a subdomain (e.g. `portal.acme.nl`), or for connecting only the website on a main domain while email and everything else stay at your current provider ("Only connect my website"). You add a single CNAME record at your current provider; on a main domain that is usually `www.` plus your domain, because most providers cannot put a CNAME record on the bare domain. Once the record is live, `www.<your domain>` shows your MyCompanyDesk website. Email routing is not available in this mode; hosting the website on the bare domain itself needs nameserver mode.
 
-Adding a custom domain automatically deactivates the workspace subdomain — there is one canonical website per company, never two.
+Adding a custom domain automatically deactivates the workspace subdomain: there is one canonical website per company, never two.
 
-### Step 2 — Verify
+### Step 2: Verify
 
-Verification runs both on demand and on a poll. The detail page exposes a **Verify** button (`POST /api/domains/:id/verify`), and a background job re-checks every pending domain at intervals.
+Verification runs both on demand and on a poll. The detail page has a **Verify** button, and a background task re-checks every pending domain at intervals.
 
-- **Nameserver mode** is verified once Cloudflare reports the zone as `active`. The status moves `pending_nameservers → pending_verification → active`. The user is notified via the in-app notification bell when the flip happens.
-- **CNAME mode** is verified by resolving the CNAME and confirming it points at the Pages target. Status moves `pending_cname → active`.
+- **Nameserver mode** is verified once Cloudflare reports the zone as active. The status moves from waiting for nameservers, through waiting for verification, to active. You are notified via the in-app notification bell when the flip happens.
+- **CNAME mode** is verified by resolving the CNAME and confirming it points at the Pages target. The status moves from waiting for the CNAME record to active.
 
 A nameserver domain that has been waiting for your nameservers for 30 days without ever connecting is removed automatically, which frees the name again for another workspace. Domains that already have a mailbox on them (imported mail included), domains we hold at the registrar ourselves, and purchases or transfers in progress are never removed this way.
 
-### Step 3 — SSL
+### Step 3: SSL
 
 SSL is provisioned by Cloudflare automatically once the zone is active. The default mode is **Full (strict)**; you can change it from `Domain detail › SSL` (`off / flexible / full / strict`). The certificate-status field on the SSL panel mirrors Cloudflare's verification result.
 
-### Step 4 — Website goes live
+### Step 4: Website goes live
 
-The hosted business page (see [Site Builder](/en/advanced/business-page)) is automatically published at the domain root once the zone is active. The wizard's `getBusinessPageUrl` resolver returns, in priority:
+The hosted business page (see [Site Builder](/en/advanced/business-page)) is automatically published at the domain root once the zone is active. Your website lands on the best address you have, in this order:
 
-1. A custom domain with `business_page_enabled = true` → `https://acme.nl`
-2. A custom domain with `portal_subdomain_enabled = true` → `https://portal.acme.nl`
+1. A custom domain that carries your website → `https://acme.nl`
+2. A subdomain of your custom domain for your website → `https://portal.acme.nl`
 3. The workspace subdomain → `https://acme.mycompanydesk.site`
 4. The fallback portal route (`/portal/<slug>`) when nothing else is configured.
 
-### Step 5 — Inbox catches mail
+### Step 5: Inbox catches mail
 
-For nameserver-mode custom domains, the wizard runs `quickEnableInbox` after verification. That call is idempotent and does the following:
+For custom domains in nameserver mode, the wizard switches on the inbox after verification. That step is safe to run more than once and does the following:
 
-- Provisions the CF Email Sending identity on the bare apex domain (`acme.nl` by default) and writes the DKIM and SPF DNS records. Passing an explicit subdomain label provisions `<label>.<domain>` instead (e.g. `mail.acme.nl`).
-- Sets a Cloudflare Email Routing catch-all rule on the zone, pointed at the `inbox-inbound` Worker.
-- Inspects the apex MX records. If they are empty or already point at Cloudflare, the wizard installs the Cloudflare MX. If a third-party provider (Google Workspace, Microsoft 365) is already there, the wizard refuses to overwrite and surfaces a `conflict` warning so you can decide.
+- Sets up sending on the bare domain (`acme.nl` by default) and writes the DKIM and SPF records to your DNS. Passing an explicit subdomain label provisions `<label>.<domain>` instead (e.g. `mail.acme.nl`).
+- Sets a catch-all rule through Cloudflare Email Routing, so all mail to the domain arrives in your inbox.
+- Inspects the apex MX records. If they are empty or already point at Cloudflare, the wizard installs the Cloudflare MX. If a third-party provider (Google Workspace, Microsoft 365) is already there, the wizard refuses to overwrite it and shows a warning so you can decide.
 - Creates `info@acme.nl` as the default shared mailbox.
 - Provisions `support@` and `sales@` as bidirectional aliases of `info@`, and `noreply@` as a send-only alias (allowed in From, dropped on inbound).
-- Optionally creates a personal mailbox (`silvan@acme.nl`) when you ticked the box in the wizard.
+- If you pick an address other than `info@` in the address step (for example `jan@acme.nl`), that mailbox becomes your default mailbox.
 
 The inbox can also be enabled before verification has completed. Cloudflare refuses to provision mail on a zone whose nameservers do not point at us yet, so your mailbox is then created right away while the zone-wide steps (routing, catch-all, apex MX) are postponed: the app tells you that mail on the domain starts working once your nameservers point at us. The moment the domain becomes active, the platform finishes the provisioning by itself.
 
@@ -74,14 +74,14 @@ The inbox can also be enabled before verification has completed. Cloudflare refu
 
 ### Custom domains
 
-UI lives at `Website › Domein & SEO` -- the page is `/website?tab=domein`, rendering the `SettingsDomains` component. The older paths `/workspace/organization/company/address`, `/workspace/organization/domains`, and `/workspace/communication/domains` all redirect here.
+UI lives at **Settings › Your website and domain** (`/settings/domein`, page title "Your domain"). The older paths `/workspace/organization/company/address`, `/workspace/organization/domains`, and `/workspace/communication/domains` all redirect here.
 
 The page splits into two sections:
 
-- **Pending domains**: Domains still being verified always appear at the top, regardless of the topbar domain switcher state. This lets you reach verification instructions for newly added domains before they become active.
-- **Active domain panel**: DNS, SSL, redirects, analytics, security, and SEO tabs are scoped to the domain selected in the topbar domain switcher (accessible from the site builder at `/website`). Selecting the default site (shown as your workspace name in the switcher) hides the per-domain panel entirely. Switching domains resets the active tab to Routing.
+- **Pending domains**: Domains still being verified always appear at the top.
+- **Active domains**: every active domain gets its own card with its own tabs, and each card remembers its own tab. A card opens on the **Routing** tab.
 
-The page defaults to a clean view with the most commonly needed tabs. Six power-user tabs are hidden unless you turn on **Advanced Mode**. Those tabs are: DNS, SSL, Redirects, Analytics, Quick Settings, and Security. Advanced mode is a per-device switch on the **Weergave** (display) page in settings; see the [Settings overview](/en/settings/).
+The page defaults to a clean view. Five power-user tabs are hidden unless you turn on **Advanced mode**: **DNS Records**, **SSL / TLS**, **URL Redirects**, **Analytics** and **Security**. A CNAME-mode domain only has the Routing tab. Advanced mode is a per-device switch on the **Display** page in settings; see the [Settings overview](/en/settings/).
 
 What the page lets you do:
 
@@ -89,149 +89,111 @@ What the page lets you do:
 - **Add a domain** (nameserver or CNAME mode) via a dedicated card that is always visible.
 - **Move a domain to us** (transfer in) with the authorization code from your current registrar, or run the migration wizard when your mail still lives at another hoster.
 - **Verify** a pending domain.
-- **Manage DNS records** for the selected active domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
-- **SSL** for the selected domain -- view certificate status, change SSL mode.
-- **URL redirects** for the selected domain -- three free Cloudflare Page Rules per zone. Source pattern + destination + 301/302.
-- **Email security** for the selected domain -- SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`). If your domain already carries its own SPF or DMARC record, it stays in place and the check accepts any single policy record of that kind.
-- **Quick settings** for the selected domain -- toggle Cloudflare Development Mode, toggle "Under attack" security level, purge cache.
-- **Analytics** for the selected domain -- last 30 days of requests, bandwidth, threats, visitors, pageviews. The current Cloudflare Analytics endpoint is sunset; the page renders an empty `unavailable` state until the GraphQL migration lands.
-- **Remove** the selected domain -- soft-deletes the row (`status = 'removed'`) and tears down the Cloudflare zone (or the Pages domain in CNAME mode). If this domain carried your website, the site falls back to another active website domain or to the free mycompanydesk.site address.
+- **Manage DNS records** for the selected active domain: A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Changes go straight to Cloudflare.
+- **SSL** for the selected domain: view certificate status, change SSL mode.
+- **URL redirects** for the selected domain: three free Cloudflare Page Rules per zone. Source pattern + destination + 301/302.
+- **Email security** for the selected domain: SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`). If your domain already carries its own SPF or DMARC record, it stays in place and the check accepts any single policy record of that kind.
+- **Analytics** for the selected domain: last 30 days of requests, bandwidth, threats, visitors, pageviews. When Cloudflare does not deliver those numbers, the tab shows an empty state instead of an error.
+- **Remove** the selected domain: the domain leaves your workspace and the Cloudflare zone (or the website link in CNAME mode) is cleaned up. If this domain carried your website, the site falls back to another active website domain or to the free mycompanydesk.site address.
 - **Review inactive domains** in their own card: expired domains, domains transferred away, and CNAME domains that never connected are listed with a status badge and a short explanation, each with a Remove action; expired domains also offer a contact-support route.
-
-#### `domains` table — the shared state
-
-Notable columns the app reads from:
-
-| Column | Purpose |
-|---|---|
-| `domain_name` | The hostname, e.g. `acme.nl`. |
-| `setup_mode` | `nameserver` (full delegation) or `cname` (single subdomain). |
-| `status` | `pending_nameservers`, `pending_verification`, `pending_cname`, `active`, `failed`, `removed`. |
-| `cloudflare_zone_id` | Set in nameserver mode. Drives DNS, SSL, redirects, analytics, email-routing. |
-| `nameserver_1`, `nameserver_2` | Shown to the user during nameserver setup. |
-| `cname_hostname`, `cname_target` | Set in CNAME mode. |
-| `email_routing_enabled` | `true` once the Cloudflare Email Routing zone is enabled. |
-| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Flipped by `quickEnableInbox`. The CF Email Sending identity (apex domain by default; `mail.acme.nl` when a subdomain label is given) and DKIM provisioning state. |
-| `business_page_enabled`, `portal_subdomain_enabled` | Determine which hostname serves the public website. |
-| `verified_at` | Set when verification succeeds. |
-| `registrar` | The registrar service, currently `openprovider` for domains purchased through the buy-a-domain flow. |
-| `registrar_domain_id` | The registrar-side identifier for purchased domains. |
-| `purchase_price_period` | Billing period for purchased domains (`yearly`). |
-| `purchase_intent_id` | Links to the `domain_purchase_intents` row for paid purchases. |
-| `founder_claim_id` | Links to the `founder_domain_claims` row for free-domain claims. |
-| `transferred_out_at` | Set when a domain is detected as transferred away from the MCD registrar account during the weekly sync. |
 
 #### Renewal lifecycle
 
 Domain renewal follows three paths depending on how the domain was acquired:
 
-1. **Free bundled renewal** (Office-converted trial-tier, or a legacy free-for-life arrangement): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace is really on Office; if the subscription is cancelled to run until the end of its period and Office stops before the domain expires, the free renewal no longer applies and renewing the domain is up to you. No payment method needed.
-2. **Paid auto-renewal** (paid purchase, or trial-tier without Office): Charged annually via the saved card. Works like any subscription renewal.
-3. **Manual renewal**: If a trial-tier workspace falls off Office AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
+1. **Free renewal with Office** (a free claimed domain in a workspace that became a paying Office customer): MyCompanyDesk pays for the renewal. The domain auto-renews as long as the workspace is really on Office; if the subscription is cancelled to run until the end of its period and Office stops before the domain expires, the free renewal no longer applies and renewing the domain is up to you. No payment method needed.
+2. **Paid auto-renewal** (a purchased domain, or a free claimed domain in a workspace without Office): Charged annually via the saved card. Works like any subscription renewal.
+3. **Manual renewal**: if a workspace with a free claimed domain drops off Office and has no saved card, the domain does not renew automatically. You see a notification and start a one-off payment for the renewal from it, in a Stripe payment window inside MyCompanyDesk. This is the only way to keep a domain alive without an active subscription or saved card.
 
 #### Trial-exit domain buy-out
 
-When a customer on an Office trial decides to leave before converting to paid Office, they have a third option for their free `.nl` domain: buy it out for a flat €15,00 incl. VAT (one-time). The buy-out flow (`DomainBuyoutModal.vue`) lets the customer pay via Stripe Embedded Checkout and receive full ownership. Once paid, the domain holder is transferred from MCD to the customer and the EPP (transfer) code is shown so the domain can be moved to any registrar.
+When a customer on an Office trial decides to leave before converting to paid Office, they have a third option for their free `.nl` domain: buy it out for a flat €15.00 incl. VAT (one-time). In the buy-out window the customer pays via Stripe and receives full ownership. Once paid, the domain holder is transferred from MyCompanyDesk to the customer and the EPP (transfer) code is shown so the domain can be moved to any registrar.
 
-The €15,00 price is deliberately quoted inclusive of Dutch VAT because the charge is triggered at the moment the customer leaves. The net amount handed to Stripe is €12,40; 21% NL VAT is added on top, rounded to the nearest cent, to land exactly on €15,00. See `apps/api/src/modules/domains/domain-pricing.config.js` in the RichardTool repo and `sources/vat-rates.yaml#countries.NL.standard`.
+The €15.00 price is deliberately quoted inclusive of Dutch VAT because the charge is triggered at the moment the customer leaves. The amount is €12.40 plus 21% Dutch VAT, rounded to the nearest cent, so the total lands exactly on €15.00.
 
-The buy-out price is a product price, not a transfer surcharge. MCD never charges for the transfer token itself once the customer is the registered holder. The distinction is documented in the internal legal memo `docs/legal/gratis-domein-voorwaarden.md` in the RichardTool repo.
-
-Database tables involved:
-
-- `domain_buyout_intents` — tracks buy-out payment intents with Stripe PaymentIntent IDs and status.
+The buy-out price is a product price, not a transfer surcharge. MyCompanyDesk never charges for the transfer code itself once the customer is the registered holder.
 
 #### Transfer consequences
 
-Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, enforced by the weekly OpenProvider status sync:
+Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, detected by the weekly check with the registrar:
 
-- **Legacy free-for-life domains**: The free claim is deleted, and the workspace's internal lifetime Office grant is cancelled. The workspace becomes a regular paid customer. This is irreversible; the grant cannot be reclaimed.
-- **Trial-tier / Office-bundled domains**: The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list). Note that buying out the domain during the trial (see buy-out section above) is not a transfer, but a holder handover that gives the customer ownership before any transfer happens, so the free-domain perk is preserved for the duration of the trial.
-- **Paid domains**: No perk revocation. The domain simply moves to `status = 'transferred_out'`.
+- **Free claimed domains**: the free-domain perk is lost. The workspace can never claim another free domain. Note that buying out the domain during the trial (see buy-out section above) is not a transfer, but a holder handover that gives the customer ownership before any transfer happens, so the free-domain perk is preserved for the duration of the trial.
+- **Purchased domains**: no perk is lost. The domain is simply marked as transferred.
 
-The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. A "Held during trial" notice explains that the domain is registered under MCD during the trial and will be transferred to the customer for free when they become a paying Office customer, or available for buy-out at €15 on early exit. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
+The claim window warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. A "Held during trial" notice explains that the domain is registered under MyCompanyDesk during the trial and will be transferred to the customer for free when they become a paying Office customer, or available for buy-out at €15 on early exit. What a transfer revokes is recorded so support can look it up.
 
 #### Buy or claim a domain
 
-The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is the first card on the Domains settings page. It appears when the workspace has no active custom domain yet. The card lets the user pick and acquire a domain through two paths, both opening a dedicated two-step purchase modal (`DomainClaimModal.vue`). Step 1 collects registrant details (the data required by the registrar for WHOIS). Step 2 handles payment or claim submission:
+The domain purchase card sits in the domain chooser on the Your domain page. The card lets
 
-- **Buy** -- Paid purchase via OpenProvider. The user enters a domain name, the card calls `GET /api/domain-purchase/quote` to check availability and pricing, and then opens the purchase modal. After collecting the registrant details, the modal calls `POST /api/domain-purchase/checkout-session` to create a Stripe payment session and mounts Stripe Embedded Checkout for the payment. Once complete, `POST /api/domain-purchase/finalize` registers the domain with OpenProvider and creates the `domains` row in nameserver mode, wired to Cloudflare.
-- **Free claim**: Eligible workspaces on an Office trial can claim one `.nl` domain free of charge for the first year. The card calls `GET /api/domain-purchase/free-domain/eligibility` to check the workspace's claim tier and gate status. The modal collects the registrant details, and on submit calls `POST /api/domain-purchase/free-domain/claim`. The platform pays the first-year registration fee.
+- **Buy**: Paid purchase via OpenProvider. You enter a domain name, the card checks availability and price, and then opens the purchase window. After you fill in the registrant details, you pay via Stripe in the same window. Once the payment is complete, MyCompanyDesk registers the domain with OpenProvider and connects it to Cloudflare in nameserver mode.
+- **Free claim**: Eligible workspaces on an Office trial can claim one `.nl` domain free of charge for the first year. The card checks whether your workspace meets the conditions. The window asks for the registrant details and then submits the claim. MyCompanyDesk pays the first-year registration fee.
 
-Free claims differ only in how the domain is renewed after the first year:
+How the domain renews after the first year:
 
-- **Trial tier** -- Workspaces on an Office trial. The first year is free. At the end of the free year the workspace must be on a paid Office plan; the domain then renews as part of the Office subscription, paid by the workspace. If the workspace stops paying Office after the free year, the domain lapses and must be renewed manually. During the trial year the user can optionally save a card via Stripe SetupIntent in the modal for future automatic renewal.
-- **Paid tier** -- Standard domains purchased at full price. Renewal is charged via the saved payment method on the annual cycle. If the charge fails, a manual-renewal notification is sent.
-- **Legacy free-for-life tier**: A small number of legacy workspaces retain free Office and lifetime-free domain renewal under earlier arrangements. No payment method is required; renewal is handled automatically by the platform, with MCD absorbing the wholesale cost. This tier is closed and cannot be requested.
+- **Free claimed**: workspaces on an Office trial. The first year is free. At the end of the free year the workspace must be on a paid Office plan; the domain then renews as part of the Office subscription, paid by the workspace. If the workspace stops paying Office after the free year, the domain lapses and must be renewed manually. During the free year you can save a card in the window for automatic renewal later.
+- **Purchased**: domains bought at full price. Renewal is charged via the saved payment method on the annual cycle. If the charge fails, a manual-renewal notification is sent.
 
-The eligibility endpoint (`GET /api/domain-purchase/free-domain/eligibility`) returns a `tier` field alongside the gate report. It does not expose any remaining-claim count.
-
-Eligibility is determined by a set of hard gates checked server-side:
+Eligibility is decided by a set of hard conditions checked on our side:
 
 - **Active Office workspace**: the workspace must be on Office (trial or paid). Workspaces on Desk cannot claim.
-- **KVK required** -- the workspace must have a linked KVK number.
-- **Domain must be `.nl`** -- the free program only covers the NL TLD.
-- **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.
-- **KVK must not be on the retained-claims list** -- one free domain per KVK number. A KVK that has already claimed (and then transferred away) a free domain is blocked permanently.
+- **KVK required**: the workspace must have a linked KVK number.
+- **Domain must be `.nl`**: the free program only covers the NL TLD.
+- **Domain must match the KVK name**: the domain must correspond to the registered legal name or a trade name.
+- **One free domain per KVK number**: A KVK that has already claimed (and then transferred away) a free domain is blocked permanently.
 
-Account age and site-content quality are not hard gates. They would block legitimate onboarding-day claims, which contradicts the “set up your business in a day, domain included” pitch. Instead, both flow into the abuse-review score as soft signals that help sort the review queue, and approval is decided by hard facts first; the score only fills in the middle ground. A person reviews the claim first (the claim modal says an answer usually comes within one working day) when the workspace is under heightened signup scrutiny, when the account signed up from outside the Netherlands, when the claim request itself comes from outside the Netherlands, when the registry shows the business as dissolved, when the legal form or the number of employees sits outside the program profile (for example an NV or a foundation, or a company with more than a couple of employees), or when the KVK number already belongs to another customer workspace. A claim goes through without waiting when the business fits the program profile and the person behind the account provably belongs to it: the name on the account appears in the KVK name of a business registered in the last 180 days, or the verified email domain of the account matches the website the KVK lists for the business, which also holds for older companies. Both paths need a normal verdict from the automated check; if it is unavailable, a person looks at the claim. In every other case the score decides: a good score passes, a lower score goes to a person. The same rules apply to every workspace, trial or paying. The score and its reasons stay internal (the program thresholds live in `apps/api/src/modules/domains/claim-decision.js` in the RichardTool repo); the claim flow never shows them to the user. The eligibility response carries a `softSignals` block (`ageDays`, `sitePublished`, `paragraphCount`) so the UI can surface a hint without blocking the claim.
+Account age and site-content quality are not hard gates. They would block legitimate onboarding-day claims, which contradicts the “set up your business in a day, domain included” pitch. Instead, both count towards a risk score as soft signals that help sort the review queue, and approval is decided by hard facts first; the score only fills in the middle ground. A person reviews the claim first (the claim window says an answer usually comes within one working day) when the workspace is under heightened signup scrutiny, when the account signed up from outside the Netherlands, when the claim request itself comes from outside the Netherlands, when the registry shows the business as dissolved, when the legal form or the number of employees sits outside the program profile (for example an NV or a foundation, or a company with more than a couple of employees), or when the KVK number already belongs to another customer workspace. A claim goes through without waiting when the business fits the program profile and the person behind the account provably belongs to it: the name on the account appears in the KVK name of a business registered in the last 180 days, or the verified email domain of the account matches the website the KVK lists for the business, which also holds for older companies. Both paths need a normal verdict from the automated check; if it is unavailable, a person looks at the claim. In every other case the score decides: a good score passes, a lower score goes to a person. The same rules apply to every workspace, on trial or paying. The score and its reasons stay internal: the claim never shows them. The card can still show a tip, for example that your website is not published yet, without blocking the claim.
 
-When a gate fails, the card lists the remaining requirements so the user can see what is left to unlock before the free claim becomes available.
+When a condition is not met, the card lists the remaining requirements so the user can see what is left to unlock before the free claim becomes available.
 
-The supported TLDs for purchase are `.nl`, `.eu`, `.com`, `.net`, and `.org`. Other TLDs show an unsupported message with a suggestion to buy the domain elsewhere and add it via the existing BYO flow.
-
-New database tables introduced by this feature:
-
-- `domain_purchase_intents` -- tracks paid purchase intents with Stripe PaymentIntent IDs, registrant details, and purchase status.
-- `founder_domain_claims` -- tracks free-domain claims with eligibility snapshots, abuse scoring, and claim status.
-- `domain_buyout_intents` -- tracks trial-exit buy-out payment intents with Stripe PaymentIntent IDs and handover status.
-- `domain_registrar_columns` migration adds registrar-related columns to the existing `domains` table.
+The supported TLDs for purchase are `.nl`, `.eu`, `.com`, `.net`, and `.org`. Other TLDs show an unsupported message with a suggestion to buy the domain elsewhere and connect it through the existing option for a domain you already own.
 
 #### Move a domain to us (transfer in)
 
-A domain registered elsewhere used to be connect-only: the registration itself stayed with the old registrar, so renewal and the transfer-out route did not know about it. The fourth option in the domain chooser, **Move your domain to us**, brings the registration itself to MyCompanyDesk. You need the authorization code (the transfer code) from your current registrar, and the registry requires a phone number with the request.
+A domain registered elsewhere used to be connect-only: the registration itself stayed with the old registrar, so renewal and the transfer-out route did not know about it. The option **Also move my domain name to MyCompanyDesk** in the domain chooser brings the registration itself to MyCompanyDesk. You need the authorization code (the transfer code) from your current registrar, and the registry requires a phone number with the request.
 
 The chooser quotes the transfer before you commit:
 
 - **A `.nl` transfer is free.** The registry charges nothing and adds no year, so your current expiry date stays as it is. Renewal afterwards works like a paid purchase: you get a reminder first and only pay when you renew yourself.
-- **`.eu`, `.com`, `.net` and `.org` cost the one-time registration price**, and the transfer adds one year to the domain. The transfer prices are measured against OpenProvider's price API; the current table lives in `apps/api/src/modules/domains/domain-pricing.config.js` in the RichardTool repo.
+- **`.eu`, `.com`, `.net` and `.org` cost the one-time registration price**, and the transfer adds one year to the domain.
 
-The transfer is requested at the registry with your authorization code and our nameservers attached, so mail and website keep pointing at MyCompanyDesk. For `.nl` this usually completes within minutes; for other TLDs it can take up to five days. The Domains page shows a status card per transfer: requested, moved (the card disappears once the zone is active), or failed with the registrar's reason and a retry with a new code. A wrong code or an active transfer lock at your current hoster comes back as a refusal that tells you what to do.
+The transfer is requested at the registry with your authorization code and our nameservers attached, so mail and website keep pointing at MyCompanyDesk. For `.nl` this usually completes within minutes; for other TLDs it can take up to five days. The Your domain page shows a status card per transfer: requested, moved (the card disappears once the zone is active), or failed with the registrar's reason and a retry with a new code. A wrong code or an active transfer lock at your current hoster comes back as a refusal that tells you what to do.
 
 The quote refuses, with a named reason, when the TLD is not supported for transfer, when the domain is already registered with us (connect it through the "I already have a domain" option instead), when the domain is linked to another workspace, when a transfer for it is already running, or when the domain is not yet connected in nameserver mode with its mail at us. That last refusal exists because moving the registration first would silence your mail; the migration wizard below connects the domain first and moves the mail along with it.
 
-Moving a domain you had connected yourself updates your existing domain row, so your settings, mail and website stay as they are. A failed transfer is refunded and the domain row returns to its connected state. Renewal treats transferred domains like paid purchases.
+Moving a domain you had connected yourself updates your existing domain, so your settings, mail and website stay as they are. A failed transfer is refunded and the domain simply stays connected. Renewal treats transferred domains like paid purchases.
 
 #### Coming from another hoster (mail migration)
 
-The option **I am moving from another host** runs the whole move as one wizard: it connects your domain, prepares your mailboxes, imports the mail from your old mailboxes, transfers the domain registration to us, imports what arrived during the transfer, and ends with the notice that you can cancel your package at the old hoster. You need the password of each old mailbox and, for the transfer, the authorization code. Nameservers, MX records and ports stay out of sight; only the rare fallback step mentions them.
+The option **I am switching from another host** runs the whole move as one wizard: it connects your domain, prepares your mailboxes, imports the mail from your old mailboxes, transfers the domain registration to us, imports what arrived during the transfer, and ends with the notice that you can cancel your package at the old hoster. You need the password of each old mailbox and, for the transfer, the authorization code. Nameservers, MX records and ports stay out of sight; only the rare fallback step mentions them.
 
-Your mailboxes are ready from the start. Even while your domain is still with the old hoster, every mailbox already exists and importing your old mail can begin right away. Receiving and sending from those addresses switch on as soon as the domain is with us; the wizard handles the move itself later in the same flow, and the platform completes the mail setup automatically the moment the domain is active. While you wait, the Addresses and sending tab under Settings → Email marks the domain with a **Waiting for your domain** state: as soon as the nameservers have been switched, mail turns on automatically and there is nothing you need to do.
+Your mailboxes are ready from the start. Even while your domain is still with the old hoster, every mailbox already exists and importing your old mail can begin right away. Receiving and sending from those addresses switch on as soon as the domain is with us; the wizard handles the move itself later in the same flow, and the platform completes the mail setup automatically the moment the domain is active. While you wait, the Addresses and sending tab under Settings › Email marks the domain with a **Waiting for your domain** state: as soon as the nameservers have been switched, mail turns on automatically and there is nothing you need to do.
 
 The mail step asks for every address you had with the old hoster, one row per address, and the wizard only creates mailboxes for the addresses you name. Each address gets its own mailbox here; the first one becomes the default mailbox. An address that only forwarded to another address, without a password of its own, needs no entry: its mail already arrived in the mailbox it pointed at. Extra addresses can reuse the first address's password or get their own. The addresses move one at a time: while one is being moved, the rest wait in line, and each address card shows where it stands. Do not cancel your package at the old hoster until every address is done; the final screen lists the addresses that moved and, when an address did not come across completely, tells you to get in touch before cancelling anything. Messages that could not be moved at all, for instance because they are too large or unreadable, stay only at the old hoster; the final screen tells you how many, so you can save them yourself before cancelling your plan there.
 
-The import is a persistent job on our side, not a browser action. The job is stored server-side with the passwords of the old mailboxes encrypted (AES-GCM), and only with your explicit consent. After the domain activates, a follow-up run imports what arrived in between, a sweep run 48 hours later picks up the rest, and then the stored passwords are wiped. Fourteen days is the hard term: after that the passwords are gone in every case. When the import finishes, an in-app notification tells you how many messages arrived from how many folders, up to which date, and that you can now cancel your package at the old hoster. The IMAP host is guessed from your current MX records, with `imap.<domain>` and `mail.<domain>` as fallbacks; known hosters such as Hostinger are recognised by name, and where a hoster requires an app password the wizard says so. See `apps/api/src/modules/domains/domain-migrate.service.js` in the RichardTool repo for the mechanics.
+The import is a persistent job on our side, not a browser action. The job is stored server-side with the passwords of the old mailboxes encrypted (AES-GCM), and only with your explicit consent. After the domain activates, a follow-up run imports what arrived in between, a sweep run 48 hours later picks up the rest, and then the stored passwords are wiped. Fourteen days is the hard term: after that the passwords are gone in every case. When the import finishes, an in-app notification tells you how many messages arrived from how many folders, up to which date, and that you can now cancel your package at the old hoster. The IMAP host is guessed from your current MX records, with `imap.<domain>` and `mail.<domain>` as fallbacks; known hosters such as Hostinger are recognised by name, and where a hoster requires an app password the wizard says so.
 
 Two safeguards belong to the same flow. Deleting a mailbox or turning the inbox off asks for a confirmation that names how many messages will disappear, including imported history. And the transfer quote refuses while your mail has not moved yet, for the reason above. The privacy promise behind this: we keep the passwords of your old mailboxes encrypted until the transfer is complete, at most fourteen days, and delete them afterwards. That promise is also on the [privacy page](https://mycompanydesk.nl/privacy).
 
 ### Hosted website
 
-Your website home lives at **Company › Your website** (`/website`). It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The editor opens from **Edit site** when you want to change content or design.
+Your website home lives at **Communication › Website** (`/website`). It is a dashboard with seven tabs in the top bar: Overview, Visitors, Results, Pages, Findability, Connections and Domain & email.
 
 What the tabs cover:
 
-- **Overview** tab — Preview your site, see whether it is live, and check how many unpublished changes are waiting.
-- **Visitors** tab — See where visitors come from and how they move through the site.
-- **Findability** tab — SEO and page metadata, plus the card for service pages described below. Old `/website/seo` links redirect here.
-- **Connections** tab — Payment processors (Mollie, Stripe Connect) and third-party services such as Mailchimp, Plausible, and Trustpilot. Old `/website/integraties` links redirect here.
-- **Domain & email** tab — Custom domain, DNS, SSL, redirects, and inbox setup. See the custom domains section above.
-- **Settings** tab — Choose which builder is live (template or bespoke), and configure the workspace slug and other site-level settings.
+- **Overview** tab: preview your site, see whether it is live, and check how many unpublished changes are waiting. The status card is also where you roll the site back to the live version.
+- **Results** tab: what the site brought in, in one view: requests through the contact form, appointments through the booking block and sales through a product block, also per page.
+- **Pages** tab: per page, whether it draws visits and requests and whether it can be found, with the Google texts of each page editable right there. Adding or removing pages happens in the editor.
+- **Visitors** tab: See where visitors come from and how they move through the site.
+- **Findability** tab: SEO and page metadata, plus the card for service pages described below. Old `/website/seo` links redirect here.
+- **Connections** tab: Payment processors (Mollie, Stripe Connect) and third-party services such as Mailchimp, Plausible, and Trustpilot. Old `/website/integraties` links redirect here.
+- **Domain & email** tab: Custom domain, DNS, SSL, redirects, and inbox setup. See the custom domains section above.
 
-When your workspace has multiple active custom domains (Office plan), a domain switcher lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab.
+Old links to the Settings tab land on Overview. Your workspace has one website, even when you have several custom domains.
 
 The public site is served at the highest-priority URL the company owns: custom domain root → workspace subdomain → fallback `/portal/<slug>` route.
 
-You can extend the site with the **Appointments** block so visitors can book an appointment directly from your website. See [Online appointments](/en/features/site-bookings).
+You can extend the site with the **Online boeken (afspraak plannen)** block so visitors can book an appointment directly from your website. See [Online appointments](/en/features/site-bookings).
 
 #### Service pages for findability
 
@@ -259,35 +221,35 @@ See [Site Builder](/en/advanced/business-page) for the full editor guide.
 
 ### Email inbox
 
-The inbox is a top-level surface at `/inbox` (`apps/web/pages/inbox/index.vue`). Backend lives in `apps/api/src/modules/inbox/*` and writes to a separate set of tables (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
+The inbox has its own place in the app, at `/inbox`.
 
 When a forwarded supplier invoice is converted into a draft expense from an attachment, the expense is only booked after you confirm it.
 
-Before the bill is booked, the rule also looks at the expenses already standing in your books: an invoice can land on an existing expense instead of becoming a second one, with manually entered expenses and foreign-currency payments included. The supplier name carries the match, with the amount and a skewed window around it, because a payment often follows its invoice by weeks and a monthly supplier keeps its euro debit and its next invoice roughly a month apart. An invoice in dollars, pounds or francs can land next to the euro debit of the same supplier a few days apart, without any exchange rate in the system. Without supplier-name evidence, the rule only pairs the invoice with a bank-side expense of the same amount, and only when exactly one candidate fits. An expense that already carries a receipt never gets a second one over it; such an invoice books into To review instead, with a note pointing at the existing expense, because a reminder that arrives as a different file cannot be told apart. The catch-up on the bills tab also re-judges invoice mails after a change to the triage: bills that the triage once missed get another look, and a temporary outage never takes threads out of that catch-up for good. The triage model reads the file names of the attachments as well. If the invoice date falls in a VAT period that has already been filed, the automated booking is refused and an `inbox_expense_period_locked` notification is created instead of silently dropping the invoice; the notification lands on the inbox list and tells you which supplier and invoice date are involved, so you can book it manually in the current period or file a supplementary return.
+Before the bill is booked, the rule also looks at the expenses already standing in your books: an invoice can land on an existing expense instead of becoming a second one, with manually entered expenses and foreign-currency payments included. The supplier name carries the match, with the amount and a skewed window around it, because a payment often follows its invoice by weeks and a monthly supplier keeps its euro debit and its next invoice roughly a month apart. An invoice in dollars, pounds or francs can land next to the euro debit of the same supplier a few days apart, without any exchange rate in the system. Without supplier-name evidence, the rule only pairs the invoice with a bank-side expense of the same amount, and only when exactly one candidate fits. An expense that already carries a receipt never gets a second one over it; such an invoice books into To review instead, with a note pointing at the existing expense, because a reminder that arrives as a different file cannot be told apart. The catch-up on the bills tab also re-judges invoice mails after a change to the triage: bills that the triage once missed get another look, and a temporary outage never takes threads out of that catch-up for good. The triage model reads the file names of the attachments as well. If the invoice date falls in a VAT period that has already been filed, the automated booking is refused and you get a notification instead of silently dropping the invoice; the notification lands on the inbox list and tells you which supplier and invoice date are involved, so you can book it manually in the current period or file a supplementary return.
 
 Capabilities:
 
-- **Threading**: inbound mail is grouped into threads keyed by RFC 822 `Message-ID` / `In-Reply-To` / `References`. Each thread carries `last_message_preview`, `participants`, status (`open / snoozed / closed / spam / deleted`) and labels. Long threads collapse the middle messages behind a "Show {n} earlier messages" pill, keeping the oldest message and the newest two visible (Gmail/Outlook convention). Click the pill to expand everything.
-- **Reply** — inline reply box on the thread. Smart `From` picks the address the original mail was sent to, so a customer who emailed `support@acme.nl` gets a reply from `support@`, not `info@`.
+- **Threading**: inbound mail is grouped into threads keyed by RFC 822 `Message-ID` / `In-Reply-To` / `References`. Each thread shows a preview of the latest message, the participants, its status and labels. Messages you have already read collapse to one line (sender, preview, time); the newest message and anything that was still unread stay open (as in Gmail). Click a collapsed line to open it, or "Expand all {n} messages" to show everything.
+- **Reply**: inline reply box on the thread. Smart `From` picks the address the original mail was sent to, so a customer who emailed `support@acme.nl` gets a reply from `support@`, not `info@`.
 - **Reply all**: reply to all participants on the thread with one click. The action appears next to reply in the thread header and includes every recipient from the original message.
 - **Forward**: forward the entire thread to another recipient. Opens a compose drawer with the original message body and attachments preserved for editing before sending. The forwarded message header shows the original sender, date and subject.
 - **CC and BCC**: CC and BCC fields are available on both compose and reply through an "Add Cc/Bcc" toggle. Addresses accept comma-separated lists or paste from clipboard. The inputs stay hidden until needed, matching the standard inbox pattern where most messages do not need them.
 - **Drafts**: save partially written messages and come back to them later. Drafts are stored server-side and persist across browser sessions. Each draft carries a subject, recipient list, body and any attachments added. Drafts that are missing a subject show "(no subject)", and drafts without a recipient show "(no recipient)". In the thread list, a conversation that holds a reply draft of yours carries a red "Draft" label next to the name, so you can tell at a glance which thread you were mid-response on; opening it loads the draft straight into the reply box.
 - **Compose**: drawer form with a unified identity picker that sets both mailbox and sender address in one control, customer picker (or freeform `To`), subject, body, CC/BCC fields and attachments. Bounced-recipient warning is shown before send.
 - **Default sender**: the Send-from field of a new message opens on your own default mailbox, so in a workspace with several logins everyone is offered their own address instead of a colleague's. Without a saved choice it falls back to the first personal mailbox of the workspace, or the first mailbox. When the field sits on a mailbox that is not your default yet, a "Make this my default address" link under the field saves that mailbox as yours, and the hint then reads "This is your default address for new messages." The default applies to new messages only: a reply always goes from the mailbox the conversation arrived on, and invoices and quotes keep their own workspace sender address.
-- **Send-from aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
+- **Send-from aliases**: `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only. It is selectable as From, but inbound mail to it is dropped on ingest.
 - **Sender name** - outgoing mail carries a name next to the address: the display name of the mailbox, or your company name when no display name is filled in. Mailboxes without one show "Sends as" with the company name in the mailbox list, and clearing the display name sends under the company name again.
 - **Mailbox rail** - when your mailboxes sit on more than one domain, the mailbox list in the left rail groups them under a heading per domain. Each row shows only the part before the @, and `info@` sorts at the top of its group. With a single domain the headings are left out.
-- **Attachments** -- upload before send (compose and reply both). Tapping an attachment on inbound mail opens a preview first: PDFs render page by page, images and plain-text files show inline, and any other file type gets a file card with its size. A long PDF shows the first pages and points to the download for the rest. **Download** and **Share** sit next to the preview as separate buttons, so looking at a file is never an accidental download; on Android, saving lands the file in Downloads and sharing opens the system share sheet. Signed download URLs expire after a short TTL.
-- **Alias notice** -- when an inbound message arrives at an address on your own domain that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action. Addresses outside your own domain are never offered as aliases.
-- **Linking** — threads can be linked to a customer, project or invoice for cross-referencing.
-- **Catch-all fallback** — mail to any local-part on the domain falls through to the default mailbox (`is_default = true`, one per domain). This means typos and undeclared aliases don't vanish silently.
-- **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace. Currently API-only (no UI surface yet) — accessible to support staff for troubleshooting.
+- **Attachments**: upload before send (compose and reply both). Tapping an attachment on inbound mail opens a preview first: PDFs render page by page, images and plain-text files show inline, and any other file type gets a file card with its size. A long PDF shows the first pages and points to the download for the rest. **Download** and **Share** sit next to the preview as separate buttons, so looking at a file is never an accidental download; on Android, saving lands the file in Downloads and sharing opens the system share sheet. Signed download URLs expire after a short TTL.
+- **Alias notice**: when an inbound message arrives at an address on your own domain that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action. Addresses outside your own domain are never offered as aliases.
+- **Linking**: threads can be linked to a customer, project or invoice for cross-referencing.
+- **Catch-all fallback**: mail to any local-part on the domain falls through to the default mailbox (one per domain). This means typos and undeclared aliases don't vanish silently.
+- **Activity**: outbound sends, mailbox changes and thread state changes are recorded for the workspace. On a wide screen the side panel next to the conversation shows that history under **Activity**.
 - **HTML email rendering**: HTML emails are rendered with their original styles intact inside a sandboxed iframe. The renderer strips scripts, forms and event handlers during sanitisation, and blocks remote images by default to protect your privacy. A notice bar appears when images are blocked, with a single-click "Show images" action that re-renders the message with images enabled. Text-only fallback displays the plain-text part when no HTML body is present.
-- **Star/unstar**: mark important threads with a star for quick access. A star icon appears next to the status dot on starred threads in the thread list. The toolbar has a star button that toggles the state for the currently open thread. A "Starred" view in the left sidebar next to Open, Snoozed, Closed, Spam and Trash filters to only starred threads, backed by a partial database index for instant results.
-- **Read by** -- when a thread is still marked as new to you and a colleague has already opened it, the row names that colleague: Read by Anissa. On your phone you see an eye icon with the first name. Former colleagues and the accountant are not named.
-- **Soft-delete**: threads can be moved to Trash instead of being permanently destroyed. A delete button (trash icon) appears in the toolbar for non-deleted threads. Once deleted, the button changes to a restore action that moves the thread back to `open`. The Trash filter appears in the left sidebar alongside Open, Snoozed, Closed and Spam, so you can review deleted threads before they are purged.
-- **Full-text search**: a search bar above the thread list lets you search across all inbox messages by subject, body text, snippet, and sender. The search is powered by Postgres full-text search with weighted field ranking, so subject matches appear before body matches. Results are grouped by thread, with the best-matching message's snippet shown as a preview line. Supports quoted phrases, `OR`, and `-` exclusions. A single word of at least three characters is also matched inside email addresses and sender names, so searching for part of an address, like the domain, finds the thread. Multi-word and negated searches keep using full-text matching only. A 250 ms debounce keeps the UI responsive, and the loading spinner gives real-time feedback.
+- **Star/unstar**: mark important threads with a star for quick access. A star icon appears next to the status dot on starred threads in the thread list. The toolbar has a star button that toggles the state for the currently open thread. The "Starred" folder in the left rail, next to Inbox, Snoozed, Sent, Drafts, Archive, Spam and Trash, filters to only starred threads.
+- **Read by**: when a thread is still marked as new to you and a colleague has already opened it, the row names that colleague: Read by Anissa. On your phone you see an eye icon with the first name. Former colleagues and the accountant are not named.
+- **Soft-delete**: threads can be moved to Trash instead of being permanently destroyed. A delete button (trash icon) appears in the toolbar for non-deleted threads. Once deleted, the button changes to a restore action that moves the thread back to the inbox. The Trash folder sits in the left rail, so you can review deleted threads before they are purged.
+- **Full-text search**: a search bar above the thread list lets you search across all inbox messages by subject, body text, snippet, and sender. The search weights the fields, so subject matches appear before body matches. Results are grouped by thread, with the best-matching message's snippet shown as a preview line. Supports quoted phrases, `OR`, and `-` exclusions. A single word of at least three characters is also matched inside email addresses and sender names, so searching for part of an address, like the domain, finds the thread. Multi-word and negated searches keep using full-text matching only. A 250 ms debounce keeps the UI responsive, and the loading spinner gives real-time feedback.
 - **What the sender wants**: in the Office inbox, the row of a triaged thread shows one short line about what the latest message asks of you ("Requests a quote, wants to be finished in December"), written by the AI triage when the message arrived. The line only stands while the sender has the last word and the triage ran after it; once you have replied, or newer mail arrived that has not been triaged, the row falls back to the opening words of the message. See [Inbox groups](#inbox-groups-office) below.
 - **Internal notes**: a private note on the thread, for you and your team. The note appears in the conversation itself, at the point it was written, marked as internal only; the customer never sees it. You can @mention a teammate in a note.
 - **Save a sender as customer**: when a thread comes from an address that does not match one of your customers, the sender strip above the message says "Not in your customers yet" and offers to save the sender as a customer in one click.
@@ -295,7 +257,7 @@ Capabilities:
 
 #### Inbox groups (Office)
 
-On Office, the inbox groups incoming mail by what it asks of you. Three tabs sit above the list:
+On Office, the Inbox folder groups incoming mail by what it asks of you. Three tabs sit above the list:
 
 - **Waiting on you**: conversations where the sender is waiting for an answer. When a message has been sitting for a full day, the row counts the days it has been waiting. Mail that does not ask for an answer gets no waiting count, however long it has been sitting.
 - **Bills**: supplier invoices the triage recognised. The list opens the thread straight onto the bill card; a catch-up pass gives older bill mails another look whenever the triage has changed.
@@ -303,7 +265,7 @@ On Office, the inbox groups incoming mail by what it asks of you. Three tabs sit
 
 A tab without mail disappears. The tabs carry workspace-wide counts. When everything that was waiting on you is answered, the list shows a quiet "All done" notice instead of rows. On Desk, where the inbox is limited to reading and replying, the list stays one folder.
 
-The tabs live on the default inbox view itself: labels, Promotions and Starred work exactly as before. Archiving, snoozing and closing move a conversation out of the group it was in, the same way they always moved it out of the open list.
+The tabs live on the Inbox folder itself: labels and Starred work as always, and the Other group takes the place of the former Promotions folder. Archiving, snoozing and closing move a conversation out of the group it was in, the same way they always moved it out of the open list.
 
 #### Bill card in the reader
 
@@ -327,21 +289,21 @@ The drafted reply states what the last message in the thread asked for, in the l
 
 #### Drafts
 
-The Drafts tab sits alongside the main thread list. Drafts are saved server-side, so they survive browser restarts and follow you across devices. When you start a new message or reply and close the compose drawer without sending, the content is automatically saved as a draft. You can also explicitly save a draft with the "Save draft" button. A draft chip shows "Reply" if the draft was started from a thread, or "New" if it is a fresh compose. Editing a draft opens the compose drawer pre-filled with the saved content. Deleting a draft in the Drafts tab requires a confirmation step.
+The Drafts folder sits in the left rail. Drafts are saved server-side, so they survive browser restarts and follow you across devices. When you start a new message or reply and close the compose drawer without sending, the content is automatically saved as a draft; there is no separate save button. A draft started from a thread carries a "Reply" chip. Editing a draft opens the compose drawer pre-filled with the saved content. Deleting a draft in the Drafts folder requires a confirmation step.
 
 Opening a thread that holds a reply draft puts that draft in the reply box, where the header shows "Draft" with a trash action next to it. Discarding deletes the draft, empties the reply box back to its empty template and shows a toast with "Undo", so one tap on the trash never costs you a written answer: undo puts your text back into the box while the thread is still open (attachments included), or re-saves it as a draft otherwise. The draft only leaves the server once the toast's undo option is gone. If the delete fails, your text returns to the box with a clear error message; a draft that was already sent or thrown away elsewhere counts as discarded.
 
-The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/en/settings/email), but it can't receive mail.
+The inbox uses your custom domain only after the inbox is switched on and your domain's MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/en/settings/email), but it can't receive mail.
 
 #### Live polling
 
-The inbox refreshes automatically while the tab is open. The thread list polls every 45 seconds for new mail, and the sidebar badge refreshes every 60 seconds. Both pauses when the tab is hidden, so no unnecessary network traffic in the background. The polling is silent: no loading spinners flash on background refreshes, and polls are skipped entirely during an active search to keep your results stable. A manual refresh button next to Compose lets you pull the latest state instantly when you are expecting something right now; it is disabled during the in-flight call to prevent request stacking.
+The inbox refreshes automatically while the tab is open. The thread list polls every 45 seconds for new mail, and the sidebar badge refreshes every 60 seconds. Both pause when the tab is hidden, so no unnecessary network traffic in the background. The polling is silent: no loading spinners flash on background refreshes, and polls are skipped entirely during an active search to keep your results stable. On a phone, pull the list down to fetch the latest state right away; while that refresh runs, another pull does not start a second one.
 
 #### Mark as unread
 
 You can mark any open thread as unread from the toolbar. Unlike earlier versions where the unread state was a local-only toggle that a refetch would discard, this is now persisted server-side. The sidebar badge counts unread messages, not threads with unread, and updates accordingly. The thread stays unread across page reloads, browser restarts, and devices until you open it again.
 
-If a thread is moved to Trash, Spam, Closed or Snoozed from the list while its reader is open, the reader closes automatically. This keeps the detail view in sync with the folder you are viewing, so you don't keep composing a reply to a thread that has already left the current view.
+If a thread is moved to Trash, Spam, Archive or Snoozed from the list while its reader is open, the reader closes automatically. This keeps the detail view in sync with the folder you are viewing, so you don't keep composing a reply to a thread that has already left the current view.
 
 #### Spam filter
 
@@ -365,11 +327,11 @@ Outgoing mail shows the photo of whoever actually wrote it: your own photo, or a
 
 #### Using your mailbox in a mail app
 
-You can connect a MyCompanyDesk mailbox to a regular mail app: **Inbox > Settings**, open the mailbox, then **Connect mail app**. The modal gives you everything the app asks for: the incoming server (IMAP), POP3 for apps without IMAP, the outgoing server (SMTP), the username (your mailbox address) and an app password.
+You can connect a MyCompanyDesk mailbox to a regular mail app: **Settings › Email › Addresses and sending**, open the mailbox, then **Connect mail app**. The window gives you everything the app asks for: the incoming server (IMAP), POP3 for apps without IMAP, the outgoing server (SMTP), the username (your mailbox address) and an app password.
 
 The inbox stays the source of truth. Reading, sending, folders and read status stay in sync with your Inbox in MyCompanyDesk, in both directions: read a message in your mail app and it shows as read in the inbox, and mail you send from the mail app lands in the right conversation. The folders are fixed (Inbox, Archive, Sent, Drafts, Junk, Trash) and appear under their familiar names in your mail app; creating or renaming folders from the mail app is not supported.
 
-The modal walks you through setup per mail app, with a step-by-step guide for Apple Mail, Outlook, the Gmail app and Thunderbird. For Apple devices you can download an installation profile that fills in the server settings for you, and Thunderbird finds the servers on its own. In the Gmail app you add the account with **Personal (IMAP)**; Gmail on the web does not fetch other accounts, but you can connect it for sending.
+The window walks you through setup per mail app, with a step-by-step guide for Apple Mail, Outlook, the Gmail app and Thunderbird. For Apple devices you can download an installation profile that fills in the server settings for you, and Thunderbird finds the servers on its own. In the Gmail app you add the account with **Personal (IMAP)**; Gmail on the web does not fetch other accounts, but you can connect it for sending.
 
 For a domain whose mail is hosted with MyCompanyDesk, Outlook can fill in the server settings by itself: it tries `imap.` and `smtp.` names under your own domain first and finds our servers behind them, with a valid certificate. If Outlook proposes the settings on its own, all you have to do is accept them. If it proposes nothing, set the account up by hand: the Outlook guide lists every field in the order Outlook itself shows them, each with a copy button, and tells you what belongs in it. The **Connect mail app** dialog keeps naming the shared servers (`imap.mycompanydesk.nl`); those keep working for every mailbox, so the values there remain a safe fallback. One thing to watch for: if Outlook has already filled in a server name, check whether a dot sits behind it, like `imap.mycompanydesk.nl.`, and remove that dot, or the connection will not work.
 
@@ -377,34 +339,34 @@ A password keeps working until you revoke it yourself, so create one per device 
 
 When your mail app cannot sign in, the window tells you why. At the top it names the most recent rejected sign-in with the day and time and explains what to do about it, and each app password in the list shows its last rejection with a short reason. A rejection disappears from view once signing in succeeds again afterwards. The reasons the server can report: the password has been revoked (create a new one below and put it in your mail app, for both incoming and outgoing), there is a typo in the password (enter it again in your mail app, or create a new one below), the mail app is using your old password or your MyCompanyDesk password instead of an app password, the username is wrong (enter the full mailbox address), your account currently has no access to the Inbox, or the Inbox is turned off for this domain.
 
-Whether reading through IMAP and POP3 is switched on can depend on the server. If reading is not available yet, the modal says so and you can still set up sending. POP3 fetches the inbox folder only, so IMAP is the better choice when your app supports it.
+Whether reading through IMAP and POP3 is switched on can depend on the server. If reading is not available yet, the window says so and you can still set up sending. POP3 fetches the inbox folder only, so IMAP is the better choice when your app supports it.
 
 One thing to know about POP3: many apps delete mail from the server once they have fetched it, and those conversations then move to the trash here and are gone after 30 days. Use IMAP if your app supports it, or turn on 'leave a copy on the server' in your app.
 
 ### Sales
 
-When you add buy buttons to pricing tiers or a product block on your public site, every completed payment creates a sale record. Track them at **Money > Sales** (`/workspace/financial/money/sales`).
+When you add buy buttons to pricing tiers or a product block on your public site, every completed payment creates a sale record. Track them at **Invoices › Website sales** (`/invoices?view=website-sales`).
 
 What the sales log shows:
 
 - A chronologically ordered list of all purchases made through your site.
-- The payment processor (Mollie or Stripe Connect) and the payment status (`paid`, `pending`, `failed`, `expired`, `refunded`).
+- The payment processor (Mollie or Stripe Connect) and the payment status (paid, pending, failed, expired or refunded).
 - The originating section (which pricing tier or product block was purchased).
 - Customer email, amount paid, and currency.
 
-Sales records are created by the public checkout endpoint (`POST /public/sites/:slug/checkout`), which validates the section, creates a payment through the connected processor, and redirects the buyer to the hosted checkout page.
+Sales records are created by the checkout on your public site, which checks the section, creates a payment through the connected processor, and redirects the buyer to the hosted checkout page.
 
-Paid sales show an action menu (three dots) with two options:
+The invoice of a paid sale has a **Paid via your website** block with two buttons:
 
 - **Regenerate invoice.** Re-creates the linked invoice if it was lost or not generated during the purchase. Safe to run even if the invoice already exists.
 - **Refund.** Returns the full amount to the customer through the original payment processor (Mollie or Stripe). A credit note is automatically created against the linked invoice for your bookkeeping. Only available for paid sales.
 
 ### Post-purchase flow
 
-When a payment completes, the platform automatically runs the following steps. Everything runs fire-and-forget: failures are logged and do not affect the payment status the buyer sees.
+When a payment completes, the platform automatically runs the following steps. Everything runs in the background: failures are recorded and do not affect the payment status the buyer sees.
 
-1. **Invoice generated.** An invoice is created from the sale, with the product name, price and the buyer's email. The price you set in the editor is the final customer price, VAT included. The invoice line splits this into an ex-VAT amount and the VAT rate you configured on the pricing tier or product block (default 21%). If the buyer's email matches an existing customer in your workspace, the invoice is linked to that customer. Otherwise a minimal customer record is created. The invoice is finalised immediately (status `sent`) since payment was already received.
-2. **Payment recorded.** A payment record is created on the invoice through the standard payment service. The payment method is set to the processor (Mollie or Stripe), and the reference includes the processor session ID for audit trails.
+1. **Invoice generated.** An invoice is created from the sale, with the product name, price and the buyer's email. The price you set in the editor is the final customer price, VAT included. The invoice line splits this into an ex-VAT amount and the VAT rate you configured on the pricing tier or product block (default 21%). If the buyer's email matches an existing customer in your workspace, the invoice is linked to that customer. Otherwise a minimal customer record is created. The invoice is finalised immediately (status sent) since payment was already received.
+2. **Payment recorded.** A payment is registered on the invoice. The payment method is the processor (Mollie or Stripe), and the reference holds that processor's payment reference, so you can always trace the payment.
 3. **Customer receipt.** The buyer receives a confirmation email with the product name, amount and payment method. If an invoice was generated, the email includes a secure portal link to view and download the invoice PDF.
 4. **Owner notified.** You get an in-app notification and an email summary of the sale: product, amount, customer email, and a direct link to the invoice.
 
@@ -414,31 +376,11 @@ The checkout-success and checkout-cancelled pages show the buyer a branded resul
 
 The Inbox tab is always visible in the sidebar and bottom navigation. On Desk the inbox is limited to reading and replying; composing new messages, your own mailboxes and domains belong to Office. On Office the tab is always present, even before a domain has been connected, because it is the entry point to the inbox setup wizard.
 
-For a workspace that already has an inbox-enabled domain, the tab shows the real inbox with unread counts and full thread management. For paid workspaces without an inbox-enabled domain yet, selecting the tab redirects to `/inbox/setup` so you can wire the domain and enable the inbox in one flow.
-
-## Demo website claim
-
-When MyCompanyDesk builds a demo website for a prospect as part of the outreach program, the prospect receives a personalised claim link (via WhatsApp or email). The claim page at `/claim/<slug>` lets the prospect take ownership of the demo workspace with their own email address and password.
-
-### How it works
-
-1. Sil or the outreach cron generates a demo workspace (`companies.is_demo = true`) with a 4-page trade-specific website (Home, Diensten, Over ons, Contact) built on top of every new workspace's default site foundation. Trade-aware overlays are then applied: the Home hero gets a trade tagline, the Diensten page receives a spotlight block with the trade's primary service and a services block with three trade-specific service cards, and the Contact page is populated with the prospect's phone number in the form intro and their address in the locations block.
-2. The prospect receives a link like `https://app.mycompanydesk.com/claim/roofer-amsterdam`.
-3. The claim page loads the demo by slug and shows the business name. If the demo workspace exists and is claimable, the prospect fills in their email and a password (minimum 8 characters, at least one letter and one digit).
-4. On submit, the workspace is atomically transferred: the placeholder user is rewritten with the prospect's email and password, `is_demo` is flipped off, and the outreach row is updated with claim metadata.
-5. The email is marked as verified on claim (the prospect already proved ownership of the contact method used for outreach). A welcome email is still sent so the address is in their inbox.
-6. The prospect is redirected to the login page with a success message and can immediately sign in, edit their website, send invoices, and use the inbox.
-
-### Safety guarantees
-
-- Only `is_demo = true` workspaces can be claimed. Real customer sites are never claimable through this endpoint.
-- The email must not already belong to another user on the platform.
-- The claim is atomic (single database transaction), so partial transfers cannot leave a workspace in an inconsistent state.
-- Claim links are invalidated once the demo is claimed, preventing reuse.
+For a workspace that already has an inbox-enabled domain, the tab shows the real inbox with unread counts and full thread management. For Office workspaces without an inbox-enabled domain yet, selecting the tab redirects to `/inbox/setup` so you can wire the domain and enable the inbox in one flow.
 
 ## Sending mail vs receiving mail
 
-This bundle is the **receiving** side. Outgoing email — invoice delivery, reminders, quote sends — is handled by the broader email pipeline described in [Email Integration](/en/settings/email). The inbox is for receiving customer mail and composing replies; it does not route your automated invoice sends. Invoice delivery always respects your chosen delivery method under [Email Integration](/en/settings/email) (Gmail, Outlook, or the built-in sender). The inbox domain's DKIM is used for outbound replies composed in the inbox, not for automated transactional mail.
+This bundle is the **receiving** side. Outgoing email (invoice delivery, reminders, quote sends) is handled by the broader email pipeline described in [Email Integration](/en/settings/email). The inbox is for receiving customer mail and composing replies; it does not route your automated invoice sends. Invoice delivery always respects your chosen delivery method under [Email Integration](/en/settings/email) (Gmail, Outlook, or the built-in sender). The inbox domain's DKIM is used for outbound replies composed in the inbox, not for automated transactional mail.
 
 ## Limits and gotchas
 
@@ -447,14 +389,14 @@ This bundle is the **receiving** side. Outgoing email — invoice delivery, remi
 - **You cannot claim a zone another workspace already holds.** When you add a nameserver-mode domain, the platform checks whether the underlying Cloudflare zone is already live for a different workspace. If it is, the add is refused with a clear error so you cannot "verify" a domain off someone else's DNS.
 - **Re-adding your own removed domain still works.** If your workspace previously removed a domain, the existing zone can be reused for the same workspace; the guard only blocks another workspace from taking it over.
 - **CNAME mode has no email.** Email routing requires a full Cloudflare zone, which only nameserver mode provides.
-- **The wizard refuses to overwrite an existing third-party MX.** If your apex already points at Google Workspace or Microsoft 365, `quickEnableInbox` returns `apexMx.status = 'conflict'` and you have to choose: migrate MX to Cloudflare, or stay on your existing provider and skip the bundled inbox.
+- **The wizard refuses to overwrite an existing third-party MX.** If your domain already points at Google Workspace or Microsoft 365, the wizard reports a conflict and you have to choose: migrate MX to Cloudflare, or stay on your existing provider and skip the bundled inbox.
 - **Reserved subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` and a handful of others are blocked at the workspace-slug level.
 - **Your plan decides what you see.** If something is not in your plan, you see an upgrade button instead of the editor.
 
 ## Related
 
-- [Setup wizard](/en/getting-started/company-setup) — the magical onboarding that drives the bundled flow.
-- [Email Integration](/en/settings/email) — outgoing email, send-from identity picker, delivery tracking.
-- [Site Builder](/en/advanced/business-page) — the full editor guide.
-- [Company Settings](/en/settings/company) — the umbrella that hosts About / Look / Website / Address.
-- [Billing & Plans](/en/settings/billing) — feature flags that gate the bundle.
+- [Setup wizard](/en/getting-started/company-setup): pick website or mail there to start in this flow.
+- [Email Integration](/en/settings/email): outgoing email, send-from identity picker, delivery tracking.
+- [Site Builder](/en/advanced/business-page): the full editor guide.
+- [Company Settings](/en/settings/company): company details, logo and colour.
+- [Plan & payments](/en/settings/billing): what is included in Desk and Office.

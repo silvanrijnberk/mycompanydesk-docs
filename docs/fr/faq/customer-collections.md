@@ -12,7 +12,7 @@ chatbot:
 Pour voir les données client qui influencent le suivi des factures dans l'application :
 1. Ouvrez Clients et sélectionnez le client
 2. Vérifiez dans la fiche client l'e-mail de facturation, l'adresse, le numéro de TVA et les conditions de paiement enregistrées
-3. Consultez la carte « Factures récentes » pour le statut et le total de chaque facture, et ouvrez une facture pour ses détails de paiement
+3. Consultez la carte « Historique » avec les dernières factures, devis, projets et heures de ce client, chacun avec sa date, son statut et son montant. « Voir tout » affiche toutes les factures du client, et une facture ouverte montre ses détails de paiement
 4. Mettez à jour la fiche client si les coordonnées ou les informations de facturation sont obsolètes
 
 Des coordonnées et informations de facturation à jour permettent aux rappels d'arriver à la bonne adresse, ce qui est le meilleur levier pour être payé à temps.

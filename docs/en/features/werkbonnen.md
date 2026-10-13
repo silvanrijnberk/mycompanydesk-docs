@@ -9,11 +9,11 @@ A work order records what you did at a customer's: the visit, the hours, the mat
 
 ## Turning it on
 
-Work orders are an opt-in module. Switch them on under **Settings > Modules**. There is no plan gate: the module is free on every plan, and access follows the same page permission as invoices.
+Work orders are an opt-in module. Switch them on under **Settings › Modules**. There is no plan gate: the module is free on every plan, and access follows the same page permission as invoices.
 
 ## The work order list
 
-The list lives at **Work orders** in the navigation. Tabs at the top filter by state: **All**, **Draft**, **Signed** and **Invoiced**. Each row shows the work order number, the customer, the work address and the state as a coloured pill. The search box finds work orders by number, customer or address.
+The list lives at **Work orders** in the navigation. Tabs at the top order the work orders by what still needs doing: **All** (what needs you first), **Still to be signed** and **To invoice**. Inside the list, work orders are grouped: first **To invoice** and **Still to be signed**, then what has been **Invoiced**, per month. Each row shows the work order number, the customer, the work address and, in the **Progress** column, where the work order stands. The search box finds work orders by number, customer or address.
 
 ## Creating a work order
 
@@ -56,6 +56,6 @@ When you merge two customers, their work orders move to the remaining customer t
 
 ## Tips
 
-- Work orders are draft until they are signed. Use the state tabs to see what still needs a signature.
+- Work orders are draft until they are signed. Use the **Still to be signed** tab to see what still needs a signature.
 - The work order page shows the next step for each state: fill in and sign, then invoice or email, then check the invoice.
 - Create a work order from a quote and the lines carry over: hour lines become labour, the other lines become materials, and line discounts come along.

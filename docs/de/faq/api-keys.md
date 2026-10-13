@@ -1,16 +1,17 @@
 ---
 title: "API-Schlüssel"
-description: "API-Schlüssel verwalten: Gehen Sie zu Arbeitsbereich-Einstellungen, API-Schlüssel, erstellen Sie einen Schlüssel und kopieren Sie ihn sofort."
-last_verified: 2026-05-09
+description: "Können Sie in MyCompanyDesk API-Schlüssel oder Webhooks anlegen? Nein, es gibt keine öffentliche API. So bekommen Sie Ihre Daten trotzdem."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]
   actions:
-    - { label: "Open API keys", to: "/settings/api-keys" }
+    - { label: "Open Daten herunterladen", to: "/settings/downloaden" }
   follow_up: ["How do I set up my company settings?", "How do I manage team access?"]
 ---
-So verwalten Sie API-Schlüssel:
-1. Gehen Sie zu Workspace-Einstellungen → API-Schlüssel
-2. Klicken Sie auf „API-Schlüssel erstellen“ und geben Sie ihm einen aussagekräftigen Namen
-3. Kopieren Sie den Schlüssel sofort, da er nicht erneut angezeigt wird
-4. Wählen Sie Scopes: **Lesen**, **Schreiben** oder **Admin**
-5. Prüfen Sie die Scopes und widerrufen Sie Schlüssel, die Sie nicht mehr brauchen
+MyCompanyDesk hat keine öffentliche API und keine Webhooks. Sie können also keine API-Schlüssel anlegen.
+
+Möchten Sie Ihre Daten in einem anderen System nutzen, geht das in jedem Tarif so:
+1. Öffnen Sie **Einstellungen › Daten herunterladen** und laden Sie Ihre Rechnungen, Kunden und Ausgaben als CSV-Datei pro Bereich herunter, oder alles zusammen als JSON-Backup
+2. Oder geben Sie Ihrem Buchhalter kostenlos Zugriff unter **Einstellungen › Ihr Buchhalter**
+
+Mehr dazu lesen Sie unter [API-Integration](/de/advanced/api).

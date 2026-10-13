@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-10-11
+last_verified: 2026-10-13
 ---
 
 # Sitebouwer
@@ -10,40 +10,25 @@ Bouw je zakelijke website met een drag-and-drop-editor. Maak meerdere pagina's, 
 
 ## Overzicht
 
-De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe werkruimte begint met een standaardsite van 4 pagina's (Home, Diensten, Over ons, Contact), zodat je vanaf dag één een echte multi-page basis hebt. De editor biedt je:
+De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe werkruimte begint met een standaardsite (Home, Diensten, Over mij en Contact, plus een privacybeleid en algemene voorwaarden), zodat je vanaf dag één een echte multi-page basis hebt. De editor biedt je:
 
-- **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties. De vier standaardpagina's zijn klaar om te bewerken, te verwijderen of aan te vullen.
-- **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Office-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
-- **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina. Sla secties op als herbruikbare blokken en bouw je eigen bibliotheek op.
+- **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties. De standaardpagina's zijn klaar om te bewerken, te verwijderen of aan te vullen.
+- **Sectieblokken**: Voeg blokken toe zoals een grote kop, tekst, galerij, foto met tekst, diensten, team, klantreacties en een contactformulier. Sla blokken op als herbruikbare blokken en bouw je eigen bibliotheek op.
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
 - **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen, externe links en inline navbar-styling (merknaam, CTA-knop, telefoon, belknop, sticky).
 - **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
 - **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken. In desktopweergave kun je ook een echte viewportbreedte kiezen (1280, 1440 of 1920 pixels), zodat de media queries van de site zelf eerlijk reageren in plaats van gesimuleerd te worden.
 - **Verstelbare panelen**: Sleep de rechterrand van de linker rail en de linkerrand van de rechter inspector om elk paneel breder of smaller te maken. Dubbelklik op een vergrotingsgreep om terug te gaan naar de standaardbreedte. De breedte wordt per apparaat onthouden in localStorage.
 - **Zoom en passend in venster**: Zoom het canvas van 25% tot 200%, of klik op de zoomwaarde om te kiezen voor passend, 50%, 100% of 200%. Het stage-gebied scrollt wanneer het geschaalde canvas groter wordt.
-- **Sneltoetsen**: Ongedaan maken/opnieuw, de geselecteerde sectie verplaatsen, in- en uitzoomen, passend in het venster, panelen sluiten en het overzicht met sneltoetsen openen via de toetsen die in de onderste balk staan.
+- **Sneltoetsen**: Ongedaan maken en opnieuw, een blok selecteren, verplaatsen, dupliceren of verwijderen, in- en uitzoomen, passend in het venster en panelen sluiten. Het overzicht met alle sneltoetsen open je met ⌘/ of met de knop **Sneltoetsen** onderaan de rail.
 
-Je website-dashboard vind je onder **Bedrijf > Je website** (`/website`). De editor open je daarvandaan.
+Je website vind je in de zijbalk onder **Communicatie › Website** (`/website`). De editor open je daarvandaan.
 
-Als je `/website` opent, kom je op het sectieoverzicht terecht: je ziet de live site, de publicatiestatus en een duidelijke ingang naar de editor. De editor zelf zit op `/website/editor` en bereik je bewust vanuit het overzicht, in plaats van dat hij direct het hele scherm overneemt.
-
-## AI-snelstart
-
-Als je voor het eerst de sitebouwer opent op een nieuwe werkruimte, zie je een snelstartbanner bovenaan. Die leest je KVK-gegevens (bedrijfsnaam, branche, plaats) en stelt een eerste tagline, een over-ons-tekst en drie diensten voor. Je kunt alles ter plekke aanpassen voordat je het overneemt, opnieuw genereren als de eerste suggestie niet helemaal klopt, of de banner wegklikken. Geen wizardvragen, geen gedoe vooraf.
-
-Wat de banner voor je doet:
-
-- **Genereren**: Klik op **Genereer voorstel** om de AI je KVK-data te laten lezen en kopij voor te stellen. Wat eruit komt blijft bij wat je gaf: op de Over-mij-pagina komt geen verzonnen verhaal.
-- **Inline bewerken**: Pas de tagline, over-tekst en dienstnamen en omschrijvingen direct in de banner aan.
-- **Overnemen**: Klik op **Overnemen** om de goedgekeurde kopij naar je werkruimte te schrijven. Je bedrijfsomschrijving, hero-tagline en diensten worden in een keer bijgewerkt.
-- **Opnieuw genereren**: Niet tevreden? Klik op **Opnieuw genereren** voor een nieuwe set suggesties.
-- **Wegklikken**: De banner onthoudt je keuze lokaal. Hij blijft verborgen totdat je je werkruimtegegevens opnieuw instelt.
-
-De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in je werkruimte. Als AI niet is geconfigureerd, werkt de banner alsnog met een verstandige terugval op basis van je branchecode en bedrijfsnaam.
+Als je `/website` opent, kom je op het tabblad **Overzicht**: je ziet je site, de publicatiestatus en de knop **Bewerk site**. De andere tabbladen zijn **Bezoekers**, **Resultaten**, **Pagina's**, **Gevonden worden**, **Koppelingen** en **Domein & e-mail**. De editor zelf zit op `/website/editor` en bereik je bewust via **Bewerk site**, in plaats van dat hij direct het hele scherm overneemt. Op een telefoon opent de editor in een lichte bewerkmodus voor teksten, foto's, reviews en contactgegevens, zonder slepen of stijlinstellingen.
 
 ## Website-opzetwizard
 
-Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Hij opent automatisch de eerste keer dat een nieuwe werkruimte `/website` bezoekt, en je kunt hem later opnieuw starten via **Bedrijf > Je website > Stijl** met **Opnieuw opzetten**; bij een herstart begint hij bij wat er al staat. Hij doorloopt deze stappen:
+Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Bij je aanmelding wordt er nog geen site gebouwd: open je **Website** voor het eerst, dan start de wizard vanzelf. Werd er bij een ouder account al een site voor je gemaakt die nog niet live staat, dan zie je in plaats daarvan **We hebben je website alvast gemaakt**, met de keuze **Zet mijn site live** of **Eerst aanpassen**. Je kunt hem altijd opnieuw starten in de editor via **Hele site** › **Merk** met **Opnieuw opzetten**; bij een herstart begint hij bij wat er al staat. Hij doorloopt deze stappen:
 
 1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon. Dezelfde stap neemt je echte bedrijfsnaam mee (verplicht, en meteen opgeslagen bij je bedrijfsgegevens), je telefoonnummer, je WhatsApp-nummer (ja, met hetzelfde nummer als je telefoon, of een ander nummer), je Instagram (en eventueel Facebook of LinkedIn), dat bij je bedrijfsgegevens terechtkomt en bij invullen de social links in de footer aanzet, je openingstijden (met snelle keuzes voor de weekdagen, het weekend of elke dag, en de tijden per dag in te stellen), het adres dat je contactpagina toont en het adres waarmee klanten je mogen mailen, gevraagd als **E-mailadres voor klanten** met een vinkje of je site dat adres toont. Je inlogadres staat er al ingevuld, maar komt alleen op je site zolang je het vinkje aan laat; pas je het adres aan, dan verandert het ook in je bedrijfsgegevens (en op je facturen).
 2. **Wat je wilt** - of je site vooral klanten moet binnenhalen, je werk moet tonen, betrouwbaar moet overkomen of beter vindbaar moet zijn.
@@ -60,128 +45,72 @@ Kies je in de boekingsvraag voor **Klanten kiezen zelf een tijd**, dan vraagt de
 
 Je mag ook halverwege stoppen: klik op **Later afmaken** of herlaad de pagina, en je antwoorden staan er bij terugkeer weer. De wizard bewaart wat je zelf hebt gewijzigd op dat apparaat, ongeveer een week lang, en zet iets alleen terug zolang de onderliggende waarde niet veranderd is; zijn je bedrijfsgegevens of diensten in de tussentijd gewijzigd, vanuit Instellingen of vanaf een ander apparaat, dan geldt de huidige waarde.
 
-Bron: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`; `apps/web/utils/siteWizardDuration.ts#guessServiceDurationMin`.
+Dezelfde wizard kan een bestaande site ook helemaal opnieuw schrijven. Als je hem vanuit **Merk** herstart, vraagt hij eerst om bevestiging, want afsluiten vervangt tekst die je zelf hebt aangepast. De site blijft concept tot je zelf publiceert.
 
-Dezelfde wizard kan een bestaande site ook helemaal opnieuw schrijven. Als je hem vanuit de Stijl-tab herstart, vraagt hij eerst om bevestiging, want afsluiten vervangt tekst die je zelf hebt aangepast. De site blijft concept tot je zelf publiceert.
+## Indeling van de editor
 
-## Tabs
+Bovenaan de editor staat een rij tabbladen: eerst **Hele site**, daarna elke pagina van je site. Sleep een paginatab om de volgorde te veranderen (de homepagina staat altijd vooraan), of klik op **+** (**Pagina toevoegen**) voor een nieuwe pagina. Welke tab je kiest, bepaalt wat de rail links aanbiedt:
 
-De sitebouwer heeft drie tabs: Editor, Pagina's en Stijl. Klik op de Stijl-header om de sub-tabs (waaronder Animatie) uit of in te klappen.
+- **Een pagina**: **Blokken** (de blokken van deze pagina, om toe te voegen, te verplaatsen, te dupliceren of te verwijderen), **Stijl** (wat alleen deze pagina anders mag hebben, zoals achtergrond en breedte) en **Instellingen** (titel, webadres, zichtbaarheid in het menu en hoe de pagina in Google verschijnt). Klik op een blok om het in de inspector rechts te bewerken: inhoud, layout, stijl en animatie.
+- **Hele site**: **Ontwerp** (de pakketten-galerij), **Kleuren**, **Merk**, **Letters**, **Knoppen**, **Menubalk**, **Ruimte**, **Animatie**, **Elementen**, **Navigatie**, **Footer**, **Versies** (eerdere publicaties en bewaarde versies, met een weg terug) en onderaan, apart, **Eigen CSS**.
 
-- **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
-- **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd. Elke pagina toont een Live/Concept-badge met snelle wisselknoppen: klik op het wereldbol-icoontje om een conceptpagina live te zetten, of op het oog-dicht-icoontje om een live pagina terug naar concept te zetten.
-- **Stijl**: Pas je sitebrede ontwerptokens aan. Kies een klik-en-klaar-preset (Editorial) en stem daarna kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS fijn af. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
-
-Domein, SEO en koppelingen met derden beheer je vanuit de `/website`-thuis-tabbladen, niet in de editor.
+Al je pagina's als lijst, met hun status, Google-omschrijving en bezoekcijfers, zie je buiten de editor op het tabblad **Pagina's** van Website. Domein, vindbaarheid in Google en koppelingen met derden beheer je ook daar, op de tabbladen **Domein & e-mail**, **Gevonden worden** en **Koppelingen**, niet in de editor.
 
 ### Pakketten-galerij
 
-De galerij **Pakketten** (`Bedrijf > Je website > Pakketten`) is de snelste manier om te beginnen met een complete, voorgestylede site. Hij toont elk goedgekeurd sitepakket: een afgebouwde sjabloon met kleurenpakket en lettertypecombinatie voor een specifiek vak, weergegeven met een kleine swatchkaart die het eigen palet van het pakket laat zien.
+De pakketten-galerij (`/website/pakketten`, en in de editor **Hele site** › **Ontwerp**) is de snelste manier om te beginnen met een complete, voorgestylede site. Hij toont elk goedgekeurd sitepakket: een afgebouwde sjabloon met kleuren en lettertypecombinatie voor een specifiek vak.
 
 Zo werkt het:
 
-1. Open **Bedrijf > Je website** en klik bovenaan op **Pakketten**.
-2. Blader door de kaarten. Elke kaart toont een echte screenshot van het pakket als die al is gegenereerd, anders een kleurswatch op basis van het eigen palet van het pakket. De naam, het vak, het aantal pagina's en de korte omschrijving staan onder de afbeelding.
-3. Klik op **Bekijk voorbeeld** om een live voorbeeld van het pakket in een nieuw tabblad te openen.
-4. Klik op **Gebruik dit pakket**. Er verschijnt een bevestiging die aangeeft dat je huidige conceptsite (pagina's, secties en stijl) wordt vervangen.
-5. Het pakket wordt alleen op je **concept** toegepast. Er wordt niets automatisch gepubliceerd.
-6. De editor opent zodat je het resultaat kunt bekijken, tekst en afbeeldingen kunt aanpassen en zelf kunt publiceren.
+1. Open in de editor **Hele site** › **Ontwerp**, of ga naar `/website/pakketten`.
+2. Blader door de kaarten. Elke kaart toont een voorbeeld van het pakket, met de naam, het vak, het aantal pagina's en een korte omschrijving.
+3. Klik op **Bekijk voorbeeld** om het pakket te bekijken: op `/website/pakketten` in een nieuw tabblad, in de editor op ware grootte naast je eigen site.
+4. Kies hoe je het pakket gebruikt:
+   - **Neem de look over**: alleen de kleuren, letters en knopstijl van het pakket. Je pagina's, blokken en teksten blijven precies zoals ze zijn.
+   - **Gebruik dit ontwerp**: je huidige conceptsite (pagina's, blokken en stijl) wordt vervangen door het pakket. Daarna maakt MyCompanyDesk foto's en teksten voor jouw bedrijf; voorbeeldcijfers, reviews en projecten uit het ontwerp blijven leeg tot je ze zelf invult. Je vorige concept blijft bewaard als herstelpunt, dus je kunt altijd terug.
+5. In beide gevallen vraagt een bevestiging eerst om akkoord, en wordt alleen je **concept** aangepast. Er wordt niets automatisch gepubliceerd.
+6. Je bekijkt het resultaat in de editor, past tekst en afbeeldingen aan en publiceert zelf.
 
-Dezelfde galerij zit ook in de editor. Open de rail **Ontwerp** om pakketten te bekijken op het canvas zelf. Klik op **Bekijk voorbeeld** bij een kaart om het publieke voorbeeld op ware grootte te zien, naast je eigen site, en gebruik **Terug naar alle ontwerpen** om verder te vergelijken. Pas je een pakket toe vanuit de editor, dan wordt je concept opnieuw geladen en kom je terug bij de rail Secties, zodat je direct verder kunt bewerken.
+In de editor kom je na het toepassen terug bij **Blokken**, zodat je direct verder kunt bewerken. Met **Terug naar alle ontwerpen** ga je vanuit een voorbeeld terug naar de galerij.
 
-Zoek op vak of stijl via het zoekveld. Het aantal ernaast wordt bijgewerkt terwijl je filtert. Zijn er nog geen pakketten beschikbaar, dan meldt de pagina dat ze hier verschijnen zodra de eerste ontwerpen zijn goedgekeurd.
+Zoek via het zoekveld (**Zoek een ontwerp**) of filter op stijl. Het aantal ontwerpen ernaast wordt bijgewerkt terwijl je filtert.
 
-Bron: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+### Bediening op het canvas
 
-### Bespoke-ontwerpen
+Je kunt blokken ook direct op het canvas bedienen. Beweeg met je muis over een blok om de naam en een kleine werkbalk te zien. Gebruik de pijltjes om het blok omhoog of omlaag te verplaatsen, de plusknop (**Blok hier invoegen**) om er een blok tussen te zetten, en de acties **Dupliceren**, **Kopieer naar pagina…**, **Vergrendelen** en **Verwijderen**. Een vergrendeld blok kun je alleen ontgrendelen. De navigatie en de footer tonen hun naam bij hover, maar die bewerk je via **Hele site** › **Navigatie** en **Footer**.
 
-De sitebouwer biedt ook een set kant-en-klare **bespoke ontwerpen** die de standaard stijlpresets vervangen door een samengesteld sjabloon, kleurenpakket en merkaccent. Open het **Bespoke ontwerpen**-paneel vanuit de Stijl-tab om door de galerij te bladeren. Elke kaart is een live voorbeeld gevuld met je eigen werkruimtegegevens (diensten, foto's, reviews, contactgegevens), zodat je precies ziet hoe het ontwerp eruitziet voordat je het toepast.
+Klik op een blok om het geselecteerd te houden; de omlijning blijft dan zichtbaar als je de muis wegbeweegt. Het canvas en de lijst **Blokken** lezen uit dezelfde volgorde, dus een wijziging op de ene plek zie je direct op de andere. In de lijst **Blokken** kun je een blok ook verbergen zonder het te verwijderen.
 
-Als je een ontwerp kiest, worden drie dingen tegelijk ingesteld:
+Tekst typ je ook direct op het canvas: klik op de tekst, typ de wijziging en klik ergens anders om op te slaan. Het veld in de inspector loopt meteen mee.
 
-- **Sjabloon**: de layoutfamilie en sectiestructuur (bijvoorbeeld een gecentreerde hero met een marquee van reviews, of een gesplitste spotlight-pagina voor diensten).
-- **Kleurenpakket**: een samengestelde paletvariant voor dat sjabloon. De meeste sjablonen bieden meerdere pakketten, zoals warm, koel, neutraal, fel of gedempt. Het pakket wisselen houdt hetzelfde sjabloon intact maar vervangt de CSS custom-property-tokens, zodat de vorm gelijk blijft terwijl de sfeer verandert.
-- **Merkaccent**: een optionele overschrijving voor het accentkleur van het sjabloon. Laat het leeg om het standaardaccent van het pakket te gebruiken; vul je eigen hex-kleur in om knoppen, highlights en badges op je merk af te stemmen. Je kunt de overschrijving altijd wissen om terug te vallen op de pakketstandaard.
-
-Je bedrijfslogo wordt automatisch gebruikt als je er een hebt geüpload. Sjablonen die een logo ondersteunen tonen het in de navbar of hero. Sjablonen die een tekstwoordmerk verwachten, vallen terug op je bedrijfsnaam als er geen logo is ingesteld, via een conditionele regel zodat het juiste element verschijnt.
-
-Als je een ontwerp vindt dat je bevalt, klik je op **Dit ontwerp gebruiken**. De huidige site wordt meteen gepubliceerd met het nieuwe sjabloon, pakket en accent, en je openbare URL toont direct de wijziging.
-
-### Secties herordenen op een bespoke-pagina
-
-Nadat je een bespoke-ontwerp hebt toegepast, open je een pagina in de bespoke-contenteditor. Het paneel **Secties** toont alle top-level secties van die pagina. Sleep een sectie naar een nieuwe plek, of gebruik de knoppen omhoog en omlaag. Zet de zichtbaarheidsschakelaar uit om een sectie te verbergen zonder hem te verwijderen. De navigatie, hero en footer blijven op hun plek staan; je kunt ze niet verplaatsen of verbergen.
-
-### Bediening op de canvas-voorvertoning
-
-Je kunt secties ook direct op de live canvas-voorvertoning herschikken, verbergen en verwijderen. Beweeg met je muis over een top-level sectie om de naam en een kleine toolbar te zien. Gebruik de pijltjes om de sectie omhoog of omlaag te verplaatsen, het oog-icoon om hem te verbergen (of weer te tonen), en het prullenbak-icoon om een sectie die je zelf hebt toegevoegd te verwijderen. Vergrendelde onderdelen zoals de navigatie, hero en footer tonen de naam bij hover, maar hebben geen opties om te verplaatsen, verbergen of verwijderen.
-
-Klik op een sectie om hem geselecteerd te houden; de omlijning blijft dan zichtbaar als je de muis wegbeweegt, zodat je posities kunt vergelijken terwijl je scrollt of de inhoud bewerkt. Zowel de canvas als het paneel **Secties** lezen uit dezelfde onderliggende volgorde, dus een wijziging op de ene plek wordt direct op de andere plek doorgevoerd.
-
-### Voettekst-inhoud
-
-Bespoke-sjablonen met een minimale footer laten je nu je eigen voettekst-inhoud toevoegen zonder het ontwerp aan te passen. Open een pagina in de bespoke-contenteditor en scroll naar het paneel **Voettekst**.
-
-Daar kun je toevoegen:
-
-- **Juridische regel**: je KvK/btw of andere kleine lettertjes, weergegeven in de stijl van het ontwerp.
-- **Linkkolommen**: getitelde kolommen met links, handig voor pagina's als contact, voorwaarden of diensten.
-- **Contactgegevens**: schakel in om je e-mail, telefoon en adres uit je bedrijfsgegevens te tonen.
-- **Sociale links**: schakel in om de sociale links uit je bedrijfsgegevens te tonen.
-
-Het ontwerp bepaalt nog steeds kleur, lettertype en witruimte; jij levert alleen de inhoud. Links mogen interne paden (`/contact`), externe https-URL's, e-mail (`mailto:`) of telefoon (`tel:`) zijn. Als een sjabloon je contactgegevens of sociale links al in de footer toont, wordt de bijbehorende schakelaar verborgen, zodat niets dubbel verschijnt.
-
-### Knoplinks per sectie overschrijven
-
-Sommige bespoke-secties bevatten klikbare knoppen of links die normaal naar een vast pagina in het ontwerp verwijzen, zoals een contactpagina, een boekingslink of een telefoonnummer. De bespoke-contenteditor laat je per pagina de bestemming van elke aanpasbare knop wijzigen.
-
-Open een pagina in de bespoke-contenteditor en selecteer de sectie waarvan je de knop wilt aanpassen. In het paneel **Secties** toont elke sectie met aanpasbare knoppen een lijst **Knoppen**. Kies de knop die je wilt overschrijven en voer de nieuwe bestemming in. Je kunt linken naar een andere pagina op je site, een externe URL, een e-mailadres (`mailto:`) of een telefoonnummer (`tel:`). Links worden om veiligheid gecheckt tegen dezelfde toegestane schemes als navigatielinks. Laat je de overschrijving leeg, dan houdt de knop zijn oorspronkelijke bestemming uit het sjabloon.
-
-### Secties toevoegen en bewerken
-
-Als je een bespoke-pagina opent in de editor, biedt het paneel **Secties** nu de volledige sectiecatalogus. Secties die bij het ontwerp zelf horen, staan bovenaan en gebruiken de eigen markup van het sjabloon en je werkruimtegegevens, zodat ze er native uitzien. Secties uit de bredere catalogus worden via een brug ingeladen in hetzelfde kleurenpalet en lettertype, maar hebben hun eigen inhoudsvelden per sectie.
-
-Klik op **Sectie toevoegen** om het venster te openen, kies de soort die je wilt, en de sectie wordt op de pagina geplaatst met logische standaardwaarden. Het inspectiepaneel rechts toont de velden van de geselecteerde sectie, of ze nu uit je werkruimtegegevens komen of uit de eigen inhoudsprops van de sectie. Je kunt toegevoegde secties op dezelfde manier herschikken, verbergen of verwijderen als de secties van het ontwerp zelf.
+Koppen die de wizard, een herschrijving of een nieuw blok voor je schrijven, komen in zinsvorm uit de pen: zo leest een kop als een zin. Namen zoals je bedrijf of een merk houden hun eigen hoofdletters.
 
 ### Adres, kaart, werkgebied en parkeren op de contactpagina
 
-De contactpagina laat zien waar je werkt en hoe je er komt. Het blok **Locaties** valt terug op je bedrijfsadres als je geen eigen locaties hebt, en een contactblok laat een adres weg dat een Locaties-blok op dezelfde pagina al toont. Een nieuwe contactpagina begint niet meer met een leeg Locaties-blok. Een kaart (**Kaart tonen**) komt uit je adres als je die wilt, **Werkgebied** is een van de voorinstellingen bij Sectie toevoegen als je wilt laten zien waar je jouw klanten opzoekt, en de bereikbaarheidssectie heet **Bereikbaarheid en parkeren**.
-
-### Pagina's hernoemen
-
-Sjabloonpagina's hebben een vast adres en een menulabel dat in de markup van het ontwerp zit. In plaats van elke link handmatig te wijzigen, laat het paneel **Pagina's** je het menulabel van elke sjabloonpagina hernoemen. Klik op het potlood naast een pagina, typ het nieuwe label en elke link naar die pagina in de navigatie en footer wordt automatisch bijgewerkt. Het adres van de pagina zelf verandert niet, dus je hebt geen redirect nodig en bestaande links blijven werken.
-
-Als je het veld leegmaakt of de oorspronkelijke naam van het ontwerp terugtypt, wordt de hernoeming verwijderd en komt het oorspronkelijke label terug.
-
-### Ontwerptekst bewerken
-
-Ontwerpen bevatten kleine stukjes letterlijke tekst, zoals kickers, bijschriften en kleine koppen, die niet aan je werkruimtegegevens gekoppeld zijn. In de edit-modus zijn die tekstjes op de canvas bewerkbaar: klik op de tekst, typ de wijziging en druk op Enter of klik ergens anders om op te slaan. De overschrijving wordt per sectie en per pagina opgeslagen, en de openbare site toont jouw versie in plaats van de oorspronkelijke woorden van het ontwerp.
-
-Tekst binnen herhalende blokken kun je op deze manier niet bewerken, want één statisch pad zou elk herhaald item veranderen. Bewerken is ook beperkt tot tekst die binnen een sectie staat, zodat er altijd een stabiel adres voor de overschrijving is. Om een wijziging ongedaan te maken, wis je het veld of typ je de oorspronkelijke tekst van het ontwerp terug.
-
-Koppen die de wizard, een herschrijving of een verse sectie voor je schrijven, komen in zinsvorm uit de pen: zo leest een kop als een zin. hele namen zoals je bedrijf of een merk houden hun eigen hoofdletters.
+De contactpagina laat zien waar je werkt en hoe je er komt. Het blok **Locaties** valt terug op je bedrijfsadres als je geen eigen locaties hebt, en een contactblok laat een adres weg dat een Locaties-blok op dezelfde pagina al toont. Een nieuwe contactpagina begint niet meer met een leeg Locaties-blok. Een kaart (**Kaart tonen**) komt uit je adres als je die wilt, **Werkgebied** is een van de voorinstellingen bij **Blok toevoegen** als je wilt laten zien waar je jouw klanten opzoekt, en de bereikbaarheidssectie heet **Bereikbaarheid en parkeren**.
 
 ### De aanspreekvorm op je site
 
-Je site spreekt zijn bezoekers aan in een gekozen vorm: **Je en jij** (persoonlijk: "Ik help je graag.") of **U** (beleefd: "Ik help u graag."). De keuze staat in de eerste stap van de website-opzetwizard, en op de kaart **Aanspreekvorm op je website** bij Instellingen → Bedrijfsgegevens; beide schrijven dezelfde instelling. Vaste teksten op de site, zoals knoppen, formulierregels en bedankjes, gaan meteen mee. Wat jij of de tekstschrijver al schreef, houdt zijn eigen stem; de knop op die kaart, **Zet alle teksten om naar je** of **Zet alle teksten om naar u**, zet in één keer alles om wat er staat, ook wat je zelf typte, en verandert alleen de aanspreekvorm, nooit de inhoud. Het resultaat vertelt hoeveel teksten er zijn aangepast en welke bleven staan (daar loop je in de editor langs), en bij publiceren gaat het live. Secties die je later toevoegt, nemen de aanspreekvorm mee die de site al heeft, en ook de juridische pagina's, het privacybeleid en de voorwaarden, verschijnen in de gekozen vorm. Zit je alleen in je bedrijf, dan spreken de vaste teksten in de ik-vorm in plaats van in de we-vorm; de wizard vraagt daarvoor je voornaam, en stelt je nooit voor met je bedrijfsnaam.
+Je site spreekt zijn bezoekers aan in een gekozen vorm: **Je en jij** (persoonlijk: "Ik help je graag.") of **U** (beleefd: "Ik help u graag."). De keuze staat in de eerste stap van de website-opzetwizard, en op de kaart **Aanspreekvorm op je website** bij Instellingen › Bedrijfsgegevens; beide schrijven dezelfde instelling. Vaste teksten op de site, zoals knoppen, formulierregels en bedankjes, gaan meteen mee. Wat jij of de tekstschrijver al schreef, houdt zijn eigen stem; de knop op die kaart, **Zet alle teksten om naar je** of **Zet alle teksten om naar u**, zet in één keer alles om wat er staat, ook wat je zelf typte, en verandert alleen de aanspreekvorm, nooit de inhoud. Het resultaat vertelt hoeveel teksten er zijn aangepast en welke bleven staan (daar loop je in de editor langs), en bij publiceren gaat het live. Secties die je later toevoegt, nemen de aanspreekvorm mee die de site al heeft, en ook de juridische pagina's, het privacybeleid en de voorwaarden, verschijnen in de gekozen vorm. Zit je alleen in je bedrijf, dan spreken de vaste teksten in de ik-vorm in plaats van in de we-vorm; de wizard vraagt daarvoor je voornaam, en stelt je nooit voor met je bedrijfsnaam.
 
 ## Pagina's aanmaken
 
-1. Ga naar de **Pagina's**-tab.
-2. Klik op **Nieuwe pagina**.
-3. Geef een titel en een pad op (bijv. `/over-ons`).
-4. Kies een sjabloon of begin leeg.
-5. De pagina opent in de editor, waar je secties kunt toevoegen en uitbouwen. Een pagina die je hier aanmaakt, komt automatisch in je menu; de 404-pagina en artikelen niet. Lukt dat niet meteen, dan meldt de editor het, en je zet de pagina zelf aan in de menu-editor.
+1. Klik in de editor op **+** (**Pagina toevoegen**) achter de paginatabs, of op **Nieuwe pagina** op het tabblad **Pagina's** van Website.
+2. Geef de pagina een naam en kies een **Soort pagina**.
+3. De pagina opent in de editor, waar je blokken kunt toevoegen en uitbouwen. Het webadres pas je aan bij **Instellingen** van de pagina. Een pagina die je hier aanmaakt, komt automatisch in je menu; de 404-pagina en artikelen niet. Lukt dat niet meteen, dan meldt de editor het, en je zet de pagina zelf aan in de menu-editor.
 
 ### Standaardpagina's
 
-Elke nieuwe werkruimte krijgt vier pagina's mee:
+Elke nieuwe werkruimte krijgt deze pagina's mee:
 
 | Pagina | Pad | Beschrijving |
 |---|---|---|
 | Home | `/` | Je hoofdpagina. Kan niet worden verwijderd. |
 | Diensten | `/diensten` | Laat zien wat je aanbiedt. Vooraf gevuld met een dienstensectie. |
-| Over ons | `/over-ons` | Vertel bezoekers wie je bent. |
+| Over mij | `/over-ons` | Vertel bezoekers wie je bent. |
 | Contact | `/contact` | Contactformulier en gegevens. Gekoppeld vanuit de footer. |
+| Privacybeleid | `/privacy` | Zie Juridische pagina's hieronder. |
+| Algemene voorwaarden | `/algemene-voorwaarden` | Zie Juridische pagina's hieronder. |
 
 Deze pagina's zijn automatisch verbonden met de navigatie-header en footer. Je kunt ze allemaal bewerken of verwijderen, behalve de Home-pagina die altijd verplicht is. De navigatie past zijn links aan als je pagina's toevoegt of verwijdert.
 
@@ -192,15 +121,15 @@ Pagina's hebben een status die bepaalt of ze op je gepubliceerde site verschijne
 - **Live**: De pagina wordt meegenomen in de publicatie. Bezoekers zien hem op je openbare site na publicatie.
 - **Concept**: De pagina is nog in bewerking. Hij blijft onzichtbaar voor bezoekers, ook nadat je de site publiceert.
 
-De homepage start standaard als **Live**. Elke andere nieuwe pagina start als **Concept**, zodat die niet in de openbaarheid komt voordat jij er klaar voor bent. Je kunt elke pagina wisselen tussen Live en Concept met de snelle actieknoppen in de Pagina's-tabel. De statuswijziging wordt meteen opgeslagen en zet de Publiceerknop in de bovenbalk aan, zodat de volgende publicatie de wijziging oppikt.
+Een nieuwe pagina start als **Live**, zodat hij bij je volgende publicatie meegaat en een menulink er nooit naar een ontbrekende pagina wijst. Een nieuw blogartikel start als **Concept**. De homepage staat altijd live. Je wisselt een pagina tussen Live en Concept met de schakelaar **Concept** / **Live** bij die pagina in **Pagina's beheren**. De statuswijziging wordt meteen opgeslagen en zet de Publiceerknop in de bovenbalk aan, zodat de volgende publicatie de wijziging oppikt.
 
 Een site waarvan de homepage op Concept staat, toont niets bij publicatie. Als je de homepage naar Concept hebt gezet, zet je hem terug naar Live en publiceer je om je site te herstellen.
 
 ## Pagina's bouwen met secties
 
-In de **Editor**-tab:
+Open een pagina in de editor. In de lijst **Blokken**:
 
-- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, spotlight, diensten, team, testimonials, contactformulier, tarieven, product, keurmerken, aangepaste HTML, en meer).
+- Klik op **Blok toevoegen** om de beschikbare bloktypes te zien (grote kop, tekst, galerij, foto met tekst, diensten, team, klantreacties, contactformulier, tarieven, product, keurmerken, online boeken, en meer).
 - Kies een bloktype om het op de pagina te plaatsen.
 - Klik op een sectie om het inspectiepaneel te openen, waar je inhoud, layout, stijl en animatie kunt bewerken.
 - Sleep secties omhoog of omlaag om ze te verplaatsen. Gebruik de dupliceer- en verwijderacties op elke sectie.
@@ -242,13 +171,13 @@ Sla elke sectie op als herbruikbaar blok en bouw een persoonlijke bibliotheek va
 
 ### Sectie opslaan als blok
 
-1. Klik op het bladwijzer-icoon op een sectierij in de editor.
-2. Geef het blok een naam (het sectielabel of -type is alvast ingevuld als suggestie).
+1. Open in de lijst **Blokken** het menu **Meer acties** van een blok en kies **Bewaar als blok**.
+2. Geef het blok een naam (het bloklabel is alvast ingevuld als suggestie).
 3. Het blok wordt opgeslagen in je persoonlijke bibliotheek voor deze werkruimte.
 
 ### Opgeslagen blok invoegen
 
-1. Klik op **Sectie toevoegen** op een pagina.
+1. Klik op **Blok toevoegen** op een pagina.
 2. Je opgeslagen blokken staan onder **Mijn blokken** bovenaan het paneel.
 3. Klik op een blok om het als nieuwe sectie op de huidige pagina te plaatsen.
 
@@ -261,17 +190,19 @@ Het invoegen van een blok kopieert de template naar een nieuwe sectierij. Het be
 
 ### Sectie-layoutvarianten
 
-Hero-, diensten-, tarieven- en testimonialsecties ondersteunen meerdere layoutvarianten. Kies er een uit de **Stijl**-dropdown in het Layout-tabblad van de inspector om te bepalen hoe de sectie eruitziet. De standaardvariant behoudt het vertrouwde uiterlijk, dus secties die je vóór deze functie hebt gebouwd blijven hetzelfde tonen.
+Veel blokken ondersteunen meerdere layoutvarianten, waaronder de grote kop, diensten, tarieven, klantreacties, team, FAQ, cijfers en de oproep met knop. Kies er een uit de **Stijl**-dropdown in het Layout-tabblad van de inspector om te bepalen hoe de sectie eruitziet. De standaardvariant behoudt het vertrouwde uiterlijk, dus secties die je vóór deze functie hebt gebouwd blijven hetzelfde tonen.
 
-#### Hero-varianten
+#### Varianten van de grote kop
 
 | Variant | Effect |
 |---|---|
-| **Standaard (split rechts)** | Standaard. Afbeelding rechts, tekst links. Valt terug op gecentreerde tekst als er geen afbeelding is. |
-| **Split links** | Spiegel van de standaard: afbeelding links, tekst rechts. Vereist een afbeelding. |
-| **Gecentreerd** | Tekst gecentreerd, optionele afbeelding eronder in een breed 16:9-kader. |
-| **Banner** | Afbeelding over de volle breedte als achtergrond met een verloopoverlay. Witte tekst op een donkere scherm, extra hoog zodat de afbeelding ruimte krijgt. Vereist een afbeelding. |
-| **Minimaal** | Alleen tekst in een smalle kolom. Geen afbeelding. Strak en rustig, geschikt voor documentatie-achtige pagina's. |
+| **Standaard (foto rechts)** | Standaard. Foto rechts, tekst links. Valt terug op gecentreerde tekst als er geen foto is. |
+| **Foto links** | Spiegel van de standaard: foto links, tekst rechts. |
+| **Portret (ronde foto links)** / **Portret (ronde foto rechts)** | Een ronde portretfoto naast de tekst. |
+| **Gecentreerd** | Tekst gecentreerd, optionele foto eronder. |
+| **Foto als achtergrond** | Foto over de volle breedte als achtergrond, met lichte tekst erover. |
+| **Minimaal (alleen tekst)** | Alleen tekst in een smalle kolom. Geen foto. |
+| **Redactioneel**, **Affiche**, **Omkaderd**, **Groot cijfer** | Typografische varianten zonder foto: een grote kop met metakolom, een statement tussen lijnen, een drukwerkkader of een groot contourcijfer. |
 
 #### Diensten-varianten
 
@@ -294,32 +225,32 @@ Hero-, diensten-, tarieven- en testimonialsecties ondersteunen meerdere layoutva
 | Variant | Effect |
 |---|---|
 | **Standaard (raster)** | Standaard. Kaarten in een raster van 2 tot 3 kolommen. Elke kaart toont de quote, naam en optionele rol. |
-| **Spotlight (enkele quote)** | Een enkele grote pull-quote in magazine-stijl, gecentreerd met serif-typografie. Extra getuigenissen verschijnen als kleine naambadges onder de hoofdquote. |
+| **Spotlight (één quote)** | Een enkele grote pull-quote in magazine-stijl, gecentreerd met serif-typografie. Extra getuigenissen verschijnen als kleine naambadges onder de hoofdquote. |
 | **Lopende band** | Een horizontaal scrollende rij met quote-kaarten. Hoveren pauzeert de animatie; de reduced-motion-voorkeur van het besturingssysteem stopt hem volledig. De track loopt naadloos door met twee kopieën van de itemset. |
 
-### Spotlight
+### Foto met tekst
 
-Het spotlight-blok is een rij waarin beeld en tekst elkaar afwisselen. Elke rij toont een afbeelding aan de ene kant en tekst aan de andere: een eyebrow, titel, ondertitel, bullets met vinkjes en een optionele call-to-action-link. In het layout-paneel bepaal je aan welke kant de afbeelding staat.
+Het blok **Foto met tekst** is een rij waarin beeld en tekst elkaar afwisselen. Elke rij toont een afbeelding aan de ene kant en tekst aan de andere: een eyebrow, titel, ondertitel, bullets met vinkjes en een optionele call-to-action-link. In het layout-paneel bepaal je aan welke kant de afbeelding staat.
 
 Een paar dingen om te weten:
 
 - **Beeldzijde**: De layout-variant staat standaard op afbeelding-rechts. Zet hem op afbeelding-links in het layout-paneel om de rij te spiegelen.
 - **Optionele onderdelen**: Eyebrow, ondertitel, bullets, CTA en afbeelding zijn allemaal optioneel. Een spotlight met alleen een titel en afbeelding toont nog steeds een strak resultaat.
-- **Stapelen**: Zet meerdere spotlight-secties onder elkaar om het klassieke feature-lijstpatroon van de MCD-landingspagina te bouwen.
-- **Vastzittend beeld**: Schakel "Beeld blijft staan bij scrollen" in de spotlight-inspector in om de afbeelding vast te houden terwijl de tekst ernaast doorscrollt. Alleen op desktop, en alleen zichtbaar als er genoeg tekst naast de afbeelding staat. Op mobiel staat het beeld gewoon gestapeld.
+- **Stapelen**: Zet meerdere spotlight-secties onder elkaar om een klassieke lijst met functies onder elkaar te bouwen.
+- **Vastzittend beeld**: Zet **Foto blijft staan als je scrolt** aan in de inspector om de afbeelding vast te houden terwijl de tekst ernaast doorscrollt. Alleen op desktop, en alleen zichtbaar als er genoeg tekst naast de afbeelding staat. Op mobiel staat het beeld gewoon gestapeld.
 
 ### Tarieven met koopknoppen
 
 Bij de tarievensectie kun je pakketten of abonnementen laten zien. Elke tier kan optioneel een koopknop krijgen:
 
-- Zet een tier op **purchasable** en geef het **bedrag in centen** op (bijv. 4999 voor EUR 49,99).
+- Zet **Met koopknop** aan bij een tarief en vul **Prijs bij afrekenen (incl. btw)** in, het bedrag dat de koper echt betaalt (bijvoorbeeld 750,00). Houd de prijstekst op de kaart gelijk.
 - Een **Koop nu**-knop vervangt de statische CTA-link. Bezoekers die erop klikken gaan via de MyCompanyDesk-checkout naar Mollie of Stripe Connect om te betalen.
-- Het koopknop-label is standaard "Koop nu" maar kan per tier worden aangepast met het **buyLabel**-veld.
+- Het koopknop-label is standaard "Koop nu" maar kan per tarief worden aangepast in het veld **Koop-knop tekst**.
 - Tarieven zonder koopknop houden het bestaande CTA-linkgedrag.
 
 Tarievensecties kunnen ook als vergelijkingsmatrix worden getoond. Zet de layoutvariant op **Vergelijkingstabel** in de inspector. De matrix toont elke tier als kolom en alle functies uit alle tiers als rijen, met vinkjes waar een tier de functie heeft. Zo zie je in een oogopslag hoe abonnementen zich tot elkaar verhouden. Zie [Sectie-layoutvarianten](#sectie-layoutvarianten) voor de volledige opties.
 
-Blokkken die Aanbod-prijzen tonen, diensten, producten, abonnementen of tarieven, hebben **Prijzen op je website: inclusief / exclusief btw** in de inspector, opgeslagen voor de hele werkruimte. Standaard, inclusief, toont je site wat de klant betaalt en draagt een gestructureerde prijs z'n eigen klein label (inclusief btw, of vrijgesteld als je werkruimte geen btw rekent), zodat het bedrag nooit dubbel kan lezen. Kies je exclusief, dan print de site het getypte bedrag zonder btw met het label **excl. btw**: op dienstkaarten, in het tarievenblok, in de dienstkeuze van het afspraakblok en bij groepsafspraken. Gratis, Op aanvraag en je eigen Website-tekst blijven zoals ze zijn, en wat een bezoeker op het afrekenen betaalt, via aanbetaling, de productkoopknop of online betalen, blijft inclusief btw. Opslaan herbakt de gepubliceerde site.
+Blokken die Aanbod-prijzen tonen, diensten, producten, abonnementen of tarieven, hebben **Prijzen op je website: inclusief / exclusief btw** in de inspector, opgeslagen voor de hele werkruimte. Standaard, inclusief, toont je site wat de klant betaalt en draagt een gestructureerde prijs z'n eigen klein label (inclusief btw, of vrijgesteld als je werkruimte geen btw rekent), zodat het bedrag nooit dubbel kan lezen. Kies je exclusief, dan print de site het getypte bedrag zonder btw met het label **excl. btw**: op dienstkaarten, in het tarievenblok, in de dienstkeuze van het afspraakblok en bij groepsafspraken. Gratis, Op aanvraag en je eigen Website-tekst blijven zoals ze zijn, en wat een bezoeker op het afrekenen betaalt, via aanbetaling, de productkoopknop of online betalen, blijft inclusief btw. Opslaan herbakt de gepubliceerde site.
 
 ### Productblok
 
@@ -333,7 +264,7 @@ Zie [Verkopen](/features/domains-website-inbox#verkopen) voor het bijhouden van 
 
 ### Keurmerken-blok
 
-Het **Keurmerken**-blok toont de certificaten en keurmerken van je bedrijf (STEK, VCA, CE en meer), precies zoals je ze bij **Instellingen → Bedrijfsgegevens** invoert. Die lijst beheer je op die ene plek: het blok is datagebonden en de inspecteur heeft geen items-editor, alleen de weergave.
+Het **Keurmerken**-blok toont de certificaten en keurmerken van je bedrijf (STEK, VCA, CE en meer), precies zoals je ze bij **Instellingen › Bedrijfsgegevens** invoert. Die lijst beheer je op die ene plek: het blok is datagebonden en de inspecteur heeft geen items-editor, alleen de weergave.
 
 - **Kopje**: standaard "Certificeringen en keurmerken". Typ je eigen kopje, of laat het leeg voor een blok zonder kop.
 - **Stijl**: witte tegels (standaard) of kaal. **Grootte**: klein, middel of groot.
@@ -342,51 +273,47 @@ Het **Keurmerken**-blok toont de certificaten en keurmerken van je bedrijf (STEK
 - Is de lijst leeg of staat **Tonen op je website** bij Bedrijfsgegevens uit, dan verbergt het blok zichzelf op de gepubliceerde site. De editor zegt het ook als de keurmerken voor de website uit staan.
 - Verwijder je een keurmerk, dan blijft het bestand bewaard en toont al verzonden mail het logo gewoon; het blok verbergt zichzelf pas als de hele lijst leeg is.
 
-Bron: `packages/shared/src/site-blocks/registry.ts#keurmerken`; `apps/api/src/modules/companies/certifications.service.js`.
+### Diensten en producten uit Aanbod
 
-### Catalogussecties
+Blokken met diensten, producten of abonnementen halen hun items uit je Aanbod. Een omschrijving die je bij een dienst typt is één tekst: het dienstenblok op je homepagina en de Diensten-pagina delen hem, dus een verbetering komt in één keer overal terecht. Herbakken zet nooit een concepttekst van een dienstkaart live: tot je publiceert blijven de kaarten de tekst tonen die ze al hadden.
 
-Sommige bespoke-sjablonen bevatten een live catalogussectie die items rechtstreeks uit je Aanbod haalt. Als de huidige pagina structureel herhaalt over diensten, producten of abonnementen, toont de Inhoud-editor een **Catalogus**-paneel voor elk soort dat op die pagina wordt gebruikt. Een omschrijving die je bij een dienst typt is één tekst: de dienstensectie op je homepagina en de Diensten-pagina delen hem, dus een verbetering komt in één keer overal terecht. Herbakken zet nooit een concepttekst van een dienstkaart live: tot je publiceert blijven de kaarten de tekst tonen die ze al hadden.
-
-Het paneel staat buiten het sjabloonkader, dus het stoort nooit de styling van het sjabloon zelf. Hier bepaal je alleen de presentatie van de catalogus op deze site:
-
-- **Titel en intro**: stel de sectietitel en een korte introductie in.
-- **Volgorde**: sleep items in de gewenste volgorde, of gebruik de omhoog/omlaag-knoppen. De natuurlijke volgorde uit Aanbod geldt voor alles wat je niet handmatig herschikt.
-- **Zichtbaar of verborgen**: klik op het oog-icoon om een item in Aanbod te houden, maar te verbergen op deze website.
-
-De iteminhoud zelf, titel, prijs, beschrijving en afbeelding, is alleen-lezen in de editor. Die komt uit het live Aanbod en moet daar worden aangepast. De prijs volgt de prijsmodus die in Aanbod staat: een vast bedrag, "vanaf" een bedrag, of "Op aanvraag" als er geen prijs is ingesteld. Een prijs van nul is een echte prijs: een bewust gratis item toont "Gratis" op de site, de prijslijst, de Aanbodlijst en het boekingsblok, in plaats van als onbeprijsd te gelden; alleen items zonder enige prijs tonen "Op aanvraag".
-
-Is er voor dit soort catalogus nog geen geschikt item? Dan toont het paneel een lege status met een link om een item toe te voegen in Aanbod.
+De prijs volgt de prijsmodus die in Aanbod staat: een vast bedrag, "vanaf" een bedrag, of "Op aanvraag" als er geen prijs is ingesteld. Een prijs van nul is een echte prijs: een bewust gratis item toont "Gratis" op de site, de prijslijst, de Aanbodlijst en het boekingsblok, in plaats van als onbeprijsd te gelden; alleen items zonder enige prijs tonen "Op aanvraag".
 
 ## Sectie-animaties
 
-Elk sectieblok heeft een **Animatie**-paneel in de inspector. Hiermee voeg je beweging toe die afspeelt wanneer de sectie in beeld komt, bij het laden van de pagina, of bij hover.
+Elk blok heeft een tabblad **Animatie** in de inspector. Hiermee voeg je beweging toe die afspeelt wanneer het blok in beeld komt, bij het laden van de pagina, of als de muis erop komt.
 
-### Animatetypes
+### Animatie-stijl
 
-| Type | Effect |
+Kies bij **Animatie-stijl** hoe het blok verschijnt:
+
+| Stijl | Effect |
 |---|---|
-| **Fade up** | Sectie verschijnt terwijl deze 1rem omhoog schuift. |
-| **Fade in** | Sectie verschijnt vanuit transparant. |
-| **Slide right** | Sectie verschijnt terwijl deze 2rem naar rechts beweegt. |
-| **Reveal** | Sectie onthult van rechts naar links via een clipmasker. |
-| **Stagger** | Onderliggende elementen verschijnen na elkaar in stappen van 80ms, in plaats van dat de sectie zelf beweegt. |
-| **Woord voor woord** | Alleen voor hero-secties. De woorden van de titel verschijnen elk op hun eigen moment; andere blokken faden gewoon in. |
+| **Geen** | Geen animatie, het blok staat er meteen. |
+| **Zacht omhoog** (standaard) | Het blok verschijnt terwijl het iets omhoog schuift. |
+| **Zacht in beeld** | Het blok verschijnt vanuit transparant. |
+| **Schuif van rechts** | Het blok verschijnt terwijl het van opzij in beeld schuift. |
+| **Inzoomen** | Het blok groeit licht naar zijn eigen formaat. |
+| **Uitvouwen (horizontaal)** | Het blok vouwt in de breedte open. |
+| **Na elkaar** | De onderdelen van het blok verschijnen kort na elkaar, in plaats van dat het blok zelf beweegt. |
+| **Trap (paginakop)** | De onderdelen van de paginakop verschijnen trapsgewijs. |
+| **Onthullen** | Het blok wordt onthuld via een masker. |
+| **Woord voor woord (titel in de paginakop)** | Alleen voor de grote kop. De woorden van de titel verschijnen elk op hun eigen moment; andere blokken verschijnen gewoon. |
 
-### Triggers
+### Wanneer starten
 
-Hoe de animatie start:
-
-- **In-view** (standaard): De animatie wordt afgespeeld wanneer de sectie in de viewport verschijnt. Maakt gebruik van de IntersectionObserver van de browser. Eenmaal geanimeerd blijft de sectie zichtbaar.
-- **Load**: De animatie start direct zodra de pagina is geladen.
-- **Hover**: De animatie start bij mouseenter en keert terug bij mouseleave.
+- **Bij in beeld komen** (standaard): De animatie speelt af wanneer het blok in beeld scrolt. Eenmaal geanimeerd blijft het blok zichtbaar.
+- **Direct bij laden**: De animatie start zodra de pagina is geladen.
+- **Bij aanwijzen**: De animatie start als de muis op het blok komt en keert terug als de muis weggaat.
 
 ### Instellingen
 
-- **Duration**: Hoe lang de animatie duurt, in milliseconden. Standaard 700ms.
-- **Delay**: Wachttijd voordat de animatie start, in milliseconden. Standaard 0ms.
-- **Easing**: De versnellingscurve. Keuze uit **ease-out** (standaard), **linear** en **spring**.
-- **Stagger children**: Wanneer ingeschakeld blijft de sectie zelf in rust en bewegen de directe onderliggende elementen na elkaar. Deze optie werkt bovenop elk animatietype (fade-up + stagger children, fade-in + stagger children, etc.). De animatie van de sectie zelf wordt onderdrukt zodat alleen de kinderen bewegen.
+- **Snelheid**: Hoe lang de animatie duurt, van 200 tot 1600 milliseconden. Standaard 600 ms.
+- **Vertraging**: Wachttijd voordat de animatie start, van 0 tot 1200 milliseconden. Standaard 0 ms.
+- **Soort beweging**: De versnellingscurve. Keuze uit **Soepel** (standaard), **Vloeiend**, **Gelijkmatig** en **Lineair**.
+- **Onderdelen na elkaar**: Alleen bij blokken met meerdere items. De items van het blok verschijnen kort na elkaar in plaats van tegelijk.
+
+Hoe blokken sitebreed verschijnen, kies je bij **Hele site** › **Animatie**: **Geen**, **Subtiel**, **Zacht**, **Zijwaarts**, **Onthullen** of **Speels**.
 
 ### Bewegingsreductie
 
@@ -414,28 +341,24 @@ Elk sectieblok heeft een **Onderkant scheiding**-instelling in het stijlpaneel v
 
 ## Je site vormgeven
 
-In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
+Onder **Hele site** in de editor bepaal je de look-and-feel van je hele site. Elk onderdeel heeft een eigen knop in de rail:
 
-- **Presets**: Klik-en-klaar-startpunten die kleuren, lettertypes en witruimte in een keer instellen. Er zijn acht presets: **Editorial** (navy en goud, serif-koppen), **Studio** (warme roomkleur met terracotta), **Tech** (strak slate met elektrisch blauw), **Atelier** (bone-wit met diepgroen), **Bold** (hoog contrast zwart met fel accent), **Calm** (saliegroen en zacht wit), **Mono** (architectonisch minimalisme, geen accentkleur) en **Vivid** (kobalt en koraal op koel wit). Een preset toepassen voegt de tokens samen met je werkruimte, waarbij je logo, custom CSS en head-snippets behouden blijven.
-- **Kleuren**: Zes kleurtokens onder gewone namen: **Hoofdkleur**, **Tweede kleur**, **Pagina-achtergrond** (de pagina achter alles), **Blokken en kaarten**, **Tekst** en **Kleine tekst**. Het palet wordt toegepast via CSS custom properties.
-- **Donkere modus**: Bepaal hoe je site omgaat met donkere weergave. Vier opties: **Uit** (geen donkere modus, de site blijft in het lichte palet), **Altijd donker** (je hele site is donker, voor iedere bezoeker, wat die ook op zijn apparaat heeft staan), **Knop in menubalk** (bezoekers zien een zon/maan-knop in de navigatiebalk en kunnen wisselen, hun keuze wordt lokaal opgeslagen) en **Volgt het toestel** (de site volgt automatisch de OS-voorkeur van de bezoeker via een live media-query). Zet je "Altijd donker" of "Knop in menubalk" aan, dan legt de site zelf een leesbaar nachtpalet klaar: nachtversies van elke kleur, en een hoofd- of tweede kleur die op de donkere pagina zou verdwijnen (zwart, navy) krijgt automatisch een lichtere nachtversie. Een kleur die je zelf instelt blijft staan, en verandert je lichte hoofd- of tweede kleur later, dan loopt de nachtversie daarvan mee. De Stijl-tab draagt daarnaast een kaart die meteen naar de donkere ontwerpen in de galerij springt; en kies je terwijl je site Altijd donker staat een sitepakket, dan vraagt de site eerst bevestiging, want het pakket zet "Altijd donker" uit zodat het resultaat eruitziet als in het voorbeeld.
-- **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
-- **Zelfgehoste lettertypes**: Alle lettertypes worden vanaf MyCompanyDesk zelf geserveerd, niet van Google Fonts of een andere externe CDN. Dezelfde fontbestanden worden gebruikt in de editor-preview en op je gepubliceerde site, dus de tekst ziet er overal identiek uit en het IP-adres van bezoekers blijft op je eigen domein.
-- **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte, verticale sectie-afstand, de tekstgrootte voor de tekst die je bezoekers lezen (**Normaal**, **Groot** of **Extra**), en kaartstijl in. De kaartstijl bepaalt hoe inhoudskaarten over de secties heen worden weergegeven: **Plat** (geen rand), **Omlijnd** (standaard, dunne lijn), **Schaduw** (zachte schaduw), **Zwevend** (sterke schaduw), **Brut** (harde rand met blokschaduw), **Lijn** (alleen contour, geen vulling) of **Glas** (doorzichtige, matgeglazuurde kaart met een achtergrondblur). Glas komt het best tot zijn recht over een foto, verloop of decoratieve band; op een effen achtergrond valt hij terug op een zacht getinte kaart.
-- **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (Uit, Subtiele fade, Slide-up).
-- **Knoppen**: Pas knopradius, padding en hover-effecten aan.
-- **Navbar**: Stel de layout in (standaard, gecentreerd, split), de achtergrondstijl (vast, transparant met blur, volledig transparant) en hoe de CTA-knop eruitziet (vol, lijn, alleen tekst). De navbar-instellingen gelden voor elke pagina.
-- **Telefoon & belbalk**: Voeg een klikbaar telefoonnummer toe aan je navigatiebalk. Het nummer verschijnt naast de CTA-knop op desktop en in de mobiele navigatielade. Zet de **Mobiele belbalk**-toggle aan om een vaste "tik om te bellen"-knop onderaan het scherm te plaatsen op mobiele apparaten, zodat bezoekers je met één tik kunnen bereiken, waar ze ook zijn op de pagina. Het telefoonlabel is standaard "Bel direct" als je het leeg laat. De belbalk kan naast de belknop ook WhatsApp tonen: de balk leent het WhatsApp-nummer dat de rest van je site al draagt, een WhatsApp-knop (hero of afsluiter), een contactblok met WhatsApp of de zwevende contactknop, en een nummer dat in de menubalk zelf staat gaat voor. Op de desktop blijft WhatsApp bereikbaar via de zwevende contactknop; op mobiel laat de knop WhatsApp weg zodra de balk hem toont, zodat WhatsApp nooit dubbel op een scherm staat.
-- **Leesvoortgangsbalk**: Toon een dunne voortgangsindicator bovenaan elke pagina terwijl bezoekers scrollen. De balk gebruikt je merkkleur en kun je aan- of uitzetten in de Stijl-tab.
-- **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden. Het veld staat onderaan het Stijl-tabblad, onder een balk met de titel **Voor gevorderden**, met een korte uitleg daarbij.
-- **Favicon**: Upload een favicon voor je site. Deze verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
-- **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.
+- **Kleuren**: Bovenaan kies je de tekstgrootte voor je bezoekers (**Normaal**, **Groot** of **Extra groot**). Daaronder staan de **Kleurthema's**: kant-en-klare kleurenschema's (onder meer Editorial, Studio, Tech, Atelier, Bold, Calm, Mono en Vivid) die je in één klik toepast. Je lettertypes, blokstijlen, teksten, foto's, logo en knoppen blijven dan staan; kies **Ook letters en vormen overnemen** als je ook de lettertypes en vormen van het thema wilt. Daarna stel je zes kleuren los in onder gewone namen: **Hoofdkleur**, **Tweede kleur**, **Pagina-achtergrond**, **Blokken en kaarten**, **Tekst** en **Kleine tekst**. Een leesbaarheidscheck waarschuwt als een combinatie te weinig contrast heeft.
+- **Donkere kleuren** (onderaan Kleuren): Vier opties: **Uit** (de site blijft licht), **Altijd donker** (je hele site is donker, voor iedere bezoeker), **Knop in menubalk** (bezoekers zien een zon/maan-knop in de menubalk en kunnen wisselen) en **Volgt het toestel** (de site volgt de instelling van het apparaat van de bezoeker). Staat een donkere versie aan, dan kies je een kant-en-klare donkere set of stel je de donkere kleuren zelf in; een leeg vakje krijgt dezelfde kleur als bij licht, en een hoofd- of tweede kleur die op de donkere pagina zou verdwijnen (zwart, navy) krijgt automatisch een lichtere nachtversie. Bovenaan Kleuren staat ook **Liever een donkere site?**, met **Bekijk donkere ontwerpen** (springt naar de donkere ontwerpen in de galerij) en **Maak mijn site donker**. Kies je terwijl je site op Altijd donker staat een sitepakket, dan vraagt de site eerst bevestiging, want het pakket zet Altijd donker uit zodat het resultaat eruitziet als in het voorbeeld.
+- **Merk**: Je logo voor een lichte en (optioneel) een donkere achtergrond, je favicon en de knop **Opnieuw opzetten** voor de wizard. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
+- **Letters**: Kies kop- en tekstlettertypes uit de ingebouwde lettertypebibliotheek (onder meer Inter, Geist, DM Sans, Fraunces, Lora, Space Grotesk en DM Serif Display), of een kant-en-klare lettercombinatie. Alle lettertypes worden vanaf MyCompanyDesk zelf geserveerd, niet van Google Fonts of een andere externe CDN. Dezelfde fontbestanden worden gebruikt in de editor en op je gepubliceerde site, dus de tekst ziet er overal identiek uit en het IP-adres van bezoekers gaat niet naar een derde partij.
+- **Knoppen**: Hoekradius, de standaard knopstijl, de stijl van opsommingstekens, de kopstijl (grootte, hoofdletters, letterafstand en dikte van koppen), kleurverloop op knoppen, en de kaartstijl. De kaartstijl bepaalt hoe kaarten voor diensten, reviews en tarieven eruitzien: **Vlak (geen rand)**, **Met rand** (standaard), **Met schaduw**, **Zwevend (sterke schaduw)**, **Brut (harde rand, blokschaduw)**, **Lijn (alleen contour)** of **Glas (mooist op een foto)**. Glas komt het best tot zijn recht over een foto, verloop of decoratieve band; op een effen achtergrond valt hij terug op een zacht getinte kaart.
+- **Menubalk**: De indeling, vorm en achtergrond van de menubalk, de knopstijl erin, de logogrootte, de menulinks en hun effect, en of de menubalk verdwijnt bij omlaag scrollen. Hier staan ook de inhoud van de menubalk (logo of merknaam, de knop rechtsboven, telefoonnummer en WhatsApp-nummer); zie [Navigatie](#navigatie).
+- **Ruimte**: Dichtheid (**Compact**, **Ruim**, **Royaal**), maximale paginabreedte, ruimte boven en onder blokken, kleurwisseling tussen blokken, structuur op de achtergrond en de kleurlook van je foto's.
+- **Animatie**: Hoe blokken sitebreed verschijnen terwijl bezoekers scrollen (**Geen**, **Subtiel**, **Zacht**, **Zijwaarts**, **Onthullen** of **Speels**), en **Minder beweging voor wie dat instelt** voor bezoekers die in hun systeem minder animaties vragen.
+- **Elementen**: Onderdelen die op iedere pagina verschijnen: de **Leesbalk** (een dunne voortgangsbalk bovenaan of onderaan terwijl bezoekers scrollen), een **Aankondigingsbalk**, de **Zwevende contactknop** (WhatsApp, telefoon of e-mail) en een **Cookiemelding**.
+- **Eigen CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden. Deze knop staat onderaan de rail, apart van de rest, omdat een fout erin de hele site raakt. Hier staan ook de **Analytics-snippets** (Plausible Analytics en een preconnect voor lettertypes); andere meetdiensten zoals Umami, Matomo of Google Analytics koppel je op het tabblad **Koppelingen** van Website.
 
 ### Logo importeren
 
-Als je al een logo op je website hebt staan, kun je dat direct in MyCompanyDesk importeren. In de **Stijl**-tab vind je de optie om een logo te importeren: voer de URL in van de pagina waar je logo op staat. MyCompanyDesk haalt de pagina op, selecteert het beste beschikbare logo en maakt zowel een lichte als een donkere versie voor je site. Na het importeren kun je beide versies nog steeds apart vervangen of aanpassen in de stijlinstellingen.
+Als je al een logo op je website hebt staan, kun je dat direct in MyCompanyDesk importeren. Onder **Hele site** › **Merk** staat **Heb je al een website? Haal je logo daarvandaan**: voer de URL in van de pagina waar je logo op staat. MyCompanyDesk haalt de pagina op, selecteert het beste beschikbare logo en maakt zowel een lichte als een donkere versie voor je site. Na het importeren kun je beide versies nog steeds apart vervangen.
 
-Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden voor alle pagina's.
+Wijzigingen onder **Hele site** worden automatisch opgeslagen en gelden voor alle pagina's.
 
 ## Publiceren
 
@@ -446,7 +369,7 @@ Totdat je publiceert, geeft je openbare URL een `noindex` robots-tag mee. Zo bli
 Wanneer je klaar bent:
 
 1. Klik op **Publiceer** in de bovenbalk.
-2. Je site wordt gepubliceerd naar de openbare URL (je eigen domein, werkruimte-subdomein of de terugvalportalroute).
+2. Je site wordt gepubliceerd naar de openbare URL (je eigen domein, je adres op `mycompanydesk.site` of het terugvaladres in de app).
 
 Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is. Een pagina wisselen tussen Live en Concept wordt meteen opgeslagen en telt als ongepubliceerde wijziging, dus de Publiceerknop licht op zodra je wisselt.
 
@@ -463,13 +386,13 @@ Alleen ter informatie: laat de sitebouwer voorbeeldfoto's (stockfoto's) staan di
 
 Is alles wat nog over blijft informatie, dan schakelt de dialoog over op een neutrale Klaar om te publiceren die alleen nog om bevestiging vraagt.
 
-De allereerste publicatie eindigt met een moment Je website is online: **Bekijk je site** en **Deel je link**, met een kopieerknop voor het adres dat je aan klanten uitdeelt.
+De allereerste publicatie eindigt met **Je website staat online**: **Bekijk je site** en **Deel je link**, met een kopieerknop voor het adres dat je aan klanten uitdeelt.
 
 Een snelle dubbelklik kan niet per ongeluk publiceren: de bevestigingsknop in de publicatiewaarschuwing negeert klikken even na het openen, en een tweede klik vlak na de eerste kan geen dubbele publicatie starten of de waarschuwing overslaan.
 
 ## Navigatie
 
-De navigatie-editor laat je de headerlinks van je site indelen en bepaalt hoe de navigatiebalk er op je hele site uitziet:
+De navigatie-editor (**Hele site** › **Navigatie**) laat je de menu-items van je site indelen:
 
 - Sleep pagina's om de navigatie op volgorde te zetten.
 - Maak dropdown-groepen om pagina's onder een bovenliggend label te nesten.
@@ -477,20 +400,20 @@ De navigatie-editor laat je de headerlinks van je site indelen en bepaalt hoe de
 - Het logo in de header is klikbaar en linkt altijd terug naar de homepage.
 - De homepage staat altijd vooraan en is vergrendeld.
 
-Boven het hoofdmenu geeft een **Navbar**-paneel je direct toegang tot de headerstyling die voorheen alleen op het Stijl-tabblad te vinden was. Je kunt instellen:
+De inhoud van de menubalk zelf stel je in bij **Hele site** › **Menubalk**:
 
-- **Merknaam**: De tekst die in de header wordt getoond wanneer er geen logo is geupload (laat leeg om het logo van Branding te gebruiken).
-- **CTA-knop**: Het label en de bestemmingslink voor de call-to-actionknop rechtsboven. Beide velden moeten ingevuld zijn om de knop zichtbaar te maken.
-- **Telefoonnummer**: Een klikbare `tel:`-link die naast de CTA-knop op desktop verschijnt en in de mobiele navigatielade. Laat leeg om de belknop te verbergen.
-- **Bel-label**: De tekst naast het telefoonicoon op mobiel (standaard is dit "Bel direct" wanneer leeg gelaten).
-- **Belknop op mobiel**: Wanneer ingeschakeld blijft er onderaan het scherm een vaste belknop staan op mobiele apparaten.
-- **Sticky navigatiebalk**: Wanneer ingeschakeld (standaard aan), blijft de navigatiebalk zichtbaar terwijl de bezoeker naar beneden scrollt.
+- **Logo** en **Merknaam**: Kies wat de menubalk toont (**Automatisch**, **Alleen merknaam** of **Logo + merknaam**). Automatisch toont je logo zodra je er een uploadt, en anders je merknaam.
+- **Knop**: De tekst en de bestemming van de knop rechts in de menubalk, en de **Knopstijl**. Tekst en bestemming moeten ingevuld zijn om de knop zichtbaar te maken.
+- **Telefoonnummer (tel: link)**: Een klikbaar telefoonnummer naast de knop op desktop en in het mobiele menu. Laat leeg om het te verbergen.
+- **Bel-label (mobiel)**: De tekst naast het telefoonicoon op mobiel (standaard "Bel direct" als je het leeg laat).
+- **Belknop onderaan op mobiel**: Een vaste belknop onderaan het scherm op mobiele apparaten, zodat bezoekers je met één tik bellen, waar ze ook zijn op de pagina. De belbalk kan naast de belknop ook WhatsApp tonen: hij leent het WhatsApp-nummer dat de rest van je site al draagt (een WhatsApp-knop, een contactblok met WhatsApp of de zwevende contactknop), en een **WhatsApp-nummer** dat je hier zelf invult gaat voor. Op mobiel laat de zwevende contactknop WhatsApp weg zodra de balk hem toont, zodat WhatsApp nooit dubbel op een scherm staat.
+- **Menubalk blijft in beeld bij scrollen**: Standaard aan. De menubalk blijft zichtbaar terwijl de bezoeker naar beneden scrollt.
 
-Deze instellingen gelden voor elke pagina van je site, net zoals op het Stijl-tabblad. Wijzigingen worden automatisch opgeslagen met een korte wachttijd nadat je stopt met typen. Voor de visuele layout, achtergrondstijl en knopweergave, zie het [Stijl-tabblad](#styling-van-je-site).
+Deze instellingen gelden voor elke pagina van je site en worden automatisch opgeslagen. De vormgeving van de menubalk (indeling, achtergrond, knopstijl) staat op dezelfde plek, zie [Je site vormgeven](#je-site-vormgeven).
 
 ## Footerlinks
 
-De footer-editor vind je op het tabblad **Footer** van de navigatie-editor. Die bouwt de onderkant van elke gepubliceerde pagina uit twee bronnen: automatische blokken die uit je pagina's en bedrijfsgegevens worden samengesteld, en handmatige linkkolommen die je zelf toevoegt.
+De footer-editor vind je onder **Hele site** › **Footer**. Die bouwt de onderkant van elke gepubliceerde pagina uit twee bronnen: automatische blokken die uit je pagina's en bedrijfsgegevens worden samengesteld, en handmatige linkkolommen die je zelf toevoegt.
 
 ### Automatische footerblokken
 
@@ -530,43 +453,41 @@ Zo gebruik je ze:
 - Tokens worden opgelost ná de publicatiesnapshot, dus latere wijzigingen in je bedrijfsgegevens verschijnen direct op de live site zonder opnieuw te publiceren.
 - Wettelijke pagina's die door het platform worden aangemaakt, gebruiken deze tokens automatisch. Bewerk de tekst eromheen gerust, de koppeling blijft intact.
 
-Bron: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
-
 ## Openbare URL
 
 Je website wordt getoond op de best beschikbare URL:
 
-1. Je eigen domein (bijv. `https://acme.nl`) wanneer geverifieerd en ingeschakeld
-2. Je werkruimte-subdomein (bijv. `https://acme.mycompanydesk.com`)
-3. De terugvalportalroute (`/portal/{slug}`)
+1. Je eigen domein (bijv. `https://acme.nl`) wanneer geverifieerd en ingeschakeld (Office)
+2. Je gratis adres op `mycompanydesk.site` (bijv. `https://acme.mycompanydesk.site`), dat bij je eerste publicatie op basis van je bedrijfsnaam wordt aangemaakt
+3. Het terugvaladres in de app (`/sites/{slug}`), zolang er nog geen gratis adres is
 
 Zie [Domeinen, website en inbox](/features/domains-website-inbox) voor domeininstelling en -verificatie.
 
 ## Contactformulier
 
-Het contactformulierblok (`form` sectietype) heeft een live verzendfunctionaliteit. Wanneer een bezoeker de velden invult die jij hebt ingesteld (naam, e-mail, telefoon, bedrijf, bericht) en op verzenden klikt, maakt het platform een aanvraag aan en stuurt het een melding naar je werkruimte. Het formulier toont een succesbanner bij afronding en een foutmelding als er iets misgaat. Alle invoervelden worden tijdens het verzenden uitgeschakeld om dubbel verzenden te voorkomen.
+Het contactformulierblok heeft een live verzendfunctionaliteit. Wanneer een bezoeker de velden invult die jij hebt ingesteld (naam, e-mail, telefoon, bedrijf, bericht) en op verzenden klikt, maakt het platform een aanvraag aan en stuurt het een melding naar je werkruimte. Het formulier toont een succesbanner bij afronding en een foutmelding als er iets misgaat. Alle invoervelden worden tijdens het verzenden uitgeschakeld om dubbel verzenden te voorkomen.
 
-In de inspecteur kies je de **Soort aanvraag** van het blok: **Offerte** (een aanvraag voor werk), **Bericht** (een gewone vraag of kennismaking), **Afspraak** (verzoek om een moment in je agenda), of **Terugbellen** (naam en telefoon, geen e-mail nodig). De lege keuze volgt de bedrijfsbrede standaard die je onder **Website > Koppelingen** zet. De soort bepaalt hoe inzendingen in je inbox, meldingen en mail heten, en elke soort krijgt zijn eigen tabblad onder **Offertes > Aanvragen**. Een terugbelformulier wisselt het verplichte e-mailveld om voor een verplicht telefoonveld.
+In de inspecteur kies je bij **Wat vraagt de klant?** de soort aanvraag van het blok: **Offerte** (een aanvraag voor werk), **Bericht** (een gewone vraag of kennismaking), **Afspraak** (verzoek om een moment in je agenda), of **Terugbelverzoek** (naam en telefoon, geen e-mail nodig). **Volg je bedrijfsinstelling** volgt de bedrijfsbrede standaard die je onder **Website › Koppelingen** zet. De soort bepaalt hoe inzendingen in je inbox, meldingen en mail heten. De bedrijfsbrede standaard bepaalt ook hoe het tabblad met aanvragen onder **Offertes** heet, bijvoorbeeld **Offerteaanvragen** of **Terugbelverzoeken**. Een terugbelformulier wisselt het verplichte e-mailveld om voor een verplicht telefoonveld.
 
 Op offerte- en berichtformulieren laat **Bezoekers kunnen foto's meesturen** een bezoeker tot 3 foto's (10 MB elk, JPEG, PNG of WebP) bij de aanvraag voegen. Zie [Offerteaanvragen](/features/quotes#offerteaanvragen) voor wat er aan jouw kant binnenkomt.
 
 Wat gebeurt er bij verzenden:
 
-1. Alleen de velden die het blok daadwerkelijk toont worden meegestuurd, dus het verbergen van het naamveld breekt de backend niet.
+1. Alleen de velden die het blok daadwerkelijk toont worden meegestuurd, dus een verborgen naamveld geeft geen fout.
 2. Het platform maakt een aanvraag aan (met de soort op de inzending) onder het bedrijf dat aan de site-slug is gekoppeld.
-3. Je ontvangt een werkruimtemelding (dezelfde route als de oude `/portal/quote-request`).
-4. De aanvraag verschijnt bij **Offertes > Aanvragen**.
+3. Je ontvangt een werkruimtemelding.
+4. De aanvraag verschijnt onder **Offertes**, op het tabblad met je aanvragen.
 5. De bezoeker ziet een aanpasbare succesmelding.
 
 Inzendingen via het contactformulier worden alleen geaccepteerd als de site is gepubliceerd: inzendingen aan een concept of ongepubliceerde werkruimte worden geweigerd. Ze zijn beperkt tot 5 per minuut per IP-adres en bovendien afgedekt door een per-bedrijf misbruikplafond, zodat één drukke bezoeker je meldingsbudget niet kan uitputten. Een Cloudflare Turnstile-widget verschijnt ook voordat de bezoeker verzendt, mits geconfigureerd op je werkruimte, en blokkeert geautomatiseerde botinzendingen zonder echte bezoekers te vertragen.
 
 ## Nieuwsbrief aanmelden
 
-Het nieuwsbriefblok (`newsletter` sectietype) vangt e-mailaanmeldingen van je gepubliceerde site op. De backend gebruikt een double opt-in stroom: na het verzenden ontvangt de bezoeker een bevestigingsmail en moet op de link klikken om het abonnement te activeren. Onderdrukte adressen en al actieve abonnees worden vanuit het formulier op dezelfde manier behandeld als nieuwe aanmeldingen (geen datalek).
+Het nieuwsbriefblok vangt e-mailaanmeldingen van je gepubliceerde site op. Aanmelden werkt met een dubbele bevestiging (double opt-in): na het verzenden ontvangt de bezoeker een bevestigingsmail en moet op de link klikken om het abonnement te activeren. Onderdrukte adressen en al actieve abonnees worden vanuit het formulier op dezelfde manier behandeld als nieuwe aanmeldingen (geen datalek).
 
 Wat gebeurt er bij verzenden:
 
-1. Het platform slaat het abonnement op met `source: "site_form"`.
+1. Het platform slaat de aanmelding op, met je website als bron.
 2. Als het adres niet al actief is en niet onderdrukt, wordt een double opt-in e-mail verstuurd.
 3. De bezoeker ziet hoe dan ook een succesbanner, zodat de abonnementsstatus privé blijft.
 4. Na bevestiging verschijnt de abonnee in het nieuwsbriefpubliek van die werkruimte.
@@ -575,7 +496,7 @@ Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 
 
 ## Juridische pagina's
 
-De sitebouwer voorziet elke nieuwe werkruimte van twee standaard juridische pagina's: **Privacybeleid** (`/privacy`) en **Algemene voorwaarden** (`/algemene-voorwaarden`). De inhoud gebruikt plaatsaanduidingsmarkeringen voor bedrijfsgegevens. Wanneer de pagina wordt gerenderd voor bezoekers, worden die markeringen vervangen door de waarden uit je **Bedrijfsinstellingen** — bedrijfsnaam, adres, postcode, plaats, land, registratienummer, btw-nummer en publieke e-mail.
+De sitebouwer voorziet elke nieuwe werkruimte van twee standaard juridische pagina's: **Privacybeleid** (`/privacy`) en **Algemene voorwaarden** (`/algemene-voorwaarden`). De inhoud gebruikt plaatsaanduidingsmarkeringen voor bedrijfsgegevens. Wanneer de pagina wordt gerenderd voor bezoekers, worden die markeringen vervangen door de waarden uit je **Bedrijfsinstellingen**: bedrijfsnaam, adres, postcode, plaats, land, registratienummer, btw-nummer en publieke e-mail.
 
 De tekst van beide pagina's is naar je vak gekozen, voorwaarden en privacy. De voorwaardenpagina kent twee varianten. Bedrijven die rechtstreeks aan consumenten verkopen, afspraakvakken en winkel- of horecavakken zoals een bakker, krijgen consumentgerichte voorwaarden: ze behandelen bestellingen en afspraken, het wettelijke herroepingsrecht voor consumenten met de wettelijke uitzondering voor op maat gemaakte of snel bedervende producten, betaling, het annuleren van afspraken en lessen, aansprakelijkheid en klachten, plus een algemene zin over allergieën. Op offertes gerichte vakken en B2B-diensten houden de bestaande vakman-voorwaarden, die over offertes, meerwerk en oplevering gaan. Beide varianten gebruiken dezelfde plaatsaanduidingen.
 
@@ -594,17 +515,15 @@ Zie [Offertes - Offerteaanvragen](/features/quotes#offerteaanvragen) voor detail
 De openbare website (bedrijfspagina en sitebouwer) is beschikbaar op elk abonnement en blijft online. De MyCompanyDesk-badge is adresgebaseerd: hij verschijnt op een werkruimte-subdomein en verdwijnt op een eigen domein (Office).
 
 - **Desk**: de site is zichtbaar op je adres onder `mycompanydesk.site`, met een kleine MyCompanyDesk-badge.
-- **Office**: de site is altijd zichtbaar; op een eigen domein staat geen badge. Een eigen domein koppelen en tussen domeinen wisselen kan alleen op Office.
-- **Stijlpresets**: de stijlpresets in de Stijl-tab zijn er op elk abonnement.
+- **Office**: de site is altijd zichtbaar; op een eigen domein staat geen badge. Een eigen domein koppelen kan alleen op Office (maximaal 5 eigen domeinen).
+- **Ontwerp en stijl**: de pakketten, kleurthema's en alle stijlinstellingen zijn er op elk abonnement.
 - **Onzekere toestand**: als het systeem niet kan bepalen welk abonnement je hebt, blijft de site online om te voorkomen dat een site onterecht offline gaat.
 
 Deze poort geldt voor alle publieke paden: de bedrijfspagina, de servicedetailroute en de pagina's van de sitebouwer. De controle gebeurt bij elk verzoek, voor elke cachinglaag, zodat het klopt ook als je abonnement midden in een cacheperiode verandert.
-
-Bron: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`; `renderer.service.js` bepaalt de badge op basis van het adres.
 
 ## Gerelateerd
 
 - [Domeinen, website en inbox](/features/domains-website-inbox): Eigen domein instellen, verificatie, SSL en e-mailinbox.
 - [Bedrijfsinstellingen](/settings/company): Waar je bedrijfsgegevens, huisstijl en adres staan.
 - [Offertes](/features/quotes): Beheren van offerteaanvragen die via je website binnenkomen.
-- [Abonnementen & betalingen](/settings/billing): Abonnementsvormen en functievlaggen.
+- [Abonnement & betalingen](/settings/billing): Wat er in Desk en Office zit.

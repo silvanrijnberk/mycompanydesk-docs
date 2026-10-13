@@ -1,6 +1,6 @@
 ---
 title: "Angebot in Rechnung umwandeln"
-description: "Angebot in Rechnung umwandeln: Öffnen Sie die Angebotsdetailseite und klicken Sie auf Rechnung aus Angebot erstellen, ein Entwurf übernimmt die Daten."
+description: "Angebot in Rechnung umwandeln: Öffnen Sie das abgeschlossene Angebot und klicken Sie auf In Rechnung umrechnen, ein Entwurf übernimmt die Daten."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -26,7 +26,7 @@ chatbot:
 
 So wandeln Sie ein Angebot in eine Rechnung um:
 1. Öffnen Sie die Angebotsdetailseite
-2. Klicken Sie auf „Rechnung aus Angebot erstellen“
+2. Klicken Sie auf „In Rechnung umrechnen“
 3. Es wird ein neuer Rechnungsentwurf mit kopierten Daten erstellt
 4. Prüfen Sie Fälligkeit und Zahlungsbedingungen
 5. Speichern und senden Sie die Rechnung

@@ -1,6 +1,6 @@
 ---
 title: "Verwijderde klanten vinden"
-description: "Verwijderde klanten vind je onder Klanten > Prullenbak. Sta je al in de klantenlijst, schakel dan over naar de weergave Prullenbak."
+description: "Verwijderde klanten vind je in Klanten: klik op Filters en kies bij Status de weergave Prullenbak."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are deleted customers", "where can i find deleted customers", "where do i find deleted customers", "customer trash", "trashed customers", "deleted customers", "verwijderde klanten", "klanten prullenbak", "geloschte kunden", "geloeschte kunden", "geloeschten kunden", "kunden papierkorb", "clients supprimes", "mes clients supprimes", "corbeille clients"]
@@ -9,6 +9,6 @@ chatbot:
   follow_up: ["Where do I find archived customers?", "How do I search customers?", "How do I restore a customer?"]
 ---
 
-Verwijderde klanten vind je onder Klanten -> Prullenbak. Sta je al in de klantenlijst, schakel dan over naar de weergave Prullenbak.
+Verwijderde klanten vind je in Klanten: klik boven de lijst op Filters en kies bij Status de weergave Prullenbak. Op je telefoon gebruik je daarvoor het filterknopje bovenaan.
 
 Houd er rekening mee dat verwijderen in stappen gaat: de eerste keer verwijderen archiveert een actieve klant, dus als een klant niet in de Prullenbak staat, kijk dan eerst in de weergave Archief.

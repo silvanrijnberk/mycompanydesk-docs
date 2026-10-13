@@ -1,6 +1,6 @@
 ---
 title: "Gelöschte Ausgaben finden"
-description: "Gelöschte Ausgaben finden Sie unter Ausgaben > Papierkorb. Wenn Sie bereits in der Ausgabenliste sind, wechseln Sie zur Ansicht Papierkorb."
+description: "Gelöschte Ausgaben finden Sie in Ausgaben: Klicken Sie auf Filter und wählen Sie unter Anzeigen die Ansicht Papierkorb."
 last_verified: 2026-08-16
 chatbot:
   triggers:
@@ -27,7 +27,7 @@ chatbot:
     - "How do I restore an expense?"
 ---
 
-Gelöschte Ausgaben finden Sie unter Ausgaben -> Papierkorb. Wenn Sie bereits in der Ausgabenliste sind, wechseln Sie zur Ansicht Papierkorb.
+Gelöschte Ausgaben finden Sie in Ausgaben: Klicken Sie über der Liste auf Filter und wählen Sie unter Anzeigen die Ansicht Papierkorb. Auf dem Smartphone nutzen Sie dafür die Filterschaltfläche oben.
 
 Beachten Sie, dass das Löschen mehrstufig ist: Der erste Löschvorgang bei einer aktiven Ausgabe archiviert sie. Wenn eine Ausgabe also nicht im Papierkorb ist, prüfen Sie die Ansicht Archiv. Das Löschen einer archivierten Ausgabe verschiebt sie in den Papierkorb, und das Löschen aus dem Papierkorb entfernt sie endgültig.
 

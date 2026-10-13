@@ -15,4 +15,6 @@ To edit a quote:
 3. Update customer details, quote lines, notes, or dates
 4. Save your changes
 
+No "Edit" button? Then the quote has already been accepted, declined or expired, has been converted to an invoice or agreement, is out with your customer for signing, or sits in the trash. Duplicate the quote and change the copy instead.
+
 Tip: If the quote is already sent, duplicate it first if you need to preserve the original version.

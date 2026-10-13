@@ -11,7 +11,7 @@ chatbot:
 
 MyCompanyDesk garde votre comptabilité en euros. Les factures, les devis et les rapports sont tous en EUR. Il n'existe aucun réglage de devise ni de sélecteur de devise par document ; c'est un choix produit délibéré, pas une préférence manquante.
 
-Les documents de dépense dans une autre devise sont pris en charge. Un reçu de l'étranger ou une facture fournisseur en dollars ou en livres est enregistré avec la devise d'origine et le montant du document, tandis que la dépense elle-même porte un montant en euros pour vos comptes : l'écran de scan demande le montant en euros pour lequel votre banque convertit le document, et un paiement qui apparaît sur un compte bancaire connecté règle la dépense au montant réellement débité par la banque. Voir Devise étrangère dans [Dépenses](/fr/features/expenses#devise-étrangère).
+Les documents de dépense dans une autre devise sont pris en charge. Un reçu de l'étranger ou une facture fournisseur en dollars ou en livres est enregistré avec la devise d'origine et le montant du document, tandis que la dépense elle-même porte un montant en euros pour vos comptes : l'écran de scan demande le montant en euros pour lequel votre banque convertit le document, et un paiement qui apparaît sur un compte bancaire connecté règle la dépense au montant réellement débité par la banque. Voir Devise étrangère dans [Dépenses](/fr/features/expenses#devise-etrangere).
 
 Si vous facturez un client à l'étranger, la facture reste en euros.
 

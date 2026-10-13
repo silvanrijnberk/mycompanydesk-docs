@@ -1,7 +1,7 @@
 ---
 title: "Teilzahlung"
 description: "Teilzahlung erfassen: Öffnen Sie die Rechnung aus der Liste, klicken Sie auf Zahlung erfassen und geben Sie den erhaltenen Betrag ein."
-last_verified: 2026-10-09
+last_verified: 2026-10-13
 chatbot:
   triggers: ["partial payment", "record partial payment", "half payment", "part payment", "deposit received", "gedeeltelijke betaling", "deelbetaling", "aanbetaling ontvangen", "teilzahlung", "paiement partiel", "acompte recu"]
   actions:
@@ -11,9 +11,9 @@ chatbot:
 
 Um eine Teilzahlung auf einer Rechnung zu erfassen:
 1. Öffnen Sie die Rechnung aus der Liste
-2. Klicken Sie auf „Zahlung erfassen“ oder die Zahlungsaktion
+2. Klicken Sie im Bereich Zahlungen auf „Zahlung erfassen“
 3. Geben Sie den erhaltenen Betrag ein (weniger als der Gesamtbetrag)
-4. Speichern Sie: der Rechnungsstatus ändert sich zu Teilweise bezahlt
+4. Speichern Sie: der Zahlungsstatus wird Teilweise gezahlt
 5. Wiederholen Sie den Vorgang, wenn weitere Zahlungen eingehen
 
 Ein Betrag über dem offenen Rest wird abgelehnt: das Formular warnt mit „Mehr als der offene Betrag ({amount})“, bevor Sie speichern, statt erst nach dem Klick einen neuen Saldo zu zeigen. Das Zahlungsdatum darf nicht in der Zukunft liegen, das Datumsfeld bietet daher nur „Heute“ als Schnellauswahl.

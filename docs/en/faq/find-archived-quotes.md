@@ -1,6 +1,6 @@
 ---
 title: Find archived quotes
-description: "Archived quotes are in Quotes > Archive. If you are already in the quote list, switch to the Archive view. Deleted quotes are in Trash."
+description: "Archived quotes are in Quotes: click Filters above the list and choose Archive under Show. Deleted quotes are in Trash."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are archived quotes", "where can i find archived quotes", "where do i find archived quotes", "quote archive", "archived quotes", "gearchiveerde offertes", "offertes archief", "archivierte angebote", "archivierten angebote", "angebote archiv", "devis archives", "mes devis archives", "archives devis"]
@@ -8,4 +8,4 @@ chatbot:
     - { label: "Open quotes", to: "/quotes?view=archived" }
   follow_up: ["Where do I find deleted quotes?", "How do I search quotes?", "How do I preview a quote?"]
 ---
-Archived quotes are in Quotes -> Archive. If you are already in the quote list, switch to the Archive view. Deleted quotes are in Trash.
+Archived quotes are in Quotes: click Filters above the list and choose Archive under Show. On your phone, use the filter button at the top. Deleted quotes are in Trash.

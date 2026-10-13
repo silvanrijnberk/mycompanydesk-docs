@@ -1,120 +1,122 @@
 ---
 title: Firmeneinstellungen
-description: "The name on your invoices, address, KvK, logo, brand colour, website and opening hours, grouped in Settings."
-last_verified: 2026-10-11
+description: "Der Name auf Ihren Rechnungen, Adresse, KvK, Logo, Markenfarbe, Gütesiegel und Öffnungszeiten, gebündelt unter Einstellungen."
+last_verified: 2026-10-13
 ---
 
-# Company Settings
+# Firmeneinstellungen
 
-Everything that defines how your business looks to the outside world: the name on your invoices, your logo and brand colour, your public website, and your opening hours.
+Alles, was bestimmt, wie Ihr Unternehmen nach außen wirkt: der Name auf Ihren Rechnungen, Ihr Logo und Ihre Markenfarbe, Ihre Gütesiegel, Ihre Website und Ihre Öffnungszeiten.
 
-## Where to find it
+## Wo Sie es finden
 
-Open **Instellingen** (Settings) from the menu, or go to `/settings`. Company topics are rows in the **Je bedrijf** (your business) group:
+Öffnen Sie **Einstellungen** im Menü oder gehen Sie zu `/settings`. Die Unternehmensthemen sind Zeilen in den Gruppen **Ihr Unternehmen** und **Rechnungen und Geld**:
 
-- **Bedrijfsgegevens** (business details) at `/settings/bedrijfsgegevens`: company info, address, KvK number, VAT number, opening hours
-- **Logo en kleur** (logo and colour) at `/settings/uiterlijk`: logo, brand colour, document styling
-- **Factuurontwerp** (invoice design) at `/settings/factuurontwerp`: the invoice design studio, covered on [PDF Customization](/en/settings/pdf)
+- **Unternehmensdaten** unter `/settings/bedrijfsgegevens`: Firmenname, Adresse, KvK- und MwSt.-Nummer, Kontaktdaten, Gütesiegel und Öffnungszeiten
+- **Logo und Farbe** unter `/settings/uiterlijk`: Ihr Logo, Ihr Anzeigename und Ihre Markenfarbe
+- **Rechnungsgestaltung** unter `/settings/factuurontwerp`: das Designstudio für Ihre Rechnungen, beschrieben unter [PDF-Design](/de/settings/pdf)
 
-Old links to the previous workspace settings pages redirect to the new locations automatically.
+Alte Links auf die früheren Arbeitsbereichseinstellungen leiten automatisch auf die neue Stelle weiter.
 
-## Business details (Bedrijfsgegevens)
+## Unternehmensdaten
 
-Path: `/settings/bedrijfsgegevens`
+Pfad: `/settings/bedrijfsgegevens`
 
-The identity form. What every invoice, quote, and email shows.
+Die Angaben, die auf jeder Rechnung, jedem Angebot und jeder E-Mail stehen. Sie müssen korrekt sein.
 
-- **Business name**: appears on every document
-- **Address**: street, postal code, city, country (with address autocomplete)
-- **Registration**: KvK or other registration number. The row warns you (advisory only) when the number does not look like a valid KvK number; actual lookups are done by the fill-in helper at the top of the page, see below.
-- **Tax ID**: VAT number (e.g. `NL123456789B01`)
-- **Contact**: public email, phone, support email, timezone. The address you log in with is not put on your website until you confirm it as your public address (the website wizard and the publish dialog ask); your invoices keep using it either way.
-- **Website + social**: used by the email signature, business page, and footers. Paste the full address of your profile or page (for example `https://instagram.com/yourcompany`); a value that would not become a link is flagged after you leave the field, and a bare username shows where it would link.
+- **Firmenname**: steht auf jedem Dokument
+- **Handelsregisternummer**: die niederländische KvK-Nummer. Hat sie nicht 8 Ziffern, erscheint ein Hinweis (nur zur Kontrolle); das eigentliche Nachschlagen übernimmt die Ausfüllhilfe oben auf der Seite, siehe unten
+- **USt-IdNr.**: zum Beispiel `NL123456789B01`
+- **Adresse**: Straße, Postleitzahl, Ort und Land, mit Hilfe beim Ausfüllen der Adresse
+- **Kontakt**: E-Mail, Telefon, Support-E-Mail, Website und Zeitzone. Die Adresse, mit der Sie sich anmelden, erscheint erst auf Ihrer Website, wenn Sie sie als öffentliche Adresse bestätigen (der Website-Assistent und das Veröffentlichungsfenster fragen danach); Ihre Rechnungen verwenden sie in jedem Fall.
+- **Über Ihr Unternehmen**: eine kurze **Unternehmensbeschreibung** für Ihre Geschäftsseite im Kundenportal
+- **Soziale Medien**: Instagram, Facebook, LinkedIn und X. Fügen Sie die vollständige Adresse Ihres Profils oder Ihrer Seite ein (zum Beispiel `https://instagram.com/ihrefirma`); ein Wert, der kein Link wird, wird beim Verlassen des Feldes markiert, und bei einem bloßen Benutzernamen sehen Sie, wohin er verlinken würde.
 
-Changes save automatically.
+Ihre IBAN tragen Sie nicht hier ein, sondern unter **Einstellungen › Bezahlung**. Änderungen werden automatisch gespeichert.
 
-## Ausfüllhilfe (Vul je gegevens automatisch in)
+## Ihre Daten automatisch ausfüllen
 
-Oben auf der Seite Bedrijfsgegevens liegt die Karte **Vul je gegevens automatisch in**. Sie zieht Ihre Unternehmensdaten aus zwei Quellen und stellt sie nebeneinander:
+Oben auf der Seite Unternehmensdaten steht die Karte **Ihre Daten automatisch ausfüllen**. Sie holt Ihre Firmendaten aus zwei Quellen und stellt sie nebeneinander:
 
-- **Kamer van Koophandel (KvK)**: Firmenname und Adresse
+- **Handelskammer (KvK)**: Name und Adresse
 - **Google**: Telefon, Website und Öffnungszeiten aus Ihrem Google-Unternehmensprofil
 
-Jeder Vorschlag steht unter **Dit vonden we** (Das haben wir gefunden) mit genannter Quelle. Kreuzen Sie an, was Sie übernehmen wollen, und drücken Sie **Overnemen** (übernehmen, die Schaltfläche zählt mit, was Sie gewählt haben). Gefüllt werden nur leere Felder: eine Zeile, in der schon etwas steht, wird mit **al ingevuld** (schon ausgefüllt) markiert und übersprungen. Eine Abfrage überschreibt also nie Ihre eigene Arbeit. Die KvK-Schaltfläche, die bisher unter dem Registrierungsfeld lag, sitzt jetzt in dieser Karte; das automatische Ausfüllen geschieht so an einem Ort.
+Jeder Vorschlag steht in der Liste **Das haben wir gefunden** mit seiner Quelle. Haken Sie an, was Sie übernehmen möchten, und drücken Sie die Schaltfläche **Übernehmen** (sie zählt mit, was Sie auswählen). Es werden nur leere Felder gefüllt: Eine Zeile, in der schon etwas steht, markiert die Karte als **bereits ausgefüllt** und überspringt sie. Eine Abfrage überschreibt also nie Ihre eigene Arbeit.
 
-## Certifications (Keurmerken)
+## Gütesiegel
 
-Path: `/settings/bedrijfsgegevens#keurmerken`
+Pfad: `/settings/bedrijfsgegevens#keurmerken`
 
-The **Keurmerken** card on the Bedrijfsgegevens page holds your company's certifications and quality marks, such as STEK, VCA or CE. They appear on your website, and under your emails per mail type as chosen under Settings → Email. You manage them in one place.
+Die Karte **Gütesiegel** auf der Seite Unternehmensdaten enthält die Zertifikate und Qualitätszeichen Ihres Unternehmens, etwa STEK, VCA oder CE. Sie erscheinen auf Ihrer Website und, je nach Mailart wie unter Einstellungen › E-Mail gewählt, unter Ihren E-Mails. Sie verwalten sie an einer Stelle.
 
-- **Add a certification**: choose an image (PNG, JPG, WebP or SVG, 3 MB at most). MyCompanyDesk trims the white space around the logo, caps its height at 480 pixels and converts it to a PNG with transparency. An SVG is rasterized, so mail programs that cannot show SVG still display the mark. The image is optional: a certification can carry just its name, and a name-only mark shows as its name on your website and in the text version of your e-mails.
-- **Name**: required, up to 64 characters. The name describes the logo for people who cannot see it.
-- **Link (optional)**: for example the register page where customers can verify your certificate. The link must start with `https://` or `http://`.
-- Up to six certifications. Reorder them with the up and down arrows; to replace the image, remove the certification and add it again.
-- One switch, on by default: **Tonen op je website** feeds the Keurmerken block on your website. Whether the logos also appear under your emails is chosen per mail type under **Settings → Email**; the card shows a note with a link there.
-- Adding your first certification automatically places a **Keurmerken** block on the homepage of your website, as a draft. It goes live when you publish your site.
-## Form of address on your website (Aanspreekvorm op je website)
+- **Gütesiegel hinzufügen**: Wählen Sie ein Bild (PNG, JPG, WebP oder SVG, höchstens 3 MB). MyCompanyDesk schneidet den weißen Rand um das Logo weg, begrenzt die Höhe auf 480 Pixel und wandelt es in ein PNG mit Transparenz um. Ein SVG wird in ein normales Bild umgewandelt, damit auch Mailprogramme ohne SVG-Unterstützung das Siegel zeigen. Das Bild ist optional: Ein Gütesiegel kann auch nur einen Namen tragen, der dann auf Ihrer Website und in der Textversion Ihrer E-Mails erscheint.
+- **Name**: Pflichtfeld, höchstens 64 Zeichen. Der Name beschreibt das Logo für Menschen, die es nicht sehen können.
+- **Link (optional)**: zum Beispiel die Registerseite, auf der Kunden Ihr Zertifikat prüfen können. Der Link muss mit `https://` oder `http://` beginnen.
+- Höchstens sechs Gütesiegel. Ordnen Sie sie mit den Pfeilen nach oben und unten; um das Bild zu ersetzen, entfernen Sie das Siegel und fügen es neu hinzu.
+- Ein Schalter, standardmäßig an: **Auf Ihrer Website anzeigen** füllt den Gütesiegel-Block auf Ihrer Website. Ob die Logos auch unter Ihren E-Mails stehen, wählen Sie pro Mailart unter **Einstellungen › E-Mail**; die Karte zeigt einen Hinweis mit Link dorthin.
+- Mit dem ersten Gütesiegel erscheint automatisch ein **Gütesiegel**-Block auf der Startseite Ihrer Website, als Entwurf. Er geht live, sobald Sie Ihre Website veröffentlichen.
 
-Below the Keurmerken card sits the card that decides how your website talks to its visitors: **Je en jij** (personal, "Ik help je graag.") or **U** (polite, "Ik help u graag."). The fixed texts on your site, buttons, form lines, thank-you messages, follow the choice at once; a one-person business speaks as ik instead of we. What you or the text writer already wrote keeps its own voice until you press **Zet alle teksten om naar je** or **Zet alle teksten om naar u**: one run converts every text standing on the site, your own typed text included, changing only the form of address and never the content. The result names how many texts changed and which stayed standing, and a publish puts them live. The website wizard asks the same choice in its first step and writes the same setting.
+## Anrede auf Ihrer Website
 
-## Opening hours
+Unter der Karte Gütesiegel steht die Karte, die festlegt, wie Ihre Website ihre Besucher auf Niederländisch anspricht: "Du (je)" („Ik help je graag.“) oder **Sie (u)** („Ik help u graag.“). Die festen Texte Ihrer Website, etwa Schaltflächen, Formularzeilen und Dankesnachrichten, folgen der Wahl sofort; ein Einzelunternehmen spricht in der Ich-Form statt in der Wir-Form. Was Sie oder der Textassistent schon geschrieben haben, behält seine Anrede. Die Karte bietet an, auch diese Texte in einem Schritt umzustellen, einschließlich selbst getippter: Nur die Anrede ändert sich, der Inhalt bleibt gleich. Danach sehen Sie, wie viele Texte geändert wurden und welche stehen blieben, und mit dem Veröffentlichen gehen sie live. Der Website-Assistent stellt dieselbe Frage im ersten Schritt und schreibt dieselbe Einstellung.
 
-Path: `/settings/bedrijfsgegevens#openingstijden`
+## Öffnungszeiten
 
-From here you manage one central source for your opening hours. The same hours feed your website and the online appointments block, so you never have to keep two places in sync.
+Pfad: `/settings/bedrijfsgegevens#openingstijden`
 
-**Weekly schedule**
+Hier verwalten Sie eine zentrale Quelle für Ihre Öffnungszeiten. Dieselben Zeiten stehen auf Ihrer Website (das Geöffnet-Abzeichen und Ihre Unternehmensdaten) und gelten für den Online-Terminblock, sodass Sie nie zwei Stellen abgleichen müssen.
 
-- Set each day as **open** or **closed**.
-- For an open day, enter one or two time blocks, for example `09:00 - 12:00` and `13:00 - 17:00`.
-- A day you do not configure falls back to office hours (`09:00 - 17:00`) for your site and booking block.
-- You can also set a day to **by appointment** so it appears open without fixed times.
+**Die normale Woche**
 
-**Special days**
+- Setzen Sie jeden Tag auf **Geöffnet** oder **Geschlossen**.
+- Geben Sie einem offenen Tag einen oder zwei Zeitblöcke, zum Beispiel `09:00 - 12:00` und `13:00 - 17:00`.
+- Haben Sie noch nichts eingestellt, steht dort ein Vorschlag (Montag bis Freitag 09:00 - 17:00). Ihre Website zeigt erst Öffnungszeiten, wenn Sie hier etwas ändern und es gespeichert ist.
 
-- Add individual dates for holidays, vacations, or one-off changes.
-- For each special day choose **closed**, **by appointment**, or a **custom time block**.
-- The online appointments block and your website respect these exceptions.
+**Freie Tage und Ausnahmen**
 
-**Public website and appointments**
+- Fügen Sie einzelne Daten oder einen zusammenhängenden Zeitraum für Urlaub, Feiertage oder einmalige Änderungen hinzu.
+- Wählen Sie dafür **Geschlossen**, **Nach Vereinbarung** oder **Angepasste Zeiten**.
+- Mit **Feiertage hinzufügen** setzen Sie anerkannte Feiertage der nächsten zwölf Monate mit einem Tipp auf geschlossen.
+- Der Online-Terminblock und Ihre Website berücksichtigen diese Ausnahmen.
 
-Your opening hours are shown on the public business page and in the online appointments block. The website tab is managed under the top-level **Website** area; the booking block is covered on [Online appointments](/en/features/site-bookings). Both pull from the same source, so a change here updates both places. These hours limit the moments customers can pick themselves online. Someone who requests an appointment instead is not limited by them: any day can be asked, and you confirm.
+**Website und Termine**
 
-Changes save automatically. See [Online appointments](/en/features/site-bookings) for how the booking block uses your opening hours.
+Ihre Öffnungszeiten erscheinen auf Ihrer Website und im Online-Terminblock. Die Website selbst verwalten Sie im Bereich **Website** im Hauptmenü; der Terminblock ist unter [Online-Termine](/de/features/site-bookings) beschrieben. Beide lesen aus derselben Quelle, eine Änderung hier wirkt also an beiden Stellen. Diese Zeiten begrenzen die Momente, die Kunden online selbst wählen können. Wer stattdessen einen Termin anfragt, ist nicht an sie gebunden: Jeder Tag kann angefragt werden, und Sie bestätigen.
 
-### Google mitführen (Ook op Google bijhouden)
+Änderungen werden automatisch gespeichert.
 
-In der Karte Öffnungszeiten sitzt eine Zeile, die Ihre Zeiten mit Ihrem Google-Unternehmensprofil verbindet. Schalten Sie **Ook op Google bijhouden** ein (auch auf Google aktuell halten), melden Sie sich bei Google an und wählen Sie den Standort, der aktualisiert werden darf. Ändern Sie danach etwas, stellt MyCompanyDesk diese Änderung in der Nacht auch auf Ihrem Google-Profil; die Zeile meldet das mit **Je wijziging gaat vannacht naar Google** (Ihre Änderung geht heute Nacht zu Google).
+### Auch bei Google aktuell halten
 
-Weichen die Wochen ab? Dann fragt die Zeile, welche Fassung gilt, denn MyCompanyDesk überschreibt Google nie von sich aus: **Zet mijn tijden op Google** (meine Zeiten auf Google stellen) oder **Neem die van Google over** (Googles Zeiten übernehmen). Das Übernehmen ersetzt die oben stehenden Zeiten durch die von Google und aktualisiert damit auch die „Jetzt geöffnet“-Anzeige auf Ihrer Website. Gelistet werden nur die Tage, die abweichen, und ein Tag auf **auf Termin** erscheint bei Google als geschlossen, weil Google diesen Zustand nicht kennt. Mit **Nu bijwerken** (jetzt aktualisieren) schicken Sie Ihre Zeiten ohne Warten auf die nächtliche Runde zu Google; nach einer misslungenen Zustellung steht die Schaltfläche neben dem Fehler erneut bereit.
+In der Karte Öffnungszeiten steht eine Zeile, die Ihre Zeiten mit Ihrem Google-Unternehmensprofil verbindet. Schalten Sie **Auch bei Google aktuell halten** ein, melden Sie sich bei Google an und wählen Sie den Standort, der aktualisiert werden darf. Ändern Sie danach etwas, überträgt MyCompanyDesk die Änderung in der folgenden Nacht auch in Ihr Google-Profil; die Zeile meldet das mit **Ihre Änderung geht heute Nacht an Google**.
 
-Schalten Sie den Schalter aus, wird das Nachhalten gestoppt, aber Ihr Konto und Ihr Standort bleiben verbunden.
+Laufen die beiden Wochen auseinander, fragt die Zeile, welche Fassung gelten soll, denn MyCompanyDesk überschreibt Google nie von sich aus: **Meine Zeiten bei Google setzen** oder **Die von Google übernehmen**. Übernehmen ersetzt die Zeiten oben durch die von Google und aktualisiert damit auch den Geöffnet-Hinweis auf Ihrer Website. Nur abweichende Tage stehen in der Tabelle, und ein Tag mit **Nach Vereinbarung** erscheint bei Google als geschlossen, weil Google diesen Zustand nicht kennt. Mit **Jetzt aktualisieren** übertragen Sie Ihre Zeiten, ohne auf den nächtlichen Durchlauf zu warten; nach einem fehlgeschlagenen Versand erscheint der Fehler mit der Schaltfläche daneben.
 
-## Logo and colour (Logo en kleur)
+Schalten Sie den Schalter aus, endet der Abgleich, Konto und Standort bleiben aber verbunden.
 
-Path: `/settings/uiterlijk`
+## Logo und Farbe
 
-Branding for invoices, quotes, and outgoing email, with a live preview of the result.
+Pfad: `/settings/uiterlijk`
 
-- **Logo upload**: used on every PDF and email header
-- **Display name** (Weergavenaam): an optional brand name on your emails and PDFs. Leave it empty and your business name is used. Once it differs from the business name, it also decides what your invoice and the app menu carry; the business-details form then shows under the name field what displays at the moment ("Your invoice and menu currently show: ..."), with a link back to this page.
-- **Brand colour**: one accent colour across your website, newsletter, emails, documents and public business page. If you set a different accent colour in **Factuurontwerp** (invoice design), that colour is what customers see on invoices, quotes, emails and the payment page. A hint under **Logo en kleur** offers a one-click option to make it your workspace brand colour too.
-- **Style presets**: pick a document style, available on every plan
-- **PDF footer**: the footer text at the bottom of your documents
+Ihr Erscheinungsbild für Rechnungen, Angebote, E-Mails und Ihre Website, mit einer Live-Vorschau des Ergebnisses.
 
-There is one default brand colour for all customer surfaces; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/en/settings/pdf).
+- **Anzeigename**: ein optionaler Markenname auf Ihren E-Mails und PDFs. Bleibt er leer, wird Ihr Firmenname verwendet. Weicht er vom Firmennamen ab, bestimmt er auch, was auf Ihrer Rechnung und im App-Menü steht; das Formular Unternehmensdaten zeigt dann unter dem Namensfeld, was gerade angezeigt wird („Rechnung und Menü zeigen derzeit: ...“), mit einem Link zurück zu dieser Seite.
+- **Markenfarbe**: eine Farbe für Website, Newsletter, E-Mails und Dokumente. Geben Sie einen Farbcode ein oder wählen Sie eine der Voreinstellungen; ist eine Farbe zu hell, um lesbar zu bleiben, erscheint eine Warnung. Haben Sie in der **Rechnungsgestaltung** eine eigene Akzentfarbe gewählt, sehen Kunden diese Farbe auf Rechnungen, Angeboten, E-Mails und der Zahlungsseite. Ein Hinweis unter der Farbe bietet an, diese Akzentfarbe mit einem Klick auch als Markenfarbe zu übernehmen.
+- **Firmenlogo**: Laden Sie Ihr Logo als SVG (empfohlen), PNG oder JPG hoch, höchstens 2 MB. Es erscheint auf jedem PDF und oben in Ihren E-Mails. Für Fotologos gibt es eine Schaltfläche, die den Hintergrund entfernt.
+- **Logo aus Text generieren**: Noch kein Logo? Erstellen Sie hier eines aus einem Text, etwa Ihren Initialen, und einer Hintergrundfarbe.
+- **Vorschau**: zeigt, wie Ihre Marke auf Rechnungen und E-Mails aussieht.
 
-## Your website
+Änderungen werden automatisch gespeichert. Es gibt eine Markenfarbe für alles, was Kunden sehen. Für die volle Kontrolle über Layout, Farben und Schrift Ihrer Rechnungen und Angebote öffnen Sie die Zeile **Rechnungsgestaltung**; siehe [PDF-Design](/de/settings/pdf).
 
-Your public business page is managed in the top-level **Website** area of the app, not under Settings. It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The site editor opens from **Edit site**.
+## Ihre Website
 
-- The website is available on every plan. On Desk it runs on a `mycompanydesk.site` address with a small badge.
-- Connecting your own domain, replacing the default `mycompanydesk.site` subdomain, requires Office. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.
+Ihre Website verwalten Sie im Bereich **Website** im Hauptmenü der App, nicht unter Einstellungen. Es ist eine Übersicht mit sieben Reitern: Übersicht, Besucher, Ergebnisse, Seiten, Auffindbarkeit, Verknüpfungen und Domain & E-Mail. Den Editor öffnen Sie mit **Website bearbeiten**.
 
-## Related
+- Die Website ist in jedem Abonnement enthalten. Mit Desk läuft sie unter einer Adresse auf `mycompanydesk.site` mit einem kleinen Hinweis „Gemaakt met MyCompanyDesk“.
+- Eine eigene Domain statt der Standardadresse auf `mycompanydesk.site` gehört zu Office. DNS-, SPF- und DKIM-Einträge verwalten wir für Sie; sie liegen hinter einem erweiterten Bereich, den die meisten nie öffnen müssen.
 
-- [PDF Customization](/en/settings/pdf) for the Factuurontwerp design studio
-- [Plan & payments](/en/settings/billing) to unlock the custom domain
-- [Email setup](/en/settings/email) for sending from your own domain
-- The setup wizard at `/setup` walks new workspaces through these settings in one flow
+## Verwandte Themen
+
+- [PDF-Design](/de/settings/pdf) für das Designstudio Rechnungsgestaltung
+- [Abonnement & Zahlungen](/de/settings/billing) für eine eigene Domain
+- [E-Mail](/de/settings/email) für den Versand von Ihrer eigenen Domain
+- Der Einrichtungsassistent unter `/setup` führt neue Arbeitsbereiche in einem Durchgang durch diese Einstellungen

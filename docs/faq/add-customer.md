@@ -15,4 +15,4 @@ Zo voeg je een klant toe:
 4. Vul indien nodig btw-nummer, IBAN en betaaltermijn in
 5. Sla de klant op
 
-Tip: Het klantformulier heeft nu geen apart veld voor voorkeurstaal, dus focus op de factuur- en betaalgegevens die later opnieuw worden gebruikt.
+Tip: Het klantformulier heeft geen veld voor een voorkeurstaal; de taal van je documenten stel je voor de hele werkruimte in bij Instellingen › "Facturen en offertes". Focus dus op de factuur- en betaalgegevens die later opnieuw worden gebruikt.

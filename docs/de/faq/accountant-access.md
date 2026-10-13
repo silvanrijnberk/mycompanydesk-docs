@@ -20,7 +20,7 @@ chatbot:
     - "uitnodiging klant"
     - "klant uitnodigen"
   actions:
-    - { label: "Open access settings", to: "/settings/team" }
+    - { label: "Open accountant settings", to: "/settings/boekhouder" }
   follow_up:
     - "How do I set page permissions?"
     - "How do I invite a team member?"
@@ -32,12 +32,12 @@ Es gibt zwei Wege, wie der Steuerberater-Zugang starten kann: Sie laden Ihren St
 
 ## Sie laden Ihren Steuerberater ein
 
-1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater“
-2. Klicken Sie im Bereich Steuerberater auf „Steuerberater hinzufügen“ und tragen Sie die Kontaktdaten ein
-3. Senden Sie die Einladung, wenn Ihr Steuerberater ein Konto erstellen soll
-4. Öffnen Sie „Zugang verwalten“, um die Seitenberechtigungen festzulegen
+1. Gehen Sie zu Einstellungen › „Ihr Buchhalter“
+2. Tragen Sie unter „Boekhouder uitnodigen“ (Buchhalter einladen) die E-Mail-Adresse Ihres Steuerberaters ein und klicken Sie auf „Uitnodiging versturen“ (Einladung senden). Ihr Steuerberater erhält eine E-Mail mit einem Annahmelink, der 30 Tage gültig ist
+3. Sobald Ihr Steuerberater annimmt, erscheint er unter "Actieve boekhouders" (aktive Buchhalter). Dort können Sie den Zugang auch wieder widerrufen
+4. Brauchen Sie nur eine Adresse, an die Sie Unterlagen schicken, ohne dass sich Ihr Steuerberater anmeldet? Fügen Sie dann unter „Contactpersoon voor verzenden“ (Kontakt für den Versand) einen Kontakt hinzu. Hat ein Kontakt ein Konto, legen Sie mit der Schaltfläche "Paginatoegang" (Seitenzugriff) fest, welche Seiten er sehen darf
 
-Der Steuerberater-Zugang ist in jedem Tarif kostenlos; er erfordert weder Office noch einen Teamplatz. Häufige Statuswerte sind nur Kontakt, eingeladen, aktiv und widerrufen.
+Der Steuerberater-Zugang ist in jedem Tarif kostenlos; er erfordert weder Office noch einen Teamplatz. Unter „Wat je boekhouder heeft gedaan“ (was Ihr Buchhalter getan hat) sehen Sie jede Änderung, die ein Steuerberater in Ihrer Buchhaltung vornimmt.
 
 ## Ihr Steuerberater lädt Sie ein
 
@@ -50,7 +50,7 @@ Wenn Ihr Steuerberater MyCompanyDesk nutzt, kann er Sie direkt aus seinem Steuer
 
 Wenn der Arbeitsbereich, für den Sie eingeladen werden, bereits ein eigenes aktives Abonnement hat, kann die Kanzlei die Abrechnung dafür nicht übernehmen, bis dieses Abonnement gekündigt ist. Sie sehen eine Fehlermeldung, wenn die Kanzlei versucht, die Kanzleiabrechnung einzurichten, während Ihr eigenes Abonnement noch aktiv ist.
 
-Sie können diesen Zugang später jederzeit unter Einstellungen → „Zugang und Steuerberater“ widerrufen. Der Einladungslink ist 30 Tage gültig und kann von Ihrem Steuerberater erneut gesendet oder widerrufen werden.
+Sie können diesen Zugang später jederzeit unter Einstellungen › „Ihr Buchhalter“ widerrufen. Der Einladungslink ist 30 Tage gültig und kann von Ihrem Steuerberater erneut gesendet oder widerrufen werden.
 
 ## Was Ihr Steuerberater sieht
 
@@ -64,11 +64,11 @@ Ihr Steuerberater klickt auf eine Administration, um direkt in deren Arbeitsbere
 
 ## Automatische Zustellung
 
-Sobald Ihr Steuerberater verknüpft ist, gehen Sie zu **Einstellungen → Zugang und Steuerberater** und schalten Sie die automatische Zustellung ein. MyCompanyDesk kann dann einen Export mit Verkaufsrechnungen, Ausgaben und akzeptierten Angeboten an Ihren Steuerberater liefern, in einem kompatiblen Format, sodass die Zahlen nicht manuell übernommen werden müssen. USt.-Erklärungszahlen sind nicht enthalten; laden Sie diese als CSV unter **Steuern → USt.-Erklärung** herunter. Sie wählen selbst, welche Bereiche enthalten sind, und sehen in einem Protokoll, was zugestellt wurde.
+Die automatische Weiterleitung ist Teil von Office. Fügen Sie zuerst unter Einstellungen › „Ihr Buchhalter“ einen Kontakt hinzu und schalten Sie dann im Bereich „Automatisch doorsturen“ (automatisch weiterleiten) den Schalter ein. MyCompanyDesk schickt Ihrem Steuerberater dann von selbst Ihre Verkaufsrechnungen (sobald Sie sie versenden oder sobald sie bezahlt sind) und Ihre Ausgaben per E-Mail, mit Rechnungs-PDF und Belegen im Anhang. Sie wählen selbst, wie oft das geschieht (sofort, täglich, wöchentlich, monatlich oder pro Quartal), ob Angebote zur Information mitgehen und ob nur Ausgaben mit Beleg verschickt werden. Unter „Laatst verstuurd“ (zuletzt gesendet) sehen Sie, was zugestellt wurde. USt.-Erklärungszahlen sind nicht enthalten; laden Sie diese als CSV unter **Steuern › MwSt.-Erklärung** herunter.
 
 ## Mehrere Unternehmen verwalten
 
-Wenn Sie mehr als ein Unternehmen führen, oder wenn Ihr Steuerberater mehrere Administrationen verwaltet, wechseln Sie über den Arbeitsbereich-Wechsler in der linken Seitenleiste zwischen ihnen. Sie können ein eigenes Unternehmen über den Wechsler hinzufügen; jedes erhält eine eigene Administration mit separater USt., Rechnungen und Buchhaltung.
+Wenn Sie mehr als ein Unternehmen führen, oder wenn Ihr Steuerberater mehrere Administrationen verwaltet, wechseln Sie über den Arbeitsbereich-Wechsler in der linken Seitenleiste zwischen ihnen. Sie können ein eigenes Unternehmen über den Wechsler hinzufügen; jedes erhält eine eigene Administration mit separater USt., Rechnungen und Buchhaltung. Mit Desk haben Sie ein eigenes Unternehmen. Mit Office sind bis zu 10 möglich, für 5,99 € pro Monat oder 59,90 € pro Jahr je zusätzlichem Unternehmen (zzgl. MwSt.).
 
 Wenn Sie mehr als eine Administration haben, erscheint in der linken Navigation auch **Arbeitsbereiche** als direkter Link zur Triage-Übersicht.
 

@@ -1,6 +1,6 @@
 ---
 title: "Mehrere Einträge löschen"
-description: "Mehrere Einträge auf einmal löschen: Wählen Sie sie per Kontrollkästchen aus, öffnen Sie das Massenaktionsmenü, wählen Sie Löschen und bestätigen Sie."
+description: "Mehrere Einträge auf einmal löschen: Wählen Sie sie per Kontrollkästchen aus, klicken Sie in der Leiste unten auf Löschen und bestätigen Sie."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk delete", "delete multiple", "mass delete", "delete all", "remove multiple", "meerdere verwijderen", "alles verwijderen", "mehrere loschen", "supprimer plusieurs", "suppression en masse"]
@@ -12,9 +12,8 @@ chatbot:
 
 Um mehrere Einträge gleichzeitig zu löschen:
 1. Gehen Sie zur entsprechenden Listenansicht (Rechnungen, Ausgaben usw.)
-2. Verwenden Sie die Kontrollkästchen, um die zu löschenden Einträge auszuwählen
-3. Klicken Sie auf das Massenaktionsmenü oben
-4. Wählen Sie „Ausgewählte löschen“
-5. Bestätigen Sie die Löschung
+2. Wählen Sie die Einträge aus: Am Desktop erscheint das Kontrollkästchen, wenn Sie mit der Maus über eine Zeile fahren, oder Sie wählen im Menü einer Zeile „Mehrere auswählen“
+3. Klicken Sie in der Leiste unten auf dem Bildschirm auf „Löschen“
+4. Bestätigen Sie die Löschung
 
-Warnung: Gelöschte Einträge können möglicherweise nicht wiederhergestellt werden. Erwägen Sie stattdessen die Archivierung wichtiger Datensätze.
+Gelöscht wird in Stufen: Aus der aktiven Liste wandern Einträge zuerst ins Archiv oder in den Papierkorb, und erst „Endgültig löschen“ im Papierkorb entfernt sie wirklich. Bis zu diesem letzten Schritt können Sie sie mit „Zu aktiv wiederherstellen“ oder „Zum Archiv wiederherstellen“ zurückholen.

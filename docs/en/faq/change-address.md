@@ -1,6 +1,6 @@
 ---
 title: "Change your address"
-description: "To change your company address: go to Settings > Bedrijfsgegevens (business details)."
+description: "To change your company address: go to Settings › Business details."
 last_verified: 2026-08-08
 chatbot:
   triggers:
@@ -24,7 +24,7 @@ chatbot:
 ---
 
 To change your company address:
-1. Go to Settings → "Bedrijfsgegevens" (business details)
+1. Go to Settings › "Business details"
 2. Use the address helper to search for and apply the updated address. If the helper cannot resolve the full address, fill in the postcode and city yourself.
 3. New documents will use that updated address
 

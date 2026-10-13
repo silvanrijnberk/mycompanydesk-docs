@@ -14,9 +14,9 @@ Invoice statuses explained:
 • Sent - delivered to the customer, awaiting payment
 • Overdue - due date passed and still unpaid
 • Needs verification - the customer reported payment through the portal; confirm or reject it before the status moves to Paid
-• Paid - payment recorded. In a small edge case an invoice can show Paid while no payment is registered yet, for example after an import or an older "mark as paid" action that did not create a payment record. The payment card then shows "This invoice is marked paid, but {amount} is not registered as a payment" and offers to record the payment.
+• Paid - payment recorded. In a small edge case an invoice can show Paid while no payment is registered yet, for example after an import or an older "mark as paid" action that did not create a payment record. The payment card then shows "Paid, without a recorded payment." and offers "Record Payment" to log the payment after all.
 • Canceled - voided and no longer collectible
 
-Deleting an invoice is a staged action: from active it goes to Archived, then to Trash, and only then is permanently removed. You can restore it from Archive or Trash while it is still in either stage. Canceling is different: it marks a sent or paid invoice as Canceled but keeps it in the list.
+Only a draft without an invoice number can be deleted, and deleting is a staged action: from active it goes to Archive, then to Trash, and only then is permanently removed. You can restore the draft from Archive or Trash while it is still in either stage. A finalized invoice cannot be deleted. Canceling is different: "Mark as Canceled" sets a finalized, unpaid invoice to Canceled but keeps it in the list.
 
 Tip: Use invoice filters to focus on To send and Overdue first.

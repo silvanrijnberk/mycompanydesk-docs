@@ -9,7 +9,7 @@ Les tâches suivent ce que vous devez faire dans MyCompanyDesk. Certaines tâche
 
 ## Liste des tâches
 
-La page des tâches liste vos tâches ouvertes et terminées. Chaque ligne affiche le titre, la date d'échéance, le statut, la priorité et l'enregistrement lié. Les tâches provenant d'un devis, d'une dépense, d'un projet, d'un contrat ou d'une checklist de prise en main affichent une pastille de provenance pour que vous voyiez immédiatement d'où elles viennent.
+La page des tâches regroupe vos tâches en **En retard**, **Aujourd'hui**, **Cette semaine**, **Plus tard** et **Terminées** (les 14 derniers jours). Chaque ligne affiche le titre, la date d'échéance, le statut, la priorité et l'enregistrement lié. Les tâches qui n'ont pas été créées à la main affichent une pastille de provenance pour que vous voyiez immédiatement d'où elles viennent.
 
 Cliquez sur une tâche pour ouvrir le tiroir de détail.
 
@@ -20,7 +20,7 @@ Le tiroir de détail est une vue en lecture seule qui montre l'ensemble du conte
 - La date d'échéance, le statut et la priorité
 - La description complète
 - L'enregistrement lié
-- La provenance de la tâche, par exemple un devis, une dépense, un projet, un contrat ou une checklist de prise en main
+- L'origine de la tâche, par exemple une facture, un devis, un e-mail ou la déclaration de TVA
 - Le projet, si la tâche en fait partie
 - Les tags
 - La date de création de la tâche
@@ -32,14 +32,17 @@ Vous pouvez directement marquer la tâche comme terminée ou la rouvrir depuis l
 
 Les tâches peuvent provenir de plusieurs endroits :
 
-- **Manuel**: tâches que vous créez vous-même
-- **Devis**: générée à partir d'un devis
-- **Dépense**: générée à partir d'une dépense
-- **Projet**: générée à partir d'un projet
-- **Contrat**: générée à partir d'un contrat
-- **Prise en main**: étapes d'onboarding pour un nouvel espace de travail
+- **Manuel** : tâches que vous créez vous-même
+- **Facture** : une facture en retard
+- **Depuis devis** : un devis sur le point d'expirer
+- **Dépense** : une dépense à laquelle il manque encore une catégorie
+- **Contrat** : un contrat qui arrive à échéance
+- **TVA** : une déclaration de TVA à venir
+- **Depuis e-mail** : une tâche que vous créez à partir d'un message de votre boîte de réception
+- **Depuis projet** : une tâche qui appartient à un projet
+- **Prise en main** : étapes de configuration pour un nouvel espace de travail
 
 ## Conseils
 
 - Utilisez la pastille de provenance pour accéder à l'enregistrement concerné.
-- La liste **À faire maintenant** du [tableau de bord](/fr/faq/use-dashboard) place les tâches qui réclament une action aujourd'hui devant tout le reste.
+- Quand des tâches sont en retard, la carte **Tâches** du [tableau de bord](/fr/faq/use-dashboard) réclame votre attention, avec un bouton vers votre liste de tâches.

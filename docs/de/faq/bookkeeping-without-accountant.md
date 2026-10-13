@@ -16,7 +16,7 @@ chatbot:
     - "comptable pas necessaire"
     - "faire sa comptabilite"
   actions:
-    - { label: "Zugriffseinstellungen öffnen", to: "/de/settings/team" }
+    - { label: "Buchhalter-Einstellungen öffnen", to: "/settings/boekhouder" }
   follow_up:
     - "How do I invite my accountant?"
     - "What does the Desk plan include?"
@@ -44,4 +44,4 @@ Erwägen Sie einen Steuerberater bei komplexen Fällen wie einer GmbH, Angestell
 
 ## Kosten
 
-Sie können mit dem kostenlosen Tarif Desk starten und bleiben. Neue Arbeitsbereiche erhalten eine 60-tägige Office-Testphase. Bezahlte Tarife finden Sie unter [Tarife & Zahlungen](/de/settings/billing).
+Sie können mit dem kostenlosen Tarif Desk starten und bleiben. Neue Arbeitsbereiche erhalten eine 60-tägige Office-Testphase. Bezahlte Tarife finden Sie unter [Abonnement & Zahlungen](/de/settings/billing).

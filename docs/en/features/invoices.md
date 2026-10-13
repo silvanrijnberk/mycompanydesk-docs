@@ -5,19 +5,19 @@ description: "Create professional invoices, send them with payment links, and tr
 
 # Invoices
 
-Invoices are at the core of MyCompanyDesk. Create professional invoices, send them to customers with payment links, and track payments through to completion.
+Invoices are at the core of MyCompanyDesk. Create professional invoices, send them to customers with payment links, and track payments through to completion. Creating and sending invoices is unlimited on every plan, Desk included.
 
 ## Settings for invoices and quotes
 
-Settings → **Facturen en offertes** (Invoices and quotes) holds defaults that apply to every new invoice and quote.
+**Settings › Invoices and quotes** holds defaults that apply to every new invoice and quote.
 
 ### Payment terms
 
-Set the default number of days a customer gets to pay. Choices range from **Direct** to a custom number of days. This value appears on every new invoice, but you can override it per invoice.
+Set the default number of days a customer gets to pay: **14 days** (what most people choose), **30 days**, **60 days**, or another number of days you type yourself (0 shows as **Immediately**). This value appears on every new invoice, but you can override it per invoice.
 
 ### Reminders
 
-Turn on automatic reminders and MyCompanyDesk sends a friendly reminder the day after an invoice becomes overdue, then every week until it is paid.
+Turn on **Overdue? Automatically send a reminder** and MyCompanyDesk sends a friendly reminder once an invoice is three days past its due date, then every week until it is paid. Automatic reminders are part of Office. Sending a reminder yourself from the invoice works on every plan.
 
 ### Quote validity
 
@@ -25,7 +25,7 @@ Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 mo
 
 ### Auto-invoice signed quotes
 
-When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
+When **Signed? Automatically prepare a draft invoice** is on, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it. This automation is part of Office.
 
 ### Attach terms by default
 
@@ -33,22 +33,22 @@ If you keep your general terms in Documents, every send can attach them as a PDF
 
 ### Invoice numbering
 
-MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
+MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number under **Numbering**.
 
-| Field | Dutch label | What it does |
-|---|---|---|
-| **Prefix** | Voorvoegsel | Text in front of the year on every new invoice, for example `INV-` or `2026_`. Sent invoices keep their existing number. |
-| **Next invoice number** | Eerstvolgende factuurnummer | The next number to use. You can only move forward, never back, because lowering the number would create duplicates. |
+| Field | What it does |
+|---|---|
+| **Prefix** | Text in front of the year on every new invoice, for example `INV-` or `2026_`. Sent invoices keep their existing number. |
+| **Next invoice number** | The next number to use. You can only move forward, never back, because lowering the number would create duplicates. |
 
 The preview under the fields shows what your next invoice number will look like. Already sent invoices are never renumbered when you change these settings.
 
-### Default document language
+### Document language
 
-Choose the language used for invoices, quotes and customer emails by default. The default option follows your workspace language; you can change the language per document.
+Under **Which language do you create your documents in?** you choose the language for invoices, quotes and emails to your customers. Dutch is the default. Invoices in other languages are part of Office. An invoice that has been finalized keeps the language it was made in.
 
 ### Peppol e-invoicing
 
-A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol). When you switch it on, your company details are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity verification, receiving, and missing-field checks.
+A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol) (Office). When you switch it on, your company details are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity verification, receiving, and missing-field checks.
 
 ## Overview
 
@@ -63,36 +63,24 @@ Inside the lists, invoices are grouped by where they stand, so the work you must
 
 Every group header carries the count of the whole group and, where it applies, the group total. Collapse a group with "Hide" and its rows stop counting towards the pages while the header stays in place. A month dated in the future (almost always a typo in the date) never collapses: it stays open with its own header so the mistake stays visible.
 
-Next to the dates, each row carries a **Status** column that says the state in plain words: "Draft", "To send", "due date 12 May passed", "due in 3 days", "customer says: paid". The **Status** filter in the filter panel still narrows the list to any single status, including drafts, late, paid and cancelled, and website sales keep their own view of the list.
+Next to the dates, each row carries a **Status** column that says the state in plain words: "Draft", "To send", "due date 12 May passed", "due in 3 days", "customer says: paid". The **Status** filter in the filter panel still narrows the list to any single status, including drafts, late, paid and cancelled. Once you sell through your website, a **Website sales** tab appears next to **Invoices** with its own list of those sales.
 
 ## Creating an invoice
 
 ### Full form
 
-1. Go to **Invoices > New Invoice**
+1. Go to **Invoices** and click **Create**
 2. Select or create a **customer**
-3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from your workspace tax settings (Geldzaken → Belasting). If a customer has reverse charge enabled, the line automatically uses 0%.
+3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from **Settings › VAT**. If a customer has reverse charge enabled, the line automatically uses 0%.
 4. Set the **invoice date** and **due date**
 5. Add optional **notes** or **internal remarks**
 6. Click **Save** to create a draft
 
-### Quick Add
-
-For faster creation:
-
-1. Click the quick-add button on the invoices list
-2. Select a customer
-3. Add items or choose a template
-4. Save (and optionally send immediately)
-
-On the phone, the quick-add button starts a short step-by-step flow instead of the full form: customer first, then the lines, then a review step before saving and sending.
+On the phone, a new invoice opens as a short step-by-step flow instead of the full form: customer first, then the lines, then a review step before saving and sending.
 
 ### From a template
 
-You can start a new invoice from a saved template in two places:
-
-- In the **full invoice form**, click **Start from template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send.
-- From the **quick-add drawer**, click **Use Template**, select a saved template, and all line items are pre-filled. Adjust as needed, then save and send.
+In the invoice form, click **From template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send. You save an invoice as a template with **Save as Template** in the more menu on the invoice.
 
 Saved templates keep the full line: description, quantity, unit, unit price, VAT rate, discount, and whether the line is VAT exempt. They deliberately do not keep the link to a catalog item, because catalog items can be deleted later and the template would then fail when used.
 
@@ -102,12 +90,12 @@ The **Amounts incl. VAT** switch on the document form changes what you type. Wit
 
 - The price you typed is what stays: change the VAT rate on the line afterwards and the amount including VAT remains in place, with the amount excluding VAT adjusting underneath it.
 - A discount in euros on a line discounts what the customer pays. A percentage discount works the same as on any other line.
-- On prices including VAT, the PDF and the invoice and quote detail show what the customer pays: the unit price and the line amount print including VAT (€ 38,00, not € 31,40), the price excluding VAT sits underneath the unit price in small print, and the VAT block names the base of every rate ("VAT 21% on € 35,54"). Package parts print including VAT too, so they add up to the package price. The totals of the document stay unchanged, and the e-invoice carries the same figures.
+- On prices including VAT, the PDF and the invoice and quote detail show what the customer pays: the unit price and the line amount print including VAT (€38.00, not €31.40), the price excluding VAT sits underneath the unit price in small print, and the VAT block names the base of every rate ("VAT 21% on €35.54"). Package parts print including VAT too, so they add up to the package price. The totals of the document stay unchanged, and the e-invoice carries the same figures.
 - Working without the switch while the prices you typed are the paid kind? When the customer is a private customer, the form asks whether the prices you typed include VAT. One click switches the document over without touching your amounts. Starting a new document for a private customer turns the switch on by itself (the prices the app fills in from your offering keep their line totals), and a notice under the switch then says "Private customer: you are now typing prices including VAT.", with a **Turn off** button that puts prices excluding VAT back.
 
-## Attributing an invoice to an object
+## Attributing an invoice to an asset
 
-If the revenue belongs to a rental property, vehicle or other asset, select the object in the invoice form. The invoice is then listed on that object's detail page and included in its total revenue. This works both for invoices generated from a rental contract and for direct attribution, such as service-charge settlements, one-off charges and sale invoices.
+If the revenue belongs to a rental property, vehicle or other asset, select the asset in the invoice form. The invoice is then listed on that asset's detail page and included in its total revenue. This works both for invoices generated from a rental contract and for direct attribution, such as service-charge settlements, one-off charges and sale invoices. [Assets](/en/features/objects) are an Office module.
 
 ## Invoice details
 
@@ -128,18 +116,15 @@ The preview header has a **Download PDF** button, a **Print** button, and a **Ch
 
 ## Actions
 
-The top action on the invoice detail page depends on the invoice status:
+The top action on the invoice detail page follows the step the invoice is at:
 
-- **Send** - Available for draft, sent, and overdue invoices. This is the primary next step when the invoice still needs to reach the customer.
-- **Duplicate** - Shown for cancelled invoices so you can recreate them quickly.
-- **Mark as paid** - Shown when a customer reports a payment, letting you confirm it instead of re-sending the invoice.
+- **Finalize**: on a draft. The invoice gets its definitive number.
+- **Send**: on a finalized invoice that has not gone to the customer yet.
+- **Mark as paid**: on a sent invoice that is waiting for payment, and when the customer reports they paid, so you can confirm it instead of sending the invoice again.
+- **Send Reminder**: on an overdue invoice. **Mark as paid** then moves to the more menu.
+- **Duplicate**: on a paid or cancelled invoice, as a secondary button, so you can recreate it quickly.
 
-Additional actions live in the overflow menu next to the top action:
-
-- **Download PDF** - Download the invoice as a professionally formatted PDF document with your company logo, branding colors, and all invoice details.
-- **Cancel** - Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
-- **Duplicate** - Create a copy of an existing invoice, useful for recurring billing to the same customer.
-- **Send reminder** - Send a payment reminder for overdue invoices.
+Other actions live in the more menu next to the top action, depending on the status: **Duplicate**, **Repeat every month** (turns the invoice into a recurring invoice), sending the email again, **Send Reminder**, sending to your accountant, **Save as Template**, and cancelling the invoice. On the phone, the preview, **Download PDF** and **Change design** sit in that menu too.
 
 ### Send
 
@@ -149,13 +134,13 @@ Send the invoice to your customer via email. The email includes:
 - The invoice PDF as an attachment
 - A payment link for online payment
 
-Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Fine-tuning the message every time? Tick **Use this text from now on for invoices** in the same dialog and every next invoice email starts from that version; see [Email templates](/en/faq/email-template).
+Before sending, the email preview shows the message exactly as your customer will receive it. Under **Include in email** the send dialog has switches for the **View button (online link)**, the **Download button**, the **PDF attachment** and **Include invoice items**. These switches are reflected in the live preview, so what you see is what your customer gets. Fine-tuning the message every time? Tick **Use this text from now on for invoices** in the same dialog and every next invoice email starts from that version; see [Email templates](/en/faq/email-template).
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It starts on or off following the attach-terms default you set for this document type under [Terms and conditions](#attach-terms-by-default) (out of the box: on for quotes, off for invoices). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+If your workspace has general terms in Documents, the email preview also shows an **Include terms and conditions** switch. It starts on or off following the attach-terms default you set for this document type under [Terms and conditions](#attach-terms-by-default) (out of the box: on for quotes, off for invoices). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
 ### Send as Peppol e-invoice
 
-If your workspace is on the Office plan and has [Peppol e-invoicing](/en/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's accounting software instead of sending it by email. You choose per invoice which channel to use.
+If your workspace is on Office and has [Peppol e-invoicing](/en/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's accounting software instead of sending it by email. You choose per invoice which channel to use.
 
 ### Download PDF
 
@@ -173,26 +158,29 @@ Cancel an invoice that should no longer be paid. Cancelled invoices remain in yo
 
 ### Duplicate
 
-Create a copy of an existing invoice, useful for recurring billing to the same customer.
+Create a copy of an existing invoice, useful for billing the same customer again.
 
-Credit notes cannot be duplicated. A duplicate would not reference any invoice and would still count as negative revenue in the VAT return, so create a new correction from the invoice you want to correct instead.
+Credit notes cannot be duplicated. A duplicate would not reference any invoice and would still count as negative revenue in the VAT return, so create a new correction with **Create credit note** on the invoice you want to correct instead.
 
 ### Send reminder
 
-Send a payment reminder for overdue invoices. If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
+Send a payment reminder for overdue invoices. This works on every plan; only the automatic reminders are part of Office. If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
 
 ## Bulk actions
 
 Select multiple invoices from the list to perform actions in bulk. The checkbox column appears in the list while you are selecting, and not at any other time; an empty list carries no select button.
 
-- **Mark as sent** - Mark multiple draft invoices as sent at once
-- **Mark as paid** - Record payment for multiple invoices
-- **Archive** - Move invoices to the archive
-- **Delete** - Permanently remove invoices
+- **Mark as paid**: record payment for multiple invoices
+- **Mark as Sent**: mark invoices you delivered outside MyCompanyDesk as sent. This only changes the status and gives the invoices their definitive number; no email goes out.
+- **Mark as Canceled**: cancel multiple invoices at once
+- **Archive**: move invoices to the archive
+- **Delete**: move invoices to the trash
+
+In the archive and the trash you restore invoices again, and from the trash you delete them permanently.
 
 Permanently deleting an invoice (single delete, bulk delete, empty trash, or delete all) releases any attached expenses. They return to the uninvoiced list and can be added to another invoice.
 
-Bulk finalizing runs the same VAT and status checks as sending a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
+Marking invoices as sent in bulk runs the same VAT and status checks as finalizing a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
 
 If a bulk action is refused because one or more selected rows fall inside a locked VAT period, the error message names the exact period and tells you what to do next. A filed and locked period can only be reopened via a supplementary VAT return. A bare lock (the period's filing deadline has passed but no return was filed) can be unlocked temporarily from the VAT page. Remove rows that fall in that period from your selection, or use the matching correction route, then try again.
 
@@ -214,12 +202,13 @@ If an invoice is canceled after it was sent, the payment link stops working. If 
 
 Enable online invoice payments by connecting your own Mollie or Stripe account:
 
-1. Go to **Money → Payments** in your workspace sidebar
-2. Under **Online betalingen**, connect your processor of choice
-3. Mollie supports iDEAL, Bancontact, credit card, and bank transfer
-4. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit
+1. Go to **Settings › Payment**
+2. Under **Let customers pay with iDEAL**, connect Mollie or Stripe
+3. The payment methods your customer sees are the ones that are active in your own Mollie or Stripe account, such as iDEAL, card or Bancontact
 
 Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account. Funds go directly to you. MyCompanyDesk does not handle or hold your payments.
+
+On the same page you enter your IBAN for bank transfers (the scan-and-pay QR code on the PDF uses it) and, with **Customers can also pay via PayPal**, the email address of your PayPal account.
 
 ## Payment processor badge
 
@@ -233,7 +222,7 @@ Online payments made via Mollie or Stripe can be refunded directly from MyCompan
 - The refund is processed immediately by Mollie or Stripe
 - The payment is marked as refunded in your records
 
-Partial refunds initiated at Mollie or Stripe (for example, when you refund only part of the amount there) now appear in the payment list with the refund date and the remaining booked amount.
+Partial refunds initiated at Mollie or Stripe (for example, when you refund only part of the amount there) appear in the payment list with the refund date and the remaining booked amount.
 
 Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund. When you void a payment, the invoice status is restored to the state that matches the invoice history. If the invoice had already been emailed to the customer, it returns to **Sent**; if it had never been sent, it returns to **To send**. The original sending history is preserved.
 
@@ -241,7 +230,7 @@ To refund a payment:
 
 1. Open the invoice detail page
 2. Locate the payment in the payment list
-3. Click the **refund** button (available for Mollie and Stripe payments only)
+3. Click **Refund** (available for Mollie and Stripe payments only)
 4. Add an optional reason
 5. Confirm the refund
 
@@ -249,30 +238,31 @@ To refund a payment:
 
 The invoice module supports multiple document types:
 
-- **Invoice** - Standard billing document
-- **Credit note** - Adjustment for refunds or corrections
-- **Reminder** - Payment reminder for overdue invoices
+- **Invoice**: standard billing document
+- **Credit note**: adjustment for refunds or corrections
+- **Reminder**: payment reminder for overdue invoices
 
 ## Filtering and search
 
-Use the filter bar to narrow down your invoices:
+Use the filter panel and the search field to narrow down your invoices:
 
-- **Status** - Draft, Sent, Overdue, Paid, Cancelled
-- **Customer** - Filter by specific customer
-- **Project** - Filter by linked project
-- **Date range** - Filter by invoice or due date
-- **Search**: Search by invoice number, customer name, reference, or notes
-- **Deep links**: Notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
+- **Status**: to send, draft, awaiting payment, overdue, needs verification, paid or cancelled
+- **Period**: filter by invoice date
+- **View**: active invoices, the archive or the trash
+- **Search**: search by customer, number or reference
+- **Deep links**: notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
+
+To see the invoices of one customer, open them from that customer's detail page.
 
 ## Receivables ageing card
 
-The **Outstanding** tab shows a receivables ageing card that groups open invoices by how many days they are past their due date. The amounts shown are the remaining collectible balance: the invoice total minus posted payments, with any credit notes already issued against the invoice taken into account.
+On desktop, the side panel next to the list shows a **Receivables ageing** card that groups open invoices by how many days they are past their due date: current, 1 to 30, 31 to 60, 61 to 90 and more than 90 days late. Click a group to narrow the list to it. The amounts shown are the remaining collectible balance: the invoice total minus posted payments, with any credit notes already issued against the invoice taken into account.
 
 Because the card only sees the invoices loaded in the current list view, its bucket totals are a snapshot of that page, not a full workspace-lifetime figure. A fully credited invoice no longer appears as money still to collect, so the totals match what your customer sees in the portal and what the invoice detail page shows.
 
 ## Export
 
-Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software. This export is available on every plan.
+Download your invoices as a CSV file for Excel, Google Sheets, or your accounting software from **Settings › Download data**. This export is available on every plan.
 
 ## Finalizing and sending
 
@@ -290,41 +280,28 @@ If you are still waiting for your btw-id from the Belastingdienst, or you are ex
 
 Once an invoice has been finalized, it cannot be archived or deleted in one step, because the invoice number has already been used. Use the cancel or credit-note flow to handle a finalized invoice that should no longer be paid.
 
-## Payment method status
-
-Payment methods can be active or inactive in your workspace:
-
-- **Active** methods appear as options when sending an invoice or setting up a customer mandate.
-- **Inactive** methods are hidden from new invoices and mandates. Existing mandates stay valid, but you cannot create new ones for an inactive method.
-
-iDEAL, bank transfer (scan-and-pay QR), PayPal, and credit card are available when your connected processor supports them. Availability depends on the processor you connect (Mollie or Stripe) and the country of your account. A method that is not available for your processor/country does not appear at all.
-
-When an online payment method is inactive, invoices still show the method list, but the inactive option is greyed out or hidden and the customer cannot select it. You can reactivate a method from **Money → Payments → Online payments**.
-
-<!-- TODO(source-missing): confirm exact labels for inactive payment method states and whether PayPal is enabled for both Mollie and Stripe. -->
-
 ## Receiving invoices from other MyCompanyDesk users
 
 When a supplier who also uses MyCompanyDesk emails you an invoice, you can have it land straight in your expenses as a structured draft. The amounts come from the invoice itself, so there is no scanning or retyping. The draft is always created in review status and is not booked until you approve it.
 
-This feature is off by default. Turn it on at **Settings > Automations** (`/settings/automatisering`) under **Invoices from other MyCompanyDesk users**. You can switch it off at any time from the same place.
+This feature is off by default. Turn it on at **Settings › Automation** under **Invoices from other MyCompanyDesk users**. You can switch it off at any time from the same place.
 
 When the feature is active:
 
 - Each incoming invoice appears as a draft expense under **Expenses** with the supplier name and the line totals already filled in.
 - The description shows which MyCompanyDesk workspace sent it and that it arrived via MyCompanyDesk.
 - Trusted-vendor rules may prefill the category, but the draft still stays in review so nothing is booked automatically.
-- The same invoice can never be turned into two drafts: a database-level deduplication guard blocks duplicates, even if the sender resends the email.
-- To protect your review queue, MyCompanyDesk limits each sender to at most ten drafts in your workspace per rolling 24-hour window. The cap is enforced in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
+- The same invoice can never be turned into two drafts, even if the sender resends the email.
+- To protect your review queue, MyCompanyDesk accepts at most ten drafts from the same sender in your workspace per rolling 24-hour window.
 
-The second way in needs no settings: the customer portal carries an **Add to my books** button on the invoice itself, and the click is the opt-in. MyCompanyDesk books the draft in the receiver's workspace at that moment, without the switch above and without the daily cap, and it works whatever mailbox the invoice arrived at. Both entrances share the same deduplication guard, so an invoice that already arrived automatically is never booked a second time. See [Customer portal](/en/advanced/customer-portal#add-the-invoice-to-your-books) for the button and the account step.
+The second way in needs no settings: the customer portal carries an **Add to my books** button on the invoice itself, and the click is the opt-in. MyCompanyDesk books the draft in the receiver's workspace at that moment, without the switch above and without the daily cap, and it works whatever mailbox the invoice arrived at. Both entrances share the same duplicate check, so an invoice that already arrived automatically is never booked a second time. See [Customer portal](/en/advanced/customer-portal#add-the-invoice-to-your-books) for the button and the account step.
 
-The feature is free on both sides. It only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/en/features/peppol).
+The feature is free on both sides. The automatic route only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/en/features/peppol).
 
 ## Tips
 
 - Set up your [email templates](/en/settings/email) before sending your first invoice
-- Use [recurring invoices](/en/features/recurring-invoices) for regular billing
-- Check the [reports](/en/features/reports) page for revenue insights
-- Enable [AI suggestions](/en/advanced/ai-features) for smart description improvements
-- Use [Peppol e-invoicing](/en/features/peppol) when your customer prefers digital delivery
+- Use [recurring invoices](/en/features/recurring-invoices) (Office) for regular billing
+- Check the [reports](/en/features/reports) (Office) for revenue insights
+- Turn on [AI suggestions](/en/advanced/ai-features) (Office) for smart description improvements
+- Use [Peppol e-invoicing](/en/features/peppol) (Office) when your customer prefers digital delivery

@@ -15,4 +15,6 @@ Pour ajouter des notes à une facture :
 3. Ajoutez le texte que vous voulez conserver avec cette facture
 4. Enregistrez la facture
 
+Les notes figurent sur la facture elle-même, votre client les voit donc. Pour noter quelque chose uniquement pour vous, utilisez la carte « Notes internes » sur la page de détail de la facture.
+
 Astuce : utilisez les notes pour les instructions de paiement, les références de projet ou les conditions qui ne concernent que cette facture.

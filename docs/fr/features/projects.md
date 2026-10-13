@@ -5,49 +5,52 @@ description: "Regroupez factures, dépenses et temps passé dans des projets pou
 
 # Projets
 
-Organisez votre travail en projets pour suivre le temps, le chiffre d'affaires et la rentabilite par engagement.
+Organisez votre travail en projets pour suivre le temps, le chiffre d'affaires et la rentabilité par mission.
 
 ## Vue d'ensemble
 
-Les projets vous aident a regrouper factures, depenses et entrees de temps. Cela vous donne une vision claire de la rentabilite de chaque projet ou engagement client.
+Les projets vous aident à regrouper factures, dépenses et heures saisies. Vous voyez ainsi clairement ce que rapporte chaque projet ou chaque mission client.
 
-## Creer un projet
+## Créer un projet
 
-1. Allez dans **Projets > Nouveau projet**
+1. Allez dans **Projets › Nouveau projet**
 2. Remplissez :
-   - **Nom** -- Un nom de projet clair
-   - **Client** -- Le client concerne par ce projet
-   - **Description** -- Ce que le projet implique
-   - **Budget** -- Montant du budget optionnel
-   - **Statut** -- Actif, En pause ou Termine
+   - **Nom** : un nom de projet clair (le seul champ obligatoire)
+   - **Client** : le client concerné par ce projet
+   - **Description** : ce que le projet implique
+   - **Budget** : un montant de budget facultatif
+   - **Statut** : Planifié, Actif, En pause ou Terminé
 3. Cliquez sur **Enregistrer**
 
 ## Statuts des projets
 
 | Statut | Description |
 |---|---|
-| **Actif** | En cours de realisation |
+| **Planifié** | Pas encore commencé |
+| **Actif** | En cours de réalisation |
 | **En pause** | Temporairement suspendu |
-| **Termine** | Fini -- plus de travail prevu |
-| **Archive** | Conserve pour reference |
+| **Terminé** | Fini, plus de travail prévu |
+| **Annulé** | N'aura pas lieu |
 
-## Page de detail du projet
+Un projet que vous ne voulez plus voir dans votre liste s'archive. Il se trouve alors dans la vue **Archives** ; les projets supprimés se trouvent dans la **Corbeille**.
 
-La page de detail du projet affiche :
+## Page de détail du projet
 
-- **Vue d'ensemble** -- Nom, client, statut, budget
-- **Factures liees** -- Toutes les factures liees a ce projet
-- **Depenses liees** -- Couts attribues a ce projet
-- **Entrees de temps** -- Heures enregistrees sur ce projet
-- **Rentabilite** -- Ventilation revenus vs. couts
+La page de détail du projet affiche :
 
-## Lier des elements aux projets
+- **Ce que ce projet rapporte** : revenus, dépenses et résultat
+- **Budget** : ce qui a été dépensé et ce qui reste
+- **Heures par personne** : qui a saisi combien d'heures sur le projet
+- **Historique** : les factures, dépenses et heures liées au projet
+- **Facturation automatique** : la façon dont les heures du projet sont facturées (voir ci-dessous)
 
-Lors de la creation de factures, depenses ou entrees de temps, selectionnez le projet dans le menu deroulant pour les lier. Cela met automatiquement a jour les donnees financieres du projet.
+## Lier des éléments aux projets
 
-- **Factures** -- Suivez le chiffre d'affaires par projet
-- **Depenses** -- Suivez les couts par projet
-- **Entrees de temps** -- Suivez les heures par projet
+Lors de la création de factures, de dépenses ou d'heures, sélectionnez le projet dans la liste déroulante pour les lier. Les chiffres du projet se mettent alors à jour automatiquement.
+
+- **Factures** : suivez le chiffre d'affaires par projet
+- **Dépenses** : suivez les coûts par projet
+- **Heures** : suivez les heures par projet
 
 ## Lier à un contrat
 
@@ -59,41 +62,38 @@ Si aucun taux n'est défini pour un contrat, les heures liées restent non factu
 
 ## Facturation automatique d'un projet
 
-Un projet peut facturer ses heures à son propre rythme. Sur la page du projet, vous choisissez comment se fait la facturation :
+Un projet peut facturer ses heures à son propre rythme. Sur la page du projet, vous choisissez sous **Facturation automatique** comment se fait la facturation :
 
-- **Manuel** (le réglage par défaut) : vous créez les factures vous-même.
-- **Chaque mois** : au début du mois, les heures et les dépenses refacturées jusque-là partent sur une facture pour le client.
-- **À l'achèvement** : tout ce qui reste ouvert part sur une facture finale dès que vous marquez le projet comme terminé.
+- **Manuel** (le réglage par défaut) : vous créez la facture vous-même, à partir des heures du projet.
+- **À jour fixe** : chaque semaine ou chaque mois, au jour que vous choisissez, les heures et les dépenses refacturées jusque-là partent sur une facture pour le client.
+- **À l'achèvement** : tout ce qui reste ouvert part sur une facture finale dès que vous passez le projet en Terminé.
 
-Vous pouvez aussi donner au projet sa propre facture, séparée des autres projets du même client. La page du client réunit la [vue d'ensemble complète](/fr/features/time-registration#facturation-automatique-du-temps) : tous les projets de ce client, les heures sans projet et la façon d'envoyer.
+Vous pouvez aussi activer **Sur sa propre facture**, pour que le projet ne partage pas sa facture avec les autres projets du même client. La page du client réunit la [vue d'ensemble complète](/fr/features/time-registration#facturation-automatique-du-temps) : tous les projets de ce client, les heures sans projet et la façon d'envoyer.
+
+Les projets et le suivi du temps sont inclus dans tous les abonnements, Desk compris. La facturation automatique fait partie d'Office ; sur Desk, vous créez la facture vous-même à partir des heures.
 
 ## Suivi du budget
 
-Si vous definissez un budget :
+Si vous définissez un budget :
 
-- Voyez quelle part du budget a ete utilisee
-- Suivez le budget restant
-- Comparez les couts reels au budget
-- Recevez des alertes lorsque vous approchez des limites du budget
+- Vous voyez quelle part du budget a été dépensée
+- Vous voyez le budget restant
+- La liste des projets affiche le libellé **Budget dépassé** dès que les coûts dépassent le budget
 
-## Actions groupees
+## Actions groupées
 
-- **Changer le statut** -- Mettez a jour plusieurs projets a la fois
-- **Archiver** -- Deplacez les projets termines vers les archives
-- **Restaurer** -- Recuperez les projets archives
+Sélectionnez plusieurs projets dans la liste :
 
-## Rapports
+- **Archiver** : déplacez les projets vers les archives
+- **Supprimer** : déplacez les projets vers la corbeille
+- **Restaurer** : récupérez des projets depuis les archives ou la corbeille
 
-Consultez la performance des projets dans les [rapports clients](/fr/features/reports) pour voir :
+## Rentabilité
 
-- Chiffre d'affaires par projet
-- Temps passe par projet
-- Marges beneficiaires
-- Comparaison entre projets
+La liste des projets affiche, par projet, les revenus, les dépenses, le résultat net et la marge. Sous **Chiffres**, le bloc **Marges par projet** compare vos projets entre eux.
 
 ## Conseils
 
-- Utilisez les projets meme pour les petits engagements -- les analyses sont precieuses
-- Liez a la fois les factures et les depenses pour obtenir des marges beneficiaires precises
-- Archivez les projets termines pour garder votre liste active propre
-- Consultez le profil de tableau de bord base sur les projets pour une vue axee sur les projets
+- Utilisez les projets aussi pour les missions courtes : les analyses sont précieuses
+- Liez à la fois les factures et les dépenses pour obtenir des marges précises
+- Archivez les projets terminés pour garder votre liste active claire

@@ -1,7 +1,7 @@
 ---
 title: Sécurité
 description: "Protégez votre compte avec un mot de passe solide, l'authentification à deux facteurs et un oeil sur vos sessions actives."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Sécurité
@@ -10,7 +10,7 @@ Protégez votre compte avec une authentification forte. Tout ce qui suit se trou
 
 ## Mot de passe
 
-Utilisez un mot de passe fort et unique pour votre compte MyCompanyDesk. Changez-le via **Paramètres > Connexion**.
+Utilisez un mot de passe fort et unique pour votre compte MyCompanyDesk. Changez-le via **Paramètres › Connexion**.
 
 ### Exigences du mot de passe
 
@@ -21,19 +21,19 @@ Utilisez un mot de passe fort et unique pour votre compte MyCompanyDesk. Changez
 
 Ajoutez une couche de sécurité supplémentaire à votre compte :
 
-1. Allez dans **Paramètres > Connexion**
+1. Allez dans **Paramètres › Connexion**
 2. Lancez la configuration de la vérification en deux étapes
 3. Scannez le code QR avec votre application d'authentification (Google Authenticator, 1Password, Authy et similaires)
 4. Saisissez le code de vérification pour confirmer
 5. Conservez vos **codes de secours** en lieu sûr
 
-Si vous utilisez l'application MyCompanyDesk installée, vous pouvez choisir de générer vos codes de connexion dans l'application elle-même. Pendant la configuration, sélectionnez **Gebruik de MyCompanyDesk-app**, puis retrouvez vos codes de connexion sous **Instellingen > Inlogcodes** dans l'application.
+Si vous utilisez l'application MyCompanyDesk installée, vous pouvez choisir de générer vos codes de connexion dans l'application elle-même. Pendant la configuration, sélectionnez **Utiliser l'application MyCompanyDesk**, puis retrouvez vos codes de connexion sous **Paramètres › Codes de connexion** dans l'application.
 
 Avec la 2FA activée, vous avez besoin de votre mot de passe et d'un code de votre application d'authentification pour vous connecter.
 
 ### Se connecter avec la 2FA
 
-Après avoir saisi votre mot de passe, l'écran de connexion demande le code à 6 chiffres de votre application d'authentification. Si vous utilisez l'application MyCompanyDesk comme authentificateur, ouvrez l'application et utilisez le code actuel sous **Instellingen > Inlogcodes**. Plus d'accès à l'application ? Saisissez l'un de vos codes de secours dans le même champ.
+Après avoir saisi votre mot de passe, l'écran de connexion demande le code à 6 chiffres de votre application d'authentification. Si vous utilisez l'application MyCompanyDesk comme authentificateur, ouvrez l'application et utilisez le code actuel sous **Paramètres › Codes de connexion**. Plus d'accès à l'application ? Saisissez l'un de vos codes de secours dans le même champ.
 
 Lorsque vous vous connectez avec votre mot de passe et un code, vous pouvez cocher **mémoriser cet appareil pendant 30 jours** : cet appareil sautera alors l'étape du code pendant un mois.
 
@@ -49,9 +49,10 @@ Ce délai existe pour qu'un attaquant qui ne connaît que votre mot de passe ne 
 
 ### Désactiver la 2FA
 
-1. Allez dans **Paramètres > Connexion**
+1. Allez dans **Paramètres › Connexion**
 2. Choisissez de désactiver la vérification en deux étapes
-3. Confirmez avec un code actuel de votre application d'authentification, un code de secours ou votre mot de passe
+3. Confirmez d'abord qu'il s'agit bien de vous (voir ci-dessous)
+4. Si vous ne venez pas de le faire, le formulaire demande en plus un code actuel de votre application d'authentification, un code de secours ou votre mot de passe
 
 ## Confirmez qu'il s'agit bien de vous pour les changements sensibles
 
@@ -59,12 +60,12 @@ Certains changements sont trop importants pour reposer sur le seul mot de passe.
 
 - modifier ou effacer un IBAN ou une adresse PayPal existants
 - changer votre adresse de connexion ou votre mot de passe
-- supprimer ou déplacer un domaine
+- supprimer ou déplacer un domaine, ou modifier les réglages DNS de votre domaine
 - transférer le courriel vers une autre adresse
-- créer une clé API
-- nommer quelqu'un administrateur, ou transférer la propriété
+- inviter quelqu'un, nommer quelqu'un administrateur, ou transférer la propriété
+- ajouter ou retirer la vérification en deux étapes ou une passkey, ou générer de nouveaux codes de secours
 
-Vous confirmez avec votre passkey, un code de votre application d'authentification (ou de **Instellingen > Inlogcodes** dans l'appli installée), ou un code à 6 chiffres par e-mail. Votre mot de passe ne compte pas pour cette étape, car celui qui l'a tapé une fois peut être n'importe qui. Après une confirmation, vous avez environ 15 minutes de répit : une connexion fraîche avec code, passkey ou Google compte aussi. Remplir une valeur pour la première fois (à la prise en main, un champ IBAN encore vide) ne demande rien, car il n'existe aucune valeur à protéger.
+Vous confirmez avec votre passkey, un code de votre application d'authentification (ou de **Paramètres › Codes de connexion** dans l'appli installée), ou un code à 6 chiffres par e-mail. Votre mot de passe ne compte pas pour cette étape, car celui qui l'a tapé une fois peut être n'importe qui. Après une confirmation, vous avez environ 15 minutes de répit : une connexion fraîche avec code, passkey ou Google compte aussi. Remplir une valeur pour la première fois (à la prise en main, un champ IBAN encore vide) ne demande rien, car il n'existe aucune valeur à protéger.
 
 ## Code de connexion par e-mail sur un nouveau navigateur
 
@@ -74,15 +75,15 @@ Le code est valable 15 minutes. Aucun e-mail reçu ? Regardez vos spams ou utili
 
 Si l'envoi du code échoue, l'écran de connexion vous propose de vous connecter avec Google, Microsoft ou une passkey, ou d'essayer à nouveau dans quelques minutes. La toute première connexion après l'inscription saute cette étape : votre adresse e-mail vient d'être confirmée.
 
-Une exception : si votre adresse de connexion se trouve sur un domaine dont MyCompanyDesk héberge la boîte mail elle-même, l'étape du code reste désactivée, car le code attendrait dans la boîte mail, que vous ne pouvez lire qu'en vous connectant. Pour ces comptes, activez plutôt l'authentification à deux facteurs. Juste après la connexion avec une telle adresse, l'appli propose **Beveilig je inlog** (sécurisez votre connexion) : ajouter une passkey, ou utiliser l'application de codes dans l'appli installée. Vous pouvez repousser cette invitation de 14 jours. Ensuite, pour un compte de domaine hébergé doté d'une passkey, le mot de passe seul ne suffit plus à se connecter : un mot de passe divulgué ne peut donc plus ouvrir votre boîte mail.
+Une exception : si votre adresse de connexion se trouve sur un domaine dont MyCompanyDesk héberge la boîte mail elle-même, l'étape du code reste désactivée, car le code attendrait dans la boîte mail, que vous ne pouvez lire qu'en vous connectant. Pour ces comptes, activez plutôt l'authentification à deux facteurs. Juste après la connexion avec une telle adresse, l'appli propose **Encore une étape : sécurisez votre connexion** : ajouter une passkey, ou utiliser l'application de codes dans l'appli installée. Vous pouvez repousser cette invitation de 14 jours. Ensuite, pour un compte de domaine hébergé doté d'une passkey, le mot de passe seul ne suffit plus à se connecter : un mot de passe divulgué ne peut donc plus ouvrir votre boîte mail.
 
 ## Connexion sans mot de passe (lien magique)
 
 Vous pouvez vous connecter sans mot de passe grâce à un lien à usage unique envoyé par e-mail :
 
 1. Allez sur la page de connexion
-2. Cliquez sur **M'envoyer un lien de connexion**
-3. Saisissez votre adresse e-mail
+2. Saisissez votre adresse e-mail
+3. Cliquez sur **Envoyez-moi un lien de connexion**
 4. Ouvrez votre boîte de réception et cliquez sur le lien
 
 Le lien est valable 15 minutes et ne peut être utilisé qu'une seule fois. Par sécurité, demander un nouveau lien invalide les liens précédents.
@@ -93,9 +94,10 @@ Si vous confirmez votre adresse e-mail après votre inscription, vous êtes conn
 
 ## Passkeys
 
-Les passkeys vous permettent de vous connecter avec la biométrie ou une clé de sécurité au lieu d'un mot de passe. Elles sont disponibles pour chaque utilisateur : gérez vos propres passkeys via **Paramètres > Connexion**.
+Les passkeys vous permettent de vous connecter avec la biométrie ou une clé de sécurité au lieu d'un mot de passe. Elles sont disponibles pour chaque utilisateur : gérez vos propres passkeys via **Paramètres › Connexion**.
 
 - Enregistrez plusieurs passkeys (Face ID, Touch ID, Windows Hello, clés matérielles)
+- Ajoutez et gérez vos passkeys dans votre navigateur sur app.mycompanydesk.com ; elles ne fonctionnent pas dans l'application installée
 - Nommez chaque passkey pour pouvoir révoquer les appareils individuellement
 - Sur l'écran de connexion, une fois votre adresse e-mail saisie, un bouton de connexion par passkey apparaît si votre compte en possède une
 - Les passkeys couvrent aussi la vérification **confirmez qu'il s'agit bien de vous** pour les changements sensibles (voir plus haut), où un mot de passe ne compte pas
@@ -104,7 +106,7 @@ Sur un domaine dont MyCompanyDesk héberge la boîte mail, une passkey change la
 
 ## Sessions
 
-La carte des sessions dans **Paramètres > Connexion** propose une seule action : **Se déconnecter**, qui met fin à votre session actuelle. Il n'y a pas de liste des autres appareils ni de révocation par session. Si vous soupçonnez que quelqu'un d'autre a accès à votre compte, changez votre mot de passe. Changer ou réinitialiser votre mot de passe met fin à toutes les autres sessions de votre compte (l'appareil depuis lequel vous faites le changement reste connecté) et révoque les appareils de confiance qui sautent l'étape du code.
+La carte **Sessions** dans **Paramètres › Connexion** propose une seule action : **Déconnexion**, qui met fin à votre session actuelle. Il n'y a pas de liste des autres appareils ni de révocation par session. Si vous soupçonnez que quelqu'un d'autre a accès à votre compte, changez votre mot de passe. Changer ou réinitialiser votre mot de passe met fin à toutes les autres sessions de votre compte (l'appareil depuis lequel vous faites le changement reste connecté) et révoque les appareils de confiance qui sautent l'étape du code.
 
 Votre session suit votre usage : tant que vous continuez à utiliser MyCompanyDesk, elle se renouvelle d'elle-même et vous restez connecté. Après 30 jours sans utilisation, votre session prend fin, et une session ne dure jamais plus de 90 jours après votre connexion. En vous reconnectant, les deux délais repartent de zéro.
 
@@ -115,7 +117,7 @@ Si vous vous connectez avec Google ou Microsoft :
 - L'authentification est gérée par le fournisseur
 - La connexion avec Microsoft n'utilise que l'adresse e-mail que Microsoft confirme lui-même (l'identifiant de connexion de votre compte Microsoft). Si Microsoft ne peut pas la confirmer, connectez-vous avec votre adresse e-mail et nous vous envoyons un lien de connexion
 - MyCompanyDesk ne voit ni ne stocke jamais votre mot de passe Google ou Microsoft
-- Vous pouvez aussi définir un mot de passe via **Paramètres > Connexion** pour activer en plus la connexion par e-mail
+- Pour vous connecter aussi avec votre adresse e-mail et un mot de passe, demandez sous **Paramètres › Connexion** un lien qui vous permet de définir un mot de passe
 
 ## Protection des données
 
@@ -131,8 +133,13 @@ Pour plus de détails sur les cookies, les identifiants analytics et la gestion 
 
 ## Résilier le compte
 
-Si vous souhaitez arrêter d'utiliser MyCompanyDesk, allez dans **Paramètres > Résilier le compte**. Cette ligne n'est visible que pour les administrateurs. Lisez la page attentivement : elle explique ce qu'il advient de votre abonnement et de vos données avant que vous ne confirmiez.
+Si vous souhaitez arrêter d'utiliser MyCompanyDesk, allez dans **Paramètres › Résilier le compte**. Cette ligne n'est visible que pour les administrateurs. Lisez la page attentivement : elle explique ce qu'il advient de votre abonnement et de vos données avant que vous ne confirmiez.
+
+- **Résilier l'abonnement** : vous ne payez plus rien à partir de la période suivante et passez à Desk, gratuit, à la fin de votre période de facturation. Vos données sont conservées ; si vous réactivez Office plus tard, tout reprend là où vous l'aviez laissé. La résiliation ne se fait pas dans l'application iPhone, mais via mycompanydesk.com.
+- **Supprimer définitivement le compte** : si vous êtes propriétaire de l'espace de travail, **Envoyer la demande** nous demande de supprimer votre compte et l'espace de travail avec toutes ses données. Nous vous contactons alors par e-mail pour finaliser ; rien n'est effacé à ce moment-là.
+
+Vous voulez recommencer de zéro plutôt qu'arrêter ? Utilisez **Paramètres › Effacer les données**.
 
 ::: warning
-Résilier votre compte est une décision importante. Téléchargez d'abord une copie de vos documents via **Paramètres > Télécharger les données**; le fisc néerlandais exige que vous puissiez présenter votre administration pendant 7 ans.
+Résilier votre compte est une décision importante. Téléchargez d'abord une copie de vos documents via **Paramètres › Télécharger les données**; le fisc néerlandais exige que vous puissiez présenter votre administration pendant 7 ans.
 :::

@@ -19,12 +19,12 @@ Terugkerende facturen zijn sjablonen die automatisch nieuwe facturen aanmaken op
 
 ## Een terugkerende factuur aanmaken
 
-1. Ga naar **Terugkerende facturen > Nieuw**
+1. Ga naar **Terugkerend**, tab **Facturen**, en klik op **Terugkerende factuur toevoegen**
 2. Vul het sjabloon in:
-   - **Klant** — Aan wie je factureert
-   - **Regelitems**: Wat je factureert (omschrijvingen, bedragen, btw)
-   - **Frequentie** — Hoe vaak (wekelijks, maandelijks, per kwartaal, jaarlijks)
-   - **Startdatum** — Wanneer de generatie begint
+   - **Klant**: aan wie je factureert
+   - **Regelitems**: wat je factureert (omschrijvingen, bedragen, btw)
+   - **Frequentie**: hoe vaak (wekelijks, maandelijks, per kwartaal, jaarlijks)
+   - **Startdatum**: wanneer de eerste factuur gemaakt wordt
 3. Klik op **Opslaan**
 
 ::: tip Meer opties
@@ -41,11 +41,11 @@ Regelitems van terugkerende facturen werken op dezelfde manier als reguliere fac
 - Een kortingspercentage kan niet hoger zijn dan 100%.
 - Een kortingswaarde mag niet negatief zijn.
 
-Het formulier heeft dezelfde schakelaar **Bedragen incl. btw** als het factuurformulier. Zet je hem aan, dan zijn de prijzen die je typt wat de klant betaalt, btw inbegrepen. Zie [Facturen](/features/invoices#prices-including-vat).
+Het formulier heeft dezelfde schakelaar **Bedragen incl. btw** als het factuurformulier. Zet je hem aan, dan zijn de prijzen die je typt wat de klant betaalt, btw inbegrepen. Zie [Facturen](/features/invoices#prijzen-inclusief-btw).
 
 ## Betaalopties en factuurdetails
 
-Een terugkerende factuur kan dezelfde documentvelden meekrijgen als een gewone factuur. Onder **Betaalopties** kies je de betaalmethode van deze reeks. Zolang je niets kiest, volgt elke factuur de betaalinstellingen van je bedrijf, dus een wijziging onder Instellingen → Betalen loopt vanzelf in de reeks mee. Eenmaal gekozen, neemt **Standaard van je bedrijf gebruiken** de keuze terug. De betaalnotitie werkt hetzelfde.
+Een terugkerende factuur kan dezelfde documentvelden meekrijgen als een gewone factuur. Onder **Betaalopties** kies je de betaalmethode van deze reeks. Zolang je niets kiest, volgt elke factuur de betaalinstellingen van je bedrijf, dus een wijziging onder Instellingen › Betalen loopt vanzelf in de reeks mee. Eenmaal gekozen, neemt **Standaard van je bedrijf gebruiken** de keuze terug. De betaalnotitie werkt hetzelfde.
 
 Onder **Factuurgegevens** bepaal je wat er op elke factuur uit de reeks staat: **Btw verlegd**, de **Referentie**, het **Project** en de **Bezitting** waar de facturering bij hoort, plus de schakelaar om deze reeks voor je boekhouder te verbergen. MyCompanyDesk suggereert btw verlegd als een klant lijkt op een EU-bedrijf buiten Nederland, en waarschuwt wanneer de klant geen btw-nummer heeft. Btw verlegd heeft het btw-nummer van de klant nodig: het formulier weigert de reeks te bewaren zonder, en is het nummer later weg, dan houdt de generatie die factuur aan als concept zonder nummer en krijg je een melding, in plaats van dat er onbeheerd een ongeldige factuur verstuurd wordt.
 
@@ -66,7 +66,7 @@ Onder **Na het aanmaken** bepaalt de reeks wat er met elke factuur gebeurt die h
 
 - **Concept**: de factuur staat als concept klaar. Jij kijkt hem na en verstuurt hem zelf.
 - **Versturen**: je krijgt een melding en de factuur gaat een dag later naar de klant, tenzij je hem in die dag tegenhoudt. Een tegengehouden factuur blijft in de app staan, klaar om te versturen.
-- **Incasseren**: als bij Versturen, en het bedrag wordt ook geïncasseerd via de incassomachtiging van de klant. Die machtiging regel je eenmalig op een contract met deze klant; zie [Automatische incasso](/features/contracts#automatic-collection).
+- **Incasseren**: als bij Versturen, en het bedrag wordt ook geïncasseerd via de incassomachtiging van de klant. Die machtiging regel je eenmalig op een contract met deze klant; zie [Automatische incasso](/features/contracts#automatische-incasso).
 
 Het formulier geeft vanzelf aan wanneer een keuze niet kan: Versturen heeft een klant met e-mailadres nodig, en Incasseren een geldige incassomachtiging.
 
@@ -117,7 +117,7 @@ Tijdelijk stoppen met het genereren van facturen:
 
 1. Open de terugkerende factuur
 2. Klik op **Pauzeren**
-3. Status verandert naar **Gepauzeerd** — er worden geen facturen gegenereerd
+3. De status verandert naar **Gepauzeerd**: er worden geen facturen gemaakt
 
 ### Hervatten
 
@@ -144,7 +144,7 @@ Elke keer dat een terugkerende factuur wordt uitgevoerd, wordt een nieuwe factuu
 - Deze gebruikt de regelitems en klant van het sjabloon
 - Deze krijgt het volgende automatische factuurnummer
 - Wat er daarna gebeurt hangt af van de verzendwijze van de reeks: de factuur staat als concept klaar, gaat een dag later uit tenzij je hem tegenhoudt, of wordt ook geïncasseerd via de machtiging
-- Elke gegenereerde factuur is onafhankelijk — je kunt deze bewerken zonder het sjabloon te beinvloeden
+- Elke gegenereerde factuur staat op zichzelf: je kunt hem bewerken zonder het sjabloon te beïnvloeden
 
 ### Vergrendelde btw-periodes
 
@@ -166,8 +166,7 @@ Terugkerende facturen horen bij het Office-abonnement. Als je van Desk naar Offi
 
 ## Bulkacties
 
-- **Pauzeren / Hervatten** — Schakel meerdere terugkerende facturen om
-- **Verwijderen** — Verwijder meerdere sjablonen
+- **Pauzeren** of **Hervatten**: zet meerdere terugkerende facturen tegelijk stil of weer aan
 
 ## Tips
 

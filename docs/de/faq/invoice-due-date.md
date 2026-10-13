@@ -15,10 +15,10 @@ So ändern Sie die Frist einer einzelnen Rechnung:
 2. Aktualisieren Sie in der Karte mit den Rechnungsdetails das Feld "Fälligkeitsdatum"
 3. Speichern Sie die Rechnung
 
-Sollen künftige Rechnungen mit einer anderen Frist starten, passen Sie die Zahlungsfrist des Kunden an oder den Standard unter Einstellungen → "Rechnungen und Angebote" bei "Wie viele Tage hat ein Kunde Zeit zum Bezahlen?".
+Sollen künftige Rechnungen mit einer anderen Frist starten, passen Sie die Zahlungsfrist des Kunden an oder den Standard unter Einstellungen › "Rechnungen und Angebote" bei "Wie viele Tage hat ein Kunde Zeit zum Bezahlen?".
 
-Tipp: Automatische Erinnerungen richten sich nach dem Fälligkeitsdatum; mit der richtigen Frist gehen auch die Erinnerungen zum passenden Zeitpunkt raus.
+Tipp: Automatische Zahlungserinnerungen (Office) richten sich nach dem Fälligkeitsdatum; mit der richtigen Frist gehen auch die Erinnerungen zum passenden Zeitpunkt raus.
 
-Hat ein Kunde keine eigenen Zahlungsfristen, gilt zuerst der Arbeitsbereich-Standard unter **Einstellungen → Rechnungen und Angebote**, erst danach der Plattform-Standard (14 Tage). Diese Reihenfolge wurde früher beim Auswählen eines Kunden übersprungen, sodass das Fälligkeitsdatum früher ausfallen konnte als beabsichtigt.
+Hat ein Kunde keine eigenen Zahlungsfristen, gilt zuerst der Arbeitsbereich-Standard unter **Einstellungen › Rechnungen und Angebote**, erst danach der Plattform-Standard (14 Tage). Diese Reihenfolge wurde früher beim Auswählen eines Kunden übersprungen, sodass das Fälligkeitsdatum früher ausfallen konnte als beabsichtigt.
 
 Aus Verträgen und wiederkehrenden Rechnungen generierte Rechnungen erhalten ebenfalls ein Fälligkeitsdatum. Bei wiederkehrenden Rechnungen gewinnt die eigene Zahlungsfrist der Serie, sofern gesetzt; andernfalls greift der Plattform-Standard. Bei Verträgen gewinnt zuerst eine ausgefüllte Vertragsfrist (mehr als 0 Tage); fehlt sie, folgt die Vertragsrechnung derselben Reihenfolge wie eine manuell erstellte Rechnung: zuerst die Zahlungsfrist des Kunden, dann der Arbeitsbereich-Standard, dann der Plattform-Standard. Der Mailtext über die Zahlungsfrist und die Frist auf dem Vertragsschreiben selbst folgen denselben Quellen.

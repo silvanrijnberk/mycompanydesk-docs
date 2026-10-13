@@ -13,7 +13,7 @@ chatbot:
 Pour résoudre l'échec d'envoi d'une facture par e-mail :
 1. Vérifiez que la fiche client contient la bonne adresse e-mail
 2. Ouvrez la page de détail de la facture et consultez le statut d'envoi ou le message d'erreur affiché
-3. Vérifiez vos réglages e-mail dans Paramètres → "E-mail"
+3. Vérifiez vos réglages e-mail dans Paramètres › "E-mail"
 4. Renvoyez la facture ; les brouillons peuvent aussi être envoyés par e-mail, Envoyer est l'action principale et finalise le brouillon dans la même étape
 5. Si le client ne reçoit toujours rien, demandez-lui de vérifier son dossier spam ou courrier indésirable
 

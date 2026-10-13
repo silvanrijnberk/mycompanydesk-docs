@@ -1,6 +1,6 @@
 ---
 title: "Create a project"
-description: "To create a project: go to Projects and open New Project, enter the project name, number, and description, link a customer if the project belongs to one."
+description: "To create a project: go to Projects and click Create, enter the project name, number, and description, link a customer if the project belongs to one."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -19,7 +19,7 @@ chatbot:
 ---
 
 To create a project:
-1. Go to Projects and open "New Project"
+1. Go to Projects and click "Create"
 2. Enter the project name, number, and description
 3. Link a customer if the project belongs to one
 4. Set status, dates, budget, and hourly rate as needed

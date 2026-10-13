@@ -1,164 +1,106 @@
 ---
 title: AI-functies
-description: "Elke AI-functie in MyCompanyDesk, wat hij doet en welke aanbieder hem draait. De standaardketen is EU-only: eerst Gemini op Vertex AI europe-west1."
+description: "Alle AI-functies in MyCompanyDesk, wat ze doen, wat in Desk en Office zit en hoe je gegevens met Google Gemini in de EU blijven."
 ---
 
 # AI-functies
 
-MyCompanyDesk bevat AI-gestuurde functies om je sneller en slimmer te laten werken.
+MyCompanyDesk gebruikt AI op een paar plekken om je werk sneller te maken: een assistent die meedenkt, bonnen die zichzelf invullen en voorstellen voor categorieën en factuurregels. Op deze pagina staat elke AI-functie, wat hij doet en bij welk abonnement hij hoort.
 
-## Contextuele gids
+Alle AI-functies draaien op Google Gemini via Vertex AI van Google Cloud, in EU-datacenters. Er is geen tweede AI-leverancier.
 
-De assistent-icoon in de topbar opent een chatpaneel dat weet op welke pagina je bent, welke records je bekijkt en hoe je werkruimtegegevens eruitzien. Het is gebouwd als een tool-using agent: in plaats van getallen te gokken, vraagt ze ernaar. Op desktop opent het paneel als een drawer die rechts tegen de rand van het scherm zit; op mobiel opent het als een bottom sheet via de sparkles-knop in de mobiele header.
+## Assistent
 
-### Een mens vragen (Vraag het Sil)
+Via het assistent-icoon bovenin open je een chatpaneel. Op desktop schuift het rechts in beeld, op je telefoon opent het van onderen. Welke assistent je krijgt, hangt af van je abonnement:
 
-Onderin het gesprek staat het blok "Kom je er niet uit?": de mensen die op dit moment vragen beantwoorden, met naam en foto, naast een WhatsApp-knop. De assistent blijft de snelste route voor de meeste vragen; zo staat een mens nooit ver weg. Het blok verschijnt niet zodra je een paneel opent. In de gids komt het na het eerste afgeronde antwoord. De Financieel Assistent van Office is een chat over je eigen cijfers en om offertes en facturen te maken, geen helpdesk: daar verschijnt het blok zodra het gesprek een hulpvraag wordt (het antwoord komt uit de FAQ of de handleiding), de assistent vastloopt of jij zelf om een mens vraagt. Typ je bijvoorbeeld "klantenservice" of "echte persoon", dan staat het blok er meteen.
+- **Desk: Desky.** Een gids voor de app. Desky weet op welke pagina je bent en helpt met vragen als "waar vind ik..." en "hoe doe ik...".
+- **Office: Assistent.** Een assistent die met je eigen cijfers werkt. Je vraagt bijvoorbeeld wat er nog openstaat, hoe je btw ervoor staat of welke klant het meest oplevert, en je laat hem een offerte of factuur voor je opzetten. Die controleer je zelf voordat je hem opslaat.
 
-Klik je iemand aan, dan opent een kort formulier: je vraag, plus een keuzevakje om je gesprek met de assistent mee te sturen, dat alvast aangevinkt staat. Versturen maakt van je vraag een gewoon supportticket, en het antwoord komt in de app en per mail, beloofd binnen één werkdag en meestal binnen een paar uur. Na het versturen kun je je vraag meteen openen als ticketgesprek. De WhatsApp-knop opent een chat waarin een korte introductie al klaarstaat: wie je bent, over welke pagina je vraag gaat en de vraag zelf.
+### Berichtenlimiet
 
-### Chatlimieten
-
-Chatgebruik is afhankelijk van je abonnement:
-
-| Abonnement | Chatberichten (maandelijks) |
+| Abonnement | Assistentberichten per maand |
 |---|---|
 | Desk | 10 |
-| Office | 1 000 |
+| Office | 1.000 |
 
-AI-limieten zijn maandelijks, niet dagelijks. Ze worden elke eerste van de maand gereset.
+Is je limiet op, dan krijg je op Desk nog antwoorden uit de veelgestelde vragen. AI-limieten gelden per maand, niet per dag, en gaan op de eerste van de maand weer naar nul.
 
-### EU AI Act-openbaarmaking (art. 50)
+### Een mens vragen
 
-De contextuele gids valt onder de EU AI Act (Verordening 2024/1689) als een AI-systeem met beperkt risico (artikel 50). Dit betekent dat we duidelijk moeten maken dat je met AI praat. In de gids zijn daar twee dingen voor:
+Onderin het gesprek kan het blok **Kom je er niet uit?** verschijnen: de mensen die op dit moment vragen beantwoorden, met naam en foto, naast een WhatsApp-knop. In Desky komt het na het eerste afgeronde antwoord. De Assistent van Office is een chat over je eigen cijfers, geen helpdesk: daar verschijnt het blok zodra het gesprek een hulpvraag wordt, de assistent vastloopt of je zelf om een mens vraagt. Typ je bijvoorbeeld "klantenservice" of "echte persoon", dan staat het blok er meteen.
 
-- **AI-badge.** Een kleine "AI"-pill naast de assistentnaam in de header van de drawer. Altijd zichtbaar zolang de gids open is. Een tooltip op de badge noemt de onderliggende provider (Google Gemini).
-- **Openbaarmakingstekst.** Een korte regel onder de welkomstvraag in een leeg gesprek: "Je praat met een AI-assistent. Antwoorden kunnen fouten bevatten; controleer financiële of fiscale conclusies altijd zelf."
+Klik je iemand aan (**Vraag het** met de naam erachter), dan opent een kort formulier: je vraag, plus het vinkje **Stuur mijn gesprek met de assistent mee**, dat al aan staat. Versturen maakt van je vraag een supportticket. Het antwoord komt in de app en per mail, binnen één werkdag en meestal binnen een paar uur. De WhatsApp-knop opent een chat waarin een korte introductie al klaarstaat: wie je bent, over welke pagina je vraag gaat en de vraag zelf.
 
-De verplichting geldt vanaf augustus 2026; de openbaarmakingen zijn voor de deadline ingebouwd.
+### Je praat met AI
 
-### Office-uiterlijk
-
-Office-werkruimtes krijgen een premium assistent-uiterlijk dat de generieke styling vervangt door een violet accent. Zit je werkruimte op Office, dan verandert het assistentpaneel visueel:
-
-- De "AI"-pill wordt een violette "Office"-pill.
-- De paneelrand, avatarring, online-dot en verzendknop veranderen naar violet (`#a855f7`).
-- De statusregel toont "Jouw Office-assistent staat klaar" in plaats van het generieke "Klaar om te helpen."
-
-Het Office-uiterlijk is puur cosmetisch. De onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Het verschil zit in de limiet: Office heeft 1 000 chatberichten per maand, Desk 10.
+De assistent laat altijd zien dat je met AI praat, zoals de Europese AI-verordening (artikel 50) vraagt. Naast de naam staat een label, en in een leeg gesprek staat de regel "Antwoorden zijn indicatief en kunnen fouten bevatten." Controleer financiële en fiscale conclusies dus altijd zelf.
 
 ## AI-suggesties
 
-Slimme aanbevelingen die je helpen bij het categoriseren en beschrijven van je records:
+Met de schakelaar **AI-suggesties** in **Instellingen › Onderdelen** laat je AI meedenken bij je administratie. Deze schakelaar hoort bij Office en staat standaard uit.
 
-### Uitgavecategorisatie
+- **Categorie en btw bij uitgaven.** Typ je een omschrijving of leverancier, dan stelt MyCompanyDesk een categorie en btw-tarief voor.
+- **Verbeter.** Op een uitgave stelt de knop **Verbeter** een duidelijkere omschrijving en betere velden voor. Je ziet het huidige en het voorgestelde naast elkaar en kiest per veld **Toepassen** of **Negeren**.
+- **Regels opstellen.** In een offerte of factuur beschrijf je in gewone woorden wat je gaat doen of gedaan hebt. Met **Regels opstellen** worden de regels en prijzen voor je ingevuld, op basis van je eigen aanbod, eerdere facturen of je uurtarief. Je past ze daarna gewoon aan.
 
-Wanneer je een uitgave aanmaakt, analyseert AI de omschrijving en stelt de meest geschikte categorie voor. Dit bespaart tijd en zorgt voor consistente categorisatie.
+Toepassen werkt precies als zelf bewerken. Een uitgave in de prullenbak, een vergrendelde btw-periode of een gearchiveerde categorie houdt de wijziging tegen, net als bij een handmatige aanpassing, en de wijziging komt in het logboek. Btw, rapportages en het dashboard tonen meteen de nieuwe waarde.
 
-### Omschrijvingsverbeteringen
+Komt er via je website een offerteaanvraag binnen, dan zet AI er alvast een conceptofferte voor klaar, met regels en geschatte prijzen. Dat werkt ook op Desk, zonder de schakelaar. De conceptofferte krijgt geen nummer en wordt niet verstuurd: jij kijkt hem na.
 
-AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
-
-- Factuurregelitems
-- Uitgavenomschrijvingen
-- Klantnotities
-
-### Hoe het werkt
-
-1. Maak een record aan of bewerk er een
-2. Zoek naar de AI-suggestie-indicator
-3. Bekijk de suggestie
-4. Klik op **Toepassen** om deze te gebruiken, of **Negeren** om over te slaan
-
-Toepassen werkt via hetzelfde schrijfpad als een handmatige bewerking. Een uitgave in de prullenbak, een vergrendelde btw-periode of een gearchiveerde/ongeldige categorie blokkeert de actie met dezelfde foutcodes die je ook ziet bij handmatig bewerken. Bij een succesvolle toepassing schrijft MyCompanyDesk een auditlogregel voor de gewijzigde velden, net als bij een normale update.
-
-Endpoints die op een specifieke suggestie of uitgave acteren, valideren hun padparameters als UUID. Verzoeken met een ongeldige `entityId` of suggestie-`id` geven `400 VALIDATION_ERROR` terug voordat de servicelaag wordt bereikt, zodat ongeldige URL's geen onverwachte 500-fouten veroorzaken.
-
-Wanneer je een suggestie toepast, worden de gecachede financiële totalen die van het gewijzigde record afhangen direct ongeldig gemaakt. Btw, rapportages en het dashboard verversen meteen en tonen de nieuwe categorie, btw-behandeling of omschrijving.
-
-::: info
-Categorie-suggesties werken op elk abonnement, met een maandlimiet: 10 op Desk en 2 000 op Office. Verbeterde omschrijvingen horen bij Office. Schakel AI-suggesties in via **Bedrijf > Functies**.
-:::
+Al deze voorstellen tellen mee voor de maandlimiet: 10 AI-suggesties op Desk en 2.000 op Office.
 
 ## Bonnen scannen
 
-AI-gestuurde OCR extraheert gegevens uit bonafbeeldingen en PDF's:
+Maak een foto van een bon of upload een PDF, en de datum, het bedrag, de leverancier, het btw-tarief en de omschrijving worden voor je ingevuld. Bonnen scannen zit in elk abonnement: 3 scans per maand op Desk, 200 op Office.
 
-- **Datum** — Wanneer de aankoop is gedaan
-- **Bedrag** — Totale kosten
-- **Leverancier** — Aan wie je hebt betaald
-- **Omschrijving** — Wat er is gekocht
+Zie [Bonnen scannen](/advanced/receipt-scanning) voor de stappen.
 
-Zie [Bonnen scannen](/advanced/receipt-scanning) voor gedetailleerde instructies.
+## Typcontrole
 
-## Tekstcontrole
+De **Typ- en grammaticacontrole** (schakelaar in **Instellingen › Onderdelen**) controleert tekstvelden in je formulieren op typfouten terwijl je typt, in het Nederlands, Engels, Duits en Frans. Grammatica controleert hij niet. Deze controle draait op de eigen servers van MyCompanyDesk, zonder AI-leverancier, en hoort bij Office.
 
-Grammatica- en spellingcontrole voor je documenten:
+## Dashboard-briefing (Office)
 
-- Controleer factuuromschrijvingen voor het versturen
-- Verifieer offerte-inhoud
-- Corrigeer typefouten in klantgerichte tekst
+Op Office staat bovenaan je dashboard een korte briefing, door AI geschreven op basis van je eigen cijfers: wat nu het belangrijkst is, een of twee punten eromheen en een concrete volgende stap, zoals "stuur Atelier Norden vandaag een herinnering". De briefing wordt één keer per dag gemaakt, in je eigen taal. Bedragen worden afgerond op hele euro's voordat ze naar het model gaan. Lukt het maken niet, dan zie je de gewone samenvatting van je dashboard. De cijfers zelf zie je op elk abonnement; alleen de AI-tekst hoort bij Office.
 
-Ondersteunt Engels, Nederlands, Duits en Frans.
+Op Office krijg je daarnaast een korte AI-toelichting bij je rapportages en in het maandoverzicht dat je aan het begin van elke maand per mail krijgt.
 
-::: info
-Tekstcontrole is beschikbaar op alle abonnementen, inclusief Desk.
-:::
+## Antwoordhulp in de inbox (Office)
 
-## Accountsamenvattingen
+In de inbox kan AI het antwoord op een klantmail voor je opstellen. Je kunt een nieuw antwoord laten schrijven, eventueel met een korte aanwijzing, of je eigen concept laten bijschaven zonder dat de betekenis of taal verandert.
 
-AI genereert periodieke samenvattingen van je bedrijfsactiviteit:
+- Het antwoord is in de taal van de laatste binnengekomen mail, in de ik-vorm en ondertekend met jouw naam.
+- Alleen mail die echt is binnengekomen en antwoorden die echt verstuurd zijn tellen mee. Concepten en mislukte verzendingen niet.
+- Weet de AI iets niet, dan zet hij een invulplek als `[datum]` neer in plaats van iets te verzinnen.
+- Niets wordt automatisch verstuurd. Je leest en bewerkt het antwoord eerst zelf.
+- Bij een mail die als verdacht is gemarkeerd, is de antwoordhulp niet beschikbaar.
 
-- **Dagelijks** — Snel overzicht van de transacties van de dag
-- **Wekelijks** — Weekoverzicht met trends
-- **Maandelijks** — Uitgebreide maandelijkse analyse
-
-Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf het dashboard.
-
-## Dashboard-briefing inzicht (Office)
-
-De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing voor Office-werkruimtes. De server genereert de briefing eenmaal per kalenderdag en cached deze voor de rest van de dag.
-
-- **Stem.** De briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie, voegt hooguit een of twee ondersteunende punten toe, en sluit af met een concrete vervolgstap (bijv. "stuur Atelier Norden vandaag een herinnering"). Warm, zelfverzekerd, bondig -- de toon van een slimme assistent die de zaak kent.
-- **Model.** Het endpoint `POST /api/dashboard/briefing-insight` draait op Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wordt niet gebruikt voor dit pad.
-- **Input signalen.** De client stuurt een volledig overzicht van de zakelijke data van de dag: liquiditeit en runway, omzet en winst (MTD + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen worden afgerond op hele euro's voordat ze het model bereiken.
-- **Locales.** Het model genereert de briefing in `nl/de/en/fr` op basis van de taal van de gebruiker. De client stuurt de ISO 639-1-code mee met het verzoek.
-- **Plan-gating.** Het endpoint is gekoppeld aan de `ai_insights` feature flag, die Office vereist. Als een werkruimte geen recht heeft, toont de client alleen de standaard lede.
-- **Fallback.** Bij een fout (model niet beschikbaar, 403, netwerkfout) gebruikt de client de bestaande standaard lede. De gebruiker ziet geen foutmelding.
-- **Client UX.** Terwijl de AI-briefing laadt, toont de hero de gecachte deterministische lede van de vorige dag. Zodra de AI-versie binnen is, vervangt een cross-fade-overgang (opacity + slide) deze. De AI-briefing verschijnt met een sparkle-icoon en primaire tekstkleur. Een layout-matched skeleton-shimmer (`BriefingSkeleton`) houdt de volledige dashboardvorm vast totdat de kerndata binnen is, waarna deze oplost in een gecoordineerde, gestaffelde entree-animatie. Gebruikers met reduced-motion krijgen geen animaties.
-
-
-## Inbox-antwoordhulp (Office)
-
-De inbox kan het antwoord op een klantmail voor je opstellen. Het endpoint `POST /api/inbox/threads/:id/generate-reply` draait over dezelfde LLM-router als de andere AI-oppervlakken (workload `inbox-generate-reply`) met twee modi: `reply`, dat vanaf nul een volledig antwoord schrijft (stuurbare richting via een korte instructie of een chip zoals "Bevestigen"), en `rewrite`, dat je eigen concept polijst zonder de betekenis of taal te veranderen.
-
-- **Model.** Gemini op Vertex AI `europe-west1` over de standaardketen, zoals de andere chat-oppervlakken.
-- **Input.** De getrieerde, ingekorte gesprekscontext: mail die echt is aangekomen en antwoorden die echt verstuurd zijn. Concepten, mislukte verzendingen en bounces horen er niet bij, zodat een gegenereerd concept of een mail die foutliep nooit telt alsof de klant hem heeft gelezen.
-- **Output.** Alleen platte tekst (de editor wikkelt hem in HTML), geschreven in de taal van de laatste binnenkomst, in de eerste persoon enkelvoud, ondertekend met de naam van de eigenaar. Onbekende details worden placeholders zoals `[datum]` in plaats van verzinsels.
-- **Gating.** `ai_insights`, dus alleen Office; de client verbergt de hele hulp als het recht ontbreekt of de draad als verdacht staat gemarkeerd.
-- **Foutgedrag.** Elke modelfout komt terug als `{ ok: false }` zonder te gooien: de editor toont een toast en blijft onaangeroerd.
-
-## Abonnementsrechten
+## Wat zit in welk abonnement
 
 | Functie | Desk | Office |
 |---|---|---|
-| Contextuele gids | 10 chatberichten per maand, daarna alleen FAQ | 1 000 chatberichten per maand |
-| AI-suggesties | Aan (10 per maand) | Aan (2 000 per maand) |
-| Leverancierclassificatie | Aan | Aan |
-| Bonnen scannen | Aan (3 per maand) | Aan (200 per maand) |
-| Tekstcontrole | Aan | Aan |
-| Vertaling | Aan (alleen UI) | Aan |
-| Inbox-antwoordhulp | Uit | Aan |
-| Dashboard-briefing inzicht | Uit | Aan |
+| Assistent | Desky, de gids voor de app: 10 berichten per maand | Assistent met je eigen cijfers: 1.000 berichten per maand |
+| AI-suggesties (categorie, btw, Verbeter, Regels opstellen) | Nee | Ja |
+| Conceptofferte bij een offerteaanvraag via je website | Ja | Ja |
+| Bonnen scannen | 3 per maand | 200 per maand |
+| Typcontrole | Nee | Ja |
+| Dashboard-briefing en AI-toelichting bij rapportages | Nee | Ja |
+| Antwoordhulp in de inbox | Nee | Ja |
+
+Maandlimieten op een rij:
+
+| Limiet per maand | Desk | Office |
+|---|---|---|
+| Assistentberichten | 10 | 1.000 |
+| Bonscans | 3 | 200 |
+| AI-suggesties | 10 | 2.000 |
 
 ## Privacy en gegevensbescherming
 
-Alle cloud-AI-functies draaien standaard op Vertex AI in `europe-west1` (EU). MyCompanyDesk heeft een verwerkersovereenkomst met Google Cloud voor Vertex AI. Ollama Cloud (ollama.com, gehost in de VS) staat standaard uit omdat er geen verwerkersovereenkomst met Ollama Inc. is. Je kunt het per workspace inschakelen voor workloads zonder persoonsgegevens, maar het staat uit voor alle abonnementen.
-
-Zet je `ai_processing_mode` op `local_only`, dan blijven bonnen scannen, AI-suggesties, tekstcontrole, leverancierclassificatie en brancheherkenning volledig op je eigen server. De contextuele gids werkt alleen in de cloud en is uitgeschakeld in `local_only`-modus.
+Alle AI-functies draaien op Google Gemini via Vertex AI, in EU-regio's van Google Cloud. MyCompanyDesk heeft daarvoor een verwerkersovereenkomst met Google Cloud. Er is geen tweede AI-leverancier en geen terugvaloptie buiten de EU: lukt een AI-verzoek niet, dan krijg je een melding of vul je het zelf in.
 
 ## Tips
 
-- Schakel AI-suggesties eenmaal in en ze werken automatisch op de achtergrond
-- Bonnen scannen is vooral handig voor papieren bonnen — maak gewoon een foto
-- De contextuele gids kan de meeste "hoe doe ik..."-vragen over de app beantwoorden
+- Zet AI-suggesties één keer aan, daarna werken ze vanzelf mee.
+- Bonnen scannen is vooral handig voor papieren bonnen: maak gewoon een foto.
+- Desky beantwoordt de meeste "hoe doe ik..."-vragen over de app.

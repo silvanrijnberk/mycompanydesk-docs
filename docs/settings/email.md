@@ -1,12 +1,12 @@
 ---
 title: E-mail
 description: "Kies vanaf welk adres je facturen en offertes versturen en stel in wat er onder elk bericht staat. Beschikbaar op elk abonnement."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # E-mail
 
-MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. **Instellingen → E-mail** is het middelpunt van alles rond die mail: **Adressen en verzenden** voor de verzendkant, **Factuur- en offertemails** voor de mails die we voor je documenten opstellen, **Inboxmails** voor wat je zelf schrijft, en **Regels** voor wat er met inkomende mail gebeurt. De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Office.
+MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. **Instellingen › E-mail** is het middelpunt van alles rond die mail: **Adressen en verzenden** voor de verzendkant, **Factuur- en offertemails** voor de mails die we voor je documenten opstellen, **Inboxmails** voor wat je zelf schrijft, en **Regels** voor wat er met inkomende mail gebeurt. De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Office.
 
 Regels en vertrouwde afzenders voor inkomende mail staan onder **Regels**; zie [Ontvangen: postbussen en regels](#ontvangen-postbussen-en-regels) hieronder.
 
@@ -41,11 +41,11 @@ Is je eigen domein actief en heeft het meerdere adressen, dan verschijnt er een 
 
 ### Je standaardadres
 
-Onder **Je verstuurt standaard vanaf dit adres** kies je je eigen standaardadres voor verzenden. Dat adres staat klaar als je een nieuw bericht schrijft in de Inbox, en de keuze geldt alleen voor jou.
+Onder **Jij verstuurt standaard vanaf** kies je je eigen standaardadres voor verzenden. Dat adres staat klaar als je een nieuw bericht schrijft in de Inbox, en de keuze geldt alleen voor jou.
 
 ### Postbussen
 
-Onder **Postbussen** beheer je de postbussen op je gekoppelde domeinen: voeg een postbus toe om mail te ontvangen op een nieuw adres op je eigen domein, voeg extra adressen aan een bestaande postbus toe, stuur inkomende mail door naar je huidige mailprogramma en koppel het mailprogramma zelf. Bestaande mail kun je importeren in een bestaande postbus. De postbusgedeelten vragen de Inbox-permissie; zonder blijven ze verborgen en blijft het verzenddeel voor iedereen beschikbaar.
+Onder **Postbussen** beheer je de postbussen op je gekoppelde domeinen: voeg een postbus toe om mail te ontvangen op een nieuw adres op je eigen domein, voeg extra adressen aan een bestaande postbus toe, stuur inkomende mail door naar je huidige mailprogramma en koppel het mailprogramma zelf. Bestaande mail kun je importeren in een bestaande postbus. Postbussen op je eigen domein horen bij de volledige Inbox in Office, en een teamlid heeft er ook het recht op de Inbox voor nodig. Zonder die twee blijven de postbusgedeelten verborgen; het verzenddeel blijft voor iedereen beschikbaar.
 
 ### Bonnen doorsturen
 
@@ -57,7 +57,7 @@ Op **Factuur- en offertemails** staat alles over de mails die MyCompanyDesk opst
 
 ### De standaardtekst
 
-Factuur-, offerte-, herinnerings- en creditnotamails beginnen met een standaard, goed geteste tekst in de taal van het document. Kies het soort mail (factuur, offerte, herinnering of creditnota) en de taal van de mail, schrijf je eigen onderwerp en bericht en sla op. Je eigen tekst krijgt het label **Eigen tekst**; met **Terug naar standaardtekst** haal je na een bevestiging de standaard terug.
+Factuur-, offerte-, herinnerings- en creditnotamails beginnen met een standaard, goed geteste tekst in de taal van het document. Kies het soort mail (factuur, offerte, herinnering of creditnota) en de taal van de mail, schrijf je eigen onderwerp en bericht en sla op. Je eigen tekst krijgt het label **Eigen tekst**; met **Terug naar** en de naam van je stijl (bijvoorbeeld **Terug naar Formeel**) haal je na een bevestiging de tekst van die stijl terug.
 
 De klantnaam, het nummer, de bedragen en de data in het voorbeeld zijn voorbeelden: bij het versturen vullen we de gegevens van het echte document in, dus laat de placeholders daar staan. De zin over een aanvraag verschijnt alleen als de offerte uit een aanvraag komt.
 
@@ -65,7 +65,7 @@ Als boekhouder kun je deze teksten lezen maar niet veranderen; de eigenaar van d
 
 ### De stijl van de mail
 
-Per soort documentmail kies je naast de tekst ook een **stijl van de mail**: vijf manieren om de standaardtekst in te vullen, in inhoud, niet in opmaak. De keuze geldt voor alle talen.
+Per soort documentmail kies je naast de tekst ook een **Stijl van de mail**: vijf manieren om de standaardtekst in te vullen, in inhoud, niet in opmaak. De keuze geldt voor alle talen.
 
 - **Formeel**: de standaardtekst, in u-vorm. Staat er vanaf het begin, dus de mail verandert pas als je zelf een stijl kiest.
 - **Kort**: de kern in een paar regels, in je-vorm.
@@ -73,7 +73,7 @@ Per soort documentmail kies je naast de tekst ook een **stijl van de mail**: vij
 - **Compleet**: alles wat een klant nodig heeft om te betalen of te beslissen (datum, bedrag, termijn, rekeningnummer, waar je met vragen heen kunt), en altijd met de regeltabel van het document eronder, ook bij een offerte.
 - **Minimaal**: alleen het nummer, het totaal en de datum; geen aanhef, geen afsluiter.
 
-Welke onderdelen een stijl meeneemt hangt voor de rest af van je eigen instelling: de schakelaar **factuurregels in de mail** onder de tekst bepaalt of een andere stijl dan Compleet de regeltabel meekrijgt, en de schakelaar in het verzendvenster wint op het moment dat je hem daar ziet. Een eigen tekst wint het altijd van een stijl: staat je eigen tekst voor een soort mail, dan gaat die mee, en bij het kiezen van een stijl vraagt de pagina of die eigen tekst moet wijken. Zodra je een stijl kiest, herschrijft het voorbeeld rechts en laat de preview precies zien wat je klant krijgt.
+Compleet neemt de regeltabel altijd mee, de andere stijlen niet. In het verzendvenster zet je de tabel per mail aan of uit met de schakelaar **Factuurregels opnemen**; die staat vanzelf aan als de stijl de tabel meeneemt. Een eigen tekst wint het altijd van een stijl: staat je eigen tekst voor een soort mail, dan gaat die mee, en bij het kiezen van een stijl vraagt de pagina of die eigen tekst moet wijken. Zodra je een stijl kiest, herschrijft het voorbeeld rechts en laat de preview precies zien wat je klant krijgt.
 
 ### Uiterlijk
 
@@ -83,7 +83,7 @@ Het uiterlijk bepaalt de stijl en de kop van elke klantmail: kies één van de v
 
 Onder elke factuur, offerte, herinnering en creditnota staan je bedrijfsnaam en KvK-nummer, plus de gegevens die je daaronder aanzet. Elk gegeven is een schakelaar: je foto, telefoonnummer, e-mailadres, websiteadres, adres, sociale media, een link naar je site onderaan en je keurmerken. De schakelaar voor keurmerken verschijnt pas zodra je keurmerken hebt toegevoegd bij je bedrijfsgegevens. Staat een gegeven nog niet ingevuld, dan zegt de schakelaar dat en linkt hij naar Bedrijfsgegevens om het aan te vullen. De schakelaar voor het adres is er voor huisadressen: zet hem uit om je huisadres uit je mail te houden; op de factuur zelf (de pdf) staat het volledige adres altijd.
 
-De gegevens komen uit je bedrijfsgegevens, dus wat je ziet is wat je klant krijgt: telefoon, adres, KvK-nummer, je foto en de link naar je site verschijnen er zodra je ze invult. Pas je ze bij **Instellingen → Bedrijfsgegevens** aan, dan blijven beide gelijk.
+De gegevens komen uit je bedrijfsgegevens, dus wat je ziet is wat je klant krijgt: telefoon, adres, KvK-nummer, je foto en de link naar je site verschijnen er zodra je ze invult. Pas je ze bij **Instellingen › Bedrijfsgegevens** aan, dan blijven beide gelijk.
 
 ## Inboxmails
 
@@ -114,10 +114,10 @@ MyCompanyDesk houdt uitgaande post tegen die eruitziet als misbruik, zodat ons g
 
 Ook voor de mail die binnenkomt is de E-mailpagina het centrale punt:
 
-- **Postbussen, extra adressen, doorsturen en importeren** vind je onder **Instellingen → E-mail → Adressen en verzenden**. Oude links naar de inboxinstellingen komen daar automatisch uit.
-- **Regels voor inkomende mail en vertrouwde afzenders** staan onder **Instellingen → E-mail → Regels**. Ze zaten eerder als tabblad in de Inbox; die tabrij is weg, en oude links zoals /inbox/regels komen automatisch bij de nieuwe plek uit. De pagina staat er alleen als je werkruimte de Inbox-functie heeft.
+- **Postbussen, extra adressen, doorsturen en importeren** vind je onder **Instellingen › E-mail › Adressen en verzenden**. Oude links naar de inboxinstellingen komen daar automatisch uit.
+- **Regels voor inkomende mail en vertrouwde afzenders** staan onder **Instellingen › E-mail › Regels**. Ze zaten eerder als tabblad in de Inbox; die tabrij is weg, en oude links zoals /inbox/regels komen automatisch bij de nieuwe plek uit. De pagina staat er alleen als je werkruimte de volledige Inbox heeft, en die hoort bij Office.
 - Of een mail echt aankwam, zie je in de map **Verzonden** van de Inbox: daar staat per bericht of hij de ontvanger bereikt heeft.
-- **AVG-gegevensverwijdering** (alle gesprekken en bijlagen van een specifiek adres verwijderen, alleen voor beheerders) staat onder **Instellingen → Gegevens wissen**.
+- **AVG-gegevensverwijdering** (alle gesprekken en bijlagen van een specifiek adres verwijderen, alleen voor beheerders) staat onder **Instellingen › Gegevens wissen**.
 
 ## Gerelateerd
 

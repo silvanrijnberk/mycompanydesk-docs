@@ -1,34 +1,34 @@
 ---
 title: Introductie
-description: "MyCompanyDesk is een alles-in-een boekhoudplatform voor zzp'ers, kleine bedrijven en vastgoedbeheerders, van factuur tot btw-aangifte."
+description: "MyCompanyDesk is het alles-in-een platform voor zzp'ers: facturen, uitgaven, uren, website, zakelijke mail en btw-aangifte op één plek."
 ---
 
 # Introductie
 
-MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontworpen voor zzp'ers, kleine bedrijven en vastgoedbeheerders. Het helpt je bij het beheren van je volledige financiele workflow, van het maken van facturen en het bijhouden van uitgaven tot het doen van btw-aangifte en het beheren van klantrelaties.
+MyCompanyDesk is een alles-in-een platform voor zzp'ers en eenpitters. Het helpt je bij je volledige financiële workflow en meer: van facturen maken en uitgaven bijhouden tot je btw-aangifte, je klanten, je website en je zakelijke mail.
 
 ## Wat kun je doen met MyCompanyDesk?
 
-- **Facturen maken en versturen** — Professionele facturen met betaallinks, PDF-generatie en e-mailverzending
-- **Uitgaven bijhouden** — Registreer uitgaven handmatig of scan bonnen met AI-gestuurde OCR
-- **Klanten beheren** — Onderhoud een complete klantendatabase met contactgegevens en geschiedenis
-- **Offertes maken** — Maak offertes en zet ze om naar facturen wanneer ze geaccepteerd zijn
-- **Projecten beheren** — Organiseer werk in projecten, registreer tijd en monitor winstgevendheid
-- **Contracten beheren** — Stel terugkerende service- of huurcontracten in
-- **Objecten bijhouden** — Beheer huurwoningen, voertuigen en apparatuur
-- **Facturatie automatiseren** — Stel terugkerende facturen en uitgaven in
-- **Rapportages bekijken**: Omzet, winst, cashflow, btw en klantanalyses
-- **Samenwerken** — Nodig teamleden uit, stel rechten in en deel met je boekhouder
+- **Facturen maken en versturen**: professionele facturen met betaallinks, PDF en verzending per e-mail
+- **Uitgaven bijhouden**: registreer uitgaven handmatig of scan bonnen met AI
+- **Klanten beheren**: een compleet klantenbestand met contactgegevens en geschiedenis
+- **Offertes maken**: maak offertes en zet ze om naar facturen wanneer ze geaccepteerd zijn
+- **Projecten beheren**: organiseer werk in projecten, registreer tijd en volg de winstgevendheid
+- **Je eigen website**: een gratis website op mycompanydesk.site, met Office ook op je eigen domein
+- **Contracten beheren** (Office): leg vaste afspraken met klanten vast en factureer ze automatisch
+- **Facturatie automatiseren** (Office): terugkerende facturen en uitgaven
+- **Rapportages bekijken** (Office): omzet, winst, cashflow en klantanalyses. Je btw-aangifte voorbereiden kan op elk abonnement
+- **Samenwerken**: geef je boekhouder gratis toegang, en nodig met Office teamleden uit met eigen rechten
 
 ## Interfacetaal
 
 Je kunt de interface van MyCompanyDesk gebruiken in het Nederlands, Engels, Duits of Frans, en je kunt op elk moment van taal wisselen.
 
-Facturen, offertes en e-mails kunnen ook in het Nederlands, Engels, Duits of Frans worden verstuurd. De documenttaal stel je per factuur in en is onafhankelijk van de interfacetaal.
+Facturen, offertes en e-mails kunnen ook in het Nederlands, Engels, Duits of Frans worden verstuurd. Die documenttaal stel je voor de hele werkruimte in bij **Instellingen › Facturen en offertes** en staat los van de interfacetaal. Documenten in een andere taal dan Nederlands maken zit in Office.
 
 ## Abonnementen
 
-MyCompanyDesk heeft twee abonnementen: Desk en Office. Desk is gratis en blijft gratis. Nieuwe klanten krijgen 60 dagen Office, zonder creditcard; wie niet overstapt, gaat automatisch naar Desk en houdt alle gegevens.
+MyCompanyDesk heeft twee abonnementen: Desk en Office. Desk is gratis en blijft gratis. Elk nieuw account krijgt 60 dagen Office, zonder creditcard; wie niet overstapt, gaat automatisch naar Desk en houdt alle gegevens. Betaal je Office per jaar en heb je nog nooit betaald, dan kost het eerste jaar € 35,88 (€ 2,99 per maand).
 
 | Functie | Desk | Office |
 |---|---|---|
@@ -43,9 +43,9 @@ MyCompanyDesk heeft twee abonnementen: Desk en Office. Desk is gratis en blijft 
 | Terugkerende facturen, contracten en automatisch factureren | - | Ja |
 | Bankkoppelingen | - | Maximaal 3 |
 | Eigen domein, ook voor je website | - | Ja |
-| Volledige boekhouding en btw-aangifte indienen | - | Ja |
-| Geavanceerde rapporten en taalopties | - | Ja |
-| API-toegang, webhooks, prioriteitsondersteuning | - | Ja |
+| Volledige boekhouding en btw-aangifte digitaal indienen | - | Ja |
+| Geavanceerde rapporten en taaltools | - | Ja |
+| Prioriteitsondersteuning | - | Ja |
 
 Alle details staan bij [Abonnement & betalingen](/settings/billing).
 

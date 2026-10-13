@@ -1,6 +1,6 @@
 ---
 title: "Geldigheid van offertes"
-description: "De geldigheid van offertes is één instelling: ga naar Instellingen > Facturen en offertes."
+description: "De geldigheid van offertes is één instelling: ga naar Instellingen › Facturen en offertes."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 De geldigheid van offertes is één instelling:
-1. Ga naar Instellingen → "Facturen en offertes"
+1. Ga naar Instellingen › "Facturen en offertes"
 2. Kies onder "Hoe lang blijft een offerte geldig?" voor 2 weken, 1 maand of 2 maanden
 3. Wijzigingen worden automatisch opgeslagen
 

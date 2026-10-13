@@ -1,6 +1,6 @@
 ---
 title: "Exporter des données"
-description: "Pour exporter des données : allez dans Paramètres > Télécharger les données pour les boutons d'export rapide."
+description: "Pour exporter des données : allez dans Paramètres › Télécharger les données pour les boutons d'export rapide."
 last_verified: 2026-10-03
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 Pour exporter des données :
-1. Allez dans Paramètres → « Télécharger les données » pour les boutons d'export rapide
+1. Allez dans Paramètres › « Télécharger les données » pour les boutons d'export rapide
 2. Téléchargez-y les exports CSV des factures, des clients et des dépenses, ou la sauvegarde complète
 3. Utilisez les exports au niveau des sections dans Factures, Dépenses ou Rapports lorsque vous n'avez besoin que d'un seul jeu de données
 

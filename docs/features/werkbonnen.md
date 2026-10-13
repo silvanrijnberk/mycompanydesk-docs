@@ -9,11 +9,11 @@ Een werkbon legt vast wat je bij een klant hebt gedaan: het bezoek, de uren, de 
 
 ## Aanzetten
 
-Werkbonnen zijn een onderdeel dat je zelf aanzet. Doe dat bij **Instellingen > Onderdelen**. Er zit geen abonnementsdrempel op: het onderdeel is gratis op elk abonnement, en de toegang volgt hetzelfde paginarecht als facturen.
+Werkbonnen zijn een onderdeel dat je zelf aanzet. Doe dat bij **Instellingen › Onderdelen**. Er zit geen abonnementsdrempel op: het onderdeel is gratis op elk abonnement, en de toegang volgt hetzelfde paginarecht als facturen.
 
 ## De werkbonnenlijst
 
-De lijst staat onder **Werkbonnen** in de navigatie. Tabs bovenaan filteren op status: **Alles**, **Concept**, **Getekend** en **Gefactureerd**. Elke rij toont het bonnummer, de klant, het werkadres en de status als gekleurd pilletje. In het zoekvak vind je een bon op nummer, klant of adres.
+De lijst staat onder **Werkbonnen** in de navigatie. Tabs bovenaan zetten de werkbonnen op volgorde van wat er nog moet gebeuren: **Alle** (eerst wat jij moet doen), **Nog laten tekenen** en **Nog factureren**. In de lijst staan de werkbonnen gegroepeerd: eerst **Nog factureren** en **Nog laten tekenen**, daarna wat al **Gefactureerd** is, per maand. Elke rij toont het bonnummer, de klant, het werkadres en in de kolom **Stand** waar de bon staat. In het zoekvak vind je een bon op nummer, klant of adres.
 
 ## Een werkbon maken
 
@@ -26,7 +26,7 @@ De lijst staat onder **Werkbonnen** in de navigatie. Tabs bovenaan filteren op s
 7. Een **korting** per regel werkt net als bij offertes en facturen
 8. De **interne notitie** is alleen voor jou: die staat nooit op de werkbon of de factuur
 
-Bewaar de werkbon, of kies meteen **Bewaren en laten tekenen**. Je kunt een werkbon ook vanuit een offerte aanmaken: de regels worden overgenomen.
+Bewaar de werkbon, of kies meteen **Opslaan en laten tekenen**. Je kunt een werkbon ook vanuit een offerte aanmaken: de regels worden overgenomen.
 
 ## Laten tekenen
 
@@ -56,6 +56,6 @@ Bij het samenvoegen van twee klanten gaan de werkbonnen mee naar de klant die ov
 
 ## Tips
 
-- Een werkbon blijft concept tot hij getekend is. Gebruik de statustabs om te zien wat er nog een handtekening nodig heeft.
+- Een werkbon blijft concept tot hij getekend is. Gebruik de tab **Nog laten tekenen** om te zien wat er nog een handtekening nodig heeft.
 - De werkbonpagina toont per status de volgende stap: invullen en laten tekenen, dan factureren of mailen, dan de factuur nalezen.
 - Maak je een werkbon vanuit een offerte, dan gaan de regels mee: uurregels worden arbeid, de rest wordt materiaal, en regelkorting komt mee.

@@ -27,6 +27,6 @@ chatbot:
 So exportieren oder laden Sie ein PDF herunter:
 1. Öffnen Sie die Rechnung aus der Liste
 2. Klicken Sie auf die PDF-Vorschau- oder Download-Schaltfläche
-3. Das PDF verwendet Logo, Farbe und Layout aus Einstellungen → "Logo und Farbe" und Einstellungen → "Rechnungsdesign"
+3. Das PDF verwendet Logo, Farbe und Layout aus Einstellungen › „Logo und Farbe“ und Einstellungen › „Rechnungsgestaltung“
 
-Tipp: Hinterlegen Sie Ihr Logo und Ihre Markenfarbe unter Einstellungen → "Logo und Farbe" und wählen Sie Layout, Farben und Schrift Ihrer Rechnungen unter Einstellungen → "Rechnungsdesign".
+Tipp: Hinterlegen Sie Ihr Logo und Ihre Markenfarbe unter Einstellungen › „Logo und Farbe“ und wählen Sie Layout, Farben und Schrift Ihrer Rechnungen unter Einstellungen › „Rechnungsgestaltung“.

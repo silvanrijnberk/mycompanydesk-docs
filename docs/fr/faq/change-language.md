@@ -14,6 +14,6 @@ chatbot:
     - "Comment changer la devise ?"
 ---
 
-Vous pouvez changer la langue de l'interface de l'application. Allez dans Paramètres → « Affichage » et choisissez, sous « Langue de l'application », le néerlandais, l'anglais, l'allemand ou le français. Le changement s'applique immédiatement et ne concerne que votre propre affichage, pas celui de vos collègues.
+Vous pouvez changer la langue de l'interface de l'application. Allez dans Paramètres › « Affichage » et choisissez, sous « Langue de l'application », le néerlandais, l'anglais, l'allemand ou le français. Le changement s'applique immédiatement et ne concerne que votre propre affichage, pas celui de vos collègues.
 
-La langue des documents que vous envoyez (factures, devis, e-mails aux clients) est distincte de la langue de l'interface ; il n'existe actuellement aucun réglage pour cela dans l'application. Si vous avez besoin de vos documents dans une autre langue, utilisez le formulaire de ticket support sous le chat.
+La langue des documents que vous envoyez (factures, devis, e-mails aux clients) est distincte de la langue de l'interface. Vous la choisissez dans Paramètres › « Factures et devis », sous « Dans quelle langue créez-vous vos documents ? » : néerlandais, anglais, allemand ou français. Ce choix vaut pour tout l'espace de travail. Créer des documents dans une autre langue que le néerlandais fait partie d'Office.

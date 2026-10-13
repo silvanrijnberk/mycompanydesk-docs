@@ -1,6 +1,6 @@
 ---
 title: "Add logo"
-description: "To add or change your company logo: go to Settings > Logo en kleur (logo and colour), look for the Logo section."
+description: "To add or change your company logo: go to Settings › Logo and colour and click Upload logo in the Company Logo card."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["add logo", "upload logo", "change logo", "company logo", "logo on invoice", "logo toevoegen", "logo wijzigen", "logo uploaden", "logo hochladen", "ajouter logo"]
@@ -10,9 +10,9 @@ chatbot:
 ---
 
 To add or change your company logo:
-1. Go to Settings → "Logo en kleur" (logo and colour)
-2. Look for the "Logo" section
-3. Click "Upload" and select your logo file (PNG or JPG recommended)
+1. Go to Settings › "Logo and colour"
+2. Look for the "Company Logo" card
+3. Click "Upload logo" and select your logo file (PNG or JPG recommended)
 4. Your logo will appear on all invoices and documents; the live preview shows the result right away
 
 Tip: Use a high-resolution logo (at least 300px wide) for crisp PDF output.

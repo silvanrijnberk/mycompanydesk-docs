@@ -20,7 +20,7 @@ chatbot:
     - "uitnodiging klant"
     - "klant uitnodigen"
   actions:
-    - { label: "Open access settings", to: "/settings/team" }
+    - { label: "Open accountant settings", to: "/settings/boekhouder" }
   follow_up:
     - "How do I set page permissions?"
     - "How do I invite a team member?"
@@ -32,12 +32,12 @@ L'accès comptable peut commencer de deux façons : vous invitez votre comptable
 
 ## Vous invitez votre comptable
 
-1. Allez dans Paramètres → « Accès et comptable »
-2. Dans la section Comptable, cliquez sur « Ajouter un comptable » et saisissez les coordonnées
-3. Envoyez l'invitation quand vous voulez que votre comptable crée un compte
-4. Ouvrez « Gérer l'accès » pour définir les permissions de page
+1. Allez dans Paramètres › « Votre comptable »
+2. Sous « Boekhouder uitnodigen » (inviter un comptable), saisissez l'adresse e-mail de votre comptable et cliquez sur « Uitnodiging versturen » (envoyer l'invitation). Votre comptable reçoit un e-mail avec un lien d'acceptation valable 30 jours
+3. Dès que votre comptable accepte, il apparaît sous « Actieve boekhouders » (comptables actifs), où vous pouvez aussi révoquer son accès
+4. Vous voulez seulement une adresse à laquelle envoyer vos documents, sans que votre comptable se connecte ? Ajoutez alors un contact sous « Contactpersoon voor verzenden » (contact pour l'envoi). Si un contact a un compte, le bouton « Paginatoegang » (accès aux pages) définit les pages qu'il peut voir
 
-L'accès comptable est gratuit sur tous les plans ; il ne nécessite ni Office ni place d'équipe. Les statuts courants sont contact seul, invité, actif et révoqué.
+L'accès comptable est gratuit sur tous les plans ; il ne nécessite ni Office ni place d'équipe. Sous « Wat je boekhouder heeft gedaan » (ce que votre comptable a fait), vous voyez chaque modification qu'un comptable apporte à votre comptabilité.
 
 ## Votre comptable vous invite
 
@@ -50,7 +50,7 @@ Si votre comptable utilise MyCompanyDesk, il peut vous inviter directement depui
 
 Si l'espace de travail pour lequel vous êtes invité dispose déjà de son propre abonnement actif, le cabinet ne peut pas prendre en charge sa facturation tant que cet abonnement n'est pas résilié. Vous verrez une erreur si le cabinet tente de configurer la facturation par le cabinet alors que votre propre abonnement est encore actif.
 
-Vous pouvez révoquer cet accès plus tard dans Paramètres → « Accès et comptable ». Le lien d'invitation est valable 30 jours et votre comptable peut le renvoyer ou le révoquer.
+Vous pouvez révoquer cet accès plus tard dans Paramètres › « Votre comptable ». Le lien d'invitation est valable 30 jours et votre comptable peut le renvoyer ou le révoquer.
 
 ## Ce que votre comptable voit
 
@@ -64,11 +64,11 @@ Votre comptable clique sur une administration pour ouvrir directement son espace
 
 ## Livraison automatique
 
-Une fois votre comptable connecté, allez dans **Paramètres → Accès et comptable** et activez la livraison automatique. MyCompanyDesk peut alors envoyer un export à votre comptable avec les factures de vente, les dépenses et les devis acceptés dans un format compatible, afin que les chiffres n'aient pas à être retranscrits manuellement. Les chiffres de la déclaration de TVA ne sont pas inclus ; téléchargez-les en CSV depuis **Taxes → Déclaration de TVA**. Vous choisissez vous-même les flux inclus et consultez un journal des livraisons effectuées.
+Le transfert automatique fait partie d'Office. Ajoutez d'abord un contact dans Paramètres › « Votre comptable », puis activez l'interrupteur dans la section « Automatisch doorsturen » (transfert automatique). MyCompanyDesk envoie alors de lui-même à votre comptable vos factures de vente (dès que vous les envoyez ou dès qu'elles sont payées) et vos dépenses par e-mail, avec le PDF de la facture et les reçus en pièce jointe. Vous choisissez la fréquence (immédiatement, chaque jour, chaque semaine, chaque mois ou chaque trimestre), si les devis sont joints à titre d'information et si seules les dépenses avec reçu sont envoyées. « Laatst verstuurd » (derniers envois) montre ce qui a été livré. Les chiffres de la déclaration de TVA ne sont pas inclus ; téléchargez-les en CSV depuis **Impôts › Déclaration de TVA**.
 
 ## Gérer plusieurs entreprises
 
-Si vous gérez plusieurs entreprises, ou si votre comptable gère plusieurs administrations, le sélecteur d'espace de travail dans la barre latérale gauche vous permet d'ajouter et de basculer entre elles. Vous pouvez ajouter votre propre entreprise depuis le sélecteur ; chacune obtient une administration dédiée avec sa propre TVA, factures et comptabilité.
+Si vous gérez plusieurs entreprises, ou si votre comptable gère plusieurs administrations, le sélecteur d'espace de travail dans la barre latérale gauche vous permet d'ajouter et de basculer entre elles. Vous pouvez ajouter votre propre entreprise depuis le sélecteur ; chacune obtient une administration dédiée avec sa propre TVA, factures et comptabilité. Desk comprend une seule entreprise à vous. Avec Office, vous pouvez en gérer jusqu'à 10, pour 5,99 € par mois ou 59,90 € par an par entreprise supplémentaire (hors TVA).
 
 Lorsque vous avez plus d'une administration, la navigation de gauche affiche aussi **Espaces de travail** comme lien direct vers le tableau de triage.
 

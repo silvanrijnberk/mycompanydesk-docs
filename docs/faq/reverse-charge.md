@@ -1,7 +1,7 @@
 ---
 title: "Btw verlegd"
-description: "Zo maak je een factuur met btw verlegd (EU): ga naar Facturen > Nieuwe factuur, kies je EU-klant en controleer of het btw-nummer bij de klant is ingevuld."
-last_verified: 2026-07-02
+description: "Zo maak je een factuur met btw verlegd (EU): ga naar Facturen › Nieuwe factuur, kies je EU-klant en controleer of het btw-nummer bij de klant is ingevuld."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
   actions:
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 Zo maak je een factuur met btw verlegd (EU):
-1. Ga naar Facturen → Nieuwe factuur
+1. Ga naar Facturen › Nieuwe factuur
 2. Kies je EU-klant en controleer of het btw-nummer bij de klant is ingevuld
 3. Zet de schakelaar "Btw verlegd" aan op het factuurformulier; MyCompanyDesk stelt dit automatisch voor bij zakelijke EU-klanten
 4. De btw op alle factuurregels springt automatisch naar 0% als de schakelaar aan staat, en terug naar het vorige tarief als je hem weer uitzet; je hoeft niets handmatig aan te passen.
@@ -31,7 +31,7 @@ Ontbreekt het land of het KVK-nummer, dan markeert de controle voor het indienen
 
 ## Importverleggingsregeling (leveranciers buiten de EU)
 
-Sommige leveranciers buiten de EU rekenen geen Nederlandse btw op hun factuur. Jij moet de btw dan zelf aangeven op je aangifte. In MyCompanyDesk heet dit `import_reverse_charge` en komt het in rubriek 4a, niet 4b.
+Sommige leveranciers buiten de EU rekenen geen Nederlandse btw op hun factuur. Jij moet de btw dan zelf aangeven op je aangifte. In MyCompanyDesk heet deze btw-behandeling **Verlegd invoer** en komt de btw in rubriek 4a, niet 4b.
 
 Gebruik deze behandeling als:
 

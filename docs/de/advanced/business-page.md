@@ -10,40 +10,25 @@ Erstellen Sie Ihre Geschäftswebsite mit einem Drag-and-Drop-Editor. Legen Sie m
 
 ## Übersicht
 
-Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Jeder neue Workspace startet mit einer 4-seitigen Standard-Site (Home, Diensten, Über uns, Kontakt), damit Sie von Tag eins an eine echte mehrseitige Grundlage haben. Der Editor bietet Ihnen:
+Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Jeder neue Workspace startet mit einer Standard-Site (Home, Diensten, Over mij und Kontakt, plus Datenschutzerklärung und AGB), damit Sie von Tag eins an eine echte mehrseitige Grundlage haben. Der Editor bietet Ihnen:
 
-- **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten. Die vier Standardseiten sind bereit zum Bearbeiten, Löschen oder Ergänzen.
-- **Domain-Wechsler**: Wenn Ihr Workspace mehrere eigene Domains hat (Office-Tarif), können Sie über ein Dropdown in der oberen Leiste zwischen der Bearbeitung der Hauptwebsite und einer Domain-Variante wechseln. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots.
-- **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Spotlight-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu. Speichern Sie Abschnitte als wiederverwendbare Blöcke, um Ihre eigene Bibliothek aufzubauen.
+- **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten. Die Standardseiten sind bereit zum Bearbeiten, Löschen oder Ergänzen.
+- **Abschnittsblöcke**: Fügen Sie Blöcke hinzu, etwa eine große Kopfzeile, Text, Galerie, Foto mit Text, Dienstleistungen, Team, Kundenstimmen und ein Kontaktformular. Speichern Sie Blöcke als wiederverwendbare Blöcke, um Ihre eigene Bibliothek aufzubauen.
 - **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil, benutzerdefiniertes CSS und ein Site-Favicon fest. Änderungen gelten für die gesamte Site.
 - **Navigations-Editor**: Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen, externen Links und Inline-Navbar-Styling (Markenname, CTA-Button, Telefon, Anruf-Leiste, Sticky).
 - **Veröffentlichungs-Snapshots**: Arbeiten Sie im Entwurf, sehen Sie sich Ihre Änderungen in der Vorschau an und veröffentlichen Sie dann. Unveröffentlichte Änderungen werden in der oberen Leiste angezeigt.
 - **Responsive Vorschau**: Wechseln Sie während der Bearbeitung zwischen Desktop-, Tablet- und Mobilansicht. In der Desktopansicht können Sie auch eine echte Viewport-Breite wählen (1280, 1440 oder 1920 Pixel), damit die eigenen Media Queries der Site ehrlich reagieren statt simuliert zu werden.
 - **Größenverstellbare Leisten**: Ziehen Sie den rechten Rand der linken Leiste und den linken Rand des rechten Inspektors, um beide breiter oder schmaler zu machen. Doppelklicken Sie auf einen Ziehgriff, um zur Standardbreite zurückzukehren. Die Breite wird pro Gerät in localStorage gespeichert.
 - **Zoom und Einpassen**: Zoomen Sie die Arbeitsfläche von 25 % bis 200 %, oder klicken Sie auf den Zoomwert, um Einpassen, 50 %, 100 % oder 200 % zu wählen. Der Arbeitsbereich scrollt, wenn die skalierte Arbeitsfläche ihn überragt.
-- **Tastenkürzel**: Rückgängig/Wiederherstellen, ausgewählten Abschnitt verschieben, Ein- und Auszoomen, Einpassen, Panels schließen und die Kurzübersicht über die in der unteren Leiste angezeigten Standardtasten öffnen.
+- **Tastenkürzel**: Rückgängig und Wiederholen, einen Block auswählen, verschieben, duplizieren oder löschen, Ein- und Auszoomen, Einpassen und Panels schließen. Die Übersicht mit allen Tastenkürzeln öffnen Sie mit ⌘/ oder mit der Schaltfläche "Sneltoetsen" (Tastenkürzel) unten in der Leiste.
 
-Ihr Website-Dashboard finden Sie unter **Unternehmen > Ihre Website** (`/website`). Der Editor wird von dort geöffnet.
+Ihre Website finden Sie in der Seitenleiste unter **Kommunikation › Website** (`/website`). Der Editor wird von dort geöffnet.
 
-Wenn Sie `/website` öffnen, landen Sie auf dem Bereichsüberblick: er zeigt Ihre Live-Site, den Veröffentlichungsstatus und einen klaren Einstieg in den Editor. Der Editor selbst liegt unter `/website/editor` und wird bewusst über die Übersichtsseite aufgerufen, anstatt beim Öffnen gleich den gesamten Bildschirm zu übernehmen.
-
-## KI-Schnellstart
-
-Wenn Sie den Website-Builder zum ersten Mal in einem neuen Workspace öffnen, erscheint ein Schnellstart-Banner oben. Es liest Ihre Handelsregisterdaten (Firmenname, Branche, Stadt) und schlägt einen ersten Claim, einen Über-uns-Text und drei Dienstleistungen vor. Sie können alles direkt anpassen bevor Sie übernehmen, neu generieren wenn der erste Vorschlag nicht ganz passt, oder das Banner ausblenden. Keine Wizard-Fragen, keine Hürde vorab.
-
-Was das Banner für Sie tut:
-
-- **Generieren**: Klicken Sie auf **Vorschlag generieren**, um die KI Ihre KVK-Daten lesen und Text vorschlagen zu lassen. Was herauskommt, bleibt bei dem, was Sie gegeben haben: über die Über-mich-Seite wird keine erfundene Geschichte geschrieben.
-- **Inline bearbeiten**: Passen Sie Claim, Über-uns-Text und Dienstleistungsnamen und -beschreibungen direkt im Banner an.
-- **Übernehmen**: Klicken Sie auf **Übernehmen**, um den freigegebenen Text in Ihren Workspace zu schreiben. Ihre Unternehmensbeschreibung, der Hero-Claim und die Dienstleistungen werden in einem Schritt aktualisiert.
-- **Neu generieren**: Nicht zufrieden? Klicken Sie auf **Neu generieren** für einen neuen Satz Vorschläge.
-- **Ausblenden**: Das Banner merkt sich Ihre Entscheidung lokal. Es bleibt ausgeblendet, bis Sie Ihre Workspace-Daten zurücksetzen.
-
-Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Workspace verfügbar. Wenn KI nicht konfiguriert ist, arbeitet das Banner trotzdem mit einem sinnvollen Fallback auf Basis Ihrer Branchenkennzahl und Ihres Firmennamens.
+Wenn Sie `/website` öffnen, landen Sie auf dem Tab **Übersicht**: Sie sehen Ihre Site, den Veröffentlichungsstatus und die Schaltfläche **Website bearbeiten**. Die weiteren Tabs sind **Besucher**, **Ergebnisse**, **Seiten**, **Auffindbarkeit**, **Verknüpfungen** und **Domain & E-Mail**. Der Editor selbst liegt unter `/website/editor` und wird bewusst über **Website bearbeiten** aufgerufen, anstatt beim Öffnen gleich den gesamten Bildschirm zu übernehmen. Auf dem Handy öffnet der Editor in einem leichten Bearbeitungsmodus für Texte, Fotos, Bewertungen und Kontaktdaten, ohne Ziehen und ohne Stileinstellungen.
 
 ## Website-Einrichtungsassistent
 
-Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent Ihren ersten Entwurf für Sie erstellen. Er öffnet sich automatisch beim ersten Besuch von `/website` in einem neuen Workspace und lässt sich später unter **Unternehmen > Ihre Website > Stil** mit **Erneut einrichten** neu starten; bei einem Neustart beginnt er bei dem, was schon stimmt. Er durchläuft diese Schritte:
+Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent Ihren ersten Entwurf für Sie erstellen. Bei der Anmeldung wird noch keine Site gebaut: Öffnen Sie **Website** zum ersten Mal, startet der Assistent von selbst. Wurde für ein älteres Konto bereits eine Site erstellt, die noch nicht live ist, sehen Sie stattdessen **We hebben je website alvast gemaakt** (Wir haben Ihre Website schon erstellt), mit der Wahl **Zet mijn site live** (Meine Site live schalten) oder **Eerst aanpassen** (Erst anpassen). Sie können ihn jederzeit im Editor über **Hele site** (ganze Site) › **Merk** (Marke) mit **Erneut einrichten** neu starten; bei einem Neustart beginnt er bei dem, was schon stimmt. Er durchläuft diese Schritte:
 
 1. **Was Sie tun** (aus Ihren KVK-Daten vorausgefüllt) - Ihre Arbeit, Dienstleistungen und Tonalität. Derselbe Schritt trägt Ihren echten Firmennamen (Pflicht, und gleich mit Ihren Unternehmensdaten gespeichert), Ihre Telefonnummer, Ihre WhatsApp-Nummer (ja, mit derselben Nummer wie Ihr Telefon, oder einer anderen), Ihre Instagram-Adresse (und auf Wunsch Facebook oder LinkedIn), die mit Ihren Unternehmensdaten gespeichert wird und ausgefüllt die Social-Links im Fuß einschaltet, Ihre Öffnungszeiten (mit Schnellwahlen für Werktage, das Wochenende oder jeden Tag, und die Zeiten je Tag einstellbar), die Adresse Ihrer Kontaktseite und die Adresse, unter der Kunden Ihnen schreiben dürfen; sie heißt **E-Mail-Adresse für Kunden**, und ein Häkchen entscheidet, ob Ihre Site sie zeigt. Ihre Anmelde-E-Mail-Adresse steht dort bereits drin, landet aber nur auf Ihrer Site, solange das Häkchen an bleibt; ändern Sie die Adresse, ziehen das Ihre Unternehmensdaten (und Ihre Rechnungen) nach.
 2. **Was Sie wollen** - ob die Site vor allem Kunden gewinnen, Ihre Arbeit zeigen, vertrauenswürdig wirken oder online gefunden werden soll.
@@ -60,128 +45,72 @@ Haben Sie in der Buchungsfrage **Kunden wählen selbst eine Zeit** gewählt, fra
 
 Sie können auch mitten im Assistenten aufhören: Klicken Sie auf **Später fertigstellen** oder laden Sie die Seite neu, und Ihre Antworten stehen bei der Rückkehr wieder da. Der Assistent bewahrt Ihre eigenen Änderungen auf diesem Gerät rund eine Woche auf und stellt etwas nur wieder her, solange der zugrunde liegende Wert unverändert ist; haben sich Ihre Firmendaten oder Dienstleistungen unterdessen geändert, aus den Einstellungen oder von einem anderen Gerät, gilt der aktuelle Wert.
 
-Quelle: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`; `apps/web/utils/siteWizardDuration.ts#guessServiceDurationMin`.
+Derselbe Assistent kann eine bestehende Site auch komplett neu schreiben. Wenn Sie ihn über **Merk** neu starten, fragt er zuerst nach Bestätigung, denn Abschließen ersetzt Text, den Sie selbst bearbeitet haben. Die Site bleibt Entwurf, bis Sie selbst veröffentlichen.
 
-Derselbe Assistent kann eine bestehende Site auch komplett neu schreiben. Wenn Sie ihn über den Stil-Tab neu starten, fragt er zuerst nach Bestätigung, denn Abschließen ersetzt Text, den Sie selbst bearbeitet haben. Die Site bleibt Entwurf, bis Sie selbst veröffentlichen.
+## Aufbau des Editors
 
-## Tabs
+Oben im Editor steht eine Reihe von Tabs: zuerst **Hele site** (ganze Site), danach jede Seite Ihrer Site. Ziehen Sie einen Seiten-Tab, um die Reihenfolge zu ändern (die Startseite steht immer vorn), oder klicken Sie auf **+** (**Pagina toevoegen**, Seite hinzufügen) für eine neue Seite. Welchen Tab Sie wählen, bestimmt, was die Leiste links anbietet:
 
-Der Website-Builder hat drei Tabs: Editor, Seiten und Stil. Klicken Sie auf die Stil-Überschrift, um die Unter-Tabs (darunter Animation) ein- oder auszuklappen.
+- **Eine Seite**: **Blokken** (Blöcke: die Blöcke dieser Seite, zum Hinzufügen, Verschieben, Duplizieren oder Löschen), **Stijl** (Stil: was nur diese Seite anders haben darf, etwa Hintergrund und Breite) und **Instellingen** (Einstellungen: Titel, Webadresse, Sichtbarkeit im Menü und wie die Seite in Google erscheint). Klicken Sie auf einen Block, um ihn im Inspektor rechts zu bearbeiten: Inhalt, Layout, Stil und Animation.
+- **Hele site**: **Ontwerp** (Design: die Pakete-Galerie), **Kleuren** (Farben), **Merk** (Marke), **Letters** (Schriften), **Knoppen** (Schaltflächen), **Menubalk** (Menüleiste), **Ruimte** (Abstände), **Animatie** (Animation), **Elementen** (Elemente), **Navigatie** (Navigation), **Footer**, **Versies** (Versionen: frühere Veröffentlichungen und gespeicherte Versionen, mit einem Weg zurück) und ganz unten, separat, **Eigen CSS** (eigenes CSS).
 
-- **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
-- **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden. Jede Seite zeigt ein Live/Entwurf-Symbol mit Schnellumschaltflächen: Klicken Sie auf das Globus-Icon, um eine Entwurfsseite live zu schalten, oder auf das Ausblenden-Icon, um eine Live-Seite zurück in den Entwurf zu setzen.
-- **Stil**: Passen Sie Ihre site-weiten Design-Tokens an. Wählen Sie ein Ein-Klick-Preset (Editorial) und passen Sie dann Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Navigationsleiste (Layout, Hintergrund, CTA-Stil), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS an. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen. Klicken Sie auf die Stil-Überschrift, um die Registerkarte ein- oder auszuklappen.
-
-Domain, SEO und Drittanbieter-Integrationen verwalten Sie über die `/website`-Startseite, nicht im Editor.
+Alle Ihre Seiten als Liste, mit Status, Google-Beschreibung und Besucherzahlen, sehen Sie außerhalb des Editors im Tab **Seiten** von Website. Domain, Auffindbarkeit in Google und Verknüpfungen mit Drittanbietern verwalten Sie ebenfalls dort, in den Tabs **Domain & E-Mail**, **Auffindbarkeit** und **Verknüpfungen**, nicht im Editor.
 
 ### Pakete-Galerie
 
-Die Galerie **Pakete** (`Unternehmen > Ihre Website > Pakkete`) ist der schnellste Weg, mit einer kompletten, vorgestylten Site zu starten. Sie listet jedes genehmigte Site-Paket: eine fertige Vorlage mit Farbpaket und Schriftpaarung für einen bestimmten Bereich, dargestellt mit einer kleinen Farb-Swatch-Karte, die die eigene Palette des Pakets zeigt.
+Die Pakete-Galerie (`/website/pakketten`, und im Editor **Hele site** › **Ontwerp**) ist der schnellste Weg, mit einer kompletten, vorgestylten Site zu starten. Sie listet jedes genehmigte Site-Paket: eine fertige Vorlage mit Farben und Schriftpaarung für einen bestimmten Bereich.
 
 So funktioniert es:
 
-1. Öffnen Sie **Unternehmen > Ihre Website** und klicken Sie oben auf **Pakkete**.
-2. Durchstöbern Sie die Karten. Jede Karte zeigt einen echten Screenshot des Pakets, wenn einer erstellt wurde, sonst eine Farbswatch aus der eigenen Palette des Pakets. Name, Bereich, Seitenanzahl und kurze Beschreibung stehen unter dem Bild.
-3. Klicken Sie auf **Vorschau ansehen**, um ein Live-Beispiel des Pakets in einem neuen Tab zu öffnen.
-4. Klicken Sie auf **Dieses Paket verwenden**. Eine Bestätigung erklärt, dass Ihre aktuelle Entwurfs-Site (Seiten, Abschnitte und Stil) ersetzt wird.
-5. Das Paket wird nur auf Ihren **Entwurf** angewendet. Es wird nichts automatisch veröffentlicht.
-6. Der Editor öffnet sich, damit Sie das Ergebnis prüfen, Texte und Bilder anpassen und selbst veröffentlichen können.
+1. Öffnen Sie im Editor **Hele site** › **Ontwerp**, oder gehen Sie zu `/website/pakketten`.
+2. Durchstöbern Sie die Karten. Jede Karte zeigt eine Vorschau des Pakets, mit Name, Bereich, Seitenanzahl und einer kurzen Beschreibung.
+3. Klicken Sie auf **Bekijk voorbeeld** (Vorschau ansehen), um das Paket anzuschauen: auf `/website/pakketten` in einem neuen Tab, im Editor in Originalgröße neben Ihrer eigenen Site.
+4. Wählen Sie, wie Sie das Paket verwenden:
+   - **Aussehen übernehmen**: nur die Farben, Schriften und der Schaltflächenstil des Pakets. Ihre Seiten, Blöcke und Texte bleiben genau, wie sie sind.
+   - **Dieses Design verwenden**: Ihre aktuelle Entwurfs-Site (Seiten, Blöcke und Stil) wird durch das Paket ersetzt. Danach erstellt MyCompanyDesk Fotos und Texte für Ihr Unternehmen; Beispielzahlen, Bewertungen und Projekte aus dem Design bleiben leer, bis Sie sie selbst ausfüllen. Ihr vorheriger Entwurf bleibt als Wiederherstellungspunkt erhalten, Sie können also jederzeit zurück.
+5. In beiden Fällen holt eine Bestätigung zuerst Ihr Einverständnis ein, und es wird nur Ihr **Entwurf** angepasst. Es wird nichts automatisch veröffentlicht.
+6. Sie prüfen das Ergebnis im Editor, passen Texte und Bilder an und veröffentlichen selbst.
 
-Dieselbe Galerie finden Sie auch im Editor. Öffnen Sie die Leiste **Ontwerp**, um Pakete direkt auf der Arbeitsfläche zu durchstöbern. Klicken Sie auf einer Karte auf **Vorschau ansehen**, um die öffentliche Vorschau in Originalgröße neben Ihrer eigenen Site zu sehen, und auf **Zurück zu allen Designs**, um weiter zu vergleichen. Wenden Sie ein Paket im Editor an, wird Ihr Entwurf neu geladen und Sie gelangen zurück zur Leiste Abschnitte, um direkt weiterzubearbeiten.
+Im Editor gelangen Sie nach dem Anwenden zurück zu **Blokken**, um direkt weiterzubearbeiten. Mit **Terug naar alle ontwerpen** (zurück zu allen Designs) kehren Sie aus einer Vorschau zur Galerie zurück.
 
-Suchen Sie nach Bereich oder Stil über das Suchfeld. Die Anzahl daneben wird beim Filtern aktualisiert. Sind noch keine Pakete verfügbar, teilt Ihnen die Seite mit, dass sie hier erscheinen, sobald die ersten Designs freigegeben sind.
+Suchen Sie über das Suchfeld (**Zoek een ontwerp**, Design suchen) oder filtern Sie nach Stil. Die Anzahl der Designs daneben wird beim Filtern aktualisiert.
 
-Quelle: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+### Bedienung auf der Arbeitsfläche
 
-### Bespoke-Designs
+Sie können Blöcke auch direkt auf der Arbeitsfläche bedienen. Bewegen Sie den Mauszeiger über einen Block, um seinen Namen und eine kleine Werkzeugleiste zu sehen. Mit den Pfeilen verschieben Sie den Block nach oben oder unten, mit der Plus-Schaltfläche ("Blok hier invoegen", Block hier einfügen) setzen Sie einen Block dazwischen, und dazu kommen die Aktionen **Dupliceren** (Duplizieren), **Kopieer naar pagina…** (Auf Seite kopieren), **Vergrendelen** (Sperren) und **Verwijderen** (Löschen). Einen gesperrten Block können Sie nur entsperren. Navigation und Footer zeigen ihren Namen beim Hover, aber bearbeiten Sie über **Hele site** › **Navigatie** und **Footer**.
 
-Der Website-Builder bietet außerdem eine Reihe fertiger **Bespoke-Designs**, die die Standardstil-Presets durch eine kuratierte Vorlage, ein Farbpaket und einen Markenakzent ersetzen. Öffnen Sie das Panel **Bespoke-Designs** im Stil-Tab, um die Galerie zu durchsuchen. Jede Karte ist eine Live-Vorschau, die mit Ihren eigenen Workspace-Daten gefüllt ist (Dienstleistungen, Fotos, Bewertungen, Kontaktdaten), sodass Sie genau sehen, wie das Design aussieht, bevor Sie es anwenden.
+Klicken Sie auf einen Block, um ihn ausgewählt zu halten; der Rahmen bleibt dann sichtbar, auch wenn Sie die Maus wegbewegen. Arbeitsfläche und Liste **Blokken** lesen aus derselben Reihenfolge, sodass Sie eine Änderung an einer Stelle sofort an der anderen sehen. In der Liste **Blokken** können Sie einen Block auch ausblenden, ohne ihn zu löschen.
 
-Bei der Auswahl eines Designs werden drei Dinge gleichzeitig festgelegt:
+Text tippen Sie auch direkt auf der Arbeitsfläche: Klicken Sie auf den Text, tippen Sie die Änderung und klicken Sie außerhalb, um zu speichern. Das Feld im Inspektor zieht sofort mit.
 
-- **Vorlage**: die Layoutfamilie und Abschnittsstruktur (zum Beispiel eine zentrierte Hero mit einem Review-Marquee oder eine geteilte Spotlight-Dienstleistungsseite).
-- **Farbpaket**: eine kuratierte Palette-Variante für diese Vorlage. Die meisten Vorlagen bieten mehrere Pakete wie warm, kühl, neutral, kräftig oder gedämpft. Das Paket zu wechseln behält dieselbe Vorlage bei, ersetzt aber die CSS-Custom-Property-Tokens, sodass das Layout gleich bleibt, während die Stimmung wechselt.
-- **Markenakzent**: eine optionale Überschreibung für die Akzentfarbe der Vorlage. Lassen Sie sie leer, um die Standardakzentfarbe des Pakets zu verwenden; geben Sie Ihre eigene Hex-Farbe ein, um Schaltflächen, Highlights und Abzeichen an Ihre Marke anzupassen. Sie können die Überschreibung jederzeit löschen, um wieder auf die Paket-Standardfarbe zurückzufallen.
-
-Ihr Geschäftslogo wird automatisch verwendet, wenn Sie eines hochgeladen haben. Vorlagen, die ein Logo unterstützen, zeigen es in der Navigationsleiste oder im Hero an. Vorlagen, die ein Textwortzeichen erwarten, greifen auf Ihren Geschäftsnamen zurück, wenn kein Logo festgelegt ist, gesteuert durch eine bedingte Regel, damit das richtige Element erscheint.
-
-Wenn Sie ein Design gefunden haben, klicken Sie auf **Dieses Design verwenden**. Die aktuelle Site wird sofort mit der neuen Vorlage, dem Paket und dem Akzent veröffentlicht, und Ihre öffentliche URL zeigt die Änderung sofort.
-
-### Abschnitte auf einer Bespoke-Seite neu anordnen
-
-Nachdem Sie ein Bespoke-Design angewendet haben, öffnen Sie eine Seite im Bespoke-Content-Editor. Das Panel **Abschnitte** listet alle Top-Level-Abschnitte dieser Seite. Ziehen Sie einen Abschnitt an eine neue Position, oder nutzen Sie die Auf- und Ab-Buttons. Schalten Sie die Sichtbarkeit aus, um einen Abschnitt auszublenden, ohne ihn zu löschen. Navigation, Hero und Footer bleiben gesperrt; sie lassen sich weder verschieben noch ausblenden.
-
-### Bedienelemente direkt auf der Canvas-Vorschau
-
-Sie können Abschnitte auch direkt auf der Live-Canvas-Vorschau neu anordnen, ausblenden und entfernen. Bewegen Sie den Mauszeiger über einen Top-Level-Abschnitt, um seinen Namen und eine kleine Toolbar zu sehen. Verwenden Sie die Pfeile, um den Abschnitt nach oben oder unten zu verschieben, das Augen-Symbol, um ihn auszublenden (oder wieder einzublenden), und das Papierkorb-Symbol, um einen selbst hinzugefügten Abschnitt zu entfernen. Gesperrte Elemente wie Navigation, Hero und Footer zeigen den Namen beim Hover, haben aber keine Aktionen zum Verschieben, Ausblenden oder Entfernen.
-
-Klicken Sie auf einen Abschnitt, um ihn ausgewählt zu halten; der Rahmen bleibt dann sichtbar, auch wenn Sie die Maus wegbewegen, sodass Sie Positionen vergleichen können, während Sie scrollen oder Inhalte bearbeiten. Sowohl die Canvas als auch das Panel **Abschnitte** lesen aus derselben zugrunde liegenden Reihenfolge, sodass eine Änderung an einer Stelle sofort an der anderen Stelle übernommen wird.
-
-### Fußzeileninhalt
-
-Bespoke-Vorlagen mit einer minimalen Fußzeile erlauben es Ihnen jetzt, eigene Fußzeileninhalte hinzuzufügen, ohne das Design zu ändern. Öffnen Sie eine Seite im Bespoke-Content-Editor und scrollen Sie zum Panel **Fußzeile**.
-
-Dort können Sie hinzufügen:
-
-- **Rechtliche Zeile**: Ihre Handelsregister-/USt-Nummer oder anderes Kleingedrucktes, im Stil der Vorlage gerendert.
-- **Link-Spalten**: betitelte Link-Spalten, nützlich für Seiten wie Kontakt, AGB oder Dienstleistungen.
-- **Kontaktdaten**: schalten Sie ein, um E-Mail, Telefon und Adresse aus Ihren Unternehmensdaten anzuzeigen.
-- **Social-Media-Links**: schalten Sie ein, um die in Ihren Unternehmensdaten gespeicherten Social-Media-Links anzuzeigen.
-
-Das Design bestimmt weiterhin Farbe, Schrift und Abstände; Sie liefern nur den Inhalt. Links akzeptieren interne Pfade (`/contact`), externe HTTPS-URLs, E-Mail (`mailto:`) oder Telefon (`tel:`). Wenn eine Vorlage Ihre Kontaktdaten oder Social-Media-Links bereits in der Fußzeile zeigt, wird der entsprechende Schalter ausgeblendet, damit nichts doppelt erscheint.
-
-### Links von Abschnitts-Buttons überschreiben
-
-Einige Bespoke-Abschnitte enthalten klickbare Buttons oder Links, die normalerweise auf eine fest im Design verankerte Seite zeigen, etwa eine Kontaktseite, eine Buchungs-URL oder eine Telefonnummer. Der Bespoke-Content-Editor erlaubt es Ihnen pro Seite, das Ziel jedes anpassbaren Buttons zu überschreiben.
-
-Öffnen Sie eine Seite im Bespoke-Content-Editor und wählen Sie den Abschnitt aus, dessen Button Sie ändern möchten. Im Panel **Abschnitte** zeigt jeder Abschnitt mit anpassbaren Buttons eine Liste **Buttons**. Wählen Sie den gewünschten Button aus und geben Sie das neue Ziel ein. Sie können auf eine andere Seite Ihrer Site, eine externe URL, eine E-Mail-Adresse (`mailto:`) oder eine Telefonnummer (`tel:`) verlinken. Links werden aus Sicherheitsgründen mit denselben erlaubten Schemes wie Navigationslinks geprüft. Lassen Sie die Überschreibung leer, behält der Button das ursprüngliche Ziel aus der Vorlage bei.
-
-### Abschnitte hinzufügen und bearbeiten
-
-Wenn Sie eine Bespoke-Seite im Editor öffnen, bietet das Panel **Abschnitte** nun den vollständigen Abschnittskatalog. Abschnitte, die zum Design selbst gehören, stehen oben und verwenden die eigene Markup der Vorlage sowie Ihre Workspace-Daten, damit sie nativ aussehen. Abschnitte aus dem breiteren Katalog werden auf derselben Palette und Typografie überbrückt, haben aber eigene Inhaltsfelder pro Abschnitt.
-
-Klicken Sie auf **Abschnitt hinzufügen**, um den Picker zu öffnen, wählen Sie die gewünschte Art, und der Abschnitt wird mit sinnvollen Standardwerten auf die Seite platziert. Das Inspektionspanel rechts zeigt die Felder des gewählten Abschnitts, egal ob sie aus Ihren Workspace-Daten oder aus den eigenen Inhalts-Props des Abschnitts stammen. Hinzugefügte Abschnitte können genau wie die eigenen Abschnitte der Vorlage neu angeordnet, ausgeblendet oder entfernt werden.
+Überschriften, die der Assistent, ein Umschreiben oder ein neuer Block für Sie schreibt, kommen in Satzform zu Papier: So liest sich eine Überschrift wie ein Satz. Namen wie Ihr Firmen- oder Markenname behalten ihre eigenen Großbuchstaben.
 
 ### Adresse, Karte, Arbeitsgebiet und Parken auf der Kontaktseite
 
-Die Kontaktseite zeigt, wo Sie arbeiten und wie Sie dorthin kommen. Der Block **Locaties** fällt auf Ihre Firmenadresse zurück, wenn Sie keine eigenen Standorte haben, und ein Kontaktblock lässt eine Adresse weg, die ein Locaties-Block auf derselben Seite schon zeigt. Eine neue Kontaktseite beginnt nicht mehr mit einem leeren Locaties-Block. Eine Karte (**Kaart tonen**) entsteht aus Ihrer Adresse, wenn Sie eine wollen, **Werkgebied** ist eine der Vorlagen bei Abschnitt hinzufügen, wenn Sie zeigen wollen, wo Sie Ihre Kunden aufsuchen, und der Anfahrt-Abschnitt heißt **Bereikbaarheid en parkeren** (Anfahrt und Parken).
-
-### Seiten umbenennen
-
-Vorlagenseiten haben eine feste Adresse und ein Menü-Label, das in der Markup der Vorlage verankert ist. Statt jeden Link von Hand zu ändern, können Sie im Panel **Seiten** das Menü-Label jeder Vorlagenseite umbenennen. Klicken Sie auf das Stift-Symbol neben einer Seite, geben Sie das neue Label ein, und jeder Link zu dieser Seite in Navigation und Footer wird automatisch aktualisiert. Die Adresse der Seite selbst ändert sich nicht, daher ist keine Weiterleitung nötig und bestehende Links funktionieren weiter.
-
-Wenn Sie das Feld leeren oder den ursprünglichen Namen der Vorlage zurücktippen, wird die Umbenennung entfernt und das ursprüngliche Label erscheint wieder.
-
-### Design-Text bearbeiten
-
-Designs enthalten kleine Textstellen wie Untertitel, Bildunterschriften und kurze Überschriften, die nicht mit Ihren Workspace-Daten verknüpft sind. Im Bearbeitungsmodus sind diese Texte direkt auf der Canvas editierbar: klicken Sie den Text, tippen Sie die Änderung und drücken Sie Enter oder klicken Sie außerhalb, um zu speichern. Die Überschreibung wird pro Abschnitt und pro Seite gespeichert, und die öffentliche Site zeigt Ihre Version anstelle der ursprünglichen Worte des Designs.
-
-Text innerhalb wiederholender Blöcke kann auf diese Weise nicht bearbeitet werden, da ein statischer Pfad jedes wiederholte Element verändern würde. Die Bearbeitung beschränkt sich außerdem auf Texte, die innerhalb eines Abschnitts liegen, damit es immer eine stabile Adresse für die Überschreibung gibt. Um eine Änderung rückgängig zu machen, löschen Sie den Inhalt oder tippen Sie den ursprünglichen Text des Designs zurück.
-
-Überschriften, die der Assistent, ein Umschreiben oder ein frischer Abschnitt für Sie schreiben, kommen in Satzform zu Papier: So liest sich eine Überschrift wie ein Satz. Ganze Namen wie Ihr Firmen- oder Markenname behalten ihre eigenen Großbuchstaben.
+Die Kontaktseite zeigt, wo Sie arbeiten und wie Sie dorthin kommen. Der Block **Locaties** fällt auf Ihre Firmenadresse zurück, wenn Sie keine eigenen Standorte haben, und ein Kontaktblock lässt eine Adresse weg, die ein Locaties-Block auf derselben Seite schon zeigt. Eine neue Kontaktseite beginnt nicht mehr mit einem leeren Locaties-Block. Eine Karte (**Kaart tonen**) entsteht aus Ihrer Adresse, wenn Sie eine wollen, **Werkgebied** ist eine der Vorlagen bei **Blok toevoegen** (Block hinzufügen), wenn Sie zeigen wollen, wo Sie Ihre Kunden aufsuchen, und der Anfahrt-Abschnitt heißt **Bereikbaarheid en parkeren** (Anfahrt und Parken).
 
 ### Die Anrede auf Ihrer Site
 
-Ihre Site spricht ihre Besucher in einer gewählten Anrede an: **Je en jij** (persönlich: „Ik help je graag.“) oder **U** (höflich: „Ik help u graag.“, die niederländischen Muster der festen Texte). Die Wahl sitzt im ersten Schritt des Website-Assistenten und auf der Karte **Aanspreekvorm op je website** unter Einstellungen → Unternehmensdaten; beide schreiben dieselbe Einstellung. Feste Texte der Site, wie Buttons, Formularzeilen und Dankmeldungen, folgen der Wahl sofort. Was Sie oder der Texter schon geschrieben haben, behält seine eigene Stimme; der Button auf dieser Karte, **Zet alle teksten om naar je** beziehungsweise **Zet alle teksten om naar u**, wandelt in einem Lauf alles um, was auf der Site steht, auch Ihren getippten Text, und ändert dabei nur die Anrede, nie den Inhalt. Das Ergebnis sagt, wie viele Texte angepasst wurden und welche stehen blieben (im Editor gehen Sie sie durch), und eine Veröffentlichung bringt sie live. Abschnitte, die Sie später hinzufügen, übernehmen die Anrede, die die Site schon hat, und auch die juristischen Seiten, die Datenschutzerklärung und die Bedingungen, erscheinen in der gewählten Form. Bei einem Ein-Personen-Unternehmen sprechen die festen Texte in der Ich-Form statt in der Wir-Form; der Assistent fragt dafür Ihren Vornamen und stellt Sie nie mit Ihrem Firmennamen vor.
+Ihre Site spricht ihre Besucher in einer gewählten Anrede an: "Du (je)" (persönlich: „Ik help je graag.“) oder **Sie (u)** (höflich: „Ik help u graag.“, die niederländischen Muster der festen Texte). Die Wahl sitzt im ersten Schritt des Website-Assistenten und auf der Karte **Anrede auf Ihrer Website** unter **Einstellungen** › **Unternehmensdaten**; beide schreiben dieselbe Einstellung. Feste Texte der Site, wie Buttons, Formularzeilen und Dankmeldungen, folgen der Wahl sofort. Was Sie oder der Texter schon geschrieben haben, behält seine eigene Stimme; der Button auf dieser Karte, **Alle Texte auf informell (je) umstellen** beziehungsweise **Alle Texte auf förmlich (u) umstellen**, wandelt in einem Lauf alles um, was auf der Site steht, auch Ihren getippten Text, und ändert dabei nur die Anrede, nie den Inhalt. Das Ergebnis sagt, wie viele Texte angepasst wurden und welche stehen blieben (im Editor gehen Sie sie durch), und eine Veröffentlichung bringt sie live. Abschnitte, die Sie später hinzufügen, übernehmen die Anrede, die die Site schon hat, und auch die juristischen Seiten, die Datenschutzerklärung und die Bedingungen, erscheinen in der gewählten Form. Bei einem Ein-Personen-Unternehmen sprechen die festen Texte in der Ich-Form statt in der Wir-Form; der Assistent fragt dafür Ihren Vornamen und stellt Sie nie mit Ihrem Firmennamen vor.
 
 ## Seiten erstellen
 
-1. Gehen Sie zum Tab **Seiten**.
-2. Klicken Sie auf **Neue Seite**.
-3. Geben Sie einen Titel und einen Pfad ein (z. B. `/ueber-uns`).
-4. Wählen Sie eine Vorlage oder beginnen Sie mit einer leeren Seite.
-5. Die Seite öffnet sich im Editor, wo Sie Abschnitte hinzufügen und ausbauen können. Eine Seite, die Sie hier anlegen, kommt automatisch in Ihr Menü; die 404-Seite und Blogartikel nicht. Scheitert das, sagt es Ihnen der Editor, und Sie setzen die Seite selbst im Menüeditor.
+1. Klicken Sie im Editor hinter den Seiten-Tabs auf **+** (**Pagina toevoegen**, Seite hinzufügen) oder im Tab **Seiten** von Website auf **Neue Seite**.
+2. Geben Sie der Seite einen Namen und wählen Sie eine **Soort pagina** (Seitenart).
+3. Die Seite öffnet sich im Editor, wo Sie Blöcke hinzufügen und ausbauen können. Die Webadresse passen Sie unter **Instellingen** (Einstellungen) der Seite an. Eine Seite, die Sie hier anlegen, kommt automatisch in Ihr Menü; die 404-Seite und Blogartikel nicht. Scheitert das, sagt es Ihnen der Editor, und Sie setzen die Seite selbst im Menüeditor.
 
 ### Standardseiten
 
-Jeder neue Workspace wird mit vier Seiten ausgeliefert:
+Jeder neue Workspace wird mit diesen Seiten ausgeliefert:
 
 | Seite | Pfad | Beschreibung |
 |---|---|---|
 | Home | `/` | Ihre Haupt-Landingpage. Kann nicht gelöscht werden. |
 | Diensten | `/diensten` | Zeigen Sie, was Sie anbieten. Vorausgefüllt mit einem Dienstleistungsabschnitt. |
-| Über uns | `/over-ons` | Erzählen Sie Besuchern, wer Sie sind. |
+| Over mij | `/over-ons` | Erzählen Sie Besuchern, wer Sie sind. |
 | Kontakt | `/contact` | Kontaktformular und Details. Aus dem Footer verlinkt. |
+| Datenschutzerklärung | `/privacy` | Siehe Rechtliche Seiten weiter unten. |
+| Allgemeine Geschäftsbedingungen | `/algemene-voorwaarden` | Siehe Rechtliche Seiten weiter unten. |
 
 Diese Seiten werden automatisch mit der Navigationsleiste und dem Footer verknüpft. Sie können jede Seite bearbeiten oder löschen, außer der Home-Seite, die immer erforderlich ist. Die Navigation passt ihre Links an, wenn Sie Seiten hinzufügen oder entfernen.
 
@@ -192,15 +121,15 @@ Seiten haben einen Status, der steuert, ob sie auf Ihrer veröffentlichten Site 
 - **Live**: Die Seite wird in den Veröffentlichungs-Snapshot aufgenommen. Besucher sehen sie nach der Veröffentlichung auf Ihrer öffentlichen Site.
 - **Entwurf**: Die Seite ist in Bearbeitung. Sie bleibt für Besucher unsichtbar, auch nachdem Sie die Site veröffentlichen.
 
-Die Startseite beginnt standardmäßig als **Live**. Jede andere neue Seite beginnt als **Entwurf**, damit sie nicht öffentlich wird, bevor Sie bereit sind. Sie können jede Seite mit den Schnellaktionen in der Seitentabelle zwischen Live und Entwurf umschalten. Die Statusänderung wird sofort gespeichert und aktiviert die Veröffentlichen-Schaltfläche in der oberen Leiste.
+Eine neue Seite beginnt als **Live**, damit sie bei Ihrer nächsten Veröffentlichung mitgeht und ein Menülink nie auf eine fehlende Seite zeigt. Ein neuer Blogartikel beginnt als **Entwurf**. Die Startseite ist immer live. Sie schalten eine Seite mit dem Schalter **Concept** (Entwurf) / **Live** bei dieser Seite in **Seiten verwalten** um. Die Statusänderung wird sofort gespeichert und aktiviert die Veröffentlichen-Schaltfläche in der oberen Leiste.
 
 Eine Site, deren Startseite auf Entwurf steht, zeigt bei der Veröffentlichung nichts an. Wenn Sie die Startseite in den Entwurf gesetzt haben, schalten Sie sie zurück auf Live und veröffentlichen Sie erneut, um die Site wiederherzustellen.
 
 ## Seiten mit Abschnitten aufbauen
 
-Im **Editor**-Tab:
+Öffnen Sie eine Seite im Editor. In der Liste **Blokken** (Blöcke):
 
-- Klicken Sie auf **Abschnitt hinzufügen**, um die verfügbaren Blocktypen zu sehen (Hero, Text, Galerie, Spotlight, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, Gütesiegel, benutzerdefiniertes HTML und mehr).
+- Klicken Sie auf **Blok toevoegen** (Block hinzufügen), um die verfügbaren Blocktypen zu sehen (große Kopfzeile, Text, Galerie, Foto mit Text, Dienstleistungen, Team, Kundenstimmen, Kontaktformular, Preise, Produkt, Gütesiegel, Online-Buchung und mehr).
 - Wählen Sie einen Blocktyp aus, um ihn auf der Seite einzufügen.
 - Klicken Sie auf einen Abschnitt, um das Inspektionspanel zu öffnen, in dem Sie Inhalt, Layout, Stil und Animation bearbeiten können.
 - Ziehen Sie Abschnitte nach oben oder unten, um sie neu anzuordnen. Nutzen Sie die Duplizieren- und Löschen-Aktionen bei jedem Abschnitt.
@@ -215,10 +144,10 @@ Zwei KI-gestützte Werkzeuge helfen Ihnen, Ihre Seiten schneller zu texten und z
 
 Jedes Text- und Textarea-Feld im Abschnitts-Inspektor bekommt vier kleine Ton-Buttons darunter, sobald das Feld genug Inhalt hat (mehr als ein paar Wörter). Die Buttons senden Ihren aktuellen Text an den Server, der ein schlankes Gemini-Modell nutzt, um ihn in einem bestimmten Ton umzuschreiben:
 
-- **Kürzer**: Kürzt den Text auf etwa die Hälfte, behält aber die Bedeutung.
-- **Ruhiger**: Macht den Text ruhiger und beruhigender. Weniger Verkaufsfloskel, mehr Vertrauen.
-- **Schärfer**: Verschärft die Formulierung. Stärkere Verben, kein Zögern.
-- **Freundlicher**: Mildert den Ton, wärmer und zugänglicher.
+- **Korter** (Kürzer): Kürzt den Text auf etwa die Hälfte, behält aber die Bedeutung.
+- **Kalmer** (Ruhiger): Macht den Text ruhiger und beruhigender. Weniger Verkaufsfloskel, mehr Vertrauen.
+- **Scherper** (Schärfer): Verschärft die Formulierung. Stärkere Verben, kein Zögern.
+- **Vriendelijker** (Freundlicher): Mildert den Ton, wärmer und zugänglicher.
 
 Die Umschreibung bleibt immer in derselben Sprache wie das Original (meist Niederländisch). Das Modell schreibt nur um, es erfindet keine neuen Informationen. Der umgeschriebene Text ersetzt Ihren Feldinhalt direkt. Sie können einen anderen Ton-Button klicken, rückgängig machen oder weiter bearbeiten.
 
@@ -242,14 +171,14 @@ Speichern Sie jeden Abschnitt als wiederverwendbaren Block und bauen Sie eine pe
 
 ### Abschnitt als Block speichern
 
-1. Klicken Sie auf das Lesezeichen-Symbol in einer Abschnittszeile im Editor.
-2. Geben Sie dem Block einen Namen (die Abschnittsbezeichnung oder der Typ ist bereits als Vorschlag vorausgefüllt).
+1. Öffnen Sie in der Liste **Blokken** das Menü **Meer acties** (Weitere Aktionen) eines Blocks und wählen Sie **Bewaar als blok** (Als Block speichern).
+2. Geben Sie dem Block einen Namen (die Blockbezeichnung ist bereits als Vorschlag vorausgefüllt).
 3. Der Block wird in Ihrer persönlichen Bibliothek für diesen Workspace gespeichert.
 
 ### Gespeicherten Block einfügen
 
-1. Klicken Sie auf **Abschnitt hinzufügen** auf einer beliebigen Seite.
-2. Ihre gespeicherten Blöcke erscheinen unter **Meine Blöcke** ganz oben im Panel.
+1. Klicken Sie auf einer beliebigen Seite auf **Blok toevoegen**.
+2. Ihre gespeicherten Blöcke erscheinen unter **Mijn blokken** (Meine Blöcke) ganz oben im Panel.
 3. Klicken Sie auf einen gespeicherten Block, um ihn als neuen Abschnitt auf der aktuellen Seite einzufügen.
 
 Das Einfügen eines gespeicherten Blocks kopiert dessen Vorlage in eine neue Abschnittszeile. Das Bearbeiten oder Löschen des eingefügten Abschnitts wirkt sich nicht auf den gespeicherten Block in Ihrer Bibliothek aus und umgekehrt.
@@ -257,21 +186,23 @@ Das Einfügen eines gespeicherten Blocks kopiert dessen Vorlage in eine neue Abs
 ### Ihre Bibliothek verwalten
 
 - **Einen Block löschen** Sie aus der Bibliothek, indem Sie auf das x-Symbol neben dem Block klicken. Dies entfernt nur die gespeicherte Vorlage; bereits eingefügte Abschnitte bleiben erhalten.
-- Der **Meine Blöcke**-Header wird ausgeblendet, wenn Ihre Bibliothek leer ist, sodass ein Erstbenutzer keine leere Kategorie sieht.
+- Der Header **Mijn blokken** wird ausgeblendet, wenn Ihre Bibliothek leer ist, sodass ein Erstbenutzer keine leere Kategorie sieht.
 
 ### Abschnitts-Layoutvarianten
 
-Hero-, Dienstleistungs-, Preis- und Kundenstimmen-Abschnitte unterstützen mehrere Layoutvarianten. Wählen Sie eine aus dem **Stil**-Dropdown im Layout-Tab des Inspektionspanels, um das Erscheinungsbild des Abschnitts zu ändern. Die Standardvariante behält das vertraute Aussehen bei, sodass Abschnitte, die Sie vor dieser Funktion gebaut haben, unverändert bleiben.
+Viele Blöcke unterstützen mehrere Layoutvarianten, darunter die große Kopfzeile, Dienstleistungen, Preise, Kundenstimmen, Team, FAQ, Zahlen und der Aufruf mit Schaltfläche. Wählen Sie eine aus dem **Stil**-Dropdown im Layout-Tab des Inspektionspanels, um das Erscheinungsbild des Abschnitts zu ändern. Die Standardvariante behält das vertraute Aussehen bei, sodass Abschnitte, die Sie vor dieser Funktion gebaut haben, unverändert bleiben.
 
-#### Hero-Varianten
+#### Varianten der großen Kopfzeile
 
 | Variante | Effekt |
 |---|---|
-| **Standard (geteilt rechts)** | Standard. Bild rechts, Text links. Fällt auf zentrierten Text zurück, wenn kein Bild vorhanden ist. |
-| **Geteilt links** | Spiegelung des Standards: Bild links, Text rechts. Erfordert ein Bild. |
-| **Zentriert** | Text zentriert, optionales Bild darunter in einem breiten 16:9-Rahmen. |
-| **Banner** | Bild über die volle Breite als Hintergrund mit Verlauf-Overlay. Weißer Text auf dunkler Tönung, extra hoch für ausreichend Bildraum. Erfordert ein Bild. |
-| **Minimal** | Nur Text in einer schmalen Spalte. Kein Bild. Sauber und ruhig, geeignet für dokumentationsartige Seiten. |
+| **Standaard (foto rechts)** (Standard, Foto rechts) | Standard. Foto rechts, Text links. Fällt auf zentrierten Text zurück, wenn kein Foto vorhanden ist. |
+| **Foto links** | Spiegelung des Standards: Foto links, Text rechts. |
+| **Portret (ronde foto links)** / **Portret (ronde foto rechts)** | Ein rundes Porträtfoto neben dem Text. |
+| **Gecentreerd** (Zentriert) | Text zentriert, optionales Foto darunter. |
+| **Foto als achtergrond** (Foto als Hintergrund) | Foto über die volle Breite als Hintergrund, mit hellem Text darüber. |
+| **Minimaal (alleen tekst)** (Minimal, nur Text) | Nur Text in einer schmalen Spalte. Kein Foto. |
+| **Redactioneel**, **Affiche**, **Omkaderd**, **Groot cijfer** | Typografische Varianten ohne Foto: eine große Überschrift mit Metaspalte, ein Statement zwischen Linien, ein Druckrahmen oder eine große Konturzahl. |
 
 #### Dienstleistungs-Varianten
 
@@ -294,27 +225,27 @@ Hero-, Dienstleistungs-, Preis- und Kundenstimmen-Abschnitte unterstützen mehre
 | Variante | Effekt |
 |---|---|
 | **Standard (Raster)** | Standard. Karten in einem 2- bis 3-spaltigen Raster. Jede Karte zeigt das Zitat, den Namen und die optionale Rolle. |
-| **Spotlight (Einzelzitat)** | Ein einzelnes großes Pull-Quote im Magazin-Stil, zentriert mit Serif-Typografie. Weitere Kundenstimmen erscheinen als kleine Namens-Chips unter dem Hauptzitat. |
+| **Spotlight (één quote)** (Einzelzitat) | Ein einzelnes großes Pull-Quote im Magazin-Stil, zentriert mit Serif-Typografie. Weitere Kundenstimmen erscheinen als kleine Namens-Chips unter dem Hauptzitat. |
 | **Laufband** | Eine horizontal scrollende Zeile mit Zitat-Karten. Hover pausiert die Animation; die Reduced-Motion-Einstellung des Betriebssystems stoppt sie komplett. Die Spur läuft nahtlos mit zwei Kopien des Elementsatzes durch. |
 
-### Spotlight
+### Foto met tekst (Foto mit Text)
 
-Der Spotlight-Block ist eine Zeile mit abwechselndem Bild und Text. Jede Zeile zeigt ein Bild auf der einen Seite und Text auf der anderen: eine Eyebrow, einen Titel, einen Untertitel, Aufzählungspunkte mit Häkchen und einen optionalen Call-to-Action-Link. Im Layout-Panel legen Sie fest, auf welcher Seite das Bild erscheint.
+Der Block **Foto met tekst** ist eine Zeile mit abwechselndem Bild und Text. Jede Zeile zeigt ein Bild auf der einen Seite und Text auf der anderen: eine Eyebrow, einen Titel, einen Untertitel, Aufzählungspunkte mit Häkchen und einen optionalen Call-to-Action-Link. Im Layout-Panel legen Sie fest, auf welcher Seite das Bild erscheint.
 
 Wichtige Hinweise:
 
 - **Bildseite**: Die Layout-Variante steht standardmäßig auf Bild-rechts. Stellen Sie im Layout-Panel auf Bild-links um, um die Zeile zu spiegeln.
 - **Optionale Elemente**: Eyebrow, Untertitel, Aufzählungspunkte, CTA und Bild sind alle optional. Ein Spotlight nur mit Titel und Bild wird trotzdem sauber dargestellt.
-- **Stapeln**: Setzen Sie mehrere Spotlight-Abschnitte untereinander, um das klassische Feature-Listen-Muster der MCD-Landingpage nachzubauen.
-- **Haftendes Bild**: Aktivieren Sie "Bild bleibt beim Scrollen stehen" im Spotlight-Inspector, um das Bild zu fixieren, während der Text daneben scrollt. Nur auf dem Desktop und nur sinnvoll, wenn genug Text neben dem Bild steht. Auf Mobilgeräten wird das Bild normal gestapelt.
+- **Stapeln**: Setzen Sie mehrere Spotlight-Abschnitte untereinander, um eine klassische Liste von Funktionen untereinander aufzubauen.
+- **Haftendes Bild**: Aktivieren Sie **Foto blijft staan als je scrolt** (Foto bleibt beim Scrollen stehen) im Inspektor, um das Bild zu fixieren, während der Text daneben scrollt. Nur auf dem Desktop und nur sinnvoll, wenn genug Text neben dem Bild steht. Auf Mobilgeräten wird das Bild normal gestapelt.
 
 ### Preismodelle mit Kauf-Buttons
 
 Der Preise-Abschnitt zeigt Ihre Pakete oder Pläne. Jede Stufe kann optional einen Kauf-Button erhalten:
 
-- Markieren Sie eine Stufe als **purchasable** und geben Sie den **Betrag in Cent** an (z. B. 4999 für EUR 49,99).
+- Aktivieren Sie bei einer Preisstufe **Met koopknop** (Mit Kauf-Button) und tragen Sie **Prijs bij afrekenen (incl. btw)** (Preis beim Bezahlen, inkl. MwSt.) ein, den Betrag, den der Käufer wirklich zahlt (zum Beispiel 750,00). Halten Sie den Preistext auf der Karte gleich.
 - Ein **Jetzt kaufen**-Button ersetzt den statischen CTA-Link. Besucher, die darauf klicken, werden über den MyCompanyDesk-Checkout zu Mollie oder Stripe Connect zur Zahlung weitergeleitet.
-- Das Kauf-Button-Label ist standardmäßig "Jetzt kaufen", kann aber pro Stufe mit dem **buyLabel**-Feld angepasst werden.
+- Das Kauf-Button-Label ist standardmäßig "Jetzt kaufen", kann aber pro Preisstufe im Feld **Koop-knop tekst** (Text des Kauf-Buttons) angepasst werden.
 - Preisstufen ohne Kauf-Button behalten das bestehende CTA-Link-Verhalten.
 
 Preisabschnitte können auch als Vergleichsmatrix dargestellt werden. Setzen Sie die Layoutvariante im Inspektionspanel auf **Vergleichstabelle**. Die Matrix zeigt jede Stufe als Spalte und alle Funktionen aller Stufen als Zeilen, mit Häkchen dort, wo eine Stufe die Funktion enthält. So sehen Sie auf einen Blick, wie die Tarife zueinander stehen. Siehe [Abschnitts-Layoutvarianten](#abschnitts-layoutvarianten) für alle Optionen.
@@ -333,60 +264,56 @@ Siehe [Verkäufe](/de/features/domains-website-inbox#verkaufe) für die Nachverf
 
 ### Gütesiegel-Block
 
-Der Block **Gütesiegel** zeigt die Zertifikate und Gütesiegel Ihres Unternehmens (STEK, VCA, CE und mehr), genau so, wie Sie sie unter **Einstellungen → Unternehmensdaten** erfassen. Diese Liste verwalten Sie an genau dieser einen Stelle: der Block ist datengebunden, das Inspektionspanel hat keinen Artikeleditor, sondern nur die Darstellung.
+Der Block **Gütesiegel** zeigt die Zertifikate und Gütesiegel Ihres Unternehmens (STEK, VCA, CE und mehr), genau so, wie Sie sie unter **Einstellungen** › **Unternehmensdaten** erfassen. Diese Liste verwalten Sie an genau dieser einen Stelle: der Block ist datengebunden, das Inspektionspanel hat keinen Artikeleditor, sondern nur die Darstellung.
 
 - **Überschrift**: standardmäßig „Certificeringen en keurmerken“. Geben Sie eine eigene Überschrift ein oder lassen Sie das Feld leer für einen Block ohne Überschrift.
 - **Stil**: weiße Kacheln (Standard) oder schlicht. **Größe**: klein, mittel oder groß.
 - Ein Gütesiegel ist auch ohne Bild in Ordnung: Ein Zeichen, das nur aus einem Namen besteht, zeigt auf der Site und in der Textversion Ihrer E-Mails diesen Namen. Das Bild bleibt optional; setzen Sie eines, läuft es durch die übliche Beschnitt- und Umwandlungsroutine.
-- Höchstens sechs Gütesiegel; Reihenfolge, Name und Link legen Sie unter Unternehmensdaten fest. Wenn Sie das erste Gütesiegel hinzufügen, setzt MyCompanyDesk automatisch einen Gütesiegel-Block auf Ihre Startseite, als Entwurf: vor einer abschließenden Aufforderung, wenn diese der letzte Block ist, sonst unten vor der Fußzeile. Es wird nicht sofort veröffentlicht; das Publizieren übernehmen Sie. Gibt es auf Ihrer Website bereits einen Gütesiegel-Abschnitt, kommt kein zweiter dazu.
-- Ist die Liste leer oder ist **Auf Ihrer Website anzeigen** unter Unternehmensdaten aus, versteckt sich der Block auf der veröffentlichten Website. Der Editor weist auch darauf hin, wenn die Gütesiegel für die Website ausgeschaltet sind.
+- Höchstens sechs Gütesiegel; Reihenfolge, Name und Link legen Sie unter **Einstellungen** › **Unternehmensdaten** fest. Wenn Sie das erste Gütesiegel hinzufügen, setzt MyCompanyDesk automatisch einen Gütesiegel-Block auf Ihre Startseite, als Entwurf: vor einer abschließenden Aufforderung, wenn diese der letzte Block ist, sonst unten vor der Fußzeile. Es wird nicht sofort veröffentlicht; das Publizieren übernehmen Sie. Gibt es auf Ihrer Website bereits einen Gütesiegel-Abschnitt, kommt kein zweiter dazu.
+- Ist die Liste leer oder ist **Auf Ihrer Website anzeigen** unter **Einstellungen** › **Unternehmensdaten** aus, versteckt sich der Block auf der veröffentlichten Website. Der Editor weist auch darauf hin, wenn die Gütesiegel für die Website ausgeschaltet sind.
 - Entfernen Sie ein Gütesiegel, bleibt die Datei erhalten und bereits gesendete E-Mail zeigt das Logo weiterhin; der Block versteckt sich erst, wenn die Liste vollständig leer ist.
 
-Quelle: `packages/shared/src/site-blocks/registry.ts#keurmerken`; `apps/api/src/modules/companies/certifications.service.js`.
+### Dienstleistungen und Produkte aus Aanbod
 
-### Katalogabschnitte
+Blöcke mit Dienstleistungen, Produkten oder Abonnements holen ihre Artikel aus Ihrem Aanbod. Eine Beschreibung, die Sie für eine Dienstleistung eintippen, ist ein einziger Text: Der Dienstleistungsblock auf Ihrer Startseite und die Dienstleistungsseite teilen ihn, darum landet eine Korrektur überall auf einmal. Ein Neuaufbau hat nie einen Entwurfstext einer Dienstleistungskarte live gezogen: Bis zur Veröffentlichung zeigen die Karten den Text, den sie schon hatten.
 
-Einige Bespoke-Vorlagen enthalten einen Live-Katalogabschnitt, der Artikel direkt aus Ihrem Aanbod-Katalog lädt. Wenn die aktuelle Seite strukturell über Dienstleistungen, Produkte oder Abonnements wiederholt, zeigt der Inhalts-Editor für jede verwendete Art ein **Katalog**-Panel an. Eine Beschreibung, die Sie für eine Dienstleistung eintippen, ist ein einziger Text: Der Dienstleistungsabschnitt auf Ihrer Startseite und die Dienstleistungsseite teilen ihn, darum landet eine Korrektur überall auf einmal. Ein Neuaufbau hat nie einen Entwurfstext einer Dienstleistungskarte live gezogen: Bis zur Veröffentlichung zeigen die Karten den Text, den sie schon hatten.
-
-Das Panel liegt außerhalb des Vorlagenrahmens, sodass es die Gestaltung der Vorlage selbst nie stört. Hier steuern Sie nur die Präsentation des Katalogs auf dieser Website:
-
-- **Überschrift und Einleitung**: legen Sie den Abschnittstitel und eine kurze Einleitung fest.
-- **Reihenfolge**: ziehen Sie Artikel in die gewünschte Reihenfolge, oder nutzen Sie die Aufwärts- und Abwärts-Buttons. Die natürliche Reihenfolge aus Aanbod gilt für alles, was Sie nicht explizit neu sortieren.
-- **Anzeigen oder ausblenden**: klicken Sie auf das Augen-Symbol, um einen Artikel in Aanbod zu behalten, aber auf dieser Website auszublenden.
-
-Die Artikelinhalte selbst, Titel, Preis, Beschreibung und Bild, sind im Editor schreibgeschützt. Sie stammen aus dem Live-Aanbod und müssen dort bearbeitet werden. Der Preis folgt der im Aanbod hinterlegten Preismodus: ein fester Betrag, "ab" einem Betrag oder "Auf Anfrage", wenn kein Preis hinterlegt ist. Ein Preis von null ist ein echter Preis: Ein bewusst kostenloser Artikel zeigt auf der Site, in der Preisliste, in der Aanbod-Liste und im Buchungsblock „Kostenlos“ statt ohne Preis zu erscheinen; nur Artikel ganz ohne Preis zeigen "Auf Anfrage".
-
-Falls es für diese Katalogart noch keine passenden Artikel gibt, zeigt das Panel einen Leerzustand mit einem Link, um in Aanbod einen Artikel hinzuzufügen.
+Der Preis folgt der im Aanbod hinterlegten Preismodus: ein fester Betrag, "ab" einem Betrag oder "Auf Anfrage", wenn kein Preis hinterlegt ist. Ein Preis von null ist ein echter Preis: Ein bewusst kostenloser Artikel zeigt auf der Site, in der Preisliste, in der Aanbod-Liste und im Buchungsblock „Kostenlos“ statt ohne Preis zu erscheinen; nur Artikel ganz ohne Preis zeigen "Auf Anfrage".
 
 ## Abschnitts-Animationen
 
-Jeder Abschnittsblock hat ein **Animation**-Panel im Inspector. Damit fügen Sie Bewegung hinzu, die beim Erscheinen im Viewport, beim Seitenaufruf oder bei Hover abgespielt wird.
+Jeder Block hat im Inspektor einen Tab **Animatie** (Animation). Damit fügen Sie Bewegung hinzu, die beim Erscheinen des Blocks im Bild, beim Seitenaufruf oder beim Überfahren mit der Maus abgespielt wird.
 
-### Animationstypen
+### Animationsstil
 
-| Typ | Effekt |
+Wählen Sie bei **Animatie-stijl** (Animationsstil), wie der Block erscheint:
+
+| Stil | Effekt |
 |---|---|
-| **Fade up** | Der Abschnitt blendet ein und gleitet 1rem nach oben. |
-| **Fade in** | Der Abschnitt blendet aus Transparenz ein. |
-| **Slide right** | Der Abschnitt blendet ein und gleitet 2rem nach rechts. |
-| **Reveal** | Der Abschnitt wird von rechts nach links durch eine Clip-Maske enthüllt. |
-| **Stagger** | Kindelemente erscheinen nacheinander in 80ms-Schritten, anstatt dass der Abschnitt selbst sich bewegt. |
-| **Wort für Wort** | Nur für Hero-Abschnitte. Die Wörter des Titels erscheinen nacheinander; andere Abschnitte blenden normal ein. |
+| **Geen** (Keine) | Keine Animation, der Block ist sofort da. |
+| **Zacht omhoog** (Sanft nach oben, Standard) | Der Block erscheint und gleitet dabei ein Stück nach oben. |
+| **Zacht in beeld** (Sanft einblenden) | Der Block blendet aus Transparenz ein. |
+| **Schuif van rechts** (Von rechts hereinschieben) | Der Block erscheint und gleitet von der Seite ins Bild. |
+| **Inzoomen** | Der Block wächst leicht auf seine eigene Größe. |
+| **Uitvouwen (horizontaal)** (Ausklappen, horizontal) | Der Block klappt in der Breite auf. |
+| **Na elkaar** (Nacheinander) | Die Teile des Blocks erscheinen kurz nacheinander, anstatt dass sich der Block selbst bewegt. |
+| **Trap (paginakop)** (Treppe, Seitenkopf) | Die Teile des Seitenkopfs erscheinen treppenartig. |
+| **Onthullen** (Enthüllen) | Der Block wird durch eine Maske enthüllt. |
+| **Woord voor woord (titel in de paginakop)** (Wort für Wort, Titel im Seitenkopf) | Nur für die große Kopfzeile. Die Wörter des Titels erscheinen nacheinander; andere Blöcke erscheinen einfach. |
 
-### Auslöser
+### Wann starten
 
-Wie die Animation startet:
-
-- **In-view** (Standard): Die Animation wird ausgelöst, wenn der Abschnitt in den Viewport scrollt. Nutzt die IntersectionObserver des Browsers. Einmal animiert bleibt der Abschnitt sichtbar.
-- **Load**: Die Animation startet sofort beim Laden der Seite.
-- **Hover**: Die Animation startet bei mouseenter und kehrt bei mouseleave zurück.
+- **Bij in beeld komen** (Beim Erscheinen im Bild, Standard): Die Animation wird abgespielt, wenn der Block ins Bild scrollt. Einmal animiert bleibt der Block sichtbar.
+- **Direct bij laden** (Direkt beim Laden): Die Animation startet, sobald die Seite geladen ist.
+- **Bij aanwijzen** (Beim Überfahren): Die Animation startet, wenn die Maus auf den Block kommt, und kehrt zurück, wenn die Maus weggeht.
 
 ### Einstellungen
 
-- **Duration**: Dauer der Animation in Millisekunden, Standard: 700ms.
-- **Delay**: Wartezeit vor Animationsstart in Millisekunden, Standard: 0ms.
-- **Easing**: Die Beschleunigungskurve. Auswahl: **ease-out** (Standard), **linear** und **spring**.
-- **Stagger children**: Wenn aktiviert, bleibt der Abschnitt selbst in Ruhe und seine direkten Kindelemente animieren nacheinander. Diese Option funktioniert zusätzlich zu jedem Animationstyp (fade-up + stagger children, fade-in + stagger children, etc.). Die Abschnittsanimation wird unterdrückt, sodass nur die Kinder die Bewegung tragen.
+- **Snelheid** (Geschwindigkeit): Wie lange die Animation dauert, von 200 bis 1600 Millisekunden. Standard 600 ms.
+- **Vertraging** (Verzögerung): Wartezeit vor dem Animationsstart, von 0 bis 1200 Millisekunden. Standard 0 ms.
+- **Soort beweging** (Art der Bewegung): Die Beschleunigungskurve. Auswahl: "Soepel" (Standard), "Vloeiend", **Gelijkmatig** und **Lineair**.
+- **Onderdelen na elkaar** (Teile nacheinander): Nur bei Blöcken mit mehreren Elementen. Die Elemente des Blocks erscheinen kurz nacheinander statt gleichzeitig.
+
+Wie Blöcke site-weit erscheinen, wählen Sie unter **Hele site** › **Animatie**: **Geen**, **Subtiel**, **Zacht**, **Zijwaarts**, **Onthullen** oder **Speels**.
 
 ### Bewegungsreduktion
 
@@ -414,27 +341,24 @@ Jeder Abschnittsblock hat eine **Unterkante-Trenner**-Einstellung im Stil-Panel 
 
 ## Ihre Site gestalten
 
-Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
+Unter **Hele site** im Editor steuern Sie das Erscheinungsbild Ihrer gesamten Site. Jeder Teil hat in der Leiste eine eigene Schaltfläche:
 
-- **Presets**: Ein-Klick-Startpunkte, die Farben, Schriften und Abstände auf einmal setzen. Acht Presets sind verfügbar: **Editorial** (Navy und Gold, Serif-Überschriften), **Studio** (warmes Cremeweiß mit Terrakotta), **Tech** (klares Slate mit Elektroblau), **Atelier** (Knochenweiß mit Tiefgrün), **Bold** (kontrastreiches Schwarz mit kräftigem Akzent), **Calm** (Salbeigrün und sanftes Weiß), **Mono** (architektonischer Minimalismus, keine Akzentfarbe) und **Vivid** (Kobalt und Koralle auf kühlem Weiß). Beim Anwenden eines Presets werden die Tokens mit Ihrem Workspace zusammengeführt, wobei Logo, benutzerdefiniertes CSS und Head-Snippets erhalten bleiben.
-- **Farben**: Sechs Farbtokens unter schlichten Namen: **Hoofdkleur** (Hauptfarbe), **Tweede kleur** (zweite Farbe), **Pagina-achtergrond** (die Seite hinter allem), **Blokken en kaarten** (Blöcke und Karten), **Tekst** (Text) und **Kleine tekst** (kleiner Text). Die Palette wird über CSS Custom Properties angewendet.
-- **Dunkelmodus**: Legen Sie fest, wie Ihre Site mit dunkler Darstellung umgeht. Vier Optionen: **Uit** (aus: kein Dunkelmodus, die Site bleibt im hellen Farbschema), **Altijd donker** („immer dunkel“, Ihre gesamte Site ist für jeden Besucher dunkel, egal was dessen Gerät eingestellt hat), **Knop in menubalk** („Knopf in der Menüleiste“, Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste und können das Thema wechseln, ihre Wahl wird lokal gespeichert) und **Volgt het toestel** („Folgt dem Gerät“, die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers über einen Live-Media-Query-Listener). Schalten Sie „Altijd donker“ oder „Knop in menubalk“ ein, legt die Site selbst eine lesbare Nachtpalette an: nachtoptimierte Varianten jeder Farbe, und eine Haupt- oder zweite Farbe, die auf der dunklen Seite verschwände (Schwarz, Navy), bekommt automatisch eine aufhellte Nachtversion. Eine Nachtfarbe, die Sie selbst gesetzt haben, bleibt unangetastet, und ändern Sie später Ihre helle Haupt- oder zweite Farbe, geht die Nachtversion davon mit. Der Stil-Tab trägt zudem eine Karte, die direkt zu den dunklen Designs in der Galerie springt; und wählen Sie, während Ihre Site immer dunkel läuft, ein Site-Paket, fragt die Site zuerst, denn das Paket schaltet „Altijd donker“ aus, damit das Ergebnis so aussieht wie in der Vorschau.
-- **Typografie**: Wählen Sie Überschrift-, Text- und Mono-Schriften aus der integrierten Schriftbibliothek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
-- **Selbst gehostete Schriften**: Alle Schriften werden von MyCompanyDesk selbst ausgeliefert, nicht von Google Fonts oder einem anderen Drittanbieter-CDN. Dieselben Schriftdateien werden in der Editor-Vorschau und auf Ihrer veröffentlichten Site verwendet, sodass die Schrift überall gleich aussieht und die IP-Adressen Ihrer Besucher in Ihrer eigenen Domain bleiben.
-- **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite, vertikalen Abschnittsabstand, die Textgröße für den Text, den Ihre Besucher lesen (**Normal**, **Groß** oder **Extra**), und Kartenstil fest. Der Kartenstil steuert, wie Inhaltskarten über die Abschnitte hinweg gerendert werden: **Flach** (kein Rand), **Umrandet** (Standard, dünne Linie), **Schattiert** (weicher Schatten), **Schwebend** (starker Schatten), **Brut** (harte Linie mit versetztem Schatten), **Linie** (nur Kontur, keine Füllung) oder **Glas** (durchscheinende, mattierte Karte mit Hintergrund-Blur). Glas wirkt am besten über einem Foto, Farbverlauf oder dekorativen Streifen; auf einfachem Hintergrund fällt es auf eine sanft getönte Karte zurück.
-- **Bewegung**: Aktivieren Sie reduzierte Bewegung oder wählen Sie einen Bewegungsstil (Aus, Dezente Überblendung, Hereingleiten).
-- **Schaltflächen**: Passen Sie Schaltflächenradius, Innenabstand und Hover-Effekte an.
-- **Navigationsleiste**: Legen Sie das Layout (Standard, zentriert, geteilt), den Hintergrundstil (durchgehend, transparent mit Blur, vollständig transparent) und das Aussehen der CTA-Schaltfläche (ausgefüllt, Umrandung, nur Text) fest. Die Navigationsleisteneinstellungen gelten für jede Seite.
-- **Telefon & Anrufleiste**: Fügen Sie eine anklickbare Telefonnummer zu Ihrer Navigationsleiste hinzu. Die Nummer erscheint neben der CTA-Schaltfläche auf dem Desktop und in der mobilen Navigationsleiste. Aktivieren Sie den **Mobile Anrufleiste**-Schalter, um eine feste Schaltfläche "Zum Anrufen tippen" am unteren Bildschirmrand auf mobilen Geräten anzuzeigen, damit Besucher Sie mit einem Fingertipp erreichen können, egal wo sie sich auf der Seite befinden. Das Telefonlabel lautet standardmäßig "Jetzt anrufen", wenn es leer gelassen wird. Die Anrufleiste kann neben dem Anrufknopf auch WhatsApp zeigen: Sie übernimmt die WhatsApp-Nummer, die der Rest Ihrer Site schon trägt, eine WhatsApp-Schaltfläche (Hero oder Abschlussblock), ein Kontaktblock mit WhatsApp oder der schwebende Kontaktknopf, und eine eigene Nummer in der Navigationsleiste selbst gewinnt. Auf dem Desktop bleibt WhatsApp über den schwebenden Kontaktknopf erreichbar; auf dem Handy lässt der Knopf WhatsApp weg, sobald die Leiste es zeigt, damit WhatsApp nie doppelt auf einem Bildschirm steht.
-- **Benutzerdefiniertes CSS**: Schreiben Sie Ihr eigenes CSS, das in die Site eingebunden wird. Nützlich für Feinanpassungen oder zum Überschreiben von Standardwerten. Es sitzt unten im Stil-Tab, unter einem Streifen mit dem Titel **Voor gevorderden** (für Fortgeschrittene), der eine kurze Erklärung mitbringt.
-- **Favicon**: Laden Sie ein Favicon für Ihre Site hoch. Es erscheint in Browser-Tabs und Lesezeichen. Wenn Sie kein Favicon festlegen, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild.
-- **Head-Snippets**: Fügen Sie Analytics-Skripte (Plausible, Umami, Matomo) oder Schrift-Preconnects über die Snippet-Auswahl hinzu.
+- **Kleuren** (Farben): Oben wählen Sie die Textgröße für Ihre Besucher (**Normal**, **Groß** oder **Extra groß**). Darunter stehen die **Kleurthema's** (Farbthemen): fertige Farbschemata (unter anderem Editorial, Studio, Tech, Atelier, Bold, Calm, Mono und Vivid), die Sie mit einem Klick anwenden. Ihre Schriften, Blockstile, Texte, Fotos, Logo und Schaltflächen bleiben dabei erhalten; wählen Sie **Ook letters en vormen overnemen** (Auch Schriften und Formen übernehmen), wenn Sie auch die Schriften und Formen des Themas wollen. Danach stellen Sie sechs Farben einzeln ein, unter schlichten Namen: **Hoofdkleur** (Hauptfarbe), **Tweede kleur** (zweite Farbe), **Pagina-achtergrond** (die Seite hinter allem), **Blokken en kaarten** (Blöcke und Karten), **Tekst** (Text) und **Kleine tekst** (kleiner Text). Eine Lesbarkeitsprüfung warnt, wenn eine Kombination zu wenig Kontrast hat.
+- **Donkere kleuren** (Dunkle Farben, unten bei Kleuren): Vier Optionen: **Uit** (aus: die Site bleibt hell), **Altijd donker** („immer dunkel“, Ihre gesamte Site ist für jeden Besucher dunkel), **Knop in menubalk** („Knopf in der Menüleiste“, Besucher sehen einen Sonne/Mond-Umschalter in der Menüleiste und können wechseln) und **Volgt het toestel** („Folgt dem Gerät“, die Site folgt der Einstellung des Geräts des Besuchers). Ist eine dunkle Version aktiv, wählen Sie ein fertiges dunkles Set oder stellen die dunklen Farben selbst ein; ein leeres Feld bekommt dieselbe Farbe wie bei Hell, und eine Haupt- oder zweite Farbe, die auf der dunklen Seite verschwände (Schwarz, Navy), bekommt automatisch eine aufgehellte Nachtversion. Oben bei Kleuren steht außerdem **Liever een donkere site?** (Lieber eine dunkle Site?), mit **Bekijk donkere ontwerpen** (springt zu den dunklen Designs in der Galerie) und **Maak mijn site donker** (Meine Site dunkel machen). Wählen Sie, während Ihre Site auf Altijd donker steht, ein Site-Paket, fragt die Site zuerst nach Bestätigung, denn das Paket schaltet Altijd donker aus, damit das Ergebnis so aussieht wie in der Vorschau.
+- **Merk** (Marke): Ihr Logo für einen hellen und (optional) einen dunklen Hintergrund, Ihr Favicon und die Schaltfläche **Erneut einrichten** für den Assistenten. Wenn Sie kein Favicon festlegen, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild.
+- **Letters** (Schriften): Wählen Sie Überschrift- und Textschriften aus der integrierten Schriftbibliothek (unter anderem Inter, Geist, DM Sans, Fraunces, Lora, Space Grotesk und DM Serif Display) oder eine fertige Schriftkombination. Alle Schriften werden von MyCompanyDesk selbst ausgeliefert, nicht von Google Fonts oder einem anderen Drittanbieter-CDN. Dieselben Schriftdateien werden im Editor und auf Ihrer veröffentlichten Site verwendet, sodass die Schrift überall gleich aussieht und die IP-Adressen Ihrer Besucher nicht an Dritte gehen.
+- **Knoppen** (Schaltflächen): Eckenradius, der Standard-Schaltflächenstil, der Stil der Aufzählungszeichen, der Überschriftenstil (Größe, Großbuchstaben, Buchstabenabstand und Stärke der Überschriften), Farbverlauf auf Schaltflächen und der Kartenstil. Der Kartenstil steuert, wie Karten für Dienstleistungen, Bewertungen und Preise aussehen: **Vlak (geen rand)** (flach, kein Rand), **Met rand** (umrandet, Standard), **Met schaduw** (mit Schatten), **Zwevend (sterke schaduw)** (schwebend, starker Schatten), **Brut (harde rand, blokschaduw)** (harte Linie, Blockschatten), **Lijn (alleen contour)** (nur Kontur) oder **Glas (mooist op een foto)** (am schönsten auf einem Foto). Glas wirkt am besten über einem Foto, Farbverlauf oder dekorativen Streifen; auf einfachem Hintergrund fällt es auf eine sanft getönte Karte zurück.
+- **Menubalk** (Menüleiste): Layout, Form und Hintergrund der Menüleiste, der Schaltflächenstil darin, die Logogröße, die Menülinks und ihr Effekt, und ob die Menüleiste beim Hinunterscrollen verschwindet. Hier steht auch der Inhalt der Menüleiste (Logo oder Markenname, die Schaltfläche oben rechts, Telefonnummer und WhatsApp-Nummer); siehe [Navigation](#navigation).
+- **Ruimte** (Abstände): Dichte (**Compact**, **Ruim**, **Royaal**), maximale Seitenbreite, Abstand über und unter Blöcken, Farbwechsel zwischen Blöcken, Struktur im Hintergrund und der Farbton Ihrer Fotos.
+- **Animatie** (Animation): Wie Blöcke site-weit erscheinen, während Besucher scrollen (**Geen**, **Subtiel**, **Zacht**, **Zijwaarts**, **Onthullen** oder **Speels**), und **Minder beweging voor wie dat instelt** (Weniger Bewegung für alle, die das einstellen) für Besucher, die in ihrem System weniger Animationen verlangen.
+- **Elementen** (Elemente): Teile, die auf jeder Seite erscheinen: die **Leesbalk** (Lesebalken: ein schmaler Fortschrittsbalken oben oder unten, während Besucher scrollen), eine **Aankondigingsbalk** (Ankündigungsleiste), die **Zwevende contactknop** (schwebender Kontaktknopf: WhatsApp, Telefon oder E-Mail) und eine **Cookiemelding** (Cookie-Hinweis).
+- **Eigen CSS** (eigenes CSS): Schreiben Sie Ihr eigenes CSS, das in die Site eingebunden wird. Nützlich für Feinanpassungen oder zum Überschreiben von Standardwerten. Diese Schaltfläche steht unten in der Leiste, getrennt vom Rest, weil ein Fehler darin die ganze Site trifft. Hier stehen auch die **Analytics-snippets** (Plausible Analytics und ein Preconnect für Schriften); andere Messdienste wie Umami, Matomo oder Google Analytics verbinden Sie im Tab **Verknüpfungen** von Website.
 
 ### Logo-Import
 
-Wenn Sie bereits ein Logo auf Ihrer Website haben, können Sie es direkt in MyCompanyDesk importieren. Im **Stil**-Tab finden Sie die Logo-Import-Option: geben Sie die URL der Seite ein, auf der sich Ihr Logo befindet. MyCompanyDesk ruft die Seite ab, extrahiert das bestmögliche Logo und erstellt sowohl eine helle als auch eine dunkle Version für Ihre Site. Nach dem Import können Sie die beiden Versionen weiterhin einzeln in den Stil-Einstellungen ersetzen oder anpassen.
+Wenn Sie bereits ein Logo auf Ihrer Website haben, können Sie es direkt in MyCompanyDesk importieren. Unter **Hele site** › **Merk** finden Sie **Heb je al een website? Haal je logo daarvandaan** (Haben Sie schon eine Website? Holen Sie Ihr Logo von dort): geben Sie die URL der Seite ein, auf der sich Ihr Logo befindet. MyCompanyDesk ruft die Seite ab, extrahiert das bestmögliche Logo und erstellt sowohl eine helle als auch eine dunkle Version für Ihre Site. Nach dem Import können Sie die beiden Versionen weiterhin einzeln ersetzen.
 
-Änderungen im Stil-Tab werden automatisch gespeichert und gelten für alle Seiten.
+Änderungen unter **Hele site** werden automatisch gespeichert und gelten für alle Seiten.
 
 ## Veröffentlichen
 
@@ -445,7 +369,7 @@ Bis Sie veröffentlichen, sendet Ihre öffentliche URL ein `noindex`-Robots-Tag.
 Wenn Sie bereit sind:
 
 1. Klicken Sie in der oberen Leiste auf **Veröffentlichen**.
-2. Ihre Site wird unter der öffentlichen URL veröffentlicht (Ihre eigene Domain, Workspace-Subdomain oder die Fallback-Portalroute).
+2. Ihre Site wird unter der öffentlichen URL veröffentlicht (Ihre eigene Domain, Ihre Adresse auf `mycompanydesk.site` oder die Fallback-Adresse in der App).
 
 Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist. Das Umschalten einer Seite zwischen Live und Entwurf wird sofort gespeichert und zählt als unveröffentlichte Änderung, sodass die Veröffentlichen-Schaltfläche beim Umschalten aufleuchtet.
 
@@ -462,13 +386,13 @@ Nur zur Information: Hat der Site-Builder Beispielfotos (Stockfotos) stehen lass
 
 Bleibt nur Information übrig, wechselt der Dialog in den neutralen Stand „Bereit zum Veröffentlichen“ und fragt nur noch nach Bestätigung.
 
-Die erste Veröffentlichung endet mit dem Moment „Ihre Website ist online“: **Ihre Site ansehen** und **Ihren Link teilen**, mit einem Kopierknopf für die Adresse, die Sie an Kunden weitergeben.
+Die erste Veröffentlichung endet mit "Deine Website ist online": **Website ansehen** und **Link teilen**, mit einem Kopierknopf für die Adresse, die Sie an Kunden weitergeben.
 
 Ein schneller Doppelklick kann nicht versehentlich veröffentlichen: Die Bestätigen-Schaltfläche in der Veröffentlichungswarnung ignoriert Klicks für einen Moment nach dem Öffnen, und ein zweiter Klick direkt nach dem ersten kann weder eine doppelte Veröffentlichung auslösen noch die Warnung überspringen.
 
 ## Navigation
 
-Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordnen und das Erscheinungsbild der Navigationsleiste auf Ihrer gesamten Site zu steuern:
+Der Navigations-Editor (**Hele site** › **Navigatie**) ermöglicht es Ihnen, die Menüpunkte Ihrer Site zu ordnen:
 
 - Ziehen Sie Seiten, um die Navigation neu anzuordnen.
 - Erstellen Sie Dropdown-Gruppen, um Seiten unter einem übergeordneten Label zu verschachteln.
@@ -476,21 +400,20 @@ Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordn
 - Das Logo im Header ist anklickbar und führt immer zurück zur Startseite.
 - Die Startseite steht immer an erster Stelle und ist gesperrt.
 
-Über dem Hauptmenü bietet ein **Navbar**-Panel direkten Zugriff auf die Header-Styling-Einstellungen, die zuvor nur im Stil-Tab verfügbar waren. Sie können Folgendes einstellen:
+Den Inhalt der Menüleiste selbst stellen Sie unter **Hele site** › **Menubalk** ein:
 
-- **Markenname**: Text, der im Header angezeigt wird, wenn kein Logo-Bild hochgeladen ist (leer lassen, um das Logo aus dem Branding zu verwenden).
-- **CTA-Button**: Die Beschriftung und der Ziellink für den Call-to-Action-Button oben rechts. Beide Felder müssen ausgefüllt sein, damit der Button erscheint.
-- **Telefonnummer**: Ein klickbarer `tel:`-Link, der neben dem CTA-Button auf dem Desktop und in der mobilen Navigationsschublade erscheint. Leer lassen, um die Anruftaste auszublenden.
-- **Anruf-Label**: Der Text neben dem Telefonsymbol auf mobilen Geräten (standardmäßig "Jetzt anrufen", wenn leer gelassen).
-- **Mobile Anruf-Leiste**: Wenn aktiviert, bleibt eine feste Anruftaste unten auf dem Bildschirm auf mobilen Geräten.
-- **Sticky-Navbar**: Wenn aktiviert (standardmäßig an), bleibt die Navigationsleiste beim Scrollen sichtbar.
-- **Lesefortschrittsbalken**: Zeigt einen schmalen Fortschrittsbalken oben auf jeder Seite an, während Besucher scrollen. Die Balkenfarbe entspricht Ihrer Markenfarbe und lässt sich im Stil-Tab ein- oder ausschalten.
+- **Logo** und **Merknaam** (Markenname): Wählen Sie, was die Menüleiste zeigt (**Automatisch**, **Alleen merknaam** oder **Logo + merknaam**). Automatisch zeigt Ihr Logo, sobald Sie eines hochladen, und sonst Ihren Markennamen.
+- **Knop** (Schaltfläche): Der Text und das Ziel der Schaltfläche rechts in der Menüleiste, und der **Knopstijl** (Schaltflächenstil). Text und Ziel müssen ausgefüllt sein, damit die Schaltfläche erscheint.
+- **Telefoonnummer (tel: link)**: Eine anklickbare Telefonnummer neben der Schaltfläche auf dem Desktop und im mobilen Menü. Leer lassen, um sie auszublenden.
+- **Bel-label (mobiel)** (Anruf-Label, mobil): Der Text neben dem Telefonsymbol auf dem Handy (standardmäßig "Bel direct", wenn leer gelassen).
+- **Belknop onderaan op mobiel** (Anrufknopf unten auf dem Handy): Eine feste Anruftaste unten auf dem Bildschirm auf mobilen Geräten, damit Besucher Sie mit einem Fingertipp anrufen, egal wo sie sich auf der Seite befinden. Die Anrufleiste kann neben dem Anrufknopf auch WhatsApp zeigen: Sie übernimmt die WhatsApp-Nummer, die der Rest Ihrer Site schon trägt (eine WhatsApp-Schaltfläche, ein Kontaktblock mit WhatsApp oder der schwebende Kontaktknopf), und eine **WhatsApp-nummer**, die Sie hier selbst eintragen, gewinnt. Auf dem Handy lässt der schwebende Kontaktknopf WhatsApp weg, sobald die Leiste es zeigt, damit WhatsApp nie doppelt auf einem Bildschirm steht.
+- **Menubalk blijft in beeld bij scrollen** (Menüleiste bleibt beim Scrollen im Bild): Standardmäßig an. Die Menüleiste bleibt sichtbar, während der Besucher nach unten scrollt.
 
-Diese Einstellungen gelten für jede Seite Ihrer Site, genau wie im Stil-Tab. Änderungen werden automatisch mit einer kurzen Verzögerung nach dem Ende der Eingabe gespeichert. Für das visuelle Layout, den Hintergrundstil und die Button-Darstellung siehe den [Stil-Tab](#styling-ihrer-site).
+Diese Einstellungen gelten für jede Seite Ihrer Site und werden automatisch gespeichert. Die Gestaltung der Menüleiste (Layout, Hintergrund, Schaltflächenstil) steht an derselben Stelle, siehe [Ihre Site gestalten](#ihre-site-gestalten).
 
 ## Footer-Links
 
-Die Footer-Bearbeitung befindet sich im Tab **Footer** des Navigations-Editors. Sie setzt den unteren Bereich jeder veröffentlichten Seite aus zwei Quellen zusammen: automatischen Blöcken, die aus Ihren Seiten und Unternehmensdaten generiert werden, und manuellen Linkspalten, die Sie selbst hinzufügen.
+Die Footer-Bearbeitung finden Sie unter **Hele site** › **Footer**. Sie setzt den unteren Bereich jeder veröffentlichten Seite aus zwei Quellen zusammen: automatischen Blöcken, die aus Ihren Seiten und Unternehmensdaten generiert werden, und manuellen Linkspalten, die Sie selbst hinzufügen.
 
 ### Automatische Footer-Blöcke
 
@@ -530,43 +453,41 @@ So verwenden Sie sie:
 - Tokens werden nach dem Veröffentlichungs-Snapshot aufgelöst, sodass spätere Änderungen an Ihren Unternehmensdaten direkt auf der Live-Site erscheinen, ohne erneut zu veröffentlichen.
 - Rechtliche Seiten, die von der Plattform erzeugt werden, verwenden diese Tokens automatisch. Das Bearbeiten des umgebenden Texts bricht die Verknüpfung nicht.
 
-Quelle: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
-
 ## Öffentliche URL
 
 Ihre Website wird unter der am besten geeigneten URL bereitgestellt:
 
-1. Ihre eigene Domain (z. B. `https://acme.de`), wenn verifiziert und aktiviert
-2. Ihre Workspace-Subdomain (z. B. `https://acme.mycompanydesk.com`)
-3. Die Fallback-Portalroute (`/portal/{slug}`)
+1. Ihre eigene Domain (z. B. `https://acme.de`), wenn verifiziert und aktiviert (Office)
+2. Ihre kostenlose Adresse auf `mycompanydesk.site` (z. B. `https://acme.mycompanydesk.site`), die bei Ihrer ersten Veröffentlichung aus Ihrem Firmennamen erstellt wird
+3. Die Fallback-Adresse in der App (`/sites/{slug}`), solange es noch keine kostenlose Adresse gibt
 
 Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für Domain-Einrichtung und -Verifizierung.
 
 ## Kontaktformular
 
-Der Kontaktformular-Block (`form` Abschnittstyp) verfügt über einen aktiven Submit-Handler. Wenn ein Besucher die von Ihnen konfigurierten Felder ausfüllt (Name, E-Mail, Telefon, Unternehmen, Nachricht) und auf Senden klickt, erstellt die Plattform eine Anfrage und benachrichtigt Ihren Workspace. Das Formular zeigt nach Abschluss ein Erfolgsbanner und bei Fehlern eine Inline-Fehlermeldung an. Alle Eingabefelder werden während des Sendens deaktiviert, um Doppelabsendungen zu vermeiden.
+Der Kontaktformular-Block verfügt über einen aktiven Submit-Handler. Wenn ein Besucher die von Ihnen konfigurierten Felder ausfüllt (Name, E-Mail, Telefon, Unternehmen, Nachricht) und auf Senden klickt, erstellt die Plattform eine Anfrage und benachrichtigt Ihren Workspace. Das Formular zeigt nach Abschluss ein Erfolgsbanner und bei Fehlern eine Inline-Fehlermeldung an. Alle Eingabefelder werden während des Sendens deaktiviert, um Doppelabsendungen zu vermeiden.
 
-Im Inspektor wählen Sie die **Art der Anfrage** des Blocks: **Angebot** (eine Anfrage nach Arbeit), **Nachricht** (eine einfache Frage oder eine Vorstellung), **Termin** (eine Anfrage nach einem Moment in Ihrem Kalender), oder **Zurückrufen** (Name und Telefon, keine E-Mail nötig). Die leere Wahl folgt der unternehmensweiten Einstellung, die Sie unter **Website > Verbindungen** legen. Die Art entscheidet, wie Einreichungen in Ihrem Posteingang, in Benachrichtigungen und in Mails heißen, und jede Art bekommt ihren eigenen Reiter unter **Angebote > Anfragen**. Ein Rückrufformular tauscht das Pflichtfeld E-Mail gegen ein Pflichtfeld Telefon.
+Im Inspektor wählen Sie bei **Wat vraagt de klant?** (Was fragt der Kunde?) die Art der Anfrage des Blocks: **Offerte** (Angebot: eine Anfrage nach Arbeit), **Bericht** (Nachricht: eine einfache Frage oder eine Vorstellung), **Afspraak** (Termin: eine Anfrage nach einem Moment in Ihrem Kalender), oder "Terugbelverzoek" (Rückrufbitte: Name und Telefon, keine E-Mail nötig). **Volg je bedrijfsinstelling** (Unternehmenseinstellung folgen) folgt der unternehmensweiten Einstellung, die Sie unter **Website › Verknüpfungen** legen. Die Art entscheidet, wie Einreichungen in Ihrem Posteingang, in Benachrichtigungen und in Mails heißen. Die unternehmensweite Einstellung bestimmt auch, wie der Reiter mit Anfragen unter **Angebote** heißt, zum Beispiel **Angebotsanfragen** oder **Rückrufbitten**. Ein Rückrufformular tauscht das Pflichtfeld E-Mail gegen ein Pflichtfeld Telefon.
 
-Auf Angebots- und Nachrichtenformularen lässt **Besucher können Fotos mitschicken** einen Besucher bis zu 3 Fotos (je 10 MB, JPEG, PNG oder WebP) zur Anfrage geben. Siehe [Angebotsanfragen](/de/features/quotes#angebotsanfragen), was auf Ihrer Seite ankommt.
+Auf Angebots- und Nachrichtenformularen lässt "Bezoekers kunnen foto's meesturen" (Besucher können Fotos mitschicken) einen Besucher bis zu 3 Fotos (je 10 MB, JPEG, PNG oder WebP) zur Anfrage geben. Siehe [Angebotsanfragen](/de/features/quotes#angebotsanfragen), was auf Ihrer Seite ankommt.
 
 Was beim Absenden passiert:
 
-1. Es werden nur die Felder gesendet, die der Block tatsächlich rendert. Wird das Namensfeld ausgeblendet, bricht das Backend nicht ab.
+1. Es werden nur die Felder gesendet, die der Block tatsächlich rendert. Ein ausgeblendetes Namensfeld führt also zu keinem Fehler.
 2. Die Plattform erstellt eine Anfrage (Art mit der Einreichung mitgestempelt) unter dem Unternehmen, das mit dem Site-Slug verknüpft ist.
-3. Sie erhalten eine Workspace-Benachrichtigung (derselbe Pfad wie die alte `/portal/quote-request` Route).
-4. Die Anfrage erscheint unter **Angebote > Anfragen**.
+3. Sie erhalten eine Workspace-Benachrichtigung.
+4. Die Anfrage erscheint unter **Angebote**, im Reiter mit Ihren Anfragen.
 5. Der Besucher sieht eine anpassbare Erfolgsmeldung.
 
 Kontaktformular-Einreichungen werden nur akzeptiert, wenn die Site veröffentlicht ist: Einreichungen an einen Entwurf oder einen unveröffentlichten Workspace werden abgelehnt. Sie sind auf 5 pro Minute pro IP-Adresse begrenzt und zusätzlich durch ein pro Unternehmen geltendes Missbrauchslimit abgesichert, sodass ein einzelner aktiver Besucher Ihr Benachrichtigungsbudget nicht ausschöpfen kann. Ein Cloudflare-Turnstile-Widget erscheint vor dem Absenden, wenn es in Ihrem Workspace konfiguriert ist, und blockiert automatisierte Bot-Einreichungen, ohne echte Besucher zu verlangsamen.
 
 ## Newsletter-Anmeldung
 
-Der Newsletter-Block (`newsletter` Abschnittstyp) erfasst E-Mail-Anmeldungen von Ihrer veröffentlichten Website. Das Backend verwendet einen Double-Opt-in-Ablauf: Nach dem Absenden erhält der Besucher eine Bestätigungs-E-Mail und muss auf den Link klicken, um das Abonnement zu aktivieren. Unterdrückte Adressen und bereits aktive Abonnenten werden aus Sicht des Formulars genauso behandelt wie neue Anmeldungen (keine Datenlecks).
+Der Newsletter-Block erfasst E-Mail-Anmeldungen von Ihrer veröffentlichten Website. Die Anmeldung läuft per Double-Opt-in: Nach dem Absenden erhält der Besucher eine Bestätigungs-E-Mail und muss auf den Link klicken, um das Abonnement zu aktivieren. Unterdrückte Adressen und bereits aktive Abonnenten werden aus Sicht des Formulars genauso behandelt wie neue Anmeldungen (keine Datenlecks).
 
 Was beim Absenden passiert:
 
-1. Die Plattform speichert das Abonnement mit `source: "site_form"`.
+1. Die Plattform speichert die Anmeldung, mit Ihrer Website als Quelle.
 2. Wenn die Adresse nicht bereits aktiv und nicht unterdrückt ist, wird eine Double-Opt-in-E-Mail versendet.
 3. Der Besucher sieht in jedem Fall ein Erfolgsbanner, sodass der Abonnementstatus privat bleibt.
 4. Nach der Bestätigung erscheint der Abonnent in der Newsletter-Zielgruppe dieses Workspaces.
@@ -594,17 +515,15 @@ Siehe [Angebote - Angebotsanfragen](/de/features/quotes#angebotsanfragen) für D
 Die öffentliche Website (Unternehmensseite und Website-Builder) ist in jedem Tarif verfügbar und bleibt online. Das MyCompanyDesk-Badge ist adressbasiert: es erscheint auf der Workspace-Subdomain und entfällt auf einer eigenen Domain (Office).
 
 - **Desk**: Die Website ist unter Ihrer Adresse auf `mycompanydesk.site` sichtbar, mit einem kleinen MyCompanyDesk-Badge.
-- **Office**: Die Website ist immer sichtbar; auf einer eigenen Domain gibt es kein Badge. Eine eigene Domain verbinden und zwischen Domains wechseln ist nur mit Office möglich.
-- **Stilvorlagen**: Die Stilvorlagen im Tab „Stil“ gibt es in jedem Tarif.
+- **Office**: Die Website ist immer sichtbar; auf einer eigenen Domain gibt es kein Badge. Eine eigene Domain verbinden ist nur mit Office möglich (höchstens 5 eigene Domains).
+- **Design und Stil**: Die Pakete, Farbthemen und alle Stileinstellungen gibt es in jedem Tarif.
 - **Ungewisser Zustand**: Wenn das System nicht feststellen kann, welchen Tarif Sie haben, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden.
 
 Diese Sperre gilt für alle öffentlichen Pfade: die Unternehmensseite, die Service-Detail-Route und die Seiten des Website-Builders. Die Prüfung erfolgt bei jeder Anfrage, vor jeder Caching-Schicht, damit sie auch dann korrekt ist, wenn sich Ihr Abonnement während einer Cache-Periode ändert.
-
-Quelle: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`; `renderer.service.js` legt die Badge-Regel auf Basis der Adresse fest.
 
 ## Verwandt
 
 - [Domains, Website und Posteingang](/de/features/domains-website-inbox): Eigene Domain einrichten, Verifizierung, SSL und E-Mail-Posteingang.
 - [Unternehmenseinstellungen](/de/settings/company): Wo Ihre Unternehmensdaten, Ihr Branding und Ihre Adresse hinterlegt sind.
 - [Angebote](/de/features/quotes): Verwalten von Angebotsanfragen, die über Ihre Website eingehen.
-- [Abrechnung & Tarife](/de/settings/billing): Tarifmodelle und Feature-Flags.
+- [Abonnement & Zahlungen](/de/settings/billing): Was in Desk und Office enthalten ist.

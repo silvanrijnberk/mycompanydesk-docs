@@ -1,7 +1,7 @@
 ---
 title: "Betaalmethoden"
 description: "Om betaalmethoden op documenten te beheren: ga naar Instellingen en open Betalen."
-last_verified: 2026-10-01
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "payment methods"
@@ -35,8 +35,8 @@ De ingeschakelde methoden verschijnen onderaan je factuur.
 Je kunt je eigen Mollie- of Stripe-account koppelen zodat klanten facturen direct online kunnen betalen. Het geld komt rechtstreeks op jouw rekening. MyCompanyDesk regelt alleen de koppeling.
 
 Zo koppel je een verwerker:
-1. Ga naar **Instellingen → Betalen**
-2. Klik onder **Online betalingen** op **Verbind Mollie** of **Verbind Stripe**
+1. Ga naar **Instellingen › Betalen**
+2. Klik onder **Klanten laten betalen met iDEAL** op **Verbind Mollie** of **Verbind Stripe**
 3. Volg de OAuth-stappen om je account te autoriseren
 4. Na het koppelen bevat elke verstuurde factuur een betaallink voor je klanten. Factuur- en herinneringsmails beginnen dan met een **Betaal nu**-knop die de klant direct bij de betaalpagina brengt; de betaling start uitsluitend in de browser van de klant, dus mailscanners maken er geen aan, en de scan-en-betaal-QR op de factuur-PDF gebruikt dezelfde link.
 
@@ -44,7 +44,7 @@ Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking, ideaal voor
 
 ## Online-betalingstarief op Desk
 
-Op Desk betaal je € 0,50 incl. btw per online betaalde factuur van € 5 of meer, bovenop de kosten van Mollie of Stripe. Betaalt een klant een factuur online via je Mollie- of Stripe-account, dan wordt die vergoeding per betaling van de uitbetaling ingehouden. Op Office is dat nooit zo. De app toont de vergoeding naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op Desk zit.
+Op Desk betaal je € 0,50 servicekosten inclusief btw per online betaling van € 5 of meer, bovenop de kosten van Mollie of Stripe. Betaalt een klant een factuur online via je Mollie- of Stripe-account, dan worden die servicekosten per betaling ingehouden op de uitbetaling aan jou. Je klant betaalt ze niet, die betaalt gewoon het factuurbedrag. Op Office betaal je geen servicekosten. Zolang je werkruimte op Desk zit, staat de uitleg bij **Klanten laten betalen met iDEAL** onder Instellingen › Betalen.
 
 Loskoppelen doe je met **Loskoppelen** op de betreffende kaart. Als er in de afgelopen 24 uur betalingen zijn geweest, krijg je een waarschuwing dat er mogelijk nog openstaande webhooks binnenkomen en dat je terugbetalingen voor die betalingen handmatig moet verwerken. Na het loskoppelen kunnen klanten niet meer via die verwerker betalen.
 

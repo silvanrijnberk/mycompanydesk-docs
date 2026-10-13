@@ -1,16 +1,16 @@
 ---
 title: Online-Termine
-description: Lassen Sie Kunden direkt über Ihre Website Termine mit Site Bookings buchen.
-last_verified: 2026-10-11
+description: Lassen Sie Kunden über den Terminblock Ihrer Website direkt einen Termin buchen oder ein Datum anfragen, optional mit Anzahlung.
+last_verified: 2026-10-13
 ---
 
 # Online-Termine
 
-Mit **Site Bookings** fügen Sie Ihrer Website einen Block hinzu, über den Besucher direkt einen Termin bei Ihnen buchen können. Ob Kennenlerntermin, Angebotsgespräch oder Serviceeinsatz: der Kunde wählt einen Service, ein passendes Zeitfenster und bestätigt die Anfrage. Sie entscheiden, welche Services Sie anbieten, wann Sie verfügbar sind und ob jede Buchung erst von Ihnen freigegeben werden muss.
+Mit dem Block **Online boeken (afspraak plannen)** (Online buchen) fügen Sie Ihrer Website einen Block hinzu, über den Besucher direkt einen Termin bei Ihnen buchen können. Ob Kennenlerntermin, Angebotsgespräch oder Serviceeinsatz: der Kunde wählt einen Service, ein passendes Zeitfenster und bestätigt die Anfrage. Sie entscheiden, welche Services Sie anbieten, wann Sie verfügbar sind und ob jede Buchung erst von Ihnen freigegeben werden muss.
 
 ## Für wen ist das gedacht?
 
-- Freiberufler und kleine Unternehmen, die Kunden über ihre Website buchen lassen möchten.
+- Selbstständige und Freiberufler, die Kunden über ihre Website buchen lassen möchten.
 - Unternehmen, die ihren Kalender per Klick verfügbar machen möchten.
 - Jeder, der wiederkehrende Termintypen als separate Services anbieten möchte.
 
@@ -18,14 +18,14 @@ Mit **Site Bookings** fügen Sie Ihrer Website einen Block hinzu, über den Besu
 
 - Eine Website, die mit dem **Website-Builder** erstellt wurde.
 - Ein Kalender in MyCompanyDesk, in dem Termine landen.
-- Mindestens ein Service, den Sie als buchbaren Termin anbieten möchten.
+- Mindestens ein Service in Ihrem **Katalog**, den Sie als buchbaren Termin anbieten möchten.
 
 ## Verfügbare Zeiten und Öffnungszeiten
 
-Die Zeiten, die Besucher buchen können, stammen aus einer zentralen Quelle: **Einstellungen** > **Unternehmensdaten** > **Öffnungszeiten**.
+Die Zeiten, die Besucher buchen können, stammen aus einer zentralen Quelle: **Einstellungen** › **Unternehmensdaten** › **Öffnungszeiten**.
 
 - Legen Sie pro Tag fest, ob geöffnet oder geschlossen ist, und geben Sie für geöffnete Tage einen oder zwei Zeiträume an.
-- Verwenden Sie **Sonderöffnungszeiten** für Feiertage, Urlaub oder einmalige Änderungen; diese wirken sich auch darauf aus, ob der Terminblock einen Tag anbietet.
+- Verwenden Sie **Freie Tage und Ausnahmen** für Feiertage, Urlaub oder einmalige Änderungen; diese wirken sich auch darauf aus, ob der Terminblock einen Tag anbietet.
 - Der Terminblock berücksichtigt automatisch Ihre Öffnungszeiten und Ihren verbundenen Kalender, damit keine doppelten oder unmöglichen Termine entstehen.
 
 Siehe [Unternehmenseinstellungen](/de/settings/company) für das Einrichten Ihrer Öffnungszeiten.
@@ -34,7 +34,7 @@ Siehe [Unternehmenseinstellungen](/de/settings/company) für das Einrichten Ihre
 
 1. Öffnen Sie den **Website-Builder** in der App.
 2. Bearbeiten Sie die Seite, auf der der Terminblock erscheinen soll.
-3. Suchen Sie in der Blockbibliothek nach **Termine** oder **Site Bookings**.
+3. Suchen Sie in der Blockbibliothek nach **Online boeken (afspraak plannen)**.
 4. Ziehen Sie den Block an die gewünschte Stelle auf der Seite.
 5. Klicken Sie auf den Block, um die Einstellungen zu öffnen.
 
@@ -44,16 +44,16 @@ Sobald Sie die Seite veröffentlichen, zeigt Ihre Website das Terminformular an.
 
 In den Blockeinstellungen legen Sie fest, wie Kunden buchen können:
 
-- **Service**: geben Sie dem Termin einen Namen, zum Beispiel „Kennenlerntermin“ oder „Installationsbesuch“.
-- **Preis (optional)**: geben Sie einen Preis ein, falls der Termin kostenpflichtig sein soll.
-- **Dauer**: wählen Sie, wie lange der Termin dauert, zum Beispiel 30 oder 60 Minuten.
-- **Vorausbuchung**: legen Sie fest, wie weit im Voraus jemand einen Termin buchen darf.
-- **Freigabe erforderlich**: aktivieren Sie diese Option, wenn jede Anfrage zunächst manuell von Ihnen freigegeben werden soll.
-- **Externen Kalender blockieren**: lassen Sie das Tool Ihren bestehenden Kalender prüfen, damit keine Doppelbuchungen entstehen.
+- **Hoe boeken klanten?** (wie Kunden buchen): Wählen Sie **Direct boeken (vrije tijden)** (direkt buchen, freie Zeiten), wenn Besucher selbst einen freien Moment wählen, oder **Aanvraag (jij bevestigt)** (Anfrage, Sie bestätigen), wenn sie einen Moment anfragen, den Sie bestätigen. Eine Anfrage kommt als Lead in Ihrem Posteingang an, mit einer Benachrichtigung.
+- **Services**: Der Block zeigt die Services aus Ihrem Katalog, jeweils mit eigener Dauer. Für andere Services in diesem Block füllen Sie **Diensten met eigen duur (optioneel)** (Services mit eigener Dauer) mit Name, Dauer und optionalem Preis aus. Die Reihenfolge ändern Sie im Katalog.
+- **Duur per afspraak (minuten)** und **Pauze tussen afspraken (minuten)**: wie lange ein Termin dauert, wenn der Service keine eigene Dauer hat, und wie viel Luft zwischen zwei Terminen bleibt.
+- **Minimaal vooraf boeken (uren)** und **Online te boeken tot (dagen vooruit)**: wie kurzfristig jemand noch buchen darf und wie weit im Voraus.
+- **Zelf accepteren voor de afspraak vaststaat** (erst selbst annehmen): Die Zeit wird reserviert, und Sie bestätigen oder lehnen ab unter **Zeitplan › Termine**. Nach Ihrer Zusage erhält der Besucher automatisch die Bestätigung mit Kalendereinladung.
+- **Gekoppelde agenda blokkeert tijden** (verbundener Kalender blockiert Zeiten): Termine in Ihrem verbundenen Google- oder Outlook-Kalender machen diese Zeiten unbuchbar. Ganztägige Einträge zählen hier nicht; dafür nutzen Sie freie Tage bei Ihren Öffnungszeiten.
 
 Die **verfügbaren Zeitfenster** selbst stammen aus den zentralen Öffnungszeiten in [Unternehmensdaten](/de/settings/company). Der Block blendet Tage und Zeiträume aus, die dort nicht geöffnet sind.
 
-Im Editor zeigt der Terminblock die Services aus Ihrem Angebot als Chips an, genau wie auf der Live-Site: den Namen, die Dauer und den Preis inklusive MwSt., wie Besucher ihn sehen, dazu eine einzige MwSt.-Zeile unter der Reihe. Ein Klick auf einen Chip wechselt im Editor nur den Service, auf dem das Beispielraster aufbaut; Verfügbarkeiten werden dort nicht geladen und nichts gebucht.
+Im Editor zeigt der Terminblock die Services aus Ihrem Katalog als Chips an, genau wie auf der Live-Site: den Namen, die Dauer und den Preis inklusive MwSt., wie Besucher ihn sehen, dazu eine einzige MwSt.-Zeile unter der Reihe. Ein Klick auf einen Chip wechselt im Editor nur den Service, auf dem das Beispielraster aufbaut; Verfügbarkeiten werden dort nicht geladen und nichts gebucht.
 
 :::tip
 Verknüpfen Sie den Block mit einer **E-Mail-Adresse**, damit Besucher eine automatische Bestätigung erhalten und Sie bei jeder neuen Buchung benachrichtigt werden.
@@ -61,11 +61,11 @@ Verknüpfen Sie den Block mit einer **E-Mail-Adresse**, damit Besucher eine auto
 
 ## Datumsanfragen
 
-Nicht jedes Gewerbe verkauft Zeitfenster. Ein DJ, ein Foodtruck oder ein Hochzeitsfotograf verliert Tage, und die Frage eines Besuchers lautet nicht „Dienstag um 14:00?“, sondern „ist der 14. Juni noch frei?“. Für diese Gewerbe stellen Sie im Block **Hoe boeken klanten?** (wie Kunden buchen) auf **Aanvraag (jij bevestigt)** (Anfrage, Sie bestätigen) und aktivieren **Alleen een datum vragen** (nur ein Datum erfragen, ohne Zeit). Das Formular fragt dann nur nach einem Datum.
+Nicht jedes Gewerbe verkauft Zeitfenster. Ein DJ, ein Foodtruck oder ein Hochzeitsfotograf verliert Tage, und die Frage eines Besuchers lautet nicht „Dienstag um 14:00?“, sondern „ist der 14. Juni noch frei?“. Für diese Gewerbe stellen Sie im Block **Hoe boeken klanten?** (wie Kunden buchen) auf **Aanvraag (jij bevestigt)** (Anfrage, Sie bestätigen) und aktivieren **Alleen een datum vragen (geen tijd)** (nur ein Datum erfragen, ohne Zeit). Das Formular fragt dann nur nach einem Datum. Mit **Op welke dagen kun je?** (an welchen Tagen können Sie) wählen Sie, auf welche Wochentage eine Anfrage fallen darf.
 
 Unter dem Datum sieht der Besucher, ob dieser Tag noch frei ist. Die Antwort kommt aus Ihrem eigenen Kalender:
 
-- **Ein Tag ist belegt, wenn schon etwas darauf liegt**: eine Buchung über Ihre Site, ein Gruppentermin, ein Eintrag in Ihrem eigenen MCD-Kalender (geplant oder gearbeitet), ein Termin in Ihrem eigenen verknüpften Google- oder Outlook-Kalender (ganztägige Einträge eingeschlossen), oder ein Tag, den Sie bei Besonderen Tagen auf geschlossen gestellt haben.
+- **Ein Tag ist belegt, wenn schon etwas darauf liegt**: eine Buchung über Ihre Site, ein Gruppentermin, ein Eintrag in Ihrem eigenen MyCompanyDesk-Kalender (geplant oder gearbeitet), ein Termin in Ihrem eigenen verknüpften Google- oder Outlook-Kalender (ganztägige Einträge eingeschlossen), oder ein Tag, den Sie bei Besonderen Tagen auf geschlossen gestellt haben.
 - **Nicht gezählt**: Ihre festen Wochenzeiten (im Anfragemodus schränken sie nichts ein, jeder Ihrer Wochentage darf angefragt werden), Geburtstage und Arbeitsorte aus Ihren verknüpften Kalendern, mit Ihnen geteilte oder nur abonnierte Kalender (etwa ein Feiertagskalender), Einträge, die Sie abgelehnt oder als frei markiert haben, und ein Auftritt vom Abend zuvor, der bis spätestens 6:00 weiterläuft: das ist die Nacht des Vortages, nicht des nächsten Tages.
 - Die Site schaut rund zwei Jahre voraus. Weiter sagt sie nichts, statt den Tag als belegt zu nennen.
 - Die Antwort lautet nur frei oder belegt: Ihre Site sagt einem Besucher nie, was an dem Tag auf Ihrem Kalender liegt.
@@ -73,7 +73,7 @@ Unter dem Datum sieht der Besucher, ob dieser Tag noch frei ist. Die Antwort kom
 
 Besucher können kein Datum aus der Vergangenheit senden, und ein Datumsfeld auf einem gewöhnlichen Anfrageformular lehnt Vergangenes auf dieselbe Weise ab.
 
-Der Block kann Anfragen auch ein eigenes Tempo geben. In den Blockeinstellungen stellt **Minimaal van tevoren aanvragen (dagen)** (nur bei nur-ein-Datum) ein, wie viele ganze Tage voraus der erste Datumsvorschlag der Tagauswahl beginnt: 0 = ab heute, ein früheres Datum ist schlicht nicht wählbar. Liegt eine Zeit auf dem Block, lehnt **Minimaal van tevoren aanvragen (uren)** eine Anfrage für einen früheren Moment ab. Ohne Wert gilt keine Frist außer der Regel gegen die Vergangenheit; Tagauswahl und Server wenden dieselbe Regel an; was die Site anbietet und was gespeichert wird, widerspricht sich nie. Bei nur-ein-Datum begrenzt **Maximaal aantal aanvragen per week (optioneel)** die offenen oder angenommenen Anfragen dieses Blocks für Tage in einer Woche (Montag bis Sonntag); ist die Woche voll, erscheinen die Tage dieser Woche auf Ihrer Site als nicht frei, und eine Anfrage, die Sie auf geschlossen setzen, zählt nicht mehr mit. Leer oder 0 heißt kein Maximum. In der Bestätigung steht neben dem Datum auch der Wochentag, sodass eine Anfrage mit einem Tagesnamen ankommt und nicht nur als nackte Zahl.
+Der Block kann Anfragen auch ein eigenes Tempo geben. In den Blockeinstellungen stellt **Minimaal aantal dagen van tevoren** (Mindestvorlauf in Tagen, nur bei nur-ein-Datum) ein, wie viele ganze Tage voraus der erste Datumsvorschlag der Tagauswahl beginnt: 0 = ab heute, ein früheres Datum ist schlicht nicht wählbar. Liegt eine Zeit auf dem Block, lehnt **Minimaal van tevoren** (Mindestvorlauf in Stunden oder Tagen) eine Anfrage für einen früheren Moment ab. Ohne Wert gilt keine Frist außer der Regel gegen die Vergangenheit; Tagauswahl und Server wenden dieselbe Regel an; was die Site anbietet und was gespeichert wird, widerspricht sich nie. **Maximaal aantal aanvragen per week (optioneel)** begrenzt die offenen oder angenommenen Anfragen dieses Blocks für Tage in einer Woche (Montag bis Sonntag); ist die Woche voll, erscheinen die Tage dieser Woche auf Ihrer Site als nicht frei, und eine Anfrage, die Sie auf geschlossen setzen, zählt nicht mehr mit. Leer oder 0 heißt kein Maximum. In der Bestätigung steht neben dem Datum auch der Wochentag, sodass eine Anfrage mit einem Tagesnamen ankommt und nicht nur als nackte Zahl.
 
 ## Gruppentermine
 
@@ -82,7 +82,7 @@ Nicht jede Buchung ist ein Kunde zu einer frei gewählten Zeit. Ein **Gruppenter
 - **Sortiment-Item**: Name und, falls Sie einen berechnen, Preis der Sitzung kommen aus dem Sortiment-Item, das Sie auswählen. Noch kein Sortiment? Legen Sie zuerst eine Service an, zum Beispiel für Ihren Workshop.
 - **Ein oder mehrere Termine**: planen Sie mehrere Startzeiten auf einmal, jede mit ihrer Dauer.
 - **Plätze**: wie viele Personen in die Sitzung passen (zwischen 1 und 500). **Max. pro Anmeldung** legt fest, wie viele Personen eine Anmeldung mitbringen darf (bis 50).
-- **Anmeldung offen bis**: bis zum Beginn, eine bestimmte Zahl von Stunden davor oder eine Woche davor. Bis dahin können die Teilnehmenden sich auch selbst abmelden.
+- **Anmeldung möglich bis**: bis zum Beginn, eine bestimmte Zahl von Stunden davor oder eine Woche davor. Bis dahin können die Teilnehmenden sich auch selbst abmelden.
 - **Ort**: optional, zum Beispiel Ihr Studio.
 - **Zahlung**: vollständig online im Voraus bezahlt (ein Platz ist erst bestätigt, wenn er bezahlt ist; ohne Mollie oder Stripe zahlt man vor Ort) oder **vor Ort**, wobei nach der Sitzung für jede Teilnehmende ein Rechnungsentwurf bereitliegt.
 
@@ -113,9 +113,9 @@ Eine Kundin oder ein Kunde kann online stornieren, solange der Termin noch nicht
 
 ## Anzahlung
 
-Der Terminblock kann Besucher beim Buchen um eine Anzahlung bitten. Schalten Sie **Anzahlung** in den Blockeinstellungen ein und wählen Sie einen festen Betrag oder einen Prozentsatz des Dienstpreises. Eine Anzahlung braucht einen verbundenen Zahlungsanbieter (Mollie oder Stripe); ohne einen solchen bucht der Block einfach ohne Anzahlung.
+Der Terminblock kann Besucher beim Buchen um eine Anzahlung bitten. Schalten Sie **Aanbetaling vragen** (Anzahlung verlangen) in den Blockeinstellungen ein und wählen Sie einen festen Betrag oder einen Prozentsatz des Dienstpreises. Eine Anzahlung braucht einen verbundenen Zahlungsanbieter (Mollie oder Stripe); ohne einen solchen bucht der Block einfach ohne Anzahlung.
 
-Solange die Anzahlung nicht eingegangen ist, bleibt die Buchung offen: Die App zeigt **Zahlung ausstehend** statt der Annehmen-Schaltfläche, und das Annehmen wird verweigert, bis das Geld da ist. Ablehnen können Sie in der Zwischenzeit trotzdem; bei einer unbezahlten Anfrage steht nur dieser Knopf. Lehnen Sie eine Anfrage ab, oder läuft eine Anfrage ab, geht die bezahlte Anzahlung von selbst zurück. Trifft später noch eine Zahlung für eine Anfrage ein, die unterdessen abgelehnt, zurückgezogen oder abgelaufen ist, geht auch dieser Betrag automatisch zurück. Auch eine Stornierung durch den Besucher zahlt den Betrag von selbst zurück, solange sie in das Rückerstattungsfenster fällt, das Sie in den Blockeinstellungen einstellen. Im Standard läuft dieses Fenster bis einen Tag vor dem Start; Sie können es auf Ihren ganzen Buchungshorizont ausdehnen, damit jede Stornierung vor dem Start zurückzahlt, oder auf null setzen: Dann zahlt nichts automatisch zurück, und Sie erstatten selbst über die Schaltfläche **Anzahlung zurückerstatten** am Termin.
+Solange die Anzahlung nicht eingegangen ist, bleibt die Buchung offen: Die App zeigt **Zahlung ausstehend** statt der Annehmen-Schaltfläche, und das Annehmen wird verweigert, bis das Geld da ist. Ablehnen können Sie in der Zwischenzeit trotzdem; bei einer unbezahlten Anfrage steht nur dieser Knopf. Lehnen Sie eine Anfrage ab, oder läuft eine Anfrage ab, geht die bezahlte Anzahlung von selbst zurück. Trifft später noch eine Zahlung für eine Anfrage ein, die unterdessen abgelehnt, zurückgezogen oder abgelaufen ist, geht auch dieser Betrag automatisch zurück. Auch eine Stornierung durch den Besucher zahlt den Betrag von selbst zurück, solange der Besucher rechtzeitig storniert, gemäß **Kosteloos annuleren** (kostenlos stornieren) in den Blockeinstellungen: bis 24 Stunden vorher (Standard), bis 48 Stunden vorher, bis eine Woche vorher, immer erstatten (jede Stornierung vor dem Start) oder nie automatisch erstatten: Dann entscheiden Sie selbst über die Schaltfläche **Anzahlung zurückerstatten** am Termin.
 
 Das Verschieben eines Termins öffnet das Rückerstattungsfenster nicht erneut.
 
@@ -126,13 +126,13 @@ MyCompanyDesk kann automatisch eine Erinnerungsmail vor dem Termin senden. Auch 
 ## Häufig gestellte Fragen
 
 **Warum sehe ich keine verfügbaren Zeiten?**
-Prüfen Sie, ob Sie mindestens einen Service angelegt haben, ob dieser eine Dauer hat, und ob Ihre Zeitfenster in der Zukunft liegen. Eine aktivierte Freigabe kann außerdem dazu führen, dass Zeiten erst sichtbar werden, nachdem Sie eine Anfrage bestätigt haben.
+Prüfen Sie, ob Sie mindestens einen Service in Ihrem Katalog haben, ob dieser eine Dauer hat und ob Ihre Öffnungszeiten im kommenden Zeitraum offene Tage haben. Steht der Block auf **Aanvraag (jij bevestigt)**, wählt der Besucher keine freie Zeit, sondern fragt einen Moment oder ein Datum an.
 
 **Kann ich mehrere Services anbieten?**
-Ja. Pro Terminblock können Sie einen oder mehrere Services anzeigen. Jeder Service hat einen eigenen Namen, eine eigene Dauer und einen eigenen Preis.
+Ja. Der Block zeigt die Services aus Ihrem Katalog oder die Services, die Sie im Block selbst eintragen. Jeder Service hat einen eigenen Namen, eine eigene Dauer und einen eigenen Preis.
 
 **Wird bei der Buchung eine Zahlung verlangt?**
-Nur dann, wenn Sie der Service einen Preis zuweisen. Ohne Preis ist die Buchung kostenlos und Sie erhalten lediglich eine Reservierung.
+Nur wenn Sie **Aanbetaling vragen** einschalten und Mollie oder Stripe verbunden haben. Ein Preis bei einem Service wird nur angezeigt; ohne Anzahlung ist die Buchung eine Reservierung, und Sie stellen die Rechnung danach aus dem Termin heraus.
 
 ## Verwandte Themen
 

@@ -8,15 +8,15 @@ chatbot:
   follow_up: ["How do I delete multiple invoices?", "How do I export selected items?"]
 ---
 Pour effectuer des actions en masse :
-1. Accédez à la vue en liste (Factures, Dépenses ou Clients)
-2. Sélectionnez plusieurs éléments à l'aide des cases à cocher
-3. La barre d'actions apparaît en bas de la page sur bureau et en bas de l'écran sur mobile
-4. Choisissez l'action (ex. : supprimer, envoyer, exporter)
-5. Confirmez l'opération en masse
+1. Accédez à la vue en liste (par exemple Factures, Devis, Dépenses ou Clients)
+2. Sélectionnez des éléments : sur ordinateur, la case à cocher apparaît quand vous survolez une ligne. Vous pouvez aussi choisir « Sélectionner plusieurs » dans le menu d'une ligne ; toutes les cases s'affichent alors
+3. Une barre apparaît en bas de l'écran avec le nombre d'éléments sélectionnés, « Tout sélectionner » et les actions disponibles
+4. Choisissez l'action, par exemple « Marquer comme payé », « Marquer comme envoyée », « Marquer comme annulée », « Archiver » ou « Supprimer » (les actions proposées dépendent de la liste et de votre sélection)
+5. Confirmez l'action si on vous le demande
 
-## Vérifications lors de la finalisation groupée
+## Vérifications quand vous marquez des brouillons comme envoyés en groupe
 
-Lorsque vous finalisez ou envoyez des factures en groupe, MyCompanyDesk applique les mêmes contrôles de TVA et de statut que pour une seule facture. Par exemple, une facture en autoliquidation ne peut pas être finalisée si le client n'a pas de numéro de TVA, et une ligne à 0% de TVA (sources/vat-rates.yaml#countries.NL.zero) doit avoir un fondement clair (autoliquidation ou un motif de taux zéro approuvé). Les factures qui échouent à un contrôle sont ignorées; l'écran de résultats liste les factures concernées avec la raison pour que vous puissiez les corriger.
+Quand vous marquez des factures brouillons comme envoyées en groupe, elles reçoivent un numéro de facture et MyCompanyDesk applique les mêmes contrôles que pour une seule facture. Votre numéro de TVA, votre IBAN et l'adresse de votre entreprise doivent être renseignés, une facture en autoliquidation ne peut pas être finalisée si le client n'a pas de numéro de TVA, et une ligne à 0% de TVA (sources/vat-rates.yaml#countries.NL.zero) doit avoir un fondement clair (autoliquidation ou un motif de taux zéro approuvé). Si une seule facture échoue à un contrôle, toute l'action est annulée ; le message indique la facture concernée pour que vous puissiez la corriger d'abord.
 
 ## Archiver des dépenses en groupe
 

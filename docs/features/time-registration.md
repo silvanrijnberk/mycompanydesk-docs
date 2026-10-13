@@ -27,7 +27,7 @@ Totalen tellen alleen uren die echt gewerkt zijn. Geplande registraties voor lat
 
 ### Timer
 
-Op mobiel bevat de dagweergave een timer: start hem als je begint met werken en stop hem om de verstreken tijd als registratie te loggen. Via de werkmodus-instelling maak je de timer je standaardmanier van werken (zie Instellingen hieronder).
+Op mobiel bevat de dagweergave een timer: start hem als je begint met werken en stop hem om de verstreken tijd als registratie te loggen.
 
 ### Handmatige registraties
 
@@ -74,9 +74,9 @@ Factuurregels worden automatisch omschreven: eerst de omschrijving van de regist
 
 Automatisch factureren regel je per project. Op een projectpagina kies je hoe de uren van dat project gefactureerd worden:
 
-- **Handmatig** (de standaard): die maak je zelf aan vanuit de uren van het project.
-- **Op vaste dag** (de standaard): je kiest het ritme op de projectpagina: elke week op een weekdag, of elke maand op een dag van de maand. De uren die tot en met de vorige factuurdag gelogd zijn, plus de doorbelaste uitgaven, gaan in één factuur naar de klant van het project. Een maand factureert op de gekozen dag, tot de 28e, of op de laatste dag van de maand, zodat korte maanden nooit overslaan; de regel staat in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
-- **Bij afronding**: markeer je het project als afgerond, dan gaat alles wat nog open staat mee naar een eindfactuur voor de klant.
+- **Handmatig** (de standaard): je maakt de factuur zelf aan vanuit de uren van het project.
+- **Op vaste dag**: je kiest het ritme op de projectpagina: elke week op een weekdag, of elke maand op een dag van de maand. De uren die tot en met de vorige factuurdag gelogd zijn, plus de doorbelaste uitgaven, gaan in één factuur naar de klant van het project. Een maand factureert op de gekozen dag, tot de 28e, of op de laatste dag van de maand, zodat korte maanden nooit overslaan.
+- **Bij afronden**: markeer je het project als afgerond, dan gaat alles wat nog open staat mee naar een eindfactuur voor de klant.
 
 Valt het project onder een contract dat zelf factureert, dan bepaalt dat contract en zegt de projectpagina dat ook; je geeft zo'n project geen eigen ritme.
 
@@ -91,7 +91,7 @@ Alles wat buiten de gewone rit valt houdt het automatische versturen tegen: een 
 
 Uitgaven doen alleen mee wanneer de uitgave zelf op [doorbelasten bij de klant](/features/expenses#doorbelasting-en-kostprijswijzigingen) staat.
 
-Bevat je abonnement automatisch urenfacturering niet, dan pauzeert het tot je abonnement het weer doet; de melding vertelt je dat. Automatische facturen gebruiken het standaard btw-tarief van je werkruimte en respecteren je KOR- of vrijgesteld-instellingen, net als facturen die je handmatig aanmaakt.
+Automatisch factureren zit in het Office-abonnement. Op Desk staat het stil tot je weer Office hebt; de kaart en de melding zeggen dat. Automatische facturen gebruiken het standaard btw-tarief van je werkruimte en respecteren je KOR- of vrijgesteld-instellingen, net als facturen die je handmatig aanmaakt.
 
 ## Bulkacties
 
@@ -103,7 +103,7 @@ Selecteer meerdere registraties in de lijstweergave (lang indrukken op mobiel) o
 
 ## Externe agenda koppelen
 
-Koppel Google Agenda of Outlook Agenda om je agenda en je uren samen te brengen. Open de agenda-instellingen via **Instellingen** > **Uren & agenda** of via het tandwiel op de pagina Uren & agenda, en volg de agendalink. Je kunt ook direct naar de pagina met gekoppelde agenda's gaan. Daar kun je:
+Koppel Google Agenda of Outlook Agenda om je agenda en je uren samen te brengen. Open de agenda-instellingen via **Instellingen** › **Uren & agenda** of via het tandwiel op de pagina Uren & agenda, en kies **Agenda koppelen (Google of Outlook)**. Je kunt ook direct naar de pagina met gekoppelde agenda's gaan. Daar kun je:
 
 - **Google Agenda** of **Outlook Agenda** koppelen
 - Synchronisatie per koppeling aanzetten met **Synchronisatie inschakelen**
@@ -114,20 +114,19 @@ Afspraken uit een gekoppelde agenda verschijnen in de dag- en weekweergave; tik 
 
 ## Online afspraken en uren
 
-Afspraken die klanten via het **Site Bookings**-blok op je website boeken, worden na goedkeuring automatisch in je agenda gezet. Een bevestigde online afspraak telt tegelijk mee als gewerkte uren in Uren & agenda, zodat je ze niet apart hoeft te loggen. Deze uren zijn **niet factureerbaar** via Uren & agenda; de omzet van de afspraak factureer je vanuit de afspraak zelf. Zie [Online afspraken](/features/site-bookings) voor het instellen van je boekbare tijden.
+Afspraken die klanten via het afsprakenblok op je website boeken, worden na goedkeuring automatisch in je agenda gezet. Een bevestigde online afspraak telt tegelijk mee als gewerkte uren in Uren & agenda, zodat je ze niet apart hoeft te loggen. Deze uren zijn **niet factureerbaar** via Uren & agenda; de omzet van de afspraak factureer je vanuit de afspraak zelf. Zie [Online afspraken](/features/site-bookings) voor het instellen van je boekbare tijden.
 
 ## Instellingen
 
-De agenda-instellingen vind je onder **Instellingen** > **Uren & agenda** of via het tandwiel op de pagina Uren & agenda. Hier stel je in:
+De agenda-instellingen vind je onder **Instellingen** › **Uren & agenda** of via het tandwiel op de pagina Uren & agenda. Hier stel je in:
 
-- **Alleen uren modus**, **Geplande tijd automatisch bevestigen**, en ander invoergedrag
-- De werkmodus: **Uren**, **Diensten** of **Timer**
+- **Invoergedrag**: **Alleen uren modus** en **Geplande tijd automatisch bevestigen**
 - De werktijden die op de tijdlijn zichtbaar zijn
-- Welke stappen de snelle invoer toont (project, notities, reizen)
-- Het standaard uurtarief (teambeheerders)
-- Reisstandaarden zoals adressen, voertuig en kilometertarief
-- Gebruik je huidige locatie als startpunt voor een rit, als je apparaat dat toestaat
+- Het **Standaard uurtarief** en de **Afronding tijdregistratie** (beheerders)
+- **Reizen naar klanten**: adressen, standaard vervoer, auto (privé of van de zaak) en kilometertarief
 - Een link om een externe agenda te koppelen
+
+Bij een rit in het urenformulier kun je je huidige locatie als vertrekpunt gebruiken, als je apparaat dat toestaat.
 
 ## Tips
 

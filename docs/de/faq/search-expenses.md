@@ -1,7 +1,7 @@
 ---
 title: "Ausgaben suchen"
-description: "So suchen und filtern Sie Ausgaben: gehen Sie zu Ausgaben, nutzen Sie die Suchleiste, um nach Lieferant, Beschreibung oder Kategorie zu suchen."
-last_verified: 2026-05-09
+description: "So suchen und filtern Sie Ausgaben: gehen Sie zu Ausgaben, suchen Sie nach Lieferant oder Beschreibung und filtern Sie nach Kategorie oder Status."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 
 So suchen und filtern Sie Ausgaben:
 1. Gehen Sie zu Ausgaben
-2. Nutzen Sie die Suchleiste, um nach Lieferant, Beschreibung oder Kategorie zu suchen
-3. Nutzen Sie Filter, um nach Kategorie oder Zahlungsstatus einzugrenzen
+2. Nutzen Sie die Suchleiste, um nach Lieferant oder Beschreibung zu suchen
+3. Grenzen Sie unter **Filter** nach Kategorie oder Status (Bezahlt oder Unbezahlt) ein, oder zeigen Sie nur Ausgaben, bei denen der Beleg oder die MwSt. fehlt
 4. Sortieren Sie nach Datum, Lieferant, Kategorie, Status oder Betrag
 
 Kombinieren Sie die Suchleiste mit dem Kategoriefilter, wenn die Liste lang ist.

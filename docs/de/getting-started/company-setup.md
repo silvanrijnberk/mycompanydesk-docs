@@ -1,63 +1,74 @@
 ---
 title: Unternehmen einrichten
-description: "Der Einrichtungsassistent füllt Absenderblock, Zahlungsdaten und Steuerstatus rund um Ihre erste Rechnung, mit KVK-Abfrage und Live-Vorschau."
-last_verified: 2026-09-30
+description: "Der Einrichtungsassistent füllt Unternehmensdaten, Steuerstatus und IBAN für Ihre erste Rechnung, mit KVK-Abfrage und Live-Vorschau."
+last_verified: 2026-10-13
 ---
 
 # Unternehmen einrichten
 
-Beim ersten Anmelden führt MyCompanyDesk Sie durch einen kurzen **Einrichtungsassistenten** unter `/setup`. Der Assistent dreht sich um Ihre erste Rechnung: Er fragt, wen Sie abrechnen möchten, und füllt währenddessen den Absenderblock, Zahlungsdetails und den USt.-Status aus, mit einer Live-Vorschau der Rechnung. Sie können Ihr Unternehmen auch im niederländischen Handelsregister (KVK) nachschlagen lassen. Nichts ist endgültig: Jeder Schritt lässt sich überspringen, und alles kann später in den Einstellungen geändert werden.
+Beim ersten Anmelden führt MyCompanyDesk Sie durch einen kurzen **Einrichtungsassistenten** unter `/setup` (**Lass uns Ihr Unternehmen einrichten**). Der Assistent dreht sich um Ihre erste Rechnung: Er füllt den Absenderblock, Ihren USt.-Status und Ihre IBAN aus, mit einer Live-Vorschau der Rechnung daneben. Ihre Unternehmensdaten schlagen Sie im niederländischen Handelsregister (KVK) nach. Nichts ist endgültig: Jeder Schritt lässt sich überspringen, und alles kann später in den Einstellungen geändert werden.
 
 ## Wo Sie den Assistenten finden
 
 - **Erste Anmeldung:** Der Assistent öffnet sich automatisch.
-- **Später:** Öffnen Sie jederzeit direkt `/setup`, um den Assistenten zu durchlaufen oder erneut zu durchlaufen. Solange die Einrichtung noch offene Enden hat, weist das Dashboard Sie unten auf der Seite selbst auf den nächsten Schritt hin, unter **Richten Sie das ein**.
-- **Überspringen:** Auf jedem Schritt gibt es eine Schaltfläche **Vorerst überspringen**. Ihre bisherigen Antworten werden gespeichert, Sie machen später einfach dort weiter, wo Sie waren.
+- **Später:** Solange Sie den Assistenten noch nicht abgeschlossen haben, öffnen Sie ihn direkt über `/setup` und machen dort weiter, wo Sie waren. Das Dashboard zeigt unter **Richten Sie das ein**, was noch offen ist. Nach dem Abschluss leitet `/setup` Sie zum Dashboard weiter; Ihre Daten ändern Sie dann in den Einstellungen.
+- **Überspringen:** Auf jedem Schritt gibt es eine Schaltfläche **Jetzt überspringen**. Ihre bisherigen Antworten werden gespeichert.
+- **Vor allem wegen der Website hier?** Im ersten Schritt steht die Frage **Sind Sie vor allem wegen Ihrer Website hier?** mit dem Link **Zuerst meine Website erstellen**. Er bringt Sie direkt zum Website-Assistenten.
 
-## Schritt 1: Wen Sie abrechnen möchten
+Der Assistent hat drei Schritte: **Handelsregister**, **Start** und **MwSt. und IBAN**.
 
-Der Assistent öffnet mit einer Live-Vorschau der Rechnung und fragt nach dem Kunden. Beginnen Sie, den Kundennamen zu tippen.
+## Schritt 1: Ihre Unternehmensdaten (KVK)
 
-- Wenn der Kunde bereits in Ihrem Arbeitsbereich existiert, wählen Sie ihn aus der Liste aus.
-- Um einen neuen Kunden direkt zu erstellen, tippen Sie den Namen und klicken Sie auf **Kunde erstellen**. Das Inline-Formular fragt nach Kundennamen und Adresse. Die KVK-Suche kann niederländische Unternehmen anhand von Firmenname oder KVK-Nummer vorschlagen und die Adresse automatisch ausfüllen; private Kunden fügen Sie hinzu, indem Sie die Adresse von Hand eingeben.
-- Die Kunden-E-Mail ist optional und wird nur verwendet, wenn Sie die Rechnung senden.
+Dieser Schritt füllt den Absenderblock Ihrer Rechnung. Geben Sie im Feld **Firmenname oder KVK-Nummer** Ihren Firmennamen oder Ihre KVK-Nummer ein und wählen Sie Ihr Unternehmen aus der Liste. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; was Sie bereits eingetragen haben, bleibt unverändert.
 
-Nur der Kundenname ist erforderlich, um fortzufahren. Die restlichen Kundendaten können Sie später auf der Kundenseite vervollständigen.
+Haben Sie sich über die Website von MyCompanyDesk registriert und Ihr Unternehmen dort bereits gesucht, übernimmt der Assistent diese KVK-Nummer und wendet sie automatisch an, sobald Sie diesen Schritt erreichen.
 
-## Schritt 2: Ihre Unternehmensdaten (KVK)
+Die Vorschau, die Sie dort gesehen haben, erkennt Ihre Branche zuerst am Firmennamen. Ist das nicht eindeutig, liest sie die Geschäftstätigkeit (SBI) aus Ihrem KVK-Basisprofil und lässt bei Bedarf eine KI die passendste Branche wählen. Passt nichts, zeigt sie ein neutrales Beispiel. Der Ort stammt aus Ihrer KVK-Eintragung, sofern vorhanden.
 
-Dieser Schritt füllt den Absenderblock Ihrer Rechnung. Wenn Sie sich über die Marketingseite registriert und Ihr Unternehmen in der KVK-Suche dort ausgewählt haben, wird Ihre KVK-Nummer bereits in den Assistenten übernommen und sobald Sie diesen Schritt erreichen automatisch angewendet. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; was Sie bereits eingetragen haben, bleibt unverändert.
+Kein Treffer oder keine KVK-Eintragung?
 
-Die Vorschau auf der Marketingseite, die Sie in den Assistenten führt, erkennt jetzt ein breiteres Spektrum an Branchen. Sie prüft zuerst, ob Ihr Gewerk aus dem Firmennamen hervorgeht. Ist das unklar, kann sie auch die SBI-Branche aus Ihrem KVK-Basisprofil lesen und, falls es dann immer noch nicht passt, einen leichten AI-Classifier das passendste Gewerk wählen lassen. Passt nichts, zeigt die Vorschau eine neutrale Selbstständigen-Persona anstelle eines generischen Handwerker-Platzhalters. Der angezeigte Ort stammt aus Ihrer KVK-Registrierung, sofern vorhanden.
+- **Manuell eintragen**: Geben Sie Firmenname, KVK-Nummer (optional), Adresse, Postleitzahl und Ort selbst ein und klicken Sie auf **Speichern und fortsetzen**.
+- **Ich habe keinen Handelsregister-Eintrag**: Überspringen Sie die Suche und tragen Sie Ihre Daten später in den Einstellungen ein.
 
-Kein Treffer oder keine KVK-Registrierung?
+## Schritt 2: Womit möchten Sie beginnen?
 
-- **Manuell eintragen:** Geben Sie Firmennamen, KVK-Nummer, Adresse, Postleitzahl und Ort selbst ein.
-- **Kein Handelsregister-Eintrag?**: Überspringen Sie die Suche ganz und ergänzen Sie Ihre Daten später in den Einstellungen.
+Wählen Sie, was Sie zuerst brauchen:
 
-## Schritt 3: Wie Sie bezahlt werden möchten
+- **Rechnungen und Angebote senden**: Sie gehen weiter zum letzten Schritt, MwSt. und IBAN.
+- **Eine eigene Website**: Der Assistent schließt mit **Zu Ihrer Website** ab und bringt Sie zum Website-Assistenten.
+- **E-Mail mit eigener Domain**: Der Assistent schließt mit **Zu Ihrer E-Mail** ab und bringt Sie zur Einrichtung Ihrer E-Mail.
 
-Dieser Schritt hat zwei Teile: Ihr Mehrwertsteuer-Status und Ihre IBAN.
+Diese Wahl bestimmt nur, wo Sie beginnen. Nichts wird ein- oder ausgeschaltet; alles andere bleibt verfügbar.
 
-**Mehrwertsteuer-Status**
+## Schritt 3: MwSt. und IBAN
 
-Wenn Sie Mehrwertsteuer berechnen, wählen Sie **Ja, ich berechne MwSt.** und geben Sie Ihre USt-IdNr. ein. Solange das Feld leer ist, erscheint ein Hinweis, dass eine USt-IdNr. erforderlich ist, um fortzufahren; wenn Sie sie noch nicht haben, klicken Sie auf **Ich kenne meine USt-IdNr. jetzt nicht, ich trage sie später ein**, um diesen Schritt zu überspringen. Wenn Sie befreit sind (z. B. durch die Kleinunternehmerregelung), wählen Sie stattdessen **Nein, ich bin befreit**. Sie können dies später in den Einstellungen ändern.
+Dieser Schritt (**Wie werden Sie bezahlt?**) besteht aus zwei Teilen: Ihrem USt.-Status und Ihrer IBAN. Beide müssen beantwortet sein, bevor Sie weitermachen können; ist die Schaltfläche grau, steht der Grund direkt daneben.
+
+**USt.-Status**
+
+Wählen Sie eine von drei Optionen:
+
+- **Ja, ich berechne MwSt.**: Geben Sie Ihre USt-IdNr. ein. Haben Sie sie gerade nicht zur Hand, klicken Sie auf **Ich kenne meine USt-IdNr. jetzt nicht, ich trage sie später ein**.
+- **Nein, ich nehme an der KOR teil**: Sie haben sich bei der niederländischen Steuerbehörde für die Kleinunternehmerregelung angemeldet. Ihre Rechnungen werden ohne MwSt. erstellt und weisen auf die KOR hin.
+- **Nein, ich bin befreit**: für umsatzsteuerbefreite Berufe, etwa Pflege durch einen registrierten Gesundheitsdienstleister.
+
+Unsicher? Klicken Sie auf **Welche Wahl passt zu mir?** für eine kurze Erklärung. Sie können das später in den Einstellungen ändern.
 
 **IBAN**
 
-Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt Ihre Geschäfts-IBAN eingeben oder auf **Trage ich später ein** klicken, um diesen Schritt zu überspringen. Solange das Feld leer ist, erscheint ein Hinweis, dass eine IBAN erforderlich ist, bevor Sie Rechnungen senden können. Beachten Sie, dass ein Kunde Sie ohne IBAN kaum bequem bezahlen kann.
+Der Assistent fragt nach der IBAN, auf die Kunden zahlen. Ihre IBAN steht auf Ihren Rechnungen, zusammen mit einem QR-Code, mit dem Kunden direkt bezahlen können. Geben Sie Ihre IBAN jetzt ein oder klicken Sie auf **Trage ich später ein**.
 
-## Schritt 4: Einrichtung abschließen
+Überspringen Sie USt-IdNr. oder IBAN, fragt MyCompanyDesk beim Versand Ihrer ersten Rechnung noch einmal danach.
 
-Der letzte Schritt bestätigt Ihre 60-tägige Office-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an, dann bringt er Sie zum Dashboard. Im Hintergrund läuft nichts mit: Der Abschlussbildschirm nennt, was noch folgt (die Sicherheit Ihres Kontos und Ihre Website), und diese Vorschläge folgen später, unter **Richten Sie das ein** auf dem Dashboard, wann immer es passt. MyCompanyDesk erzeugt hier keine Website mehr und wählt keine Leistungen für Sie; eine Website bauen Sie selbst, beim ersten Öffnen des Bereichs **Website**.
+## Abschließen
 
-Klicken Sie auf **Einrichtung abschließen** und der Assistent wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an und bringt Sie zu Ihrem Dashboard.
+Klicken Sie auf **Setup abschließen**. Der Assistent übernimmt Ihre Unternehmensdaten, Ihren USt.-Status, Ihre IBAN und die Standardeinstellungen und zeigt "Du kannst jetzt Rechnungen stellen". Von dort klicken Sie auf **Erste Rechnung erstellen** oder wählen "Noch kein Kunde oder Auftrag? Sieh dich zuerst in deinem Dashboard um". Die Absicherung Ihres Kontos und Ihre Website kommen später von selbst zur Sprache, unter **Richten Sie das ein** im Dashboard.
 
-## Die Website: gebaut, sobald Sie sie öffnen, online, sobald Sie veröffentlichen
+## Die Website: gebaut, wenn Sie sie öffnen, online, wenn Sie veröffentlichen
 
-MyCompanyDesk legt keine Website unter Ihren Arbeitsbereich, ohne dass Sie darum bitten. Melden Sie sich an und schreiben Sie Rechnungen, ohne den Bereich Website je zu öffnen, dann wartet dort nichts Unfertiges.
+MyCompanyDesk legt keine Website unter Ihrem Arbeitsbereich an, bevor Sie danach fragen. Registrieren Sie sich und stellen Sie Rechnungen, ohne den Bereich Website je zu öffnen, dann wartet dort nichts Halbfertiges.
 
-Beim ersten Öffnen von **Website** wird eine Standard-Site als Entwurf angelegt: eine Startseite, Leistungen, ein Über-uns und Kontakt, dazu die Seiten Datenschutzerklärung und Allgemeine Geschäftsbedingungen, mit Ihren Registrierungsdaten an den Stellen, wo sie hingehören. Auf den Seiten steht nur Text, zu dem Sie stehen können; leere Blöcke bleiben leer, bis Sie sie füllen, und der Website-Assistent erfindet keine Herkunftsgeschichte und keine Standardantwort mehr. Auch online geht von selbst nichts: Veröffentlichen bleibt Ihr Moment, erst dann wird Ihre Adresse live. Ihr Arbeitsbereich-Subdomain, die schlichte Form Ihres Firmennamens unter mycompanydesk.com, kommt erst beim Veröffentlichen in den Blick.
+Beim ersten Öffnen von **Website** hilft Ihnen ein kurzer Website-Assistent beim Start: was Sie tun, was die Website vor allem erreichen soll, Ihre Farben, Ihr Logo und auf Wunsch eigene Fotos. Danach wird Ihre Website als Entwurf erstellt, mit Ihren Registrierungsdaten an den richtigen Stellen. Nichts geht von selbst online: Veröffentlichen bleibt Ihr Moment. Erst bei der ersten Veröffentlichung erhält Ihre Website ihre Adresse, die schlichte Form Ihres Firmennamens unter mycompanydesk.site.
 
 ## Später ändern
 
@@ -67,12 +78,12 @@ Alles, was der Assistent einstellt, lässt sich in den **Einstellungen** bearbei
 |---|---|
 | Firmenname, Adresse, KVK- oder USt-Nummer | **Unternehmensdaten** |
 | Logo und Markenfarbe | **Logo und Farbe** |
-| Wie Kunden Sie bezahlen: IBAN, iDEAL, PayPal | **Zahlung** |
+| Wie Kunden Sie bezahlen: IBAN, iDEAL, PayPal | **Bezahlung** |
 | Zahlungsziel, Erinnerungen, Gültigkeit von Angeboten | **Rechnungen und Angebote** |
-| Das Erscheinungsbild Ihrer Rechnungs-PDFs | **Rechnungsdesign** |
-| Ihre Website und Domain | **Deine Website und Domain** |
+| Das Erscheinungsbild Ihrer Rechnungs-PDFs | **Rechnungsgestaltung** |
+| Ihre Website und Domain | **Ihre Website und Domain** |
 
-Die vollständige Übersicht finden Sie in der [Einstellungsübersicht](/de/settings/). Sie können den Assistenten auch jederzeit über `/setup` erneut durchlaufen; er füllt leere Felder auf, statt zu überschreiben, was Sie selbst eingestellt haben.
+Die vollständige Übersicht finden Sie in der [Einstellungsübersicht](/de/settings/).
 
 ## Nächste Schritte
 

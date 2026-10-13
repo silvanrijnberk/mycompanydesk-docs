@@ -1,6 +1,6 @@
 ---
 title: "Find archived invoices"
-description: "Archived invoices are in Invoices > Archive. If you are already in the invoice list, switch to the Archive view. Deleted invoices are in Trash."
+description: "Archived invoices are in Invoices: click Filters above the list and choose Archive under Show. Deleted invoices are in Trash."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -29,4 +29,4 @@ chatbot:
     - "How do I cancel an invoice?"
 ---
 
-Archived invoices are in Invoices -> Archive. If you are already in the invoice list, switch to the Archive view. Deleted invoices are in Trash.
+Archived invoices are in Invoices: click Filters above the list and choose Archive under Show. On your phone, use the filter button at the top. Deleted invoices are in Trash.

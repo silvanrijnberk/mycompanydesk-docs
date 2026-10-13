@@ -1,262 +1,253 @@
 ---
 title: Contracten
-description: "Manage recurring service agreements and rental contracts, and let them generate invoices on a set schedule. Enable contracts under Company, Features."
+description: "Beheer dienstverlenings- en huurcontracten, laat ze online tekenen en laat ze volgens schema facturen maken (Office)."
 ---
 
-# Contracts
+# Contracten
 
-Manage recurring service agreements and rental contracts with automatic billing schedules.
+Beheer doorlopende afspraken met klanten, zoals dienstverleningscontracten en huurcontracten, met een vast factuurschema.
 
-## Overview
+## Overzicht
 
-Contracts represent ongoing agreements with customers - such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
+Een contract legt een doorlopende afspraak met een klant vast, bijvoorbeeld een maandelijks schoonmaakcontract, een huurovereenkomst of een onderhoudsabonnement. Een contract kan volgens een vast schema zelf facturen maken.
 
 ::: info
-The contracts module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
+Contracten horen bij Office en zijn een onderdeel dat je zelf aanzet. Zie je **Contracten** niet in het menu, zet het dan aan onder **Instellingen › Onderdelen** (de regel **Contracten**).
 :::
 
-## Creating a contract
+## Een contract maken
 
-1. Go to **Contracts > New Contract**
-2. Fill in:
-   - **Name** - A descriptive title (e.g., "Monthly cleaning service")
-   - **Customer** - The client party to the contract
-   - **Amount** - The recurring billing amount
-   - **Recurrence** - How often to bill (weekly, monthly, quarterly, yearly)
-   - **Start date** - When the contract begins
-   - **End date** - Optional end date
-   - **Description** - Terms and details
-3. Click **Save**
+1. Ga naar **Contracten** en klik op **Nieuw contract**
+2. Vul in:
+   - **Onderwerp**: dienstverlening, verhuur of samenwerking
+   - **Klant**: de klant met wie je de afspraak maakt
+   - **Contractnaam**: een duidelijke naam (bijvoorbeeld "Maandelijkse schoonmaak")
+   - **Hoe is de prijs afgesproken?**: zie [Prijsbasis](#prijsbasis) hieronder
+   - **Bedrag (excl. btw)** en **Btw-tarief**
+   - **Herhaling**: wekelijks, maandelijks, per kwartaal of jaarlijks
+   - **Startdatum**, eventueel een **Einddatum**, en de datum van de **Eerste factuur**
+   - **Welke periode staat er op de factuur?**: zie [Factuurperiode](#factuurperiode)
+3. Klik op **Opslaan**
 
 ::: tip Meer opties
-The new-contract form keeps optional details tidy: the **More options** section reveals extra fields for service charge amount, VAT rate, and service description. These are not required to create the contract, but you can expand them when you need them.
+Het formulier houdt optionele gegevens netjes opgeborgen: onder **Meer opties** vind je extra velden, zoals een servicetoeslag met een eigen bedrag en btw-tarief. Die heb je niet nodig om het contract te maken, maar je klapt ze open als je ze wel nodig hebt.
 :::
 
-## Rate basis
+## Prijsbasis
 
-Every contract has a **Rate basis** that controls how the amount is agreed:
+Elk contract beantwoordt de vraag **Hoe is de prijs afgesproken?**:
 
-- **Fixed amount** - the same amount each period, such as rent or a fixed monthly fee.
-- **Hourly rate** - you invoice the hours logged on projects linked to this contract.
-- **Daily rate** - you invoice the days worked on projects linked to this contract.
-- **Fixed project price** - a single agreed total for the whole assignment, invoiced once.
+- **Vast bedrag**: elke periode hetzelfde bedrag, zoals huur of een vast maandbedrag.
+- **Uurtarief**: je factureert de uren die je schrijft op projecten die aan dit contract hangen.
+- **Dagtarief**: je factureert de gewerkte dagen op projecten die aan dit contract hangen.
+- **Vaste projectprijs**: één afgesproken totaalbedrag voor de hele opdracht, dat je één keer factureert.
 
-For hourly and daily contracts, the contract detail page shows a **Work under this contract** card with the agreed, invoiced and logged totals, plus the linked projects. A day is counted as 8 hours.
+Bij een uur- of dagtarief toont de contractpagina de kaart **Werk onder dit contract** met de afgesproken, gefactureerde en geschreven totalen, plus de gekoppelde projecten. Een dag telt als 8 uur.
 
-A fixed project price does not repeat: the contract generates one invoice and then stops.
+Een vaste projectprijs herhaalt zich niet: het contract maakt één factuur en stopt dan.
 
-## Contract statuses
+## Contractstatussen
 
-| Status | Description |
-| - -| - -|
-| **Active** | Currently in effect, generates invoices |
-| **Inactive** | Paused - no invoices generated |
-| **Expired** | The end date has passed; no new invoices are generated |
+| Status | Betekenis |
+| --- | --- |
+| **Actief** | Loopt en maakt facturen |
+| **Gepauzeerd** | Maakt geen facturen tot je het weer activeert |
+| **Afgelopen** | De einddatum is voorbij en de laatste periode is gefactureerd |
+| **Beëindigd** | Je hebt de afspraak beëindigd met **Overeenkomst beëindigen** |
 
-::: warning MyCompanyDesk is not multi-tenant
-A contract is always linked to one customer in one workspace. The app does not support a single customer account that spans multiple tenants, and contract-generated invoices are always created in the workspace that owns the contract.
-:::
+Facturen die een contract maakt, komen altijd in de werkruimte waar het contract bij hoort.
 
-## Terminating or pausing a contract
+## Een contract pauzeren, laten aflopen of beëindigen
 
-You can stop an active contract in two ways:
+Een lopend contract stop je op een paar manieren:
 
-- **Deactivate** (`Pauzeren`) - the contract stays open but stops generating invoices. Activate it again at any time to resume billing.
-- **Set an end date** (`Einddatum`) - the contract runs until that date and then automatically becomes **Expired**. No invoices are generated for any period that ends after the end date.
+- **Pauzeren**: het contract blijft bestaan maar maakt geen facturen meer. Met **Activeren** zet je het op elk moment weer aan. Periodes die helemaal in de pauze vielen, worden niet alsnog gefactureerd.
+- **Een einddatum instellen**: het contract loopt tot die datum en wordt daarna vanzelf **Afgelopen**. Voor een periode die na de einddatum eindigt, komt geen factuur.
+- **Overeenkomst beëindigen**: beëindigt de afspraak definitief. Een beëindigd contract kun je niet nog een keer beëindigen.
 
-When you edit an active contract and add an end date, the app warns that future invoices will stop. If you remove the end date before it is reached, the contract resumes normal invoicing.
+Bewerk je een actief contract en voeg je een einddatum toe, dan waarschuwt de app dat de facturen daarna stoppen. Haal je de einddatum weg voordat hij bereikt is, dan factureert het contract gewoon verder.
 
-## End dates
+## Einddatum
 
-You can set an **End date** when creating or editing a contract. Leave it empty for an open-ended contract.
+Een **Einddatum** stel je in bij het maken of bewerken van een contract. Laat je hem leeg, dan loopt het contract voor onbepaalde tijd.
 
-When an end date is set:
+Is er een einddatum:
 
-- The contract detail page shows the end date, or **Open-ended** if none is set.
-- No invoices are generated for any period that ends after the end date.
-- The contracts list shows an **Expires soon** label when the end date is within 30 days.
-- When the end date passes, the status changes to **Expired** automatically.
+- Toont de contractpagina die einddatum, of **Onbepaalde tijd** als er geen is.
+- Komt er geen factuur voor een periode die na de einddatum eindigt.
+- Tonen de contractenlijst en het contract het label **Verloopt binnenkort** als de einddatum binnen 30 dagen ligt, en schuif je hem op met **Einddatum verlengen**.
+- Gaat de status vanzelf naar **Afgelopen** zodra de einddatum voorbij is en de laatste periode gefactureerd is.
 
-## Automatic invoicing
+## Automatisch factureren
 
-Active contracts with a recurrence schedule automatically generate invoices at each billing period. The system:
+Een actief contract met een herhaling maakt elke periode vanzelf een factuur. Het systeem:
 
-1. Creates a draft invoice based on the contract terms
-2. Applies the correct customer, amount, and description
-3. Uses the same automatic invoice numbering
+1. Maakt een factuur op basis van de afspraken in het contract
+2. Zet de juiste klant, het bedrag en de omschrijving erop
+3. Gebruikt dezelfde automatische factuurnummering
 
-Generated invoices are tagged as rental invoices only when the contract is a rental contract. Service and collaboration contracts produce ordinary invoices. This affects the badge shown on the invoice, the email template used when the invoice is sent, and whether the revenue is attributed to a linked object.
+Op het contract beantwoordt de kaart **Automatisch factureren** de vraag **Wat gebeurt er met de factuur?**:
 
-You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
+- **Concept**: de factuur blijft als concept staan. Jij controleert en verstuurt hem zelf.
+- **Versturen**: de factuur wordt automatisch naar de klant gemaild.
+- **Incasseren**: de factuur wordt automatisch geïncasseerd via het opgeslagen betaalmandaat (zie [Automatische incasso](#automatische-incasso)).
 
-### Invoice delivery and auto-invoicing notifications
+Alleen een huurcontract maakt facturen die als huurfactuur gemarkeerd zijn. Contracten voor dienstverlening en samenwerking maken gewone facturen. Dat bepaalt het label op de factuur, het e-mailsjabloon bij het versturen en of de omzet aan een gekoppelde bezitting wordt toegerekend.
 
-If a generated invoice cannot be emailed to the customer, the app creates an **Invoice not sent** notification. This happens when the customer has no email address, your sender email is not configured, the address is blocked after a bounce or spam report, or the send fails for another reason. The notification opens the invoice so you can fix the cause and resend.
+Werkt een contract met een uurtarief, dagtarief of vaste projectprijs, dan krijg je ook een waarschuwing als het budget van het contract overschreden wordt, of als geschreven uren geen prijs kunnen krijgen omdat er geen tarief is ingesteld.
 
-If your plan no longer includes automatic contract invoicing, the app creates an **Auto-invoicing paused** notification when contract invoices are ready but not being sent. The notification tells you how many contract invoices are waiting and since when, and points you to the subscription page to upgrade.
+### Meldingen bij versturen en automatisch factureren
 
-## Invoice period
+Kan een gemaakte factuur niet naar de klant gemaild worden, dan maakt de app de melding **Factuur niet bij de klant aangekomen**. Dat gebeurt als de klant geen e-mailadres heeft, je afzenderadres niet is ingesteld, het adres geblokkeerd is na een bounce of spammelding, of het versturen om een andere reden mislukt. De melding opent de factuur, zodat je de oorzaak oplost en opnieuw verstuurt.
 
-Contracts bill for a period relative to the invoice date:
+Zit je werkruimte niet meer op Office (bijvoorbeeld na afloop van de proefperiode), dan maakt de app de melding **Automatisch factureren staat stil** zodra er contractfacturen klaarstaan die niet verstuurd worden. De melding zegt hoeveel contractfacturen er wachten en sinds wanneer, en wijst je naar de abonnementspagina.
 
-- **Current** - the period that contains the invoice date (default)
-- **Previous** - the period before the invoice date
-- **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
+## Factuurperiode
 
-Factureert een contract achteraf, dan komt er nooit een factuur voor een periode die vóór de startdatum ligt, en de periode waarin de einddatum valt krijgt daarna alsnog een factuur.
+Bij **Welke periode staat er op de factuur?** kies je welke periode een contractfactuur factureert, gerekend vanaf de factuurdatum:
 
-The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
+- **Die van de factuurdatum**: de periode waarin de factuurdatum valt (standaard)
+- **De vorige (achteraf)**: de periode vóór de factuurdatum
+- **De volgende (vooruit)**: de periode na de factuurdatum
 
-## Automatic collection
+Het formulier laat een voorbeeld zien van de regel zoals hij op de factuur komt. Factureert een contract achteraf, dan komt er nooit een factuur voor een periode die vóór de startdatum ligt, en de periode waarin de einddatum valt krijgt daarna alsnog een factuur.
 
-For recurring contracts you can collect the billed amount automatically from the customer's stored payment mandate instead of sending a payment link by email. This requires a connected payment provider (Mollie or Stripe) and a valid customer mandate.
+## Automatische incasso
 
-### Setting up automatic collection
+Bij een terugkerend contract kun je het bedrag automatisch laten afschrijven via het betaalmandaat van de klant, in plaats van een betaallink te mailen. Daarvoor heb je een gekoppelde betaalprovider nodig (Mollie of Stripe, onder **Instellingen › Betalen**) en een geldig mandaat van de klant.
 
-On the contract detail page, open the **Automatic collection** card and set up the mandate. Once the mandate is valid, turn the toggle on. The system then charges each generated invoice automatically.
+### Automatische incasso instellen
 
-### Failed collection
+Klik op de contractpagina op **Automatische incasso instellen** en laat de klant het mandaat bevestigen. Is het mandaat geldig, kies dan **Incasseren** bij **Automatisch factureren**. Het systeem incasseert daarna elke gemaakte factuur vanzelf.
 
-If a charge fails or the mandate is no longer valid, you receive an "Automatic collection failed" notification. The notification links directly to the contract so you can reconnect the mandate or follow up with the customer.
+### Mislukte incasso
 
-## Price indexation
+Mislukt een afschrijving of is het mandaat niet meer geldig, dan krijg je de melding **Automatische incasso mislukt**. De melding linkt direct naar het contract, zodat je het mandaat opnieuw instelt of contact opneemt met de klant.
 
-Recurring contracts can be adjusted for inflation or agreed yearly rises. Open the contracts list and click **Raise prices** to preview what a percentage increase would do across eligible contracts. A contract is only eligible if at least one year has passed since it started or since its last rise.
+## Prijsindexatie
 
-The preview shows, per contract:
+Terugkerende contracten pas je aan voor inflatie of een afgesproken jaarlijkse verhoging. Kies op de contractenlijst **Prijzen verhogen** in het menu bovenaan en zie wat een procentuele verhoging doet bij de contracten die ervoor in aanmerking komen. Dat is een contract pas als het minstens een jaar loopt of een jaar geleden voor het laatst verhoogd is.
 
-- The current rate or amount per period
-- The new rate or amount after the increase
-- The date the contract was last adjusted
+Het voorbeeld toont per contract:
 
-You apply the rise per contract, never in bulk, so you can skip customers you have not yet spoken to. Once applied, the change updates the stored contract terms and future invoices reflect the new amount.
+- Het huidige tarief of bedrag per periode
+- Het nieuwe tarief of bedrag na de verhoging
+- De datum waarop het contract voor het laatst is aangepast
 
-::: tip Agree first
-Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
+Je voert de verhoging per contract door, nooit in één keer voor allemaal, zodat je klanten overslaat die je nog niet gesproken hebt. Daarna gelden de nieuwe afspraken in het contract en tonen volgende facturen het nieuwe bedrag.
+
+::: tip Eerst afstemmen
+Bespreek een prijsverhoging eerst met je klant. Het voorbeeld verandert niets tot je bij een contract op **Toepassen** klikt.
 :::
 
 ### Automatische jaarlijkse verhoging
 
-Een contract dat volgens afspraak elk jaar een verhoging krijgt, kan die verhoging zelf uitvoeren. Open het contract en stel de automatische verhoging in:
+Een contract dat volgens afspraak elk jaar een verhoging krijgt, kan die verhoging zelf uitvoeren. Open het contract en stel de **Jaarlijkse verhoging** in:
 
-- **Verhogen met**: het CBS-consumptieprijsindexcijfer (CPI), of een vast percentage dat jezelf kiest.
-- **Elk jaar op**: de dag en maand waarop de verhoging elk jaar ingaat.
-- **Aankondiging**: de klant of huurder krijgt vooraf mail vanaf jouw eigen mailadres; jij kiest hoeveel maanden van tevoren.
+- **Verhogen met**: **CPI (CBS)**, het consumentenprijsindexcijfer, of een **Vast percentage** dat je zelf kiest.
+- **Elk jaar per**: de dag en maand waarop de verhoging elk jaar ingaat.
+- **Klant mailen**: de klant of huurder krijgt vooraf mail vanaf jouw eigen mailadres; jij kiest hoeveel maanden van tevoren.
 
-De voorwaarde die de app stelt: het werkt op een lopend contract met een vast bedrag per periode. Elk jaar krijg je ongeveer een week voordat de aankondiging verstuurd wordt een melding met de geplande verhoging, en met één klik sla je dit jaar over. Doe je niets, dan gaan beide stappen vanzelf: eerst krijgt de klant de aankondiging, en pas nadat die mail eruit is, verandert de prijs. Facturen voor periodes vóór de ingangsdatum houden de oude prijs; periodes vanaf de ingangsdatum gebruiken de nieuwe. Lukt het niet om de aankondiging vóór de ingangsdatum te mailen, dan gaat de verhoging niet door en vertelt een melding je waarom.
+De voorwaarde die de app stelt: het werkt op een lopend contract met een vast bedrag per periode. Elk jaar krijg je ongeveer een week voordat de aankondiging verstuurd wordt een melding met de geplande verhoging, en met **Dit jaar overslaan** sla je dit jaar met één klik over. Doe je niets, dan gaan beide stappen vanzelf: eerst krijgt de klant de aankondiging, en pas nadat die mail eruit is, verandert de prijs. Facturen voor periodes vóór de ingangsdatum houden de oude prijs; periodes vanaf de ingangsdatum gebruiken de nieuwe. Lukt het niet om de aankondiging vóór de ingangsdatum te mailen, dan gaat de verhoging niet door en vertelt een melding je waarom.
 
 Een handmatige verhoging met een ingangsdatum in de toekomst, toegepast via **Prijzen verhogen** op de contractenlijst, volgt hetzelfde schema maar zonder aankondigingsmail.
 
-Bevat je abonnement automatische verhogingen niet, dan zegt de knop op het contract dat, en je kunt de verhoging nog steeds handmatig toepassen met **Prijzen verhogen**.
+## Koppelen aan bezittingen
 
-## Linking to assets
+Contracten koppel je aan [bezittingen](/features/objects) voor het beheer van verhuur:
 
-Contracts can be linked to [objects/assets](/en/features/objects) for rental management:
+- Hang een contract aan een pand, voertuig of apparaat
+- Zie welke bezittingen verhuurd zijn en aan wie
+- Bekijk per bezitting de geschiedenis van de contracten
 
-- Associate a contract with a property, vehicle, or piece of equipment
-- Track which assets are currently rented and to whom
-- View contract history per asset
+## Koppelen aan projecten
 
-## Linking to projects
+Contracten koppel je ook aan [projecten](/features/projects). Kies bij het maken of bewerken van een project het contract in het veld **Contract**. Uren die je op dat project schrijft, komen dan op de factuur van het contract. Gearchiveerde contracten staan ook in de lijst, met **(gearchiveerd)** achter de naam, zodat je een bestaande koppeling houdt of een oudere afspraak kiest als dat nodig is.
 
-Contracts can also be linked to [projects](/en/features/projects). When you create or edit a project, choose the contract in the **Contract** field. Hours you log on that project are then included on the contract's invoice. Archived contracts still appear in the dropdown, labelled with **(archived)** after the name, so you can keep an existing link or pick an older agreement when needed.
+Handig voor afspraken op basis van een vast tarief per uur of dag: het contract bepaalt de prijsbasis, de gekoppelde projecten leveren de uren.
 
-This is useful for retainer-style or time-and-materials agreements: the contract sets the rate basis, and the linked projects supply the hours.
+Je haalt een project op elk moment weer los; uren die al op een factuur staan, blijven daar staan.
 
-You can unlink a project at any time; existing hours stay on the invoice they were already added to.
+## De contractenlijst
 
-## Metrics
+Boven de lijst staan de tabs **Alles**, **Wacht op handtekening**, **Concept** en **Lopend**. Bovenaan zie je de **Maandelijkse omzet** van je terugkerende contracten, het werk **Op uurbasis** dat nog niet gefactureerd is, en de **Volgende factuur**. Met het filterpaneel beperk je de lijst op status (actief, gepauzeerd, afgelopen), herhaling en tekenstatus.
 
-The contracts list page shows summary metrics:
+## Bulkacties
 
-- Total active contracts
-- Total contract value
-- Contracts by recurrence type
+- **Archiveren**: verplaats contracten naar het archief
+- **Verwijderen**: verplaats contracten naar de prullenbak
 
-## Bulk actions
+In het archief kies je **Herstellen naar actief** of **Naar prullenbak**; in de prullenbak **Herstellen naar archief** of **Definitief verwijderen**.
 
-- **Change status** - Activate or deactivate multiple contracts
-- **Archive** - Move to archive
-- **Restore** - Bring back archived contracts
+## Ondertekenen
 
-## Signing
+Contracten laat je digitaal ondertekenen. Je voegt partijen toe in het contractformulier en verstuurt het contract met **Verstuur ter ondertekening**; elke partij krijgt een tekenlink per e-mail.
 
-Contracts support electronic signing. You can add parties through the contract form, and each party receives a signing link via email.
+Is een contract getekend, dan toont de contractpagina een tekenkaart met:
 
-When a contract has been signed, the contract detail page shows a signing card with:
+- De status van elke partij (uitgenodigd, bekeken, getekend of verlopen)
+- Een knop **Bekijken** die een voorbeeld van het getekende document opent
+- Een downloadknop om de PDF op te slaan
 
-- The status of each party (invited, viewed, signed, or expired)
-- A **View** button that opens an inline preview of the signed document
-- A download button to save the PDF
+De voorbeeldpagina heeft een balk met afdrukken en downloaden, en toont het getekende contract direct in de browser. De getekende PDF en de controle-PDF bevatten allebei de volledige contracttekst, dus elke gedownloade kopie staat op zichzelf.
 
-The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser. The signed PDF and review PDF both include the full contract body text, so every downloaded copy is self-contained.
+### Je eigen huisstijl op de tekenpagina
 
-### Sender branding on the signing page
+Opent iemand een contract om te tekenen, dan draagt de tekenpagina de huisstijl van de afzender:
 
-When a recipient opens a contract to sign, the signing page carries the sender's brand:
+- Het logo van de afzender staat bovenaan de pagina
+- De pagina gebruikt de accentkleur van de afzender
+- Tekst en knoppen passen zich vanzelf aan, zodat ze leesbaar blijven op die kleur
 
-- The sender's logo appears at the top of the page
-- The page uses the sender's brand accent color
-- Text and buttons automatically adjust so they stay readable against that color
+Zo ziet de tekenpagina eruit alsof hij komt van het bedrijf dat de uitnodiging stuurde, en niet als een algemene pagina van een derde partij.
 
-This gives signers an experience that looks like it comes from the company that invited them, rather than a generic third-party page.
+### Ondertekening in de contractenlijst
 
-### Signing on the contracts list
+De contractenlijst heeft een kolom **Tekenstatus** met de status van elk contract dat digitaal ondertekend wordt. De statussen staan er als gekleurde labels: **Niet verstuurd**, **In afwachting**, **Deels getekend** en **Getekend**.
 
-The contracts list includes a **Signing** column showing the signing status for each contract that has e-signing enabled. Statuses appear as colored badges: draft (neutral), sent (warning), partially signed (info), and active (success).
+Met het tekenfilter in het filterpaneel beperk je de lijst op tekenstatus, of toon je alleen contracten zonder digitale ondertekening (**Geen e-handtekening**). Contracten zonder tekenpartijen, zoals oudere contracten, tonen een streepje in de kolom Tekenstatus en vallen onder dat filter.
 
-A signing filter dropdown above the list lets you narrow the view by signing status, or filter to contracts without e-signing ("No e-signing").
+### SMS-verificatie
 
-::: info Legacy contracts
-Contracts created before the e-signing feature was added do not show a signing card on the detail page. The system detects legacy contracts by checking whether the contract has signing parties, a template, or signing content. Only contracts created or updated after the e-signing rollout include the signing card.
+Per partij zet je **SMS-verificatie vereist** aan. Die ondertekenaar moet dan een code via sms bevestigen voordat de handtekening geldig is; het telefoonnummer vult hij in bij het tekenen.
 
-Legacy contracts show a dash in the Signing column and appear under the "No e-signing" filter.
-:::
+- **Code versturen**: na het invullen van een mobiel nummer krijgt de ondertekenaar een code van 6 cijfers
+- **Code controleren**: de ondertekenaar vult de code in en bewijst zo dat het nummer van hem is
+- **Geverifieerd-label**: daarna verschijnt een label met de laatste vier cijfers van het nummer
 
-### SMS verification
+Vult de ondertekenaar een verkeerde code in, dan vraagt hij een nieuwe aan. De sms-bevestiging staat op de getekende PDF.
 
-Signing links can require SMS verification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
+## Versies van sjablonen
 
-- **Send code** - After entering their mobile number, the signer taps the button and receives a code
-- **Verify code** - The signer enters the 6-digit code to prove access to the phone number
-- **Verified badge** - Once confirmed, a "Verified" badge appears with the last four digits of the number
+Contractsjablonen staan onder **Contractsjablonen**, die je opent via het menu bovenaan de contractenlijst. Een sjabloon kun je versies geven, zodat je bijhoudt hoe de tekst veranderde.
 
-If the wrong code is entered, the signer can request a new one. SMS verification is configured per signing session and applies to all parties.
+### Een versie publiceren
 
-## Template versions
+1. Open **Contractsjablonen**
+2. Zoek je sjabloon en klik op **Versies**
+3. Vul bij **Publiceer huidige concept als nieuwe versie** in:
+   - **Label**: een korte naam voor de versie (bijvoorbeeld "v2"). Laat je hem leeg, dan kiest de app zelf het volgende nummer.
+   - **Wijzigingsnotitie**: kort wat er in deze versie veranderd is
+4. Klik op **Publiceren**
 
-Contract templates support versioning so you can track changes over time. Each version is a frozen snapshot of the template content at a point in time, letting you evolve your templates without affecting contracts that were already created.
+### De versiegeschiedenis bekijken
 
-### Publishing a version
+De versiegeschiedenis van een sjabloon toont:
 
-1. Go to **Contracts > Templates**
-2. Find your template and click the **Versions** button
-3. In the versions modal, enter:
-   - **Label** :  A short identifier for the version (e.g. "v2"). If left empty the system auto-assigns a sequential label.
-   - **Change note** :  A short description of what changed in this version
-4. Click **Publish**
+- Het label van de versie (bijvoorbeeld "v1", "v2")
+- De wijzigingsnotitie en de publicatiedatum
+- Het label **Huidige** bij de laatst gepubliceerde versie
+- Het label **Gearchiveerd** bij alle eerdere versies
 
-The current draft is snapshotted as a new version. Existing contracts stay pinned to the version they were created from, so publishing never rewrites historical contract text.
+### Wat versies doen met contracten
 
-### Viewing version history
-
-Each template's version history shows:
-
-- The version label (e.g. "v1", "v2")
-- The change note and publish date
-- A **Current** badge on the latest published version
-- An **Archived** badge on all previous versions
-
-### How versions affect contracts
-
-When a contract is created from a template, it pins to the version that was current at the time. If you later publish a new version of the template, existing contracts keep rendering from their pinned version. This means you can safely revise templates without altering active contracts.
+Een versie is een naam en notitie bij de huidige tekst, geen losse kopie: nieuwe contracten gebruiken altijd de meest recente sjabloontekst, ook als je na het publiceren verder bewerkt. Al gemaakte contracten houden hun eigen, vastgelegde tekst en veranderen nooit mee met het sjabloon. Je past sjablonen dus gerust aan zonder bestaande contracten te raken.
 
 ## Tips
 
-- Use contracts together with [recurring invoices](/en/features/recurring-invoices) for different billing scenarios
-- Link contracts to objects for full rental management
-- Set end dates to get notified before contracts expire; a contract expires automatically on its end date
-- Deactivate a contract instead of setting an end date if you want to pause and resume billing later
-- Review the contracts filter to see active vs. inactive at a glance
-- Filter by signing status to find contracts that still need signatures
-- Add signing parties when creating a contract to enable electronic signing
+- Gebruik contracten naast [terugkerende facturen](/features/recurring-invoices) voor verschillende manieren van factureren
+- Koppel contracten aan bezittingen voor volledig verhuurbeheer
+- Stel een einddatum in, dan zie je op tijd dat een contract afloopt; na de einddatum loopt het contract vanzelf af
+- Pauzeer een contract in plaats van een einddatum te zetten als je later weer verder wilt factureren
+- Filter op tekenstatus om te zien welke contracten nog een handtekening nodig hebben
+- Voeg bij het maken van een contract tekenpartijen toe om digitaal te laten ondertekenen

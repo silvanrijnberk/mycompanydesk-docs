@@ -1,7 +1,7 @@
 ---
 title: "Year overview"
-description: "To review a full year in the app: open Reports, set the period filter to Year and pick the year you want to inspect."
-last_verified: 2026-05-09
+description: "To review a full year: open Reports, set the period to Year under Filters and pick the year you want to inspect."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "year overview"
@@ -23,9 +23,11 @@ chatbot:
 ---
 
 To review a full year in the app:
-1. Open Reports
-2. Set the period filter to Year and pick the year you want to inspect
-3. The Overview shows the headline figures; switch to the P&L, Cash Flow, Clients, or Forecast view for more detail
-4. Turn on the comparison filter to see the year next to a previous year
+1. Open **Reports** (Office)
+2. Under **Filters**, set the period to Year and pick the year you want to inspect
+3. **Overview** shows the headline figures; switch to Sales, Clients, Expenses or Cash Flow for more detail
+4. Turn on the comparison to see the year next to a previous year
 
-Tip: The include open invoices filter controls whether unpaid invoices count toward the totals.
+For that year's profit and loss statement and annual accounts, open **Bookkeeping** (Office).
+
+Tip: **Include open invoices** controls whether unpaid invoices count toward the totals.

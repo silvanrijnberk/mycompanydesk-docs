@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # Dashboard
 
-Das Dashboard unter `/dashboard` ist der Startbildschirm Ihres Arbeitsbereichs. Es ist eine einzige Seite (intern nennen wir sie **Mijn bedrijf**, mein Geschäft), auf der das Geld steht, die Teile Ihres Geschäfts, die um Aufmerksamkeit bitten, und alles, was Sie noch einschalten können. Jede Zahl stammt aus Ihren eigenen Daten, von heute, ohne einen zweiten Schritt danach.
+Das Dashboard unter `/dashboard` ist der Startbildschirm Ihres Arbeitsbereichs. Es ist eine einzige Seite, auf der das Geld steht, die Teile Ihres Geschäfts, die um Aufmerksamkeit bitten, und alles, was Sie noch einschalten können. Jede Zahl stammt aus Ihren eigenen Daten, von heute, ohne einen zweiten Schritt danach.
 
 Dahinter liegt eine zweite Seite: **Kennzahlen** (`/cijfers`), die Analyseansicht mit den KPI-Kacheln, dem Trenddiagramm, der Alterung und den tieferen Zahlen, die bisher auf dem Dashboard standen. Die Geldkarte verlinkt dorthin, und in der Seitenleiste gibt es einen eigenen Eingang **Kennzahlen**.
 
@@ -26,7 +26,7 @@ Läuft Ihre Probezeit bald ab, steht das zuerst, über allem, als einziger Eintr
 
 Eine Regel hält diese Liste frei von Rauschen: **Te laat** (überfällig) zählt nur, wenn MyCompanyDesk Ihre Zahlungen kennt. Eine Zahlung, die in den letzten sechs Monaten als bezahlt registriert wurde, zeigt, dass Ihre Bücher mitgeführt werden; eine Bankanbindung oder Onlinezahlung allein tut es nicht, denn eine Anbindung, die niemand abzeichnet, oder Onlinezahlungen, die an bleiben, während Kunden überweisen, würde jede Rechnung als überfällig melden. Rechnungen kommen nur dann als überfällig in diese Liste, wenn dieses Signal da ist.
 
-Dieselbe Liste kommt jeden Montag auch in Ihr Postfach: nur wenn etwas zu tun ist, nur für den Workspace-Inhaber, und mit einer Benachrichtigung auf Ihrem Telefon, wenn etwas davon dringend ist. Sie schalten die E-Mail unter Einstellungen → „Benachrichtigungen“ ein oder aus.
+Dieselbe Liste kommt jeden Montag auch in Ihr Postfach: nur wenn etwas zu tun ist, nur für den Workspace-Inhaber, und mit einer Benachrichtigung auf Ihrem Telefon, wenn etwas davon dringend ist. Sie schalten die E-Mail unter Einstellungen › „Benachrichtigungen“ ein oder aus.
 
 ## Die Geldkarte
 
@@ -67,7 +67,7 @@ Hatten Sie so ein Banner schon weggeklickt, bleibt es weg: die Bedingungen und d
 
 Unter den Karten liegt die Liste **Alle Bereiche**: alles, was schon läuft, ohne eine eigene Karte, und alles, was noch nicht in Gebrauch ist, als eine übersichtliche Liste.
 
-- Mit dem Kreuz schalten Sie einen Bereich in Gebrauch aus, mit demselben Schalter wie unter **Einstellungen → Module**. Ein ausgeschalteter Bereich verschwindet auch aus der Seitenleiste, damit Menü und Seite dieselbe Geschichte erzählen, und kommt über die Liste unten zurück. Bei einem Bereich, der noch nicht läuft, ist das Kreuz ein **Nichts für mich** (siehe unten).
+- Mit dem Kreuz schalten Sie einen Bereich in Gebrauch aus, mit demselben Schalter wie unter **Einstellungen › Module**. Ein ausgeschalteter Bereich verschwindet auch aus der Seitenleiste, damit Menü und Seite dieselbe Geschichte erzählen, und kommt über die Liste unten zurück. Bei einem Bereich, der noch nicht läuft, ist das Kreuz ein **Nichts für mich** (siehe unten).
 - Teilt ein Bereich seinen Schalter mit einem anderen, werden beide zusammen aus- und eingeschaltet.
 - Ein Bereich, den Ihr Plan nicht einschließt, bleibt sichtbar, mit dem Plan genannt, der ihn freischaltet, damit Sie wissen, dass es ihn gibt.
 
@@ -93,7 +93,7 @@ Ein Buchhalter, der in den Büchern eines Kunden mitliest, sieht das Dashboard, 
 
 ## Kennzahlen: die Analyseansicht
 
-Die tieferen Zahlen des alten Dashboards stehen hier. Die Seite zeigt Zahlen und nichts weiter: was um Aufmerksamkeit bittet und die Aktivitätsliste stehen auf **Mijn bedrijf**. Die Seite ist eine einzelne scrollbare Ansicht; ein Baustein erscheint nur, wenn Ihre Daten ihn hergeben.
+Die tieferen Zahlen des alten Dashboards stehen hier. Die Seite zeigt Zahlen und nichts weiter: was um Aufmerksamkeit bittet und die Aktivitätsliste stehen auf dem Dashboard. Die Seite ist eine einzelne scrollbare Ansicht; ein Baustein erscheint nur, wenn Ihre Daten ihn hergeben.
 
 ## Periodenauswahl
 
@@ -105,18 +105,21 @@ Die KPI-Reihe zeigt immer fünf Kacheln. Jede Kachel zeigt eine Hauptzahl, einen
 
 | Kachel | Was Sie sehen |
 |---|---|
-| **Kasse** | Aktuelle Kassenposition, aus einem verknüpften Bankkonto oder, ohne Verknüpfung, geschätzt aus den liquiden Mitteln Ihrer Buchhaltung, plus Runway in Wochen |
+| **Kasse** | Aktuelle Kassenposition aus einem verknüpften Bankkonto. Ohne Verknüpfung zeigt die Kachel einen geschätzten Saldo aus den liquiden Mitteln Ihrer Buchhaltung. Dazu, wie viele Wochen das Geld reicht |
 | **Forderungen** | Offene Rechnungen, mit dem überfälligen Teil besonders benannt |
 | **Umsatz** | Umsatz über die gewählte Periode und das Tempo für die ganze Periode, mit Veränderung gegenüber der vorherigen vergleichbaren Periode |
 | **Verbindlichkeiten** | Geld, das Sie noch auszahlen müssen, mit dem überfälligen Teil besonders benannt |
 | **Gewinn** | Nettogewinn über die gewählte Periode, mit Marge, wenn sie zu berechnen ist |
 
+Steht der Stundenbaustein auf der Seite (Sie erfassen Stunden), spricht die Reihe die Sprache eines Stundenbetriebs: **Umsatz** und **Verbindlichkeiten** weichen **Stunden** (mit dem abrechenbaren Anteil) und **Nicht abgerechnete Arbeit** (mit dem Alter der ältesten offenen Arbeit).
+
 ### Saldokachel
 
-Die **Kasse**-Kachel zeigt neben Ihrem Saldo, was schon vergeben ist. Das sind zwei Zeilen:
+Die **Kasse**-Kachel zeigt neben Ihrem Saldo, was schon vergeben ist. Das sind bis zu drei Zeilen, nur wenn wirklich etwas reserviert ist:
 
-- **Für USt reserviert** - das positive Quartalssaldo, das schon beiseite gelegt sein sollte
-- **Fixkosten pro Monat** - Ihre monatlichen Fixkosten
+- **Reserviert für USt.** - das positive Quartalssaldo, das schon beiseite gelegt sein sollte
+- **"Steuer auf deinen Gewinn"** - die geschätzte Steuer auf Ihren bisherigen Gewinn
+- **Fixe Kosten pro Monat** - Ihre monatlichen Fixkosten
 
 Die Schlusszeile zeigt **Frei verfügbar**: was nach diesen Rückstellungen wirksam übrig bleibt. Die USt-Rückstellung nutzt dieselbe Quartalslogik wie die USt-Karte, damit Monatsmelder und frühe Einreicher nicht den falschen Betrag abgezogen sehen.
 
@@ -139,12 +142,15 @@ Die Bausteine unter der KPI-Reihe erscheinen nur, wenn sie ihren Platz verdienen
 | **Ausgaben-Mix** | Kostenaufteilung nach Kategorie, als Balken |
 | **Kassendiagramm** | Kassenposition über 12 Monate mit Prognose |
 | **USt-Karte** | Aktuelle USt-Periode, Checklistenfortschritt und nächste Frist |
+| **Stunden in diesen Wochen** | Ihre erfassten Stunden der letzten Wochen, abrechenbar und intern |
+| **Projektmargen** | Umsatz, Kosten und Marge pro Projekt |
+| **Fixkosten** | Monatlich wiederkehrende Einnahmen und Kosten und wie viel Ihrer Fixkosten Ihre Verträge decken |
 
 Auf Handys fallen visuelle Formen auf einfachere Formen zurück, damit die Zahlen lesbar bleiben.
 
 ## Laden- und Fehlerzustände
 
-Ein Skeleton zeigt die endgültige Form der Ansicht, sodass die Seite nie unter Ihren Augen verrutscht. Schlägt das Laden von **Mijn bedrijf** fehl, sagt die Seite, was nicht stimmt, und bietet eine Schaltfläche für einen neuen Versuch, statt eines Alles-in-Ordnung aus leeren Daten. Schlägt der Karteninhalt fehl, während der Gesamtauszug gelungen war, fällt jede Karte auf den einen Satz ihres Status zurück. Auf **Kennzahlen** trägt eine Fehler dieselbe Schaltfläche zum neuen Versuch, und ein Periodenwechsel, der danebengeht, während ältere Zahlen auf dem Schirm stehen, zeigt einen Hinweis zur Veraltung mit einer Inline-Schaltfläche zum neuen Versuch.
+Ein Skeleton zeigt die endgültige Form der Ansicht, sodass die Seite nie unter Ihren Augen verrutscht. Schlägt das Laden des Dashboards fehl, sagt die Seite, was nicht stimmt, und bietet eine Schaltfläche für einen neuen Versuch, statt eines Alles-in-Ordnung aus leeren Daten. Schlägt der Karteninhalt fehl, während der Gesamtauszug gelungen war, fällt jede Karte auf den einen Satz ihres Status zurück. Auf **Kennzahlen** trägt eine Fehler dieselbe Schaltfläche zum neuen Versuch, und ein Periodenwechsel, der danebengeht, während ältere Zahlen auf dem Schirm stehen, zeigt einen Hinweis zur Veraltung mit einer Inline-Schaltfläche zum neuen Versuch.
 
 ## Siehe auch
 

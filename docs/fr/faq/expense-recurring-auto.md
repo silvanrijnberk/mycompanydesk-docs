@@ -1,6 +1,6 @@
 ---
 title: "Dépenses récurrentes automatiques"
-description: "Pour automatiser une dépense récurrente : ouvrez Dépenses récurrentes et saisissez le fournisseur, le montant, la catégorie et la fréquence."
+description: "Pour automatiser une dépense récurrente : ouvrez Récurrent, onglet Dépenses, puis saisissez le fournisseur, le montant et la fréquence."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -21,10 +21,12 @@ chatbot:
 ---
 
 Pour configurer des dépenses récurrentes automatiques :
-1. Accédez à Dépenses récurrentes
-2. Cliquez sur « Nouvelle dépense récurrente »
+1. Allez dans « Récurrent » dans le menu et choisissez « Dépenses » en haut
+2. Cliquez sur « Ajouter une dépense récurrente »
 3. Saisissez le fournisseur, le montant et la catégorie
 4. Définissez la fréquence et la date de début
 5. Enregistrez, puis vérifiez quand les enregistrements seront créés
+
+Les dépenses récurrentes font partie de l'abonnement Office.
 
 Cette réponse se limite au fonctionnement de la fonction de dépenses récurrentes dans l'application.

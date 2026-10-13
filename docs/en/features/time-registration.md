@@ -19,15 +19,15 @@ Switch between four views with the selector at the top (swipe between periods on
 
 Planned entries carry a **Tentative** badge; press **Confirm** once the work actually happened to turn them into logged hours. Confirming an entry whose date still lies in the future asks first, so hours that have not happened do not slip into your totals unnoticed.
 
-If you want, enable **Auto-confirm tentative time** in the schedule settings. When this is on, tentative entries are confirmed automatically once their scheduled date has passed, even if nobody opens the Schedule page.
+If you want, enable **Auto-confirm tentative time** in the calendar settings. When this is on, tentative entries are confirmed automatically once their scheduled date has passed, even if nobody opens the Schedule page.
 
-Totals only count hours that were actually worked. Planned entries for later days stay out of the tracked-hours totals on the dashboard (**Uren dit jaar**, Hours this year), in reports (**Tracked hours**), and on the **Work & time** view until they are confirmed; the side panel states that basis. The hours criterion meter for the income tax return counts by its own basis, shown underneath the meter: only your own confirmed hours plus travel time, so its number can differ from the totals here.
+Totals only count hours that were actually worked. Planned entries for later days stay out of the tracked-hours totals on the dashboard (Hours this year), in reports (**Tracked hours**), and on the **Work & time** view until they are confirmed; the side panel states that basis. The hours criterion meter for the income tax return counts by its own basis, shown underneath the meter: only your own confirmed hours plus travel time, so its number can differ from the totals here.
 
 ## Logging time
 
 ### Timer
 
-On mobile, the day view includes a timer: start it when you begin working and stop it to log the elapsed time as an entry. You can make the timer your default way of working via the work mode setting (see Settings below).
+On mobile, the day view includes a timer: start it when you begin working and stop it to log the elapsed time as an entry.
 
 ### Manual entries
 
@@ -50,13 +50,13 @@ Your own input is never overwritten. Once you type a custom description, the pre
 
 ### Hours-only mode
 
-Prefer to log just a total per day? Enable **Hours only mode** in the schedule settings. It hides the timeline and the start and end time inputs, so you enter only the total hours per day. The rate and billable fields stay available.
+Prefer to log just a total per day? Enable **Hours only mode** in the calendar settings. It hides the timeline and the start and end time inputs, so you enter only the total hours per day. The rate and billable fields stay available.
 
 ## Invoicing your hours
 
 The rate shown for each time entry is the **effective hourly rate** for that entry. If the entry has its own hourly rate, that rate is used; otherwise it falls back to the project rate, then to the customer rate, and finally to your workspace default rate. This means the line amount on an invoice always reflects the actual rate stored with the entry.
 
-The entry itself shows which rate that will be. Does the entry have no hourly rate of its own? Then it says **Uurtarief van het project** (project hourly rate), and the totals in the list count that project rate for those entries. Once an entry has been invoiced, it shows the rate that was actually billed: the rate on the invoice line, not what the project charges today. In the edit window, a hint appears when the rate is left empty: the invoice will use the project rate.
+The entry itself shows which rate that will be. Does the entry have no hourly rate of its own? Then it says **Project hourly rate**, and the totals in the list count that project rate for those entries. Once an entry has been invoiced, it shows the rate that was actually billed: the rate on the invoice line, not what the project charges today. In the edit window, a hint appears when the rate is left empty: the invoice will use the project rate.
 
 ### Create an invoice from the Schedule page
 
@@ -75,8 +75,8 @@ Invoice lines are described automatically: the entry's own description is used f
 Automatic invoicing is decided per project. On a project page you choose how its hours are invoiced:
 
 - **Manual** (the default): you create the invoice yourself from the project's hours.
-- **On a fixed day** (the default): you pick the rhythm on the project: every week on a weekday, or every month on a day of the month. The hours logged up to and including the previous invoice day go on an invoice for the project's customer, together with the expenses charged to that customer. A month is invoiced on the day you picked, up to the 28th, or on the last day of the month, so short months never skip; the rule lives in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
-- **When the project is completed**: once you mark the project as completed, everything still open goes on a final invoice for the customer.
+- **On a fixed day**: you pick the rhythm on the project: every week on a weekday, or every month on a day of the month. The hours logged up to and including the previous invoice day go on an invoice for the project's customer, together with the expenses charged to that customer. A month is invoiced on the day you picked, up to the 28th, or on the last day of the month, so short months never skip.
+- **When completed**: once you mark the project as completed, everything still open goes on a final invoice for the customer.
 
 If the project belongs to a contract that invoices on its own, the contract decides and the project page says so; you cannot give that project its own rhythm.
 
@@ -91,7 +91,7 @@ Anything unusual holds the automatic send back: a customer without an email addr
 
 Expenses are only included when the expense itself is set to [charge to the customer](/en/features/expenses#rebilling-and-cost-price-changes).
 
-If your plan does not include automatic time invoicing, it stays paused; the notification tells you so. Automatic invoices use your workspace's default VAT rate and respect your KOR or VAT-exemption settings, matching the VAT treatment of invoices you create manually.
+Automatic invoicing is part of the Office plan. On Desk it stays paused until you are on Office again; the card and the notification tell you so. Automatic invoices use your workspace's default VAT rate and respect your KOR or VAT-exemption settings, matching the VAT treatment of invoices you create manually.
 
 ## Bulk actions
 
@@ -103,7 +103,7 @@ Select multiple entries in the list view (long-press on mobile) to act on them a
 
 ## External calendar sync
 
-Connect Google Calendar or Outlook Calendar to bring your agenda and your hours together. Open the schedule settings from **Instellingen** > **Uren & agenda**, or from the settings gear on the Schedule page, and follow the calendar link. You can also go straight to the connected calendars page. There you can:
+Connect Google Calendar or Outlook Calendar to bring your agenda and your hours together. Open the calendar settings from **Settings** › **Hours & calendar**, or from the settings gear on the Schedule page, and choose **Connect calendar (Google or Outlook)**. You can also go straight to the connected calendars page. There you can:
 
 - Connect **Google Calendar** or **Outlook Calendar**
 - Turn syncing on per connection with **Enable sync**
@@ -114,20 +114,19 @@ Events pulled from a connected calendar show up in the day and week views; tap o
 
 ## Online appointments and hours
 
-Appointments that customers book through the **Site Bookings** block on your website are automatically placed in your calendar once approved. A confirmed online appointment also counts as worked hours in Schedule, so you do not have to log it separately. These hours are **not billable** through Schedule; the revenue from the appointment is invoiced from the appointment itself. See [Online appointments](/en/features/site-bookings) for setting up your bookable hours.
+Appointments that customers book through the bookings block on your website are automatically placed in your calendar once approved. A confirmed online appointment also counts as worked hours in Schedule, so you do not have to log it separately. These hours are **not billable** through Schedule; the revenue from the appointment is invoiced from the appointment itself. See [Online appointments](/en/features/site-bookings) for setting up your bookable hours.
 
 ## Settings
 
-Schedule settings live under **Instellingen** > **Uren & agenda**. Here you configure:
+Calendar settings live under **Settings** › **Hours & calendar**. Here you configure:
 
-- **Hours only mode**, **Auto-confirm tentative time**, and other entry behavior
-- The work mode: **Hours**, **Shifts**, or **Timer**
+- **Entry behavior**: **Hours only mode** and **Auto-confirm tentative time**
 - The working hours shown on the timeline
-- Which quick-add steps appear (project, notes, travel)
-- The default hourly rate (team admins)
-- Travel defaults such as addresses, vehicle, and mileage rate
-- Use your current location as the starting point for a trip when your device allows it
+- The **Default hourly rate** and **Time rounding** (admins)
+- **Travel to customers**: addresses, default transport, car (private or company) and mileage rate
 - A link to connect an external calendar
+
+For a trip in the entry form you can use your current location as the starting point when your device allows it.
 
 ## Tips
 

@@ -1,7 +1,7 @@
 ---
 title: "Moyens de paiement"
 description: "Pour gérer les méthodes de paiement sur les documents : allez dans Paramètres et ouvrez Paiement."
-last_verified: 2026-10-01
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "payment methods"
@@ -35,8 +35,8 @@ Les méthodes activées apparaissent en bas de vos factures.
 Vous pouvez connecter votre propre compte Mollie ou Stripe pour que les clients puissent payer leurs factures directement en ligne. Les fonds sont versés directement sur votre compte. MyCompanyDesk ne gère que la connexion.
 
 Pour connecter un prestataire :
-1. Allez dans **Paramètres → Paiement**
-2. Sous **Online betalingen**, cliquez sur **Verbind Mollie** ou **Verbind Stripe**
+1. Allez dans **Paramètres › Paiement**
+2. Sous **Permettre aux clients de payer par iDEAL**, cliquez sur **Verbind Mollie** ou **Verbind Stripe** (ces boutons s'affichent en néerlandais)
 3. Suivez le flux OAuth pour autoriser votre compte
 4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients. Les courriels de facture et de rappel commencent alors par un bouton **Payer maintenant** qui amène le client directement à la page de paiement ; le paiement ne démarre que dans le navigateur du client, aussi les analyseurs de courriels n'en créent aucun, et le QR de scan et de paiement du PDF de la facture utilise le même lien.
 
@@ -44,7 +44,7 @@ Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, idé
 
 ## Frais de paiement en ligne sur Desk
 
-Sur Desk, vous payez 0,50 € TTC par facture payée en ligne de 5 € ou plus, en plus des frais de Mollie ou Stripe. Quand un client paie une facture en ligne via votre compte Mollie ou Stripe, ces frais sont retenus sur le versement pour chaque paiement. Sur Office, il n'y en a jamais. L'application affiche ces frais à côté de **Online betalingen** sur `/settings/betalen` tant que votre espace de travail est sur Desk.
+Sur Desk, vous payez 0,50 € TTC de frais de service par paiement en ligne de 5 € ou plus, en plus des frais de Mollie ou Stripe. Quand un client paie une facture en ligne via votre compte Mollie ou Stripe, ces frais sont retenus sur votre versement pour chaque paiement. Votre client ne les paie pas, il règle simplement le montant de la facture. Sur Office, il n'y a pas de frais de service. Tant que votre espace de travail est sur Desk, l'explication figure à côté de **Permettre aux clients de payer par iDEAL** dans Paramètres › Paiement.
 
 Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernières heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent être traités manuellement. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.
 

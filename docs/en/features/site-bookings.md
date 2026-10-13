@@ -1,16 +1,16 @@
 ---
 title: Online appointments
-description: Let customers book appointments directly through your website with Site Bookings.
-last_verified: 2026-10-11
+description: Let customers book an appointment or request a date straight from the booking block on your website, with an optional deposit.
+last_verified: 2026-10-13
 ---
 
 # Online appointments
 
-**Site Bookings** adds a block to your website that lets visitors book an appointment with you directly. Think of an introductory call, quote meeting, or service visit: the customer picks a service, chooses a suitable time, and confirms the request. You decide which services to offer, when you are available, and whether each booking first needs your approval.
+The **Online boeken (afspraak plannen)** block (online booking) adds a block to your website that lets visitors book an appointment with you directly. Think of an introductory call, quote meeting, or service visit: the customer picks a service, chooses a suitable time, and confirms the request. You decide which services to offer, when you are available, and whether each booking first needs your approval.
 
 ## Who is this for?
 
-- Freelancers and small businesses that want customers to book via their website.
+- Freelancers and sole traders who want customers to book via their website.
 - Companies that want to make their calendar available with one click.
 - Anyone who wants to offer recurring appointment types as separate services.
 
@@ -18,14 +18,14 @@ last_verified: 2026-10-11
 
 - A website built with the **Site Builder**.
 - A calendar in MyCompanyDesk where appointments land.
-- At least one service you want to offer as a bookable appointment.
+- At least one service in your **Catalog** that you want to offer as a bookable appointment.
 
 ## Available times and opening hours
 
-The times visitors can book come from one central source: **Settings** > **Business details** > **Opening hours**.
+The times visitors can book come from one central source: **Settings** › **Business details** › **Opening hours**.
 
 - Set each day as open or closed, and add one or two time blocks per open day.
-- Use **Special days** for holidays, vacations or one-off changes; those also affect whether the booking block offers a day.
+- Use **Days off and exceptions** for holidays, vacations or one-off changes; those also affect whether the booking block offers a day.
 - The appointments block automatically respects your opening hours and your connected calendar so no double or impossible bookings occur.
 
 See [Company Settings](/en/settings/company) for how to set your opening hours.
@@ -34,7 +34,7 @@ See [Company Settings](/en/settings/company) for how to set your opening hours.
 
 1. Open the **Site Builder** from the app.
 2. Edit the page where you want to place the appointments block.
-3. Find the **Appointments** or **Site Bookings** block in the block library.
+3. Find the **Online boeken (afspraak plannen)** block in the block library.
 4. Drag the block onto the page where you want it.
 5. Click the block to open its settings.
 
@@ -44,12 +44,12 @@ Your website now shows the appointment form once you publish the page.
 
 In the block settings you control how customers can book:
 
-- **Service**: give the appointment a name, such as "Introductory call" or "Installation visit".
-- **Price (optional)**: enter a price if the appointment should be paid.
-- **Duration**: choose how long the appointment lasts, for example 30 or 60 minutes.
-- **Book ahead**: set how far in advance someone may schedule an appointment.
-- **Approval required**: enable this if you want to manually approve every request first.
-- **Block external calendar**: let the tool check your existing calendar so no double bookings occur.
+- **Hoe boeken klanten?** (how do customers book): pick **Direct boeken (vrije tijden)** (book directly, free times) when visitors choose a free moment themselves, or **Aanvraag (jij bevestigt)** (request, you confirm) when they request a moment you confirm. A request arrives as a lead in your Inbox, with a notification.
+- **Services**: the block shows the services from your Catalog, each with its own duration. For different services in this block, fill in **Diensten met eigen duur (optioneel)** (services with their own duration) with a name, duration and optional price. You change the order in Catalog.
+- **Duur per afspraak (minuten)** and **Pauze tussen afspraken (minuten)**: how long an appointment lasts when the service has no duration of its own, and how much room there is between two appointments.
+- **Minimaal vooraf boeken (uren)** and **Online te boeken tot (dagen vooruit)**: how short notice someone can still book with, and how far ahead.
+- **Zelf accepteren voor de afspraak vaststaat** (accept it yourself first): the time is held and you confirm or decline it under **Schedule › Bookings**. Once you accept, the visitor automatically gets the confirmation with a calendar invitation.
+- **Gekoppelde agenda blokkeert tijden** (connected calendar blocks times): appointments in your connected Google or Outlook calendar make those times unbookable. All-day items do not count here; use days off in your opening hours for that.
 
 The **available time slots** themselves come from the central opening hours set in [Business details](/en/settings/company). The block blocks days and time blocks that are not open there.
 
@@ -61,11 +61,11 @@ Connect an **email address** to the block so visitors receive an automatic confi
 
 ## Date requests
 
-Not every trade sells time slots. A DJ, a food truck or a wedding photographer loses days, and the question a visitor asks is not "Tuesday at 14:00?" but "is 14 June still free?". For those trades, set the block's **Hoe boeken klanten?** (how do customers book) to **Aanvraag (jij bevestigt)** (request, you confirm) and switch on **Alleen een datum vragen** (ask for a date only). The form then asks for a date without a time.
+Not every trade sells time slots. A DJ, a food truck or a wedding photographer loses days, and the question a visitor asks is not "Tuesday at 14:00?" but "is 14 June still free?". For those trades, set the block's **Hoe boeken klanten?** (how do customers book) to **Aanvraag (jij bevestigt)** (request, you confirm) and switch on **Alleen een datum vragen (geen tijd)** (ask for a date only, no time). The form then asks for a date without a time. **Op welke dagen kun je?** (which days can you do) sets the weekdays a request may fall on.
 
 Under the date the block tells the visitor whether that day is still free. The answer comes from your own agenda:
 
-- **A day is busy when something is already on it**: a booking made through your site, a group session, an entry in your own MCD agenda (planned or logged), a timed or whole-day appointment in your own linked Google or Outlook calendar, or a day you set to **closed** under Special days.
+- **A day is busy when something is already on it**: a booking made through your site, a group session, an entry in your own MyCompanyDesk agenda (planned or logged), a timed or whole-day appointment in your own linked Google or Outlook calendar, or a day you set to **closed** under Special days.
 - **Not counted**: your fixed weekly opening hours (in request mode they limit nothing, so a visitor may ask for any day of your week), birthdays and working locations from your linked calendars, calendars shared with you or that you only follow (such as a holidays calendar), events you declined or marked as free, and an event from the evening before that ends by 6:00: that night belongs to the day before, not to the next day.
 - The site checks about two years ahead. Beyond that it says nothing instead of calling the day busy.
 - The answer is only free or busy: your site never tells a visitor what sits on your day.
@@ -73,7 +73,7 @@ Under the date the block tells the visitor whether that day is still free. The a
 
 Visitors cannot send a date in the past, and a date field on a plain request form refuses past dates the same way.
 
-The block can also set its own pace for requests. Under the block settings, **Minimaal van tevoren aanvragen (dagen)** (minimum notice in days, offered with a date only) sets how many whole days ahead the first date the picker offers sits: 0 = from today, and an earlier date is simply not pickable. With a time on the block, **Minimaal van tevoren aanvragen (uren)** (minimum notice in hours) refuses a request for a sooner moment. Without a value there is no notice beyond the past-date rule; the picker and the server apply the same rule, so what the site offers and what gets saved never disagree. With a date only, **Maximaal aantal aanvragen per week (optioneel)** caps the open or accepted requests of this block for days in one week (Monday up to Sunday); once the week sits full, those days show on your site as not free, and a request you move to closed stops counting. Empty or 0 means no maximum. Confirmation messages carry the weekday of the requested date beside the date, so a request arrives with a named day, not only as a number.
+The block can also set its own pace for requests. Under the block settings, **Minimaal aantal dagen van tevoren** (minimum notice in days, offered with a date only) sets how many whole days ahead the first date the picker offers sits: 0 = from today, and an earlier date is simply not pickable. With a time on the block, **Minimaal van tevoren** (minimum notice, in hours or days) refuses a request for a sooner moment. Without a value there is no notice beyond the past-date rule; the picker and the server apply the same rule, so what the site offers and what gets saved never disagree. **Maximaal aantal aanvragen per week (optioneel)** caps the open or accepted requests of this block for days in one week (Monday up to Sunday); once the week sits full, those days show on your site as not free, and a request you move to closed stops counting. Empty or 0 means no maximum. Confirmation messages carry the weekday of the requested date beside the date, so a request arrives with a named day, not only as a number.
 
 ## Group sessions
 
@@ -113,9 +113,9 @@ A customer can cancel online as long as the appointment has not started. An appo
 
 ## Deposits
 
-The appointments block can ask visitors for a deposit when they book. Turn on **Deposit** in the block settings and choose a fixed amount or a percentage of the service price. A deposit needs a connected payment provider (Mollie or Stripe); without one, the block simply books without a deposit.
+The appointments block can ask visitors for a deposit when they book. Turn on **Aanbetaling vragen** (ask for a deposit) in the block settings and choose a fixed amount or a percentage of the service price. A deposit needs a connected payment provider (Mollie or Stripe); without one, the block simply books without a deposit.
 
-While the deposit has not been paid, the booking stays pending: the app shows **Awaiting payment** instead of the Accept button, and approving is refused until the money has come in. Declining the request is still possible while the payment is out. When you decline a request, or a request expires, its paid deposit is refunded automatically. A payment that arrives later for a request declined, withdrawn or expired in the meantime is refunded the same way. A cancellation by the visitor also pays the deposit back on its own, as long as the cancellation falls within the refund window you set in the block settings. By default that window runs until a day before the start; you can widen it to your whole booking horizon, so every cancellation before the start pays back, or narrow it to zero, which turns automatic refunds off and leaves the money to you via the **Refund deposit** button on the appointment.
+While the deposit has not been paid, the booking stays pending: the app shows **Awaiting payment** instead of the Accept button, and approving is refused until the money has come in. Declining the request is still possible while the payment is out. When you decline a request, or a request expires, its paid deposit is refunded automatically. A payment that arrives later for a request declined, withdrawn or expired in the meantime is refunded the same way. A cancellation by the visitor also pays the deposit back on its own, as long as the visitor cancels in time under **Kosteloos annuleren** (free cancellation) in the block settings: up to 24 hours ahead (the default), up to 48 hours ahead, up to a week ahead, always refund (every cancellation before the start), or never refund automatically, in which case you decide yourself with the **Refund deposit** button on the appointment.
 
 Rescheduling an appointment never reopens the refund window.
 
@@ -126,13 +126,13 @@ MyCompanyDesk can automatically send a reminder email before the appointment. A 
 ## Frequently asked questions
 
 **Why do I not see any available times?**
-Check that you have created at least one service, that it has a duration, and that your time slots are in the future. Enabled approval can also mean times only become visible after you have approved a request.
+Check that you have at least one service in your Catalog, that it has a duration, and that your opening hours have open days in the coming period. If the block is set to **Aanvraag (jij bevestigt)**, the visitor does not pick a free time but requests a moment or date.
 
 **Can I offer multiple services?**
-Yes. You can show one or more services per appointments block. Each service has its own name, duration, and price.
+Yes. The block shows the services from your Catalog, or the services you fill in on the block itself. Each service has its own name, duration, and price.
 
 **Is payment required when booking?**
-Only if you link a price to the service. Without a price the booking is free and you simply receive a reservation.
+Only if you turn on **Aanbetaling vragen** and have Mollie or Stripe connected. A price on a service is only shown; without a deposit the booking is a reservation and you invoice afterwards from the appointment.
 
 ## Related topics
 

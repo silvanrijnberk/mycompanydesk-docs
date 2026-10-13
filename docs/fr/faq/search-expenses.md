@@ -1,7 +1,7 @@
 ---
 title: "Rechercher des dépenses"
-description: "Pour rechercher et filtrer les dépenses : accédez aux Dépenses, utilisez la barre de recherche pour chercher par fournisseur, description ou catégorie."
-last_verified: 2026-05-09
+description: "Pour rechercher et filtrer les dépenses : accédez aux Dépenses, cherchez par fournisseur ou description et filtrez par catégorie ou statut."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 
 Pour rechercher et filtrer les dépenses :
 1. Accédez aux Dépenses
-2. Utilisez la barre de recherche pour chercher par fournisseur, description ou catégorie
-3. Utilisez les filtres pour affiner par catégorie ou statut de paiement
+2. Utilisez la barre de recherche pour chercher par fournisseur ou description
+3. Affinez sous **Filtres** par catégorie ou statut (Payé ou Impayé), ou affichez seulement les dépenses dont le reçu ou la TVA manque
 4. Triez par date, fournisseur, catégorie, statut ou montant
 
 Combinez la barre de recherche avec le filtre de catégorie quand la liste est longue.

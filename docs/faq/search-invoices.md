@@ -1,7 +1,7 @@
 ---
 title: "Facturen zoeken"
-description: "Om een specifieke factuur te zoeken: ga naar Facturen, gebruik de zoekbalk om het factuurnummer, de klantnaam of het bedrag te typen."
-last_verified: 2026-05-09
+description: "Om een specifieke factuur te zoeken: ga naar Facturen, typ de klantnaam, het factuurnummer of een kenmerk en kies eventueel een status."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["search invoices", "find invoice", "filter invoices", "sort invoices", "search invoice", "look up invoice", "factuur zoeken", "facturen filteren", "rechnung suchen", "chercher facture"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 
 Om een specifieke factuur te zoeken:
 1. Ga naar Facturen
-2. Gebruik de zoekbalk om het factuurnummer, de klantnaam of het bedrag te typen
-3. Gebruik filters voor status (Concept, Verzonden, Betaald, Achterstallig)
+2. Typ in de zoekbalk de klantnaam, het factuurnummer of een kenmerk
+3. Kies onder **Filters** een status: Nog versturen, Concept, Wacht op betaling, Te laat, Klant zegt: betaald, Betaald of Geannuleerd. De tabbladen **Alle**, **Nog versturen** en **Wacht op betaling** werken als snelfilter
 4. Klik op de factuur om deze te openen
 
-Tip: Combineer zoeken met statusfilters voor de snelste resultaten.
+Tip: Combineer zoeken met een statusfilter voor de snelste resultaten.

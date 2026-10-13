@@ -1,7 +1,7 @@
 ---
 title: "Autoliquidation"
-description: "Pour créer une facture en autoliquidation (UE) : allez dans Factures > Nouvelle facture."
-last_verified: 2026-07-02
+description: "Pour créer une facture en autoliquidation (UE) : allez dans Factures › Nouvelle facture."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
   actions:
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 Pour créer une facture en autoliquidation (UE) :
-1. Allez dans Factures → Nouvelle facture
+1. Allez dans Factures › Nouvelle facture
 2. Sélectionnez votre client de l'UE et vérifiez que son numéro de TVA figure sur sa fiche
 3. Activez l'interrupteur "Autoliquidation de la TVA" sur le formulaire de facture ; MyCompanyDesk le propose automatiquement pour les clients professionnels de l'UE
 4. La TVA de toutes les lignes passe automatiquement à 0 % lorsque l'interrupteur est activé, et revient à son taux d'origine si vous le désactivez ; aucun changement manuel n'est nécessaire.
@@ -31,7 +31,7 @@ Si le pays ou le numéro KVK manque, le contrôle avant dépôt sur la page TVA 
 
 ## Autoliquidation d'importation (fournisseurs hors UE)
 
-Certains fournisseurs hors UE ne facturent pas de TVA néerlandaise. Vous devez alors déclarer vous-même la TVA. Dans MyCompanyDesk, cela s'appelle `import_reverse_charge` et entre dans la rubrique 4a, pas 4b.
+Certains fournisseurs hors UE ne facturent pas de TVA néerlandaise. Vous devez alors déclarer vous-même la TVA. Dans MyCompanyDesk, ce traitement de TVA s'appelle **Autoliquidation à l'importation** et la TVA entre dans la rubrique 4a, pas 4b.
 
 Choisissez ce traitement quand :
 

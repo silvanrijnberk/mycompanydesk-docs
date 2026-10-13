@@ -1,43 +1,31 @@
 ---
 title: Einrichtungsassistent
-description: "Der Assistent unter /setup richtet Ihr Unternehmen ein und fragt danach, womit Sie starten wollen: Rechnungen, Ihre Website oder geschäftliche E-Mail."
+description: "Der Assistent unter /setup holt Ihre Unternehmensdaten aus dem KVK-Register, fragt, womit Sie starten, und richtet MwSt. und IBAN fürs Rechnen ein."
 last_verified: 2026-10-13
 ---
 
 # Einrichtungsassistent
 
-Der Einrichtungsassistent unter `/setup` macht einen neuen Arbeitsbereich in wenigen Minuten startklar. Er beginnt bei Ihrer Rechnung: Er fragt, wen Sie abrechnen möchten, holt Ihre Unternehmensdaten aus dem niederländischen Handelsregister (KVK) und zeigt dabei eine Live-Vorschau der Rechnung. Direkt nach dem KVK-Schritt fragt er, womit Sie starten wollen: mit Rechnungen und Angeboten, mit Ihrer eigenen Website oder mit E-Mail auf Ihrer eigenen Domain. Nichts steht fest: Jeder Schritt lässt sich überspringen, und alles lässt sich später in den Einstellungen ändern.
+Der Einrichtungsassistent unter `/setup` (**Lass uns Ihr Unternehmen einrichten**) macht einen neuen Arbeitsbereich in wenigen Minuten startklar. Er holt Ihre Unternehmensdaten aus dem niederländischen Handelsregister (KVK) und zeigt dabei eine Live-Vorschau Ihrer Rechnung. Direkt nach dem KVK-Schritt fragt er, womit Sie starten wollen: mit Rechnungen und Angeboten, mit Ihrer eigenen Website oder mit E-Mail auf Ihrer eigenen Domain. Nichts steht fest: Jeder Schritt lässt sich überspringen, und alles lässt sich später in den Einstellungen ändern.
 
 Wenn Sie die Grundlagen suchen, beginnen Sie bei [Unternehmen einrichten](/de/getting-started/company-setup). Diese Seite ist die Referenz für jeden Schritt und jede Option.
 
 ## Wann der Assistent erscheint
 
 - **Erste Anmeldung:** Neue Konten landen automatisch im Assistenten.
-- **Jederzeit:** Rufen Sie `/setup` auf, um den Assistenten zu starten oder erneut zu durchlaufen. Ein Banner oben auf dem Dashboard gibt es nicht mehr; solange die Einrichtung offene Enden hat, weist das Dashboard Sie unten auf der Seite selbst auf den nächsten Schritt hin, unter **Richten Sie das ein**.
+- **Solange die Einrichtung nicht abgeschlossen ist:** Rufen Sie `/setup` auf, um dort weiterzumachen, wo Sie aufgehört haben. Nach dem Abschluss leitet `/setup` Sie zum Dashboard. Ein Banner oben auf dem Dashboard gibt es nicht; solange die Einrichtung offene Enden hat, weist das Dashboard Sie unten auf der Seite selbst auf den nächsten Schritt hin, unter **Richten Sie das ein**.
 
-Der Assistent blockiert Sie nirgends. **Vorerst überspringen** bringt Sie zum Dashboard, ohne abzuschließen; dabei geht nichts verloren, denn jede Antwort wird sofort gespeichert. Kommen Sie später zurück, machen Sie genau dort weiter, wo Sie aufgehört haben.
+Der Assistent blockiert Sie nirgends. **Jetzt überspringen** bringt Sie zum Dashboard, ohne abzuschließen; dabei geht nichts verloren, denn jede Antwort wird sofort gespeichert. Kommen Sie später zurück, machen Sie genau dort weiter, wo Sie aufgehört haben.
 
 ## Die Schritte
 
-Der Assistent fragt, in dieser Reihenfolge:
+Der Assistent fragt in dieser Reihenfolge:
 
-1. **Kunde:** wen Sie abrechnen möchten
-2. **KVK:** Ihre Unternehmensdaten
-3. **Womit Sie starten:** Ihre Wahl (siehe [den Schritt unten](#schritt-womit-wollen-sie-starten))
-4. **Zahlungseingang:** Ihr IBAN und USt.-Status (nur auf der Rechnungsroute)
-5. **Abschluss:** Testbestätigung
+1. **Handelsregister** (Finden Sie Ihr Unternehmen im Handelsregister)
+2. **Start** (Womit möchten Sie beginnen?): Ihre Wahl (siehe [den Schritt unten](#schritt-womit-wollen-sie-starten))
+3. **MwSt. und IBAN** (Wie werden Sie bezahlt?): nur auf der Rechnungsroute
 
-**Weiter** führt fort, sobald ein Schritt hat, was er braucht; **Einrichtung abschließen** auf dem letzten Schritt wendet alles an.
-
-## Schritt: Kunde
-
-Der Assistent öffnet mit einer Live-Vorschau der Rechnung und fragt nach dem Kunden. Beginnen Sie, den Kundennamen zu tippen.
-
-- Wenn der Kunde bereits in Ihrem Arbeitsbereich existiert, wählen Sie ihn aus der Liste aus.
-- Um einen neuen Kunden direkt zu erstellen, tippen Sie den Namen und klicken Sie auf **Kunde erstellen**. Das Inline-Formular fragt nach Kundennamen und Adresse. Die KVK-Suche kann niederländische Unternehmen vorschlagen und die Adresse automatisch ausfüllen; private Kunden fügen Sie hinzu, indem Sie die Adresse von Hand eingeben.
-- Die Kunden-E-Mail ist optional und wird nur verwendet, wenn Sie die Rechnung senden.
-
-Nur der Kundenname ist erforderlich, um fortzufahren. Die restlichen Kundendaten können Sie später auf der Kundenseite vervollständigen.
+**Weiter** bringt Sie voran, sobald ein Schritt hat, was er braucht, und **Zurück** geht einen Schritt zurück. Im letzten Schritt der Rechnungsroute wendet **Setup abschließen** alles an; haben Sie Website oder E-Mail gewählt, heißt diese Schaltfläche **Zu Ihrer Website** oder **Zu Ihrer E-Mail**.
 
 ## Schritt: KVK
 
@@ -54,32 +42,38 @@ Findet eine Suche nichts, sagt der Assistent das und bietet den Wechsel zur manu
 
 Direkt nach dem KVK-Schritt fragt der Assistent **Womit wollen Sie starten?** mit drei Antworten:
 
-- **Rechnungen und Angebote**: die gewohnte Route. Der Assistent fährt fort mit der Rechnungsvorschau, dem Schritt Zahlungseingang (IBAN und USt.-Status) und dem Abschlussbildschirm.
-- **Ihre eigene Website**: der Assistent endet hier, und eine Schaltfläche bringt Sie zu `/website`, wo sich der Website-Editor öffnet.
-- **E-Mail auf Ihrer eigenen Domain**: der Assistent endet hier, und eine Schaltfläche bringt Sie zu `/inbox/setup`, wo das geschäftliche Postfach eingerichtet wird.
+- **Rechnungen und Angebote senden**: die gewohnte Route. Der Assistent fährt fort mit dem Schritt MwSt. und IBAN und dem Abschlussbildschirm.
+- **Eine eigene Website**: Der Assistent endet hier, und **Zu Ihrer Website** bringt Sie zu `/website`, wo sich der Website-Editor öffnet.
+- **E-Mail mit eigener Domain**: Der Assistent endet hier, und **Zu Ihrer E-Mail** bringt Sie zu `/inbox/setup`, wo das geschäftliche Postfach eingerichtet wird.
 
 Die Wahl bestimmt nur, wo der Assistent Sie absetzt. Nichts wird ein- oder ausgeschaltet und nichts fertig vorausgewählt. Das Dashboard folgt derselben Wahl: Es bietet **Zet je website online** (Stellen Sie Ihre Website online) oder **Stel je zakelijke e-mail in** (Richten Sie Ihre geschäftliche E-Mail ein) an, bis die Website veröffentlicht ist oder ein eigenes Postfach auf Ihrer eigenen Domain besteht, und kehrt danach zur Rechnungsroute zurück.
 
-## Schritt: Zahlungseingang
+## Schritt: MwSt. und IBAN
 
-Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt Ihre Geschäfts-IBAN eingeben oder auf **IBAN später hinzufügen** klicken, um diesen Schritt zu überspringen. Beachten Sie, dass ein Kunde Sie ohne IBAN kaum bequem bezahlen kann.
+Dieser Schritt (**Wie werden Sie bezahlt?**) fragt nach den zwei Dingen, die auf jede Rechnung gehören.
 
-Zum USt-Status fragt der Schritt, ob Sie Umsatzsteuer abrechnen und, falls nein, ob das an der Kleinunternehmerregelung (KOR) liegt: ja, nein, oder ich weiß es nicht. **Ich weiß es nicht** bekommt eine eigene Antwort: Die KOR greift nur, wenn Sie sich selbst dafür bei der Belastingdienst angemeldet und ein Schreiben darüber erhalten haben; niedriger Umsatz allein genügt nicht, und das Schreiben des Finanzamts sagt es sicher. Antwort ja schaltet die Regelung ein, Rechnungen entstehen ohne Umsatzsteuer und erwähnen, dass Sie an der KOR teilnehmen. Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, können Sie trotzdem fortfahren und sie später hinzufügen.
+**Berechnen Sie MwSt.?** Wählen Sie eine von drei Antworten:
 
-## Schritt: Abschluss
+- **Ja, ich berechne MwSt.**: die meisten Selbstständigen. Tragen Sie Ihre USt-IdNr. ein oder wählen Sie **Ich kenne meine USt-IdNr. jetzt nicht, ich trage sie später ein**; die App fragt dann erneut, wenn Sie Ihre erste Rechnung senden.
+- **Nein, ich nehme an der KOR teil**: nur, wenn Sie sich selbst bei der Belastingdienst angemeldet und darüber Bescheid bekommen haben. Wenig Umsatz allein reicht nicht. Ihre Rechnungen werden dann ohne MwSt. erstellt und vermerken, dass Sie an der KOR teilnehmen.
+- **Nein, ich bin befreit**: für manche Berufe, etwa Pflege durch registrierte Gesundheitsdienstleister oder Unterricht durch eine CRKBO-registrierte Lehrkraft. Ihre Rechnungen werden ohne MwSt. erstellt.
 
-Der letzte Schritt bestätigt Ihre Testphase:
+Sind Sie bei der KOR unsicher, fragt der Schritt "Nimmst du an der KOR (Kleinunternehmerregelung) teil?" mit **Ja, ich nehme teil**, **Nein** und **Weiß ich nicht**. Bei Weiß ich nicht erklärt er, dass Sie nicht teilnehmen, wenn Sie sich nicht selbst angemeldet haben, und dass der Brief der Belastingdienst es sicher sagt.
 
-- **Ihre Testphase:** Jeder neue Arbeitsbereich startet mit 60 Tagen Office, kostenlos, ohne Kreditkarte.
+**Wohin sollen Kunden zahlen?** Tragen Sie Ihre IBAN und den Namen des Kontoinhabers ein oder wählen Sie **Trage ich später ein**, um das zu überspringen. Sie können Ihre IBAN später in den Einstellungen ergänzen, und die App fragt bei Ihrer ersten Rechnung erneut.
 
-**Einrichtung abschließen** wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an. Der Abschlussbildschirm nennt, was noch folgt: die Sicherheit Ihres Kontos und Ihre Website werden später vorgeschlagen, wann es passt, unter **Richten Sie das ein** auf dem Dashboard. Im Hintergrund wird nirgendwo eine Website gebaut; beim ersten Öffnen des Bereichs **Website** selbst wird dort die Standard-Entwurfssite angelegt (Startseite, Leistungen, Über uns, Kontakt, mit Ihren Daten bei den rechtlichen Seiten), noch wartend auf Ihre Veröffentlichung.
+## Abschluss
 
-## Überspringen, Fortsetzen und erneut Durchlaufen
+**Setup abschließen** wendet Ihre Unternehmensdaten, Ihren MwSt.-Status und Ihre IBAN an. Der Abschlussbildschirm ("Du kannst jetzt Rechnungen stellen") bietet die Schaltfläche **Erste Rechnung erstellen** und nennt, was noch folgt: Ihr Konto absichern und Ihre Website werden später vorgeschlagen, wenn es passt, unter **Richten Sie das ein** im Dashboard. Im Hintergrund wird keine Website gebaut; wenn Sie den Bereich **Website** zum ersten Mal selbst öffnen, wird dort die Standard-Entwurfsseite angelegt (Startseite, Leistungen, Über uns, Kontakt, mit Ihren Daten auf den Rechtsseiten), die auf Ihre Veröffentlichung wartet.
 
-- **Überspringen:** **Vorerst überspringen** bringt Sie jederzeit zum Dashboard. `/setup` bleibt der Weg zurück, bis die Einrichtung abgeschlossen ist.
-- **Website zuerst** (Eerst mijn website maken): ein zweiter Ausgang sitzt in der Fußleiste des ersten Schritts, neben Überspringen. Er verlässt die Einrichtung ohne abzuschließen und öffnet direkt den Website-Assistenten; anders als die simple Überspringung hält die Aufgabe Ihre Website fertigstellen im Dashboard offen, denn es gibt noch keine Site, die fertigzustellen wäre.
+Jeder neue Arbeitsbereich startet mit 60 Tagen Office, kostenlos und ohne Kreditkarte. Melden Sie sich über einen Einladungslink eines Partner-Buchhalters an, dauert diese Testphase 12 Monate. Danach wechselt Ihr Arbeitsbereich zurück zu Desk, ohne Bezahlschranke.
+
+## Überspringen und Fortsetzen
+
+- **Überspringen:** **Jetzt überspringen** bringt Sie jederzeit zum Dashboard. `/setup` bleibt der Weg zurück, bis die Einrichtung abgeschlossen ist.
+- **Website zuerst** (**Zuerst meine Website erstellen**): Unter der Frage **Sind Sie vor allem wegen Ihrer Website hier?** in der Fußleiste des ersten Schritts sitzt ein zweiter Ausgang, neben Überspringen. Er verlässt die Einrichtung ohne abzuschließen und öffnet direkt den Website-Assistenten; anders als das einfache Überspringen hält er die Aufgabe Ihre Website fertigstellen im Dashboard offen, denn es gibt noch keine Site, die fertigzustellen wäre.
 - **Fortsetzen:** Antworten werden bei jeder Änderung gespeichert. Den Tab mittendrin zu schließen kostet nichts; beim nächsten Besuch geht es auf demselben Schritt weiter.
-- **Erneut durchlaufen:** Nach dem Abschluss startet `/setup` den Ablauf wieder beim ersten Schritt, mit Ihren gespeicherten Antworten. Der Assistent füllt leere Felder auf, statt zu überschreiben: eine aufgebaute Dienstleistungsliste, ein hochgeladenes Logo oder selbst gewählte Einstellungen werden nicht ersetzt.
+- **Nach dem Abschluss:** `/setup` leitet Sie dann zum Dashboard. Was der Assistent eingetragen hat, ändern Sie in den Einstellungen (siehe unten). Der Assistent füllt nur leere Felder auf, statt zu überschreiben: Was Sie selbst eingetragen hatten, bleibt stehen.
 
 ## Bearbeiten ohne den Assistenten
 
@@ -88,7 +82,7 @@ Jedes Feld, das der Assistent berührt, hat einen Platz in den **Einstellungen**
 - **Unternehmensdaten:** Name, KVK-Nummer, Adresse, USt-Nummer
 - **Logo und Farbe:** Logo und Markenfarbe
 - **Rechnungsdesign:** das Erscheinungsbild Ihrer PDFs
-- **Deine Website und Domain:** Domain und Website
-- **Funktionen:** Teile der App ein- oder ausschalten
+- **Ihre Website und Domain:** Domain und Website
+- **Module:** Teile der App ein- oder ausschalten
 
 Die vollständige Übersicht finden Sie in der [Einstellungsübersicht](/de/settings/).

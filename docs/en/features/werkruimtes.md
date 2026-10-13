@@ -1,7 +1,7 @@
 ---
 title: Workspaces
 description: "One central page for every workspace you manage, your own businesses and client administrations, without ever mixing your own money with client money."
-last_verified: 2026-08-10
+last_verified: 2026-10-13
 ---
 
 # Workspaces
@@ -12,7 +12,7 @@ The Workspaces page at `/werkruimtes` is one central place for everything you ma
 
 ## Where to find it
 
-- Open the workspace switcher in the left sidebar and choose **Werkruimtes beheren**.
+- Open the workspace switcher in the left sidebar and choose **Manage workspaces**.
 - The same switcher lives in the mobile menu header, so you reach the workspaces overview from one place on every screen size.
 - The old `/boekhouder` URL redirects here.
 - The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once you hold more than eight workspaces.
@@ -22,11 +22,14 @@ Clicking a workspace in the switcher now swaps you in without a full page reload
 
 ## The workspace frame
 
-The app navigation now groups all workspace pages under **Workspaces**. The overview page stays where it is, and three new pages sit next to it:
+Once you are in Workspaces, a dedicated sidebar replaces the regular navigation. It groups the pages like this:
 
-- **Agenda** (`/werkruimtes/agenda`) - every deadline across all workspaces, grouped by date.
-- **Work** (`/werkruimtes/werk`) - your own open tasks plus outstanding client requests.
-- **Firm** (`/werkruimtes/kantoor`) - the firm overview for accountants, with dedicated billing and bulk-export pages.
+- **Overview**: **Today** (`/werkruimtes`), **Agenda** (`/werkruimtes/agenda`) and **Work** (`/werkruimtes/werk`). These three are always there.
+- **Yours**: **Businesses** (`/werkruimtes/bedrijven`), the overview of your own businesses. Always there as well.
+- **Customer work**: **Customers** (`/werkruimtes/klanten`), **Requests** (`/werkruimtes/verzoeken`) and **Insight** (`/werkruimtes/inzicht`). Appears as soon as you have access to a client administration.
+- **Firm**: **Your firm** (`/werkruimtes/kantoor`), **Billing** and **Export**. Appears when you belong to an accounting firm.
+
+**Today** shows what needs attention now, in two separate blocks: your own businesses first, then your clients (at most eight; anything beyond that is mentioned, not silently left out).
 
 ### Ownership indicator
 
@@ -42,9 +45,9 @@ The work page lists open work in two blocks: your own businesses first, then cli
 
 ### Firm pages (`/werkruimtes/kantoor/*`)
 
-If you run an accounting firm, the Firm section holds three firm-level pages:
+If you belong to an accounting firm, the Firm group holds three pages:
 
-- **Firm overview** (`/werkruimtes/kantoor`) - firm members, pending client invitations, partner share link and referral stats, and whether Office has been granted for free.
+- **Your firm** (`/werkruimtes/kantoor`) - firm members, pending client invitations, partner share link and referral stats, and whether Office has been granted for free.
 - **Billing** (`/werkruimtes/kantoor/facturatie`) - offer to take over a client administration's subscription. The client must accept before anything is charged, the price per administration is shown before you confirm, and a pending offer is shown separately so you can withdraw it until the client responds.
 - **Export** (`/werkruimtes/kantoor/export`) - export several client administrations at once. Choose the year, period, and export format, select the administrations, and the app downloads one archive per client. Any failed export stays on screen so you can see what did not complete.
 
@@ -56,20 +59,22 @@ If the data call fails, the page shows an explicit error state with a **Retry** 
 
 ## If you have one workspace
 
-The page shows three entry points instead of an empty screen:
+On **Businesses** you then get three entry points instead of an empty list:
 
-- **Add a business** if you run a holding, a second company, or a side business. Each new business gets its own administration with separate VAT, invoices, and bookkeeping.
-- **Invite your accountant** if you work with an external accountant.
-- **Join the partner program** if you are an accountant and want to manage multiple client administrations from one place.
+- **More than one company?** with **Add company**, for a holding, a second company, or a side business. Each new business gets its own administration with separate VAT, invoices, and books.
+- **Working with an accountant?** with **Invite accountant**, if you work with an external accountant.
+- **Are you an accountant yourself?** with a link to the partner program, if you want to manage multiple client administrations from one place.
 
 ## Combined workspace: your own businesses
 
-If you own more than one business, the page opens with a combined overview:
+If you own more than one business, **Businesses** (`/werkruimtes/bedrijven`) shows a combined overview:
 
 - A single sentence states what your businesses turned over this year, and whether that resulted in a profit or loss.
 - A strip shows combined revenue, profit, outstanding receivables, and VAT set aside.
 - A share bar shows the revenue split across businesses.
-- Below the combined band is one row per business. Rows stay in a fixed order (your home business first, then by creation date) so you always know where to look.
+- Below the figures is one row per business. Rows stay in a fixed order (your home business first, then by creation date) so you always know where to look.
+
+**View together** opens **Together** (`/werkruimtes/bedrijven/samen`): a table with your businesses side by side for a year you pick, with a totals row underneath.
 
 ### Signals inside each row
 
@@ -78,20 +83,20 @@ Each business row shows chips for the things that need attention right now. Ever
 | Chip | Meaning | Deep link |
 |---|---|---|
 | VAT period with a deadline | How many days until the VAT return is due, or how many days late it is | `/belastingen/btw` |
-| Overdue invoices | Invoices that have not been paid on time | `/facturen` |
-| Missing receipts | Expense items without a receipt | `/uitgaven` |
-| Drafts | Invoices still in draft | `/facturen` |
+| Overdue invoices | Invoices that have not been paid on time | `/invoices` |
+| Missing receipts | Expense items without a receipt | `/expenses` |
+| Drafts | Invoices still in draft | `/invoices` |
 | VAT filed | The previous return was filed | `/belastingen/btw` |
-| Trial ending | The business is still on an Office trial | `/settings/billing` |
-| Deactivated | The business is set to inactive; you can still view and export | `/werkruimtes` |
+| Trial period days left | The business is still on an Office trial | None, just a note |
+| Deactivated | The business is set to inactive; you can still view and export | None, just a note |
 
 Your own businesses use the same KPIs as the dashboard of each individual workspace, so the numbers cannot disagree.
 
 ## Intercompany positions (Onderling)
 
-If your own businesses invoice each other, each workspace normally only sees its own half. The Workspaces page now shows the net position between every pair of your own businesses, so the rekening-courant you used to keep on paper is visible in the app.
+If your own businesses invoice each other, each workspace normally only sees its own half. The Businesses page shows the net position between every pair of your own businesses, so the rekening-courant you used to keep on paper is visible in the app.
 
-The block appears only when at least two of your own businesses actually have open invoices to each other, so it stays out of the way for everyone else. It sits between the combined overview of your businesses and the client desk, because it is a relationship between your businesses rather than a property of any single one.
+The block appears only when at least two of your own businesses actually have open invoices to each other, so it stays out of the way for everyone else. It sits below the combined overview of your businesses, because it is a relationship between your businesses rather than a property of any single one.
 
 - Links are created automatically when a customer's VAT number matches one of your other workspaces. That match only ever looks at your own businesses, so a customer of someone else is never reached.
 - If the automatic match is wrong, or if no VAT number is available, you can link or unlink a customer by hand from the customer page. A manual link always wins over the automatic one.
@@ -102,7 +107,7 @@ The block appears only when at least two of your own businesses actually have op
 
 ## Kantoor workspace: client administrations
 
-If you are an accountant managing client administrations, the page becomes a triage desk:
+If you are an accountant managing client administrations, **Today** shows which clients need something now, and **Customers** (`/werkruimtes/klanten`) is the full list to work through, with filters such as what is late, who is waiting on you and what is assigned to you:
 
 - A headline tells you how many of your clients need attention today.
 - A figures strip shows total clients, deadlines this week, clients that need attention, and open invitations.
@@ -114,22 +119,22 @@ The row chips and deep links work the same as in the combined workspace, but row
 
 ### Accountant firm members
 
-If you work in an accounting firm, the firm has its own member list. Admins can invite colleagues from **Manage firm members**; each member gets a role (member or admin). Adding someone to the firm does not automatically give them access to any client; you still grant access per client from the Workspaces page. The client row shows how many clients each colleague has been assigned to, so you can see who is working on what.
+If you work in an accounting firm, the firm has its own member list under **Team members** on **Your firm**. Admins invite colleagues with **Invite colleague**; each member gets a role (member or admin). Adding someone to the firm does not give them access to any client; you grant that per client, and only when that client allows it. The row of each colleague shows how many clients they have been assigned to, so you can see who is working on what.
 
 ### Client work and requests
 
 Each client row shows a work chip when something is waiting. Open it to see who is handling the client right now and what you have asked the client for.
 
 - **Take it** assigns the client to you. **Release it** hands the work back so a colleague can pick it up. The status updates live for everyone in the firm, so two people do not start the same tax return unknowingly.
-- **Ask the client** creates a task in the client's own workspace. Choose a request type (for example missing receipts), add a title and a note, and the client sees it as a normal to-do. As soon as the client completes the task, the request is resolved and the work chip disappears. There is no manual "waiting" state to reset; it is simply the presence of an open request.
+- **Ask this customer something** creates a task in the client's own workspace, with a notification. Choose what it is about (for example missing receipts), say what you are asking and add a note, and the client sees it as a regular to-do. As soon as the client ticks the task off, the request is resolved and the work chip disappears. There is no manual 'waiting on client' status to reset; it simply follows from an open request. All open questions across your clients are listed together on **Requests**, oldest first.
 
 ## Adding your own business
 
 Open **Bedrijf toevoegen** and give the new business a name.
 
-If you are on a paid plan (Office), the app shows the extra cost before you confirm. During your own Office trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
+Several businesses of your own are part of **Office**: an extra business costs €5.99 per month or €59.90 per year (excl. VAT) on top of Office, up to 10 businesses of your own. On Desk you have one business. The app shows the extra cost before you confirm. During your own Office trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown.
 
-If you are on a free Office workspace (for example a comped or founding-member arrangement), your first business stays free and the app now offers a separate checkout for a second business. The price is shown before you start the checkout, and only the second business is billed on its own add-on subscription. After the payment is confirmed, you can name and create the second business.
+If you hold Office for free under a fixed arrangement, that free Office covers one business. For a second business the app offers a separate checkout. The price is shown before you start; only the second business is billed on its own subscription. After the payment is confirmed, you can name the second business.
 
 ## Copy settings from another business
 
@@ -141,7 +146,7 @@ Turn on **Copy settings from a business you already have** and pick the source. 
 - **Invoices and quotes** (layout, payment term, reminders and your own email texts).
 - **VAT** (return period and default rate).
 - **Expenses and receipts** (default category, mileage allowance and your own categories).
-- **Features** (which features are turned on, plus your time-registration setup).
+- **Modules** (which modules are turned on, plus your time-registration setup).
 - **Address and contact** (address, phone, email and website).
 
 Your chamber of commerce number, VAT number, bank account and invoice numbering are never copied: those belong to one business only.
@@ -174,7 +179,7 @@ The client creates their own account and remains the owner of their administrati
 
 ## Navigation follows your role
 
-The left rail now hides items your current workspace role is not allowed to use, so you no longer see links that would return a 403. The API drives this from a deny list: if a new endpoint is restricted for a role, its navigation item hides automatically.
+The left rail now hides items your current workspace role is not allowed to use, so you no longer see links that would return a 403. When a part of the app is restricted for a role, its menu item disappears automatically.
 
 In a client workspace the rail is shorter because parts that belong to the client (inbox, website, subscription, team settings, domains, and AI assistants) are denied to an accountant. The workspace switcher and the Workspaces item remain visible so you can always move between administrations.
 
@@ -186,7 +191,7 @@ In a client workspace the rail is shorter because parts that belong to the clien
 
 ## Insights for accountants (Inzicht)
 
-The Insights page, `/werkruimtes/inzicht`, compares client administrations and shows workload per period. It is only visible in the office workspace and only when you manage more than one client administration.
+The Insight page, `/werkruimtes/inzicht`, compares client administrations and shows workload per period. It sits in the Customer work group, which appears as soon as you manage client administrations.
 
 The page is deliberately about counts and dates, not amounts:
 
@@ -225,12 +230,12 @@ Use this table to spot a pile-up before it becomes a deadline problem. Periods a
 
 ### What is NOT on this page
 
-**"Percentage of VAT returns on time"** was in the original plan but is not shown. In MyCompanyDesk, "filed" means a period was closed in `period_locks`. A client who files elsewhere will never have that row, so a historical percentage would systematically mark them late. That would be an accusation based on missing data, not an accuracy issue. A quality metric like this first needs an explicit signal per administration that filing happens here.
+A **"Percentage of VAT returns on time"** is deliberately not shown. In MyCompanyDesk, "filed" means a period was closed here. A client who files elsewhere will never have a closed period here, so a historical percentage would systematically mark them late. That would be an accusation based on missing data, not an accuracy issue. A quality metric like this first needs an explicit signal per administration that filing happens here.
 
-Instead, the comparison table now includes a **Closed by you** column. It shows how many of the client's recent periods were closed in this office, using the same `period_locks` data. A client who files elsewhere simply shows 0, because nothing was closed here. The column is intentionally neutral and is never red, because it describes your own work, not the client's behavior.
+Instead, the comparison table now includes a **Closed by you** column. It shows how many of the client's recent periods were closed in this office, based on the same closed periods. A client who files elsewhere simply shows 0, because nothing was closed here. The column is intentionally neutral and is never red, because it describes your own work, not the client's behavior.
 
 ## Related
 
-- [Team access and your accountant](/en/settings/team) for inviting teammates and accountants and setting page permissions
+- [People with access and your accountant](/en/settings/team) for inviting teammates and accountants and setting page permissions
 - [Reports](/en/features/reports) for the lapsed-customers view and other report pages
 - [Dashboard](/en/features/dashboard) for the day-to-day briefing of one workspace

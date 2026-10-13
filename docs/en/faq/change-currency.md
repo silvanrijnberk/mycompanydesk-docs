@@ -7,8 +7,8 @@ chatbot:
   follow_up: ["How do I invoice in a different currency?", "How do I change my language?"]
 ---
 
-There is no currency setting to change. MyCompanyDesk is euro-only by design: all invoices, quotes, expenses, and reports use EUR, and this cannot be changed in My Account or anywhere else.
+There is no currency setting to change. MyCompanyDesk is euro-only by design: all invoices, quotes, expenses, and reports use EUR, and this cannot be changed anywhere.
 
 See [Multi currency](/en/faq/multi-currency) for how this works when you bill customers abroad.
 
-Tip: You can still send invoices in English, German, or French; only the amounts are always in euros.
+Tip: With Office you can still send invoices in English, German, or French (see [Change language](/en/faq/change-language)); the amounts are always in euros.

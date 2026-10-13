@@ -15,4 +15,6 @@ So fügen Sie Notizen zu einer Rechnung hinzu:
 3. Fügen Sie den Text hinzu, den Sie bei dieser Rechnung speichern wollen
 4. Speichern Sie die Rechnung
 
+Notizen stehen auf der Rechnung selbst, Ihr Kunde sieht sie also. Möchten Sie etwas nur für sich festhalten, nutzen Sie die Karte „Interne Notizen“ auf der Detailseite der Rechnung.
+
 Tipp: Nutzen Sie Notizen für Zahlungsanweisungen, Projektreferenzen oder Bedingungen, die nur für diese Rechnung gelten.

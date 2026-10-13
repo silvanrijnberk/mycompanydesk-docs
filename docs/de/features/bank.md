@@ -7,22 +7,24 @@ description: "Verbinden Sie Ihr Bankkonto, damit Transaktionen einfließen. Rege
 
 Verbinden Sie Ihr Bankkonto mit MyCompanyDesk und Ihre Transaktionen fließen automatisch herein. Regeln und smarte Kategorisierung machen aus abgehenden Zahlungen Ausgabenentwürfe, und Sie bestätigen jeden Entwurf, bevor er in Ihrer Buchhaltung landet.
 
+Die Bankanbindung ist Teil von **Office**, und Sie können bis zu 3 Bankkonten verbinden. Im Desk-Tarif sehen Sie statt der Verbindungsseite eine Schaltfläche zum Wechseln des Tarifs.
+
 ## Wo Sie es finden
 
 Der Bankfeed gehört zum Bereich Ausgaben:
 
-- **Verbindungen und Einstellungen**: Öffnen Sie **Ausgaben** und klicken Sie auf das Zahnrad in der Seitenkopfzeile. Dort verbinden Sie Banken, prüfen automatisch importierte Ausgaben und verwalten Regeln und Benachrichtigungen.
-- **Bankwarteschlange**: Oben auf der Ausgabenseite sehen Sie die Zeilen, die noch geprüft werden müssen.
-- **Transaktionsfeed**: Die Schaltfläche **Transaktionen** in der Kopfzeile der Ausgabenseite öffnet die Liste der importierten Banktransaktionen.
+- **Verbindungen und Einstellungen**: **Einstellungen › Bankkonto verbinden** (`/settings/bankkoppeling`), auch erreichbar über die Schaltfläche **Einstellungen** auf der Ausgabenseite. Dort verbinden Sie Banken und verwalten Feedeinstellungen, Regeln und Benachrichtigungen.
+- **Bankwarteschlange**: Oben auf der Ausgabenseite zeigt der Block **Aus Ihrer Bank** die Zeilen, die noch geprüft werden müssen.
+- **Transaktionsfeed**: Der Reiter **Transaktionen** neben Ausgaben in der oberen Leiste öffnet die Liste der importierten Banktransaktionen.
 
 ## Ein Bankkonto verbinden
 
-1. Gehen Sie zu **Ausgaben** und klicken Sie auf das Zahnrad.
+1. Gehen Sie zu **Einstellungen › Bankkonto verbinden**.
 2. Klicken Sie im Bankbereich auf **Erstes Bankkonto verbinden**, oder wählen Sie Ihre Bank direkt aus, wenn eine Bankauswahl angezeigt wird.
 3. Bestätigen Sie die Verbindung in der App oder auf der Website Ihrer eigenen Bank. Das ist ein sicherer PSD2-Ablauf: MyCompanyDesk kann nur die Transaktionen lesen, die Sie freigeben, und niemals Geld bewegen.
 4. Danach kehren Sie zu MyCompanyDesk zurück. Die erste Synchronisation importiert Transaktionen der letzten 90 Tage; danach bleibt der Feed automatisch aktuell.
 
-Sie können bis zu 10 Konten verschiedener Banken verbinden. Jedes Konto erscheint als eigene Zeile mit dem aktuellen Saldo und dem Zeitpunkt der letzten Synchronisation. Über **Weitere Bank verbinden** fügen Sie mehr hinzu. Die Bankfreigabe läuft nach den PSD2-Regeln regelmäßig ab (üblicherweise alle 90 Tage); Sie werden vorab benachrichtigt.
+Sie können bis zu 3 Bankkonten verbinden, auch von verschiedenen Banken. Jedes Konto erscheint als eigene Zeile mit dem aktuellen Saldo und dem Zeitpunkt der letzten Synchronisation. Über **Weitere Bank verbinden** fügen Sie mehr hinzu. Die Bankfreigabe läuft nach den PSD2-Regeln regelmäßig ab (üblicherweise alle 90 Tage); Sie werden vorab benachrichtigt.
 
 Pro Konto können Sie:
 
@@ -33,7 +35,7 @@ Pro Konto können Sie:
 
 ## Synchronisationsfrequenz
 
-Wie oft MyCompanyDesk nach neuen Transaktionen sucht, ist eine Einstellung für den gesamten Arbeitsbereich: **Echtzeit**, **Alle 4 Stunden** oder **Täglich**. Die manuelle Synchronisation pro Konto funktioniert immer zusätzlich.
+Wie oft MyCompanyDesk nach neuen Transaktionen sucht, ist eine Einstellung für den gesamten Arbeitsbereich: **Alle 4 Stunden** oder **Täglich um 06:00**. Echtzeit gibt es nicht: Eine PSD2-Verbindung holt Transaktionen in Abständen ab. **Jetzt synchronisieren** holt sofort alles ab, und die manuelle Synchronisation pro Konto funktioniert immer zusätzlich.
 
 ## Von der Transaktion zur Ausgabe
 
@@ -52,7 +54,7 @@ Nur abgehende Transaktionen werden zu Ausgaben; eingehende Zahlungen werden nie 
 
 ## Die Bankwarteschlange
 
-Die Bankwarteschlange ist nun Teil der Hauptausgabenliste. Sie zeigt Transaktionen, die noch nicht als Ausgabe gebucht wurden: Prüfzeilen, die der Feed vorbereitet hat, plus Ausgabenkandidaten aus dem Bankfeed. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
+Die Bankwarteschlange steht als Block **Aus Ihrer Bank** oben in der Ausgabenliste. Sie zeigt Transaktionen, die noch nicht als Ausgabe gebucht wurden: Prüfzeilen, die der Feed vorbereitet hat, plus Ausgabenkandidaten aus dem Bankfeed. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed). Nichts davon zählt, bevor Sie es buchen.
 
 Die Warteschlange wird innerhalb Ihrer Sitzung zwischengespeichert. Wenn Sie zu Ausgaben zurückkehren, erscheinen die Zeilen im ersten Frame, und der Hintergrund aktualisiert sie an Ort und Stelle. Dadurch verschiebt sich die darunter liegende Liste nicht mehr nach unten, während Sie bereits lesen. Der Cache gehört zu Ihrem aktuellen Arbeitsbereich: Bei einem Arbeitsbereichswechsel wird er neu aufgebaut.
 
@@ -60,13 +62,15 @@ Die Warteschlange wird innerhalb Ihrer Sitzung zwischengespeichert. Wenn Sie zu 
 Die Warteschlange lädt maximal 100 Prüfzeilen und 100 Ausgabenkandidaten pro Abruf. Hat der Server mehr Zeilen, zeigt die Warteschlange das an und lädt nach einer Aktion automatisch den nächsten Batch, sodass nichts hinter einer vollen Seite stecken bleibt.
 :::
 
-Für jeden Entwurf können Sie:
+Für jede Zeile können Sie:
 
-- **Bestätigen**: die Ausgabe unverändert buchen. Sie erscheint in Ihrer Ausgabenliste und zählt in Berichten und bei der USt.
-- **Bearbeiten**: die Ausgabe öffnen, um Kategorie, USt. oder Betrag vor dem Buchen anzupassen.
-- **Ablehnen**: den Entwurf verwerfen. Die Transaktion geht zur manuellen Bearbeitung zurück in den Feed.
+- **Buchen**: die Ausgabe mit der gewählten Kategorie buchen. Sie erscheint in Ihrer Ausgabenliste und zählt in Berichten und bei der USt.
+- **Kategorie wählen**: vor dem Buchen eine andere Kategorie auswählen.
+- **Ignorieren**: die Zeile aus der Warteschlange nehmen. Sie finden sie unter **Ignoriert** im Reiter Transaktionen wieder.
 
-Wenn die von Ihnen gewählte Kategorie seit dem Laden der Seite archiviert wurde, wird die Aktion Bestätigen oder Bearbeiten mit dem Fehler `EXPENSE_CATEGORY_UNKNOWN` abgelehnt, anstatt die Ausgabe stumm unter einer anderen Kategorie zu buchen. Laden Sie die Seite neu, um die aktuelle Kategorieliste zu laden, und wählen Sie erneut.
+Mit **Alles buchen** und **Alles ignorieren** erledigen Sie die ganze Warteschlange auf einmal; Alles ignorieren fragt vorher nach und lässt sich sofort rückgängig machen.
+
+Wenn die von Ihnen gewählte Kategorie seit dem Laden der Seite archiviert wurde, wird die Aktion Buchen mit dem Fehler `EXPENSE_CATEGORY_UNKNOWN` abgelehnt, anstatt stillschweigend eine andere Kategorie zu wählen. Laden Sie die Seite neu, um die aktuelle Kategorienliste zu erhalten, und wählen Sie erneut.
 
 ### Alte Warteschlangen-Einträge auf einen Schlag erledigen
 
@@ -80,13 +84,15 @@ Das Angebot erscheint nur, solange veraltete Zeilen vorhanden sind. Sind sie erl
 
 Auf derselben Einstellungsseite steuern Sie das Verhalten des Feeds:
 
-- **Auto-Import**: das automatische Anlegen von Ausgabenentwürfen für den gesamten Arbeitsbereich ein- oder ausschalten.
-- **Smarte Kategorisierung**: MyCompanyDesk eine Kategorie für Transaktionen ohne Regel vorschlagen lassen.
+- **Auto-Import in Ausgaben**: das automatische Anlegen von Ausgabenentwürfen für den gesamten Arbeitsbereich ein- oder ausschalten.
+- **Intelligente Kategorisierung**: MyCompanyDesk eine Kategorie für Transaktionen ohne Regel vorschlagen lassen.
 - **Eigene Überweisungen ignorieren**: Überweisungen zwischen Ihren eigenen verbundenen Konten überspringen.
-- **Belege per E-Mail anfragen**: Ein täglicher Durchlauf schickt Lieferanten eine gebündelte Anfrage für noch fehlende Belege. Jeder Lieferant wird pro Transaktion nur einmal gefragt. Mit der Option **Lieferanten automatisch an fehlende Belege erinnern** wird daraus eine wiederholte Erinnerung: nach der ersten Anfrage werden Lieferanten an Tag 7 und Tag 14 erneut kontaktiert, bis ein Beleg hochgeladen wurde. Ein Zähler bei der Einstellung zeigt, wie viele Zahlungen aktuell auf einen Belege warten.
-- **Mindestbetrag für den Import**: Transaktionen unter diesem Betrag werden keine Ausgaben.
-- **Standardkategorie**: die Kategorie, die greift, wenn nichts anderes passt.
+- **Beleg per E-Mail beim Lieferanten anfragen**: Ein täglicher Durchlauf schickt Lieferanten eine gebündelte Anfrage für noch fehlende Belege. Jeder Lieferant wird pro Transaktion nur einmal gefragt. Ein Zähler bei der Einstellung zeigt, wie viele Zahlungen aktuell auf einen Belege warten.
+- **Mindestbetrag für Import**: Transaktionen unter diesem Betrag werden keine Ausgaben.
+- **Standardkategorie ohne Regelübereinstimmung**: die Kategorie, die greift, wenn nichts anderes passt.
 - **Buchungsdatum**: Wählen Sie, ob Ausgaben das Transaktionsdatum, das Wertstellungsdatum oder das Belegdatum verwenden.
+
+Intelligente Kategorisierung und das automatische Anfragen fehlender Belege finden Sie auch gemeinsam unter **Einstellungen › Automatisierung**, im Block **Aus Ihrer Bank**.
 
 ## Regeln
 
@@ -100,24 +106,22 @@ Das Stichwort wird mit der Beschreibung und dem Namen der Gegenpartei verglichen
 
 Eine Regel prüft genau ein Stichwort. Bedingungen auf den Betrag werden nicht unterstützt, und Regeln legen Sie auf der Einstellungsseite an, nicht aus dem Transaktionsfeed heraus.
 
-## Vertrauensregeln für Lieferanten
+## Feste Lieferanten
 
-Wird derselbe Lieferant regelmäßig bezahlt, kann MyCompanyDesk diesen Lieferanten als vertrauenswürdig einstufen und die Entwurfsprüfung für passende Transaktionen überspringen. Sie steuern das auf der Einstellungsseite:
+Buchen Sie eine Zahlung an einen Lieferanten aus Ihrer Bank, merkt sich MyCompanyDesk diesen Lieferanten mit der gewählten Kategorie. Ab dann werden Ausgaben dieses Lieferanten automatisch gebucht, auch seine E-Rechnungen. In diesem Moment erhalten Sie die Benachrichtigung **Fester Lieferant gelernt**, damit das nie unbemerkt passiert.
 
-- **Vertrauenswürdige Lieferanten aus bestätigten Entwürfen lernen**: wenn aktiviert, wird ein Lieferant als "vertrauenswürdiger Lieferant" eingestuft, sobald genügend bestätigte Entwürfe und passende Regelverwendung vorliegen.
-- **Vertrauenswürdige Lieferanten erfordern meine Prüfung**: wählen Sie, ob Transaktionen vertrauenswürdiger Lieferanten weiterhin in der Prüf-Warteschlange erscheinen oder automatisch gebucht werden.
 
-Ein Lieferant wird nur dann als vertrauenswürdig eingestuft, wenn ein starkes, konsistentes Muster bestätigter Zahlungen und eine aktive Kategorisierungsregel vorliegen. Sie können die Funktion jederzeit deaktivieren; dann wird alle bisher gelernte Lieferantenvertrauen gelöscht und jede Transaktion durchläuft wieder den normalen Prüfprozess.
+Eine als privat markierte Zahlung oder eine Überweisung auf Ihr eigenes Konto lernt keine Regel. Wie viele feste Lieferanten automatisch gebucht werden, sehen Sie unter **Einstellungen › Automatisierung**. Die Regeln selbst sehen, ändern und löschen Sie im Block **Lieferant › Kategorie-Regeln** auf der Seite Bankkonto verbinden.
 
 ## Der Transaktionsfeed
 
-Öffnen Sie **Transaktionen** in der Kopfzeile der Ausgabenseite, um alle importierten Transaktionen zu sehen, mit ein paar Kennzahlen oben (Transaktionen in diesem Monat, Anteil automatisch gebucht und wie viele noch Ihre Aufmerksamkeit brauchen). Drei Reiter teilen den Feed auf:
+Öffnen Sie den Reiter **Transaktionen** neben Ausgaben, um alle importierten Transaktionen zu sehen, mit ein paar Kennzahlen oben (Transaktionen in diesem Monat, Anteil automatisch gebucht und wie viele noch Ihre Aufmerksamkeit brauchen). Drei Reiter teilen den Feed auf:
 
-- **Zuzuordnen**: Transaktionen, die noch mit nichts verknüpft sind.
+- **Zu verarbeiten**: Transaktionen, die noch mit nichts verknüpft sind.
 - **Zugeordnet**: Transaktionen mit Verknüpfung zu einer Rechnung oder Ausgabe, inklusive Link zum Datensatz.
 - **Ignoriert**: Transaktionen, die Sie ignoriert haben.
 
-Während Sie den Reiter mit den nicht zugeordneten Zeilen durcharbeiten, stehen Zeilen, die nicht als zu verarbeiten zählen, in eingeklappten Gruppen darunter: **Privatkonto** für Zeilen von einem verbundenen Privatkonto (die Gruppe erscheint erst, wenn Sie eines verbunden haben), und **Älter** für Zeilen von vor dem Datum, ab dem der Feed dem Konto folgt. Eine als privat markierte Zeile erhält einen Hinweis, dass sie außerhalb der Buchhaltung bleibt; eine noch nicht geprüfte Zeile sagt das ebenfalls. Die Zähler für zu verarbeiten auf dieser Seite, in Buchhaltung → Bank und in den Dashboard-Kacheln teilen eine Definition und zählen auch Abbuchungen auf Ihrem Privatkonto mit, die eine geschäftliche Ausgabe sein könnten, sodass die Summen überall übereinstimmen.
+Während Sie den Reiter mit den nicht zugeordneten Zeilen durcharbeiten, stehen Zeilen, die nicht als zu verarbeiten zählen, in eingeklappten Gruppen darunter: **Privatkonto** für Zeilen von einem verbundenen Privatkonto (die Gruppe erscheint erst, wenn Sie eines verbunden haben), und **Älter** für Zeilen von vor dem Datum, ab dem der Feed dem Konto folgt. Eine als privat markierte Zeile erhält einen Hinweis, dass sie außerhalb der Buchhaltung bleibt; eine noch nicht geprüfte Zeile sagt das ebenfalls. Die Zähler für zu verarbeiten auf dieser Seite, in Buchhaltung › Bank und in den Dashboard-Kacheln teilen eine Definition und zählen auch Abbuchungen auf Ihrem Privatkonto mit, die eine geschäftliche Ausgabe sein könnten, sodass die Summen überall übereinstimmen.
 
 Für jede offene Transaktion:
 
@@ -128,20 +132,23 @@ Das Verknüpfen bleibt meist ein manueller Schritt. MyCompanyDesk verknüpft jed
 
 ## Benachrichtigungen
 
-Unten auf der Einstellungsseite lassen sich fünf Bankbenachrichtigungen unabhängig voneinander einschalten:
+Unten auf der Seite Bankkonto verbinden lassen sich drei Bankbenachrichtigungen unabhängig voneinander einschalten:
 
-- **Synchronisationsfehler**: eine E-Mail und In-App-Benachrichtigung, wenn eine Bankverbindung nicht synchronisieren kann, mit einem Link zur Behebung.
-- **Wochenübersicht**: eine E-Mail am Montagmorgen mit der Bankaktivität der vergangenen Woche. Sie wird übersprungen, wenn es nichts zu berichten gab. Die Wochenübersicht ist in jedem Workspace standardmäßig ausgeschaltet, damit am Montag nur eine E-Mail ankommt: Solange sie aus ist, erscheinen die noch nicht zugeordneten Bankbuchungen in der Montags-E-Mail von **Jetzt erledigen**. Nur Workspaces, deren Montags-E-Mail bereits ausgeschaltet war, behalten die Wochenübersicht, wie sie war, denn keine andere E-Mail übernimmt dann die nicht zugeordneten Buchungen. Schalten Sie die Übersicht in dieser Liste wieder ein, wenn Sie die zusätzliche Zusammenfassung möchten; ist sie eingeschaltet, lässt die Montags-E-Mail diese Buchungen weg.
-- **Große Transaktionen**: eine Meldung, wenn eine Transaktion einen von Ihnen festgelegten Betrag erreicht oder überschreitet.
-- **Lieferantenregel gelernt**: eine In-App-Benachrichtigung, wenn MyCompanyDesk aus Ihren bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel gelernt hat.
-- **Gesperrte USt.-Periode**: eine einmalige Meldung, wenn der Bank-Feed versucht, eine ausgehende Transaktion in eine bereits eingereichte und gesperrte USt.-Periode zu buchen. Die Zeile wird dauerhaft übersprungen, damit der Sync nicht endlos wiederholt, und die Benachrichtigung erklärt die Optionen: buchen Sie die Ausgabe manuell mit Datum in der aktuellen offenen Periode, oder reichen Sie eine Ergänzungsmeldung ein.
+- **E-Mail bei Sync-Fehler**: eine E-Mail und In-App-Benachrichtigung, wenn eine Bankverbindung nicht synchronisieren kann, mit einem Link zur Behebung.
+- **Wöchentliche Zusammenfassung**: eine E-Mail am Montagmorgen mit der Bankaktivität der vergangenen Woche. Sie wird übersprungen, wenn es nichts zu berichten gab. Die Wochenübersicht ist in jedem Workspace standardmäßig ausgeschaltet, damit am Montag nur eine E-Mail ankommt: Solange sie aus ist, erscheinen die noch nicht zugeordneten Bankbuchungen in der Montags-E-Mail von **Jetzt erledigen**. Nur Workspaces, deren Montags-E-Mail bereits ausgeschaltet war, behalten die Wochenübersicht, wie sie war, denn keine andere E-Mail übernimmt dann die nicht zugeordneten Buchungen. Schalten Sie die Übersicht in dieser Liste wieder ein, wenn Sie die zusätzliche Zusammenfassung möchten; ist sie eingeschaltet, lässt die Montags-E-Mail diese Buchungen weg.
+- **Push bei großen Transaktionen**: eine Meldung, wenn eine Transaktion einen von Ihnen festgelegten Betrag erreicht oder überschreitet.
+
+Dazu erhalten Sie immer diese Benachrichtigungen, ohne Schalter:
+
+- **Fester Lieferant gelernt**: eine In-App-Benachrichtigung, wenn MyCompanyDesk aus einer von Ihnen gebuchten Ausgabe einen neuen festen Lieferanten gelernt hat.
+- **Gesperrte USt.-Periode**: eine einmalige Meldung, wenn der Bank-Feed versucht, eine ausgehende Transaktion in eine bereits eingereichte und gesperrte USt.-Periode zu buchen. Die Zeile wird dauerhaft übersprungen, damit der Sync nicht endlos wiederholt, und die Benachrichtigung erklärt die Optionen: Buchen Sie die Ausgabe manuell mit Datum in der aktuellen offenen Periode, oder reichen Sie eine Ergänzungsmeldung ein.
 
 ## Fehlerbehebung
 
-**Meine Bankverbindung zeigt einen Fehler.** Öffnen Sie die Ausgabeneinstellungen über das Zahnrad auf der Ausgabenseite. Braucht Ihre Bank eine neue Freigabe, sehen Sie das in der Zeile der Verbindung; die Fehlerbenachrichtigung verlinkt ebenfalls dorthin.
+**Meine Bankverbindung zeigt einen Fehler.** Öffnen Sie **Einstellungen › Bankkonto verbinden**. Braucht Ihre Bank eine neue Freigabe, sehen Sie das in der Zeile der Verbindung; die Fehlerbenachrichtigung verlinkt ebenfalls dorthin.
 
-**Eine Transaktion wurde keine Ausgabe.** Prüfen Sie, ob der Auto-Import eingeschaltet ist, der Betrag über Ihrem Mindestbetrag liegt und es eine abgehende Zahlung ist. Sie können die Transaktion jederzeit von Hand auf der Seite Transaktionen zuordnen.
+**Eine Transaktion wurde keine Ausgabe.** Prüfen Sie, ob der Auto-Import eingeschaltet ist, der Betrag über Ihrem Mindestbetrag liegt und es eine abgehende Zahlung ist. Sie können die Transaktion jederzeit von Hand im Reiter Transaktionen zuordnen.
 
 **Eine Banktransaktion fällt in eine gesperrte USt.-Periode.** Der Bank-Feed kann keine Ausgaben automatisch mit Datum in einer bereits eingereichten Periode buchen. Sie erhalten die einmalige Meldung "Banktransaktion: USt.-Periode gesperrt", die Zeile wird als dauerhaft übersprungen markiert und der nächste Sync versucht sie nicht erneut. Um die Kosten dennoch zu erfassen, buchen Sie die Ausgabe manuell mit einem Datum in der aktuellen offenen Periode, oder fragen Sie Ihren Steuerberater, ob eine Ergänzungsmeldung der richtige Weg ist.
 
-**Ich bekomme keine Benachrichtigungen.** Prüfen Sie die Schalter unten auf der Seite mit den Ausgabeneinstellungen.
+**Ich bekomme keine Benachrichtigungen.** Prüfen Sie die Schalter unten auf der Seite Bankkonto verbinden.

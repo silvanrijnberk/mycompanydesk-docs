@@ -1,7 +1,7 @@
 ---
 title: "Berichtsübersicht"
-description: "Berichte ansehen: Gehen Sie zu Berichte und wechseln Sie zwischen Übersicht, Gewinn und Verlust, Cashflow, Kunden, Prognose und Einkommensteuer."
-last_verified: 2026-09-28
+description: "Berichte ansehen: Öffnen Sie Berichte und wechseln Sie zwischen Übersicht, Verkauf, Angebote, Kunden, Arbeit & Zeit, Kosten, Cashflow und Reichweite."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "view reports"
@@ -16,18 +16,18 @@ chatbot:
     - "voir rapports"
   actions:
     - { label: "Open reports", to: "/reports" }
-    - { label: "Open VAT", to: "/vat" }
+    - { label: "Open VAT", to: "/belastingen" }
   follow_up:
     - "How do I export my data?"
     - "How do I view charts?"
     - "How do I see profit and loss?"
 ---
 
-So sehen Sie Ihre Berichte:
-1. Gehen Sie zu Berichte
-2. Wechseln Sie zwischen den sechs Ansichten: Übersicht, GuV, Cashflow, Kunden, Prognose und Einkommensteuer
-3. Nutzen Sie die Filter, um die Zeitraumeinteilung zu wählen (Jahr, Quartal, Monat, Woche oder Tag) und das Jahr auszuwählen. Die Schalter **Offene Rechnungen einbeziehen** und **Vergleichen mit einem anderen Jahr** erscheinen nur in den Ansichten, die sie nutzen
+So sehen Sie Ihre Berichte (Office):
+1. Gehen Sie in der Seitenleiste unter Finanzen zu **Berichte**
+2. Wechseln Sie oben zwischen den Tabs **Übersicht**, **Verkauf**, **Angebote**, **Kunden**, **Arbeit & Zeit**, **Kosten**, **Cashflow** und **Reichweite**. Angebote, Arbeit & Zeit und Reichweite erscheinen erst, wenn Sie Angebote, Stunden oder einen Newsletter haben
+3. Nutzen Sie **Filter**, um die Zeitraumeinteilung zu wählen (Jahr, Quartal, Monat, Woche oder Tag) und das Jahr auszuwählen. **Offene Rechnungen einbeziehen** und der Vergleich mit einem anderen Jahr erscheinen nur in den Tabs, die sie nutzen
 
-Berichte haben keine Status- oder Kategoriefilter. Die Zeitraum- und Jahresfilter gelten für alle Ansichten; die Schalter für offene Rechnungen und Vergleiche erscheinen nur, wo sie gelesen werden.
+Berichte haben keine Status- oder Kategoriefilter. Ihre MwSt.-Erklärung und die Einkommensteuer finden Sie unter **Steuern**, Gewinn und Verlust, Bilanz und Hauptbuch unter **Buchhaltung**.
 
 Tipp: Wenn eine Zahl nicht stimmt, prüfen Sie zuerst die aktiven Zeitraum- und Vergleichseinstellungen.

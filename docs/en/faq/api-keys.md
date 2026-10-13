@@ -1,18 +1,17 @@
 ---
 title: API keys
-description: "To manage API keys: go to Workspace Settings > API Keys, click Create API Key and give it a descriptive name."
-last_verified: 2026-05-09
+description: "Can you create API keys or webhooks in MyCompanyDesk? No, there is no public API. Here is how to get your data out anyway."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]
   actions:
-    - { label: "Open API keys", to: "/settings/api-keys" }
+    - { label: "Open Download data", to: "/settings/downloaden" }
   follow_up: ["How do I set up my company settings?", "How do I manage team access?"]
 ---
-To manage API keys:
-1. Go to Workspace Settings → API Keys
-2. Click "Create API Key" and give it a descriptive name
-3. Copy the key immediately - it won't be shown again
-4. Choose scopes: **Read**, **Write**, or **Admin**
-5. Review the scopes and revoke keys you no longer need
+MyCompanyDesk has no public API and no webhooks, so you cannot create API keys.
 
-This answer is limited to where API key actions are in the app.
+To use your data in another system, you have these options on every plan:
+1. Go to **Settings › Download data** and download your invoices, customers and expenses as a CSV file per section, or everything together as a JSON backup
+2. Or give your accountant free access under **Settings › Your accountant**
+
+Read more on [API integration](/en/advanced/api).

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: MyCompanyDesk
   text: Buchhaltung leicht gemacht
-  tagline: Die All-in-One-Plattform für Freiberufler und kleine Unternehmen zur Verwaltung von Rechnungen, Ausgaben, Kunden und mehr.
+  tagline: Die All-in-one-Plattform für Selbstständige zur Verwaltung von Rechnungen, Ausgaben, Kunden, Ihrer Website und mehr.
   actions:
     - theme: brand
       text: Erste Schritte
@@ -16,7 +16,7 @@ features:
   - icon:
       src: /icons/file-bar-chart.svg
     title: Rechnungen & Angebote
-    details: Erstellen Sie professionelle Rechnungen und Angebote, versenden Sie diese an Kunden und verfolgen Sie Zahlungen — alles an einem Ort.
+    details: Erstellen Sie professionelle Rechnungen und Angebote, versenden Sie diese an Kunden und verfolgen Sie Zahlungen, alles an einem Ort.
   - icon:
       src: /icons/receipt.svg
     title: Ausgabenverfolgung
@@ -24,7 +24,7 @@ features:
   - icon:
       src: /icons/bar-chart-3.svg
     title: Berichte & USt.
-    details: Erhalten Sie Einblicke in Umsatz, Gewinn, Cashflow und Umsatzsteuer. Sperren Sie Zeiträume nach der Meldung für die Compliance.
+    details: Bereiten Sie Ihre USt.-Erklärung in jedem Tarif vor und sperren Sie Zeiträume nach der Meldung. Mit Office kommen Berichte zu Umsatz, Gewinn, Cashflow und Kunden dazu.
   - icon:
       src: /icons/users.svg
     title: Kunden & Projekte
@@ -32,19 +32,19 @@ features:
   - icon:
       src: /icons/refresh-cw.svg
     title: Wiederkehrende Abrechnung
-    details: Richten Sie wiederkehrende Rechnungen und Ausgaben ein, die automatisch nach Ihrem gewählten Zeitplan erstellt werden.
+    details: Richten Sie mit Office wiederkehrende Rechnungen und Ausgaben ein, die automatisch nach Ihrem gewählten Zeitplan erstellt werden.
   - icon:
       src: /icons/bar-chart-3.svg
     title: Anlagen und Abschreibung
     details: Verfolgen Sie Geschäftsanlagen, erfassen Sie den Anschaffungswert und lassen Sie Abschreibungen automatisch laufen, damit Sie den aktuellen Buchwert immer im Blick haben.
   - icon:
       src: /icons/house.svg
-    title: Verträge & Anlagen
-    details: Verwalten Sie Mietverträge, verfolgen Sie Immobilien, Fahrzeuge und Geräte mit vollständigem Lebenszyklus-Management.
+    title: Verträge
+    details: Halten Sie feste Vereinbarungen mit Kunden in einem Vertrag fest, lassen Sie ihn online unterschreiben und rechnen Sie automatisch ab. Mit Office.
   - icon:
       src: /icons/house.svg
-    title: Website auf Ihrer eigenen Domain
-    details: Erstellen Sie eine mehrseitige Website auf Ihrer eigenen Domain, starten Sie aus einem vorgefertigten Site-Paket, oder wenden Sie ein Bespoke-Design an. Alles aus einer Hand.
+    title: Ihre eigene Website
+    details: Erstellen Sie eine mehrseitige Website, kostenlos auf mycompanydesk.site oder mit Office auf Ihrer eigenen Domain. Starten Sie aus einem vorgefertigten Site-Paket, alles aus einer Hand.
     link: /de/advanced/business-page
     linkText: Mehr erfahren
 ---

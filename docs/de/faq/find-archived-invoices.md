@@ -1,6 +1,6 @@
 ---
 title: "Archivierte Rechnungen finden"
-description: "Archivierte Rechnungen finden Sie unter Rechnungen > Archiv. Wenn Sie bereits in der Rechnungsliste sind, wechseln Sie zur Ansicht Archiv."
+description: "Archivierte Rechnungen finden Sie in Rechnungen: Klicken Sie auf Filter und wählen Sie unter Anzeigen die Ansicht Archiv."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -29,4 +29,4 @@ chatbot:
     - "How do I cancel an invoice?"
 ---
 
-Archivierte Rechnungen finden Sie unter Rechnungen -> Archiv. Wenn Sie bereits in der Rechnungsliste sind, wechseln Sie zur Ansicht Archiv. Gelöschte Rechnungen liegen im Papierkorb.
+Archivierte Rechnungen finden Sie in Rechnungen: Klicken Sie über der Liste auf Filter und wählen Sie unter Anzeigen die Ansicht Archiv. Auf dem Smartphone nutzen Sie dafür die Filterschaltfläche oben. Gelöschte Rechnungen liegen im Papierkorb.

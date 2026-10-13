@@ -12,9 +12,8 @@ chatbot:
 
 To delete multiple invoices or expenses at once:
 1. Go to the list view (Invoices or Expenses)
-2. Select multiple items using the checkboxes
-3. Click the bulk action button at the top
-4. Choose "Delete" from the dropdown
-5. Confirm the bulk deletion
+2. Select the items: on desktop the checkbox appears when you hover over a row, or choose "Select multiple" in a row's menu
+3. Click "Delete" in the bar at the bottom of the screen
+4. Confirm the deletion
 
-Note: Only draft items can typically be bulk deleted. Sent or paid items should be cancelled individually.
+Deleting happens in stages: from the active list, items first go to the archive or the trash, and only "Delete permanently" in the trash removes them for good. Until that last step you can bring them back with "Restore to active" or "Restore to archive".

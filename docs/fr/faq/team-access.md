@@ -1,7 +1,7 @@
 ---
-title: Accès'équipe
-description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
-last_verified: 2026-09-15
+title: "Accès de l'équipe"
+description: "Pour gérer qui a accès à votre espace de travail : Paramètres, Personnes ayant accès, puis invitez quelqu'un ou réglez ses droits."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "team access"
@@ -23,7 +23,7 @@ chatbot:
     - "teamleden"
     - "uitnodigen"
     - "werkruimte"
-    - "toegang en boekhouder"
+    - "mensen met toegang"
   actions:
     - { label: "Open access settings", to: "/settings/toegang" }
   follow_up:
@@ -34,11 +34,13 @@ chatbot:
 
 ---
 
-To manage who has access to your workspace:
+Pour gérer qui a accès à votre espace de travail :
 
-1. Go to Settings → **Toegang en boekhouder** (access and accountant)
-2. Review current members and rôles in the **Mensen met toegang** (people with access) section
-3. Click **Iemand toegang geven** (give someone access) to invite a teammate by email
-4. Click the **Toegang beheren** (manage access) button or gear icon on a member row to set page permissions
+1. Allez dans Paramètres › **Personnes ayant accès**
+2. Vérifiez qui a déjà accès et avec quel rôle : **Propriétaire**, **Admin** ou **Membre**
+3. Cliquez sur **Inviter un membre**, saisissez son adresse e-mail et cliquez sur **Envoyer l'invitation**
+4. Vous voulez définir ce qu'une personne peut faire page par page ? Ouvrez le menu sur sa ligne (sur téléphone, le bouton **Gérer**) et choisissez **Gérer l'accès**
 
-Permissions are managed per page with Read, Write and Create options. Inviting team members requires the **Office** plan; the accountant section on the same page is free on every plan.
+Les permissions se règlent par page avec Lire, Écrire et Créer, voir [Permissions équipe](/fr/faq/team-permissions). Inviter des personnes nécessite la formule **Office**, autant que vous voulez et sans frais par personne.
+
+Vous donnez accès à votre comptable dans Paramètres › **Votre comptable**. C'est gratuit avec chaque formule.

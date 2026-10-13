@@ -1,7 +1,7 @@
 ---
 title: Abonnement et paiements
-description: "Ce que vous nous payez, vos factures de notre part et votre carte de paiement, dans Paramètres, Abonnement et paiements."
-last_verified: 2026-10-09
+description: "Ce que vous nous payez, vos factures de notre part et votre carte de paiement, dans Paramètres, Votre abonnement."
+last_verified: 2026-10-13
 ---
 
 # Abonnement et paiements
@@ -10,7 +10,7 @@ Ce que vous nous payez, vos factures de notre part et votre carte de paiement.
 
 ## Où le trouver
 
-Ouvrez **Paramètres**, puis **Je abonnement** (votre abonnement), ou naviguez directement vers `/settings/abonnement`.
+Ouvrez **Paramètres**, puis **Votre abonnement**, ou naviguez directement vers `/settings/abonnement`.
 
 Les anciennes URL `/workspace/account/billing` et `/settings/billing` redirigent vers la nouvelle page ; vos favoris continuent de fonctionner et le paramètre de requête `?checkout=success|canceled` est conservé lors de la redirection.
 
@@ -22,18 +22,18 @@ Les espaces de travail bénéficiant d'un tel accord sont des clients Office com
 
 ## Formules
 
-MyCompanyDesk propose deux formules : **Desk** et **Office**. Desk est gratuit, sans carte bancaire, et reste disponible aussi longtemps que vous le souhaitez. Les nouveaux clients bénéficient de 60 jours d'Office, gratuits et sans carte bancaire. Si vous ne choisissez pas de formule ensuite, votre espace de travail passe automatiquement sur Desk et vos données sont conservées.
+MyCompanyDesk propose deux formules : **Desk** et **Office**. Desk est gratuit, sans carte bancaire, et reste disponible aussi longtemps que vous le souhaitez. Chaque nouveau compte bénéficie de 60 jours d'Office, gratuits et sans carte bancaire. Si vous vous inscrivez via le lien d'un comptable partenaire de MyCompanyDesk, cet essai dure 12 mois. Si vous ne choisissez pas de formule à la fin de l'essai, votre espace de travail passe automatiquement sur Desk et vos données sont conservées. Aucun mur de paiement ne vous bloque.
 
 | Formule | Mensuel | Annuel | Description |
 |---|---|---|---|
 | **Desk** | 0,00 EUR | 0,00 EUR | Facturation, devis et dépenses illimités, projets et saisie de temps, plus votre propre site sur mycompanydesk.site |
-| **Office** | 12,99 EUR | 129,90 EUR | Tout Desk plus l'automatisation et des services en plus : connexion bancaire, domaine personnel, boîte mail professionnelle, factures récurrentes, comptabilité complète, accès équipe, API et plus |
+| **Office** | 12,99 EUR | 129,90 EUR | Tout Desk plus l'automatisation et des services en plus : connexion bancaire, domaine personnel, boîte mail professionnelle, factures récurrentes, comptabilité complète, accès équipe et plus |
 
-Tous les prix s'entendent hors TVA néerlandaise de 21%, ajoutée lors du paiement. L'application affiche les prix avec la mention « excl. btw » (hors TVA) ; en tant qu'entreprise, vous récupérez cette TVA comme taxe déductible. Le prix annuel équivaut à dix paiements mensuels, payer à l'année vous offre donc deux mois gratuits. L'exception est le montant de 0,50 € par facture payée en ligne sur Desk : il est indiqué TTC.
+Tous les prix s'entendent hors TVA néerlandaise de 21%, ajoutée lors du paiement. L'application affiche les prix avec la mention « hors TVA » ; en tant qu'entreprise, vous récupérez cette TVA comme taxe déductible. Le prix annuel équivaut à dix paiements mensuels, payer à l'année vous offre donc deux mois gratuits. L'exception concerne les frais de service de 0,50 € par paiement en ligne sur Desk : ce montant est TTC.
 
-**Première année plus avantageuse :** si vous payez Office à l'année et que votre espace de travail n'a encore jamais payé, la première année coûte 35,88 EUR (2,99 EUR par mois). Ensuite, vous payez 129,90 EUR par an. Pas satisfait après votre premier paiement ? Vous êtes remboursé dans les 14 jours.
+**Première année plus avantageuse :** si vous payez Office à l'année et que votre espace de travail n'a encore jamais payé (y compris pendant l'essai ou sur Desk), la première année coûte 35,88 EUR en un seul paiement (2,99 EUR par mois). Ensuite, vous payez 129,90 EUR par an. Ce prix de lancement ne vaut que pour le paiement annuel ; si vous payez au mois, ou si vous avez déjà eu un abonnement payant, vous payez le prix normal. Pas satisfait après votre premier paiement ? Vous êtes remboursé dans les 14 jours.
 
-Paiements en ligne : sur Desk, vous payez 0,50 € TTC par facture payée en ligne de 5 € ou plus, en plus des frais de Mollie ou Stripe. Avec Office, vous ne payez pas cela.
+Paiements en ligne : sur Desk, des frais de service de 0,50 € TTC sont retenus sur votre versement pour chaque paiement en ligne de 5 € ou plus, en plus des frais de Mollie ou Stripe. Votre client ne les paie pas, il règle simplement le montant de la facture. Avec Office, il n'y a pas de frais de service.
 
 ### Ce que chaque formule inclut
 
@@ -47,10 +47,11 @@ Fonctionnalités avec limites d'utilisation (limites mensuelles, sauf indication
 | Stockage | 100 Mo | illimité |
 | Personnes avec accès | vous seul | illimité |
 | Domaines personnalisés | 0 | 5 |
-| Messages de chat IA (mensuel) | 10 | 1 000 |
-| Scans de reçus IA (mensuel) | 3 | 200 |
-| Suggestions IA (mensuel) | 10 | 2 000 |
+| Questions à l'assistant (mensuel) | 10 | 1 000 |
+| Reçus scannés (mensuel) | 3 | 200 |
+| Suggestions intelligentes (mensuel) | 10 | 2 000 |
 | Connexions bancaires | 0 | 3 |
+| Entreprises à vous | 1 | 10 |
 
 Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont réinitialisées le premier de chaque mois civil.
 
@@ -79,22 +80,22 @@ Fonctionnalités par formule :
 | Facturation automatique (à partir des temps saisis et des contrats) | non | oui |
 | Relances de paiement automatiques | non | oui |
 | Contrats | non | oui |
-| Biens locatifs * | non | oui |
+| Propriétés * | non | oui |
 | Comptabilité complète (grand livre, bilan, comptes annuels) | non | oui |
 | Dépôt numérique de la déclaration de TVA | non | oui |
 | Transmission automatique à votre comptable | non | oui |
 | Facturation électronique Peppol | non | oui |
 | Accès équipe (personnes illimitées) | non | oui |
+| Plusieurs entreprises à vous | non | oui |
 | Rapports avancés | non | oui |
 | Analyses IA (synthèse du tableau de bord, rapports) | non | oui |
 | Outils linguistiques et enrichissement des descriptions | non | oui |
-| Sans mention MyCompanyDesk sur la page de paiement et dans le pied des e-mails clients | non | oui |
+| Sans mention « Créé avec MyCompanyDesk » sur la page de paiement, la page de signature et les e-mails | non | oui |
 | Mode confidentialité | non | oui |
-| Accès API et webhooks | non | oui |
 | Permissions avancées | non | oui |
 | Support prioritaire | non | oui |
 
-\* Le module de biens locatifs n'est actuellement affiché qu'aux espaces de travail qui l'utilisent déjà.
+\* Propriétés n'apparaît pas par défaut dans la navigation. Tout espace de travail Office l'active avec **Actifs & Objets** dans **Paramètres › Modules**.
 
 L'accès de votre comptable est gratuit sur toutes les formules et ne compte pas comme accès équipe.
 
@@ -110,9 +111,9 @@ Lorsqu'un espace de travail passe sur Desk, son site web public et le constructe
 
 Un abonnement payé ne s'arrête jamais en silence. Dès qu'il s'arrête, l'application affiche une notification et envoie un e-mail (dont le titre est « Office s'est arrêté »), en deux variantes : une pour un paiement échoué, une pour une résiliation que vous avez demandée vous-même. Après un paiement échoué, vous pouvez vous réabonner tout de suite ; le tunnel de souscription ne vous envoie plus vers le portail Stripe pour un abonnement qui n'existe plus.
 
-Vous pouvez aussi passer à Desk vous-même pendant qu'Office tourne : sur la page de facturation, la carte Desk comporte un lien « Passer à Desk ». Il ouvre la page de résiliation (/settings/opzeggen), qui liste ce qui continue de fonctionner et ce qui s'arrête, à quelle date, avant de vous envoyer vers le portail Stripe pour confirmer. Une fois la résiliation confirmée, la même page annonce que l'abonnement est résilié et nomme la date d'arrêt d'Office, avec un bouton « Annuler la résiliation » tant que la période payée court ; le bouton ouvre le portail Stripe, où vous pouvez annuler la résiliation à venir. Sur iOS le bouton est absent, le portail Stripe lui-même reste la voie pour revenir. Quand Office s'arrête, vos e-mails vers vos clients et vos pages de paiement et de signature portent à nouveau la mention « Créé avec MyCompanyDesk ».
+Vous pouvez aussi passer à Desk vous-même pendant qu'Office tourne : sur la page de facturation, la carte Desk comporte le bouton **Passer à Desk**, et **Résilier l'abonnement** figure sous ce que vous payez. Tous deux ouvrent la page de résiliation (/settings/opzeggen), qui liste ce qui continue de fonctionner et ce qui s'arrête, à quelle date, avant de vous envoyer vers le portail Stripe pour confirmer. Une fois la résiliation confirmée, la même page annonce que l'abonnement est résilié et nomme la date d'arrêt d'Office, avec un bouton **Annuler la résiliation** tant que la période payée court ; le bouton ouvre le portail Stripe, où vous pouvez annuler la résiliation à venir. Sur iOS le bouton est absent, le portail Stripe lui-même reste la voie pour revenir. Quand Office s'arrête, vos e-mails vers vos clients et vos pages de paiement et de signature portent à nouveau la mention « Créé avec MyCompanyDesk ».
 
-Votre propre domaine reste visible sur la page Domaines après la fin de l'offre : le nom, le statut et le code de transfert restent lisibles, avec une invitation à passer à l'offre payante à côté, car modifier les réglages du domaine demande à nouveau Office. Un domaine reçu gratuitement avec Office n'est renouvelé par MyCompanyDesk que tant qu'Office tourne réellement : une fois la formule terminée, son renouvellement vous incombe. Les domaines couverts par un ancien accord de gratuité à vie gardent le renouvellement automatique.
+Votre propre domaine reste visible sur la page Domaines après la fin de l'offre : le nom, le statut et le code de transfert restent lisibles, avec une invitation à passer à l'offre payante à côté, car modifier les réglages du domaine demande à nouveau Office. Un domaine reçu gratuitement avec Office n'est renouvelé par MyCompanyDesk que tant qu'Office tourne réellement : une fois la formule terminée, son renouvellement vous incombe. Les domaines couverts par un accord fixe antérieur continuent d'être renouvelés gratuitement.
 
 ### Accès équipe
 
@@ -120,15 +121,19 @@ L'accès équipe est inclus dans Office sans frais par personne : invitez autant
 
 ### Entreprises supplémentaires
 
-Les entreprises supplémentaires demandent Office. Votre abonnement couvre votre espace de travail principal ; chaque entreprise supplémentaire que vous ajoutez est facturée au prix affiché avant confirmation.
+Si vous avez plusieurs entreprises à vous, par exemple une holding et une société d'exploitation, Office vous permet de les gérer côte à côte, jusqu'à 10 entreprises à vous. Votre abonnement couvre votre espace de travail principal ; chaque entreprise supplémentaire coûte 5,99 EUR par mois ou 59,90 EUR par an (hors TVA). Vous voyez ce prix avant de confirmer. Avec Desk, vous avez une seule entreprise à vous.
 
 L'entreprise supplémentaire suit l'abonnement de votre espace de travail principal. Si vous êtes encore dans votre propre période d'essai Office, elle ne coûte rien ; ensuite elle est ajoutée à votre abonnement au tarif affiché.
 
-Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, il n'y a pas d'abonnement auquel rattacher l'entreprise supplémentaire. Vous l'achetez donc via un paiement dédié add-on. La première entreprise reste gratuite ; seule l'entreprise supplémentaire est facturée. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus dans votre abonnement ou add-on, tout en restant lisible et exportable pour la durée légale de conservation.
+Si votre espace de travail utilise Office gratuitement dans le cadre d'un accord fixe, il n'y a pas d'abonnement auquel rattacher l'entreprise supplémentaire. Vous l'achetez donc via un paiement dédié add-on. La première entreprise reste gratuite ; seule l'entreprise supplémentaire est facturée. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus dans votre abonnement ou add-on, tout en restant lisible et exportable pour la durée légale de conservation.
+
+### Quand votre comptable paie votre abonnement
+
+Un cabinet comptable peut proposer de payer l'abonnement Office de votre espace de travail. Le cabinet paie pour cela 6,99 EUR par mois ou 69,90 EUR par an par client (hors TVA). Vous voyez l'offre en haut de **Votre abonnement** sous le titre « Votre comptable souhaite payer votre abonnement », avec les boutons **Accepter** et **Non merci**. Seule la facture change de mains : votre espace de travail, vos données et votre identifiant restent les vôtres. **Payer moi-même à nouveau** y met fin ; vous payez alors vous-même ou vous revenez à Desk. Vos données sont conservées dans tous les cas.
 
 ## Portail Stripe
 
-Le bouton **Gérer l'abonnement** (visible lorsque l'espace de travail a une période active ou une formule payante) ouvre une session unique du portail client Stripe. Depuis le portail, vous pouvez :
+Le bouton **Gérer la facturation** (visible dès que votre espace de travail a un abonnement payant en cours, pas dans l'application iOS) ouvre une session unique du portail client Stripe. Depuis le portail, vous pouvez :
 
 - Mettre à jour le moyen de paiement
 - Télécharger les factures et reçus
@@ -139,21 +144,23 @@ La résiliation prend effet à la fin de la période payée en cours ; l'accès 
 
 ## Flux de paiement
 
-1. Cliquez sur **Mettre à niveau** sur la vignette Office
-2. Vous arrivez sur une page Stripe Checkout
-3. Stripe redirige avec `?checkout=success` ou `?checkout=canceled`
-4. La page affiche une bannière de succès ou d'annulation ; l'interface verrouillée est immédiatement déverrouillée
+1. Choisissez **Mensuel** ou **Annuel** au-dessus des formules
+2. Cliquez sur **Mettre à niveau** sur la carte Office (pendant l'essai, le bouton s'appelle **Garder Office**)
+3. Le **Paiement sécurisé** de Stripe s'ouvre sur la même page ; vous ne quittez pas MyCompanyDesk
+4. Une fois le paiement terminé, la page affiche une confirmation et les parties verrouillées se déverrouillent immédiatement
+
+Si vous payez pendant l'essai, la facturation commence à ce moment-là et le reste de l'essai tombe. L'application iOS ne permet pas de payer ; elle affiche votre formule et votre utilisation, et vous la modifiez sur mycompanydesk.com.
 
 Si le traitement n'aboutit pas peu après un paiement réussi, la bannière indique que votre paiement est bien passé mais que votre abonnement n'est pas encore prêt, avec un bouton pour revérifier.
 
-Lors d'un passage à Office, la bannière de succès prend l'accent violet Office avec une icône de couronne (« Bienvenue chez Office ») au lieu de la confirmation verte standard. Ce même style Office apparaît ailleurs dans l'application : un anneau violet autour de l'avatar, une icône de couronne dans le badge de formule et des pastilles « Fonction Office » sur les pages de paramètres qui demandent Office, comme Clés API et Boîte de réception. De plus, l'assistant du guide contextuel reçoit une apparence violette premium : la pastille « IA » devient une pastille « Office », la bordure du panneau et le bouton d'envoi adoptent l'accent Office et la ligne de statut devient « Votre assistant Office est prêt. »
+Lors d'un passage à Office, la confirmation prend l'accent violet Office et vous souhaite la bienvenue dans Office. Si vous veniez d'une fonctionnalité verrouillée, un lien vous y ramène directement. Avec Office, votre avatar reçoit un anneau violet et, à la place de l'assistant du guide, vous disposez de l'assistant qui travaille avec vos propres chiffres (voir [Fonctions IA](/fr/advanced/ai-features)).
 
 ## Bannière de mise à niveau contextuelle
 
-Lorsque vous arrivez sur la page d'abonnement depuis une fonctionnalité verrouillée, la page affiche une bannière « vous êtes venu ici pour X, voici ce qui le débloque » au lieu d'une présentation générique des formules.
+Lorsque vous arrivez sur la page d'abonnement depuis une fonctionnalité verrouillée, la page affiche au-dessus des formules une bannière qui nomme cette fonctionnalité (« … nécessite un plan payant ») et indique quelle formule l'active, au lieu d'une présentation générique des formules.
 
 ## Voir aussi
 
 - [Paramètres de l'entreprise](/fr/settings/company) : la page entreprise publique et les domaines personnalisés se gèrent ici
 - [E-mail](/fr/settings/email) : écrire de nouveaux e-mails depuis la boîte mail professionnelle nécessite Office
-- [Équipe](/fr/settings/team) : l'accès équipe nécessite Office
+- [Personnes ayant accès et votre comptable](/fr/settings/team) : l'accès équipe nécessite Office, l'accès pour votre comptable est gratuit

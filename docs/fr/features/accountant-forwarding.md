@@ -1,76 +1,78 @@
 ---
 title: Transmission au comptable
 description: "Transmettez factures et dépenses automatiquement au logiciel de votre comptable, comme Exact, SnelStart, Twinfield ou Yuki, au lieu d'un envoi manuel."
-last_verified: 2026-08-19
+last_verified: 2026-10-13
 ---
 
 # Transmission au comptable
 
-Si votre comptable travaille dans son propre logiciel, comme Exact, SnelStart, Twinfield ou Yuki, vous pouvez faire envoyer automatiquement factures et depenses par MyCompanyDesk. Cela evite d'envoyer les pieces une par une par e-mail.
+Si votre comptable travaille dans son propre logiciel, comme Exact, SnelStart, Twinfield ou Yuki, vous pouvez faire envoyer automatiquement factures et dépenses par MyCompanyDesk. Cela évite d'envoyer les pièces une par une par e-mail.
 
-## Ou la trouver
+## Où la trouver
 
-Allez dans **Parametres** > **Acces et comptable** (`/settings/team`) et ouvrez la section **Comptable**. Sous la liste de contacts se trouve la carte **Transmission automatique**.
+Allez dans **Paramètres › Votre comptable** (`/settings/boekhouder`). Sous la liste de contacts se trouve la carte **Transmission automatique**.
 
-## Ce que vous pouvez regler
+La transmission automatique fait partie d'**Office**. Sur Desk, vous voyez à cet endroit un bouton pour changer d'abonnement. Envoyer une pièce à la main à votre comptable (voir plus bas) fonctionne sur tous les abonnements, et l'accès comptable est lui aussi gratuit sur tous les abonnements.
 
-La carte lit et ecrit sur `/api/team/accountant-delivery`. Chaque membre de l'espace de travail peut voir les reglages; seuls les administrateurs d'equipe peuvent les modifier.
+## Ce que vous pouvez régler
 
-| Reglage | Options |
+Chaque membre de l'espace de travail peut voir les réglages ; seuls les administrateurs d'équipe peuvent les modifier.
+
+| Réglage | Options |
 |---|---|
 | **Destinataire** | Choisir un contact comptable existant, ou aucun |
-| **Factures de vente** | Desactive, a l'envoi, ou au paiement |
-| **Depenses** | Desactivee, ou a la creation |
-| **Frequence** | Directement, quotidiennement, hebdomadaire (lundi), mensuel ou trimestriel |
-| **Uniquement les depenses avec justificatif** | Retenir les depenses sans justificatif |
-| **Joindre les justificatifs** | Inclure les images de justificatifs en piece jointe |
+| **Factures de vente** | Désactivé, à l'envoi, ou au paiement |
+| **Dépenses** | Désactivée, ou à la création |
+| **Fréquence** | Directement, quotidiennement, hebdomadaire (lundi), mensuel ou trimestriel |
+| **Uniquement les dépenses avec justificatif** | Retenir les dépenses sans justificatif |
+| **Joindre les justificatifs** | Inclure les images de justificatifs en pièce jointe |
 | **Joindre le PDF de la facture** | Inclure le PDF de la facture |
-| **Inclure aussi les devis** | Inclure egalement les devis acceptes |
-| **Transmission automatique activee** | Interrupteur principal |
+| **Inclure aussi les devis** | Inclure également les devis acceptés |
+| **Transmission automatique activée** | Interrupteur principal |
 
-Le rythme par defaut pour la plupart des cabinets est hebdomadaire le lundi, car un seul e-mail regroupe est plus facile a traiter qu'un message par piece.
+Le rythme par défaut pour la plupart des cabinets est hebdomadaire le lundi, car un seul e-mail regroupé est plus facile à traiter qu'un message par pièce.
 
 ### Déductibilité dans l'export
 
-Le fichier `uitgaven.csv` de l'export transfere se termine par une colonne indiquant le pourcentage de déduction de la catégorie. Cela remplace l'ancienne colonne « Déductible » Oui/Non : le pourcentage indique exactement au comptable quelle part de la TVA est déductible, et le montant de TVA déductible figure toujours sur la même ligne, de sorte que le détail par ligne correspond au récapitulatif TVA.
+Le fichier `uitgaven.csv` de l'export transféré se termine par une colonne indiquant le pourcentage de déduction de la catégorie. Cela remplace l'ancienne colonne « Déductible » Oui/Non : le pourcentage indique exactement au comptable quelle part de la TVA est déductible, et le montant de TVA déductible figure toujours sur la même ligne, de sorte que le détail par ligne correspond au récapitulatif TVA.
 
 Le fichier `leesmij.txt` inclus explique que ce pourcentage ne couvre qu'une partie de l'écart entre la TVA sur le justificatif et le montant récupéré sur la déclaration. D'autres facteurs, comme la TVA d'autoliquidation, la TVA étrangère ou l'usage privé, peuvent aussi modifier le montant déductible. Si le comptable veut vérifier une ligne, il peut ouvrir la dépense dans l'application pour voir le traitement de TVA.
 
 ### Obligation de justificatif
 
-Quand **Uniquement les depenses avec justificatif** est active, les depenses sans justificatif ne sont pas transmises. Elles restent dans l'espace de travail et le nombre est indique dans l'e-mail de transmission, pour que vous sachiez ce qui manque encore. Votre comptable a besoin du justificatif pour recuperer la TVA, donc ce commutateur empeche les pieces incompletes de quitter l'espace de travail.
+Quand **Uniquement les dépenses avec justificatif** est activé, les dépenses sans justificatif ne sont pas transmises. Elles restent dans l'espace de travail et le nombre est indiqué dans l'e-mail de transmission, pour que vous sachiez ce qui manque encore. Votre comptable a besoin du justificatif pour récupérer la TVA, donc ce commutateur empêche les pièces incomplètes de quitter l'espace de travail.
 
-## Permission de modifier les reglages
+## Permission de modifier les réglages
 
-Seuls les administrateurs d'equipe peuvent modifier les listes deroulantes, les cases a cocher et l'interrupteur principal. Les non-administrateurs voient les reglages actuels mais ne peuvent pas enregistrer de modifications.
+Seuls les administrateurs d'équipe peuvent modifier les listes déroulantes, les cases à cocher et l'interrupteur principal. Les non-administrateurs voient les réglages actuels mais ne peuvent pas enregistrer de modifications.
 
 ## Ce qui est transmis
 
-Seules les pieces pretes pour un comptable quittent l'espace de travail :
+Seules les pièces prêtes pour un comptable quittent l'espace de travail :
 
-- Non cachees au comptable.
-- Non en attente de validation (elements bancaires ou de boite de reception que vous n'avez pas encore confirmes).
-- Non mis a la corbeille ni archives.
-- Les factures doivent etre envoyees; les brouillons ne sont pas transmis.
-- Si l'obligation de justificatif est activee, les depenses doivent avoir un justificatif.
+- Non cachées au comptable.
+- Non en attente de validation (éléments bancaires ou de boîte de réception que vous n'avez pas encore confirmés).
+- Non mis à la corbeille ni archivés.
+- Les factures doivent être envoyées; les brouillons ne sont pas transmis.
+- Si l'obligation de justificatif est activée, les dépenses doivent avoir un justificatif.
 
-Le moteur fonctionne avec un watermark (`last_delivered_at`), et non avec des declencheurs de statut individuels, donc aucune piece n'est manquee parce qu'un nouveau mode de paiement a ete ajoute plus tard.
+Le transfert retient jusqu'à quel moment tout a été livré et reprend ensuite tout ce qui s'ajoute : aucune pièce n'est oubliée, même si un nouveau mode de paiement apparaît plus tard.
 
-## Journal de livraison et activite
+## Journal de livraison et activité
 
-La page **Acces et comptable** conserve un journal de livraison indiquant ce qui a ete transmis et quand. Elle enregistre egalement une vue d'ensemble de l'activite du comptable connecte : ce qu'il a consulte ou modifie dans l'espace de travail. Les deux journaux sont visibles par les proprietaires et les administrateurs ; le comptable peut voir le journal de livraison mais ne peut pas l'effacer.
+La page **Votre comptable** conserve sous **Derniers envois** un journal de livraison indiquant ce qui a été transmis et quand. Elle enregistre également une vue d'ensemble de l'activité du comptable connecté : ce qu'il a consulté ou modifié dans l'espace de travail. Les deux journaux sont visibles par les propriétaires et les administrateurs ; le comptable peut voir le journal de livraison mais ne peut pas l'effacer.
 
-## Transmission manuelle depuis une piece
+## Transmission manuelle depuis une pièce
 
-Vous pouvez aussi envoyer une seule facture, depense ou devis a votre comptable depuis sa page de detail. Cherchez le bouton **Envoyer au comptable** pres des actions e-mail. Cela enregistre une livraison manuelle dans le meme journal, pour que vous la voyiez a cote de la transmission automatique. Les envois manuels echoues sont aussi enregistres, afin que vous ne renvoyiez pas la meme piece par inadvertance.
+Vous pouvez aussi envoyer une seule facture, dépense ou devis à votre comptable depuis sa page de détail, sur tous les abonnements. Cherchez le bouton **Envoyer au comptable** près des actions e-mail. Cela enregistre une livraison manuelle dans le même journal, pour que vous la voyiez à côté de la transmission automatique. Les envois manuels échoués sont aussi enregistrés, afin que vous ne renvoyiez pas la même pièce par inadvertance.
 
-## Elements envoyes
+## Éléments envoyés
 
-Les envois manuels et les autres e-mails de l'espace de travail apparaissent dans la boite **Envoye** de votre boite de reception. Ils sont regroupes sous la categorie comptable, pour que vous voyiez d'un coup d'oeil quels documents ont deja quitte l'espace de travail.
+Les envois manuels et les autres e-mails de l'espace de travail apparaissent dans la boîte **Envoyé** de votre boîte de réception. Ils sont regroupés sous la catégorie comptable, pour que vous voyiez d'un coup d'œil quels documents ont déjà quitté l'espace de travail.
 
 ## Voir aussi
 
-- [Acces et comptable](/fr/settings/team) pour inviter votre comptable et choisir un contact
-- [Factures](/fr/features/invoices) pour envoyer et gerer les factures de vente
-- [Depenses](/fr/features/expenses) pour ajouter des justificatifs et des depenses
-- [Devis](/fr/features/quotes) pour creer et convertir des devis
+- [Personnes ayant accès et votre comptable](/fr/settings/team) pour inviter votre comptable et choisir un contact (dans l'application : **Paramètres › Votre comptable**)
+- [Factures](/fr/features/invoices) pour envoyer et gérer les factures de vente
+- [Dépenses](/fr/features/expenses) pour ajouter des justificatifs et des dépenses
+- [Devis](/fr/features/quotes) pour créer et convertir des devis

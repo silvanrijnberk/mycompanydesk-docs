@@ -10,7 +10,7 @@ chatbot:
 
 The application has a small set of keyboard shortcuts:
 • Press Cmd+K (Mac) or Ctrl+K (Windows/Linux) to open the search palette: search customers, invoices, expenses, and settings, or jump to any section
-• Press Esc to close a dialog or step back from a detail page to its list
+• Press Esc to close a dialog or menu
 • In the site builder, Cmd/Ctrl+Z undoes and Cmd/Ctrl+Shift+Z (or Ctrl+Y) redoes
 • Use Tab and Enter to move through forms efficiently
 

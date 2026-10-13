@@ -16,26 +16,26 @@ The customers page lists all your clients with key information at a glance. Use 
 At the top of the customers page, a strip of tiles gives a quick snapshot of your customer base. The numbers are independent of the search and date filters on the list, so a tile always reflects the whole book.
 
 - **Customers with overdue invoices**: how many customers currently owe you money. Click the tile to open the overdue invoices page.
-- **Dormant customers**: active customers who were invoiced before but have not received an invoice in the last N months. Click the tile to filter the list to dormant customers. The default dormancy window is six months; the tile label shows the exact window the workspace uses.
+- **Gone quiet**: active customers who were invoiced before but have not received an invoice in recent months. Click the tile to filter the list to those customers. The default window is six months; the tile names the window the workspace uses (for example "no invoice in 6 months").
 - **Prospects**: active customers who have never been invoiced. Click the tile to filter the list to prospects.
 - **Total customers**: the fixed active customer count. Click the tile to clear the list filters.
 
-The status filter above the list also lets you switch between All statuses, Active, Prospects, Dormant, Archived and Trash.
+The status filter above the list also lets you switch between All statuses, Active, Prospects, Gone quiet, Archive and Trash.
 
 ## Creating a customer
 
-1. Go to **Customers > New Customer**
+1. Go to **Customers** and click **Create**
 2. Fill in the customer details:
-   - **Name** — Company or individual name (required)
-   - **Email** — Contact email for sending invoices
-   - **Phone** — Contact phone number
-   - **Address** — Street, postal code, city, country
-   - **VAT number** — Customer's VAT registration (for B2B)
-   - **Customer number** — Auto-generated or custom
+   - **Name**: Company or individual name (required)
+   - **Email**: Contact email for sending invoices
+   - **Phone**: Contact phone number
+   - **Address**: Street, postal code, city, country
+   - **VAT number**: Customer's VAT registration (for B2B)
+   - **Customer number**: Auto-generated or custom
 3. Click **Save**
 
 ::: tip
-You can also create customers inline when creating an invoice or quote — no need to navigate away.
+You can also create customers inline when creating an invoice or quote, with no need to navigate away.
 :::
 
 ### KVK autofill
@@ -47,7 +47,7 @@ When creating a Dutch customer, MyCompanyDesk can autofill company details from 
 
 A verified badge appears next to the chamber number field on successful lookup. If the KVK number is not found, an error message is shown. Both lookups are available only for Dutch customers.
 
-Each workspace gets 100 free KVK lookups per day (cached results do not count). When 20 or fewer lookups remain, the KVK field hint shows a counter of how many are left. If the daily cap is hit, the form shows a quota-exceeded message, and you can enter the data manually or try again tomorrow.
+If a lookup does not work out, simply fill in the details yourself.
 
 ### Company logos from the KVK register
 
@@ -59,17 +59,17 @@ The logo is for display only; it does not replace your own workspace logo on inv
 
 The customer detail page shows:
 
-- **Contact information** — All stored details
-- **Invoice history** — Every invoice sent to this customer
-- **Expense history** — Expenses linked to this customer
+- **Contact information**: All stored details
+- **Invoice history**: Every invoice sent to this customer
+- **Expense history**: Expenses linked to this customer
 - **Contracts** - Active and inactive contracts, with signing status badges and a PDF preview icon when e-signing is enabled
 - **Documents**: agreements stored for this customer, such as general terms, NDAs and DPAs. If the customer has a contract but no processing agreement, a hint appears with a link to create one.
-- **Projects** — Active and completed projects
-- **Statistics** — Total revenue, outstanding balance, average payment time
+- **Projects**: Active and completed projects
+- **Statistics**: Total revenue, outstanding balance, average payment time
 
 ### Processing agreement gap
 
-When a customer has a contract but no processing agreement (DPA) in Documents, the documents card on the customer detail page shows a hint and a **Create processing agreement** link. This points out a compliance gap where you are likely to act on it. The hint only appears when the documents and contracts modules are enabled and the documents card is otherwise empty.
+When a customer has a contract but no processing agreement (DPA) in Documents, the documents card on the customer detail page shows a hint and a **Draft a data processing agreement** link. This points out a compliance gap where you are likely to act on it. The hint only appears when the Contracts module is on (Office) and the documents card is otherwise empty.
 
 ### Email health banner
 
@@ -82,7 +82,7 @@ This information comes from provider events and outbound message delivery status
 
 ## Linking a customer to one of your own businesses
 
-If you own more than one business, a card titled **Eigen bedrijf** can appear on the customer detail page. It lets you say that this customer is one of your own companies, which is used to calculate the intercompany positions on the Workspaces page.
+If you own more than one business, a card titled **Own business** can appear on the customer detail page. It lets you say that this customer is one of your own companies, which is used to calculate the intercompany positions on the Workspaces page.
 
 - The card only appears when you own at least two businesses and the customer is not in the workspace you are currently viewing. A company cannot be its own counterparty.
 - Pick one of your own businesses from the dropdown, or choose **None of my own businesses** to remove a link.
@@ -91,33 +91,37 @@ If you own more than one business, a card titled **Eigen bedrijf** can appear on
 
 ## Actions
 
-- **Edit** — Update customer information
-- **Create invoice** — Start a new invoice pre-filled with this customer
-- **Create quote** — Start a new quote for this customer
-- **Archive** — Move to archive (can be restored later)
+- **Edit**: update customer information
+- **Create Invoice**: start a new invoice pre-filled with this customer
+- **Create quote**: start a new quote for this customer
+- **New work order**: start a work order for this customer (when the Work orders module is on)
+- **Merge with…**: merge a duplicate customer into this one
+- **Archive**: move to archive (can be restored later)
 
 :::caution
 Archiving a customer with an active recurring invoice or ongoing contracts asks for a confirmation first. The warning is honest about what archiving does: while a customer is archived, MyCompanyDesk creates no recurring invoices and bills no contracts for them, and skipped periods are not billed later. End the recurring invoice or contract first if that billing has to keep running.
 :::
 
-A customer who is a prospect (has never been invoiced) carries no Create invoice action, not even in the overflow menu, and the server refuses invoice creation for them anyway. The customer page shows a Convert to customer button instead; once their status is active, all invoicing actions appear.
+A customer who is a prospect (has never been invoiced) carries no **Create Invoice** action, not even in the more menu, and the server refuses invoice creation for them anyway. The customer page shows a **Convert to customer** button instead; once their status is active, all invoicing actions appear.
 
-- **Delete** — Permanently remove the customer
+- **Delete**: move the customer to the trash
 
 ## Bulk actions
 
 Select multiple customers for:
 
-- **Archive** — Bulk archive inactive customers
-- **Restore** — Bring back archived customers
-- **Delete** — Remove multiple customers
+- **Add to favorites**: mark customers as favorites
+- **Archive**: archive customers in one go
+- **Delete**: move customers to the trash
+
+In the archive you choose **Restore to active** or **Move to trash**; in the trash **Restore to archive** or **Delete permanently**.
 
 ## Import customers
 
 Import your existing customer database from CSV:
 
-1. Go to **Profile > Import**
-2. Select **Customers** as the data type
+1. Click **Import** on the customers page (or go to **Settings › Switching** and choose **Import customers**)
+2. Check that **Customers** is selected as the data type
 3. Upload your CSV file
 4. Map your CSV columns to MyCompanyDesk fields (name, email, address, etc.)
 5. Review the preview
@@ -125,17 +129,17 @@ Import your existing customer database from CSV:
 
 ## Export customers
 
-Export your customer list as CSV from the customers page (available on every plan).
+Download your customer list as a CSV file from **Settings › Download data** (available on every plan).
 
 ## Lapsed customers
 
-The [Reports > Clients > Lapsed](/en/features/reports) tab lists customers who bought before but have not had an invoice this year. The view shows the count, their previous total spend, and the date of their last invoice, with links to call or email each customer directly. It lives inside Reports because reactivating old customers is campaign-style work, not an item that fits an urgency-sorted feed.
+The **Gone quiet** tab of the client report **Who are my clients?** in [Reports](/en/features/reports) (Office) lists customers who bought before but have not had an invoice this year. The view shows the count, their previous total spend, and the date of their last invoice, with links to call or email each customer directly. It lives inside Reports because reactivating old customers is campaign-style work, not an item that fits an urgency-sorted feed.
 
-The standard customer list also segments inactive customers itself; the Lapsed tab adds the campaign-style reminder without replacing that filter.
+The standard customer list also segments inactive customers itself; the report tab adds the campaign-style reminder without replacing that filter.
 
 ## Tips
 
-- Keep customer emails up to date — they're used for invoice delivery
+- Keep customer emails up to date: they're used for invoice delivery
 - Use the search bar for instant fuzzy matching across all customer fields
-- Pin your most important customers as favorites for quick access
+- Mark your most important customers as favorites for quick access
 - Assign VAT numbers to enable reverse charge on B2B invoices

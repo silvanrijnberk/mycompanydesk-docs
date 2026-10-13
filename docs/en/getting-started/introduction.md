@@ -1,34 +1,34 @@
 ---
 title: Introduction
-description: "MyCompanyDesk is an all-in-one accounting platform for freelancers, small businesses and rental property managers, from invoices to VAT filing."
+description: "MyCompanyDesk is the all-in-one platform for freelancers: invoices, expenses, hours, website, business email and VAT returns in one place."
 ---
 
 # Introduction
 
-MyCompanyDesk is an all-in-one accounting and business management platform designed for freelancers, small businesses, and rental property managers. It helps you manage your entire financial workflow — from creating invoices and tracking expenses to filing VAT and managing customer relationships.
+MyCompanyDesk is an all-in-one platform for freelancers and sole traders. It helps you run your whole financial workflow and more: from creating invoices and tracking expenses to your VAT return, your customers, your website and your business email.
 
 ## What can you do with MyCompanyDesk?
 
-- **Create and send invoices** — Professional invoices with payment links, PDF generation, and email delivery
-- **Track expenses** — Log expenses manually or scan receipts with AI-powered OCR
-- **Manage customers** — Maintain a complete customer database with contact details and history
-- **Generate quotes** — Create quotes and convert them to invoices when accepted
-- **Manage projects** — Organize work into projects, track time, and monitor profitability
-- **Handle contracts** — Set up recurring service or rental contracts
-- **Track assets** — Manage rental properties, vehicles, and equipment
-- **Automate billing** — Set up recurring invoices and expenses
-- **View reports** — Revenue, profit, cash flow, VAT, and client analytics
-- **Collaborate** — Invite team members, set permissions, and share with your accountant
+- **Create and send invoices**: professional invoices with payment links, PDF and email delivery
+- **Track expenses**: log expenses manually or scan receipts with AI
+- **Manage customers**: a complete customer database with contact details and history
+- **Generate quotes**: create quotes and convert them to invoices when accepted
+- **Manage projects**: organize work into projects, track time and monitor profitability
+- **Your own website**: a free website on mycompanydesk.site, and with Office on your own domain
+- **Handle contracts** (Office): record fixed arrangements with customers and invoice them automatically
+- **Automate billing** (Office): recurring invoices and expenses
+- **View reports** (Office): revenue, profit, cash flow and client analytics. Preparing your VAT return works on every plan
+- **Collaborate**: give your accountant free access, and with Office invite team members with their own permissions
 
 ## Interface language
 
 You can use the MyCompanyDesk interface in Dutch, English, German, or French, and switch language at any time.
 
-Invoices, quotes, and emails can also be sent in Dutch, English, German, or French. The document language is set per invoice and does not depend on the interface language.
+Invoices, quotes, and emails can also be sent in Dutch, English, German, or French. You set that document language for the whole workspace under **Settings › Invoices and quotes**, separately from the interface language. Creating documents in a language other than Dutch is part of Office.
 
 ## Plans
 
-MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free. New customers get 60 days of Office, no credit card needed; a workspace that does not switch moves to Desk automatically and keeps all its data.
+MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free. Every new account gets 60 days of Office, no credit card needed; a workspace that does not switch moves to Desk automatically and keeps all its data. If you pay for Office yearly and have never paid before, the first year costs €35.88 (€2.99 per month).
 
 | Feature | Desk | Office |
 |---|---|---|
@@ -43,9 +43,9 @@ MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free. New c
 | Recurring invoices, contracts and auto-invoicing | - | Yes |
 | Bank connections | - | Up to 3 |
 | Own domain, also for your website | - | Yes |
-| Full bookkeeping and filing your VAT return | - | Yes |
+| Full bookkeeping and filing your VAT return digitally | - | Yes |
 | Advanced reports and language tools | - | Yes |
-| API access, webhooks, priority support | - | Yes |
+| Priority support | - | Yes |
 
 All details are on [Plan & payments](/en/settings/billing).
 

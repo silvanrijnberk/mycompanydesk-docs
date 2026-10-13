@@ -6,41 +6,29 @@ last_verified: 2026-10-11
 
 # Constructeur de site
 
-Construisez votre site web professionnel avec un editeur par glisser-deposer. Creez plusieurs pages, composez-les avec des sections et des blocs, personnalisez les couleurs et les polices, puis publiez quand vous etes pret.
+Construisez votre site web professionnel avec un éditeur par glisser-déposer. Créez plusieurs pages, composez-les avec des sections et des blocs, personnalisez les couleurs et les polices, puis publiez quand vous êtes prêt.
 
 ## Vue d'ensemble
 
-Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Chaque nouvel espace de travail commence avec un site standard de 4 pages (Accueil, Services, A propos, Contact), vous offrant une vraie fondation multi-pages des le premier jour. L'editeur vous donne :
+Le constructeur de site remplace l'ancien profil d'entreprise à page unique. Chaque nouvel espace de travail commence avec un site standard (Accueil, Services, À propos et Contact, plus une politique de confidentialité et des conditions générales), vous offrant une vraie fondation multi-pages dès le premier jour. L'éditeur vous donne :
 
-- **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections. Les quatre pages par defaut sont pretes a etre modifiees, supprimees ou completees.
-- **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Office), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
-- **Blocs de section**: Ajoutez des sections hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page. Sauvegardez des sections comme blocs reutilisables pour constituer votre propre bibliotheque.
-- **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
-- **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants, des liens externes et le style de la barre de navigation en ligne (nom de marque, bouton CTA, telephone, barre d'appel, sticky).
-- **Snapshots de publication**: Travaillez en brouillon, previsualisez vos modifications, puis publiez. Les modifications non publiees sont affichees dans la barre superieure.
-- **Apercu responsive**: Basculez entre les vues desktop, tablette et mobile pendant l'edition.
+- **Pages multiples**: Créez autant de pages que nécessaire, chacune avec son propre chemin et ses propres sections. Les pages par défaut sont prêtes à être modifiées, supprimées ou complétées.
+- **Blocs de section**: Ajoutez des blocs tels qu'un grand titre, du texte, une galerie, une photo avec texte, des services, l'équipe, des avis clients et un formulaire de contact. Sauvegardez des blocs comme blocs réutilisables pour constituer votre propre bibliothèque.
+- **Tokens de design**: Définissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalisé et un favicon de site. Les modifications s'appliquent à l'ensemble du site.
+- **Éditeur de navigation**: Réorganisez les liens d'en-tête par glisser-déposer, avec des groupes déroulants, des liens externes et le style de la barre de navigation en ligne (nom de marque, bouton CTA, téléphone, barre d'appel, sticky).
+- **Snapshots de publication**: Travaillez en brouillon, prévisualisez vos modifications, puis publiez. Les modifications non publiées sont affichées dans la barre supérieure.
+- **Aperçu responsive**: Basculez entre les vues desktop, tablette et mobile pendant l'édition. En vue desktop, vous pouvez aussi choisir une vraie largeur d'écran (1280, 1440 ou 1920 pixels), pour que les media queries du site réagissent réellement au lieu d'être simulées.
+- **Panneaux redimensionnables**: Faites glisser le bord droit du rail de gauche et le bord gauche de l'inspecteur de droite pour élargir ou rétrécir chaque panneau. Un double-clic sur une poignée de redimensionnement rétablit la largeur par défaut. La largeur est mémorisée par appareil dans le localStorage.
+- **Zoom et ajustement à la fenêtre**: Zoomez le canevas de 25 % à 200 %, ou cliquez sur la valeur du zoom pour choisir ajusté, 50 %, 100 % ou 200 %. La zone de travail défile quand le canevas agrandi la dépasse.
+- **Raccourcis clavier**: Annuler et rétablir, sélectionner, déplacer, dupliquer ou supprimer un bloc, zoomer et dézoomer, ajuster à la fenêtre et fermer les panneaux. La vue d'ensemble de tous les raccourcis s'ouvre avec ⌘/ ou avec le bouton **Sneltoetsen** (raccourcis clavier) en bas du rail.
 
-Le tableau de bord de votre site web se trouve sous **Entreprise > Votre site web** (`/website`). L'editeur s'ouvre depuis celui-ci.
+Vous trouvez votre site web dans la barre latérale sous **Communication › Site web** (`/website`). L'éditeur s'ouvre depuis celui-ci.
 
-En ouvrant `/website`, vous arrivez sur l’aperçu de la section : il montre votre site en ligne, l’état de publication et un point d’entrée clair vers l’éditeur. L’éditeur proprement dit est à `/website/editor`, accessible volontairement depuis l’aperçu plutôt que de prendre tout l’écran dès l’arrivée.
-
-## Démarrage rapide par IA
-
-Quand vous ouvrez le constructeur de site pour la première fois sur un nouvel espace de travail, une bannière de démarrage rapide apparaît en haut. Elle lit les données de votre registre de commerce (nom légal, code NAF, ville) et génère un premier slogan, un texte de présentation et trois services. Vous pouvez tout modifier sur place avant d'appliquer, régénérer si la première suggestion ne convient pas, ou masquer la bannière. Pas de questions, pas de friction.
-
-Ce que la bannière fait pour vous :
-
-- **Générer** : Cliquez sur **Générer une suggestion** pour laisser l'IA lire vos données et proposer du contenu. Ce qui sort reste attaché à ce que vous avez donné : la page À propos ne reçoit pas d'histoire inventée.
-- **Modifier en ligne** : Ajustez le slogan, le texte de présentation et les noms et descriptions des services directement dans la bannière.
-- **Appliquer** : Cliquez sur **Appliquer** pour écrire le contenu validé dans votre espace de travail. La description de votre entreprise, le slogan hero et les services sont mis à jour en une fois.
-- **Régénérer** : Pas satisfait du résultat ? Cliquez sur **Régénérer** pour obtenir un nouveau jeu de suggestions.
-- **Masquer** : La bannière mémorise votre choix localement. Elle reste cachée jusqu'à ce que vous réinitialisiez les données de votre espace.
-
-La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible dans votre espace. Si l'IA n'est pas configurée, la bannière fonctionne quand même avec une solution de repli basée sur votre code NAF et le nom de votre entreprise.
+En ouvrant `/website`, vous arrivez sur l'onglet **Aperçu** : il montre votre site, l'état de publication et le bouton **Modifier le site**. Les autres onglets sont **Visiteurs**, **Résultats**, **Pages**, **Visibilité**, **Connexions** et **Domaine & e-mail**. L'éditeur proprement dit est à `/website/editor`, accessible volontairement via **Modifier le site** plutôt que de prendre tout l'écran dès l'arrivée. Sur téléphone, l'éditeur s'ouvre dans un mode de modification léger pour les textes, les photos, les avis et les coordonnées, sans glisser-déposer ni réglages de style.
 
 ## Assistant de configuration du site web
 
-Avant même d'ouvrir l'éditeur, l'assistant de configuration du site web peut créer votre premier brouillon. Il s'ouvre automatiquement la première fois qu'un nouvel espace visite `/website`, et vous pouvez le relancer plus tard via **Entreprise > Votre site web > Style** en cliquant sur **Reconfigurer** ; à la relance, il repart de ce qui est déjà vrai. Il parcourt ces étapes :
+Avant même d'ouvrir l'éditeur, l'assistant de configuration du site web peut créer votre premier brouillon. L'inscription ne construit pas encore de site : la première fois que vous ouvrez **Site web**, l'assistant démarre tout seul. Si un compte plus ancien a déjà reçu un site qui n'est pas encore en ligne, vous voyez à la place **We hebben je website alvast gemaakt** (nous avons déjà créé votre site), avec le choix entre **Zet mijn site live** (mettre mon site en ligne) et **Eerst aanpassen** (d'abord le modifier). Vous pouvez toujours le relancer dans l'éditeur via **Hele site** (site entier) › **Merk** (marque) en cliquant sur **Reconfigurer** ; à la relance, il repart de ce qui est déjà vrai. Il parcourt ces étapes :
 
 1. **Ce que vous faites** (pré-rempli à partir de vos données d'entreprise) - votre activité, vos services et votre ton. La même étape porte votre vrai nom d'entreprise (obligatoire, et enregistré aussitôt avec vos données d'entreprise), votre numéro de téléphone, votre numéro WhatsApp (oui, avec le même numéro que votre téléphone, ou un autre), votre Instagram (et au besoin Facebook ou LinkedIn), enregistré avec vos données d'entreprise et qui active les liens sociaux du pied de page dès qu'il est rempli, vos horaires d'ouverture (avec des raccourcis pour les jours ouvrés, le week-end ou chaque jour, et les heures réglables jour par jour), l'adresse que montre votre page de contact et l'adresse sur laquelle les clients peuvent vous écrire, demandée comme **Adresse e-mail pour les clients** avec une case à cocher qui décide si votre site l'affiche. Votre adresse de connexion y est déjà remplie, mais elle n'arrive sur votre site que si la case reste cochée ; la modifier met aussi à jour vos données d'entreprise (et vos factures).
 2. **Ce que vous voulez** - si le site doit surtout attirer des clients, présenter votre travail, rassurer ou être mieux référencé.
@@ -51,270 +39,216 @@ Avant même d'ouvrir l'éditeur, l'assistant de configuration du site web peut c
 
 Vos réponses sont enregistrées comme brief du site. En terminant, l'IA rédige un nouveau texte pour l'ensemble de votre brouillon à partir du brief et de vos données d'espace, applique votre logo et votre couleur de marque, et laisse tout en brouillon. Rien n'est publié automatiquement. Vous vérifiez le résultat dans l'éditeur et publiez quand vous êtes satisfait. Sur la carte finale, vous ajustez le titre sous lequel votre site apparaît dans Google avant de terminer. La construction prend environ une demi-minute ; laissez l'écran ouvert, il indique aussi l'étape en cours.
 
-Les services de la première question acceptent chacun un prix facultatif, avec le choix entre **TVA comprise** et **hors TVA**, et sous le champ vous voyez exactement ce que verront les visiteurs. Par défaut, le site affiche ce que le client paie, donc un montant saisi hors TVA est converti au taux de TVA de ce service ; un réglage commun à tout l'espace de travail, posé sur les blocs qui montrent des prix dans le constructeur de site, décrit sous [Grille tarifaire avec boutons d'achat](#grille-tarifaire-avec-boutons-dachat), peut faire basculer tout le site sur les prix hors TVA. Si votre espace ne facture pas de TVA (exonéré ou KOR), le champ s'appelle simplement Prix et l'aide précise que les prix sont hors TVA ; saisissez tous les prix hors TVA et ils apparaissent ainsi sur le site. Chaque prix peut aussi porter une unité (par heure, par personne) et la rangée montre aussitôt la ligne que verront les visiteurs. Activez **à partir de** pour un prix de départ, ou laissez le champ vide : votre site affichera « Sur demande ». Un prix déjà fixé dans votre offre est repris automatiquement, et chaque service porte aussi une case indiquant si les clients peuvent le réserver en ligne.
+Les services de la première question acceptent chacun un prix facultatif, avec le choix entre **TVA comprise** et **hors TVA**, et sous le champ vous voyez exactement ce que verront les visiteurs. Par défaut, le site affiche ce que le client paie, donc un montant saisi hors TVA est converti au taux de TVA de ce service ; un réglage commun à tout l'espace de travail, posé sur les blocs qui montrent des prix dans le constructeur de site, décrit sous [Grille tarifaire avec boutons d'achat](#grille-tarifaire-avec-boutons-d-achat), peut faire basculer tout le site sur les prix hors TVA. Si votre espace ne facture pas de TVA (exonéré ou KOR), le champ s'appelle simplement Prix et l'aide précise que les prix sont hors TVA ; saisissez tous les prix hors TVA et ils apparaissent ainsi sur le site. Chaque prix peut aussi porter une unité (par heure, par personne) et la rangée montre aussitôt la ligne que verront les visiteurs. Activez **à partir de** pour un prix de départ, ou laissez le champ vide : votre site affichera « Sur demande ». Un prix déjà fixé dans votre offre est repris automatiquement, et chaque service porte aussi une case indiquant si les clients peuvent le réserver en ligne.
 
 Si la question sur les réservations est réglée sur **Les clients choisissent eux-mêmes une heure**, la liste de services demande aussi combien de temps dure chaque rendez-vous. Chaque service part avec une durée suggérée en minutes, d'après le nom du service et ce que vous avez décrit de votre activité dans l'assistant : une coupe simple obtient une suggestion plus courte que la coloration, et un salon de toilettage en obtient une plus longue. Chaque suggestion reste modifiable, et une durée déjà fixée dans votre offre est reprise automatiquement. Une durée est un nombre entier de minutes entre 5 et 480. Sans durée, un service ne peut pas être réservé en ligne : si vous videz le champ, le service reste sur votre site, mais le bloc de rendez-vous ne le propose plus comme heure à choisir. La question sur les réservations connaît désormais cinq réponses : les clients choisissent eux-mêmes une heure, ils envoient une demande que vous confirmez, ils s'inscrivent à une séance fixe (un atelier, un cours ou une randonnée accompagnée), ils vous demandent un devis (ils décrivent leur chantier, des photos peuvent suivre, et la demande arrive dans votre boîte de réception), ou il n'y a pas de réservation en ligne. Une inscription est préparée avec votre première date, l'inscription se ferme deux heures avant le début, et les clients paient sur place ; sans date, vous planifiez les séances plus tard dans l'agenda, sous **Séances de groupe**. Si votre site possède déjà un bloc rendez-vous, l'assistant démarre sur le mode de ce bloc et reprend votre choix lorsque vous terminez.
 
 Vous pouvez aussi vous arrêter en cours de route : cliquez sur **Terminer plus tard** ou rechargez la page, et vos réponses vous attendent au retour. L'assistant conserve ce que vous avez modifié sur cet appareil pendant environ une semaine, et ne restaure une réponse que si la valeur sous-jacente n'a pas changé ; si vos données d'entreprise ou vos services ont changé entre-temps, depuis les paramètres ou depuis un autre appareil, la valeur actuelle l'emporte.
 
-Source : `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`; `apps/web/utils/siteWizardDuration.ts#guessServiceDurationMin`.
+Le même assistant peut aussi réécrire un site existant entièrement. En le relançant depuis **Merk**, il demande d'abord une confirmation, car terminer remplace le texte que vous avez vous-même modifié. Le site reste brouillon jusqu'à ce que vous publiiez vous-même.
 
-Le même assistant peut aussi réécrire un site existant entièrement. En le relançant depuis l'onglet Style, il demande d'abord une confirmation, car terminer remplace le texte que vous avez vous-même modifié. Le site reste brouillon jusqu'à ce que vous publiiez vous-même.
+## Disposition de l'éditeur
 
-## Onglets
+En haut de l'éditeur se trouve une rangée d'onglets : d'abord **Hele site** (site entier), puis chaque page de votre site. Faites glisser un onglet de page pour changer l'ordre (la page d'accueil reste toujours en premier), ou cliquez sur **+** (**Pagina toevoegen**, ajouter une page) pour une nouvelle page. L'onglet choisi détermine ce que propose le rail de gauche :
 
-Le constructeur de site dispose de trois onglets : Editeur, Pages et Style. Cliquez sur l'en-tete Style pour deplier ou replier ses sous-onglets, dont Animation.
+- **Une page** : **Blokken** (les blocs de cette page, pour les ajouter, les déplacer, les dupliquer ou les supprimer), **Stijl** (ce que cette page seule peut avoir de différent, comme l'arrière-plan et la largeur) et **Instellingen** (titre, adresse web, visibilité dans le menu et apparence de la page dans Google). Cliquez sur un bloc pour le modifier dans l'inspecteur à droite : contenu, mise en page, style et animation.
+- **Hele site** : **Ontwerp** (design, la galerie des packs), **Kleuren** (couleurs), **Merk** (marque), **Letters** (polices), **Knoppen** (boutons), **Menubalk** (barre de menu), **Ruimte** (espacement), **Animatie** (animation), **Elementen** (éléments), **Navigatie** (navigation), **Footer** (pied de page), **Versies** (publications précédentes et versions enregistrées, avec un retour en arrière possible) et, en bas, à part, **Eigen CSS** (CSS personnalisé).
 
-- **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
-- **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee. Chaque page affiche un badge En ligne/Brouillon avec des boutons d'action rapide : cliquez sur l'icone globe pour mettre une page brouillon en ligne, ou sur l'icone masquer pour repasser une page en ligne en brouillon.
-- **Style**: Personnalisez vos tokens de design a l'echelle du site. Choisissez un preset en un clic (Editorial) puis ajustez les couleurs (marque, accent, papier, encre), les polices (titres, corps, mono de la bibliotheque de polices), la barre de navigation (disposition, arriere-plan, style du CTA), l'echelle (rayon, densite, largeur maximale, espacement des sections), le mouvement, les styles de boutons et le CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
-
-Le domaine, le SEO et les integrations tierces se gerent depuis les onglets de la page d'accueil `/website`, pas dans l'editeur.
+La liste de toutes vos pages, avec leur statut, leur description Google et leurs chiffres de visites, se trouve hors de l'éditeur, dans l'onglet **Pages** de Site web. Le domaine, la visibilité dans Google et les intégrations tierces se gèrent aussi là, dans les onglets **Domaine & e-mail**, **Visibilité** et **Connexions**, pas dans l'éditeur.
 
 ### Galerie des packs
 
-La galerie **Packs** (`Entreprise > Votre site web > Pakketten`) est le moyen le plus rapide de partir d'un site complet et pret-style. Elle liste chaque pack de site approuve : un modele fini, un pack de couleurs et un duo de polices adaptes a un metier specifique, presentes avec une petite carte d'echantillons qui montre la propre palette du pack.
+La galerie des packs (`/website/pakketten`, et dans l'éditeur **Hele site** › **Ontwerp**) est le moyen le plus rapide de partir d'un site complet et prêt-stylé. Elle liste chaque pack de site approuvé : un modèle fini, avec des couleurs et un duo de polices adaptés à un métier précis.
 
-Comment ca marche :
+Comment ça marche :
 
-1. Ouvrez **Entreprise > Votre site web** et cliquez sur **Pakketten** dans la barre superieure.
-2. Parcourez les cartes. Chaque carte affiche le nom du pack, le metier, le nombre de pages, une courte description et un echantillon de couleurs.
-3. Cliquez sur **Voir l'apercu** pour ouvrir un exemple live du pack dans un nouvel onglet.
-4. Cliquez sur **Utiliser ce pack**. Une confirmation explique que votre site brouillon actuel (pages, sections et style) sera remplace.
-5. Le pack est applique uniquement a votre **brouillon**. Rien n'est publie automatiquement.
-6. L'editeur s'ouvre pour que vous puissiez verifier le resultat, modifier les textes et images, et publier quand vous etes pret.
+1. Dans l'éditeur, ouvrez **Hele site** › **Ontwerp**, ou rendez-vous sur `/website/pakketten`.
+2. Parcourez les cartes. Chaque carte montre un aperçu du pack, avec son nom, le métier, le nombre de pages et une courte description.
+3. Cliquez sur **Bekijk voorbeeld** (voir l'aperçu) pour découvrir le pack : sur `/website/pakketten` dans un nouvel onglet, dans l'éditeur en pleine grandeur à côté de votre propre site.
+4. Choisissez comment utiliser le pack :
+   - **Reprendre le style** : uniquement les couleurs, les polices et le style de boutons du pack. Vos pages, vos blocs et vos textes restent exactement comme ils sont.
+   - **Utiliser ce modèle** : votre site brouillon actuel (pages, blocs et style) est remplacé par le pack. MyCompanyDesk crée ensuite des photos et des textes pour votre entreprise ; les chiffres d'exemple, les avis et les projets du modèle restent vides jusqu'à ce que vous les remplissiez. Votre brouillon précédent est conservé comme point de restauration, vous pouvez donc toujours revenir en arrière.
+5. Dans les deux cas, une confirmation demande d'abord votre accord, et seul votre **brouillon** est modifié. Rien n'est publié automatiquement.
+6. Vous vérifiez le résultat dans l'éditeur, modifiez les textes et les images, et publiez vous-même.
 
-La meme galerie est accessible depuis l'editeur. Ouvrez le rail **Ontwerp** pour parcourir les packs directement sur le canevas. Cliquez sur **Voir l'apercu** sur une carte pour voir l'apercu public en pleine grandeur, a cote de votre propre site, puis sur **Retour a tous les designs** pour poursuivre la comparaison. Si vous appliquez un pack depuis l'editeur, votre brouillon est recharge et vous revenez au rail Sections pour continuer a modifier.
+Dans l'éditeur, après l'application, vous revenez à **Blokken** (blocs) pour continuer directement à modifier. Avec **Terug naar alle ontwerpen** (retour à tous les designs), vous revenez de l'aperçu à la galerie.
 
-Recherchez par metier ou par style grace au champ de recherche. Le compteur a cote se met a jour au fur et a mesure du filtrage. Si aucun pack n'est encore disponible, la page indique qu'ils apparaitront ici des que les premiers modeles seront approuves.
+Recherchez grâce au champ de recherche (**Zoek een ontwerp**, chercher un design) ou filtrez par style. Le nombre de designs à côté se met à jour au fur et à mesure du filtrage.
 
-Source : `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+### Contrôles sur le canevas
 
-### Designs sur mesure
+Vous pouvez aussi manipuler les blocs directement sur le canevas. Survolez un bloc avec la souris pour voir son nom et une petite barre d'outils. Utilisez les flèches pour déplacer le bloc vers le haut ou vers le bas, le bouton plus (**Blok hier invoegen**, insérer un bloc ici) pour glisser un bloc entre deux, et les actions **Dupliceren** (dupliquer), **Kopieer naar pagina…** (copier vers une page), **Vergrendelen** (verrouiller) et **Verwijderen** (supprimer). Un bloc verrouillé ne peut qu'être déverrouillé. La navigation et le pied de page affichent leur nom au survol, mais vous les modifiez via **Hele site** › **Navigatie** et **Footer**.
 
-Le constructeur de site propose egalement un ensemble de **designs sur mesure** prets a l'emploi qui remplacent les prereglages de style standard par un modele, un pack de couleurs et un accent de marque. Ouvrez le panneau **Designs sur mesure** depuis l'onglet Style pour parcourir la galerie. Chaque carte est un apercu en direct rempli avec vos propres donnees d'espace de travail (services, photos, avis, coordonnees), pour que vous voyiez exactement ce a quoi ressemble le design avant de l'appliquer.
+Cliquez sur un bloc pour le garder sélectionné ; le contour reste alors visible même quand vous éloignez la souris. Le canevas et la liste **Blokken** lisent le même ordre, donc une modification d'un côté se voit aussitôt de l'autre. Dans la liste **Blokken**, vous pouvez aussi masquer un bloc sans le supprimer.
 
-Choisir un design regle trois choses a la fois :
+Vous saisissez aussi le texte directement sur le canevas : cliquez sur le texte, tapez la modification et cliquez ailleurs pour enregistrer. Le champ de l'inspecteur suit immédiatement.
 
-- **Modele**: la famille de mise en page et la structure des sections (par exemple, un hero centre avec un defile d'avis, ou une page de services en vedette partagee).
-- **Pack de couleurs**: une variante de palette organisee pour ce modele. La plupart des modeles proposent plusieurs packs tels que chaud, froid, neutre, audacieux ou attenue. Changer de pack conserve le meme modele mais echange les proprietes CSS personnalisees, donc la structure reste intacte tandis que l'ambiance change.
-- **Accent de marque**: une substitution facultative pour la couleur d'accent du modele. Laissez-la vide pour utiliser l'accent par defaut du pack ; saisissez votre propre couleur hexadecimale pour harmoniser les boutons, les points forts et les badges avec votre marque. Vous pouvez effacer la substitution a tout moment pour revenir a l'accent par defaut du pack.
-
-Votre logo d'entreprise est utilise automatiquement si vous en avez telecharge un. Les modeles qui prennent en charge un logo l'affichent dans la barre de navigation ou le hero. Les modeles qui attendent un mot-symbole textuel se rabattent sur le nom de votre entreprise lorsqu'aucun logo n'est defini, controle par une regle conditionnelle pour que le bon element apparaisse.
-
-Quand un design vous plait, cliquez sur **Utiliser ce design**. Le site actuel est immediatement publie avec le nouveau modele, le pack et l'accent appliques, et votre URL publique affiche la modification instantanement.
-
-### Reorganiser les sections sur une page sur mesure
-
-Apres avoir applique un design sur mesure, ouvrez une page dans l'editeur de contenu sur mesure. Le panneau **Sections** liste toutes les sections de premier niveau de cette page. Faites glisser une section vers une nouvelle position, ou utilisez les boutons haut et bas. Desactivez l'interrupteur de visibilite pour masquer une section sans la supprimer. La navigation, le hero et le pied de page restent verrouilles; vous ne pouvez ni les deplacer ni les masquer.
-
-### Controles directement sur l'aperçu canvas
-
-Vous pouvez aussi reordonner, masquer et supprimer des sections directement sur l'aperçu canvas en direct. Survolez une section de premier niveau pour voir son nom et une petite barre d'outils. Utilisez les fleches pour deplacer la section vers le haut ou vers le bas, l'icone oeil pour la masquer (ou l'afficher a nouveau), et l'icone corbeille pour supprimer une section que vous avez ajoutee vous-meme. Les elements verrouilles comme la navigation, le hero et le pied de page affichent le nom au survol, mais n'offrent pas d'actions de deplacement, de masquage ou de suppression.
-
-Cliquez sur une section pour la garder selectionnee; le contour reste alors visible meme lorsque vous eloignez la souris, ce qui vous permet de comparer les positions tout en faisant defiler ou en modifiant le contenu. Le canvas et le panneau **Sections** lisent tous deux le meme ordre sous-jacent, donc une modification d'un cote est immediatement refletee de l'autre.
-
-### Contenu du pied de page
-
-Les modèles sur mesure avec un pied de page minimal vous permettent désormais d'ajouter votre propre contenu de pied de page sans modifier la conception. Ouvrez une page dans l'éditeur de contenu sur mesure et faites défiler jusqu'au panneau **Pied de page**.
-
-Vous pouvez y ajouter :
-
-- **Mention légale**: votre numéro KvK/TVA ou autre texte de précision, rendu dans le style du modèle.
-- **Colonnes de liens**: colonnes titrées de liens, utiles pour les pages comme contact, conditions ou services.
-- **Coordonnées**: activez l'affichage de votre e-mail, téléphone et adresse depuis vos données d'entreprise.
-- **Liens sociaux**: activez l'affichage des liens sociaux enregistrés dans vos données d'entreprise.
-
-La conception contrôle toujours la couleur, la typographie et l'espacement ; vous fournissez uniquement le contenu. Les liens acceptent les chemins internes (`/contact`), les URL HTTPS externes, les e-mails (`mailto:`) ou les téléphones (`tel:`). Si un modèle affiche déjà vos coordonnées ou liens sociaux dans le pied de page, l'interrupteur correspondant est masqué pour éviter les doublons.
-
-### Remplacer les liens des boutons de section
-
-Certaines sections sur mesure contiennent des boutons ou des liens cliquables qui pointent normalement vers une page fixe integree au design, comme une page de contact, une URL de reservation ou un numero de telephone. L'editeur de contenu sur mesure vous permet de remplacer la destination de chaque bouton adressable, par page.
-
-Ouvrez une page dans l'editeur de contenu sur mesure et selectionnez la section dont vous voulez modifier le bouton. Dans le panneau **Sections**, chaque section contenant des boutons adressables affiche une liste **Boutons**. Choisissez le bouton a remplacer et saisissez sa nouvelle destination. Vous pouvez creer un lien vers une autre page de votre site, une URL externe, une adresse e-mail (`mailto:`) ou un numero de telephone (`tel:`). Les liens sont verifies avec les memes schemes autorises que les liens de navigation, par securite. Si vous laissez le remplacement vide, le bouton conserve la destination d'origine du modele.
-
-### Ajouter et modifier des sections
-
-Lorsque vous ouvrez une page sur mesure dans l'editeur, le panneau **Sections** propose maintenant le catalogue complet de sections. Les sections qui appartiennent au design lui-meme apparaissent en premier et utilisent le balisage propre au modele ainsi que vos donnees d'espace de travail, pour un rendu natif. Les sections issues du catalogue plus large sont integrees via un pont avec la meme palette et la meme typographie, mais elles ont leurs propres champs de contenu par section.
-
-Cliquez sur **Ajouter une section** pour ouvrir le selecteur, choisissez le type souhaite, et la section est deposee sur la page avec des valeurs par defaut sensibles. Le panneau d'inspection a droite affiche les champs de la section selectionnee, qu'ils proviennent de vos donnees d'espace de travail ou des props de contenu propres a la section. Les sections ajoutees peuvent etre reordonnees, masquees ou supprimees de la meme maniere que les sections propres au design.
+Les titres que l'assistant, une réécriture ou un nouveau bloc écrivent pour vous sortent en forme de phrase : ainsi, un titre se lit comme une phrase. Les noms comme votre entreprise ou une marque gardent leurs propres majuscules.
 
 ### Adresse, carte, zone d'activité et stationnement sur la page de contact
 
-La page de contact montre où vous travaillez et comment y arriver. Le bloc **Locaties** sert de retour à votre adresse d'entreprise quand vous n'avez pas d'emplacements à vous, et un bloc de contact laisse tomber une adresse qu'un bloc Locaties montre déjà sur la même page. Une page de contact neuve ne démarre plus avec un bloc Locaties vide. Une carte (**Kaart tonen**) sort de votre adresse quand vous en voulez une, **Werkgebied** est l'un des préréglages d'Ajouter une section pour montrer où vous rejoignez vos clients, et la section d'accès s'appelle **Bereikbaarheid en parkeren** (accès et stationnement).
-
-### Renommer les pages
-
-Les pages de modele ont une adresse fixe et une etiquette de menu ancree dans le balisage du design. Au lieu de modifier chaque lien a la main, le panneau **Pages** vous permet de renommer l'etiquette de menu de chaque page de modele. Cliquez sur le crayon a cote d'une page, saisissez la nouvelle etiquette, et chaque lien vers cette page dans la navigation et le pied de page se met a jour automatiquement. L'adresse de la page elle-meme ne change pas, donc aucune redirection n'est necessaire et les liens existants continuent de fonctionner.
-
-Si vous videz le champ ou retapez le nom original du design, le renommage est supprime et l'etiquette d'origine revient.
-
-### Modifier le texte du design
-
-Les designs contiennent de petits morceaux de texte litteral, tels que des sous-titres, des legendes et des mini-titres, qui ne sont pas lies a vos donnees d'espace de travail. En mode edition, ces textes sont editables directement sur le canvas : cliquez sur le texte, tapez la modification, puis appuyez sur Entree ou cliquez ailleurs pour enregistrer. La surcharge est stockee par section et par page, et le site public affiche votre version a la place des mots originaux du design.
-
-Le texte a l'interieur de blocs repetitifs ne peut pas etre edite de cette facon, car un chemin statique modifierait chaque element repete. L'edition est egalement limitee au texte situe a l'interieur d'une section, afin qu'il existe toujours une adresse stable pour la surcharge. Pour annuler une modification, effacez le champ ou retapez le texte original du design.
-
-Les titres que l'assistant, une réécriture ou une section fraîche écrivent pour vous sortent en forme de phrase : ainsi, un titre se lit comme une phrase. Les noms entiers comme votre entreprise ou une marque gardent leurs propres majuscules.
+La page de contact montre où vous travaillez et comment y arriver. Le bloc **Locaties** sert de retour à votre adresse d'entreprise quand vous n'avez pas d'emplacements à vous, et un bloc de contact laisse tomber une adresse qu'un bloc Locaties montre déjà sur la même page. Une page de contact neuve ne démarre plus avec un bloc Locaties vide. Une carte (**Kaart tonen**) sort de votre adresse quand vous en voulez une, **Werkgebied** est l'un des préréglages de **Blok toevoegen** (ajouter un bloc) pour montrer où vous rejoignez vos clients, et la section d'accès s'appelle **Bereikbaarheid en parkeren** (accès et stationnement).
 
 ### La forme d'adresse sur votre site (Aanspreekvorm)
 
-Votre site s'adresse à ses visiteurs dans la forme que vous choisissez : **Je et jij** (personnel : « Ik help je graag. ») ou **U** (polie : « Ik help u graag. », les exemples néerlandais des textes fixes). Le choix figure à la première étape de l'assistant de site et sur la carte **Aanspreekvorm op je website** sous Paramètres → Informations de l'entreprise ; les deux écrivent le même réglage. Les textes fixes du site, comme les boutons, les lignes de formulaires et les remerciements, suivent le choix aussitôt. Ce que vous ou le rédacteur avez déjà écrit garde sa propre voix ; le bouton de cette carte, **Zet alle teksten om naar je** ou **Zet alle teksten om naar u**, convertit en un seul passage tout ce qui se trouve sur le site, votre texte saisi compris, en changeant seulement la forme d'adresse, jamais le contenu. Le résultat annonce combien de textes ont été ajustés et lesquels sont restés en place (c'est dans l'éditeur que vous les passez en revue), et une publication les met en ligne. Les sections ajoutées plus tard reprennent la forme d'adresse que le site porte déjà, et les pages légales, la politique de confidentialité et les conditions, paraissent aussi dans la forme choisie. Pour une entreprise à une seule personne, les textes fixes parlent à la première personne (je) au lieu de nous ; l'assistant demande votre prénom pour cette voix, et ne vous présente jamais sous le nom de votre entreprise.
+Votre site s'adresse à ses visiteurs dans la forme que vous choisissez : **Tutoiement (je)** (personnel : « Ik help je graag. ») ou **Vouvoiement (u)** (polie : « Ik help u graag. », les exemples néerlandais des textes fixes). Le choix figure à la première étape de l'assistant de site et sur la carte **Vouvoiement ou tutoiement sur votre site** sous **Paramètres** › **Données de l'entreprise** ; les deux écrivent le même réglage. Les textes fixes du site, comme les boutons, les lignes de formulaires et les remerciements, suivent le choix aussitôt. Ce que vous ou le rédacteur avez déjà écrit garde sa propre voix ; le bouton de cette carte, **Passer tous les textes en informel (je)** ou **Passer tous les textes en formel (u)**, convertit en un seul passage tout ce qui se trouve sur le site, votre texte saisi compris, en changeant seulement la forme d'adresse, jamais le contenu. Le résultat annonce combien de textes ont été ajustés et lesquels sont restés en place (c'est dans l'éditeur que vous les passez en revue), et une publication les met en ligne. Les sections ajoutées plus tard reprennent la forme d'adresse que le site porte déjà, et les pages légales, la politique de confidentialité et les conditions, paraissent aussi dans la forme choisie. Pour une entreprise à une seule personne, les textes fixes parlent à la première personne (je) au lieu de nous ; l'assistant demande votre prénom pour cette voix, et ne vous présente jamais sous le nom de votre entreprise.
 
-## Creer des pages
+## Créer des pages
 
-1. Allez dans l'onglet **Pages**.
-2. Cliquez sur **Nouvelle page**.
-3. Saisissez un titre et un chemin (par ex. `/a-propos`).
-4. Choisissez un modele ou commencez avec une page vierge.
-5. La page s'ouvre dans l'éditeur, où vous pouvez ajouter des sections et la construire. Une page créée ici rejoint automatiquement votre menu ; la page 404 et les articles de blog non. Si l'ajout échoue, l'éditeur vous en informe, et vous activez la page vous-même dans l'éditeur de menu.
+1. Dans l'éditeur, cliquez sur **+** (**Pagina toevoegen**) derrière les onglets de page, ou sur **Nouvelle page** dans l'onglet **Pages** de Site web.
+2. Donnez un nom à la page et choisissez un **Soort pagina** (type de page).
+3. La page s'ouvre dans l'éditeur, où vous pouvez ajouter des blocs et la construire. Vous modifiez l'adresse web dans **Instellingen** (réglages) de la page. Une page créée ici rejoint automatiquement votre menu ; la page 404 et les articles de blog non. Si l'ajout échoue, l'éditeur vous en informe, et vous activez la page vous-même dans l'éditeur de menu.
 
 ### Pages par défaut
 
-Chaque nouvel espace de travail recoit quatre pages deja crees :
+Chaque nouvel espace de travail reçoit ces pages déjà créées :
 
 | Page | Chemin | Description |
 |---|---|---|
-| Accueil | `/` | Votre page d'atterrissage principale. Ne peut pas etre supprimee. |
-| Services | `/diensten` | Montrez ce que vous proposez. Pre-remplie avec une section services. |
-| A propos | `/over-ons` | Dites aux visiteurs qui vous etes. |
-| Contact | `/contact` | Formulaire de contact et details. Lie depuis le pied de page. |
+| Accueil | `/` | Votre page d'atterrissage principale. Ne peut pas être supprimée. |
+| Services | `/diensten` | Montrez ce que vous proposez. Préremplie avec une section services. |
+| À propos | `/over-ons` | Dites aux visiteurs qui vous êtes. |
+| Contact | `/contact` | Formulaire de contact et détails. Lié depuis le pied de page. |
+| Politique de confidentialité | `/privacy` | Voir Pages légales ci-dessous. |
+| Conditions générales | `/algemene-voorwaarden` | Voir Pages légales ci-dessous. |
 
-Ces pages sont automatiquement connectees a l'en-tete de navigation et au pied de page. Vous pouvez modifier ou supprimer n'importe laquelle, sauf la page d'Accueil qui est toujours obligatoire. La navigation met a jour ses liens quand vous ajoutez ou supprimez des pages.
+Ces pages sont automatiquement connectées à l'en-tête de navigation et au pied de page. Vous pouvez modifier ou supprimer n'importe laquelle, sauf la page d'Accueil qui est toujours obligatoire. La navigation met à jour ses liens quand vous ajoutez ou supprimez des pages.
 
 ### Statut des pages : En ligne vs Brouillon
 
-Les pages ont un statut qui determine si elles apparaissent sur votre site publie :
+Les pages ont un statut qui détermine si elles apparaissent sur votre site publié :
 
-- **En ligne** : La page est incluse dans le snapshot de publication. Les visiteurs la voient sur votre site public apres publication.
-- **Brouillon** : La page est en cours d'elaboration. Elle reste invisible pour les visiteurs, meme apres la publication du site.
+- **En ligne** : La page est incluse dans le snapshot de publication. Les visiteurs la voient sur votre site public après publication.
+- **Brouillon** : La page est en cours d'élaboration. Elle reste invisible pour les visiteurs, même après la publication du site.
 
-La page d'accueil demarre par defaut en **En ligne**. Toute autre nouvelle page demarre en **Brouillon** pour ne pas apparaitre publiquement avant que vous soyez pret. Vous pouvez basculer chaque page entre En ligne et Brouillon avec les boutons d'action rapide dans le tableau Pages. Le changement de statut est enregistre immediatement et active le bouton Publier dans la barre superieure.
+Une nouvelle page démarre en **En ligne**, pour qu'elle parte à votre prochaine publication et qu'un lien de menu ne pointe jamais vers une page manquante. Un nouvel article de blog démarre en **Brouillon**. La page d'accueil est toujours en ligne. Vous basculez une page entre En ligne et Brouillon avec l'interrupteur **Concept** / **Live** (Brouillon / En ligne) de cette page dans **Pagina's beheren** (gérer les pages). Le changement de statut est enregistré immédiatement et active le bouton Publier dans la barre supérieure, de sorte que la prochaine publication le prenne en compte.
 
-Un site dont la page d'accueil est en Brouillon n'affiche rien lors de la publication. Si vous avez passe la page d'accueil en Brouillon, remettez-la en En ligne et publiez pour restaurer le site.
+Un site dont la page d'accueil est en Brouillon n'affiche rien lors de la publication. Si vous avez passé la page d'accueil en Brouillon, remettez-la en En ligne et publiez pour restaurer le site.
 
 ## Construire des pages avec des sections
 
-Dans l'onglet **Editeur** :
+Ouvrez une page dans l'éditeur. Dans la liste **Blokken** (blocs) :
 
-- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact, tarifs, produit, labels et certifications, HTML personnalise, etc.).
-- Selectionnez un type de bloc pour l'inserer sur la page.
-- Cliquez sur une section pour ouvrir le panneau d'inspection, ou vous pouvez modifier son contenu, sa mise en page, son style et son animation.
-- Faites glisser les sections vers le haut ou le bas pour les reordonner. Utilisez les actions dupliquer et supprimer sur chaque section.
+- Cliquez sur **Blok toevoegen** (ajouter un bloc) pour voir les types de blocs disponibles (grand titre, texte, galerie, photo avec texte, services, équipe, avis clients, formulaire de contact, tarifs, produit, labels et certifications, réservation en ligne, et plus encore).
+- Sélectionnez un type de bloc pour l'insérer sur la page.
+- Cliquez sur une section pour ouvrir le panneau d'inspection, où vous pouvez modifier son contenu, sa mise en page, son style et son animation.
+- Faites glisser les sections vers le haut ou le bas pour les réordonner. Utilisez les actions dupliquer et supprimer sur chaque section.
 
-Certaines sections ont des variantes systeme uniquement disponibles sur la page d'accueil verrouillee.
+Certaines sections ont des variantes système uniquement disponibles sur la page d'accueil verrouillée.
 
 ## Outils d'assistance IA
 
-Deux outils bases sur l'IA vous aident a rediger et illustrer vos pages plus rapidement, directement dans l'inspecteur de l'editeur.
+Deux outils basés sur l'IA vous aident à rédiger et illustrer vos pages plus rapidement, directement dans l'inspecteur de l'éditeur.
 
-### Reecriture de texte
+### Réécriture de texte
 
-Chaque champ de texte et zone de texte dans l'inspecteur de section affiche quatre petits boutons de ton en dessous des que le champ contient suffisamment de texte (plus de quelques mots). Les boutons envoient votre texte actuel au serveur, qui utilise un modele Gemini leger pour le reecrire avec un ton specifique :
+Chaque champ de texte et zone de texte dans l'inspecteur de section affiche quatre petits boutons de ton en dessous dès que le champ contient suffisamment de texte (plus de quelques mots). Les boutons envoient votre texte actuel au serveur, qui utilise un modèle Gemini léger pour le réécrire avec un ton spécifique :
 
-- **Plus court** : Reduit le texte a environ la moitie de sa longueur tout en conservant le sens.
-- **Plus calme** : Rend le texte plus apaise et rassurant. Moins de discours commercial, plus de confiance.
-- **Plus percutant** : Affute la formulation. Des verbes plus forts, aucune hesitation.
-- **Plus chaleureux** : Adoucit le ton, plus chaleureux et accessible.
+- **Korter** (plus court) : Réduit le texte à environ la moitié de sa longueur tout en conservant le sens.
+- **Kalmer** (plus calme) : Rend le texte plus apaisé et rassurant. Moins de discours commercial, plus de confiance.
+- **Scherper** (plus percutant) : Affûte la formulation. Des verbes plus forts, aucune hésitation.
+- **Vriendelijker** (plus chaleureux) : Adoucit le ton, plus chaleureux et accessible.
 
-La reecriture reste toujours dans la meme langue que l'original (generalement le neerlandais). Le modele ne fait que reecrire, il n'invente pas de nouvelles informations. Le texte reecrit remplace directement le contenu de votre champ. Vous pouvez cliquer sur un autre bouton de ton, annuler ou modifier davantage.
+La réécriture reste toujours dans la même langue que l'original (généralement le néerlandais). Le modèle ne fait que réécrire, il n'invente pas de nouvelles informations. Le texte réécrit remplace directement le contenu de votre champ. Vous pouvez cliquer sur un autre bouton de ton, annuler ou modifier davantage.
 
-Le champ de texte est limite a 2000 caracteres pour l'appel de reecriture, afin que le modele reste rapide et previsible. Si le service IA est temporairement indisponible, vous verrez un message d'erreur et votre texte original reste intact.
+Le champ de texte est limité à 2000 caractères pour l'appel de réécriture, afin que le modèle reste rapide et prévisible. Si le service IA est temporairement indisponible, vous verrez un message d'erreur et votre texte original reste intact.
 
 ### Recherche de photos libres
 
-Lorsque vous ouvrez le champ de telechargement d'image dans n'importe quel bloc de section (hero, spotlight, equipe, portfolio, logos, produit), vous voyez maintenant un bouton **Stockfoto** a cote des boutons de telechargement et de collage d'URL. Un clic ouvre un panneau de recherche integre connecte a Unsplash, la bibliotheque gratuite de photos libres.
+Lorsque vous ouvrez le champ de téléchargement d'image dans n'importe quel bloc de section (hero, spotlight, équipe, portfolio, logos, produit), vous voyez maintenant un bouton **Stockfoto** à côté des boutons de téléchargement et de collage d'URL. Un clic ouvre un panneau de recherche intégré connecté à Unsplash, la bibliothèque gratuite de photos libres.
 
-- Saisissez un terme de recherche (par ex. "salon de coiffure", "cafe", "bois") et appuyez sur Entree.
-- Les resultats apparaissent dans une grille. Cliquez sur une photo pour l'inserer comme image de votre section.
-- La recherche passe par le serveur MyCompanyDesk, votre cle d'acces Unsplash n'atteint donc jamais le navigateur.
+- Saisissez un terme de recherche (par ex. "salon de coiffure", "café", "bois") et appuyez sur Entrée.
+- Les résultats apparaissent dans une grille. Cliquez sur une photo pour l'insérer comme image de votre section.
+- La recherche passe par le serveur MyCompanyDesk, votre clé d'accès Unsplash n'atteint donc jamais le navigateur.
 - L'attribution est suivie automatiquement conformément aux directives API d'Unsplash et affichée sur votre site publié. La mention "Photos : `photographe` · Unsplash" dans le pied de page ne nomme que les photographes des photos libres que le visiteur voit vraiment sur le site publié : une carte de service qui a repris votre propre photo depuis l'offre ne compte plus, une même personne n'y figure qu'une fois, et les photos remplacées sortent de la ligne.
 
 Le texte alternatif suit vos propres photos : il sort du nom de fichier de l'image lors d'un envoi (noms de lieux entiers, 200 caractères au plus) et reste remplaçable ensuite, sur un envoi comme sur une photo libre déjà en place.
-- Si Unsplash n'est pas configure sur votre espace de travail, le bouton Stockfoto reste masque, vous ne voyez donc jamais une fonctionnalite defaillante.
+- Si Unsplash n'est pas configuré sur votre espace de travail, le bouton Stockfoto reste masqué, vous ne voyez donc jamais une fonctionnalité défaillante.
 
-## Blocs sauvegardes
+## Blocs sauvegardés
 
-Sauvegardez n'importe quelle section comme bloc reutilisable et constituez une bibliotheque personnelle de composants pre-stylises. Les blocs sauvegardes apparaissent en haut du panneau d'ajout de section, vous permettant d'inserer une mise en page sauvegardee sur n'importe quelle page sans la reconstruire.
+Sauvegardez n'importe quelle section comme bloc réutilisable et constituez une bibliothèque personnelle de composants préstylisés. Les blocs sauvegardés apparaissent en haut du panneau d'ajout de section, vous permettant d'insérer une mise en page sauvegardée sur n'importe quelle page sans la reconstruire.
 
 ### Sauvegarder une section comme bloc
 
-1. Cliquez sur l'icone de signet dans une ligne de section de l'editeur.
-2. Donnez un nom au bloc (le libelle ou le type de la section est pre-rempli comme suggestion).
-3. Le bloc est sauvegarde dans votre bibliotheque personnelle pour cet espace de travail.
+1. Dans la liste **Blokken**, ouvrez le menu **Meer acties** (plus d'actions) d'un bloc et choisissez **Bewaar als blok** (enregistrer comme bloc).
+2. Donnez un nom au bloc (le libellé du bloc est pré-rempli comme suggestion).
+3. Le bloc est sauvegardé dans votre bibliothèque personnelle pour cet espace de travail.
 
-### Inserer un bloc sauvegarde
+### Insérer un bloc sauvegardé
 
-1. Cliquez sur **Ajouter une section** sur une page.
-2. Vos blocs sauvegardes apparaissent sous **Mes blocs** en haut du panneau.
-3. Cliquez sur un bloc sauvegarde pour l'inserer comme nouvelle section sur la page actuelle.
+1. Cliquez sur **Blok toevoegen** sur une page.
+2. Vos blocs sauvegardés apparaissent sous **Mijn blokken** (mes blocs) en haut du panneau.
+3. Cliquez sur un bloc sauvegardé pour l'insérer comme nouvelle section sur la page actuelle.
 
-L'insertion d'un bloc sauvegarde copie son modele dans une nouvelle ligne de section. Modifier ou supprimer la section inseree n'affecte pas le bloc sauvegarde dans votre bibliotheque, et inversement.
+L'insertion d'un bloc sauvegardé copie son modèle dans une nouvelle ligne de section. Modifier ou supprimer la section insérée n'affecte pas le bloc sauvegardé dans votre bibliothèque, et inversement.
 
-### Gerer votre bibliotheque
+### Gérer votre bibliothèque
 
-- **Supprimez un bloc** de la bibliotheque en cliquant sur l'icone x a cote du bloc. Cela supprime uniquement le modele sauvegarde ; les sections deja inserees a partir de ce bloc restent intactes.
-- L'en-tete **Mes blocs** est masque lorsque votre bibliotheque est vide, afin qu'un nouvel editeur ne voie pas de categorie vide.
+- **Supprimez un bloc** de la bibliothèque en cliquant sur l'icône x à côté du bloc. Cela supprime uniquement le modèle sauvegardé ; les sections déjà insérées à partir de ce bloc restent intactes.
+- L'en-tête **Mijn blokken** est masqué lorsque votre bibliothèque est vide, afin qu'un nouvel éditeur ne voie pas de catégorie vide.
 
 ### Variantes de mise en page
 
-Les sections hero, services, tarifs et temoignages prennent en charge plusieurs variantes de mise en page. Choisissez-en une dans le menu deroulant **Style** de l'onglet Mise en page du panneau d'inspection pour changer l'apparence de la section. La variante par defaut conserve l'aspect familier, vos sections creees avant cette fonctionnalite restent donc inchangees.
+De nombreux blocs prennent en charge plusieurs variantes de mise en page, dont le grand titre, les services, les tarifs, les avis clients, l'équipe, la FAQ, les chiffres et l'appel à l'action avec bouton. Choisissez-en une dans le menu déroulant **Style** de l'onglet Mise en page du panneau d'inspection pour changer l'apparence de la section. La variante par défaut conserve l'aspect familier, vos sections créées avant cette fonctionnalité restent donc inchangées.
 
-#### Variantes hero
+#### Variantes du grand titre
 
 | Variante | Effet |
 |---|---|
-| **Standard (divise a droite)** | Defaut. Image a droite, texte a gauche. Se replie en texte centre quand il n'y a pas d'image. |
-| **Divise a gauche** | Miroir du standard : image a gauche, texte a droite. Necessite une image. |
-| **Centre** | Texte centre, image optionnelle en dessous dans un cadre large 16:9. |
-| **Banniere** | Image en fond pleine largeur avec un degrade en surimpression. Texte blanc sur fond sombre, haute pour laisser respirer l'image. Necessite une image. |
-| **Minimal** | Texte seul dans une colonne etroite. Pas d'image. Propre et discret, adapte aux pages de type documentation. |
+| **Standaard (foto rechts)** (standard, photo à droite) | Par défaut. Photo à droite, texte à gauche. Se replie sur du texte centré quand il n'y a pas de photo. |
+| **Foto links** (photo à gauche) | Miroir du standard : photo à gauche, texte à droite. |
+| **Portret (ronde foto links)** / **Portret (ronde foto rechts)** (portrait, photo ronde à gauche ou à droite) | Une photo de portrait ronde à côté du texte. |
+| **Gecentreerd** (centré) | Texte centré, photo facultative en dessous. |
+| **Foto als achtergrond** (photo en arrière-plan) | Photo pleine largeur en arrière-plan, avec du texte clair par-dessus. |
+| **Minimaal (alleen tekst)** (minimal, texte seul) | Texte seul dans une colonne étroite. Pas de photo. |
+| **Redactioneel**, **Affiche**, **Omkaderd**, **Groot cijfer** (éditorial, affiche, encadré, grand chiffre) | Variantes typographiques sans photo : un grand titre avec une colonne de métadonnées, une déclaration entre deux filets, un cadre d'imprimerie ou un grand chiffre en contour. |
 
 #### Variantes services
 
 | Variante | Effet |
 |---|---|
-| **Standard (cartes)** | Defaut. Grille de cartes en 2, 3 ou 4 colonnes. Icone, titre et description par element. |
-| **Grille d'icones** | Mise en page plus dense, axee sur les icones avec des icones plus grands et moins d'habillage. Ideal pour 4 elements courts ou plus. |
-| **Liste** | Lignes verticales avec une icone a gauche et le texte a droite, separees par des traits fins. Convient aux longues listes a parcourir. |
-| **Accordeon** | Lignes cliquables empilees verticalement. Description masquee jusqu'a ce que la ligne soit ouverte. Utilise la meme animation de chevron que le bloc FAQ. |
+| **Standard (cartes)** | Défaut. Grille de cartes en 2, 3 ou 4 colonnes. Icône, titre et description par élément. |
+| **Grille d'icônes** | Mise en page plus dense, axée sur les icônes avec des icônes plus grands et moins d'habillage. Idéal pour 4 éléments courts ou plus. |
+| **Liste** | Lignes verticales avec une icône à gauche et le texte à droite, séparées par des traits fins. Convient aux longues listes à parcourir. |
+| **Accordéon** | Lignes cliquables empilées verticalement. Description masquée jusqu'à ce que la ligne soit ouverte. Utilise la même animation de chevron que le bloc FAQ. |
 
 #### Variantes tarifs
 
 | Variante | Effet |
 |---|---|
-| **Standard (cartes)** | Defaut. Cartes de niveaux cote a cote avec nom, prix, liste de fonctionnalites et bouton d'achat ou CTA. |
-| **Tableau comparatif** | Matrice de fonctionnalites. Les lignes sont toutes les fonctionnalites de tous les niveaux regroupees. Les colonnes sont les niveaux. Chaque cellule affiche une coche ou un tiret pour que les visiteurs puissent rapidement scanner les colonnes et comparer les forfaits. La colonne du niveau mis en avant reste teintee. |
+| **Standard (cartes)** | Défaut. Cartes de niveaux côte à côte avec nom, prix, liste de fonctionnalités et bouton d'achat ou CTA. |
+| **Tableau comparatif** | Matrice de fonctionnalités. Les lignes sont toutes les fonctionnalités de tous les niveaux regroupées. Les colonnes sont les niveaux. Chaque cellule affiche une coche ou un tiret pour que les visiteurs puissent rapidement scanner les colonnes et comparer les forfaits. La colonne du niveau mis en avant reste teintée. |
 
-#### Variantes temoignages
+#### Variantes témoignages
 
 | Variante | Effet |
 |---|---|
-| **Standard (grille)** | Defaut. Cartes en grille de 2 a 3 colonnes. Chaque carte affiche la citation, le nom et le role optionnel. |
-| **Spotlight (citation unique)** | Une grande citation unique en style magazine, centree avec typographie serif. Les temoignages supplementaires apparaissent comme de petits badges nominatifs sous la citation principale. |
-| **Bandeau defilant** | Une rangee de cartes de citations defilant horizontalement. Le survol met la defilement en pause ; la preference de mouvement reduit du systeme l'arrete completement. La piste boucle de maniere transparente avec deux copies de l'ensemble. |
+| **Standard (grille)** | Défaut. Cartes en grille de 2 à 3 colonnes. Chaque carte affiche la citation, le nom et le rôle optionnel. |
+| **Spotlight (één quote)** (citation unique) | Une grande citation unique en style magazine, centrée avec typographie serif. Les témoignages supplémentaires apparaissent comme de petits badges nominatifs sous la citation principale. |
+| **Bandeau défilant** | Une rangée de cartes de citations défilant horizontalement. Le survol met la défilement en pause ; la préférence de mouvement réduit du système l'arrête complètement. La piste boucle de manière transparente avec deux copies de l'ensemble. |
 
-### Spotlight
+### Photo avec texte
 
-Le bloc spotlight est une rangee alternee d'image et de texte. Chaque rangee affiche une image d'un cote et du texte de l'autre : un eyebrow, un titre, un sous-titre, des puces avec coches et un lien call-to-action optionnel. Vous choisissez de quel cote l'image apparait dans le panneau de mise en page.
+Le bloc **Foto met tekst** (photo avec texte) est une rangée alternée d'image et de texte. Chaque rangée affiche une image d'un côté et du texte de l'autre : un eyebrow, un titre, un sous-titre, des puces avec coches et un lien call-to-action optionnel. Vous choisissez de quel côté l'image apparaît dans le panneau de mise en page.
 
-Quelques points a savoir :
+Quelques points à savoir :
 
-- **Cote de l'image** : La variante de mise en page est par defaut image-a-droite. Passez a image-a-gauche dans le panneau de mise en page pour inverser la rangee.
-- **Elements optionnels** : L'eyebrow, le sous-titre, les puces, le CTA et l'image sont tous optionnels. Un spotlight avec seulement un titre et une image s'affiche tout aussi proprement.
-- **Empilement** : Ajoutez plusieurs sections spotlight les unes en dessous des autres pour reproduire le schema classique de liste de fonctionnalites de la landing page MCD.
-- **Image fixe** : Activez "L'image reste visible en defilant" dans l'inspecteur spotlight pour maintenir l'image en place pendant que le texte a cote defile. Uniquement sur desktop, et seulement quand il y a assez de texte a cote de l'image. Sur mobile, l'image s'empile normalement.
+- **Côté de l'image** : La variante de mise en page est par défaut image-à-droite. Passez à image-à-gauche dans le panneau de mise en page pour inverser la rangée.
+- **Éléments optionnels** : L'eyebrow, le sous-titre, les puces, le CTA et l'image sont tous optionnels. Un spotlight avec seulement un titre et une image s'affiche tout aussi proprement.
+- **Empilement** : Ajoutez plusieurs sections spotlight les unes en dessous des autres pour construire une liste classique de fonctionnalités les unes sous les autres.
+- **Image fixe** : Activez **Foto blijft staan als je scrolt** (la photo reste en place pendant le défilement) dans l'inspecteur pour maintenir l'image en place pendant que le texte à côté défile. Uniquement sur desktop, et seulement quand il y a assez de texte à côté de l'image. Sur mobile, l'image s'empile normalement.
 
 ### Grille tarifaire avec boutons d'achat
 
 La section tarifs affiche vos forfaits ou abonnements. Chaque niveau peut optionnellement avoir un bouton d'achat :
 
-- Marquez un niveau comme **purchasable** et indiquez le **montant en centimes** (ex. 4999 pour EUR 49,99).
-- Un bouton **Acheter** remplace le lien CTA statique. Les visiteurs qui cliquent passent par le checkout MyCompanyDesk et sont rediriges vers Mollie ou Stripe Connect pour le paiement.
-- Le libelle du bouton est par defaut "Acheter", personnalisable par niveau avec le champ **buyLabel**.
+- Activez **Met koopknop** (avec bouton d'achat) sur un tarif et renseignez **Prijs bij afrekenen (incl. btw)** (prix au paiement, TVA comprise), le montant que l'acheteur paie réellement (par exemple 750,00). Gardez le texte du prix sur la carte identique.
+- Un bouton **Acheter** remplace le lien CTA statique. Les visiteurs qui cliquent passent par le checkout MyCompanyDesk et sont redirigés vers Mollie ou Stripe Connect pour le paiement.
+- Le libellé du bouton est par défaut "Acheter", personnalisable par tarif dans le champ **Koop-knop tekst** (texte du bouton d'achat).
 - Les niveaux sans bouton d'achat conservent le comportement de lien CTA existant.
 
-Les sections tarifs peuvent egalement s'afficher sous forme de matrice comparative. Passez la variante de mise en page sur **Tableau comparatif** dans le panneau d'inspection. La matrice presente chaque niveau comme une colonne et toutes les fonctionnalites de tous les niveaux comme des lignes, avec des coches la ou un niveau inclut la fonctionnalite. Vous voyez ainsi en un coup d'oeil comment les forfaits se comparent. Voir [Variantes de mise en page](#variantes-de-mise-en-page) pour toutes les options.
+Les sections tarifs peuvent également s'afficher sous forme de matrice comparative. Passez la variante de mise en page sur **Tableau comparatif** dans le panneau d'inspection. La matrice présente chaque niveau comme une colonne et toutes les fonctionnalités de tous les niveaux comme des lignes, avec des coches là où un niveau inclut la fonctionnalité. Vous voyez ainsi en un coup d'œil comment les forfaits se comparent. Voir [Variantes de mise en page](#variantes-de-mise-en-page) pour toutes les options.
 
 Les blocs qui montrent des prix du catalogue, services, produits, abonnements ou grilles tarifaires, portent **Prijzen op je website: inclusief / exclusief btw** dans le panneau d'inspection, enregistré pour tout l'espace de travail. Sur le réglage par défaut, TVA comprise, votre site montre ce que le client paie, et un prix structuré porte sa propre petite étiquette (TVA comprise, ou exonéré quand votre espace ne facture pas de TVA), pour que le montant ne se lise jamais deux fois. Le réglage hors TVA imprime le montant saisi sans TVA avec l'étiquette **excl. btw** : sur les cartes de services, dans le bloc tarifaire, dans la liste de services du bloc de rendez-vous et sur les séances de groupe. Gratuit, Sur demande et votre propre texte de site restent comme ils sont, et ce qu'un visiteur paie au règlement, par acompte, bouton d'achat ou paiement en ligne, reste TVA comprise. L'enregistrement reconstruit le site publié.
 
@@ -323,129 +257,121 @@ Les blocs qui montrent des prix du catalogue, services, produits, abonnements ou
 Une fiche d'achat autonome pour un seul article, quand un tableau tarifaire complet est superflu :
 
 - Un nom de produit, une description, une image optionnelle, un prix et un bouton d'achat.
-- Meme plomberie de checkout que les boutons d'achat des tarifs, votre visiteur paie via Mollie ou Stripe Connect.
-- Une ligne de note optionnelle sous le bouton pour les informations de livraison, les mentions legales ou les remarques.
+- Même plomberie de checkout que les boutons d'achat des tarifs, votre visiteur paie via Mollie ou Stripe Connect.
+- Une ligne de note optionnelle sous le bouton pour les informations de livraison, les mentions légales ou les remarques.
 
 Consultez [Ventes](/fr/features/domains-website-inbox#ventes) pour le suivi des paiements et des commandes.
 
 ### Bloc de labels et certifications
 
-Le bloc **Keurmerken** affiche les certificats et labels de votre entreprise (STEK, VCA, CE et autres), exactement comme vous les saisissez sous **Paramètres → Informations de l'entreprise**. Vous gérez cette liste à un seul endroit : le bloc est lié aux données, le panneau d'inspection n'a pas d'éditeur d'éléments, seulement la présentation.
+Le bloc **Keurmerken** affiche les certificats et labels de votre entreprise (STEK, VCA, CE et autres), exactement comme vous les saisissez sous **Paramètres › Données de l'entreprise**. Vous gérez cette liste à un seul endroit : le bloc est lié aux données, le panneau d'inspection n'a pas d'éditeur d'éléments, seulement la présentation.
 
 - **Titre** : « Certificeringen en keurmerken » par défaut. Saisissez votre propre titre, ou laissez le champ vide pour un bloc sans titre.
 - **Style** : tuiles blanches (par défaut) ou épuré. **Taille** : petite, moyenne ou grande.
 - Un label sans image est très bien : un label qui n'est qu'un nom apparaît comme ce nom sur le site et dans la version textuelle de vos e-mails. L'image reste facultative ; quand vous en placez une, elle passe par le rognage et les conversions habituels.
-- Au maximum six labels ; l'ordre, le nom et le lien se règlent sous Informations de l'entreprise. Quand vous ajoutez votre premier label, MyCompanyDesk place automatiquement un bloc de labels sur votre page d'accueil, comme brouillon : avant un appel à l'action final si c'est le dernier bloc, sinon en bas avant le pied de page. Il n'est pas publié tout de suite ; la publication reste entre vos mains. Si votre site comporte déjà une section de labels, aucune seconde n'est ajoutée.
-- Si la liste est vide, ou si **Afficher sur votre site web** est désactivé sous Informations de l'entreprise, le bloc se cache sur le site publié. L'éditeur l'indique aussi lorsque les labels sont désactivés pour le site web.
+- Au maximum six labels ; l'ordre, le nom et le lien se règlent sous **Paramètres › Données de l'entreprise**. Quand vous ajoutez votre premier label, MyCompanyDesk place automatiquement un bloc de labels sur votre page d'accueil, comme brouillon : avant un appel à l'action final si c'est le dernier bloc, sinon en bas avant le pied de page. Il n'est pas publié tout de suite ; la publication reste entre vos mains. Si votre site comporte déjà une section de labels, aucune seconde n'est ajoutée.
+- Si la liste est vide, ou si **Afficher sur votre site web** est désactivé sous **Paramètres › Données de l'entreprise**, le bloc se cache sur le site publié. L'éditeur l'indique aussi lorsque les labels sont désactivés pour le site web.
 - Quand vous supprimez un label, le fichier est conservé et les e-mails déjà envoyés continuent d'afficher le logo ; le bloc ne se masque que lorsque la liste est complètement vide.
 
-Source : `packages/shared/src/site-blocks/registry.ts#keurmerken` ; `apps/api/src/modules/companies/certifications.service.js`.
+### Services et produits issus d'Aanbod
 
-### Sections catalogue
+Les blocs qui montrent des services, des produits ou des abonnements tirent leurs éléments de votre offre Aanbod. Une description que vous saisissez pour un service est un texte unique : le bloc services de votre page d'accueil et la page Services le partagent, donc une correction arrive partout à la fois. Une reconstruction ne met jamais en ligne le brouillon d'une carte de service : tant que vous ne publiez pas, les cartes gardent le texte qu'elles avaient.
 
-Certains modeles sur mesure incluent une section catalogue en direct qui tire des articles directement de votre catalogue Aanbod. Si la page actuelle repete structurellement des services, des produits ou des abonnements, l'editeur de contenu affiche un panneau **Catalogue** pour chaque type reellement utilise sur cette page. Une description que vous saisissez pour un service est un texte unique : la section services sur votre page d'accueil et la page Services le partagent, donc une correction arrive partout à la fois. Une reconstruction ne met jamais en ligne le brouillon d'une carte de service : tant que vous ne publiez pas, les cartes gardent le texte qu'elles avaient.
-
-Le panneau se situe en dehors du cadre du modele, donc il n'interfere jamais avec le style propre au modele. Depuis ce panneau, vous ne controlez que la presentation du catalogue sur ce site :
-
-- **Titre et introduction** : definissez le titre de la section et une courte introduction.
-- **Ordre** : faites glisser les articles dans l'ordre souhaite, ou utilisez les boutons haut et bas. L'ordre naturel d'Aanbod s'applique aux articles que vous ne reordonnez pas explicitement.
-- **Afficher ou masquer** : cliquez sur l'icone oeil pour conserver un article dans Aanbod tout en le masquant sur ce site web.
-
-Le contenu de l'article lui-même, titre, prix, description et image, est en lecture seule dans l'éditeur. Il provient du catalogue Aanbod en direct et doit être modifié là-bas. Le prix suit le mode de prix défini dans Aanbod : un montant fixe, "à partir de" un montant, ou "Sur demande" lorsqu'aucun prix n'est défini. Un prix de zéro est un vrai prix : un article volontairement gratuit affiche "Gratuit" sur le site, la liste des prix, la liste Aanbod et le bloc de réservation, au lieu de paraître sans prix ; seuls les articles sans prix du tout affichent "Sur demande".
-
-Si ce type de catalogue n'a pas encore d'article eligible, le panneau affiche un etat vide avec un lien pour ajouter un article dans Aanbod.
+Le prix suit le mode de prix défini dans Aanbod : un montant fixe, « à partir de » un montant, ou « Sur demande » lorsqu'aucun prix n'est défini. Un prix de zéro est un vrai prix : un article volontairement gratuit affiche « Gratuit » sur le site, la liste des prix, la liste Aanbod et le bloc de réservation, au lieu de paraître sans prix ; seuls les articles sans prix du tout affichent « Sur demande ».
 
 ## Animations de section
 
-Chaque bloc de section dispose d'un panneau **Animation** dans l'inspecteur. Il vous permet d'ajouter du mouvement qui se declenche lorsque la section entre dans le viewport, au chargement de la page ou au survol.
+Chaque bloc dispose d'un onglet **Animatie** (animation) dans l'inspecteur. Il vous permet d'ajouter du mouvement qui se déclenche lorsque le bloc entre dans la vue, au chargement de la page, ou quand la souris passe dessus.
 
-### Types d'animation
+### Style d'animation
+
+Choisissez dans **Animatie-stijl** (style d'animation) comment le bloc apparaît :
+
+| Style | Effet |
+|---|---|
+| **Geen** (aucune) | Pas d'animation, le bloc est là tout de suite. |
+| **Zacht omhoog** (par défaut) | Le bloc apparaît en glissant légèrement vers le haut. |
+| **Zacht in beeld** | Le bloc apparaît depuis la transparence. |
+| **Schuif van rechts** | Le bloc apparaît en glissant depuis le côté. |
+| **Inzoomen** | Le bloc grandit légèrement jusqu'à sa propre taille. |
+| **Uitvouwen (horizontaal)** | Le bloc se déplie en largeur. |
+| **Na elkaar** | Les éléments du bloc apparaissent l'un après l'autre, au lieu que le bloc lui-même bouge. |
+| **Trap (paginakop)** | Les éléments de l'en-tête de page apparaissent en escalier. |
+| **Onthullen** | Le bloc est dévoilé à travers un masque. |
+| **Woord voor woord (titel in de paginakop)** | Uniquement pour le grand titre. Les mots du titre apparaissent chacun à leur rythme ; les autres blocs apparaissent normalement. |
+
+### Quand démarrer
+
+- **Bij in beeld komen** (à l'entrée dans la vue, par défaut) : L'animation se joue quand le bloc entre dans la vue en défilant. Une fois animé, le bloc reste visible.
+- **Direct bij laden** (dès le chargement) : L'animation démarre dès que la page est chargée.
+- **Bij aanwijzen** (au survol) : L'animation démarre quand la souris arrive sur le bloc et revient quand elle part.
+
+### Réglages
+
+- **Snelheid** (vitesse) : Durée de l'animation, de 200 à 1600 millisecondes. 600 ms par défaut.
+- **Vertraging** (délai) : Temps d'attente avant le démarrage de l'animation, de 0 à 1200 millisecondes. 0 ms par défaut.
+- **Soort beweging** (type de mouvement) : La courbe d'accélération. Choix entre **Soepel** (souple, par défaut), **Vloeiend** (fluide), **Gelijkmatig** (régulier) et **Lineair** (linéaire).
+- **Onderdelen na elkaar** (éléments l'un après l'autre) : Uniquement pour les blocs à plusieurs éléments. Les éléments du bloc apparaissent l'un après l'autre au lieu de tous ensemble.
+
+Pour choisir comment les blocs apparaissent sur l'ensemble du site, rendez-vous dans **Hele site** › **Animatie** : **Geen**, **Subtiel**, **Zacht**, **Zijwaarts**, **Onthullen** ou **Speels** (aucune, subtile, douce, latérale, dévoiler, ludique).
+
+### Réduction de mouvement
+
+Les visiteurs ayant `prefers-reduced-motion: reduce` activé au niveau du système d'exploitation voient chaque section directement dans sa position finale. Aucune animation n'est jouée. Au niveau de l'espace de travail, les tokens de mouvement peuvent également désactiver les animations par site. Lorsque la réduction de mouvement est active, la section ne reçoit jamais la classe de départ masquée, de sorte que le HTML rendu côté serveur soit accessible avant même l'exécution de JavaScript.
+
+## Séparateurs de section {#sepurateurs-de-section}
+
+Chaque bloc de section dispose d'un paramètre **Séparateur inférieur** dans le panneau de style de l'inspecteur. Il ajoute une forme SVG au bord inférieur de la section qui déborde dans la section suivante, créant une transition visuelle organique au lieu d'une coupure nette. Le séparateur utilise la couleur de fond de la section actuelle, il fonctionne donc le mieux entre des sections adjacentes ayant des fonds unis différents.
+
+### Types de séparateurs
 
 | Type | Effet |
 |---|---|
-| **Fade up** | La section apparait en glissant de 1rem vers le haut. |
-| **Fade in** | La section apparait depuis la transparence. |
-| **Slide right** | La section apparait en glissant de 2rem vers la droite. |
-| **Reveal** | La section se devoile de droite a gauche via un masque de decoupage. |
-| **Stagger** | Les elements enfants apparaissent les uns apres les autres par pas de 80ms, au lieu que la section elle-meme bouge. |
-| **Mot par mot** | Uniquement pour les sections hero. Les mots du titre apparaissent chacun a leur rythme; les autres blocs s'estompent normalement. |
-
-### Declencheurs
-
-Comment l'animation demarre :
-
-- **In-view** (par defaut) : L'animation se declenche lorsque la section entre dans le viewport. Utilise l'IntersectionObserver du navigateur. Une fois animee, la section reste visible.
-- **Load** : L'animation se declenche immediatement au chargement de la page.
-- **Hover** : L'animation se declenche au survol (mouseenter) et revient a la sortie (mouseleave).
-
-### Controles
-
-- **Duration** : Duree de l'animation en millisecondes, par defaut 700ms.
-- **Delay** : Delai avant le demarrage de l'animation en millisecondes, par defaut 0ms.
-- **Easing** : La courbe d'acceleration. Choix entre **ease-out** (par defaut), **linear** et **spring**.
-- **Stagger children** : Lorsque active, la section elle-meme reste immobile et ses elements enfants directs s'animent en sequence. Cette option fonctionne en complement de tout type d'animation (fade-up + stagger children, fade-in + stagger children, etc.). L'animation de la section est supprimee pour que seuls les enfants portent le mouvement.
-
-### Reduction de mouvement
-
-Les visiteurs ayant `prefers-reduced-motion: reduce` active au niveau du systeme d'exploitation voient chaque section directement dans sa position finale. Aucune animation n'est jouee. Au niveau de l'espace de travail, les tokens de mouvement peuvent egalement desactiver les animations par site. Lorsque la reduction de mouvement est active, la section ne recoit jamais la classe de depart masquee, de sorte que le HTML rendu cote serveur soit accessible avant meme l'execution de JavaScript.
-
-## Sepurateurs de section
-
-Chaque bloc de section dispose d'un parametre **Separateur inferieur** dans le panneau de style de l'inspecteur. Il ajoute une forme SVG au bord inferieur de la section qui deborde dans la section suivante, creant une transition visuelle organique au lieu d'une coupure nette. Le separateur utilise la couleur de fond de la section actuelle, il fonctionne donc le mieux entre des sections adjacentes ayant des fonds unis differents.
-
-### Types de separateurs
-
-| Type | Effet |
-|---|---|
-| **Vague** | Une courbe en S lisse le long du bord inferieur. |
+| **Vague** | Une courbe en S lisse le long du bord inférieur. |
 | **Courbe** | Un bol concave : la section suivante remonte au centre. |
-| **Diagonale** | Une coupe diagonale montante de gauche a droite. |
-| **Aucun** | Aucun separateur. Les sections se rejoignent sur un bord horizontal droit (par defaut). |
+| **Diagonale** | Une coupe diagonale montante de gauche à droite. |
+| **Aucun** | Aucun séparateur. Les sections se rejoignent sur un bord horizontal droit (par défaut). |
 
 ### Fonctionnement
 
-- Le separateur SVG se trouve entierement sous la section, dans l'espace de la section suivante. Il ne chevauche pas le contenu de la section actuelle.
-- La partie remplie du chemin dessine l'arriere-plan de la section actuelle vers le bas. La zone transparente sous la forme laisse la section suivante apparaitre.
-- Le separateur reprend automatiquement la couleur de fond de la section, y compris les valeurs hexadecimales personnalisees et les tokens de variables CSS.
-- Les separateurs sont decoratifs (`aria-hidden="true"`) et n'affectent pas la navigation au clavier ou par lecteur d'ecran.
+- Le séparateur SVG se trouve entièrement sous la section, dans l'espace de la section suivante. Il ne chevauche pas le contenu de la section actuelle.
+- La partie remplie du chemin dessine l'arrière-plan de la section actuelle vers le bas. La zone transparente sous la forme laisse la section suivante apparaître.
+- Le séparateur reprend automatiquement la couleur de fond de la section, y compris les valeurs hexadécimales personnalisées et les tokens de variables CSS.
+- Les séparateurs sont décoratifs (`aria-hidden="true"`) et n'affectent pas la navigation au clavier ou par lecteur d'écran.
 
 ## Personnaliser le style de votre site
 
-Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site :
+Sous **Hele site** (site entier) dans l'éditeur, vous contrôlez l'apparence de l'ensemble de votre site. Chaque volet a son propre bouton dans le rail :
 
-- **Presets** : Des points de depart en un clic qui definissent les couleurs, les polices et les espacements d'un coup. Huit presets sont disponibles : **Editorial** (bleu marine et or, titres serif), **Studio** (creme chaud avec terre cuite), **Tech** (ardoise sobre avec bleu electrique), **Atelier** (blanc os avec vert profond), **Bold** (noir a fort contraste avec un accent vif), **Calm** (vert sauge et blanc doux), **Mono** (minimalisme architectural, sans couleur d'accent) et **Vivid** (cobalt et corail sur blanc froid). Appliquer un preset fusionne les tokens avec votre espace de travail, en preservant votre logo, votre CSS personnalise et vos snippets d'en-tete.
-- **Couleurs**: six tokens de couleur sous des noms simples : **Hoofdkleur** (couleur principale), **Tweede kleur** (deuxième couleur), **Pagina-achtergrond** (l'arrière-plan de la page, derrière tout), **Blokken en kaarten** (blocs et cartes), **Tekst** (texte) et **Kleine tekst** (texte secondaire). La palette est appliquée via des propriétés CSS personnalisées.
-- **Mode sombre**: Définit le comportement du site en affichage sombre. Quatre options : **Uit** (désactivé : pas de mode sombre, le site reste sur le thème clair), **Altijd donker** (« toujours sombre », votre site entier est sombre pour chaque visiteur, quel que soit son appareil), **Knop in menubalk** (« bouton dans la barre de menu », les visiteurs voient un bouton soleil/lune dans la navigation et peuvent changer de thème, leur choix est enregistré localement) et **Volgt het toestel** (« suit l'appareil », le site adopte automatiquement la préférence du visiteur au niveau du système d'exploitation via un écouteur media-query en direct). En activant « Altijd donker » ou « Knop in menubalk », le site installe tout seul une palette de nuit lisible : des versions nocturnes de chaque couleur, et une couleur principale ou secondaire qui disparaîtrait sur la page sombre (noir, bleu Marine) reçoit automatiquement une version nocturne éclaircie. Une couleur que vous avez définie vous-même reste intacte, et changer plus tard votre couleur principale ou secondaire claire recalcule sa version nocturne. L'onglet Style affiche aussi une carte qui va droit aux designs sombres de la galerie ; et si vous choisissez un pack de site pendant que votre site est toujours sombre, une confirmation d'abord : le pack désactive « Altijd donker » pour que le résultat ressemble à son aperçu.
-- **Typographie**: Choisissez les polices de titre, de corps et mono dans la bibliotheque integree (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
-- **Polices auto-hebergees**: Toutes les polices sont servies par MyCompanyDesk lui-meme, et non par Google Fonts ou un autre CDN tiers. Les memes fichiers de police sont utilises dans l'apercu de l'editeur et sur votre site publie, pour que la typographie soit identique partout et que les adresses IP des visiteurs restent sur votre domaine.
-- **Echelle**: Definissez le rayon des coins, la densite (compact, aere, genereux), la largeur maximale du contenu, l'espacement vertical des sections, la taille du texte du corps pour le texte que vos visiteurs lisent (**Normal**, **Grand** ou **Extra**), et le style des cartes. Le style des cartes determine comment les cartes de contenu s'affichent dans toutes les sections: **Plat** (pas de bordure), **Bordure** (par defaut, fine ligne), **Ombre** (ombre douce), **Eleve** (ombre forte), **Brut** (bordure epaisse avec ombre decaltee), **Ligne** (contour seul, sans remplissage) ou **Verre** (carte translucide givreee avec flou d'arriere-plan). Le verre est le plus efficace sur une photo, un degrade ou une bande decorative; sur un fond uni, il se degrade en une carte legerement teintee.
-- **Mouvement**: Activez le mouvement reduit ou choisissez un style de mouvement (Desactive, Fondu subtil, Glissement).
-- **Boutons**: Personnalisez le rayon, le remplissage et les effets de survol des boutons.
-- **Barre de navigation**: Definissez la disposition (standard, centree, divisee), le style d'arriere-plan (plein, flou translucide, transparent) et l'apparence du bouton CTA (plein, contour, texte seul). Les parametres de navigation s'appliquent a chaque page.
-- **Telephone et barre d'appel**: Ajoutez un numero de telephone cliquable a votre barre de navigation. Le numero apparait a cote du bouton CTA sur ordinateur et dans le tiroir de navigation mobile. Activez l'option **Barre d'appel mobile** pour epingler un bouton fixe "Appuyez pour appeler" en bas de l'ecran sur les appareils mobiles, permettant a vos visiteurs de vous joindre en un geste, ou qu'ils se trouvent sur la page. Le libellé du téléphone est par défaut "Appeler" si vous le laissez vide. La barre d'appel peut aussi porter WhatsApp à côté du bouton d'appel : elle reprend le numéro WhatsApp que le reste de votre site porte déjà, un bouton WhatsApp (héros ou bloc de clôture), un bloc contact qui inclut WhatsApp ou le bouton de contact flottant, et un numéro défini sur le bloc de navigation lui-même l'emporte. Sur ordinateur, WhatsApp reste accessible via le bouton de contact flottant ; sur mobile, le bouton retire WhatsApp dès que la barre l'affiche, pour que WhatsApp n'apparaisse jamais deux fois sur le même écran.
-- **Barre de progression de lecture**: Affichez un indicateur de progression fin en haut de chaque page lorsque les visiteurs font defiler la page. La barre utilise votre couleur de marque et peut etre activee ou desactivee depuis l'onglet Style.
-- **CSS personnalise**: Ecrivez votre propre CSS qui sera injecte dans le site. Utile pour les ajustements fins ou pour remplacer les valeurs par defaut. Il se trouve en bas de l'onglet Style, sous une bande intitulée **Voor gevorderden** (pour utilisateurs avancés), accompagnée d'un court mode d'emploi.
-- **Favicon**: Telechargez un favicon pour votre site. Il apparait dans les onglets du navigateur et les favoris. Si vous n'en definissez pas, le site utilise votre logo clair, puis votre photo de profil d'entreprise.
-- **Snippets d'en-tete**: Ajoutez des scripts d'analytique (Plausible, Umami, Matomo) ou des preconnexions de polices via le selecteur de snippets.
+- **Kleuren** (couleurs) : En haut, vous choisissez la taille du texte pour vos visiteurs (**Normale**, **Grande** ou **Très grande**). Dessous figurent les **Kleurthema's** (thèmes de couleurs) : des palettes toutes prêtes (entre autres Editorial, Studio, Tech, Atelier, Bold, Calm, Mono et Vivid) que vous appliquez en un clic. Vos polices, styles de blocs, textes, photos, logo et boutons restent alors en place ; choisissez **Ook letters en vormen overnemen** (reprendre aussi les polices et les formes) si vous voulez aussi celles du thème. Vous réglez ensuite six couleurs une à une sous des noms simples : **Hoofdkleur** (couleur principale), **Tweede kleur** (deuxième couleur), **Pagina-achtergrond** (arrière-plan de la page), **Blokken en kaarten** (blocs et cartes), **Tekst** (texte) et **Kleine tekst** (texte secondaire). Un contrôle de lisibilité avertit quand une combinaison manque de contraste.
+- **Donkere kleuren** (couleurs sombres, en bas de Kleuren) : Quatre options : **Uit** (désactivé : le site reste clair), **Altijd donker** (toujours sombre : tout votre site est sombre, pour chaque visiteur), **Knop in menubalk** (bouton dans la barre de menu : les visiteurs voient un bouton soleil/lune dans la barre de menu et peuvent basculer) et **Volgt het toestel** (suit l'appareil : le site suit le réglage de l'appareil du visiteur). Quand une version sombre est activée, vous choisissez un jeu sombre prêt à l'emploi ou réglez vous-même les couleurs sombres ; une case vide reprend la couleur du mode clair, et une couleur principale ou secondaire qui disparaîtrait sur la page sombre (noir, bleu marine) reçoit automatiquement une version nocturne plus claire. En haut de Kleuren figure aussi **Liever een donkere site?** (plutôt un site sombre ?), avec **Bekijk donkere ontwerpen** (voir les designs sombres : saute aux designs sombres de la galerie) et **Maak mijn site donker** (rendre mon site sombre). Si vous choisissez un pack de site alors que votre site est sur Altijd donker, le site demande d'abord confirmation, car le pack désactive Altijd donker pour que le résultat ressemble à son aperçu.
+- **Merk** (marque) : Votre logo pour un arrière-plan clair et (facultativement) sombre, votre favicon et le bouton **Reconfigurer** pour l'assistant. Si vous ne définissez pas de favicon, le site utilise votre logo clair, puis la photo de profil de votre entreprise.
+- **Letters** (polices) : Choisissez les polices de titre et de texte dans la bibliothèque intégrée (entre autres Inter, Geist, DM Sans, Fraunces, Lora, Space Grotesk et DM Serif Display), ou une combinaison de polices toute prête. Toutes les polices sont servies par MyCompanyDesk lui-même, et non par Google Fonts ou un autre CDN externe. Les mêmes fichiers de police sont utilisés dans l'éditeur et sur votre site publié, pour que le texte soit identique partout et que l'adresse IP des visiteurs n'aille pas à un tiers.
+- **Knoppen** (boutons) : Le rayon des coins, le style de bouton par défaut, le style des puces, le style des titres (taille, majuscules, espacement des lettres et épaisseur des titres), le dégradé de couleur sur les boutons, et le style des cartes. Le style des cartes détermine l'apparence des cartes de services, d'avis et de tarifs : **Vlak (geen rand)** (plat, sans bordure), **Met rand** (avec bordure, par défaut), **Met schaduw** (avec ombre), **Zwevend (sterke schaduw)** (flottant, ombre forte), **Brut (harde rand, blokschaduw)** (bordure dure, ombre en bloc), **Lijn (alleen contour)** (contour seul) ou **Glas (mooist op een foto)** (verre, plus beau sur une photo). Le verre se révèle surtout sur une photo, un dégradé ou une bande décorative ; sur un fond uni, il se replie sur une carte légèrement teintée.
+- **Menubalk** (barre de menu) : La disposition, la forme et l'arrière-plan de la barre de menu, le style de bouton qu'elle contient, la taille du logo, les liens du menu et leur effet, et si la barre de menu disparaît quand on défile vers le bas. Vous y trouvez aussi le contenu de la barre de menu (logo ou nom de marque, le bouton en haut à droite, numéro de téléphone et numéro WhatsApp) ; voir [Navigation](#navigation).
+- **Ruimte** (espacement) : La densité (**Compact**, **Ruim**, **Royaal**), la largeur maximale des pages, l'espace au-dessus et en dessous des blocs, l'alternance de couleurs entre les blocs, la texture d'arrière-plan et le rendu des couleurs de vos photos.
+- **Animatie** (animation) : La façon dont les blocs apparaissent sur tout le site quand les visiteurs défilent (**Geen**, **Subtiel**, **Zacht**, **Zijwaarts**, **Onthullen** ou **Speels**), et **Minder beweging voor wie dat instelt** (moins de mouvement pour ceux qui le demandent) pour les visiteurs qui demandent moins d'animations dans leur système.
+- **Elementen** (éléments) : Des éléments qui apparaissent sur chaque page : la **Leesbalk** (barre de lecture : une fine barre de progression en haut ou en bas pendant que les visiteurs défilent), une **Aankondigingsbalk** (barre d'annonce), le **Zwevende contactknop** (bouton de contact flottant : WhatsApp, téléphone ou e-mail) et une **Cookiemelding** (avis de cookies).
+- **Eigen CSS** (CSS personnalisé) : Écrivez votre propre CSS, qui sera injecté dans le site. Utile pour les ajustements fins ou pour remplacer les valeurs par défaut. Ce bouton se trouve en bas du rail, à part du reste, parce qu'une erreur dedans touche tout le site. Vous y trouvez aussi les **Analytics-snippets** (Plausible Analytics et une préconnexion pour les polices) ; d'autres services de mesure comme Umami, Matomo ou Google Analytics se connectent dans l'onglet **Connexions** de Site web.
 
 ### Import de logo
 
-Si vous avez déjà un logo sur votre site web, vous pouvez l'importer directement dans MyCompanyDesk. Dans l'onglet **Style**, recherchez l'option d'import de logo et saisissez l'URL de la page qui contient votre logo. MyCompanyDesk récupère la page, extrait le meilleur logo disponible et crée une version claire et une version sombre pour votre site. Après l'import, vous pouvez toujours remplacer ou ajuster chaque version séparément dans les paramètres de style.
+Si vous avez déjà un logo sur votre site web, vous pouvez l'importer directement dans MyCompanyDesk. Sous **Hele site** › **Merk** se trouve **Heb je al een website? Haal je logo daarvandaan** (vous avez déjà un site ? Récupérez-y votre logo) : saisissez l'URL de la page qui contient votre logo. MyCompanyDesk récupère la page, extrait le meilleur logo disponible et crée une version claire et une version sombre pour votre site. Après l'import, vous pouvez toujours remplacer chaque version séparément.
 
-Les modifications dans l'onglet Style sont enregistrees automatiquement et s'appliquent a toutes les pages.
+Les modifications sous **Hele site** sont enregistrées automatiquement et s'appliquent à toutes les pages.
 
 ## Publier
 
-La barre superieure affiche un point tant que des modifications non publiees attendent. Lors de la publication, seules les pages marquees En ligne sont incluses dans le snapshot. Les pages en Brouillon restent invisibles sur le site public, meme apres publication.
+La barre supérieure affiche un point tant que des modifications non publiées attendent. Lors de la publication, seules les pages marquées En ligne sont incluses dans le snapshot. Les pages en Brouillon restent invisibles sur le site public, même après publication.
 
 Tant que vous n'avez pas publié, votre URL publique envoie une balise robots `noindex`. Ainsi, le sous-domaine de l'espace de travail reste hors des moteurs de recherche pendant que vous construisez votre site ; le sous-domaine lui-même n'entre en vue qu'à votre première publication.
 
-Lorsque vous etes pret :
+Lorsque vous êtes prêt :
 
-1. Cliquez sur **Publier** dans la barre superieure.
-2. Votre site est publie sur l'URL publique (votre domaine personnalise, le sous-domaine de l'espace de travail ou la route portail de secours).
+1. Cliquez sur **Publier** dans la barre supérieure.
+2. Votre site est publié sur l'URL publique (votre domaine personnalisé, votre adresse sur `mycompanydesk.site` ou l'adresse de secours dans l'app).
 
-Les modifications non publiees sont suivies par page et par token. Le bouton Publier est desactive lorsqu'il n'y a rien a publier. Basculer une page entre En ligne et Brouillon est un enregistrement immediat qui compte comme modification non publiee, le bouton Publier s'allume donc des que vous basculez.
+Les modifications non publiées sont suivies par page et par token. Le bouton Publier est désactivé lorsqu'il n'y a rien à publier. Basculer une page entre En ligne et Brouillon est un enregistrement immédiat qui compte comme modification non publiée, le bouton Publier s'allume donc dès que vous basculez.
 
 Quel que soit le point de départ, la vue d'ensemble, la barre d'outils de l'éditeur ou l'écran de première installation, le même avertissement de publication apparaît dès que quelque chose reste à signaler, et il liste chaque point avec sa propre action :
 
@@ -460,34 +386,34 @@ Quel que soit le point de départ, la vue d'ensemble, la barre d'outils de l'éd
 
 Quand tout ce qui reste est informatif, la boîte de dialogue passe à un état neutre « Prêt à publier » qui ne demande plus que la confirmation.
 
-La toute première publication se termine par un moment « Votre site web est en ligne » : **Voir votre site** et **Partager votre lien**, avec un bouton de copie pour l'adresse que vous communiquerez aux clients.
+La toute première publication se termine par **Ton site est en ligne** : **Voir ton site** et **Partager ton lien**, avec un bouton de copie pour l'adresse que vous communiquerez aux clients.
 
 Un double-clic rapide ne peut pas publier par accident : le bouton de confirmation de l'avertissement de publication ignore les clics pendant un court instant après son ouverture, et un second clic juste après le premier ne peut ni déclencher une publication en double ni contourner l'avertissement.
 
 ## Navigation
 
-L'editeur de navigation vous permet d'organiser les liens d'en-tete de votre site et de controler l'apparence de la barre de navigation sur l'ensemble de votre site :
+L'éditeur de navigation (**Hele site** › **Navigatie**) vous permet d'organiser les éléments de menu de votre site :
 
-- Faites glisser les pages pour reordonner la navigation.
-- Creez des groupes deroulants pour imbriquer des pages sous un libelle parent.
+- Faites glisser les pages pour réordonner la navigation.
+- Créez des groupes déroulants pour imbriquer des pages sous un libellé parent.
 - Ajoutez des liens externes qui pointent hors de votre site.
-- Le logo dans l'en-tete est cliquable et renvoie toujours a la page d'accueil.
-- La page d'accueil est toujours en premiere position et verrouillee.
+- Le logo dans l'en-tête est cliquable et renvoie toujours à la page d'accueil.
+- La page d'accueil est toujours en première position et verrouillée.
 
-Au-dessus du menu principal, un panneau **Navbar** vous donne un acces direct aux parametres de style de l'en-tete qui n'etaient auparavant disponibles que dans l'onglet Style. Vous pouvez definir :
+Le contenu de la barre de menu elle-même se règle dans **Hele site** › **Menubalk** (barre de menu) :
 
-- **Nom de marque** : Le texte affiche dans l'en-tete lorsqu'aucune image de logo n'est telechargee (laissez vide pour utiliser le logo de la section Branding).
-- **Bouton CTA** : Le libelle et le lien de destination pour le bouton d'appel a l'action en haut a droite. Les deux champs doivent etre remplis pour que le bouton apparaisse.
-- **Numero de telephone** : Un lien `tel:` cliquable qui apparait a cote du bouton CTA sur ordinateur et dans le tiroir de navigation mobile. Laissez vide pour masquer le bouton d'appel.
-- **Libelle du telephone** : Le texte affiche a cote de l'icone de telephone sur mobile (par defaut << Appeler >> si laisse vide).
-- **Barre d'appel mobile** : Lorsqu'elle est activee, un bouton d'appel fixe reste epingle en bas de l'ecran sur les appareils mobiles.
-- **Navbar collante** : Lorsqu'elle est activee (activee par defaut), la barre de navigation reste visible lors du defilement.
+- **Logo** et **Merknaam** (nom de marque) : Choisissez ce que montre la barre de menu (**Automatisch**, **Alleen merknaam** ou **Logo + merknaam**). Automatique montre votre logo dès que vous en téléversez un, sinon votre nom de marque.
+- **Knop** (bouton) : Le texte et la destination du bouton à droite dans la barre de menu, et le **Knopstijl** (style du bouton). Le texte et la destination doivent être renseignés pour que le bouton apparaisse.
+- **Telefoonnummer (tel: link)** (numéro de téléphone) : Un numéro de téléphone cliquable à côté du bouton sur ordinateur et dans le menu mobile. Laissez vide pour le masquer.
+- **Bel-label (mobiel)** (libellé d'appel sur mobile) : Le texte à côté de l'icône de téléphone sur mobile (par défaut « Bel direct » si vous le laissez vide).
+- **Belknop onderaan op mobiel** (bouton d'appel en bas sur mobile) : Un bouton d'appel fixe en bas de l'écran sur les appareils mobiles, pour que les visiteurs vous appellent d'un seul geste, où qu'ils se trouvent sur la page. La barre d'appel peut aussi montrer WhatsApp à côté du bouton d'appel : elle reprend le numéro WhatsApp que le reste de votre site porte déjà (un bouton WhatsApp, un bloc contact avec WhatsApp ou le bouton de contact flottant), et un **WhatsApp-nummer** que vous saisissez ici l'emporte. Sur mobile, le bouton de contact flottant retire WhatsApp dès que la barre l'affiche, pour que WhatsApp n'apparaisse jamais deux fois sur le même écran.
+- **Menubalk blijft in beeld bij scrollen** (la barre de menu reste visible au défilement) : Activé par défaut. La barre de menu reste visible pendant que le visiteur défile vers le bas.
 
-Ces paramètres s'appliquent à chaque page de votre site, comme dans l'onglet Style. Les modifications sont enregistrées automatiquement avec un court délai après l'arrêt de la saisie. Pour la mise en page visuelle, le style d'arrière-plan et l'apparence du bouton, consultez l'[onglet Style](#styling-votre-site).
+Ces réglages s'appliquent à chaque page de votre site et sont enregistrés automatiquement. L'apparence de la barre de menu (disposition, arrière-plan, style de bouton) se trouve au même endroit, voir [Personnaliser le style de votre site](#personnaliser-le-style-de-votre-site).
 
 ## Liens de pied de page
 
-L'éditeur de pied de page se trouve dans l'onglet **Footer** de l'éditeur de navigation. Il compose le bas de chaque page publiée à partir de deux sources : des blocs automatiques construits à partir de vos pages et de vos coordonnées d'entreprise, et des colonnes de liens manuelles que vous ajoutez vous-même.
+L'éditeur de pied de page se trouve sous **Hele site** › **Footer**. Il compose le bas de chaque page publiée à partir de deux sources : des blocs automatiques construits à partir de vos pages et de vos coordonnées d'entreprise, et des colonnes de liens manuelles que vous ajoutez vous-même.
 
 ### Blocs de pied de page automatiques
 
@@ -527,81 +453,77 @@ Comment les utiliser :
 - Les tokens sont résolus après le snapshot de publication, donc les modifications ultérieures de vos données d'entreprise apparaissent directement sur le site en ligne sans nouvelle publication.
 - Les pages légales générées par la plateforme utilisent ces tokens automatiquement. Vous pouvez éditer le texte autour sans casser le lien.
 
-Source : `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
-
 ## URL publique
 
-Votre site web est servi a l'URL la plus prioritaire disponible :
+Votre site web est servi à l'URL la plus prioritaire disponible :
 
-1. Votre domaine personnalise (par ex. `https://acme.fr`) lorsqu'il est verifie et active
-2. Votre sous-domaine d'espace de travail (par ex. `https://acme.mycompanydesk.com`)
-3. La route portail de secours (`/portal/{slug}`)
+1. Votre domaine personnalisé (par ex. `https://acme.fr`) lorsqu'il est vérifié et activé (Office)
+2. Votre adresse gratuite sur `mycompanydesk.site` (par ex. `https://acme.mycompanydesk.site`), créée à votre première publication à partir du nom de votre entreprise
+3. L'adresse de secours dans l'app (`/sites/{slug}`), tant qu'il n'existe pas encore d'adresse gratuite
 
-Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la configuration et la verification du domaine.
+Consultez [Domaines, site web et boîte de réception](/fr/features/domains-website-inbox) pour la configuration et la vérification du domaine.
 
 ## Formulaire de contact
 
-Le bloc formulaire de contact (`form` type de section) dispose d'un gestionnaire d'envoi actif. Lorsqu'un visiteur remplit les champs que vous avez configurés (nom, e-mail, téléphone, entreprise, message) et clique sur Envoyer, la plateforme crée une demande et notifie votre espace de travail. Le formulaire affiche une bannière de succès une fois terminé et une erreur inline en cas de problème. Tous les champs sont désactivés pendant l'envoi pour éviter les doubles soumissions.
+Le bloc formulaire de contact dispose d'un gestionnaire d'envoi actif. Lorsqu'un visiteur remplit les champs que vous avez configurés (nom, e-mail, téléphone, entreprise, message) et clique sur Envoyer, la plateforme crée une demande et notifie votre espace de travail. Le formulaire affiche une bannière de succès une fois terminé et une erreur inline en cas de problème. Tous les champs sont désactivés pendant l'envoi pour éviter les doubles soumissions.
 
-Dans l'inspecteur, vous choisissez le **Type de demande** du bloc : **Devis** (une demande de travail), **Message** (une simple question ou une présentation), **Rendez-vous** (une demande de moment dans votre agenda), ou **Rappel** (nom et téléphone, sans e-mail obligatoire). L'option vide suit le réglage global de l'entreprise, posé sous **Site web > Connexions**. Le type décide comment les soumissions s'appellent dans votre boîte de réception, vos notifications et vos e-mails, et chaque type garde son propre onglet sous **Devis > Demandes**. Un formulaire de rappel échange le champ e-mail obligatoire contre un champ téléphone obligatoire.
+Dans l'inspecteur, vous choisissez à **Wat vraagt de klant?** (que demande le client ?) le type de demande du bloc : **Offerte** (devis : une demande de travail), **Bericht** (message : une simple question ou une présentation), **Afspraak** (rendez-vous : une demande de moment dans votre agenda), ou **Terugbelverzoek** (demande de rappel : nom et téléphone, sans e-mail obligatoire). **Volg je bedrijfsinstelling** (suit le réglage de l'entreprise) reprend le réglage global de l'entreprise, posé sous **Site web › Connexions**. Le type décide comment les soumissions s'appellent dans votre boîte de réception, vos notifications et vos e-mails. Le réglage global de l'entreprise décide aussi comment s'appelle l'onglet des demandes sous **Devis**, par exemple **Demandes de devis** ou **Demandes de rappel**. Un formulaire de rappel échange le champ e-mail obligatoire contre un champ téléphone obligatoire.
 
-Sur les formulaires de devis et de message, **Les visiteurs peuvent envoyer des photos** permet à un visiteur d'ajouter jusqu'à 3 photos (10 Mo chacune, JPEG, PNG ou WebP) à la demande. Voyez [Demandes de devis](/fr/features/quotes#demandes-de-devis) pour ce qui arrive côté app.
+Sur les formulaires de devis et de message, **Bezoekers kunnen foto's meesturen** (les visiteurs peuvent envoyer des photos) permet à un visiteur d'ajouter jusqu'à 3 photos (10 Mo chacune, JPEG, PNG ou WebP) à la demande. Voyez [Demandes de devis](/fr/features/quotes#demandes-de-devis) pour ce qui arrive côté app.
 
 Ce qui se passe lors de l'envoi :
 
-1. Seuls les champs que le bloc rend effectivement sont envoyés. Le fait de masquer le champ nom ne casse donc pas le backend.
+1. Seuls les champs que le bloc rend effectivement sont envoyés. Masquer le champ nom ne provoque donc aucune erreur.
 2. La plateforme crée une demande (type estampillé à l'arrivée) sous l'entreprise liée au slug du site.
-3. Vous recevez une notification dans votre espace de travail (même chemin que l'ancienne route `/portal/quote-request`).
-4. La demande apparait dans **Devis > Demandes**.
-5. Le visiteur voit un message de succes personnalisable.
+3. Vous recevez une notification dans votre espace de travail.
+4. La demande apparaît sous **Devis**, dans l'onglet de vos demandes.
+5. Le visiteur voit un message de succès personnalisable.
 
-Les soumissions du formulaire de contact ne sont acceptees que si le site a ete publie : les soumissions vers un brouillon ou un espace de travail non publie sont refusees. Elles sont limitees a 5 par minute par adresse IP et protegees par un plafond d'abus par entreprise, de sorte qu'un visiteur tres actif ne peut pas epuiser votre budget de notifications. Un widget Cloudflare Turnstile apparait egalement avant l'envoi lorsqu'il est configure sur votre espace de travail, bloquant les soumissions automatisees de bots sans ralentir les vrais visiteurs.
+Les soumissions du formulaire de contact ne sont acceptées que si le site a été publié : les soumissions vers un brouillon ou un espace de travail non publié sont refusées. Elles sont limitées à 5 par minute par adresse IP et protégées par un plafond d'abus par entreprise, de sorte qu'un visiteur très actif ne peut pas épuiser votre budget de notifications. Un widget Cloudflare Turnstile apparaît également avant l'envoi lorsqu'il est configuré sur votre espace de travail, bloquant les soumissions automatisées de bots sans ralentir les vrais visiteurs.
 
-## Inscription a la newsletter
+## Inscription à la newsletter
 
-Le bloc newsletter (`newsletter` type de section) capture les inscriptions par e-mail depuis votre site publie. Le backend utilise un flux de double opt-in : apres l'envoi, le visiteur recoit un e-mail de confirmation et doit cliquer sur le lien pour activer son abonnement. Les adresses supprimees et les abonnes deja actifs sont traites de la meme maniere que les nouvelles inscriptions du point de vue du formulaire (pas de fuite de donnees).
+Le bloc newsletter capture les inscriptions par e-mail depuis votre site publié. L'inscription passe par un double opt-in : après l'envoi, le visiteur reçoit un e-mail de confirmation et doit cliquer sur le lien pour activer son abonnement. Les adresses supprimées et les abonnés déjà actifs sont traités de la même manière que les nouvelles inscriptions du point de vue du formulaire (pas de fuite de données).
 
 Ce qui se passe lors de l'envoi :
 
-1. La plateforme enregistre l'abonnement avec `source: "site_form"`.
-2. Si l'adresse n'est pas deja active et n'est pas supprimee, un e-mail de double opt-in est envoye.
-3. Le visiteur voit une banniere de succes dans tous les cas, preservant ainsi la confidentialite du statut d'abonnement.
-4. Une fois confirme, l'abonne apparait dans l'audience de la newsletter de cet espace de travail.
+1. La plateforme enregistre l'inscription, avec votre site comme source.
+2. Si l'adresse n'est pas déjà active et n'est pas supprimée, un e-mail de double opt-in est envoyé.
+3. Le visiteur voit une bannière de succès dans tous les cas, préservant ainsi la confidentialité du statut d'abonnement.
+4. Une fois confirmé, l'abonné apparaît dans l'audience de la newsletter de cet espace de travail.
 
-Les soumissions a la newsletter partagent la meme limite de taux que le formulaire de contact : 5 par minute par adresse IP. La protection anti-bot Turnstile est egalement active sur les formulaires de newsletter lorsque configuree.
+Les soumissions à la newsletter partagent la même limite de taux que le formulaire de contact : 5 par minute par adresse IP. La protection anti-bot Turnstile est également active sur les formulaires de newsletter lorsque configurée.
 
-## Pages legales
+## Pages légales
 
-Le constructeur de site cree deux pages legales standard pour chaque nouvel espace de travail : **Politique de confidentialite** (`/privacy`) et **Conditions generales** (`/algemene-voorwaarden`). Le contenu utilise des marqueurs de remplacement pour les donnees de l'entreprise. Lorsque la page est rendue pour les visiteurs, ces marqueurs sont remplaces par les valeurs de tes **Parametres de l'entreprise** — nom de l'entreprise, adresse, code postal, ville, pays, numero d'enregistrement, numero de TVA et e-mail public.
+Le constructeur de site crée deux pages légales standard pour chaque nouvel espace de travail : **Politique de confidentialité** (`/privacy`) et **Conditions générales** (`/algemene-voorwaarden`). Le contenu utilise des marqueurs de remplacement pour les données de l'entreprise. Lorsque la page est affichée aux visiteurs, ces marqueurs sont remplacés par les valeurs de vos **Paramètres de l'entreprise** : nom de l'entreprise, adresse, code postal, ville, pays, numéro d'enregistrement, numéro de TVA et e-mail public.
 
 Le texte des deux pages est choisi selon votre métier, conditions et confidentialité. La page des conditions générales connaît deux variantes. Les entreprises qui vendent directement aux consommateurs, les métiers sur rendez-vous et les métiers de boutique ou de restauration comme une boulangerie, reçoivent des conditions orientées consommateurs : elles couvrent les commandes, le droit de rétractation légal des consommateurs avec son exception légale pour les biens fabriqués sur mesure ou périssables, le paiement, l'annulation de rendez-vous et de cours, la responsabilité et les réclamations, plus une ligne d'information générique, par exemple sur les allergies. Les métiers sur devis et les services B2B gardent les conditions existantes pour artisans, qui traitent des devis, des travaux supplémentaires et de la livraison. Les deux variantes utilisent les mêmes marqueurs de remplacement.
 
-Tu peux modifier les pages legales dans l'editeur comme n'importe quelle autre page. L'editeur conserve les ancres de remplacement dans le contenu, de sorte que l'ouverture et l'enregistrement d'une page sans modification permettent aux futures mises a jour de tes donnees d'entreprise de se propager automatiquement.
+Vous pouvez modifier les pages légales dans l'éditeur comme n'importe quelle autre page. L'éditeur conserve les marqueurs de remplacement dans le contenu : si vous ouvrez et enregistrez une page sans la modifier, les futures mises à jour de vos données d'entreprise s'y reportent automatiquement.
 
 Quand MyCompanyDesk améliore les textes légaux standard, les sites existants sont rafraîchis aussi. Dès que vous ouvrez Website, la plateforme vérifie si vos pages confidentialité et conditions sont encore, mot pour mot, l'un des textes standard qu'elle génère pour votre métier. Une page que vous avez modifiée vous-même n'est jamais touchée. Une page qui porte encore le texte standard est réécrite avec les mots que votre métier exige : si cette page était en ligne, elle seule repart dans le snapshot publié, vos autres brouillons ne bougent pas et la barre de publication ne signale pas ce rafraîchissement comme modification non publiée ; une page en brouillon reste en brouillon et emporte le nouveau texte à votre prochaine publication.
 
-Les pages legales sont rendues au moment de la publication, comme le reste de ton site. Elles partagent le meme statut Live/Concept et la meme regle de visibilite liee a l'abonnement.
+Les pages légales sont générées au moment de la publication, comme le reste de votre site. Elles partagent le même statut Live/Concept et la même règle de visibilité liée à l'abonnement.
 
-## Gerer les demandes
+## Gérer les demandes
 
-Consultez [Devis -- Demandes de devis](/fr/features/quotes#quote-requests) pour les details sur la gestion des demandes entrantes.
+Consultez [Devis : demandes de devis](/fr/features/quotes#demandes-de-devis) pour les détails sur la gestion des demandes entrantes.
 
 ## Condition d'abonnement
 
 Le site web public (page entreprise et constructeur de site) est disponible sur tous les plans et reste en ligne. Le badge MyCompanyDesk dépend de l'adresse : il apparaît sur le sous-domaine de l'espace de travail et disparaît sur un domaine personnalisé (Office).
 
 - **Desk** : le site est visible à votre adresse `mycompanydesk.site`, avec un petit badge MyCompanyDesk.
-- **Office** : le site est toujours visible ; sur un domaine personnalisé, il n'y a pas de badge. Connecter votre propre domaine et passer d'un domaine à l'autre n'est possible qu'avec Office.
-- **Styles prédéfinis** : les styles prédéfinis de l'onglet Style sont disponibles dans chaque formule.
-- **Etat incertain**: si le système ne peut pas déterminer votre plan, le site reste en ligne pour éviter une coupure accidentelle.
+- **Office** : le site est toujours visible ; sur un domaine personnalisé, il n'y a pas de badge. Connecter votre propre domaine n'est possible qu'avec Office (5 domaines personnalisés au maximum).
+- **Design et style** : les packs, les thèmes de couleurs et tous les réglages de style sont disponibles dans chaque formule.
+- **État incertain**: si le système ne peut pas déterminer votre plan, le site reste en ligne pour éviter une coupure accidentelle.
 
 Ce contrôle s'applique à tous les chemins publics: la page entreprise, la route de détail des services et les pages du constructeur de site. La vérification a lieu à chaque requête, avant toute couche de cache, afin de rester exacte même si votre abonnement change en cours de cache.
 
-Source: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`; `renderer.service.js` définit la règle du badge en fonction de l'adresse.
-
 ## Voir aussi
 
-- [Domaines, site web et boite de reception](/fr/features/domains-website-inbox): Configuration de domaine personnalise, verification, SSL et boite de reception e-mail.
-- [Parametres de l'entreprise](/fr/settings/company): Ou se trouvent les details, l'image de marque et l'adresse de votre entreprise.
-- [Devis](/fr/features/quotes): Gerer les demandes de devis qui arrivent via votre site web.
-- [Facturation et abonnements](/fr/settings/billing): Plans d'abonnement et flags de fonctionnalites.
+- [Domaines, site web et boîte de réception](/fr/features/domains-website-inbox): Configuration de domaine personnalisé, vérification, SSL et boîte de réception e-mail.
+- [Paramètres de l'entreprise](/fr/settings/company): Où se trouvent les détails, l'image de marque et l'adresse de votre entreprise.
+- [Devis](/fr/features/quotes): Gérer les demandes de devis qui arrivent via votre site web.
+- [Abonnement et paiements](/fr/settings/billing): Ce que comprennent Desk et Office.

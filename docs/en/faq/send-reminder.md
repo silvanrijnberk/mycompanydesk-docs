@@ -1,7 +1,7 @@
 ---
 title: Send reminder
 description: "To follow up on unpaid invoices: open the overdue invoice, use the Send Reminder action, the system generates a professional reminder email."
-last_verified: 2026-10-09
+last_verified: 2026-10-13
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -16,7 +16,7 @@ To follow up on unpaid invoices:
 
 The reminder states the remaining outstanding amount (invoice total minus payments already received). If the customer has paid a deposit or an instalment, the reminder asks for the rest, not the full invoice amount.
 
-If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF. This applies to both manual reminders and automatic reminders.
+If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **Pay now** button, a **View invoice** button, the **Already paid? Let us know** button, and a scan-and-pay QR code on the PDF. This applies to both manual reminders and automatic reminders.
 
 You cannot send a reminder when:
 - the invoice is still a draft
@@ -28,13 +28,15 @@ You cannot send a reminder when:
 - the invoice has been fully credited by a credit note
 - nothing is left outstanding (for example, the customer paid while the page was open)
 
-A report from the portal has an end to it. If five working days pass (the wait and the set-back rule live in `apps/api/src/modules/scheduler/scheduler.service.js#checkStalePaymentClaims`) and nothing has come in, MyCompanyDesk checks the facts: with a working bank connection on the invoice's account number, one that shows no incoming payment since around the invoice date, the invoice goes back to sent, the report is cleared, and your customer can pay or report again; a notification tells you about the set-back. In any other case, MyCompanyDesk asks you once whether the payment has come in, and leaves the invoice alone until you decide. You can also act yourself: the invoice page proposes **Confirm payment** when the money is there, and **Not received** to set the invoice back to sent, which lets reminders run again and lets your customer report or pay anew.
+A report from the portal has an end to it. If five working days pass and nothing has come in, MyCompanyDesk checks the facts: with a working bank connection on the invoice's account number, one that shows no incoming payment since around the invoice date, the invoice goes back to sent, the report is cleared, and your customer can pay or report again; a notification tells you about the set-back. In any other case, MyCompanyDesk asks you once whether the payment has come in, and leaves the invoice alone until you decide. You can also act yourself: the invoice page proposes **Confirm payment** when the money is there, and **Not received** to set the invoice back to sent, which lets reminders run again and lets your customer report or pay anew.
 
-When an invoice becomes overdue, the invoice detail page shows a suggested next step:
+When an invoice becomes overdue, the invoice detail page shows a next step under **Suggested action**:
 
-- **Send reminder** — for invoices that are slightly past due
-- **Send firmer reminder** — for invoices that have already been reminded once
-- **Send an urgent reminder** — for invoices more than a few days late. The button opens the reminder dialog; the detail line also suggests calling the customer or offering a payment plan.
-- **Create a credit note or correction** — if the customer disputes the invoice or the amounts have changed
+- **Send first reminder**: for overdue invoices that have not been reminded yet
+- **Send reminder #2** (and onwards): for invoices that have already been reminded
+- **Send an urgent reminder**: for invoices that are long overdue. The button opens the reminder dialog; the detail line also suggests calling the customer or offering a payment plan.
+- **Create a credit note or correction**: if the customer disputes the invoice or the amounts have changed
 
-For straightforward cases, send reminders at 1 day before due date (friendly), 3 days after (firm), and 10 days after (final notice). Escalate to a phone call after that.
+Rather not keep track yourself? Turn on **Overdue? Automatically send a reminder** under Settings › **Invoices and quotes** (Office). Once an invoice is three days past its due date, MyCompanyDesk sends a friendly reminder by itself, then again every week until it is paid. If it stays quiet, give your customer a call.
+
+You can change the text of your reminder email under Settings › **Email** › **Invoice and quote emails**.

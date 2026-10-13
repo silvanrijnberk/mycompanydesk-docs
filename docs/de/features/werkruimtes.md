@@ -1,7 +1,7 @@
 ---
 title: Arbeitsbereiche
 description: "Eine zentrale Seite für alles, was Sie verwalten, eigene Unternehmen und Mandantenbuchhaltungen, ohne eigenes Geld und Mandantengeld zu vermischen."
-last_verified: 2026-08-10
+last_verified: 2026-10-13
 ---
 
 # Arbeitsbereiche
@@ -22,11 +22,14 @@ Wenn Sie im Wechsler einen Arbeitsbereich auswählen, wechselt die App jetzt ohn
 
 ## Die Arbeitsbereiche-Navigation
 
-Die App-Navigation gruppiert jetzt alle Arbeitsbereich-Seiten unter **Arbeitsbereiche**. Die Übersichtsseite bleibt erhalten, und drei neue Seiten kommen hinzu:
+Sobald Sie in den Arbeitsbereichen sind, ersetzt eine eigene Seitenleiste die normale Navigation. Sie gruppiert die Seiten so:
 
-- **Agenda** (`/werkruimtes/agenda`) - alle Fristen über alle Ihre Arbeitsbereiche, nach Datum gruppiert.
-- **Arbeit** (`/werkruimtes/werk`) - Ihre eigenen offenen Aufgaben plus offene Mandantenanfragen.
-- **Kanzlei** (`/werkruimtes/kantoor`) - das Kanzlei-Überblick für Steuerberater, mit eigenen Seiten für Abrechnung und Massenexport.
+- **Übersicht**: **Heute** (`/werkruimtes`), **Agenda** (`/werkruimtes/agenda`) und **Arbeit** (`/werkruimtes/werk`). Diese drei sind immer da.
+- **Von Ihnen**: **Unternehmen** (`/werkruimtes/bedrijven`), die Übersicht Ihrer eigenen Unternehmen. Ebenfalls immer da.
+- **Kundenarbeit**: **Kunden** (`/werkruimtes/klanten`), **Anfragen** (`/werkruimtes/verzoeken`) und **Einblick** (`/werkruimtes/inzicht`). Erscheint, sobald Sie Zugriff auf eine Mandanten-Administration haben.
+- **Kanzlei**: **Ihre Kanzlei** (`/werkruimtes/kantoor`), **Abrechnung** und **Export**. Erscheint, wenn Sie zu einer Buchhaltungskanzlei gehören.
+
+**Heute** zeigt, was jetzt Aufmerksamkeit braucht, in zwei getrennten Blöcken: zuerst Ihre eigenen Unternehmen, dann Ihre Mandanten (höchstens acht; was darüber hinausgeht, wird genannt und nicht stillschweigend weggelassen).
 
 ### Eigentums-Indikator
 
@@ -42,9 +45,9 @@ Die Arbeit-Seite listet offene Arbeit in zwei Blöcken: zuerst Ihre eigenen Unte
 
 ### Kanzlei-Seiten (`/werkruimtes/kantoor/*`)
 
-Wenn Sie eine Steuerberaterkanzlei betreiben, enthält der Bereich Kanzlei drei kanzleieigene Seiten:
+Wenn Sie zu einer Buchhaltungskanzlei gehören, enthält die Gruppe Kanzlei drei Seiten:
 
-- **Kanzlei-Überblick** (`/werkruimtes/kantoor`) - Kanzlei-Mitglieder, offene Mandanteneinladungen, Partner-Teilen-Link und Statistiken, sowie ob Office kostenlos gewährt wurde.
+- **Ihre Kanzlei** (`/werkruimtes/kantoor`) - Kanzlei-Mitglieder, offene Mandanteneinladungen, Partner-Teilen-Link und Statistiken, sowie ob Office kostenlos gewährt wurde.
 - **Abrechnung** (`/werkruimtes/kantoor/facturatie`) - bieten Sie an, das Abonnement einer Mandanten-Administration zu übernehmen. Der Mandant muss akzeptieren, bevor etwas berechnet wird; der Preis pro übernommener Administration wird vor der Bestätigung angezeigt. Ein noch ausstehendes Angebot wird getrennt angezeigt, damit Sie es zurückziehen können, solange der Mandant noch nicht geantwortet hat.
 - **Export** (`/werkruimtes/kantoor/export`) - exportieren Sie mehrere Mandanten-Administrationen auf einmal. Wählen Sie Jahr, Zeitraum und Exportformat, wählen Sie die Administrationen aus, und die App lädt pro Mandant ein Archiv herunter. Fehlgeschlagene Exports bleiben sichtbar, damit Sie sehen, was nicht abgeschlossen wurde.
 
@@ -56,20 +59,22 @@ Falls der Abruf fehlschlägt, zeigt die Seite einen eigenen Fehlerzustand mit ei
 
 ## Wenn Sie einen Arbeitsbereich haben
 
-Sie sehen drei Einstiege statt einer leeren Seite:
+Auf **Unternehmen** sehen Sie dann drei Einstiege statt einer leeren Liste:
 
-- **Unternehmen hinzufügen** für eine Holding, eine zweite GmbH oder ein Nebengewerbe. Jedes Unternehmen erhält eine eigene Administration mit separater USt., Rechnungen und Buchhaltung.
-- **Steuerberater einladen**, wenn Sie mit einem externen Steuerberater zusammenarbeiten.
-- **Partnerprogramm**, wenn Sie selbst Steuerberater sind und mehrere Mandanten-Administrationen an einem Ort verwalten möchten.
+- **Mehr als ein Unternehmen?** mit **Unternehmen hinzufügen**, für eine Holding, eine zweite GmbH oder ein Nebengewerbe. Jedes Unternehmen erhält eine eigene Administration mit getrennter USt., Rechnungen und Buchhaltung.
+- **Arbeiten Sie mit einem Buchhalter?** mit **Buchhalter einladen**, wenn Sie mit einem externen Steuerberater zusammenarbeiten.
+- **Sind Sie selbst Buchhalter?** mit einem Link zum Partnerprogramm, wenn Sie mehrere Mandanten-Administrationen an einem Ort verwalten möchten.
 
 ## Kombinierter Arbeitsbereich: Ihre eigenen Unternehmen
 
-Wenn Sie mehr als ein eigenes Unternehmen haben, öffnet die Seite mit einer kombinierten Übersicht:
+Wenn Sie mehr als ein eigenes Unternehmen haben, zeigt **Unternehmen** (`/werkruimtes/bedrijven`) eine kombinierte Übersicht:
 
 - Ein Satz sagt, was Ihre Unternehmen dieses Jahr zusammen umgesetzt haben, und ob das einen Gewinn oder Verlust ergab.
 - Eine Zeile zeigt kombinierten Umsatz, Ergebnis, offene Forderungen und zurückgelegte USt.
 - Ein Balken zeigt die Umsatzverteilung pro Unternehmen.
 - Darunter steht eine Zeile pro Unternehmen. Die Reihenfolge ist fest (Hauptunternehmen zuerst, dann Erstellungsdatum), sodass Sie immer wissen, wo Sie suchen müssen.
+
+**Gemeinsam ansehen** öffnet **Zusammen** (`/werkruimtes/bedrijven/samen`): eine Tabelle mit Ihren Unternehmen nebeneinander für ein Jahr Ihrer Wahl, mit einer Summenzeile darunter.
 
 ### Signale in jeder Zeile
 
@@ -78,20 +83,20 @@ Jede Unternehmenszeile zeigt Chips für die Dinge, die gerade Aufmerksamkeit bra
 | Chip | Bedeutung | Link |
 |---|---|---|
 | USt.-Zeitraum mit Frist | Wie viele Tage bis zur Abgabe, oder wie viele Tage zu spät | `/belastingen/btw` |
-| Überfällige Rechnungen | Rechnungen, die nicht rechtzeitig bezahlt wurden | `/facturen` |
-| Fehlende Belege | Ausgaben ohne Beleg | `/uitgaven` |
-| Entwürfe | Rechnungen, die noch Entwurf sind | `/facturen` |
+| Überfällige Rechnungen | Rechnungen, die nicht rechtzeitig bezahlt wurden | `/invoices` |
+| Fehlende Belege | Ausgaben ohne Beleg | `/expenses` |
+| Entwürfe | Rechnungen, die noch Entwurf sind | `/invoices` |
 | USt. abgegeben | Die vorherige Abgabe wurde eingereicht | `/belastingen/btw` |
-| Testphase läuft ab | Das Unternehmen ist noch in der Office-Testphase | `/settings/billing` |
-| Inaktiv | Das Unternehmen wurde inaktiv gesetzt; Sie können weiter einsehen und exportieren | `/werkruimtes` |
+| Testphase läuft noch | Das Unternehmen ist noch in der Office-Testphase | Keiner, nur ein Hinweis |
+| Inaktiv | Das Unternehmen wurde inaktiv gesetzt; Sie können weiter einsehen und exportieren | Keiner, nur ein Hinweis |
 
 Eigene Unternehmen verwenden dieselben KPIs wie das Dashboard jedes einzelnen Unternehmens, sodass die Zahlen nicht widersprüchlich sein können.
 
 ## Untereinander-Positionen
 
-Wenn Ihre eigenen Unternehmen sich gegenseitig Rechnungen stellen, sieht jeder Arbeitsbereich normalerweise nur seine eigene Hälfte. Die Seite Arbeitsbereiche zeigt jetzt den Nettosaldo zwischen jedem Paar eigener Unternehmen, sodass das laufende Konto, das Sie bisher auf Papier geführt haben, in der App sichtbar ist.
+Wenn Ihre eigenen Unternehmen sich gegenseitig Rechnungen stellen, sieht jeder Arbeitsbereich normalerweise nur seine eigene Hälfte. Die Seite Unternehmen zeigt den Nettosaldo zwischen jedem Paar eigener Unternehmen, sodass das laufende Konto, das Sie bisher auf Papier geführt haben, in der App sichtbar ist.
 
-Der Block erscheint nur, wenn mindestens zwei Ihrer eigenen Unternehmen tatsächlich offene Rechnungen aneinander haben, und bleibt daher für alle anderen unsichtbar. Er steht zwischen der kombinierten Übersicht Ihrer Unternehmen und dem Mandanten-Desk, weil er eine Beziehung zwischen Ihren Unternehmen beschreibt und keine Eigenschaft eines einzelnen Unternehmens.
+Der Block erscheint nur, wenn mindestens zwei Ihrer eigenen Unternehmen tatsächlich offene Rechnungen aneinander haben, und bleibt daher für alle anderen unsichtbar. Er steht unter der kombinierten Übersicht Ihrer Unternehmen, weil er eine Beziehung zwischen Ihren Unternehmen beschreibt und keine Eigenschaft eines einzelnen Unternehmens.
 
 - Verknüpfungen werden automatisch erstellt, wenn die USt.-Nummer eines Kunden mit einem Ihrer anderen Arbeitsbereiche übereinstimmt. Dieser Abgleich sucht nur in Ihren eigenen Unternehmen, sodass ein Kunde eines anderen Unternehmens niemals erreichbar ist.
 - Wenn die automatische Verknüpfung falsch ist oder keine USt.-Nummer vorhanden ist, können Sie einen Kunden auf der Kundenseite manuell verknüpfen oder trennen. Eine manuelle Verknüpfung hat immer Vorrang vor der automatischen.
@@ -102,7 +107,7 @@ Der Block erscheint nur, wenn mindestens zwei Ihrer eigenen Unternehmen tatsäch
 
 ## Kanzlei-Arbeitsbereich: Mandanten
 
-Wenn Sie Steuerberater sind und Mandanten-Administrationen verwalten, wird die Seite zu einem Triage-Überblick:
+Wenn Sie Steuerberater sind und Mandanten-Administrationen verwalten, zeigt **Heute**, welche Mandanten jetzt etwas brauchen, und **Kunden** (`/werkruimtes/klanten`) ist die vollständige Liste zum Abarbeiten, mit Filtern wie was zu spät ist, wer auf Sie wartet und was Ihnen zugewiesen ist:
 
 - Eine Headline sagt, wie viele Ihrer Mandanten heute etwas brauchen.
 - Eine Zahlenzeile zeigt die Gesamtzahl der Mandanten, Fristen dieser Woche, Mandanten, die Aufmerksamkeit brauchen, und offene Einladungen.
@@ -114,22 +119,22 @@ Die Chips funktionieren wie im kombinierten Arbeitsbereich, aber die Zeilen verw
 
 ### Mitglieder der Steuerberaterkanzlei
 
-Arbeiten Sie in einer Steuerberaterkanzlei, hat die Kanzlei eine eigene Mitgliederliste. Admins können Kollegen unter **Kanzleimitglieder verwalten** einladen; jedes Mitglied erhält eine Rolle (Mitglied oder Admin). Jemanden zur Kanzlei hinzuzufügen gibt ihm oder ihr noch keinen Zugriff auf einen Mandanten; den gewähren Sie weiterhin pro Mandant auf der Arbeitsbereiche-Seite. In der Zeile jedes Kollegen sehen Sie, bei wie vielen Mandanten diese Person zugewiesen ist, damit Sie wissen, wer an wem arbeitet.
+Arbeiten Sie in einer Buchhaltungskanzlei, hat die Kanzlei eine eigene Mitgliederliste unter **Mitarbeiter** auf **Ihre Kanzlei**. Admins laden Kollegen mit **Kollegen einladen** ein; jedes Mitglied erhält eine Rolle (Mitglied oder Admin). Jemanden zur Kanzlei hinzuzufügen gibt ihm oder ihr noch keinen Zugriff auf einen Mandanten; den gewähren Sie pro Mandant, und nur wenn dieser Mandant es erlaubt. In der Zeile jedes Kollegen sehen Sie, bei wie vielen Mandanten diese Person zugewiesen ist, damit Sie wissen, wer an wem arbeitet.
 
 ### Mandantenarbeit und -anfragen
 
 Jede Mandantenzeile zeigt einen Arbeit-Chip, sobald etwas wartet. Öffnen Sie ihn, um zu sehen, wer den Mandanten gerade bearbeitet und was Sie beim Mandanten angefragt haben.
 
 - **Ich übernehme das** weist den Mandanten Ihnen zu. **Ich übernehme doch nicht** gibt die Arbeit frei, damit ein Kollege sie übernehmen kann. Der Status wird für alle in der Kanzlei live aktualisiert, sodass zwei Personen nicht ungewollt dieselbe Abgabe beginnen.
-- **Mandanten fragen** erstellt eine Aufgabe im eigenen Arbeitsbereich des Mandanten. Wählen Sie eine Anfragenvorlage (zum Beispiel fehlende Belege), fügen Sie Titel und Notiz hinzu, und der Mandant sieht sie als normale To-do. Sobald der Mandant die Aufgabe erledigt, ist die Anfrage abgeschlossen und der Arbeit-Chip verschwindet. Es gibt keinen manuellen "Wartet auf Mandant"-Status, der zurückgesetzt werden muss; er ergibt sich einfach aus einer offenen Anfrage.
+- **Diesen Kunden etwas fragen** erstellt eine Aufgabe im eigenen Arbeitsbereich des Mandanten, mit einer Benachrichtigung. Wählen Sie, worum es geht (zum Beispiel fehlende Belege), sagen Sie, was Sie fragen, und fügen Sie eine Erläuterung hinzu; der Mandant sieht es als normale Aufgabe. Sobald er die Aufgabe abhakt, ist die Anfrage erledigt und der Arbeits-Chip verschwindet. Einen manuellen Status „wartet auf Mandant“ gibt es nicht; er ergibt sich einfach aus einer offenen Anfrage. Alle offenen Fragen über alle Mandanten stehen gesammelt unter **Anfragen**, die älteste zuerst.
 
 ## Ein eigenes Unternehmen hinzufügen
 
 Öffnen Sie **Unternehmen hinzufügen** und geben Sie dem neuen Unternehmen einen Namen.
 
-Bei einem kostenpflichtigen Plan (Office) zeigt die App die zusätzlichen Kosten vor der Bestätigung an. Während Ihrer eigenen Office-Testphase zahlen Sie nichts für das zusätzliche Unternehmen; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt.
+Mehrere eigene Unternehmen sind Teil von **Office**: Ein zusätzliches Unternehmen kostet 5,99 € pro Monat oder 59,90 € pro Jahr (zzgl. MwSt.) zusätzlich zu Office, bis zu 10 eigene Unternehmen. Im Desk-Tarif haben Sie ein Unternehmen. Die App zeigt die zusätzlichen Kosten vor der Bestätigung an. Während Ihrer eigenen Office-Testphase zahlen Sie nichts für das zusätzliche Unternehmen; danach wird es zum angezeigten Preis zu Ihrem Abonnement hinzugefügt.
 
-Wenn Ihr Arbeitsbereich ein kostenloses Office aufgrund einer Regelung wie einer Gunst- oder Founding-Member-Regelung hat, bleibt das erste Unternehmen kostenlos und die App bietet jetzt einen separaten Checkout für ein zweites Unternehmen. Der Preis wird im Voraus angezeigt; nur das zweite Unternehmen wird über ein eigenes Add-on-Abonnement abgerechnet. Nach Bestätigung der Zahlung können Sie das zweite Unternehmen benennen.
+Nutzen Sie Office aufgrund einer festen Vereinbarung kostenlos, gilt dieses kostenlose Office für ein Unternehmen. Für ein zweites Unternehmen bietet die App einen separaten Checkout. Der Preis wird im Voraus angezeigt; nur das zweite Unternehmen wird über ein eigenes Abonnement abgerechnet. Nach Bestätigung der Zahlung können Sie das zweite Unternehmen benennen.
 
 ## Einstellungen von einem anderen Unternehmen übernehmen
 
@@ -141,7 +146,7 @@ Schalten Sie **Einstellungen von einem Unternehmen übernehmen, das Sie bereits 
 - **Rechnungen und Angebote** (Layout, Zahlungsziel, Mahnungen und Ihre eigenen E-Mail-Texte).
 - **MwSt.** (Abgabezeitraum und Standardsteuersatz).
 - **Ausgaben und Belege** (Standardkategorie, Kilometerpauschale und Ihre eigenen Kategorien).
-- **Funktionen** (welche Funktionen aktiviert sind, plus der Aufbau Ihrer Zeiterfassung).
+- **Module** (welche Module aktiviert sind, plus der Aufbau Ihrer Zeiterfassung).
 - **Adresse und Kontakt** (Adresse, Telefon, E-Mail und Website).
 
 Handelsregisternummer, MwSt.-Nummer, Bankverbindung und Rechnungsnummernkreis werden nie übernommen: diese gehören jeweils nur zu einem Unternehmen.
@@ -174,7 +179,7 @@ Der Mandant erstellt sein eigenes Konto und bleibt Eigentümer der Administratio
 
 ## Navigation folgt Ihrer Rolle
 
-Die linke Seitenleiste blendet jetzt Elemente aus, die Ihre aktuelle Arbeitsbereichsrolle nicht nutzen darf, sodass Sie keine Links mehr sehen, die einen 403 zurückgeben. Die API steuert dies über eine Deny-Liste: wenn ein neuer Endpunkt für eine Rolle gesperrt wird, verschwindet das Navigations-Element automatisch.
+Die linke Seitenleiste blendet jetzt Elemente aus, die Ihre aktuelle Arbeitsbereichsrolle nicht nutzen darf, sodass Sie keine Links mehr sehen, die einen 403 zurückgeben. Wird ein Bereich für eine Rolle gesperrt, verschwindet der Menüpunkt automatisch.
 
 In einem Mandanten-Arbeitsbereich ist die Seitenleiste kürzer, denn Teile, die zum Mandanten selbst gehören (Posteingang, Website, Abonnement, Teameinstellungen, Domains und KI-Hilfen), sind für einen Steuerberater nicht verfügbar. Der Arbeitsbereich-Wechsler und der Eintrag "Arbeitsbereiche" bleiben immer sichtbar, sodass Sie jederzeit zwischen Administrationen wechseln können.
 
@@ -186,7 +191,7 @@ In einem Mandanten-Arbeitsbereich ist die Seitenleiste kürzer, denn Teile, die 
 
 ## Einblicke für Steuerberater
 
-Die Seite "Einblicke" unter `/werkruimtes/inzicht` vergleicht Mandanten-Administrationen und zeigt die Arbeitslast pro Periode. Sie ist nur in der Kanzlei-Ansicht sichtbar und nur, wenn Sie mehr als eine Mandanten-Administration verwalten.
+Die Seite „Einblick“ unter `/werkruimtes/inzicht` vergleicht Mandanten-Administrationen und zeigt die Arbeitslast pro Periode. Sie steht in der Gruppe Kundenarbeit, die erscheint, sobald Sie Mandanten-Administrationen verwalten.
 
 Die Seite bewusst über Anzahlen und Tage, nicht über Beträge:
 
@@ -225,12 +230,12 @@ Nutzen Sie diese Tabelle, um einen Stau zu erkennen, bevor er ein Fristproblem w
 
 ### Was hier bewusst NICHT steht
 
-**"Prozent der pünktlichen Abgaben"** stand im ursprünglichen Plan, wird aber nicht angezeigt. In MyCompanyDesk bedeutet "abgegeben", dass ein Zeitraum in `period_locks` geschlossen wurde. Ein Mandant, der anderswo abgibt, bekommt diese Zeile nie. Ein historischer Prozentsatz würde solche Mandanten systematisch als zu spät markieren. Das ist ein Vorwurf aufgrund fehlender Daten, keine Ungenauigkeit. Eine solche Qualitätszahl braucht zuerst ein explizites Signal pro Administration, dass die Abgabe hier erfolgt.
+Ein **„Prozent der pünktlichen Abgaben“** wird bewusst nicht angezeigt. In MyCompanyDesk bedeutet „abgegeben“, dass ein Zeitraum hier geschlossen wurde. Ein Mandant, der anderswo abgibt, hat hier nie einen geschlossenen Zeitraum. Ein historischer Prozentsatz würde solche Mandanten systematisch als zu spät markieren. Das ist ein Vorwurf aufgrund fehlender Daten, keine Ungenauigkeit. Eine solche Qualitätszahl braucht zuerst ein explizites Signal pro Administration, dass die Abgabe hier erfolgt.
 
-Stattdessen enthält die Vergleichstabelle nun eine Spalte **Von Ihnen geschlossen**. Sie zeigt, wie viele der letzten Perioden des Mandanten in dieser Kanzlei geschlossen wurden, auf Basis derselben `period_locks`-Daten. Ein Mandant, der anderswo abgibt, steht bei 0, weil hier nichts geschlossen wurde. Die Spalte ist bewusst neutral und wird nie rot, weil sie Ihre eigene Arbeit beschreibt, nicht das Verhalten des Mandanten.
+Stattdessen enthält die Vergleichstabelle nun eine Spalte **Von Ihnen geschlossen**. Sie zeigt, wie viele der letzten Perioden des Mandanten in dieser Kanzlei geschlossen wurden, auf Basis derselben geschlossenen Perioden. Ein Mandant, der anderswo abgibt, steht bei 0, weil hier nichts geschlossen wurde. Die Spalte ist bewusst neutral und wird nie rot, weil sie Ihre eigene Arbeit beschreibt, nicht das Verhalten des Mandanten.
 
 ## Verwandt
 
-- [Zugang und Steuerberater](/de/settings/team) für das Einladen von Teammitgliedern und Steuerberatern sowie das Festlegen von Seitenberechtigungen
+- [Personen mit Zugriff und Ihr Buchhalter](/de/settings/team) für das Einladen von Teammitgliedern und Steuerberatern sowie das Festlegen von Seitenberechtigungen
 - [Berichte](/de/features/reports) für die Ansicht verlorener Kunden und weitere Berichte
 - [Dashboard](/de/features/dashboard) für das tägliche Briefing eines Arbeitsbereichs

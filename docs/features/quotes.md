@@ -5,7 +5,7 @@ description: "Maak en verstuur offertes, volg of ze geaccepteerd worden en zet e
 
 # Offertes
 
-Verstuur professionele offertes naar potentiele klanten en zet ze om naar facturen wanneer ze geaccepteerd zijn.
+Verstuur professionele offertes naar potentiële klanten en zet ze om naar facturen wanneer ze geaccepteerd zijn.
 
 ## Overzicht
 
@@ -13,16 +13,16 @@ Het offertesgedeelte stelt je in staat om offertes te maken, versturen en bijhou
 
 ## Een offerte aanmaken
 
-1. Ga naar **Offertes > Nieuwe offerte**
+1. Ga naar **Offertes** en klik op **Offerte aanmaken**
 2. Selecteer of maak een **klant** aan
 3. Voeg **regelitems** toe met omschrijvingen, aantallen, prijzen en btw-tarieven
 4. Stel een **geldig tot**-datum in (hoe lang de offerte geldig is)
 5. Voeg optionele **notities** toe
 6. Klik op **Opslaan**
 
-Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt.
+Het offerteformulier lijkt op het factuurformulier: als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt. Offertes maak je onbeperkt, op elk abonnement, ook op Desk.
 
-Het formulier heeft dezelfde schakelaar **Bedragen incl. btw** als het factuurformulier. Zet je hem aan, dan typ je de prijzen die de klant betaalt en komt de btw eruit. Zie [Facturen](/features/invoices#prices-including-vat).
+Het formulier heeft dezelfde schakelaar **Bedragen incl. btw** als het factuurformulier. Zet je hem aan, dan typ je de prijzen die de klant betaalt en komt de btw eruit. Zie [Facturen](/features/invoices#prijzen-inclusief-btw).
 
 ## Foto's bij een offerte
 
@@ -41,7 +41,7 @@ Zodra de offerte is geaccepteerd of afgewezen, wacht op een handtekening of in d
 3. Bekijk het e-mailvoorbeeld
 4. Klik op **Versturen** om het naar je klant te bezorgen
 
-In de verzenddialoog vind je schakelaars voor de **Bekijkknop**, **Downloadknop** en **PDF-bijlage**. Standaard wordt de PDF meegestuurd, zodat de klant de offerte kan bekijken.
+In de verzenddialoog vind je schakelaars voor de **Bekijk-knop (online link)**, de **Download-knop** en de **PDF-bijlage**. Standaard wordt de PDF meegestuurd, zodat de klant de offerte kan bekijken.
 
 Voor een offerte moet er minstens één van deze schakelaars aan staan; anders kan de klant de offerte nergens openen en wordt de knop **Versturen** uitgeschakeld. Facturen vallen altijd terug op een klantenportaalknop, maar offertes niet.
 
@@ -60,11 +60,7 @@ Zodra een offerte per e-mail is verstuurd, toont de detailpagina een rij signale
 
 Een offerte toont nooit een **Betaald**-signaal, want offertes worden niet direct betaald; een ondertekende offerte staat in zijn eigen ondertekeningskaart.
 
-De signalen blijven uit tot de offerte daadwerkelijk is gemaild. Daarvoor is de kaart verborgen, zodat de pagina niet onnodig volstaat.
-
-Gebeurtenissen worden opgeslagen in dezelfde `invoice_customer_events`-log als factuuractiviteit, afgescheiden door een `entity_type`-kolom zodat offertes en facturen niet door elkaar lopen.
-
-Bron: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote`; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - `entity_type`-kolom; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
+De signalen blijven uit tot de offerte daadwerkelijk is gemaild. Daarvoor is de kaart verborgen, zodat de pagina niet onnodig volstaat. Activiteit op offertes en op facturen blijft gescheiden, zodat de signalen van een offerte nooit door die van een factuur heen lopen.
 
 ## Offerte online laten ondertekenen
 
@@ -78,41 +74,47 @@ Het ondertekenblok in de offerte-PDF volgt de documenttaal van de offerte: staat
 
 ## Acties op de offertedetailpagina
 
-De hoofdactie op de offertedetailpagina hangt af van de offertestatus:
+De hoofdknop op de offertepagina volgt de stap waarin de offerte staat:
 
-- **Versturen** — Beschikbaar voor concept- en verzonden offertes, zodat de offerte de klant kan bereiken.
-- **Omzetten naar factuur** - Beschikbaar zodra de klant de offerte heeft geaccepteerd; hiermee maak je in één klik een factuur. De onderbalk biedt hem ook bij een verzonden of nog-conceptofferte aan, en elke omzetting zet de offerte op **Geaccepteerd**; een concept krijgt dan alsnog zijn offertenummer.
-- **Dupliceren / nieuwe versie maken** — Beschikbaar voor afgewezen of verlopen offertes, zodat je ze snel opnieuw kunt uitbrengen.
+- **Versturen**: bij een concept of definitieve offerte, zodat de offerte de klant bereikt. Is de offerte bedoeld om online te tekenen, dan staat **Naar tekenen versturen** op die plek.
+- **Markeer als geaccepteerd**: bij een verzonden offerte, als de klant buiten de tekenlink om ja heeft gezegd.
+- **Factuur maken**: zodra de klant de offerte heeft geaccepteerd; hiermee maak je in één klik een factuur. Het menu met meer acties biedt hem ook bij een verzonden offerte of een concept aan, en elke omzetting zet de offerte op **Geaccepteerd**; een concept krijgt dan alsnog zijn offertenummer.
+- **Factuur bekijken**: zodra de offerte gefactureerd is.
+- **Dupliceren**: bij een afgewezen offerte, zodat je hem snel opnieuw uitbrengt.
 
-Extra acties zitten in het overflow-menu naast de hoofdactie:
+Extra acties staan, afhankelijk van de status, in het menu met meer acties naast de hoofdknop:
 
-- **PDF preview** — Bekijk de offerte-PDF op volledig scherm voordat je deze verstuurt.
-- **PDF downloaden** — Download de offerte als een professioneel opgemaakt PDF-document met je bedrijfslogo, huisstijlkleuren en alle offertegegevens.
-- **Offerte kopiëren** — Maak een kopie van de bestaande offerte.
+- **Bekijken** en **PDF downloaden**: bekijk de offerte-PDF op volledig scherm, of download hem als opgemaakte PDF met je logo, huisstijlkleuren en alle offertegegevens.
+- **Dupliceren**: maak een kopie van de offerte.
+- **Werkbon maken**: begin een [werkbon](/features/werkbonnen) met de regels van de offerte.
+- **Vastleggen als overeenkomst**: maak van de afspraak een [contract](/features/contracts) (Office).
+- **Versturen naar boekhouder**.
 
 ## Documentvoorbeeld
 
 Elke opgeslagen offerte heeft een live PDF-voorbeeld op de detailpagina, net als een factuur. Het voorbeeld toont de offerte precies zoals je klant hem ziet.
 
-In de kop van het voorbeeld staan knoppen voor **PDF downloaden**, **Printen** en **Ontwerp aanpassen**. Klik op **Ontwerp aanpassen** om direct naar Factuurontwerp te gaan en de uitstraling van al je facturen, offertes en herinneringen aan te passen. Wanneer je klaar bent, kom je terug bij de offerte waar je vandaan kwam. Op mobiel staat dezelfde actie in het overflow-menu, zodat de kop van het voorbeeld overzichtelijk blijft.
+In de kop van het voorbeeld staan knoppen voor **PDF downloaden**, **Afdrukken** en **Ontwerp aanpassen**. Klik op **Ontwerp aanpassen** om direct naar Factuurontwerp te gaan en de uitstraling van al je facturen, offertes en herinneringen aan te passen. Wanneer je klaar bent, kom je terug bij de offerte waar je vandaan kwam. Op mobiel staat dezelfde actie in het menu met meer acties, zodat de kop van het voorbeeld overzichtelijk blijft.
 
 ## Offertestatussen
 
 | Status | Beschrijving |
 |---|---|
 | **Concept** | Aangemaakt maar niet verstuurd |
+| **Definitief** | Genummerd en klaar, nog niet verstuurd |
 | **Verzonden** | Bezorgd bij de klant |
 | **Geaccepteerd** | Klant heeft de offerte geaccepteerd |
 | **Afgewezen** | Klant heeft de offerte afgewezen |
 | **Verlopen** | Voorbij de geldig-tot-datum |
-| **Gefactureerd** | Omgezet naar een factuur |
+
+Heb je een geaccepteerde offerte gefactureerd, dan houdt de offerte de status **Geaccepteerd** en wordt de hoofdknop **Factuur bekijken**.
 
 ## Omzetten naar factuur
 
 Zodra een klant je offerte accepteert, zet je deze met een klik om naar een factuur:
 
 1. Open de geaccepteerde offerte
-2. Klik op **Omzetten naar factuur**
+2. Klik op **Factuur maken**
 3. Bekijk de vooraf ingevulde factuur (alle regelitems worden overgenomen)
 4. Pas indien nodig aan
 5. Sla op en verstuur de factuur
@@ -133,11 +135,11 @@ Tekent de klant, dan wordt de aanbetalingsfactuur aangemaakt uit dezelfde regeli
 
 Zet je de rest van de werk om naar een factuur, dan krijgt die eindfactuur een negatieve regel **Verrekent aanbetaling**, zodat de klant alleen het restant betaalt. Deze verrekening geldt ook als het werk van de offerte via een werkbon wordt gefactureerd; die factuur kan pas worden aangemaakt zodra de aanbetalingsfactuur geen concept meer is. Is het werk al via een werkbon gefactureerd, dan kan er geen aanbetaling meer aan de offerte worden toegevoegd. De aanbetalingsfactuur zelf blijft een gewone factuur in je lijsten, waarvan de btw verschuldigd is in het tijdvak van zijn eigen factuurdatum. Haal je de verrekening weg, dan betaalt de klant het volledige bedrag bovenop de aanbetaling; je kunt de aanbetaling later weer verrekenen.
 
-Je krijgt een melding zodra de aanbetalingsfactuur is verstuurd, als concept wacht of niet kon worden verstuurd. De werkruimte-standaard staat onder **Instellingen > Facturen en offertes** bij Aanbetaling: het standaardpercentage op nieuwe offertes, de betaaltermijn (7 dagen tenzij je hem aanpast) en of ondertekenen de factuur direct verstuurt of als concept klaarzet. Per offerte pas je de aanbetaling aan of haal je hem weg.
+Je krijgt een melding zodra de aanbetalingsfactuur is verstuurd, als concept wacht of niet kon worden verstuurd. De werkruimte-standaard staat onder **Instellingen › Facturen en offertes** bij Aanbetaling: het standaardpercentage op nieuwe offertes, de betaaltermijn (7 dagen tenzij je hem aanpast) en of ondertekenen de factuur direct verstuurt of als concept klaarzet. Per offerte pas je de aanbetaling aan of haal je hem weg.
 
 ## Offerteaanvragen
 
-Klanten kunnen aanvragen indienen via je [sitebouwer](/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**, op een eigen tabblad per soort: offerteaanvragen, berichten, afspraakverzoeken en terugbelverzoeken. De soort zit op de aanvraag zelf, zodat mail, melding en inbox hem noemen zoals de bezoeker het bedoelde.
+Klanten kunnen aanvragen indienen via je [website](/advanced/business-page). Naast **Offertes** staat een tweede tab, genoemd naar het soort formulier op je website: **Offerteaanvragen**, **Berichten**, **Afspraakverzoeken** of **Terugbelverzoeken**. Daar komt elke binnenkomende aanvraag terecht. De soort zit op de aanvraag zelf, zodat mail, melding en lijst hem noemen zoals de bezoeker het bedoelde.
 
 ### Aanvragen beheren
 
@@ -147,9 +149,9 @@ Elke aanvraag toont:
 - Gevraagde dienst of omschrijving
 - Datum ingediend
 - Status
-- Foto's als de bezoeker meesturede (zie hieronder)
+- Foto's als de bezoeker die meestuurde (zie hieronder)
 
-De lijst kan filteren op alleen offertes, zodat een stroom berichten de offertes die nog openstaan niet wegdrukt.
+De lijst kan filteren op **Alleen offertes**, zodat een stroom berichten de offertes die nog openstaan niet wegdrukt.
 
 ### Aanvraagstatussen
 
@@ -157,36 +159,36 @@ De lijst kan filteren op alleen offertes, zodat een stroom berichten de offertes
 |---|---|
 | **Nieuw** | Zojuist ontvangen, nog niet bekeken |
 | **Bekeken** | Je hebt de aanvraag gelezen |
-| **Geoffreerd** | Je hebt met een offerte gereageerd (bij een bericht: geantwoord; bij een afspraak: ingepland; bij terugbellen: teruggebeld) |
+| **Offerte verstuurd** | Je hebt met een offerte gereageerd (bij een bericht: **Beantwoord**; bij een afspraak: **Ingepland**; bij terugbellen: **Teruggebeld**) |
 | **Gesloten** | Aanvraag afgehandeld (geaccepteerd of afgewezen) |
 
 ### Foto's bij een aanvraag
 
-Op offerte- en berichtformulieren kan de sitebouwer **Bezoekers kunnen foto's meesturen** aanzetten. Een bezoeker voegt dan tot drie foto's aan de aanvraag toe, elk maximaal 10 MB, als JPEG, PNG of WebP. Een iPhone-foto in HEIC of HEIF krijgt meteen een melding met de vraag een gangbare soort te kiezen. De foto's staan op de aanvraag en openen er op volledige grootte.
+Op offerte- en berichtformulieren op je website kun je **Bezoekers kunnen foto's meesturen** aanzetten. Een bezoeker voegt dan tot drie foto's aan de aanvraag toe, elk maximaal 10 MB, als JPEG, PNG of WebP. Een iPhone-foto in HEIC of HEIF krijgt meteen een melding met de vraag een gangbare soort te kiezen. De foto's staan op de aanvraag en openen er op volledige grootte.
 
 Terugbel- en afspraakformulieren nemen geen foto's aan: die vragen om een moment, niet om de beschrijving van een klus.
 
 ### Terugbelverzoeken
 
-Een terugbelverzoek is voor bezoekers die liever bellen: ze laten hun naam en telefoonnummer achter, en het formulier vraagt geen e-mailadres. Terugbelverzoeken komen op hun eigen tabblad, met **Bel terug** als hoofdactie en **Markeer als teruggebeld** om een verzoek af te ronden. Zet je er een offerte naast en verstuur die, dan loopt de status hetzelfde spoor als bij elke andere aanvraag.
+Een terugbelverzoek is voor bezoekers die liever bellen: ze laten hun naam en telefoonnummer achter, en het formulier vraagt geen e-mailadres. Een terugbelverzoek heeft **Bel terug** als hoofdactie en **Markeer als teruggebeld** om een verzoek af te ronden. Zet je er een offerte naast en verstuur die, dan loopt de status hetzelfde spoor als bij elke andere aanvraag.
 
-Terugbellen is een keuze per formulierblok in de sitebouwer; de bedrijfsbrede standaard loopt alleen over offerte, bericht en afspraak. Handig voor klanten zonder e-mail: ze vragen aan via je site, jij belt terug.
+Terugbellen is een keuze per formulierblok op je website; de bedrijfsbrede standaard loopt alleen over offerte, bericht en afspraak. Handig voor klanten zonder e-mail: ze vragen aan via je site, jij belt terug.
 
 ### Reageren op een aanvraag
 
 1. Open de aanvraag
 2. Klik op **Markeer als bekeken** na het lezen
-3. Klik op **Offerte aanmaken** om een offerte te genereren voor deze klant
+3. Klik op **Maak offerte** om een offerte te genereren voor deze klant
 4. De offerte wordt vooraf ingevuld met de klantgegevens
 
 Maak je een offerte vanuit een aanvraag, dan staat het bericht van de aanvrager boven het notitieveld, alleen-lezen en gemarkeerd als alleen voor jou zichtbaar. Het komt niet meer in de notities zelf, want notities printen op de offerte-PDF en verschijnen in het klantportaal.
 
 ### AI-conceptofferte bij een aanvraag
 
-Als een klant een offerteaanvraag via je sitebouwer of contactformulier indient, kan MyCompanyDesk automatisch een conceptofferte opzetten. De AI leest de aanvraagtekst en je eigen catalogus en stelt regels voor die hij kan matchen.
+Als een klant een offerteaanvraag via het formulier op je website indient, kan MyCompanyDesk automatisch een conceptofferte opzetten. De AI leest de aanvraagtekst en je eigen **Aanbod** en stelt regels voor die hij daarin terugvindt.
 
-- Gematchte catalogusitems behouden hun catalogusprijs, btw-tarief en eenheid. De AI suggereert alleen hoeveelheden.
-- Werk dat niet in de catalogus past, wordt een omschrijvingsregel met prijs 0, zodat je zelf een prijs kunt bepalen.
+- Items uit je aanbod houden hun prijs, btw-tarief en eenheid. De AI suggereert alleen hoeveelheden.
+- Werk dat niet in je aanbod past, wordt een omschrijvingsregel met prijs 0, zodat je zelf een prijs kunt bepalen.
 - Het concept wordt aangemaakt als offerte in status **Concept**. Hij wordt niet automatisch verstuurd en er wordt geen klantrecord aangemaakt op basis van het ongeverifieerde formulier.
 - Je krijgt een melding zodra een concept klaar staat. Open de aanvraag, controleer de regels, koppel of maak de klant aan en verstuur hem wanneer je wilt.
 
@@ -194,26 +196,25 @@ Het is een best-effort concept, geen afgeronde offerte. Controleer altijd prijze
 
 ### Voorgestelde klant uit de aanvraag
 
-Klik je op **Offerte aanmaken** bij een aanvraag, dan verschijnen de naam en het e-mailadres van de aanvrager bovenin het klantveld als suggestie. Klik op **Gebruiken** om de klant aan te maken en op de offerte te zetten, of negeer de suggestie en kies zelf een bestaande klant. De aanvrager wordt pas een klant als jij de suggestie bevestigt; een bestaande klant wiens naam er alleen maar op lijkt, wordt niet stilletjes gekozen.
+Klik je op **Maak offerte** bij een aanvraag, dan verschijnen de naam en het e-mailadres van de aanvrager bovenin het klantveld als suggestie. Klik op **Gebruiken** om de klant aan te maken en op de offerte te zetten, of negeer de suggestie en kies zelf een bestaande klant. De aanvrager wordt pas een klant als jij de suggestie bevestigt; een bestaande klant wiens naam er alleen maar op lijkt, wordt niet stilletjes gekozen.
 
 ## Bulkacties
 
 Tijdens een selectie verschijnt er een vinkjeskolom in de lijst, anders nergens; een lege lijst heeft helemaal geen selecteerknop.
 
-- **Versturen** — Verstuur meerdere offertes tegelijk
-- **Archiveren** — Verplaats offertes naar het archief
-- **Verwijderen** — Verwijder offertes
+- **Markeer als verzonden**: zet offertes die je buiten MyCompanyDesk hebt bezorgd op verzonden. Er gaat geen mail uit.
+- **Archiveren**: verplaats offertes naar het archief
+- **Verwijderen**: verplaats offertes naar de prullenbak
+
+In het archief en de prullenbak zet je offertes weer terug.
 
 ## Tips
 
-- Statistieken over offerteaanvragen (ontvangen, geoffreerd, gesloten) worden bovenaan de aanvragenpagina getoond
-- Gebruik de snel-toevoegen-functie voor snelle offertecreatie
+- Bovenaan de aanvragenpagina zie je hoeveel aanvragen nieuw zijn en hoeveel er in totaal zijn
+- Offertes kun je aan projecten koppelen, zodat je het werk beter volgt
 
 ## Dashboard-context
 
-Offertes die opvolging nodig hebben, verschijnen ook in het dashboardtabblad **Goed nieuws**:
+De kaart **Offertes** op het dashboard volgt de laatste 30 dagen van aanvraag tot opdracht: hoeveel aanvragen er binnenkwamen, hoeveel offertes je uitbracht (en hoeveel daarvan nog openstaan of stilliggen) en hoeveel er een opdracht werden. Daaronder staan je grootste open offertes, elk met een knop **Opvolgen**.
 
-- **Openstaande aanvragen**: hoeveel offerteaanvragen via de website op antwoord wachten, plus de oudste wachttijd.
-- **Verlopende offertes**: hoeveel offertes deze week verlopen, en hoeveel al verlopen zijn zonder antwoord.
-
-Offerteaanvragen via je sitebouwerformulier komen binnen via [Domeinen, website en inbox](/features/domains-website-inbox).
+Offerteaanvragen via het formulier op je website komen binnen via [Domeinen, website en inbox](/features/domains-website-inbox).

@@ -12,8 +12,8 @@ chatbot:
 Jede Rechnungsposition kann einen eigenen Rabatt erhalten:
 
 1. Bearbeiten oder erstellen Sie eine Rechnung
-2. Klicken Sie auf das Preisschild-Symbol bei der Position, die den Rabatt erhalten soll
-3. Wählen Sie im kleinen Panel den Rabatttyp: **Prozentsatz** oder **fester Betrag**
+2. Klicken Sie bei der Position, die den Rabatt erhalten soll, auf die Schaltfläche mit dem Prozentzeichen (**Rabatt für diese Position**)
+3. Wählen Sie im kleinen Panel den Rabatttyp: **%** (Prozentsatz) oder **€** (fester Betrag)
 4. Geben Sie den Rabattwert ein und wählen Sie **Fertig**
 
 Auf der Position erscheint dann ein Chip mit dem Rabatt (zum Beispiel -10 %), und die Summe der Position passt sich an: der ursprüngliche Betrag ist durchgestrichen, darunter steht der reduzierte Betrag.

@@ -1,7 +1,7 @@
 ---
 title: "Consulter les graphiques"
-description: "Pour consulter les graphiques : allez dans Rapports dans la barre latérale."
-last_verified: 2026-05-09
+description: "Pour consulter les graphiques : ouvrez Rapports dans la barre latérale et choisissez un onglet, ou consultez la page Chiffres."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["view charts", "see graphs", "financial charts", "revenue chart", "expense chart", "grafieken bekijken", "diagramme anzeigen", "voir graphiques"]
   actions:
@@ -10,9 +10,11 @@ chatbot:
 ---
 
 Pour consulter les graphiques :
-1. Allez dans Rapports dans la barre latérale
-2. Ouvrez l'une des vues de rapport : l'aperçu, Compte de résultat, Trésorerie, Clients ou Prévision
-3. Les graphiques sont intégrés à chaque vue ; il n'y a pas de section graphiques séparée
-4. Utilisez les filtres de période pour ajuster la plage de temps
+1. Allez dans **Rapports** dans la barre latérale (Office)
+2. Ouvrez l'un des onglets, par exemple **Vue d'ensemble**, **Ventes**, **Clients**, **Coûts** ou **Trésorerie**
+3. Les graphiques sont intégrés à chaque onglet ; il n'y a pas de section graphiques séparée
+4. Utilisez **Filtres** pour ajuster la plage de temps
+
+La page **Chiffres** de la barre latérale propose aussi un graphique de tendance sur 12 mois et un graphique de trésorerie.
 
 Astuce : vérifiez toujours d'abord les filtres actifs si les valeurs d'un graphique semblent incorrectes.

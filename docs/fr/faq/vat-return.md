@@ -1,19 +1,20 @@
 ---
 title: "Déclaration de TVA"
-description: "Pour consulter vos chiffres de TVA : ouvrez TVA, sélectionnez la période et consultez les totaux calculés et les factures ou dépenses liées."
-last_verified: 2026-05-09
+description: "Votre déclaration de TVA se trouve sous Impôts : vérifiez la période, cliquez sur Déposer la déclaration et déposez-la sur Mijn Belastingdienst Zakelijk."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["vat return", "vat filing", "file vat", "prepare vat", "vat report", "btw aangifte", "btw indienen", "btw berekening", "mwst meldung", "declaration tva"]
   actions:
-    - { label: "Open VAT", to: "/vat" }
+    - { label: "Open VAT", to: "/belastingen" }
     - { label: "Open reports", to: "/reports" }
   follow_up: ["How do I add my VAT number?", "How do I view financial reports?", "How do I export data for my accountant?"]
 ---
 
-Pour consulter les chiffres de TVA dans l'application :
-1. Ouvrez TVA
-2. Sélectionnez la période à vérifier
-3. Consultez les totaux de TVA calculés et ouvrez les factures ou dépenses liées si vous devez contrôler les enregistrements source
-4. Utilisez l'option d'export si vous avez besoin des chiffres affichés en dehors de l'application
+Pour vérifier et déposer votre déclaration de TVA dans l'application :
+1. Ouvrez **Impôts** dans la barre latérale, sous Finance
+2. En haut se trouvent les onglets **Aperçu** (ce qu'il reste à faire avant le dépôt), **Déclaration** (les rubriques de la période choisie), **Contrôle**, **Transactions** (les factures et dépenses derrière les montants), **Corrections** et **Périodes**
+3. Choisissez la période à vérifier et ouvrez les factures ou dépenses liées si vous devez contrôler les enregistrements source
+4. Cliquez sur **Déposer la déclaration**. MyCompanyDesk enregistre la déclaration avec le montant de chaque rubrique. Déposez-la ensuite sur Mijn Belastingdienst Zakelijk (le bouton **Ouvrir Mijn Belastingdienst Zakelijk** vous y mène) et cliquez sur **Marquer comme déposée**
+5. Utilisez les options d'export sous Impôts si vous avez besoin des chiffres en dehors de l'application
 
-L'application affiche les calculs de TVA pour vos données enregistrées, mais elle ne dépose ni ne transmet la déclaration à votre place.
+Préparer votre déclaration de TVA et la déposer vous-même fonctionne avec chaque formule.

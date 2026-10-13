@@ -1,262 +1,253 @@
 ---
 title: Verträge
-description: "Manage recurring service agreements and rental contracts, and let them generate invoices on a set schedule. Enable contracts under Company, Features."
+description: "Verwalten Sie Dienstleistungs- und Mietverträge, lassen Sie sie online unterschreiben und planmäßig Rechnungen erzeugen (Office)."
 ---
 
-# Contracts
+# Verträge
 
-Manage recurring service agreements and rental contracts with automatic billing schedules.
+Verwalten Sie laufende Vereinbarungen mit Kunden, etwa Dienstleistungs- und Mietverträge, mit einem festen Abrechnungsplan.
 
-## Overview
+## Überblick
 
-Contracts represent ongoing agreements with customers - such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
+Ein Vertrag hält eine laufende Vereinbarung mit einem Kunden fest, zum Beispiel einen monatlichen Reinigungsauftrag, einen Mietvertrag oder ein Wartungsabonnement. Ein Vertrag kann nach einem festen Plan selbst Rechnungen erzeugen.
 
 ::: info
-The contracts module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
+Verträge gehören zu Office und sind ein Modul, das Sie selbst einschalten. Sehen Sie **Verträge** nicht in der Navigation, schalten Sie es unter **Einstellungen › Module** ein (die Zeile **Verträge**).
 :::
 
-## Creating a contract
+## Einen Vertrag erstellen
 
-1. Go to **Contracts > New Contract**
-2. Fill in:
-   - **Name** - A descriptive title (e.g., "Monthly cleaning service")
-   - **Customer** - The client party to the contract
-   - **Amount** - The recurring billing amount
-   - **Recurrence** - How often to bill (weekly, monthly, quarterly, yearly)
-   - **Start date** - When the contract begins
-   - **End date** - Optional end date
-   - **Description** - Terms and details
-3. Click **Save**
+1. Öffnen Sie **Verträge** und klicken Sie auf **Erstellen**
+2. Füllen Sie aus:
+   - **Gegenstand**: Dienstleistung, Vermietung oder Zusammenarbeit
+   - **Kunde**: der Kunde, mit dem Sie die Vereinbarung treffen
+   - **Vertragsname**: ein klarer Name (zum Beispiel „Monatliche Reinigung“)
+   - **Wie wurde der Preis vereinbart?**: siehe [Preisbasis](#preisbasis) unten
+   - **Betrag (netto)** und **MwSt.-Satz**
+   - **Wiederholung**: wöchentlich, monatlich, vierteljährlich oder jährlich
+   - **Startdatum**, bei Bedarf ein **Enddatum**, und das Datum der **Ersten Rechnung**
+   - **Welchen Zeitraum deckt die Rechnung ab?**: siehe [Rechnungszeitraum](#rechnungszeitraum)
+3. Klicken Sie auf **Speichern**
 
-::: tip Meer opties
-The new-contract form keeps optional details tidy: the **More options** section reveals extra fields for service charge amount, VAT rate, and service description. These are not required to create the contract, but you can expand them when you need them.
+::: tip Mehr Optionen
+Das Formular hält optionale Angaben ordentlich verstaut: Unter **Mehr Optionen** finden Sie weitere Felder, etwa einen Servicezuschlag mit eigenem Betrag und Steuersatz. Für den Vertrag selbst brauchen Sie sie nicht, aber Sie klappen sie auf, wenn Sie sie brauchen.
 :::
 
-## Rate basis
+## Preisbasis
 
-Every contract has a **Rate basis** that controls how the amount is agreed:
+Jeder Vertrag beantwortet die Frage **Wie wurde der Preis vereinbart?**:
 
-- **Fixed amount** - the same amount each period, such as rent or a fixed monthly fee.
-- **Hourly rate** - you invoice the hours logged on projects linked to this contract.
-- **Daily rate** - you invoice the days worked on projects linked to this contract.
-- **Fixed project price** - a single agreed total for the whole assignment, invoiced once.
+- **Fester Betrag**: jede Periode derselbe Betrag, etwa Miete oder eine feste Monatsgebühr.
+- **Stundensatz**: Sie rechnen die Stunden ab, die auf Projekten zu diesem Vertrag erfasst werden.
+- **Tagessatz**: Sie rechnen die gearbeiteten Tage auf Projekten zu diesem Vertrag ab.
+- **Fester Projektpreis**: ein vereinbarter Gesamtbetrag für den ganzen Auftrag, der einmal abgerechnet wird.
 
-For hourly and daily contracts, the contract detail page shows a **Work under this contract** card with the agreed, invoiced and logged totals, plus the linked projects. A day is counted as 8 hours.
+Bei Stunden- und Tagessatz zeigt die Vertragsseite die Karte **Arbeit unter diesem Vertrag** mit vereinbarten, abgerechneten und erfassten Summen sowie den verknüpften Projekten. Ein Tag zählt als 8 Stunden.
 
-A fixed project price does not repeat: the contract generates one invoice and then stops.
+Ein fester Projektpreis wiederholt sich nicht: Der Vertrag erzeugt eine Rechnung und endet dann.
 
-## Contract statuses
+## Vertragsstatus
 
-| Status | Description |
-| - -| - -|
-| **Active** | Currently in effect, generates invoices |
-| **Inactive** | Paused - no invoices generated |
-| **Expired** | The end date has passed; no new invoices are generated |
+| Status | Bedeutung |
+| --- | --- |
+| **Aktiv** | Läuft und erzeugt Rechnungen |
+| **Pausiert** | Erzeugt keine Rechnungen, bis Sie ihn wieder aktivieren |
+| **Abgelaufen** | Das Enddatum ist vorbei und die letzte Periode ist abgerechnet |
+| **Beendet** | Sie haben die Vereinbarung mit **Vertrag beenden** beendet |
 
-::: warning MyCompanyDesk is not multi-tenant
-A contract is always linked to one customer in one workspace. The app does not support a single customer account that spans multiple tenants, and contract-generated invoices are always created in the workspace that owns the contract.
-:::
+Rechnungen, die ein Vertrag erzeugt, entstehen immer im Arbeitsbereich, zu dem der Vertrag gehört.
 
-## Terminating or pausing a contract
+## Einen Vertrag pausieren, auslaufen lassen oder beenden
 
-You can stop an active contract in two ways:
+Einen laufenden Vertrag stoppen Sie auf mehrere Arten:
 
-- **Deactivate** (`Pauzeren`) - the contract stays open but stops generating invoices. Activate it again at any time to resume billing.
-- **Set an end date** (`Einddatum`) - the contract runs until that date and then automatically becomes **Expired**. No invoices are generated for any period that ends after the end date.
+- **Pausieren**: Der Vertrag bleibt bestehen, erzeugt aber keine Rechnungen mehr. Mit **Aktivieren** schalten Sie ihn jederzeit wieder ein. Perioden, die ganz in die Pause fielen, werden nicht nachträglich abgerechnet.
+- **Ein Enddatum setzen**: Der Vertrag läuft bis zu diesem Datum und wird danach automatisch **Abgelaufen**. Für eine Periode, die nach dem Enddatum endet, entsteht keine Rechnung.
+- **Vertrag beenden**: beendet die Vereinbarung endgültig. Einen beendeten Vertrag können Sie kein zweites Mal beenden.
 
-When you edit an active contract and add an end date, the app warns that future invoices will stop. If you remove the end date before it is reached, the contract resumes normal invoicing.
+Bearbeiten Sie einen aktiven Vertrag und fügen ein Enddatum hinzu, warnt die App, dass die Rechnungen danach aufhören. Entfernen Sie das Enddatum, bevor es erreicht ist, rechnet der Vertrag normal weiter ab.
 
-## End dates
+## Enddatum
 
-You can set an **End date** when creating or editing a contract. Leave it empty for an open-ended contract.
+Ein **Enddatum** legen Sie beim Erstellen oder Bearbeiten eines Vertrags fest. Bleibt es leer, läuft der Vertrag unbefristet.
 
-When an end date is set:
+Ist ein Enddatum gesetzt:
 
-- The contract detail page shows the end date, or **Open-ended** if none is set.
-- No invoices are generated for any period that ends after the end date.
-- The contracts list shows an **Expires soon** label when the end date is within 30 days.
-- When the end date passes, the status changes to **Expired** automatically.
+- zeigt die Vertragsseite dieses Enddatum, oder **Unbefristet**, wenn keines gesetzt ist
+- entsteht keine Rechnung für eine Periode, die nach dem Enddatum endet
+- zeigen die Vertragsliste und der Vertrag die Markierung **Läuft bald ab**, wenn das Enddatum innerhalb von 30 Tagen liegt, und mit **Enddatum verlängern** verschieben Sie es
+- wechselt der Status automatisch auf **Abgelaufen**, sobald das Enddatum vorbei und die letzte Periode abgerechnet ist
 
-## Automatic invoicing
+## Automatisch abrechnen
 
-Active contracts with a recurrence schedule automatically generate invoices at each billing period. The system:
+Ein aktiver Vertrag mit Wiederholung erzeugt in jeder Periode von selbst eine Rechnung. Das System:
 
-1. Creates a draft invoice based on the contract terms
-2. Applies the correct customer, amount, and description
-3. Uses the same automatic invoice numbering
+1. erstellt eine Rechnung auf Grundlage der Vertragsbedingungen
+2. setzt den richtigen Kunden, den Betrag und die Beschreibung ein
+3. nutzt dieselbe automatische Rechnungsnummerierung
 
-Generated invoices are tagged as rental invoices only when the contract is a rental contract. Service and collaboration contracts produce ordinary invoices. This affects the badge shown on the invoice, the email template used when the invoice is sent, and whether the revenue is attributed to a linked object.
+Auf dem Vertrag beantwortet die Karte **Automatisch abrechnen** die Frage **Was passiert mit der Rechnung?**:
 
-You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
+- **Entwurf**: Die Rechnung bleibt als Entwurf bestehen. Sie prüfen und versenden sie selbst.
+- **Senden**: Die Rechnung wird automatisch an den Kunden gemailt.
+- **Einziehen**: Die Rechnung wird automatisch über das gespeicherte Zahlungsmandat eingezogen (siehe [Automatischer Einzug](#automatischer-einzug)).
 
-### Invoice delivery and auto-invoicing notifications
+Nur ein Mietvertrag erzeugt Rechnungen, die als Mietrechnung markiert sind. Verträge für Dienstleistung und Zusammenarbeit erzeugen normale Rechnungen. Das bestimmt die Markierung auf der Rechnung, die E-Mail-Vorlage beim Versand und ob der Umsatz einem verknüpften Objekt zugerechnet wird.
 
-If a generated invoice cannot be emailed to the customer, the app creates an **Invoice not sent** notification. This happens when the customer has no email address, your sender email is not configured, the address is blocked after a bounce or spam report, or the send fails for another reason. The notification opens the invoice so you can fix the cause and resend.
+Arbeitet ein Vertrag mit Stundensatz, Tagessatz oder festem Projektpreis, bekommen Sie außerdem eine Warnung, wenn das Budget des Vertrags überschritten wird oder erfasste Stunden keinen Preis bekommen können, weil kein Satz hinterlegt ist.
 
-If your plan no longer includes automatic contract invoicing, the app creates an **Auto-invoicing paused** notification when contract invoices are ready but not being sent. The notification tells you how many contract invoices are waiting and since when, and points you to the subscription page to upgrade.
+### Benachrichtigungen bei Versand und automatischer Abrechnung
 
-## Invoice period
+Kann eine erzeugte Rechnung nicht an den Kunden gemailt werden, legt die App die Benachrichtigung **Rechnung ist nicht beim Kunden angekommen** an. Das passiert, wenn der Kunde keine E-Mail-Adresse hat, Ihre Absenderadresse nicht eingerichtet ist, die Adresse nach einem Bounce oder einer Spam-Meldung gesperrt ist oder der Versand aus einem anderen Grund scheitert. Die Benachrichtigung öffnet die Rechnung, damit Sie die Ursache beheben und erneut senden.
 
-Contracts bill for a period relative to the invoice date:
+Ist Ihr Arbeitsbereich nicht mehr auf Office (etwa nach dem Ende der Testphase), legt die App die Benachrichtigung **Automatisches Fakturieren pausiert** an, sobald Vertragsrechnungen bereitstehen, die nicht versendet werden. Sie nennt, wie viele Vertragsrechnungen warten und seit wann, und verweist auf die Abonnementseite.
 
-- **Current** - the period that contains the invoice date (default)
-- **Previous** - the period before the invoice date
-- **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
+## Rechnungszeitraum
 
-Rechnet ein Vertrag nachträglich ab, gibt es nie eine Rechnung für einen Zeitraum vor dem Startdatum, und der Zeitraum, der das Enddatum enthält, erhält seine Rechnung noch danach.
+Bei **Welchen Zeitraum deckt die Rechnung ab?** wählen Sie, welche Periode eine Vertragsrechnung abrechnet, gerechnet ab dem Rechnungsdatum:
 
-The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
+- **Den des Rechnungsdatums**: die Periode, in die das Rechnungsdatum fällt (Vorgabe)
+- **Den vorherigen (nachträglich)**: die Periode vor dem Rechnungsdatum
+- **Den nächsten (im Voraus)**: die Periode nach dem Rechnungsdatum
 
-## Automatic collection
+Das Formular zeigt ein Beispiel der Zeile, wie sie auf der Rechnung erscheint. Rechnet ein Vertrag nachträglich ab, entsteht nie eine Rechnung für eine Periode vor dem Startdatum, und die Periode, in die das Enddatum fällt, bekommt danach trotzdem noch ihre Rechnung.
 
-For recurring contracts you can collect the billed amount automatically from the customer's stored payment mandate instead of sending a payment link by email. This requires a connected payment provider (Mollie or Stripe) and a valid customer mandate.
+## Automatischer Einzug
 
-### Setting up automatic collection
+Bei einem wiederkehrenden Vertrag können Sie den Betrag automatisch über das Zahlungsmandat des Kunden einziehen, statt einen Zahlungslink zu mailen. Dafür brauchen Sie einen verbundenen Zahlungsanbieter (Mollie oder Stripe, unter **Einstellungen › Zahlung**) und ein gültiges Mandat des Kunden.
 
-On the contract detail page, open the **Automatic collection** card and set up the mandate. Once the mandate is valid, turn the toggle on. The system then charges each generated invoice automatically.
+### Automatischen Einzug einrichten
 
-### Failed collection
+Klicken Sie auf der Vertragsseite auf **Automatischen Einzug einrichten** und lassen Sie den Kunden das Mandat bestätigen. Ist das Mandat gültig, wählen Sie **Einziehen** bei **Automatisch abrechnen**. Das System zieht danach jede erzeugte Rechnung von selbst ein.
 
-If a charge fails or the mandate is no longer valid, you receive an "Automatic collection failed" notification. The notification links directly to the contract so you can reconnect the mandate or follow up with the customer.
+### Fehlgeschlagener Einzug
 
-## Price indexation
+Schlägt eine Abbuchung fehl oder ist das Mandat nicht mehr gültig, bekommen Sie die Benachrichtigung **Automatische Lastschrift fehlgeschlagen**. Sie führt direkt zum Vertrag, damit Sie das Mandat neu einrichten oder mit dem Kunden Kontakt aufnehmen.
 
-Recurring contracts can be adjusted for inflation or agreed yearly rises. Open the contracts list and click **Raise prices** to preview what a percentage increase would do across eligible contracts. A contract is only eligible if at least one year has passed since it started or since its last rise.
+## Preisanpassung
 
-The preview shows, per contract:
+Wiederkehrende Verträge passen Sie an die Inflation oder eine vereinbarte jährliche Erhöhung an. Wählen Sie auf der Vertragsliste **Preise erhöhen** im Menü oben und sehen Sie, was eine prozentuale Erhöhung bei den infrage kommenden Verträgen bewirkt. Infrage kommt ein Vertrag erst, wenn er mindestens ein Jahr läuft oder seine letzte Erhöhung ein Jahr zurückliegt.
 
-- The current rate or amount per period
-- The new rate or amount after the increase
-- The date the contract was last adjusted
+Die Vorschau zeigt pro Vertrag:
 
-You apply the rise per contract, never in bulk, so you can skip customers you have not yet spoken to. Once applied, the change updates the stored contract terms and future invoices reflect the new amount.
+- den aktuellen Satz oder Betrag pro Periode
+- den neuen Satz oder Betrag nach der Erhöhung
+- das Datum der letzten Anpassung
 
-::: tip Agree first
-Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
+Sie wenden die Erhöhung pro Vertrag an, nie für alle auf einmal, damit Sie Kunden auslassen können, mit denen Sie noch nicht gesprochen haben. Danach gelten die neuen Bedingungen im Vertrag, und folgende Rechnungen zeigen den neuen Betrag.
+
+::: tip Erst abstimmen
+Besprechen Sie eine Preiserhöhung zuerst mit Ihrem Kunden. Die Vorschau ändert nichts, bis Sie bei einem Vertrag auf **Anwenden** klicken.
 :::
 
 ### Automatische jährliche Erhöhung
 
-Ein Vertrag, der laut Vereinbarung jedes Jahr eine Erhöhung erhält, kann diese Erhöhung selbst ausführen. Öffnen Sie den Vertrag und richten Sie die automatische Erhöhung ein:
+Ein Vertrag, der laut Vereinbarung jedes Jahr erhöht wird, kann diese Erhöhung selbst ausführen. Öffnen Sie den Vertrag und richten Sie die **Jährliche Erhöhung** ein:
 
-- **Erhöhen um**: den Verbraucherpreisindex des CBS (VPI), oder einen festen Prozentsatz, den Sie selbst wählen.
-- **Jedes Jahr zum**: den Tag und Monat, an dem die Erhöhung jedes Jahr wirksam wird.
-- **Ankündigung**: Der Kunde oder Mieter erhält vorab eine E-Mail von Ihrem eigenen Postfach; Sie wählen, wie viele Monate im Voraus.
+- **Erhöhen um**: **VPI (CBS)**, den niederländischen Verbraucherpreisindex, oder einen **Festen Prozentsatz**, den Sie selbst wählen.
+- **Jedes Jahr zum**: Tag und Monat, an dem die Erhöhung jedes Jahr wirksam wird.
+- **Kunden per E-Mail informieren**: Der Kunde oder Mieter bekommt vorab eine E-Mail von Ihrer eigenen Adresse; Sie wählen, wie viele Monate im Voraus.
 
-Vorbereitung der App: es funktioniert bei einem laufenden Vertrag mit festem Betrag pro Zeitraum. Etwa eine Woche, bevor die Ankündigung fällig ist, erhalten Sie eine Benachrichtigung mit der geplanten Erhöhung, und mit einem Klick überspringen Sie dieses Jahr. Tun Sie nichts, passieren beide Schritte von selbst: Zuerst erhält der Kunde die Ankündigungsmail, und erst nachdem sie verschickt ist, ändert sich der Preis. Rechnungen für Zeiträume vor dem Gültigkeitsdatum behalten den alten Preis; Zeiträume ab dem Gültigkeitsdatum nutzen den neuen. Lässt sich die Ankündigung vor dem Gültigkeitsdatum nicht versenden, findet die Erhöhung nicht statt, und eine Benachrichtigung sagt Ihnen, warum.
+Die Bedingung der App: Es funktioniert bei einem laufenden Vertrag mit festem Betrag pro Periode. Jedes Jahr, etwa eine Woche bevor die Ankündigung hinausgeht, bekommen Sie eine Benachrichtigung mit der geplanten Erhöhung, und mit **Dieses Jahr überspringen** lassen Sie dieses Jahr mit einem Klick aus. Tun Sie nichts, laufen beide Schritte von selbst: Zuerst bekommt der Kunde die Ankündigung, und erst nachdem diese E-Mail hinaus ist, ändert sich der Preis. Rechnungen für Perioden vor dem Stichtag behalten den alten Preis; Perioden ab dem Stichtag nutzen den neuen. Lässt sich die Ankündigung nicht vor dem Stichtag versenden, findet die Erhöhung nicht statt, und eine Benachrichtigung sagt Ihnen, warum.
 
-Eine manuelle Erhöhung mit einem zukünftigen Gültigkeitsdatum, angewendet über **Preise erhöhen** in der Vertragsliste, folgt demselben Zeitplan, jedoch ohne Ankündigungsmail.
+Eine manuelle Erhöhung mit Stichtag in der Zukunft, angewendet über **Preise erhöhen** auf der Vertragsliste, folgt demselben Ablauf, aber ohne Ankündigungs-E-Mail.
 
-Sind automatische Erhöhungen nicht in Ihrem Abonnement enthalten, sagt Ihnen die Schaltfläche auf dem Vertrag das; anwenden können Sie die Erhöhung weiterhin manuell über **Preise erhöhen**.
+## Mit Objekten verknüpfen
 
-## Linking to assets
+Verträge verknüpfen Sie mit [Objekten](/de/features/objects) für die Verwaltung von Vermietungen:
 
-Contracts can be linked to [objects/assets](/en/features/objects) for rental management:
+- einen Vertrag einer Immobilie, einem Fahrzeug oder einem Gerät zuordnen
+- sehen, welche Objekte vermietet sind und an wen
+- den Vertragsverlauf pro Objekt ansehen
 
-- Associate a contract with a property, vehicle, or piece of equipment
-- Track which assets are currently rented and to whom
-- View contract history per asset
+## Mit Projekten verknüpfen
 
-## Linking to projects
+Verträge verknüpfen Sie auch mit [Projekten](/de/features/projects). Wählen Sie beim Erstellen oder Bearbeiten eines Projekts den Vertrag im Feld **Vertrag**. Stunden, die Sie auf diesem Projekt erfassen, kommen dann auf die Rechnung des Vertrags. Archivierte Verträge stehen ebenfalls in der Liste, mit **(archiviert)** hinter dem Namen, damit Sie eine bestehende Verknüpfung behalten oder bei Bedarf eine ältere Vereinbarung wählen.
 
-Contracts can also be linked to [projects](/en/features/projects). When you create or edit a project, choose the contract in the **Contract** field. Hours you log on that project are then included on the contract's invoice. Archived contracts still appear in the dropdown, labelled with **(archived)** after the name, so you can keep an existing link or pick an older agreement when needed.
+Praktisch bei Vereinbarungen nach Stunden- oder Tagessatz: Der Vertrag legt die Preisbasis fest, die verknüpften Projekte liefern die Stunden.
 
-This is useful for retainer-style or time-and-materials agreements: the contract sets the rate basis, and the linked projects supply the hours.
+Sie lösen ein Projekt jederzeit wieder; Stunden, die schon auf einer Rechnung stehen, bleiben dort.
 
-You can unlink a project at any time; existing hours stay on the invoice they were already added to.
+## Die Vertragsliste
 
-## Metrics
+Über der Liste stehen die Reiter **Alle**, **Wartet auf Unterschrift**, **Entwurf** und **Laufend**. Oben sehen Sie den **Monatlichen Umsatz** Ihrer wiederkehrenden Verträge, die Arbeit **Auf Stundenbasis**, die noch nicht abgerechnet ist, und die **Nächste Rechnung**. Mit dem Filterbereich grenzen Sie die Liste nach Status (aktiv, pausiert, abgelaufen), Wiederholung und Signaturstatus ein.
 
-The contracts list page shows summary metrics:
+## Sammelaktionen
 
-- Total active contracts
-- Total contract value
-- Contracts by recurrence type
+- **Archivieren**: Verträge ins Archiv verschieben
+- **Löschen**: Verträge in den Papierkorb verschieben
 
-## Bulk actions
+Im Archiv wählen Sie **Wiederherstellen (aktiv)** oder **In Papierkorb verschieben**; im Papierkorb **Wiederherstellen (Archiv)** oder **Endgültig löschen**.
 
-- **Change status** - Activate or deactivate multiple contracts
-- **Archive** - Move to archive
-- **Restore** - Bring back archived contracts
+## Unterschreiben
 
-## Signing
+Verträge lassen Sie digital unterschreiben. Sie fügen Parteien im Vertragsformular hinzu und versenden den Vertrag mit **Zur Unterzeichnung senden**; jede Partei bekommt einen Unterschriftslink per E-Mail.
 
-Contracts support electronic signing. You can add parties through the contract form, and each party receives a signing link via email.
+Ist ein Vertrag unterschrieben, zeigt die Vertragsseite eine Signaturkarte mit:
 
-When a contract has been signed, the contract detail page shows a signing card with:
+- dem Status jeder Partei (eingeladen, angesehen, unterschrieben oder abgelaufen)
+- einer Schaltfläche **Ansehen**, die eine Vorschau des unterschriebenen Dokuments öffnet
+- einer Download-Schaltfläche, um das PDF zu speichern
 
-- The status of each party (invited, viewed, signed, or expired)
-- A **View** button that opens an inline preview of the signed document
-- A download button to save the PDF
+Die Vorschauseite hat eine Leiste zum Drucken und Herunterladen und zeigt den unterschriebenen Vertrag direkt im Browser. Das unterschriebene PDF und das Prüf-PDF enthalten beide den vollständigen Vertragstext, jede heruntergeladene Kopie steht also für sich.
 
-The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser. The signed PDF and review PDF both include the full contract body text, so every downloaded copy is self-contained.
+### Ihr Branding auf der Unterschriftsseite
 
-### Sender branding on the signing page
+Öffnet jemand einen Vertrag zum Unterschreiben, trägt die Unterschriftsseite das Branding des Absenders:
 
-When a recipient opens a contract to sign, the signing page carries the sender's brand:
+- Das Logo des Absenders steht oben auf der Seite
+- Die Seite nutzt die Akzentfarbe des Absenders
+- Text und Schaltflächen passen sich automatisch an, damit sie auf dieser Farbe lesbar bleiben
 
-- The sender's logo appears at the top of the page
-- The page uses the sender's brand accent color
-- Text and buttons automatically adjust so they stay readable against that color
+So wirkt die Unterschriftsseite, als käme sie von dem Unternehmen, das eingeladen hat, und nicht wie eine allgemeine Seite eines Drittanbieters.
 
-This gives signers an experience that looks like it comes from the company that invited them, rather than a generic third-party page.
+### Signaturstatus in der Vertragsliste
 
-### Signing on the contracts list
+Die Vertragsliste hat eine Spalte **Signatur** mit dem Status jedes Vertrags, der digital unterschrieben wird. Die Status erscheinen als farbige Markierungen: **Nicht gesendet**, **Ausstehend**, **Teilweise signiert** und **Signiert**.
 
-The contracts list includes a **Signing** column showing the signing status for each contract that has e-signing enabled. Statuses appear as colored badges: draft (neutral), sent (warning), partially signed (info), and active (success).
+Mit dem Signaturfilter im Filterbereich grenzen Sie die Liste nach Signaturstatus ein oder zeigen nur Verträge ohne digitale Unterschrift (**Keine E-Signatur**). Verträge ohne Unterschriftsparteien, etwa ältere Verträge, zeigen einen Strich in der Spalte Signatur und fallen unter diesen Filter.
 
-A signing filter dropdown above the list lets you narrow the view by signing status, or filter to contracts without e-signing ("No e-signing").
+### SMS-Verifizierung
 
-::: info Legacy contracts
-Contracts created before the e-signing feature was added do not show a signing card on the detail page. The system detects legacy contracts by checking whether the contract has signing parties, a template, or signing content. Only contracts created or updated after the e-signing rollout include the signing card.
+Pro Partei schalten Sie **SMS-Verifizierung erforderlich** ein. Diese Person muss dann einen Code per SMS bestätigen, bevor die Unterschrift gültig ist; die Telefonnummer gibt sie beim Unterschreiben ein.
 
-Legacy contracts show a dash in the Signing column and appear under the "No e-signing" filter.
-:::
+- **Code senden**: Nach Eingabe der Mobilnummer bekommt die unterschreibende Person einen 6-stelligen Code
+- **Code prüfen**: Sie gibt den Code ein und weist so nach, dass die Nummer ihr gehört
+- **Verifiziert-Markierung**: Danach erscheint eine Markierung mit den letzten vier Ziffern der Nummer
 
-### SMS verification
+Bei einem falschen Code kann sie einen neuen anfordern. Die SMS-Bestätigung steht auf dem unterschriebenen PDF.
 
-Signing links can require SMS verification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
+## Versionen von Vorlagen
 
-- **Send code** - After entering their mobile number, the signer taps the button and receives a code
-- **Verify code** - The signer enters the 6-digit code to prove access to the phone number
-- **Verified badge** - Once confirmed, a "Verified" badge appears with the last four digits of the number
+Vertragsvorlagen finden Sie unter **Vertragsvorlagen**, die Sie über das Menü oben in der Vertragsliste öffnen. Einer Vorlage können Sie Versionen geben, um festzuhalten, wie sich der Text verändert hat.
 
-If the wrong code is entered, the signer can request a new one. SMS verification is configured per signing session and applies to all parties.
+### Eine Version veröffentlichen
 
-## Template versions
+1. Öffnen Sie **Vertragsvorlagen**
+2. Suchen Sie Ihre Vorlage und klicken Sie auf **Versionen**
+3. Füllen Sie bei **Aktuellen Entwurf als neue Version veröffentlichen** aus:
+   - **Bezeichnung**: ein kurzer Name für die Version (zum Beispiel „v2“). Bleibt das Feld leer, vergibt die App selbst die nächste Nummer.
+   - **Änderungsnotiz**: kurz, was sich in dieser Version geändert hat
+4. Klicken Sie auf **Veröffentlichen**
 
-Contract templates support versioning so you can track changes over time. Each version is a frozen snapshot of the template content at a point in time, letting you evolve your templates without affecting contracts that were already created.
+### Den Versionsverlauf ansehen
 
-### Publishing a version
+Der Versionsverlauf einer Vorlage zeigt:
 
-1. Go to **Contracts > Templates**
-2. Find your template and click the **Versions** button
-3. In the versions modal, enter:
-   - **Label** :  A short identifier for the version (e.g. "v2"). If left empty the system auto-assigns a sequential label.
-   - **Change note** :  A short description of what changed in this version
-4. Click **Publish**
+- die Bezeichnung der Version (zum Beispiel „v1“, „v2“)
+- die Änderungsnotiz und das Veröffentlichungsdatum
+- die Markierung **Aktuell** bei der zuletzt veröffentlichten Version
+- die Markierung **Archiviert** bei allen früheren Versionen
 
-The current draft is snapshotted as a new version. Existing contracts stay pinned to the version they were created from, so publishing never rewrites historical contract text.
+### Was Versionen mit Verträgen machen
 
-### Viewing version history
+Eine Version ist ein Name und eine Notiz zum aktuellen Text, keine eigene Kopie: Neue Verträge nutzen immer den neuesten Vorlagentext, auch wenn Sie nach dem Veröffentlichen weiter bearbeiten. Bereits erstellte Verträge behalten ihren eigenen, festgehaltenen Text und ändern sich nie mit der Vorlage. Sie können Vorlagen also bedenkenlos überarbeiten, ohne bestehende Verträge zu berühren.
 
-Each template's version history shows:
+## Tipps
 
-- The version label (e.g. "v1", "v2")
-- The change note and publish date
-- A **Current** badge on the latest published version
-- An **Archived** badge on all previous versions
-
-### How versions affect contracts
-
-When a contract is created from a template, it pins to the version that was current at the time. If you later publish a new version of the template, existing contracts keep rendering from their pinned version. This means you can safely revise templates without altering active contracts.
-
-## Tips
-
-- Use contracts together with [recurring invoices](/en/features/recurring-invoices) for different billing scenarios
-- Link contracts to objects for full rental management
-- Set end dates to get notified before contracts expire; a contract expires automatically on its end date
-- Deactivate a contract instead of setting an end date if you want to pause and resume billing later
-- Review the contracts filter to see active vs. inactive at a glance
-- Filter by signing status to find contracts that still need signatures
-- Add signing parties when creating a contract to enable electronic signing
+- Nutzen Sie Verträge neben [wiederkehrenden Rechnungen](/de/features/recurring-invoices) für verschiedene Arten der Abrechnung
+- Verknüpfen Sie Verträge mit Objekten für eine vollständige Vermietungsverwaltung
+- Setzen Sie ein Enddatum, dann sehen Sie rechtzeitig, dass ein Vertrag ausläuft; nach dem Enddatum läuft er von selbst ab
+- Pausieren Sie einen Vertrag, statt ein Enddatum zu setzen, wenn Sie später weiter abrechnen möchten
+- Filtern Sie nach Signaturstatus, um zu sehen, welche Verträge noch eine Unterschrift brauchen
+- Fügen Sie beim Erstellen eines Vertrags Unterschriftsparteien hinzu, um digital unterschreiben zu lassen

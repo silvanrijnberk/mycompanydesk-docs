@@ -1,164 +1,106 @@
 ---
-title: Fonctionnalites IA
-description: "Chaque fonction IA de MyCompanyDesk, ce qu'elle fait et quel fournisseur l'exécute. La chaîne par défaut reste dans l'UE : Gemini sur Vertex AI."
+title: Fonctionnalités IA
+description: "Toutes les fonctions IA de MyCompanyDesk, ce qu'elles font, ce qu'incluent Desk et Office, et comment Google Gemini garde vos données dans l'UE."
 ---
 
-# Fonctionnalites IA
+# Fonctionnalités IA
 
-MyCompanyDesk inclut des fonctionnalites basees sur l'IA pour vous aider a travailler plus vite et plus intelligemment.
+MyCompanyDesk utilise l'IA à quelques endroits pour vous faire gagner du temps : un assistant qui réfléchit avec vous, des reçus qui se remplissent tout seuls et des suggestions de catégories et de lignes de facture. Cette page présente chaque fonction IA, ce qu'elle fait et l'offre à laquelle elle appartient.
 
-## Guide contextuel
+Toutes les fonctions IA tournent sur Google Gemini via Vertex AI de Google Cloud, dans des centres de données situés dans l'UE. Il n'y a pas de second fournisseur d'IA.
 
-L'icone d'assistant dans la topbar ouvre un panneau de chat qui sait sur quelle page vous vous trouvez, quels enregistrements vous regardez et a quoi ressemblent les donnees de votre espace de travail. Il est construit comme un agent utilisant des outils : au lieu de deviner les nombres, il les demande. Sur bureau, le panneau s'ouvre comme un drawer ancre au bord droit de l'ecran ; sur mobile, il s'ouvre comme une bottom sheet depuis le bouton sparkles dans l'en-tete mobile.
+## Assistant
 
-### Demander à un humain (Vraag het Sil)
+L'icône de l'assistant, en haut de l'écran, ouvre un panneau de discussion. Sur ordinateur, il glisse depuis la droite ; sur téléphone, il s'ouvre par le bas. L'assistant dont vous disposez dépend de votre offre :
 
-Au bas de la conversation se trouve le bloc « Vous êtes bloqué ? » : les personnes qui répondent actuellement aux questions, avec nom et photo, à côté d'un bouton WhatsApp. L'assistant reste le chemin le plus rapide pour la plupart des questions ; un humain n'est ainsi jamais loin. Le bloc n'apparaît pas dès l'ouverture du panneau. Dans le guide contextuel, il arrive après la première réponse complète. L'Assistant Financier d'Office est un chat sur vos propres chiffres et pour préparer devis et factures, pas un service d'assistance : le bloc y apparaît dès que la conversation devient une demande d'aide (la réponse vient de la FAQ ou du manuel), que l'assistant bloque ou que vous demandez vous-même un humain. Tapez par exemple « service client » ou « une vraie personne », et le bloc apparaît aussitôt.
+- **Desk : Desky.** Un guide de l'application. Desky sait sur quelle page vous êtes et vous aide pour des questions comme « où trouver… » et « comment faire… ».
+- **Office : Assistant Financier.** Un assistant qui travaille avec vos propres chiffres. Demandez par exemple ce qui reste à encaisser, où en est votre TVA ou quel client rapporte le plus, et faites-lui préparer un devis ou une facture. Vous le vérifiez vous-même avant de l'enregistrer.
 
-En choisissant l'une de ces personnes, un petit formulaire s'ouvre : votre question, plus une case à cocher pour joindre votre conversation avec l'assistant, déjà cochée d'avance. L'envoi transforme votre question en ticket de support ordinaire, et la réponse arrive dans l'app et par e-mail, avec la promesse d'une réponse sous un jour ouvré, généralement en quelques heures. Après l'envoi, un lien mène à votre question sous forme de fil de ticket. Le bouton WhatsApp ouvre une conversation dans laquelle une courte présentation attend déjà : qui vous êtes, à quelle page votre question se rapporte et ce que vous demandez.
+### Limite de messages
 
-### Limites de chat
-
-L'utilisation du chat dépend de votre plan :
-
-| Plan | Messages de chat (mensuel) |
+| Offre | Messages à l'assistant par mois |
 |---|---|
 | Desk | 10 |
 | Office | 1 000 |
 
-Les limites IA sont mensuelles, et non quotidiennes. Elles sont reinitialisees le premier de chaque mois.
+Une fois la limite atteinte avec Desk, vous recevez encore des réponses tirées des questions fréquentes. Les limites IA sont mensuelles, pas quotidiennes, et repartent à zéro le premier du mois.
 
-### Divulgation selon la loi europeenne sur l'IA (art. 50)
+### Demander à un humain
 
-Le guide contextuel est classe comme un systeme d'IA a risque limite en vertu de l'article 50 du reglement europeen sur l'IA (Reglement 2024/1689). Cela signifie que nous devons indiquer clairement que vous interagissez avec une IA. Le guide contient deux elements a cet effet :
+En bas de la conversation, le bloc **Vous êtes bloqué ?** peut apparaître : les personnes qui répondent en ce moment aux questions, avec leur nom et leur photo, à côté d'un bouton WhatsApp. Dans Desky, il apparaît après la première réponse complète. L'Assistant Financier d'Office est une discussion sur vos propres chiffres, pas un service d'assistance : le bloc y apparaît dès que la conversation devient une demande d'aide, que l'assistant se bloque ou que vous demandez vous-même à parler à quelqu'un. Tapez par exemple « service client » ou « une vraie personne », et le bloc s'affiche aussitôt.
 
-- **Badge IA.** Une petite pastille "IA" a cote du nom de l'assistant dans l'en-tete du drawer. Toujours visible lorsque le guide est ouvert. Une info-bulle sur le badge indique le fournisseur sous-jacent (Google Gemini).
-- **Texte de divulgation.** Une courte ligne sous la question de bienvenue dans un etat de chat vide : "Vous parlez a un assistant IA. Les reponses peuvent contenir des erreurs ; verifiez toujours vous-meme les conclusions financieres ou fiscales."
+Cliquez sur une personne (**Demander à** suivi de son nom) et un court formulaire s'ouvre : votre question, plus la case **Joindre ma conversation avec l'assistant**, déjà cochée. L'envoi transforme votre question en ticket d'assistance. La réponse arrive dans l'application et par e-mail, sous un jour ouvré et le plus souvent en quelques heures. Le bouton WhatsApp ouvre une discussion où une courte présentation est déjà prête : qui vous êtes, la page concernée et la question elle-même.
 
-L'obligation entre en vigueur en aout 2026 ; les divulgations ont ete mises en place avant la date limite.
+### Vous parlez à une IA
 
-### Apparence visuelle Office
-
-Les espaces de travail Office bénéficient d'une apparence d'assistant premium qui remplace le style générique par un accent violet. Lorsque votre espace de travail est sur Office, le panneau de l'assistant change visuellement :
-
-- La pastille « IA » devient une pastille violette qui signale l'assistant Office.
-- La bordure du panneau, l'anneau de l'avatar, le point en ligne et le bouton d'envoi passent au violet (`#a855f7`).
-- La ligne de statut affiche un message d'accueil propre à Office au lieu du générique « Prêt à aider. »
-
-L'apparence Office est purement cosmétique. Le sélecteur de modèle sous-jacent, le catalogue d'outils et les divulgations de la loi européenne sur l'IA restent identiques pour tous les plans. La différence tient à la limite : Office offre 1 000 messages de chat par mois, Desk 10.
+L'assistant indique toujours que vous parlez à une IA, comme l'exige le règlement européen sur l'IA (article 50). Une étiquette figure à côté de son nom, et une conversation vide affiche la phrase « Les réponses sont indicatives et peuvent contenir des erreurs. » Vérifiez donc toujours vous-même les conclusions financières et fiscales.
 
 ## Suggestions IA
 
-Des recommandations intelligentes qui vous aident a categoriser et decrire vos enregistrements :
+L'interrupteur **Suggestions IA**, dans **Paramètres › Modules**, permet à l'IA de vous aider dans votre comptabilité. Cet interrupteur fait partie d'Office et est désactivé par défaut.
 
-### Categorisation des depenses
+- **Catégorie et TVA des dépenses.** Quand vous saisissez une description ou un fournisseur, MyCompanyDesk propose une catégorie et un taux de TVA.
+- **Améliorer.** Sur une dépense, le bouton **Améliorer** propose une description plus claire et de meilleures valeurs de champ. Vous voyez la valeur actuelle et la valeur proposée côte à côte, et choisissez **Appliquer** ou **Ignorer** pour chaque champ.
+- **Créer les lignes.** Dans un devis ou une facture, décrivez avec vos mots ce que vous allez faire ou avez fait. **Créer les lignes** remplit les lignes et les prix pour vous, à partir de votre propre offre, de vos factures précédentes ou de votre taux horaire. Vous les ajustez ensuite comme d'habitude.
 
-Lorsque vous creez une depense, l'IA analyse la description et suggere la categorie la plus appropriee. Cela fait gagner du temps et garantit une categorisation coherente.
+Appliquer fonctionne exactement comme une modification manuelle. Une dépense dans la corbeille, une période de TVA verrouillée ou une catégorie archivée bloque la modification, comme pour une saisie manuelle, et la modification est consignée dans le journal. La TVA, les rapports et le tableau de bord affichent immédiatement la nouvelle valeur.
 
-### Ameliorations des descriptions
+Quand une demande de devis arrive via votre site web, l'IA prépare déjà un brouillon de devis, avec des lignes et des prix estimés. Cela fonctionne aussi avec Desk, sans l'interrupteur. Le brouillon n'a pas de numéro et n'est pas envoyé : c'est vous qui le relisez.
 
-L'IA peut suggerer des descriptions plus claires et plus professionnelles pour :
+Toutes ces suggestions comptent dans la limite mensuelle : 10 suggestions IA avec Desk et 2 000 avec Office.
 
-- Les lignes de facture
-- Les descriptions de depenses
-- Les notes clients
+## Numérisation des reçus
 
-### Comment ca marche
+Prenez un reçu en photo ou téléversez un PDF : la date, le montant, le fournisseur, le taux de TVA et la description sont remplis pour vous. La numérisation des reçus est incluse dans toutes les offres : 3 scans par mois avec Desk, 200 avec Office.
 
-1. Creez ou modifiez un enregistrement
-2. Surveillez l'indicateur de suggestion IA
-3. Examinez la suggestion
-4. Cliquez sur **Appliquer** pour l'utiliser, ou sur **Ignorer** pour passer
+Consultez [Numérisation de reçus](/fr/advanced/receipt-scanning) pour les étapes.
 
-Appliquer passe par le même chemin d'écriture qu'une modification manuelle. Une dépense à la corbeille, une période de TVA verrouillée ou une catégorie archivée/invalide bloque l'action avec les mêmes codes d'erreur que lors d'une modification manuelle. En cas de succès, MyCompanyDesk écrit une entrée de journal d'audit pour les champs modifiés, comme pour une modification normale.
+## Correction des fautes de frappe
 
-Les points de terminaison qui agissent sur une suggestion ou une dépense spécifique valident leurs paramètres de chemin en tant qu'UUID. Les requêtes avec un `entityId` ou un `id` de suggestion invalide renvoient `400 VALIDATION_ERROR` avant que la couche service ne soit atteinte, afin que les URL malformées ne produisent pas de réponse 500 inattendue.
+La **Vérification orthographique et grammaticale** (un interrupteur dans **Paramètres › Modules**) contrôle les champs de texte de vos formulaires pendant la saisie et repère les fautes de frappe, en néerlandais, anglais, allemand et français. Elle ne vérifie pas la grammaire. Ce contrôle tourne sur les propres serveurs de MyCompanyDesk, sans fournisseur d'IA, et fait partie d'Office.
 
-Lorsque vous appliquez une suggestion, les totaux financiers mis en cache qui dépendent de l'enregistrement modifié sont immédiatement invalidés. La TVA, les rapports et le tableau de bord se rafraîchissent tout de suite et reflètent la nouvelle catégorie, le nouveau traitement de TVA ou la nouvelle description.
+## Synthèse du tableau de bord (Office)
 
-::: info
-Les suggestions de catégorie fonctionnent sur tous les plans, avec une limite mensuelle : 10 sur Desk et 2 000 sur Office. Les descriptions améliorées font partie d'Office. Activez les suggestions IA via **Entreprise > Fonctionnalités**.
-:::
+Avec Office, le haut de votre tableau de bord affiche une courte synthèse, rédigée par l'IA à partir de vos propres chiffres : ce qui compte le plus maintenant, un ou deux points complémentaires et une prochaine étape concrète, comme « envoie aujourd'hui une relance à Atelier Norden ». La synthèse est créée une fois par jour, dans votre langue. Les montants sont arrondis à l'euro près avant d'être transmis au modèle. Si la création échoue, vous voyez le résumé habituel du tableau de bord. Les chiffres eux-mêmes sont disponibles dans toutes les offres ; seul le texte IA fait partie d'Office.
 
-## Numerisation des recus
+Avec Office, vous recevez aussi un court commentaire IA dans vos rapports et dans le récapitulatif mensuel envoyé par e-mail au début de chaque mois.
 
-L'OCR alimentee par l'IA extrait les donnees des images de recus et des PDF :
+## Aide à la réponse dans la boîte de réception (Office)
 
-- **Date** -- Quand l'achat a ete effectue
-- **Montant** -- Cout total
-- **Fournisseur** -- A qui vous avez paye
-- **Description** -- Ce qui a ete achete
+Dans la boîte de réception, l'IA peut rédiger pour vous la réponse à l'e-mail d'un client. Vous pouvez lui faire écrire une nouvelle réponse, éventuellement avec une courte consigne, ou lui faire peaufiner votre propre brouillon sans en changer le sens ni la langue.
 
-Voir [Numerisation des recus](/fr/advanced/receipt-scanning) pour des instructions detaillees.
+- La réponse est rédigée dans la langue du dernier e-mail reçu, à la première personne, et signée de votre nom.
+- Seuls les e-mails réellement reçus et les réponses réellement envoyées sont pris en compte. Les brouillons et les envois échoués ne le sont pas.
+- Quand l'IA ignore un détail, elle laisse un espace réservé comme `[date]` au lieu d'inventer.
+- Rien n'est envoyé automatiquement. Vous relisez et modifiez d'abord la réponse vous-même.
+- Pour un e-mail signalé comme suspect, l'aide à la réponse n'est pas disponible.
 
-## Verification du texte
+## Ce que comprend chaque offre
 
-Verification grammaticale et orthographique pour vos documents :
-
-- Verifiez les descriptions de facture avant envoi
-- Verifiez le contenu des devis
-- Corrigez les fautes de frappe dans les textes destines aux clients
-
-Prend en charge l'anglais, le neerlandais, l'allemand et le francais.
-
-::: info
-La vérification du texte est disponible sur tous les plans, y compris Desk.
-:::
-
-## Resumes de compte
-
-L'IA genere des resumes periodiques de votre activite commerciale :
-
-- **Quotidien** -- Apercu rapide des transactions du jour
-- **Hebdomadaire** -- Resume hebdomadaire avec tendances
-- **Mensuel** -- Analyse mensuelle complete
-
-Les resumes sont generes dans votre langue preferee et sont disponibles depuis le tableau de bord.
-
-## Aperçu du tableau de bord par IA (Office)
-
-La section hero du tableau de bord affiche un briefing court et personnel généré par IA pour les espaces de travail Office. Le serveur genere le briefing une fois par jour calendaire et le met en cache pour le reste de la journee.
-
-- **Voix.** Le briefing parle a la premiere personne ("je") et s'adresse a l'utilisateur avec le vouvoiement ("vous"). Il s'ouvre sur l'action la plus urgente, ajoute au plus un ou deux points supplementaires, et se termine par une etape suivante concrete (ex. "envoyez un rappel a Atelier Norden aujourd'hui"). Chaleureux, confiant, concis -- le ton d'un assistant competent qui connait l'entreprise.
-- **Modele.** L'endpoint `POST /api/dashboard/briefing-insight` fonctionne sur Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud n'est pas utilise pour ce chemin.
-- **Signaux d'entree.** Le client envoie un apercu complet des donnees d'activite du jour : liquidite et autonomie, CA et benefice (mois + annee), creances en retard (nombre, total, pire client), depenses (a venir + en retard), nombre de brouillons, marges par projet, position TVA (solde, echeance, progression checklist, reserve), heures non facturees, paiements recents et nouveaux clients. Tous les montants sont arrondis a l'euro entier avant d'atteindre le modele.
-- **Langues.** Le modele genere le briefing en `nl/de/en/fr` selon la langue de l'utilisateur. Le client inclut le code ISO-639-1 dans la requete.
-- **Restriction par plan.** L'endpoint est controle par le flag `ai_insights`, qui nécessite Office. Si un espace de travail n'est pas eligible, le client conserve uniquement le texte standard.
-- **Fallback.** En cas d'echec (modele indisponible, 403, erreur reseau), le client utilise le texte standard existant. Aucune erreur n'est affichee a l'utilisateur.
-- **UX client.** Pendant le chargement du briefing IA, le hero affiche le texte standard mis en cache de la veille. Lorsque la version IA arrive, une transition en fondu enchaine (opacite + glissement) la remplace. Le briefing IA apparait avec une icone sparkle et la couleur de texte principale. Un shimmer squelette fidele a la mise en page (`BriefingSkeleton`) maintient la forme complete du tableau de bord jusqu'a l'arrivee des donnees principales, puis se dissout dans une animation d'entree coordonnee et progressive. Les utilisateurs avec reduced-motion ne recoivent aucune animation.
-
-
-## Aide IA dans la boîte de réception (Office)
-
-La boîte de réception peut rédiger pour vous la réponse à un courriel d'un client. Le point d'entrée `POST /api/inbox/threads/:id/generate-reply` passe par le même routeur de LLM que les autres fonctions IA (charge de travail `inbox-generate-reply`) et connaît deux modes : `reply` écrit une réponse complète à partir de zéro (orientable par une courte instruction ou une puce comme « Confirmer »), `rewrite` polit votre propre brouillon sans en changer le sens ni la langue.
-
-- **Modèle.** Gemini sur Vertex AI `europe-west1`, par la chaîne standard, comme les autres surfaces de discussion.
-- **Entrée.** Le contexte de conversation trié et raccourci : les courriels réellement arrivés et les réponses réellement envoyées. Les brouillons, les envois échoués et les rebonds ne comptent pas, pour qu'une ébauche générée ou un courriel en erreur ne soit jamais pris pour un message lu par le client.
-- **Sortie.** Du texte brut uniquement (l'éditeur l'enveloppe en HTML), dans la langue du dernier message entrant, à la première personne du singulier, signé du nom du propriétaire. Les détails inconnus deviennent des espaces réservés comme `[datum]`, jamais des inventions.
-- **Jauge.** `ai_insights`, donc Office seulement ; le client masque toute l'aide lorsque le droit manque ou que la conversation est marquée comme suspecte.
-- **En cas d'erreur.** Toute erreur du modèle revient comme `{ ok: false }` sans exception levée : l'éditeur affiche un toast et reste intact.
-
-## Droits par plan
-
-| Fonctionnalité | Desk | Office |
+| Fonction | Desk | Office |
 |---|---|---|
-| Guide contextuel | 10 messages de chat par mois, ensuite FAQ uniquement | 1 000 messages de chat par mois |
-| Suggestions IA | Activé (10 par mois) | Activé (2 000 par mois) |
-| Classification des fournisseurs | Activé | Activé |
-| Numérisation des reçus | Activé (3 par mois) | Activé (200 par mois) |
-| Vérification du texte | Activé | Activé |
-| Traduction | Activé (UI uniquement) | Activé |
-| Aide IA dans la boîte de réception | Désactivé | Activé |
-| Aperçu tableau de bord IA | Désactivé | Activé |
+| Assistant | Desky, le guide de l'application : 10 messages par mois | Assistant Financier avec vos propres chiffres : 1 000 messages par mois |
+| Suggestions IA (catégorie, TVA, Améliorer, Créer les lignes) | Non | Oui |
+| Brouillon de devis pour une demande reçue via votre site web | Oui | Oui |
+| Numérisation des reçus | 3 par mois | 200 par mois |
+| Correction des fautes de frappe | Non | Oui |
+| Synthèse du tableau de bord et commentaire IA des rapports | Non | Oui |
+| Aide à la réponse dans la boîte de réception | Non | Oui |
 
-## Confidentialite
+Les limites mensuelles en un coup d'œil :
 
-Tous les chemins d'IA cloud passent par defaut par Vertex AI dans `europe-west1` (UE). MyCompanyDesk a un accord de traitement des donnees avec Google Cloud pour l'utilisation de Vertex AI. Ollama Cloud (ollama.com, heberge aux Etats-Unis) est desactive par defaut car aucun accord de traitement des donnees n'existe avec Ollama Inc. Vous pouvez l'activer par espace de travail pour les charges de travail sans donnees personnelles, mais il est desactive pour tous les plans.
+| Limite par mois | Desk | Office |
+|---|---|---|
+| Messages à l'assistant | 10 | 1 000 |
+| Scans de reçus | 3 | 200 |
+| Suggestions IA | 10 | 2 000 |
 
-Si vous reglez `ai_processing_mode` sur `local_only`, la numerisation des recus, les suggestions IA, la verification du texte, la classification des fournisseurs et la detection du secteur restent entierement sur votre propre serveur. Le guide contextuel fonctionne uniquement dans le cloud et est desactive en mode `local_only`.
+## Confidentialité et protection des données
+
+Toutes les fonctions IA tournent sur Google Gemini via Vertex AI, dans des régions européennes de Google Cloud. MyCompanyDesk a signé pour cela un accord de traitement des données avec Google Cloud. Il n'y a ni second fournisseur d'IA ni solution de repli hors de l'UE : si une requête IA échoue, vous recevez un message ou vous remplissez les informations vous-même.
 
 ## Conseils
 
-- Activez les suggestions IA une fois et elles fonctionnent automatiquement en arriere-plan
-- La numerisation des recus est particulierement utile pour les recus papier -- prenez simplement une photo
-- Le guide contextuel peut repondre a la plupart des questions "comment faire..." sur l'application
+- Activez les suggestions IA une fois, elles travaillent ensuite automatiquement avec vous.
+- La numérisation des reçus est particulièrement pratique pour les reçus papier : prenez simplement une photo.
+- Desky répond à la plupart des questions « comment faire… » sur l'application.

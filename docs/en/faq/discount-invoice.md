@@ -12,8 +12,8 @@ chatbot:
 Every invoice line can carry its own discount:
 
 1. Edit or create an invoice
-2. Click the tag button on the line that should carry the discount
-3. In the small panel that opens, choose the discount type: **percentage** or **fixed amount**
+2. On the line that should carry the discount, click the button with the percent sign (**Discount on this line**)
+3. In the small panel that opens, choose the discount type: **%** (percentage) or **€** (fixed amount)
 4. Enter the discount value and choose **Done**
 
 The line now shows a chip with the discount (for example -10%), and the line total updates: the original amount is struck through, with the discounted amount underneath.

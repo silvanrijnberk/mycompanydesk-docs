@@ -1,40 +1,40 @@
 ---
 title: Teamrechten
-description: "Page permissions control what each team member or accountant can do: Read, Write and Create, matching the Lezen, Schrijven and Aanmaken toggles in the app."
-last_verified: 2026-10-06
+description: "Met paginarechten bepaal je per pagina wat een teamlid of je boekhouder mag: Lezen, Schrijven en Aanmaken."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["team permissions", "manage team permissions", "page permissions", "read write create", "permission settings", "access control", "granular permissions", "read only", "write access", "create access", "pagina rechten", "teamrechten", "lezen schrijven", "toegang instellen", "seitenberechtigungen", "teamberechtigungen", "lese schreibzugriff", "permissions page", "permissions de l'equipe", "droits acces"]
   actions:
     - { label: "Open access settings", to: "/settings/toegang" }
   follow_up: ["How do I invite a new team member?", "How do I manage accountant access?", "How do I revoke someone's access?"]
 ---
-Page permissions control what each team member or accountant can do per app page:
 
-| Permission | App label | Allows |
-|---|---|---|
-| **Read** | Lezen | View the page and the records on it |
-| **Write** | Schrijven | Edit existing records |
-| **Create** | Aanmaken | Add new records |
+Met paginarechten bepaal je per pagina van de app wat een teamlid of je boekhouder mag:
 
-To configure access:
+| Recht | Mag |
+|---|---|
+| **Lezen** | De pagina en de gegevens erop bekijken |
+| **Schrijven** | Bestaande gegevens bewerken |
+| **Aanmaken** | Nieuwe gegevens toevoegen |
 
-1. Go to Settings → **Toegang en boekhouder** (access and accountant)
-2. Click **Toegang beheren** (manage access) next to the member or accountant
-3. Toggle Read, Write and Create per page
-4. Save the permission changes
+Zo stel je de rechten in:
 
-The drawer also has quick shortcuts:
+1. Voor een teamlid: ga naar Instellingen › **Mensen met toegang**, open het menu bij die persoon en kies **Toegang beheren**. Voor je boekhouder: ga naar Instellingen › **Je boekhouder** en klik op **Paginatoegang**
+2. Zet per pagina Lezen, Schrijven en Aanmaken aan of uit
+3. Klik op **Opslaan**
 
-- **Volledige toegang** (Full access) turns Read, Write and Create on for every page.
-- **Alleen-lezen toegang** (Read-only access) turns Read on and Write/Create off for every page.
-- **Alles intrekken** (Revoke all) turns everything off.
+In hetzelfde venster staan ook snelkoppelingen:
 
-Read must be on before Write or Create can work. Turning Read off also disables Write and Create for that page.
+- **Volledige toegang** zet Lezen, Schrijven en Aanmaken aan voor elke pagina.
+- **Alleen-lezen toegang** zet Lezen aan en Schrijven en Aanmaken uit voor elke pagina.
+- **Alles intrekken** zet alles uit.
 
-The **Payments** page also requires Read access on the **Invoices** page, because payments can update invoice status (including marking invoices as paid) and process refunds. The trips behind the mileage allowance live in Time registration (Uren) and that flow asks for Read on the same page. Saved routes and the trip suggestions used by the public-transport expense open with Read on Time registration or Expenses.
+Lezen moet aan staan voordat Schrijven of Aanmaken werkt. Zet je Lezen uit, dan gaan Schrijven en Aanmaken voor die pagina ook uit.
 
-The same right protects the invoice entry points scattered across the app. Every action that creates an invoice or a quote somewhere else (a **Factuur maken** action on an hour row, in an appointment, on the Nearby customers sheet, or on a project and contract page) asks for the right on **Facturen** (invoices), and without it the action stays hidden instead of ending in an error. Turning on automatic invoicing asks for Write access on Facturen, and starting a payment mandate asks for the same right. Read-gated lists behave consistently too: the transactions list on the VAT page skips invoice and expense rows the member has no Read right on, the document archive lists receipts, invoices and mail attachments only for members with the matching right, and shielded pieces stay out of the archive view for the accountant.
+De pagina's in het venster zijn Dashboard, Taken, Inbox, Facturen, Uitgaven, Klanten, Projecten, Bezittingen, Contracten, Documenten, Nieuwsbrief, Rapportages en boekhouding, Uren & agenda, Belastingen (btw) en Instellingen. Betalingen hebben geen eigen regel: die horen bij **Facturen**. De ritten achter de kilometervergoeding staan bij Uren & agenda en vragen Lezen op die pagina. Opgeslagen routes en de ritvoorstellen bij een ov-uitgave openen met Lezen op Uren & agenda of Uitgaven.
 
-Create permission is scoped to new records only. A member with Create but no Write can add new records through the collection root, but cannot edit existing records, change status, use bulk actions, or confirm scanned receipts into new expenses.
+Hetzelfde recht beschermt de plekken elders in de app waar je een factuur of offerte maakt, zoals de actie **Factuur maken** bij een urenregel, in een afspraak, bij klanten in de buurt of op een project- of contractpagina. Die vragen het recht op **Facturen**, en zonder dat recht blijft de actie verborgen in plaats van op een foutmelding uit te komen. Automatisch factureren aanzetten vraagt Schrijven op Facturen, en een incassomachtiging starten ook. Lijsten die van Lezen afhangen werken hetzelfde: de transactielijst op de btw-pagina slaat factuur- en uitgaverijen over waarop het teamlid geen Lezen heeft, het documentarchief toont bonnen, facturen en mailbijlagen alleen aan wie het bijbehorende recht heeft, en afgeschermde stukken blijven voor de boekhouder buiten het archief.
 
-Pages without a Read right stay out of reach for the member: the Boekhouding area shows only the tabs that member may open, and opening a direct link to a page without access shows a short note that the member has no access to that part of the app. The dashboard stays quiet about it, because every member lands there when signing in.
+Aanmaken geldt alleen voor nieuwe gegevens. Wie Aanmaken heeft maar geen Schrijven, kan nieuwe gegevens toevoegen, maar geen bestaande bewerken, geen status wijzigen, geen bulkacties gebruiken en geen gescande bonnen bevestigen als nieuwe uitgaven.
+
+Pagina's zonder Lezen blijven buiten bereik: Boekhouding toont alleen de tabbladen die het teamlid mag openen, en een directe link naar een pagina zonder toegang toont een korte melding dat het teamlid geen toegang heeft tot dat deel van de app. Het dashboard zegt er niets over, omdat iedereen daar na het inloggen binnenkomt.

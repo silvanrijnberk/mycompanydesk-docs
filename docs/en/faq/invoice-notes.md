@@ -15,4 +15,6 @@ To add notes to an invoice:
 3. Enter the text you want saved with that invoice
 4. Save the invoice
 
+Notes appear on the invoice itself, so your customer sees them. To record something only for yourself, use the "Internal notes" card on the invoice detail page.
+
 Tip: Use notes for payment instructions, project references, or terms that belong on that specific invoice.

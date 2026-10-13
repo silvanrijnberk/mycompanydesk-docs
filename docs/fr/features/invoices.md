@@ -1,332 +1,309 @@
 ---
 title: Factures
-description: "Create professional invoices, send them with payment links, and track them from draft through outstanding to paid, with filters on every status."
+description: "Créez des factures soignées, envoyez-les avec un lien de paiement et suivez chacune du brouillon jusqu'au paiement."
 ---
 
-# Invoices
+# Factures
 
-Invoices are at the core of MyCompanyDesk. Create professional invoices, send them to customers with payment links, and track payments through to completion.
+Les factures sont au cœur de MyCompanyDesk. Vous créez des factures soignées, vous les envoyez à vos clients avec un lien de paiement et vous suivez le paiement jusqu'à ce que l'argent soit arrivé. Créer et envoyer des factures est illimité, dans tous les abonnements, Desk compris.
 
-## Settings for invoices and quotes
+## Paramètres des factures et des devis
 
-Settings → **Facturen en offertes** (Invoices and quotes) holds defaults that apply to every new invoice and quote.
+Sous **Paramètres › Factures et devis**, vous définissez les valeurs par défaut de chaque nouvelle facture et de chaque nouveau devis.
 
-### Payment terms
+### Délai de paiement
 
-Set the default number of days a customer gets to pay. Choices range from **Direct** to a custom number of days. This value appears on every new invoice, but you can override it per invoice.
+Indiquez combien de jours un client a pour payer : **14 jours** (le choix de la plupart des gens), **30 jours**, **60 jours** ou un nombre de jours que vous saisissez vous-même (0 s'affiche **Immédiat**). Ce délai figure sur chaque nouvelle facture, mais vous pouvez le modifier facture par facture.
 
-### Reminders
+### Rappels
 
-Turn on automatic reminders and MyCompanyDesk sends a friendly reminder the day after an invoice becomes overdue, then every week until it is paid.
+Activez **En retard ? Envoyer automatiquement un rappel** et MyCompanyDesk envoie un rappel aimable dès qu'une facture a dépassé son échéance de trois jours, puis chaque semaine jusqu'au paiement. Les rappels automatiques font partie d'Office. Envoyer vous-même un rappel depuis la facture fonctionne avec tous les abonnements.
 
-### Quote validity
+### Validité des devis
 
-Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 months**.
+Choisissez combien de temps un devis reste valable par défaut : **2 semaines**, **1 mois** ou **2 mois**. Chaque nouveau devis reçoit automatiquement une date de validité selon ce réglage, pour qu'aucun devis ne parte sans date d'expiration.
 
-Chaque nouveau devis reçoit automatiquement une date valide jusqu'au, calculée d'après ce réglage, pour qu'aucun devis ne parte sans date d'expiration.
+### Facturer automatiquement les devis signés
 
-### Auto-invoice signed quotes
-
-When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
+Lorsque **Signé ? Préparer automatiquement une facture brouillon** est activé, un devis signé devient de lui-même une facture brouillon. Vous la vérifiez et décidez vous-même quand l'envoyer. Cette automatisation fait partie d'Office.
 
 ### Joindre les conditions par défaut
 
-Si vous conservez vos conditions générales dans Documents, chaque envoi peut les joindre en PDF. Sous **Conditions générales** sur la même page de réglages, vous choisissez séparément par type si la case démarre cochée : devis et factures ont chacun leur interrupteur. D'origine, les conditions partent avec les devis et pas avec les factures. La case reste modifiable à chaque envoi.
+Si vous gérez vos conditions générales dans Documents, chaque envoi peut les joindre en PDF. Sous **Conditions générales**, sur la même page de paramètres, vous choisissez séparément pour les devis et pour les factures si la case est cochée d'emblée dans la fenêtre d'envoi. Par défaut, les conditions partent avec les devis et pas avec les factures. La case elle-même reste modifiable à chaque envoi.
 
-### Invoice numbering
+### Numérotation des factures
 
-MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
+MyCompanyDesk numérote les factures automatiquement, dans l'ordre exigé par l'administration fiscale néerlandaise, sauf si vous définissez vous-même un préfixe ou un numéro de départ sous **Numérotation**.
 
-| Field | Dutch label | What it does |
-|---|---|---|
-| **Prefix** | Voorvoegsel | Text in front of the year on every new invoice, for example `INV-` or `2026_`. Sent invoices keep their existing number. |
-| **Next invoice number** | Eerstvolgende factuurnummer | The next number to use. You can only move forward, never back, because lowering the number would create duplicates. |
+| Champ | Ce qu'il fait |
+|---|---|
+| **Préfixe** | Texte placé devant l'année sur chaque nouvelle facture, par exemple `FAC-` ou `2026_`. Les factures déjà envoyées gardent leur numéro. |
+| **Prochain numéro de facture** | Le numéro utilisé ensuite. Il ne peut qu'avancer, jamais reculer, car revenir en arrière créerait des doublons. |
 
-The preview under the fields shows what your next invoice number will look like. Already sent invoices are never renumbered when you change these settings.
+Sous les champs, vous voyez à quoi ressemblera votre prochain numéro de facture. Les factures déjà envoyées ne changent jamais de numéro quand vous modifiez ces réglages.
 
-### Default document language
+### Langue de vos documents
 
-Choose the language used for invoices, quotes and customer emails by default. The default option follows your workspace language; you can change the language per document.
+Sous **Dans quelle langue créez-vous vos documents ?**, vous choisissez la langue de vos factures, de vos devis et des e-mails à vos clients. Le néerlandais est la langue par défaut. Les factures dans d'autres langues font partie d'Office. Une facture finalisée garde la langue dans laquelle elle a été créée.
 
-### Peppol e-invoicing
+### Facturation électronique Peppol
 
-A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol). When you switch it on, your company détails are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity vérification, receiving, and missing-field checks.
+Un interrupteur sur la même page de paramètres active la [facturation électronique Peppol](/fr/features/peppol) (Office). Les données de votre entreprise sont alors enregistrées auprès du point d'accès Peppol et vous pouvez envoyer et recevoir des factures électroniques en plus de l'e-mail. La page Peppol détaille la vérification d'identité, la réception et les données manquantes.
 
-## Overview
+## Vue d'ensemble
 
-La page des factures présente vos factures sous des onglets : **Tous** (« d'abord ce que vous devez faire »), **À envoyer** et **En attente de paiement**. Les onglets portent des compteurs à jour, les onglets de paiement ajoutent aussi leur total en euros, et l'onglet d'attente affiche une alerte rouge avec le nombre de factures en retard.
+La page des factures range vos factures sous des onglets : **Tous** (« d'abord ce que vous devez faire »), **À envoyer** et **En attente de paiement**. Les onglets affichent des compteurs en direct, les onglets de paiement indiquent aussi leur montant total en euros, et l'onglet d'attente porte une alerte rouge avec le nombre de factures en retard.
 
-Dans les listes, les factures sont regroupées selon leur situation, pour que le travail qui vous attend arrive en haut et que le travail terminé descende vers le bas :
+Dans les listes, les factures sont regroupées selon leur état, pour que le travail qui vous attend arrive en haut et que le travail terminé descende :
 
-- **En retard**, puis **À envoyer**, puis **En attente de paiement** : le travail qui se trouve actuellement chez vous
-- **Payées en septembre** (les deux mois les plus récents contenant des lignes), puis **Payées plus tôt** pour tout ce qui précède, replié jusqu'à ce que vous appuyiez sur Afficher
-- **Payées** : payées sans mois attribuable
-- **Annulé ou crédité** : l'archive du travail qui ne court plus
+- **En retard**, puis **À envoyer**, puis **En attente de paiement** : le travail qui est chez vous en ce moment
+- **Payé en septembre** (les deux mois les plus récents avec des lignes), puis **Payées plus tôt** pour tout ce qui précède, replié jusqu'à ce que vous cliquiez sur Afficher
+- **Payé** : payé sans mois attribuable
+- **Annulé ou crédité** : l'archive du travail qui n'est plus actif
 
-Chaque en-tête de groupe porte le compteur du groupe entier et, le cas échéant, son total. Avec Masquer, vous repliez un groupe : ses lignes cessent de compter pour la pagination, mais l'en-tête reste à sa place. Un mois daté dans le futur (presque toujours une coquille dans la date) ne se replie jamais : il reste ouvert avec son propre en-tête, pour que la coquille reste visible.
+Chaque en-tête de groupe indique le nombre du groupe entier et, le cas échéant, le total du groupe. Repliez un groupe avec Masquer : ses lignes ne comptent plus pour la pagination, l'en-tête reste en place. Un mois daté dans le futur (presque toujours une faute de frappe dans la date) ne se replie jamais : il reste ouvert avec son propre en-tête pour que l'erreur reste visible.
 
-À côté des dates, chaque ligne porte une colonne **État** qui dit la situation en mots simples : « Brouillon », « À envoyer », « échéance du 12 mai dépassée », « échéance dans 3 jours », « le client dit : payé ». Le filtre **Statut** dans le panneau de filtres continue de réduire la liste à un statut précis, y compris brouillon, en retard, payées et annulées, et les ventes du site web gardent leur propre vue de la liste.
+À côté des dates, chaque ligne porte une colonne **État** qui dit la situation en mots simples : « Brouillon », « À envoyer », « échéance du 12 mai dépassée », « échéance dans 3 jours », « le client dit : payé ». Le filtre **Statut** du panneau de filtres limite toujours la liste à un seul statut, y compris brouillon, en retard, payé et annulé. Si vous vendez via votre site, un onglet **Ventes du site** apparaît à côté de **Factures**, avec sa propre liste de ces ventes.
 
-## Creating an invoice
+## Créer une facture
 
-### Full form
+### Le formulaire complet
 
-1. Go to **Invoices > New Invoice**
-2. Select or create a **customer**
-3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from your workspace tax settings (Geldzaken → Belasting). If a customer has reverse charge enabled, the line automatically uses 0%.
-4. Set the **invoice date** and **due date**
-5. Add optional **notes** or **internal remarks**
-6. Click **Save** to create a draft
+1. Ouvrez **Factures** et cliquez sur **Créer**
+2. Choisissez ou créez un **client**
+3. Ajoutez des **lignes** avec description, quantité, prix unitaire et taux de TVA. Le taux par défaut des nouvelles lignes se règle sous **Paramètres › TVA**. Si l'autoliquidation est activée pour un client, la ligne passe automatiquement à 0 %.
+4. Indiquez la **date de facture** et la **date d'échéance**
+5. Ajoutez si besoin des **notes** ou des **remarques internes**
+6. Cliquez sur **Enregistrer** pour créer un brouillon
 
-### Quick Add
+Sur le téléphone, une nouvelle facture ouvre non pas un long formulaire mais un court parcours par étapes : d'abord le client, puis les lignes, puis une étape de vérification avant d'enregistrer et d'envoyer.
 
-For faster creation:
+### À partir d'un modèle
 
-1. Click the quick-add button on the invoices list
-2. Select a customer
-3. Add items or choose a template
-4. Save (and optionally send immediately)
+Dans le formulaire de facture, cliquez sur **À partir d'un modèle** (ce bouton n'apparaît que si vous avez des modèles de facture). Choisissez un modèle et le formulaire se remplit sur place avec les lignes, le client et les autres données enregistrées. Ajustez ce qu'il faut, enregistrez et envoyez. Vous enregistrez une facture comme modèle avec **Enregistrer comme modèle** dans le menu des autres actions de la facture.
 
-Sur le téléphone, ce même bouton n'ouvre pas le long formulaire mais un court parcours en étapes : d'abord le client, puis les lignes, puis une étape de vérification avant d'enregistrer et d'envoyer.
+Un modèle conserve la ligne complète : description, quantité, unité, prix unitaire, taux de TVA, remise et exonération éventuelle de TVA. Il ne garde volontairement pas le lien vers un élément de votre offre, car cet élément peut être supprimé plus tard et le modèle ne fonctionnerait alors plus.
 
-### From a template
+## Prix TTC
 
-You can start a new invoice from a saved template in two places:
+L'interrupteur **Montants TTC** du formulaire change ce que vous saisissez. Activé, le prix d'une ligne est ce que paie le client, TVA comprise, et la TVA est extraite du prix au lieu d'être ajoutée. L'interrupteur existe sur les factures, les devis et les factures récurrentes, chaque document retient son propre choix, et l'indication sous l'interrupteur précise comment vous travaillez.
 
-- In the **full invoice form**, click **Start from template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send.
-- From the **quick-add drawer**, click **Use Template**, select a saved template, and all line items are pre-filled. Adjust as needed, then save and send.
+- Le prix saisi reste en place : si vous changez ensuite le taux de TVA de la ligne, le montant TTC ne bouge pas et le montant HT s'ajuste en dessous.
+- Une remise en euros sur une ligne se déduit de ce que paie le client. Une remise en pourcentage fonctionne comme sur toute autre ligne.
+- Avec des prix TTC, le PDF et les pages de facture et de devis montrent ce que paie le client : le prix unitaire et le montant de la ligne apparaissent TTC (38,00 €, pas 31,40 €), le prix HT figure en petit sous le prix unitaire, et le bloc TVA indique la base de chaque taux (« TVA 21 % sur 35,54 € »). Les composants d'un forfait apparaissent aussi TTC, pour qu'ils s'additionnent jusqu'au prix du forfait. Les totaux du document ne changent pas, et la facture électronique porte les mêmes chiffres.
+- Vous travaillez sans l'interrupteur alors que vos prix saisis sont TTC ? Pour un client particulier, le formulaire vous demande si les prix saisis sont TTC. Un clic bascule le document sans toucher à vos montants. Si vous commencez un nouveau document pour un client particulier, l'interrupteur s'active tout seul (les prix que l'application reprend de votre offre gardent le total de leur ligne), et sous l'interrupteur s'affiche alors « Client particulier : vous saisissez maintenant les prix TTC. », avec un bouton **Désactiver** qui rétablit les prix HT.
 
-Saved templates keep the full line: description, quantity, unit, unit price, VAT rate, discount, and whether the line is VAT exempt. They deliberately do not keep the link to a catalog item, because catalog items can be deleted later and the template would then fail when used.
+## Rattacher une facture à une propriété
 
-## Prices including VAT
+Si le chiffre d'affaires concerne un bien loué, un véhicule ou une autre propriété, choisissez cette propriété dans le formulaire de facture. La facture apparaît alors sur la page de la propriété et compte dans son chiffre d'affaires total. Cela fonctionne pour les factures issues d'un contrat de location comme pour un rattachement direct, par exemple un décompte de charges, des frais ponctuels ou une facture de vente. Les [propriétés](/fr/features/objects) sont un module d'Office.
 
-The **Amounts incl. VAT** switch on the document form changes what you type. With it on, a line price is the price the customer pays, VAT included, and the VAT is taken back out of the price instead of added on top. The switch exists on invoices, quotes and recurring invoices, and each document remembers its own choice; the hint under the switch says which way you are working.
+## La page de la facture
 
-- The price you typed is what stays: change the VAT rate on the line afterwards and the amount including VAT remains in place, with the amount excluding VAT adjusting underneath it.
-- A discount in euros on a line discounts what the customer pays. A percentage discount works the same as on any other line.
-- On prices including VAT, the PDF and the invoice and quote detail show what the customer pays: the unit price and the line amount print including VAT (€ 38,00, not € 31,40), the price excluding VAT sits underneath the unit price in small print, and the VAT block names the base of every rate ("VAT 21% on € 35,54"). Package parts print including VAT too, so they add up to the package price. The totals of the document stay unchanged, and the e-invoice carries the same figures.
-- Working without the switch while the prices you typed are the paid kind? When the customer is a private customer, the form asks whether the prices you typed include VAT. One click switches the document over without touching your amounts. Starting a new document for a private customer turns the switch on by itself (the prices the app fills in from your offering keep their line totals), and a notice under the switch then says "Private customer: you are now typing prices including VAT.", with a **Turn off** button that puts prices excluding VAT back.
+Chaque facture a sa propre page avec :
 
-## Attributing an invoice to an object
+- les données du client
+- les lignes avec sous-totaux
+- le détail de la TVA
+- le montant total
+- le statut et l'historique
+- le lien de paiement (une fois la facture envoyée)
 
-If the revenue belongs to a rental property, vehicle or other asset, select the object in the invoice form. The invoice is then listed on that object's détail page and included in its total revenue. This works both for invoices generated from a rental contract and for direct attribution, such as service-charge settlements, one-off charges and sale invoices.
+## Aperçu du document
 
-## Invoice détails
+Chaque facture enregistrée a sur sa page un aperçu PDF en direct. Vous voyez la facture exactement comme votre client la verra : mise en page, lignes, totaux, image de marque et logo.
 
-Each invoice has a détail page showing:
-
-- Customer information
-- Line items with subtotals
-- VAT breakdown
-- Total amount
-- Status and history
-- Payment link (if sent)
-
-## Document preview
-
-Every saved invoice has a live PDF preview on its détail page. The preview shows the invoice exactly as your customer will see it: layout, line items, totals, branding and logo.
-
-The preview header has a **Download PDF** button, a **Print** button, and a **Change design** button. Click **Change design** to jump straight to the invoice design settings and adjust the look of all your invoices, quotes and reminders. When you are done, you return to the invoice you came from. On mobile the same action lives in the page's'overflow menu so the preview header stays uncluttered.
+L'en-tête de l'aperçu contient les boutons **Télécharger PDF**, **Imprimer** et **Modifier le design**. **Modifier le design** vous mène directement à la mise en page des factures, où vous ajustez l'apparence de toutes vos factures, devis et rappels. Une fois terminé, vous revenez à la facture d'où vous veniez. Sur le téléphone, la même action se trouve dans le menu des autres actions, pour que l'en-tête de l'aperçu reste dégagé.
 
 ## Actions
 
-The top action on the invoice détail page depends on the invoice status:
+Le bouton principal de la page de facture suit l'étape où en est la facture :
 
-- **Send** - Available for draft, sent, and overdue invoices. This is the primary next step when the invoice still needs to reach the customer.
-- **Duplicate** - Shown for cancelled invoices so you can recreate them quickly.
-- **Mark as paid** - Shown when a customer reports a payment, letting you confirm it instead of re-sending the invoice.
+- **Finaliser** : sur un brouillon. La facture reçoit alors son numéro définitif.
+- **Envoyer** : sur une facture finalisée qui n'est pas encore partie chez le client.
+- **Marquer comme payée** : sur une facture envoyée qui attend son paiement, et quand le client signale avoir payé, pour que vous le confirmiez au lieu de renvoyer la facture.
+- **Envoyer un rappel** : sur une facture en retard. **Marquer comme payée** passe alors dans le menu des autres actions.
+- **Dupliquer** : sur une facture payée ou annulée, en bouton secondaire, pour la recréer rapidement.
 
-Additional actions live in the overflow menu next to the top action:
+Les autres actions se trouvent, selon le statut, dans le menu à côté du bouton principal : **Dupliquer**, **Répéter chaque mois** (transforme la facture en facture récurrente), renvoyer l'e-mail, **Envoyer un rappel**, **Envoyer au comptable**, **Enregistrer comme modèle** et annuler la facture. Sur le téléphone, l'aperçu, **Télécharger PDF** et **Modifier le design** s'y trouvent aussi.
 
-- **Download PDF** - Download the invoice as a professionally formatted PDF document with your company logo, branding colors, and all invoice détails.
-- **Cancel** - Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
-- **Duplicate** - Create a copy of an existing invoice, useful for recurring billing to the same customer.
-- **Send reminder** - Send a payment reminder for overdue invoices.
+### Envoyer
 
-### Send
+Envoyez la facture par e-mail à votre client. L'e-mail contient :
 
-Send the invoice to your customer via email. The email includes:
+- un message que vous pouvez adapter (à partir de votre modèle d'e-mail)
+- la facture en pièce jointe PDF
+- un lien de paiement pour payer en ligne
 
-- A customizable message (based on your email template)
-- The invoice PDF as an attachment
-- A payment link for online payment
+Avant l'envoi, l'aperçu de l'e-mail montre le message exactement tel que votre client le recevra. Sous **Inclure dans l'email** se trouvent des interrupteurs pour le **Bouton afficher (lien en ligne)**, le **Bouton télécharger**, la **Pièce jointe PDF** et **Inclure les lignes de facture**. Ce que vous activez apparaît aussitôt dans l'aperçu : ce que vous voyez est ce que reçoit votre client. Vous retouchez le message à chaque fois ? Cochez dans la même fenêtre **Utiliser ce texte désormais pour les factures**, et chaque e-mail de facture suivant partira de cette version. Voir [Modèles d'e-mail](/fr/faq/email-template).
 
-Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Vous peaufinez le message à chaque envoi ? Cochez dans la même fenêtre **Utiliser ce texte désormais pour les factures** : chaque prochain e-mail de facture partira de cette version. Voir [Modèles d'e-mail](/fr/faq/email-template).
+Si votre espace de travail contient des conditions générales dans Documents, l'aperçu de l'e-mail affiche aussi l'interrupteur **Joindre les conditions générales**. Son état de départ suit le réglage choisi pour ce type de document sous [Joindre les conditions par défaut](#joindre-les-conditions-par-defaut) (par défaut : activé pour les devis, désactivé pour les factures). Activé, le PDF des conditions en vigueur est joint à l'e-mail et l'envoi est enregistré comme moment de remise sur le document des conditions.
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. Son état au départ suit le réglage par défaut que vous avez choisi pour ce type de document sous Joindre les conditions par défaut (d'origine : cochée pour les devis, décochée pour les factures). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+### Envoyer en facture électronique Peppol
 
-### Send as Peppol e-invoice
+Si votre espace de travail est sur Office et que la [facturation électronique Peppol](/fr/features/peppol) est activée, la fenêtre d'envoi propose aussi **Facture électronique (Peppol)**. La facture arrive alors directement dans le logiciel comptable de votre client au lieu de partir par e-mail. Vous choisissez le canal facture par facture.
 
-If your workspace is on the Office plan and has [Peppol e-invoicing](/en/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's'accounting software instead of sending it by email. You choose per invoice which channel to use.
+### Télécharger PDF
 
-### Download PDF
+Téléchargez la facture sous forme de PDF soigné, avec votre logo, vos couleurs et toutes les données de la facture.
 
-Download the invoice as a professionally formatted PDF document. The PDF includes your company logo, branding colors, and all invoice détails.
+Si une facture dépasse une page, le PDF la coupe proprement : les totaux restent avec les dernières lignes, sous une mention indiquant que la facture continue, et le bloc de paiement reçoit ensuite une page à lui. Aucune page de suite ne commence par un tableau vide ou une copie répétée des chiffres.
 
-Une facture qui dépasse une page est coupée avec soin dans le PDF : les totaux restent avec les dernières lignes, sous une mention annonçant la suite, et les informations de paiement reçoivent ensuite une page à part. Aucune page suivante ne s'ouvre sur un tableau vide ou une copie répétée des chiffres.
+### Marquer comme payée
 
-### Mark as paid
+Confirmez vous-même un paiement quand le client paie par virement ou autrement, en dehors de l'application.
 
-Manually confirm payment when a customer pays via bank transfer or other offline method.
+### Annuler
 
-### Cancel
+Annulez une facture qui ne doit plus être payée. Les factures annulées restent dans votre comptabilité, pour que tout reste vérifiable.
 
-Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
+### Dupliquer
 
-### Duplicate
+Créez une copie d'une facture existante, pratique pour facturer de nouveau le même client.
 
-Create a copy of an existing invoice, useful for recurring billing to the same customer.
+Une note de crédit ne peut pas être dupliquée. Le duplicata ne renverrait vers aucune facture et compterait quand même comme chiffre d'affaires négatif dans votre déclaration de TVA. Créez plutôt une nouvelle correction via **Créer une note de crédit** sur la facture à corriger.
 
-Credit notes cannot be duplicated. A duplicate would not référence any invoice and would still count as negative revenue in the VAT return, so create a new correction from the invoice you want to correct instead.
+### Envoyer un rappel
 
-### Send reminder
+Envoyez un rappel de paiement pour une facture en retard. Cela fonctionne avec tous les abonnements ; seuls les rappels automatiques font partie d'Office. Si le paiement en ligne est activé, l'e-mail de rappel offre au client les mêmes moyens de paiement que la facture d'origine : un bouton pour voir et payer, un bouton pour confirmer le paiement et un QR code à scanner pour payer sur le PDF.
 
-Send a payment reminder for overdue invoices. If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
+## Actions groupées
 
-## Bulk actions
+Sélectionnez plusieurs factures dans la liste pour les traiter en une fois. La colonne de cases à cocher n'apparaît que pendant une sélection ; une liste vide n'a pas de bouton de sélection.
 
-Select multiple invoices from the list to perform actions in bulk. A checkbox column appears in the list while the selection is running, and nowhere else; an empty list carries no select button.
+- **Marquer comme payé** : enregistrer un paiement pour plusieurs factures à la fois
+- **Marquer comme envoyée** : passer en envoyé des factures que vous avez remises en dehors de MyCompanyDesk. Seul le statut change et les factures reçoivent leur numéro définitif ; aucun e-mail ne part.
+- **Marquer comme annulée** : annuler plusieurs factures à la fois
+- **Archiver** : déplacer les factures dans l'archive
+- **Supprimer** : déplacer les factures dans la corbeille
 
-- **Mark as sent** - Mark multiple draft invoices as sent at once
-- **Mark as paid** - Record payment for multiple invoices
-- **Archive** - Move invoices to the archive
-- **Delete** - Permanently remove invoices
+Dans l'archive et la corbeille, vous restaurez les factures, et depuis la corbeille vous les supprimez définitivement.
 
-Permanently deleting an invoice (single delete, bulk delete, empty trash, or delete all) releases any attached expenses. They return to the uninvoiced list and can be added to another invoice.
+Supprimer définitivement une facture (seule, en groupe, en vidant la corbeille ou en supprimant tout) libère les dépenses qui y étaient liées. Elles reviennent dans les dépenses non facturées et peuvent aller sur une autre facture.
 
-Bulk finalizing runs the same VAT and status checks as sending a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
+Passer des factures en envoyé par lot effectue les mêmes contrôles de TVA et de statut que la finalisation d'une seule facture. Les factures qui échouent à un contrôle sont ignorées, et l'écran de résultat explique pourquoi.
 
-If a bulk action is refused because one or more selected rows fall inside a locked VAT period, the error message names the exact period and tells you what to do next. A filed and locked period can only be reopened via a supplementary VAT return. A bare lock (the period's filing deadline has passed but no return was filed) can be unlocked temporarily from the VAT page. Remove rows that fall in that period from your selection, or use the matching correction route, then try again.
+Si l'application refuse une action groupée parce qu'une ou plusieurs lignes sélectionnées tombent dans une période de TVA verrouillée, le message d'erreur nomme précisément cette période et dit quoi faire. Une période déposée et verrouillée ne se rouvre que par une déclaration rectificative (suppletie). Un simple verrouillage (le délai de dépôt est passé sans déclaration) peut être levé temporairement depuis la page TVA. Retirez de votre sélection les lignes de cette période, ou utilisez la voie de correction adaptée, puis réessayez.
 
-## Payment links
+## Liens de paiement
 
-When you send an invoice, a unique payment link is generated. Your customer can:
+Quand vous envoyez une facture, MyCompanyDesk crée un lien de paiement unique. Votre client peut :
 
-1. Click the link in the email
-2. View the invoice in the **customer portal**
-3. Pay directly online using your connected Mollie or Stripe account
+1. cliquer sur le lien dans l'e-mail
+2. consulter la facture dans le **portail client**
+3. payer directement en ligne via votre compte Mollie ou Stripe connecté
 
-Avec Mollie ou Stripe connecté, le courriel commence par un bouton **Payer maintenant** qui va droit à la page de paiement, avec **Voir la facture** à côté pour les clients qui veulent d'abord regarder. Le paiement ne démarre que dans le navigateur du client, aussi les analyseurs de courriels n'en créent aucun. Le détail se trouve au [portail client](/fr/advanced/customer-portal#paiement).
+Avec Mollie ou Stripe connecté, l'e-mail commence par un bouton **Payer maintenant** qui mène directement à la page de paiement, avec **Voir la facture** à côté pour ceux qui veulent d'abord regarder. Le paiement ne démarre que dans le navigateur du client, les scanners de messagerie n'en créent donc pas. Plus de détails dans [le portail client](/fr/advanced/customer-portal#paiement).
 
-Payment is automatically recorded and the invoice status updates to **Paid**.
+Le paiement est enregistré automatiquement et la facture passe à **Payée**.
 
-If an invoice is canceled after it was sent, the payment link stops working. If a customer clicks the link in the old email or PDF, they see a message that the invoice was canceled and can no longer be paid online.
+Si vous annulez une facture après l'avoir envoyée, le lien de paiement cesse de fonctionner. Un client qui clique sur le lien dans l'ancien e-mail ou le PDF voit que la facture est annulée et ne peut plus être payée en ligne.
 
-## Online payments
+## Paiement en ligne
 
-Enable online invoice payments by connecting your own Mollie or Stripe account:
+Permettez à vos clients de payer vos factures en ligne en connectant votre propre compte Mollie ou Stripe :
 
-1. Go to **Money → Payments** in your workspace sidebar
-2. Under **Online betalingen**, connect your processor of choice
-3. Mollie supports iDEAL, Bancontact, credit card, and bank transfer
-4. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit
+1. Ouvrez **Paramètres › Paiement**
+2. Sous **Permettre aux clients de payer par iDEAL**, connectez Mollie ou Stripe
+3. Votre client voit les moyens de paiement actifs dans votre propre compte Mollie ou Stripe, comme iDEAL, la carte bancaire ou Bancontact
 
-Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account. Funds go directly to you. MyCompanyDesk does not handle or hold your payments.
+Une fois la connexion faite, chaque facture envoyée contient un lien de paiement. Vos clients paient via votre propre compte chez le prestataire de paiement et l'argent arrive directement chez vous. MyCompanyDesk ne gère pas votre argent et ne le retient pas.
 
-## Payment processor badge
+Sur la même page, vous indiquez votre IBAN pour les virements (le QR code à scanner pour payer sur le PDF l'utilise) et, avec **Les clients peuvent aussi payer via PayPal**, l'adresse e-mail de votre compte PayPal.
 
-When an invoice is fully paid, the payment section header shows a badge identifying which processor the payment came through: "Paid via Mollie" or "Paid via Stripe". The dominant processor is displayed when multiple payment methods were used. This lets you see at a glance where the money landed without scrolling through the payment history.
+## Origine du paiement
 
-## Payment refunds
+Quand une facture est entièrement payée, l'en-tête du bloc de paiement affiche une étiquette indiquant par quel prestataire l'argent est arrivé : « Payé via Mollie » ou « Payé via Stripe ». Avec plusieurs moyens de paiement, c'est le prestataire principal qui s'affiche. Vous voyez ainsi d'un coup d'œil où l'argent est arrivé, sans parcourir l'historique des paiements.
 
-Online payments made via Mollie or Stripe can be refunded directly from MyCompanyDesk. When you refund a payment:
+## Rembourser un paiement
 
-- The full amount is returned to your customer through the same payment provider
-- The refund is processed immediately by Mollie or Stripe
-- The payment is marked as refunded in your records
+Les paiements en ligne via Mollie ou Stripe se remboursent directement depuis MyCompanyDesk. Quand vous remboursez un paiement :
 
-Partial refunds initiated at Mollie or Stripe (for example, when you refund only part of the amount there) now appear in the payment list with the refund date and the remaining booked amount.
+- le montant total retourne à votre client via le même prestataire de paiement
+- Mollie ou Stripe traite le remboursement immédiatement
+- le paiement est marqué comme remboursé dans votre comptabilité
 
-Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund. When you void a payment, the invoice status is restored to the state that matches the invoice history. If the invoice had already been emailed to the customer, it returns to **Sent**; if it had never been sent, it returns to **To send**. The original sending history is preserved.
+Un remboursement partiel lancé directement chez Mollie ou Stripe (par exemple si vous n'y remboursez qu'une partie du montant) apparaît dans la liste des paiements avec la date du remboursement et le montant qui reste comptabilisé.
 
-To refund a payment:
+Les paiements hors application (virement, espèces) s'annulent sans remboursement par un prestataire : le paiement est marqué comme annulé. La facture reprend alors le statut qui correspond à son historique. Si la facture avait déjà été envoyée par e-mail au client, elle revient à **Envoyée** ; si elle n'avait jamais été envoyée, elle revient à **À envoyer**. L'historique d'envoi d'origine est conservé.
 
-1. Open the invoice détail page
-2. Locate the payment in the payment list
-3. Click the **refund** button (available for Mollie and Stripe payments only)
-4. Add an optional reason
-5. Confirm the refund
+Pour rembourser un paiement :
 
-## Document types
+1. Ouvrez la page de la facture
+2. Repérez le paiement dans la liste des paiements
+3. Cliquez sur **Rembourser** (uniquement pour les paiements Mollie et Stripe)
+4. Indiquez éventuellement un motif
+5. Confirmez le remboursement
 
-The invoice module supports multiple document types:
+## Types de documents
 
-- **Invoice** - Standard billing document
-- **Credit note** - Adjustment for refunds or corrections
-- **Reminder** - Payment reminder for overdue invoices
+Les factures regroupent plusieurs types de documents :
 
-## Filtering and search
+- **Facture** : le document de facturation habituel
+- **Note de crédit** : une correction, par exemple lors d'un remboursement
+- **Rappel** : un rappel de paiement pour une facture en retard
 
-Use the filter bar to narrow down your invoices:
+## Filtrer et rechercher
 
-- **Status** - Draft, Sent, Overdue, Paid, Cancelled
-- **Customer** - Filter by specific customer
-- **Project** - Filter by linked project
-- **Date range** - Filter by invoice or due date
-- **Search**: Search by invoice number, customer name, référence, or notes
-- **Deep links**: Notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
+Avec le panneau de filtres et le champ de recherche, vous affinez la liste :
 
-## Receivables ageing card
+- **Statut** : à envoyer, brouillon, en attente de paiement, en retard, vérification requise, payé ou annulé
+- **Période** : filtre sur la date de facture
+- **Vue** : factures actives, archive ou corbeille
+- **Recherche** : par client, numéro ou référence
+- **Liens directs** : les notifications et e-mails qui pointent directement vers une facture effacent à l'ouverture un filtre de dates actif, pour que la facture ne soit pas cachée par un filtre resté en place
 
-The **Outstanding** tab shows a receivables ageing card that groups open invoices by how many days they are past their due date. The amounts shown are the remaining collectible balance: the invoice total minus posted payments, with any credit notes already issued against the invoice taken into account.
+Les factures d'un seul client s'ouvrent depuis la page de ce client.
 
-Because the card only sees the invoices loaded in the current list view, its bucket totals are a snapshot of that page, not a full workspace-lifetime figure. A fully credited invoice no longer appears as money still to collect, so the totals match what your customer sees in the portal and what the invoice détail page shows.
+## Âge des créances
 
-## Export
+Sur ordinateur, la carte **Âge des créances** s'affiche à côté de la liste. Elle répartit les factures ouvertes selon le nombre de jours écoulés depuis l'échéance : courant, 1 à 30, 31 à 60, 61 à 90 et plus de 90 jours de retard. Cliquez sur un groupe pour limiter la liste à celui-ci. Les montants correspondent à ce qui reste à encaisser : le total de la facture moins les paiements comptabilisés, en tenant compte des notes de crédit déjà émises sur la facture.
 
-Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software. This export is available on every plan.
+La carte ne voit que les factures chargées dans la liste actuelle. Ses totaux sont donc un instantané de cette page, pas un chiffre portant sur tout l'espace de travail. Une facture entièrement créditée ne compte plus comme de l'argent à recevoir, si bien que les totaux correspondent à ce que votre client voit dans le portail et à la page de la facture.
 
-## Finalizing and sending
+## Exporter
 
-When you finalize or send an invoice, MyCompanyDesk checks that your company has a btw-id (VAT number) and IBAN on file. In the Netherlands, a valid invoice requires your btw-id, and your IBAN tells customers where to pay.
+Téléchargez vos factures en fichier CSV pour Excel, Google Sheets ou votre logiciel comptable sous **Paramètres › Télécharger les données**. C'est possible avec tous les abonnements.
 
-If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
+## Finaliser et envoyer
 
-The app also blocks finalization if your company détails are incomplete (for example a missing business name or address) or if the invoice has no line items. The error message points to exactly what is missing, so you can fix it before the invoice goes to the customer.
+Quand vous finalisez ou envoyez une facture, MyCompanyDesk vérifie que votre numéro de TVA néerlandais (btw-id) et votre IBAN sont renseignés. Aux Pays-Bas, le btw-id doit figurer sur une facture valable, et l'IBAN indique aux clients où payer.
 
-Invoice quantities on the PDF are formatted in the same language as the rest of the document, so an English invoice uses English number formatting and a Dutch invoice uses Dutch formatting.
+S'il manque l'un des deux, une fenêtre s'ouvre pour le saisir tout de suite. Après l'enregistrement, votre facture est finalisée automatiquement.
 
-If your workspace uses manual numbering, the app also asks you to enter the invoice number when you finalize or send. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
+L'application bloque aussi la finalisation si les données de votre entreprise sont incomplètes (par exemple un nom ou une adresse manquants) ou si la facture n'a aucune ligne. Le message d'erreur indique précisément ce qui manque, pour que vous corrigiez avant que la facture parte chez le client.
 
-If you are still waiting for your btw-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your btw-id later once you have it.
+Les quantités du PDF suivent la langue du reste du document : une facture en anglais utilise la notation anglaise des nombres, une facture en néerlandais la notation néerlandaise.
 
-Once an invoice has been finalized, it cannot be archived or deleted in one step, because the invoice number has already been used. Use the cancel or credit-note flow to handle a finalized invoice that should no longer be paid.
+Si votre espace de travail numérote à la main, l'application vous demande aussi le numéro de facture lors de la finalisation ou de l'envoi. MyCompanyDesk propose le numéro suivant de votre série, mais vous pouvez saisir n'importe quel numéro. Le numéro est obligatoire et doit être unique.
 
-## Payment method status
+Si vous attendez encore votre btw-id de l'administration fiscale néerlandaise, ou si vous relevez du régime des petites entreprises (KOR), vous pouvez le confirmer et continuer. Ajoutez votre btw-id plus tard, dès que vous l'avez.
 
-Payment methods can be active or inactive in your workspace:
+Une fois finalisée, une facture ne peut pas être archivée ou supprimée en une étape, car son numéro est déjà utilisé. Passez par l'annulation ou une note de crédit pour une facture finalisée qui ne doit plus être payée.
 
-- **Active** methods appear as options when sending an invoice or setting up a customer mandate.
-- **Inactive** methods are hidden from new invoices and mandates. Existing mandates stay valid, but you cannot create new ones for an inactive method.
+<a id="receiving-invoices-from-other-mycompanydesk-users"></a>
 
-iDEAL, bank transfer (scan-and-pay QR), PayPal, and credit card are available when your connected processor supports them. Availability depends on the processor you connect (Mollie or Stripe) and the country of your account. A method that is not available for your processor/country does not appear at all.
+## Recevoir des factures d'autres utilisateurs MyCompanyDesk
 
-When an online payment method is inactive, invoices still show the method list, but the inactive option is greyed out or hidden and the customer cannot select it. You can reactivate a method from **Money → Payments → Online payments**.
+Quand un fournisseur qui utilise aussi MyCompanyDesk vous envoie une facture par e-mail, elle peut arriver directement dans vos dépenses sous forme de brouillon structuré. Les montants viennent de la facture elle-même : rien à scanner ni à recopier. Le brouillon est toujours à vérifier et n'est comptabilisé qu'après votre validation.
 
-<!-- TODO(source-missing): confirm exact labels for inactive payment method states and whether PayPal is enabled for both Mollie and Stripe. -->
+Cette fonction est désactivée par défaut. Activez-la sous **Paramètres › Automatisation**, à la rubrique **Factures d'autres utilisateurs MyCompanyDesk**. Au même endroit, vous la désactivez à tout moment.
 
-## Receiving invoices from other MyCompanyDesk users
+Quand la fonction est active :
 
-When a supplier who also uses MyCompanyDesk emails you an invoice, you can have it land straight in your expenses as a structured draft. The amounts come from the invoice itself, so there is no scanning or retyping. The draft is always created in review status and is not booked until you approve it.
+- chaque facture entrante apparaît comme dépense brouillon sous **Dépenses**, avec le nom du fournisseur et les totaux des lignes déjà remplis
+- la description indique de quel espace de travail MyCompanyDesk elle vient et qu'elle est arrivée via MyCompanyDesk
+- des règles pour fournisseurs de confiance peuvent préremplir la catégorie, mais le brouillon reste à vérifier, pour que rien ne soit comptabilisé tout seul
+- la même facture ne devient jamais deux brouillons, même si l'expéditeur renvoie l'e-mail
+- MyCompanyDesk accepte au plus dix brouillons du même expéditeur par période de 24 heures dans votre espace de travail, pour que votre liste à vérifier ne déborde pas
 
-This feature is off by default. Turn it on at **Settings > Automations** (`/settings/automatisering`) under **Invoices from other MyCompanyDesk users**. You can switch it off at any time from the same place.
+La seconde voie ne demande aucun réglage : le portail client propose sur la facture elle-même le bouton **Ajouter à ma comptabilité**, et ce clic vaut accord. MyCompanyDesk crée alors le brouillon dans l'espace de travail du destinataire, sans l'interrupteur ci-dessus ni la limite quotidienne, quelle que soit la boîte où la facture est arrivée. Les deux voies partagent le même contrôle des doublons, si bien qu'une facture déjà arrivée automatiquement n'est jamais comptabilisée deux fois. Le bouton lui-même est décrit dans [le portail client](/fr/advanced/customer-portal#la-facture-dans-votre-propre-comptabilite).
 
-When the feature is active:
+La fonction est gratuite des deux côtés. La voie automatique ne fonctionne que si le fournisseur envoie la facture à une boîte que MyCompanyDesk héberge pour vous. Vous préférez un réseau ? Vous pouvez aussi recevoir les factures de vos fournisseurs via la [facturation électronique Peppol](/fr/features/peppol).
 
-- Each incoming invoice appears as a draft expense under **Expenses** with the supplier name and the line totals already filled in.
-- The description shows which MyCompanyDesk workspace sent it and that it arrived via MyCompanyDesk.
-- Trusted-vendor rules may prefill the category, but the draft still stays in review so nothing is booked automatically.
-- The same invoice can never be turned into two drafts: a database-level deduplication guard blocks duplicates, even if the sender resends the email.
-- To protect your review queue, MyCompanyDesk limits each sender to at most ten drafts in your workspace per rolling 24-hour window. The cap is enforced in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
+## Conseils
 
-La deuxième entrée ne demande aucun réglage : le portail client porte un bouton **Ajouter à ma comptabilité** sur la facture elle-même, et le clic vaut consentement. MyCompanyDesk comptabilise la provisoire dans l'espace de travail du destinataire à ce moment-là, sans l'interrupteur ci-dessus et sans la limite quotidienne, et cela marche quelle que soit la boîte où la facture est arrivée. Les deux entrées partagent la même déduplication, ainsi une facture déjà arrivée automatiquement n'est jamais comptabilisée une seconde fois. Le bouton lui-même est décrit dans [le portail client](/fr/advanced/customer-portal#la-facture-dans-votre-propre-comptabilite).
-
-The feature is free on both sides. It only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/en/features/peppol).
-
-## Tips
-
-- Set up your [email templates](/en/settings/email) before sending your first invoice
-- Use [recurring invoices](/en/features/recurring-invoices) for regular billing
-- Check the [reports](/en/features/reports) page for revenue insights
-- Enable [AI suggestions](/en/advanced/ai-features) for smart description improvements
-- Use [Peppol e-invoicing](/en/features/peppol) when your customer prefers digital delivery
+- Configurez vos [modèles d'e-mail](/fr/settings/email) avant d'envoyer votre première facture
+- Utilisez les [factures récurrentes](/fr/features/recurring-invoices) (Office) pour une facturation régulière
+- Consultez les [rapports](/fr/features/reports) (Office) pour comprendre votre chiffre d'affaires
+- Activez les [suggestions IA](/fr/advanced/ai-features) (Office) pour de meilleures descriptions
+- Utilisez la [facturation électronique Peppol](/fr/features/peppol) (Office) quand votre client préfère une remise numérique

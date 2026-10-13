@@ -1,7 +1,7 @@
 ---
 title: Reverse charge
-description: "To create a reverse charge (EU) invoice: go to Invoices > New Invoice."
-last_verified: 2026-07-02
+description: "To create a reverse charge (EU) invoice: go to Invoices › New Invoice."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
   actions:
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 To create a reverse charge (EU) invoice:
-1. Go to Invoices → New Invoice
+1. Go to Invoices › New Invoice
 2. Select your EU customer and check that their VAT number is filled in on the customer record
 3. Turn on the "VAT Reverse Charge (BTW verlegd)" toggle on the invoice form; MyCompanyDesk suggests it automatically for EU business customers
 4. The VAT on all line items switches to 0% automatically when the toggle is on, and returns to the previous rate if you switch it off again; no manual changes needed.
@@ -31,7 +31,7 @@ If the supplier country or KVK number is missing, the pre-filing check on the VA
 
 ## Import reverse charge (non-EU suppliers)
 
-Some suppliers outside the EU do not charge Dutch VAT on their invoices. Instead, you self-account for the VAT on your aangifte. In MyCompanyDesk this is `import_reverse_charge` and it lands in rubriek 4a, not 4b.
+Some suppliers outside the EU do not charge Dutch VAT on their invoices. Instead, you self-account for the VAT on your aangifte. In MyCompanyDesk this VAT treatment is called **Import reverse charge** and the VAT lands in rubriek 4a, not 4b.
 
 Use this treatment when:
 

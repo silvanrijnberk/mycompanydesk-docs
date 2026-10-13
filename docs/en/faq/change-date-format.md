@@ -13,4 +13,4 @@ Date, time, and number formatting in MyCompanyDesk follows Dutch conventions and
 
 Number input fields, such as price and payment amount fields, accept both a comma and a period as the decimal separator, no matter which language your browser uses.
 
-What you can change is the language of the app itself: go to Settings → "Weergave" (display) and pick Dutch, English, German, or French for the interface.
+What you can change is the language of the app itself: go to Settings › "Display" and pick Dutch, English, German, or French for the interface.

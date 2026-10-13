@@ -1,7 +1,7 @@
 ---
-title: Teamzugriff
-description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
-last_verified: 2026-09-15
+title: "Teamzugriff"
+description: "So verwalten Sie, wer Zugriff auf Ihren Arbeitsbereich hat: Einstellungen, Personen mit Zugriff, dann jemanden einladen oder Rechte festlegen."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "team access"
@@ -23,7 +23,7 @@ chatbot:
     - "teamleden"
     - "uitnodigen"
     - "werkruimte"
-    - "toegang en boekhouder"
+    - "mensen met toegang"
   actions:
     - { label: "Open access settings", to: "/settings/toegang" }
   follow_up:
@@ -34,11 +34,13 @@ chatbot:
 
 ---
 
-To manage who has access to your workspace:
+So verwalten Sie, wer Zugriff auf Ihren Arbeitsbereich hat:
 
-1. Go to Settings → **Toegang en boekhouder** (access and accountant)
-2. Review current members and roles in the **Mensen met toegang** (people with access) section
-3. Click **Iemand toegang geven** (give someone access) to invite a teammate by email
-4. Click the **Toegang beheren** (manage access) button or gear icon on a member row to set page permissions
+1. Gehen Sie zu Einstellungen › **Personen mit Zugriff**
+2. Prüfen Sie, wer bereits Zugriff hat und mit welcher Rolle: **Inhaber**, **Admin** oder **Mitglied**
+3. Klicken Sie auf **Teammitglied einladen**, geben Sie die E-Mail-Adresse ein und klicken Sie auf **Einladung senden**
+4. Möchten Sie festlegen, was jemand pro Seite darf? Öffnen Sie das Menü in der Zeile dieser Person (auf dem Telefon die Schaltfläche **Verwalten**) und wählen Sie **Zugang verwalten**
 
-Permissions are managed per page with Read, Write and Create options. Inviting team members requires the **Office** plan; the accountant section on the same page is free on every plan.
+Berechtigungen legen Sie pro Seite mit Lesen, Schreiben und Erstellen fest, siehe [Teamberechtigungen](/de/faq/team-permissions). Personen einladen können Sie mit dem Tarif **Office**, beliebig viele und ohne Kosten pro Person.
+
+Ihrem Buchhalter geben Sie unter Einstellungen › **Ihr Buchhalter** Zugriff. Das ist in jedem Tarif kostenlos.

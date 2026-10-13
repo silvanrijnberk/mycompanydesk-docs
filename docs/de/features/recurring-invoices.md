@@ -19,16 +19,16 @@ Wiederkehrende Rechnungen sind Vorlagen, die automatisch neue Rechnungen in fest
 
 ## Wiederkehrende Rechnung erstellen
 
-1. Gehen Sie zu **Wiederkehrende Rechnungen > Neu**
+1. Öffnen Sie **Wiederkehrend**, Reiter **Rechnungen**, und klicken Sie auf **Wiederkehrende Rechnung hinzufügen**
 2. Füllen Sie die Vorlage aus:
-   - **Kunde** — Wem abgerechnet wird
-   - **Positionen** — Was abgerechnet wird (Beschreibungen, Beträge, USt.)
-   - **Häufigkeit** — Wie oft (wöchentlich, monatlich, vierteljährlich, jährlich)
-   - **Startdatum** — Wann die Generierung beginnen soll
+   - **Kunde**: wem abgerechnet wird
+   - **Positionen**: was abgerechnet wird (Beschreibungen, Beträge, USt.)
+   - **Frequenz**: wie oft (wöchentlich, monatlich, vierteljährlich, jährlich)
+   - **Startdatum**: wann die erste Rechnung erstellt wird
 3. Klicken Sie auf **Speichern**
 
-::: tip Weitere Optionen
-Im Formular für neue wiederkehrende Rechnungen bleiben optionale Angaben unter **Weitere Optionen** verborgen. Notizen stehen dort standardmäßig; klappen Sie den Abschnitt aus, wenn Sie sie ergänzen möchten.
+::: tip Mehr Optionen
+Im Formular für neue wiederkehrende Rechnungen bleiben optionale Angaben unter **Mehr Optionen** verborgen. Notizen stehen dort standardmäßig; klappen Sie den Abschnitt aus, wenn Sie sie ergänzen möchten.
 :::
 
 Die wiederkehrende Rechnung wird im Status **Aktiv** erstellt und generiert ihre erste Rechnung am nächsten geplanten Datum.
@@ -41,11 +41,11 @@ Positionen wiederkehrender Rechnungen funktionieren wie bei regulären Rechnunge
 - Ein Prozentrabatt kann nicht höher als 100 % sein.
 - Ein Rabattwert darf nicht negativ sein.
 
-Das Formular trägt denselben Schalter **Beträge inkl. MwSt.** wie das Rechnungsformular. Ist er an, sind die getippten Preise das, was der Kunde zahlt, MwSt. inklusive. Siehe [Rechnungen](/de/features/invoices#prices-including-vat).
+Das Formular trägt denselben Schalter **Beträge inkl. MwSt.** wie das Rechnungsformular. Ist er an, sind die getippten Preise das, was der Kunde zahlt, MwSt. inklusive. Siehe [Rechnungen](/de/features/invoices#preise-inklusive-mehrwertsteuer).
 
 ## Zahlungsoptionen und Rechnungsdaten
 
-Eine wiederkehrende Rechnung kann dieselben Dokumentfelder mitbringen wie eine normale Rechnung. Unter **Zahlungsoptionen** legen Sie die Zahlungsart dieser Serie fest. Solange Sie nichts wählen, folgt jede Rechnung den Zahlungseinstellungen Ihres Unternehmens, sodass eine Änderung unter Einstellungen → Zahlung von selbst in die Serie durchschlägt. Einmal gewählt, nimmt die Schaltfläche **Standard Ihres Unternehmens verwenden** die Auswahl zurück. Die Zahlungsnotiz funktioniert genauso.
+Eine wiederkehrende Rechnung kann dieselben Dokumentfelder mitbringen wie eine normale Rechnung. Unter **Zahlungsoptionen** legen Sie die Zahlungsart dieser Serie fest. Solange Sie nichts wählen, folgt jede Rechnung den Zahlungseinstellungen Ihres Unternehmens, sodass eine Änderung unter Einstellungen › Zahlung von selbst in die Serie durchschlägt. Einmal gewählt, nimmt die Schaltfläche **Standard Ihres Unternehmens verwenden** die Auswahl zurück. Die Zahlungsnotiz funktioniert genauso.
 
 Unter **Rechnungsdetails** legen Sie fest, was auf jeder Rechnung dieser Serie steht: **Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)**, die **Referenz**, das **Projekt** und der **Vermögenswert**, zu dem die Abrechnung gehört, plus der Schalter, der diese Serie vor Ihrem Buchhalter verbirgt. MyCompanyDesk schlägt Reverse Charge vor, wenn ein Kunde wie ein EU-Unternehmen außerhalb der Niederlande aussieht, und warnt, wenn der Kunde keine USt-IdNr. hat. Reverse Charge braucht die USt-IdNr. des Kunden: ohne sie weigert sich das Formular, die Serie zu speichern, und fehlt sie später, hält die Generierung diese Rechnung als Entwurf ohne Nummer an und benachrichtigt Sie, statt eine ungültige Rechnung unbeaufsichtigt zu versenden.
 
@@ -66,7 +66,7 @@ Unter **Nach dem Erstellen** legt die Reihe fest, was mit jeder erzeugten Rechnu
 
 - **Entwurf**: Die Rechnung liegt als Entwurf bereit. Sie prüfen und versenden sie selbst.
 - **Versenden**: Sie erhalten eine Benachrichtigung, und die Rechnung geht einen Tag später an den Kunden, außer Sie halten sie an diesem Tag zurück. Eine zurückgehaltene Rechnung bleibt in der App liegen und ist bereit zum Versand.
-- **Einziehen**: Wie bei Versenden, und der Betrag wird zusätzlich über das Lastschriftmandat des Kunden eingezogen. Dieses Mandat richten Sie einmalig in einem Vertrag mit diesem Kunden ein; siehe [Automatischer Einzug](/de/features/contracts#automatic-collection).
+- **Einziehen**: Wie bei Versenden, und der Betrag wird zusätzlich über das Lastschriftmandat des Kunden eingezogen. Dieses Mandat richten Sie einmalig in einem Vertrag mit diesem Kunden ein; siehe [Automatischer Einzug](/de/features/contracts#automatischer-einzug).
 
 Das Formular weist von selbst darauf hin, wenn eine Wahl nicht möglich ist: Versenden braucht einen Kunden mit E-Mail-Adresse, und Einziehen ein gültiges Lastschriftmandat.
 
@@ -117,7 +117,7 @@ Rechnungsgenerierung vorübergehend stoppen:
 
 1. Öffnen Sie die wiederkehrende Rechnung
 2. Klicken Sie auf **Pausieren**
-3. Der Status ändert sich zu **Pausiert** — es werden keine Rechnungen generiert
+3. Der Status ändert sich zu **Pausiert**: es werden keine Rechnungen generiert
 
 ### Fortsetzen
 
@@ -144,7 +144,7 @@ Jedes Mal, wenn eine wiederkehrende Rechnung ausgelöst wird, wird eine neue Rec
 - Sie verwendet die Positionen und den Kunden der Vorlage
 - Sie erhält die nächste automatische Rechnungsnummer
 - Was danach passiert, hängt von der Zustellungsart der Reihe ab: Die Rechnung liegt als Entwurf bereit, geht einen Tag später heraus, außer Sie halten sie zurück, oder sie wird zusätzlich über das Lastschriftmandat eingezogen
-- Jede generierte Rechnung ist unabhängig — Sie können sie bearbeiten, ohne die Vorlage zu beeinflussen
+- Jede generierte Rechnung ist unabhängig: Sie können sie bearbeiten, ohne die Vorlage zu beeinflussen
 
 ### Gesperrte USt.-Perioden
 
@@ -166,8 +166,7 @@ Wiederkehrende Rechnungen sind Teil des Office-Tarifs. Bei einem Upgrade von Des
 
 ## Massenaktionen
 
-- **Pausieren / Fortsetzen** — Mehrere wiederkehrende Rechnungen umschalten
-- **Löschen** — Mehrere Vorlagen entfernen
+- **Pausieren** oder **Fortsetzen**: mehrere wiederkehrende Rechnungen gleichzeitig anhalten oder wieder starten
 
 ## Tipps
 

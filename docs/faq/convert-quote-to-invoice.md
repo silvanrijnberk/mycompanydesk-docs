@@ -1,6 +1,6 @@
 ---
 title: "Offerte omzetten naar factuur"
-description: "Om een offerte om te zetten naar een factuur: open de offerte-detailpagina, klik op Factuur maken vanuit offerte."
+description: "Om een offerte om te zetten naar een factuur: open de definitieve offerte en klik op Factuur maken. Er komt een conceptfactuur klaar."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -26,7 +26,7 @@ chatbot:
 
 Om een offerte om te zetten naar een factuur:
 1. Open de offerte-detailpagina
-2. Klik op "Factuur maken vanuit offerte"
+2. Klik op "Factuur maken"
 3. Er wordt een nieuwe conceptfactuur gemaakt met gekopieerde klant, regels en notities
 4. Controleer vervaldatum en betaalvoorwaarden
 5. Sla op en verstuur

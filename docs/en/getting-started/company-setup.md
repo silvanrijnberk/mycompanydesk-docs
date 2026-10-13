@@ -1,63 +1,74 @@
 ---
 title: Set up your company
-description: "The setup wizard fills in your sender block, payment details and VAT status around your first invoice, with a KVK lookup and a live preview."
-last_verified: 2026-09-30
+description: "The setup wizard fills in your company details, VAT status and IBAN for your first invoice, with a KVK lookup and a live preview."
+last_verified: 2026-10-13
 ---
 
 # Set up your company
 
-The first time you sign in, MyCompanyDesk walks you through a short **setup wizard** at `/setup`. The wizard is built around your first invoice: it asks who you are billing and fills in your sender block, payment details and VAT status while showing a live preview of the invoice. You can also have it look up your company in the Dutch trade register (KVK). Nothing is locked in: every step can be skipped and everything can be changed later in Settings.
+The first time you sign in, MyCompanyDesk walks you through a short **setup wizard** at `/setup` (**Let's set up your business**). The wizard is built around your first invoice: it fills in your sender block, VAT status and IBAN while showing a live preview of the invoice. You look up your company details in the Dutch trade register (KVK). Nothing is locked in: every step can be skipped and everything can be changed later in Settings.
 
 ## Where to find it
 
 - **First sign-in:** the wizard opens automatically.
-- **Later:** open `/setup` directly at any time to run or re-run the wizard. While setup is unfinished the dashboard keeps pointing at the next step in its own way, under **Zet dit op**.
-- **Skipping:** the wizard has a **Leave for now** button on every step. Your answers so far are saved, so you continue where you left off.
+- **Later:** as long as you have not finished the wizard, open `/setup` directly and you continue where you left off. The dashboard points at whatever is still open under **Set this up**. Once you have finished the wizard, `/setup` takes you to the dashboard; from then on you change your details in Settings.
+- **Skipping:** every step has a **Skip for now** button. Your answers so far are saved.
+- **Mainly here for your website?** The first step asks **Mainly here for your website?** with the link **Build my website first**, which takes you straight to the website wizard.
 
-## Step 1: Who you are billing
+The wizard has three steps: **KVK**, **Start** and **VAT and IBAN**.
 
-The wizard opens with a live invoice preview and asks for the customer. Start typing the customer name.
+## Step 1: Your company details (KVK)
 
-- If the customer already exists in your workspace, select them from the dropdown.
-- To create a new customer inline, type the name and click **Create customer**. The inline form asks for the customer name and address. The KVK lookup can suggest Dutch businesses by company name or KVK number and fill in the address automatically; private customers can be added by typing the address by hand.
-- The customer email is optional and only used when you send the invoice.
+This step fills the sender block of your invoice. Type your company name or KVK number in the **Company name or KVK number** field and pick your business from the list. MyCompanyDesk then pulls your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. It only fills fields that are still empty, so anything you already entered stays untouched.
 
-Only the customer name is required to continue. You can finish the customer's details later from the customer page.
+If you signed up through the MyCompanyDesk website and already looked up your business there, the wizard carries that KVK number over and applies it automatically as soon as you reach this step.
 
-## Step 2: Your company details (KVK)
-
-This step prefills the sender block of your invoice. If you signed up via the marketing site and selected your business in the KVK lookup there, your KVK number is already carried into the wizard and auto-applied as soon as you reach this step. MyCompanyDesk then pulls your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. It only fills fields that are still empty, so anything you already entered stays untouched.
-
-The marketing-site preview that brings you into the wizard now recognizes a wider range of trades. It first tries to match your trade from the business name. If the name is ambiguous, it can also read the SBI description from your KVK Basisprofiel and, if still needed, use a lightweight AI classifier to pick the best fit. When nothing matches, the preview falls back to a neutral self-employed persona instead of a generic handyman placeholder, and it uses your registered city when one is available.
+The preview you saw on the website picks your trade from your business name first. If the name is ambiguous, it reads the business activity (SBI) from your KVK Basisprofiel and, if still needed, lets AI pick the best fit. When nothing matches, it shows a neutral example. The city comes from your KVK registration when one is available.
 
 No match, or no KVK registration?
 
-- **Fill in manually**: enter your company name, KVK number, address, postal code and city yourself.
-- **No KVK registration?**: skip the lookup entirely and add your details later in Settings.
+- **Fill in manually**: enter your company name, KVK number (optional), address, postal code and city yourself and click **Save and continue**.
+- **I have no KVK number**: skip the lookup and add your details later in Settings.
 
-## Step 3: How you get paid
+## Step 2: What do you want to start with?
 
-The step has two parts: your VAT status and your IBAN.
+Pick what you need first:
+
+- **Send invoices and quotes**: you continue to the last step, VAT and IBAN.
+- **Your own website**: the wizard finishes with **Go to your website** and takes you to the website wizard.
+- **Email on your own domain**: the wizard finishes with **Go to your email** and takes you to your email setup.
+
+This choice only decides where you start. Nothing is switched on or off; everything else stays available.
+
+## Step 3: VAT and IBAN
+
+This step (**How do you get paid?**) has two parts: your VAT status and your IBAN. Both need an answer before you can continue; if the button is grey, the reason is shown next to it.
 
 **VAT status**
 
-If you charge VAT, select **Yes, I charge VAT** and enter your VAT ID. While the field is empty, a hint reminds you that a VAT ID is required to continue; if you do not have it yet, click **I don't know my VAT ID right now, I'll fill it in later** to skip it. If you are exempt (for example through the small businesses scheme, KOR), select **No, I'm exempt** instead. You can change this later in Settings.
+Pick one of three options:
+
+- **Yes, I charge VAT**: enter your VAT ID. If you do not have it at hand, click **I don't know my VAT ID right now, I'll fill it in later**.
+- **No, I take part in the KOR**: you have registered with the Dutch Tax Administration for the small business scheme. Your invoices are drawn up without VAT and state that you use the KOR.
+- **No, I'm exempt**: for professions exempt from VAT, such as care by a registered healthcare provider.
+
+Not sure? Click **Which choice fits me?** for a short explanation. You can change this later in Settings.
 
 **IBAN**
 
-The wizard asks for the IBAN that customers pay to. You can enter your business IBAN now, or click **I'll fill this in later** to skip it. While the field is empty, a hint reminds you that an IBAN is required before you can send invoices. Keep in mind that your customer cannot easily pay you without an IBAN.
+The wizard asks for the IBAN that customers pay to. Your IBAN goes on your invoices, with a QR code customers can scan to pay straight away. Enter your IBAN now, or click **I'll fill this in later**.
 
-## Step 4: Finish setup
+If you skip your VAT ID or IBAN, MyCompanyDesk asks for it again when you send your first invoice.
 
-The final step confirms your 60-day Office trial, no credit card needed, and applies everything, then takes you to the dashboard. Nothing runs in the background while the screen confirms: the finish message names what stays behind for later (securing your account, and your website), and those suggestions follow on the dashboard under **Zet dit op** when it fits. MyCompanyDesk no longer generates a website or picks services for you here; a website is built the first time you open the **Website** area yourself.
+## Finishing
 
-Click **Finish setup** and the wizard applies your company details, VAT status, IBAN and default settings, then takes you to your dashboard.
+Click **Finish setup**. The wizard applies your company details, VAT status, IBAN and default settings and shows **You're ready to invoice**. From there, click **Create your first invoice**, or choose **No client or job yet? Take a look around your dashboard first**. Securing your account and your website come up later on their own, under **Set this up** on the dashboard.
 
 ## The website: built when you open it, live when you publish
 
 MyCompanyDesk does not put a website under your workspace before you ask for one. Sign up and send invoices without ever opening the Website area, and nothing half-finished is waiting there.
 
-The first time you open **Website**, a standard site is created as a draft: a home page, services, an about page and contact, plus the privacy statement and terms and conditions with your registration details filled in where they belong. Only lines you can vouch for stand on the pages; empty blocks stay empty until you write them, and the website wizard does not invent an origin story or a stock answer anymore. Nothing goes online on its own either: publishing stays the moment you choose, and only then does your web address go live. Your workspace subdomain, the form of your company name under mycompanydesk.com, is only applied when you publish.
+The first time you open **Website**, a short website wizard gets you going: what you do, what the site should mainly achieve, your colours, your logo and, if you like, your own photos. Your site is then built as a draft, with your registration details where they belong. Nothing goes online on its own: publishing stays your moment. Only when you publish for the first time does your site get its address, the simple form of your company name under mycompanydesk.site.
 
 ## Changing things later
 
@@ -67,12 +78,12 @@ Everything the wizard sets can be edited in **Settings**:
 |---|---|
 | Company name, address, KVK or VAT number | **Business details** |
 | Logo and brand colour | **Logo and colour** |
-| How customers pay you: IBAN, iDEAL, PayPal | **Getting paid** |
+| How customers pay you: IBAN, iDEAL, PayPal | **Payments** |
 | Payment terms, reminders, quote validity | **Invoices and quotes** |
 | The look of your invoice PDFs | **Invoice design** |
 | Your website and domain | **Your website and domain** |
 
-See the [settings overview](/en/settings/) for the full map. You can also re-run the wizard from `/setup` whenever you like; it fills in blanks rather than overwriting what you set yourself.
+See the [settings overview](/en/settings/) for the full map.
 
 ## Next steps
 

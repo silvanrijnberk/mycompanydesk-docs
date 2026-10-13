@@ -1,7 +1,7 @@
 ---
 title: "Gutschrift"
 description: "So erstellen Sie eine Gutschrift: öffnen Sie die Originalrechnung, die Sie gutschreiben möchten."
-last_verified: 2026-08-16
+last_verified: 2026-10-13
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -19,7 +19,7 @@ Stornierte Rechnungen können nicht gutgeschrieben werden. Wenn Sie eine bereits
 
 Die Beträge lassen sich beim Erstellen nicht anpassen; versendete Dokumente sind gesperrt, die Gutschrift spiegelt das Original daher immer exakt wider. Für eine Teilkorrektur erstellen Sie zuerst die vollständige Gutschrift und stellen anschließend eine neue Rechnung über den richtigen Betrag aus.
 
-MyCompanyDesk verhindert außerdem, dass Sie mehr gutschreiben als der Betrag der Originalrechnung. Sie können mehrere Teilgutschriften für dieselbe Rechnung ausstellen, aber sobald die Summe der Gutschriften den Rechnungsbetrag erreicht, lässt sich für diese Rechnung keine weitere Gutschrift erstellen.
+MyCompanyDesk verhindert außerdem, dass Sie mehr gutschreiben als der Betrag der Originalrechnung. Weil eine Gutschrift immer die ganze Rechnung storniert, können Sie eine Rechnung nur einmal gutschreiben: Eine zweite Gutschrift für dieselbe Rechnung wird abgelehnt.
 
 Eine Gutschrift erstattet dem Kunden Geld und hat daher kein eigenes Zahlungsziel. Im Kundenportal werden die Fälligkeitszeile und die Tabelle früherer Rechnungen für Gutschriften ausgeblendet. Die Schaltfläche "Zahlung bestätigen" wird ebenfalls ausgeblendet, weil eine Gutschrift dem Kunden Geld erstattet und nicht vom Kunden verlangt, zu zahlen. Wenn die Originalrechnung vollständig gutgeschrieben wurde, blendet das Portal auch die Zahlungsschaltflächen auf dieser Rechnung aus, zeigt die Zahlungsübersicht als Gutgeschrieben an und nennt den Gutschriftbetrag in der Saldenaufschlüsselung.
 
@@ -29,6 +29,6 @@ Im Backoffice zeigt die Detailseite der Gutschrift an, ob der Gutschriftbetrag n
 
 Wenn die Originalrechnung vollständig gutgeschrieben wurde, zeigt deren Detailseite nicht länger die Kennzeichnung als vollständig bezahlt. Stattdessen steht dort, dass die Rechnung gutgeschrieben wurde und nichts mehr offen ist. Hat der Kunde bereits vor der Gutschrift bezahlt und übersteigt diese Zahlung nun den verbleibenden Betrag, zeigt die Seite auch den Rückerstattungsbetrag, den Sie dem Kunden schulden.
 
-Wenn Sie eine Gutschrift per E-Mail senden, verwendet sie eine eigene Vorlage. Der Betreff benennt sie als Gutschrift, der Text nennt den gutgeschriebenen Betrag als positiven Betrag und es wird nicht um Zahlung gebeten noch ein Zahlungsziel angezeigt. Das PDF selbst verwendet "Gutschrift an", "Gutschriftsdetails" und "Gutschriftsnr." anstelle der Rechnungsbezeichnungen, damit eine Gutschrift nie versehentlich als Rechnung erscheint. Solange die Gutschrift noch ein Entwurf ist, bietet die Aktionskarte nur an, sie zu senden; nach dem Versand erscheinen keine Mahnungs- oder Inkassoaktionen, weil eine Gutschrift dem Kunden Geld erstattet anstatt danach zu verlangen.
+Wenn Sie eine Gutschrift per E-Mail senden, verwendet sie eine eigene Vorlage. Der Betreff benennt sie als Gutschrift, der Text nennt den gutgeschriebenen Betrag als positiven Betrag und es wird nicht um Zahlung gebeten noch ein Zahlungsziel angezeigt. Das PDF selbst verwendet "Gutschrift an", "Gutschriftsdetails" und "Gutschriftsnr." anstelle der Rechnungsbezeichnungen, damit eine Gutschrift nie versehentlich als Rechnung erscheint. Solange die Gutschrift noch nicht an den Kunden gesendet wurde, bietet die Aktionskarte nur an, sie zu senden; nach dem Versand erscheinen keine Mahnungs- oder Inkassoaktionen, weil eine Gutschrift dem Kunden Geld erstattet anstatt danach zu verlangen.
 
 Tipp: Da Sie die Gutschrift direkt aus der Originalrechnung erstellen, passen beide Dokumente exakt zusammen und Ihre Buchhaltung bleibt stimmig.

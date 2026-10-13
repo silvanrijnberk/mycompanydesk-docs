@@ -1,12 +1,12 @@
 ---
 title: Email
 description: "Choose which address your invoices and quotes go out from and set what appears under every message. Available on every plan."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Email
 
-MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** is the hub for everything around that mail: **Addresses and sending** for the sender side, **Invoice and quote emails** for the mail we compose for your documents, **Inbox emails** for the mail you write yourself, and **Rules** for what happens to incoming mail. The page is available on every plan; only sending from your own domain is part of Office.
+MyCompanyDesk emails your invoices and quotes to your customers. **Settings › Email** is the hub for everything around that mail: **Addresses and sending** for the sender side, **Invoice and quote emails** for the mail we compose for your documents, **Inbox emails** for the mail you write yourself, and **Rules** for what happens to incoming mail. The page is available on every plan; only sending from your own domain is part of Office.
 
 Rules and trusted senders for incoming mail live under **Rules**; see [Receiving: mailboxes and rules](#receiving-mailboxes-and-rules) below.
 
@@ -45,7 +45,7 @@ Under **You send from this address by default** you pick your own default sendin
 
 ### Mailboxes
 
-Under **Mailboxes** you manage the mailboxes on your connected domains: add a mailbox to receive mail on a new address on your own domain, add extra addresses to an existing mailbox, forward incoming mail to your current mail app, and connect the mail app itself. You can import existing mail into an existing mailbox. The mailbox sections need the Inbox permission; without it they stay hidden, and the sending part remains available to everyone.
+Under **Mailboxes** you manage the mailboxes on your connected domains: add a mailbox to receive mail on a new address on your own domain, add extra addresses to an existing mailbox, forward incoming mail to your current mail app, and connect the mail app itself. You can import existing mail into an existing mailbox. Mailboxes on your own domain are part of the full Inbox in Office, and a team member also needs the Inbox permission. Without both, the mailbox sections stay hidden; the sending part remains available to everyone.
 
 ### Forwarding receipts
 
@@ -57,7 +57,7 @@ The **Invoice and quote emails** page holds everything about the mail MyCompanyD
 
 ### The default texts
 
-Invoice, quote, reminder, and credit note emails start from a standard, well-tested text in the language of the document. Pick the type of email (invoice, quote, reminder, or credit note) and the email language, write your own subject and message, and save. Your own text carries a **Your own text** badge, and saving it means every next email of that type starts from your wording. **Back to standard text** restores the standard wording, after a confirmation.
+Invoice, quote, reminder, and credit note emails start from a standard, well-tested text in the language of the document. Pick the type of email (invoice, quote, reminder, or credit note) and the email language, write your own subject and message, and save. Your own text carries a **Your own text** badge, and saving it means every next email of that type starts from your wording. **Back to** followed by your style's name (for example **Back to Formal**) restores that style's wording, after a confirmation.
 
 The customer name, number, amounts, and dates in the sample are examples: when you send, MyCompanyDesk fills in the details of the real document, so leave the placeholders where they belong. The sentence about a request only appears when the quote comes from a request.
 
@@ -65,15 +65,15 @@ As an accountant you can read these texts but not change them; the workspace own
 
 ### The style of the mail
 
-For every type of document email you also pick a **style of the mail** (Stijl): five ways to fill in the standard text, in content, not in looks. The choice applies to all languages.
+For every type of document email you also pick an **Email style**: five ways to fill in the standard text, in content, not in looks. The choice applies to all languages.
 
-- **Formeel**: the default text, written in the u-form. Stands there from the start, so the mail changes nothing until you actively choose a style.
-- **Kort**: the core in a few lines, in je-form.
-- **Persoonlijk**: a warm greeting, in je-form, with a word of thanks for the collaboration; a recurring invoice follows it as well.
-- **Compleet**: everything a customer needs to pay or decide (date, amount, due date, account number, where to go with questions), and always with the line-item table of the document under it, even for a quote.
-- **Minimaal**: only the number, the total, and the date; no greeting, no closing.
+- **Formal**: the default text, written in the u-form. Stands there from the start, so the mail changes nothing until you actively choose a style.
+- **Short**: the core in a few lines, in je-form.
+- **Personal**: a warm greeting, in je-form, with a word of thanks for the collaboration; a recurring invoice follows it as well.
+- **Complete**: everything a customer needs to pay or decide (date, amount, due date, account number, where to go with questions), and always with the line-item table of the document under it, even for a quote.
+- **Minimal**: only the number, the total, and the date; no greeting, no closing.
 
-Which parts a style carries depends on your own settings for the rest: the **invoice lines in the mail** switch under the text decides whether a style other than Compleet gets the line-item table, and the switch in the send window wins when it is shown there. An own text always beats a style: if you set your own wording for a type, it keeps being sent, and choosing a style then asks whether that own text should go. Once you pick a style, the sample text on the right rewrites and the preview shows exactly what your customer receives.
+Complete always carries the line-item table, the other styles do not. In the send window you switch the table on or off per email with **Include invoice items**; it starts on when the style carries the table. An own text always beats a style: if you set your own wording for a type, it keeps being sent, and choosing a style then asks whether that own text should go. Once you pick a style, the sample text on the right rewrites and the preview shows exactly what your customer receives.
 
 ### Appearance
 
@@ -83,7 +83,7 @@ The appearance sets the style and header of every customer email: pick one of th
 
 Every outgoing document email ends with your company name and CoC number, plus the contact details you switch on underneath. Each detail is a switch: your photo, phone number, email address, website address, address, social media, a link to your site at the bottom, and your certifications. The certifications switch only appears once you have added certifications in your company details. A switch for a detail you have not filled in yet says so, with a link to complete it in Company details. The address switch exists for home addresses: switch it off to keep your home address out of your email; the invoice PDF itself always carries the full address.
 
-The details come from your company details, so what you see is what your customer receives: phone, address, CoC number, your photo and the link to your site appear as soon as you fill them in. Editing them under **Settings → Company details** keeps both in sync.
+The details come from your company details, so what you see is what your customer receives: phone, address, CoC number, your photo and the link to your site appear as soon as you fill them in. Editing them under **Settings › Company details** keeps both in sync.
 
 ## Inbox emails
 
@@ -114,10 +114,10 @@ MyCompanyDesk blocks outgoing mail that looks like abuse, so our shared sending 
 
 Everything about the mail you receive now lives on the Email page as well:
 
-- **Mailboxes, extra addresses, forwarding, and importing** are under **Settings → Email → Addresses and sending**. Old links to the inbox settings page land there automatically.
-- **Rules for incoming mail and trusted senders** live under **Settings → Email → Rules**. They used to be a tab in the Inbox; that tab row is gone, and old links such as /inbox/regels land on the new place automatically. The tab is only there for workspaces with the Inbox feature.
+- **Mailboxes, extra addresses, forwarding, and importing** are under **Settings › Email › Addresses and sending**. Old links to the inbox settings page land there automatically.
+- **Rules for incoming mail and trusted senders** live under **Settings › Email › Rules**. They used to be a tab in the Inbox; that tab row is gone, and old links such as /inbox/regels land on the new place automatically. The page is only there when your workspace has the full Inbox, which is part of Office.
 - Whether an email actually arrived, you see in the **Sent** folder of the Inbox: it shows per message whether it reached its recipient.
-- **GDPR data removal** (delete all conversations and attachments from a specific address, admins only) lives under **Settings → Gegevens wissen**.
+- **GDPR data removal** (delete all conversations and attachments from a specific address, admins only) lives under **Settings › Gegevens wissen**.
 
 ## Related
 

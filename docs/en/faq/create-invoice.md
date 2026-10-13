@@ -1,6 +1,6 @@
 ---
 title: Create an invoice
-description: "Here's how to create an invoice: go to Invoices and open New Invoice, select a customer or add one from the customer picker."
+description: "Here's how to create an invoice: go to Invoices and click Create, select a customer or add one from the customer picker."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["create invoice", "new invoice", "make invoice", "add invoice", "write invoice", "send invoice", "first invoice", "how to invoice", "maak factuur", "nieuwe factuur", "factuur maken", "factuur aanmaken", "hoe maak ik een factuur", "rechnung erstellen", "wie erstelle ich eine rechnung", "neue rechnung", "creer facture", "comment creer une facture"]
@@ -10,13 +10,13 @@ chatbot:
 ---
 
 Here's how to create an invoice:
-1. Go to Invoices and open "New Invoice"
-2. Select a customer or add one from the customer picker
+1. Go to Invoices and click "Create"
+2. Select a customer, or add one with "Add new customer" at the bottom of the customer picker
 3. Add the line items with description, quantity, price, and VAT
 4. In the Invoice Details card, set the invoice date and due date
 5. Use "Save as Draft" if it is not ready yet, or "Finalize" when the invoice is ready (MyCompanyDesk checks your btw-id and IBAN first, you can fill them in on the spot if needed)
 6. After saving, open the invoice detail page to preview or send it
 
-If the customer has unbilled time entries, the form pulls them in as line items and fills in missing descriptions automatically.
+If the customer has unbilled hours or expenses, the form shows a section where you can add them as line items.
 
-Tip: Defaults like payment terms and quote validity live at Settings → "Facturen en offertes"; invoice numbering is automatic, so there is nothing to configure there. Make sure your btw-id and IBAN are filled in so you can finalize without interruption.
+Tip: Defaults like payment terms and quote validity live at Settings › "Invoices and quotes"; invoice numbering is automatic, so there is nothing to configure there. Make sure your btw-id and IBAN are filled in so you can finalize without interruption.

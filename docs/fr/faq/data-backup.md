@@ -1,6 +1,6 @@
 ---
 title: "Sauvegarde des données"
-description: "Pour sauvegarder vos données : allez dans Paramètres > Télécharger les données."
+description: "Pour sauvegarder vos données : allez dans Paramètres › Télécharger les données."
 last_verified: 2026-10-03
 chatbot:
   triggers:
@@ -22,12 +22,8 @@ chatbot:
 ---
 
 Pour sauvegarder vos données :
-1. Allez dans Paramètres -> « Télécharger les données »
+1. Allez dans Paramètres › « Télécharger les données »
 2. Téléchargez les exports CSV pour les factures, les clients et les dépenses, ou la sauvegarde complète disponible à cet endroit
 3. Vérifiez que les fichiers téléchargés contiennent bien les enregistrements dont vous avez besoin
 
 Les exports CSV des factures, des dépenses et de votre liste de clients, ainsi que la sauvegarde complète, sont gratuits sur tous les plans. Si vous sauvegardez régulièrement, choisissez un moment fixe, par exemple après la clôture de chaque trimestre.
-
-:::tip
-Pour le support MyCompanyDesk, le panneau d'administration propose aussi des actions **Créer une sauvegarde** et **Télécharger les données** par espace de travail. L'action **Vider le cache** vide le service de cache partagé (et le cache KPI propre au module), et **Invalider les sessions** pousse un seuil global qui rejette tout token de session émis avant ce seuil. Ces outils ne font pas partie des pages de paramètres clientes.
-:::

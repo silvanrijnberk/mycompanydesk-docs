@@ -1,6 +1,6 @@
 ---
 title: "Rechnung löschen"
-description: "So löschen Sie eine Rechnung: öffnen Sie die Rechnung, die Sie löschen möchten, scrollen Sie in der Seitenleiste zum Bereich Gefahrenzone."
+description: "Einen Rechnungsentwurf löschen Sie über Mehr und Löschen. Eine finalisierte Rechnung lässt sich nicht löschen, nur stornieren."
 last_verified: 2026-08-15
 chatbot:
   triggers:
@@ -24,11 +24,13 @@ chatbot:
 ---
 
 So löschen Sie eine Rechnung:
-1. Öffnen Sie die Rechnung, die Sie löschen möchten
-2. Scrollen Sie in der Seitenleiste zum Bereich „Gefahrenzone“
-3. Klicken Sie auf „Löschen“
+1. Öffnen Sie den Rechnungsentwurf, den Sie löschen möchten
+2. Klicken Sie oben auf „Mehr“ (auf dem Smartphone das Menü mit den drei Punkten)
+3. Wählen Sie „Löschen“
 4. Bestätigen Sie die Löschung
 
-Nur Entwurfsrechnungen können in einem Schritt endgültig gelöscht werden. Bei gesendeten oder bezahlten Rechnungen führt jeder Löschvorgang eine Stufe weiter: aktiv wird archiviert, archiviert wird in den Papierkorb verschoben, und im Papierkorb wird endgültig gelöscht. Verwenden Sie Stornieren, wenn der Datensatz in der Rechnungsliste sichtbar bleiben soll.
+Löschen ist nur bei einem Entwurf möglich, der noch keine Rechnungsnummer hat. Auch dann geschieht es in Stufen: aktiv wird Archiv, archiviert wird Papierkorb. Endgültig entfernt ist der Entwurf erst, wenn Sie ihn im Papierkorb auswählen und „Endgültig löschen“ wählen oder auf „Papierkorb leeren“ klicken.
 
-Haben Sie versehentlich gelöscht? Prüfen Sie die Ansichten Archiv und Papierkorb und stellen Sie die Rechnung wieder her, bevor sie die letzte Stufe erreicht.
+Eine finalisierte Rechnung (mit Rechnungsnummer) können Sie weder löschen noch archivieren: Sie muss in Ihrer Buchhaltung bleiben. Wenn Sie sie zurückziehen möchten, wählen Sie im selben Menü „Als storniert markieren“ (nicht bei einer bezahlten Rechnung) oder erstellen Sie eine Gutschrift.
+
+Haben Sie versehentlich gelöscht? Öffnen Sie in der Rechnungsliste die Filter, wählen Sie unter Anzeigen die Ansicht Archiv oder Papierkorb, öffnen Sie die Rechnung und wählen Sie „Zu aktiv wiederherstellen“, bevor sie die letzte Stufe erreicht.

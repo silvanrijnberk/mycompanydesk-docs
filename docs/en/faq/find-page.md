@@ -1,6 +1,6 @@
 ---
 title: "Find page"
-description: "To find pages in the app, use the main navigation menu. The main sections are Dashboard, Invoices, Quotes, Expenses, Customers, Reports and VAT."
+description: "Find pages through the menu, grouped into Sales, Management, Finance and Communication, or press Cmd+K or Ctrl+K to search directly."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where is", "find page", "navigate to", "how to get to", "menu location", "waar vind ik", "waar is", "wo finde ich", "ou trouver"]
@@ -9,10 +9,8 @@ chatbot:
 ---
 
 To find pages in the app:
-• Use the main navigation menu
-• Main sections are Dashboard, Invoices, Quotes, Expenses, Customers, Recurring, Projects, Contracts, Properties, Reports, Overview, VAT, Company, Workspace Settings, and My Account
-• Company-related setup is under Company
-• API keys, team access, and feature toggles are under Workspace Settings
-• Personal language, display, notifications, security, and data tools are under My Account
+• Use the menu on the side (on your phone, the bar at the bottom and the menu button). After Dashboard it is grouped into Sales (Invoices, Quotes, Work orders, Recurring, Customers, Catalog), Management (Schedule, Tasks, Projects, Documents, Contracts, Assets), Finance (Figures, Expenses, Taxes, Reports, Bookkeeping) and Communication (Inbox, Newsletters, Website)
+• Settings is in the menu too. Your own details are under About you; Business details, Modules and People with access are under Your business
+• Press Cmd+K (Mac) or Ctrl+K (Windows/Linux) to search and jump straight to a page.
 
-Tip: If a menu item is missing, first check Workspace Settings → Features and your page permissions.
+Tip: If a menu item is missing, first check under Settings › Modules whether that module is switched on. If you work as a team member, the owner decides under Settings › People with access which pages you see.

@@ -1,7 +1,7 @@
 ---
 title: "Notification settings"
-description: "To manage your notification settings: go to Settings > Meldingen (notifications), switch the notification topics on or off, and turn on push notifications."
-last_verified: 2026-10-06
+description: "To manage your notification settings: go to Settings › Notifications, switch the notification topics on or off, and turn on push notifications."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "notifications"
@@ -20,7 +20,7 @@ chatbot:
 
 To manage your notification settings:
 
-1. Go to Settings → "Meldingen" (notifications)
+1. Go to Settings › "Notifications"
 2. Switch the notification topics on or off. The switches sit in five groups: **Every week**, **Your money**, **Your customers**, **Your team** and **From MyCompanyDesk**, and under each switch the app shows how that message arrives: **In the app**, **By email** or **On your phone**. The invoice, money, deadline and opportunity topics use all three; the weekly topic adds a phone signal only when something is urgent. The topics are:
    - **On Monday, what needs doing this week**: the Monday email with the tasks from **Do now** on your dashboard. One email every Monday, only when there is something; when a task is urgent, a ping on your phone comes with it. The email goes to the workspace owner only, who is therefore the only one to see this switch. The switch is on by default; the unsubscribe link at the bottom of the email turns it off. As long as the separate weekly bank summary stays off (the default), the bank rows that still have to be matched are in this email too.
    - **When an invoice needs your attention**: late invoices, invoices nearing their due date, drafts left untouched, failed direct debits, failed invoice deliveries, paused automatic contract invoicing, automatically created hours invoices and what happens to them (ready, on the schedule to send, held back, or sent), signals about your expenses such as recurring expenses or a supplier that seems to have gone quiet, and time entries without a rate.
@@ -39,73 +39,66 @@ Push notifications are bound to your session. When you log out, the device stops
 
 ## The notification list
 
-Notifications are grouped into three buckets so the list reads as a timeline: **Today**, **Yesterday**, and **Older**.
+Click the bell at the top of the app to open your notifications. They are grouped by day so the list reads like a timeline: **Today**, **Yesterday** and **Earlier**. At the bottom, **Load more** fetches older notifications.
 
-Opening the list marks everything inside it as seen, so the bell count goes back to zero. Each row keeps its own unread dot until you open it.
+Opening the list marks every notification in it as seen: the count on the bell drops back to zero, but each row keeps its own unread dot until you open it.
 
-If several similar informational updates arrive on the same day, such as release notes or product tips, they collapse behind the newest one. A button shows how many more there are; click it to expand the group, click again to collapse it.
+When three or more similar informational updates arrive on the same day, such as product news or tips, they fold into the newest one. A button shows how many similar notifications there are; click it to show them and **Show less** to fold them again.
 
-On a phone or tablet you can swipe a row to act quickly: swipe left to dismiss, swipe right to snooze. The row shows what will happen when you release it. Dismiss and snooze buttons are also available on every row.
+Click a notification to go straight to the item it is about, such as the invoice, quote or contract. Product news, tips and long messages without an item of their own open in a reading window.
 
-You can move through the list with the keyboard: arrow keys move the selection, Enter or Space opens the selected notification, and Esc closes the drawer. The drawer sits above other floating UI so focus stays inside it while it is open.
+Each row has two buttons on the right. The cross (**Dismiss**) removes the notification from your own list; the message that appears lets you take it back with **Undo**. The three dots (**More actions**) open the actions for that notification. On a phone or tablet you can also swipe a row: right to dismiss it, left to snooze it. The row shows what will happen when you let go.
 
-While the list is loading for the first time, grey placeholder rows shaped like real notifications appear instead of a spinner, so the layout does not jump when the actual rows arrive. When you dismiss or snooze a row, the remaining rows glide up into the gap rather than snapping to a new position. Expanding a folded group animates its extra rows in place.
+Close the panel with Esc, by clicking next to it, or by clicking the bell again. On a phone there is a close button in the top right corner.
 
-## The full notifications page
+While the list loads for the first time, you see grey placeholder rows shaped like real notifications instead of a spinner, so the layout does not jump when the real rows arrive. When you dismiss a row, the rows below slide up instead of snapping into place.
 
-If you need more room than the drawer gives, click **View all notifications** at the bottom of the drawer. This opens the dedicated notifications page with the same list and detail panel, plus a clearer header that shows your unread count and a **More options** menu. It is useful when you want to triage many notifications at once or scroll far back through older items.
+## Actions on a notification
 
-## Arrival cards
+Which actions you see depends on the notification:
 
-When you open the app, notifications that are unseen and unread appear as a short stack of cards in the top-right corner. Each card shows the icon, title, context and available action for that notification. The cards advance automatically after a few seconds, but you can click **View** to jump straight to the item, **Later** to dismiss the stack back to the bell, or click the next card manually.
+- **Open** (or **Open all** on a notification about several invoices): opens the item it is about.
+- **Send reminder**: sends a payment reminder for the invoice, on overdue invoices.
+- **Later**: snoozes the notification, see below.
+- **Read**: opens product news, tips and long messages in the reading window.
 
-If there are more than four arrivals, the last card becomes a summary that says how many more there are. Click it to open the full notifications page. Once a stack has been shown, those notifications are marked as seen, so the same items will not pop up again.
-
-Arrival cards stay silent when:
-
-- Do-not-disturb is on.
-- The notifications drawer or notifications page is already open.
-- There are no unseen, unread notifications.
+When a notification covers several invoices at once, the row also lists the individual invoices behind the summary; click one to open it. If not all actions fit on one line, the rest sit behind an extra three-dot button.
 
 ## Snoozing a notification
 
-You can temporarily silence an action notification without marking it as read. Click the notification bell to open the list, then choose **Snooze** on the row you want to defer. You can snooze until:
+You can put off a notification that asks something of you without marking it as read. Choose **Later** on the notification, then how long:
 
 - **1 hour** from now
 - **Tomorrow** at 09:00
 - **Next week** at 09:00
 
-The notification disappears from the unread list after the next refresh, but the row stays visible with an **Undo** button until then. Release notes and tips cannot be snoozed; those you either read or mark as read.
+The row stays in place and shows until when it is snoozed, with **undo** next to it. Product news and tips cannot be snoozed; you read them or dismiss them.
 
-## Do not disturb
+## The More options menu
 
-Open the notification list and click **More options** (three dots) in the header to set **Do not disturb** for push notifications. Choose between:
+At the top of the notifications panel sits **More options** (three dots). It holds:
 
-- **Off**
-- **1 hour**
-- **Until tomorrow** at 09:00
+- **Mark all read**: marks all your notifications as read. They stay in the list.
+- **Do not disturb: off**, **Do not disturb: 1 hour** and **Do not disturb until tomorrow** (until 09:00 the next morning).
+- **Turn on**: turns on push notifications on this device. This line only appears while push is not on here yet.
 
-While do-not-disturb is active, push notifications are held back, but the notifications still appear in the app list and emails are not affected. A chip in the panel header shows the active state and the time it expires.
+While Do not disturb is active, push notifications are held back, but notifications still appear in the app and your emails keep arriving. A label in the panel header shows that Do not disturb is on and until what time.
 
-## The detail panel
+## Arriving notifications
 
-Clicking a notification opens a right-hand panel with the full context for that item. For an overdue invoice you see the total, open amount, payment status and issue date. For a VAT deadline you see the period and due date. For rolled-up notifications the panel lists the individual invoices, quotes or records behind the summary.
+When you open the app, notifications you have neither seen nor read appear as a slim one-line bar: bottom right on a computer, just above the bottom bar on your phone. The bar shows the icon, title and context, with **View** to jump straight to the item. Several notifications stack. After a few seconds the bar moves on by itself, except while your mouse or focus is on it. The cross, or swiping it away on your phone, removes it; everything is still under the bell afterwards.
 
-The panel waits for the underlying record to load before it switches. Until the record arrives, the previous notification stays visible and its buttons are inactive, so nothing shifts under your cursor. Once the record is ready, the panel cross-fades to the new notification in one smooth step.
+With more than four notifications, the last bar becomes a summary (the number of **more notifications**) that opens the notifications panel. Anything shown as a bar counts as seen, so the same notification does not pop up again.
 
-The actions for that item are ranked so the most important one comes first and is marked as the primary action. The rest stay on the same row. If more actions fit than the panel has room for, the extra ones move behind a **More actions** button (three dots). Tap it to see the remaining actions without leaving the drawer.
+Arriving notifications stay quiet when:
 
-The available actions depend on the notification:
+- Do not disturb is on.
+- The notifications panel is already open.
+- The tab with the app is in the background. Whatever is waiting appears as soon as you come back.
+- There are no unseen, unread notifications.
 
-- **Mark as paid**: records a manual payment for the remaining balance and resolves the invoice notification.
-- **Mark as filed**: marks the VAT period as filed; shown only for VAT-deadline notifications.
-- **Send reminder**: sends a payment reminder for the invoice, shown for overdue invoices.
-- **Open**: opens the underlying record, such as the invoice, quote or contract.
-- **Snooze** (or **Later**): temporarily defers the notification without marking it as read.
-- **Dismiss** (or the **X** icon): removes the notification from your own unread list. On a phone the same close icon sits in the top right of the detail overlay, so it does not overlap the amount.
+## Push notifications
 
-Release notes and tips have no detail panel because there is no underlying record to act on.
-
-Push notifications work in your browser and in the Android app. On Android the notification shows the app icon, category colour and, where available, the sender's avatar.
+Push notifications work in your browser and in the MyCompanyDesk app on your phone. On Android the notification shows the app icon, category colour and, where available, the sender's avatar.
 
 If you are troubleshooting a missing alert, check both the notification toggle and the email address on your account.
