@@ -88,6 +88,8 @@ Vous pouvez vous connecter sans mot de passe grâce à un lien à usage unique e
 
 Le lien est valable 15 minutes et ne peut être utilisé qu'une seule fois. Par sécurité, demander un nouveau lien invalide les liens précédents.
 
+L'adresse e-mail du compte n'est pas encore confirmée ? La demande de lien de connexion envoie alors l'e-mail de confirmation à la place : son lien confirme votre adresse et vous connecte en une seule étape.
+
 ::: tip
 Si vous confirmez votre adresse e-mail après votre inscription, vous êtes connecté automatiquement. Aucune étape de connexion supplémentaire n'est nécessaire.
 :::

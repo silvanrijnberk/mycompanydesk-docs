@@ -41,7 +41,7 @@ Regelitems van terugkerende facturen werken op dezelfde manier als reguliere fac
 - Een kortingspercentage kan niet hoger zijn dan 100%.
 - Een kortingswaarde mag niet negatief zijn.
 
-Het formulier heeft dezelfde schakelaar **Bedragen incl. btw** als het factuurformulier. Zet je hem aan, dan zijn de prijzen die je typt wat de klant betaalt, btw inbegrepen. Zie [Facturen](/features/invoices#prijzen-inclusief-btw).
+Het formulier heeft dezelfde keuze, prijzen met of zonder btw, als het factuurformulier, in de kolomkop van het prijsveld. Kies je prijzen incl. btw, dan zijn de prijzen die je typt wat de klant betaalt, btw inbegrepen. Zie [Facturen](/features/invoices#prijzen-inclusief-btw).
 
 ## Betaalopties en factuurdetails
 

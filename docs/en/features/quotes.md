@@ -22,7 +22,7 @@ The quotes section lets you create, send, and track quotations. Quotes follow a 
 
 The quote form is similar to the invoice form: if you know how to create an invoice, you already know how to create a quote. Quotes are unlimited on every plan, Desk included.
 
-The form carries the same **Amounts incl. VAT** switch as the invoice form. With it on, you type the prices the customer pays and the VAT comes out of them. See [Invoices](/en/features/invoices#prices-including-vat).
+The form carries the same choice of prices with or without VAT as the invoice form, in the column header of the price field. With it on, you type the prices the customer pays and the VAT comes out of them. See [Invoices](/en/features/invoices#prices-including-vat).
 
 ## Photos on a quote
 

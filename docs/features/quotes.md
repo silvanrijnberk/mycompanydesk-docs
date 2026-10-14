@@ -22,7 +22,7 @@ Het offertesgedeelte stelt je in staat om offertes te maken, versturen en bijhou
 
 Het offerteformulier lijkt op het factuurformulier: als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt. Offertes maak je onbeperkt, op elk abonnement, ook op Desk.
 
-Het formulier heeft dezelfde schakelaar **Bedragen incl. btw** als het factuurformulier. Zet je hem aan, dan typ je de prijzen die de klant betaalt en komt de btw eruit. Zie [Facturen](/features/invoices#prijzen-inclusief-btw).
+Het formulier heeft dezelfde keuze, prijzen met of zonder btw, als het factuurformulier, in de kolomkop van het prijsveld. Kies je prijzen incl. btw, dan typ je de prijzen die de klant betaalt en komt de btw eruit. Zie [Facturen](/features/invoices#prijzen-inclusief-btw).
 
 ## Foto's bij een offerte
 

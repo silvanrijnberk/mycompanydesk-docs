@@ -88,6 +88,8 @@ Je kunt inloggen zonder wachtwoord met een eenmalige link die naar je e-mail wor
 
 De link is 15 minuten geldig en kan maar één keer worden gebruikt. Uit veiligheidsoogpunt maakt het aanvragen van een nieuwe link eerdere links ongeldig.
 
+Is het e-mailadres op je account nog niet bevestigd? Dan stuurt de aanvraag van een inloglink de bevestigingsmail: diens link bevestigt je adres en logt je meteen in.
+
 ::: tip
 Bevestig je je e-mailadres na het aanmelden, dan word je automatisch ingelogd. Er is geen extra inlogstap nodig.
 :::

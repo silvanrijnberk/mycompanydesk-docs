@@ -88,6 +88,8 @@ Sie können sich ohne Passwort mit einem einmaligen Link anmelden, der an Ihre E
 
 Der Link ist 15 Minuten gültig und kann nur einmal verwendet werden. Aus Sicherheitsgründen macht das Anfordern eines neuen Links frühere Links ungültig.
 
+Ist die E-Mail-Adresse auf dem Konto noch nicht bestätigt? Dann sendet die Anfrage stattdessen die Bestätigungs-E-Mail: Ihr Link bestätigt die Adresse und meldet Sie zugleich an.
+
 ::: tip
 Wenn Sie Ihre E-Mail-Adresse nach der Registrierung bestätigen, werden Sie automatisch angemeldet. Es ist kein zusätzlicher Anmeldeschritt nötig.
 :::

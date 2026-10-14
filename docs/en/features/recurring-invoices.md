@@ -41,7 +41,7 @@ Recurring invoice line items work the same way as regular invoice lines:
 - A percentage discount cannot be higher than 100%.
 - A discount value cannot be negative.
 
-The form carries the same **Amounts incl. VAT** switch as the invoice form. With it on, the prices you type are what the customer pays, VAT included. See [Invoices](/en/features/invoices#prices-including-vat).
+The form carries the same choice of prices with or without VAT as the invoice form, in the column header of the price field. With it on, the prices you type are what the customer pays, VAT included. See [Invoices](/en/features/invoices#prices-including-vat).
 
 ## Payment options and invoice details
 
