@@ -22,7 +22,7 @@ La section Devis vous permet de créer, d'envoyer et de suivre vos devis. Les de
 
 Le formulaire de devis ressemble au formulaire de facture : si vous savez créer une facture, vous savez déjà créer un devis. Les devis sont illimités dans tous les abonnements, Desk compris.
 
-Le formulaire porte le même choix que celui des factures, dans l'en-tête de colonne du champ prix : prix avec ou sans TVA. Quand vous saisissez les prix TTC, vous tapez ce que paie le client et la TVA en est extraite. Voir [Factures](/fr/features/invoices#prix-ttc).
+Le formulaire porte le même choix que celui des factures, dans l'en-tête de colonne du champ prix : prix avec ou sans TVA. Avec des prix TTC, vous tapez ce que paie le client et la TVA en est extraite. Voir [Factures](/fr/features/invoices#prix-ttc).
 
 ## Des photos sur votre devis
 
