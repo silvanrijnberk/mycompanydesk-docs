@@ -49,6 +49,8 @@ If your workspace has general terms in Documents, the email preview also shows a
 
 A quote also needs at least one line before it can be finalized or sent: the app refuses an empty quote and asks you to add a line first.
 
+If your workspace is still called **Mijn werkruimte** because you signed up without entering a business name, the app asks for your business name before the quote goes out to your customer. That name appears as the sender on your quotes and invoices; you fill it in once, after that it appears on its own. This applies to **Send** and to the signing request, via **Send for signing** as well as the buttons in the signing card.
+
 ## Customer activity
 
 Once a quote has been emailed, the quote detail page shows a set of engagement pills that mirror the activity log already used for invoices:

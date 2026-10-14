@@ -49,6 +49,8 @@ Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hint
 
 Ein Angebot braucht außerdem mindestens eine Position, bevor es finalisiert oder versendet werden kann: Die App lehnt ein leeres Angebot ab und bittet Sie, zuerst eine Position hinzuzufügen.
 
+Heißt Ihr Arbeitsbereich noch **Mijn werkruimte**, weil Sie sich bei der Anmeldung noch keinen Firmennamen angegeben haben, fragt die App zuerst nach Ihrem Firmennamen, bevor das Angebot an Ihren Kunden geht. Der Name steht als Absender auf Ihren Angeboten und Rechnungen; Sie tragen ihn einmal ein, danach erscheint er automatisch. Das gilt für **Senden** und auch für die Unterschriftenanfrage, über **Zur Unterschrift versenden** ebenso wie über die Buttons in der Unterschriftenkarte.
+
 ## Kundenaktivität
 
 Sobald ein Angebot per E-Mail versendet wurde, zeigt die Detailseite Aktivitäts-Chips, die genauso funktionieren wie bei Rechnungen:
