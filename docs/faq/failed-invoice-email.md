@@ -1,9 +1,9 @@
 ---
 title: "Mislukte factuur-e-mail"
-description: "Zo los je een mislukte factuur-e-mail op, en wat je doet als een bericht wordt vastgehouden voor inhoudscontrole."
-last_verified: 2026-10-01
+description: "Zo los je een mislukte factuur-e-mail op, en wat je doet bij inhoudscontrole of als een verstuurde factuur alsnog terugkomt."
+last_verified: 2026-10-14
 chatbot:
-  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu"]
+  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu", "bounce", "factuur niet aangekomen", "adres bestaat niet"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
     - { label: "Open email settings", to: "/settings/email" }
@@ -37,5 +37,13 @@ Krijg je de melding dat het bericht nog niet is verstuurd en dat we het eerst co
 De controle slaat zichzelf over zodra je werkruimte zich bewezen heeft: met een geverifieerd verzenddomein, een betaald abonnement (een proefperiode telt niet mee), een reeks vlot bezorgde berichten, of nadat wij een vastgehouden bericht hebben goedgekeurd. Je KVK-nummer invullen helpt hier niet: het register laat niet zien wie er echt achter een account zit.
 
 Staat je bericht na een uur nog steeds vast, of krijg je geen melding? Neem dan contact met ons op, dan kijken we mee.
+
+## Een verstuurde mail kan alsnog terugkomen (bounce)
+
+Staat je factuur, offerte of herinnering op Verstuurd, maar kwam de mail bij de klant toch niet aan? Ook als de mail in eerste instantie werd geaccepteerd, kan hij enkele minuten later alsnog terugkomen: sommige mailservers nemen een mail eerst aan en weigeren hem daarna. In dat geval krijg je een melding in de bel, die je naar de factuur of offerte brengt, en een e-mail aan wie het document verstuurde; staat die persoon niet (meer) in de werkruimte, dan gaat de mail naar de eigenaar. Er komt één melding per mislukte poging, en alleen zolang er na die poging nog geen geslaagde verzending van hetzelfde document uitging. Markeert je klant de mail alleen als spam, dan komt er geen melding, want hij heeft de mail wel gehad.
+
+Op de detailpagina van het document noemt de tijdlijn de reden. Zegt de mailserver dat het adres niet bestaat, dan staat er bij naam: "Het e-mailadres info@bedrijf.nl bestaat niet". Ga er dan als volgt mee aan de slag:
+1. Vul het juiste e-mailadres in bij de klantgegevens
+2. Verstuur het document opnieuw vanaf de detailpagina
 
 Tip: Bekijk eerst het voorbeeld van de factuur als je zeker wilt weten dat je de juiste klant en het juiste document opnieuw verstuurt.

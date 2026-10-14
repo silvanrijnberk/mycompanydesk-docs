@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox: wat er in Desk en Office zit en hoe ze samenwerken."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
 
 # Domeinen, website en inbox
@@ -120,14 +120,14 @@ Het overdragen van een domein dat via MyCompanyDesk is geregistreerd naar een an
 - **Gratis geclaimde domeinen**: het gratis-domeinvoordeel gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen. Let op: het overnemen van het domein tijdens de proef (zie overnamesectie hierboven) is geen overdracht, maar een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
 - **Gekochte domeinen**: er vervalt geen voordeel. Het domein staat daarna simpelweg als verhuisd.
 
-Het claimvenster waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Een "Zo werkt je gratis domein"-uitleg toont dat het domein tijdens de proef op naam van MyCompanyDesk staat, gratis op je naam komt als je betalende Office-klant wordt, en bij vertrek voor €15 overgenomen kan worden. Wat er bij een verhuizing vervalt, leggen we vast zodat support het kan nalezen.
+Het claimvenster waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Een "Zo werkt je gratis domein"-uitleg toont dat het domein tijdens de proef op naam van MyCompanyDesk staat, gratis op je naam komt als je betalende Office-klant wordt, en bij vertrek voor €15 overgenomen kan worden. Is de werkruimte al betalende Office-klant, dan toont het venster zijn eigen tekst: het domein komt meteen op jouw naam en verlengt elk jaar gratis zolang je Office hebt; stop je met Office, dan verleng je het daarna zelf. Wat er bij een verhuizing vervalt, leggen we vast zodat support het kan nalezen.
 
 #### Domein kopen of claimen
 
 De domein-aanschafkaart zit in de domeinkiezer op de pagina Je domein. Via de kaart kan de gebruiker een domein uitkiezen en bemachtigen via twee routes, die beide een aanschafvenster in twee stappen openen. Stap 1 verzamelt de registrantgegevens (de gegevens die de registrar nodig heeft voor WHOIS). Stap 2 handelt de betaling of claim af:
 
 - **Kopen**: Betaalde aankoop via OpenProvider. Je voert een domeinnaam in, de kaart controleert beschikbaarheid en prijs, en opent daarna het aanschafvenster. Nadat je de registrantgegevens hebt ingevuld, betaal je in hetzelfde venster via Stripe. Zodra de betaling voltooid is, registreert MyCompanyDesk het domein bij OpenProvider en koppelt het in nameserver-modus aan Cloudflare.
-- **Gratis claim**: Werkruimtes op een Office-trial die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart controleert of je werkruimte aan de voorwaarden voldoet. Het venster vraagt de registrantgegevens en dient daarna de claim in. MyCompanyDesk betaalt de registratiekosten van het eerste jaar.
+- **Gratis claim**: Werkruimtes op een Office-trial of met een betalend Office-abonnement die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart controleert of je werkruimte aan de voorwaarden voldoet. Het venster vraagt de registrantgegevens en dient daarna de claim in. MyCompanyDesk betaalt de registratiekosten van het eerste jaar.
 
 Hoe het domein na het eerste jaar verlengt:
 

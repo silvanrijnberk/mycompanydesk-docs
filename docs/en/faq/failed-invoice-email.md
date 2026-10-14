@@ -1,9 +1,9 @@
 ---
 title: Failed invoice email
-description: "Fix a failed invoice email, and learn what to do when a message is held for the outgoing mail content check."
-last_verified: 2026-10-01
+description: "Fix a failed invoice email, and learn what to do when a message is held for the content check or comes back after being sent."
+last_verified: 2026-10-14
 chatbot:
-  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu"]
+  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu", "bounce", "factuur niet aangekomen", "adres bestaat niet"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
     - { label: "Open email settings", to: "/settings/email" }
@@ -37,5 +37,13 @@ Does the app say the message has not been sent yet because we are checking it fi
 The check skips itself once your workspace has proven itself: with a verified sending domain, a paid subscription (a trial does not count), a stretch of successfully delivered messages, or after we approved a held message. Filling in a KVK number does not help here: the register does not show who is actually behind an account.
 
 Is your message still held after an hour, or did no notification arrive? Contact us and we will take a look.
+
+## A sent email can still bounce afterwards
+
+Is your invoice, quote or reminder marked Sent, yet the mail never arrived at your customer? It can also come back minutes later: some mail servers accept a message first and refuse it afterwards. In that case you get a notification in the bell, which opens the invoice or quote, and an email to whoever sent the document; if that person is no longer in the workspace, the email goes to the owner. There is one notification per failed attempt, and only while no successful send of the same document has gone out since. If your customer merely marks the email as spam, no notification arrives, because they did receive it.
+
+The timeline on the document detail page names the reason. When the mail server says the address does not exist, it names the address: "The email address info@bedrijf.nl does not exist". This is what to do then:
+1. Fill in the correct email address on the customer record
+2. Send the document again from its detail page
 
 Tip: Preview the invoice first if you want to confirm the correct customer and document before resending.

@@ -1,7 +1,7 @@
 ---
 title: MwSt
 description: "Erfassen Sie vereinnahmte und gezahlte MwSt., bereiten Sie die Erklärung vor und behalten Sie Fristen im Blick, nach dem Formular der Belastingdienst."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
 
 <!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
@@ -208,7 +208,7 @@ Die Kleinunternehmerregelung verwalten Sie unter **Einstellungen › MwSt.**: Ei
 
 Überschreiten Sie 20.000 €, während Sie noch teilnehmen, erscheint oben im Rechnungseditor eine Warnung. Sie sagt, dass Sie über der KOR-Grenze liegen, erklärt, dass die Rechnung MwSt. statt 0 % enthalten muss, und die Schaltfläche öffnet **Einstellungen › MwSt.**, damit Sie sich bei der Belastingdienst abmelden und die KOR ausschalten können.
 
-Die KOR lässt sich auch direkt im Rechnungsformular einschalten. Eine neue oder im Entwurf befindliche Rechnung mit MwSt., während das Unternehmen keine USt-IdNr. hat und noch nicht teilnimmt, zeigt bei den Zeilen einen KOR-Tipp. **KOR einschalten** fragt zuerst nach einer Bestätigung; der Schalter gilt für die MwSt.-Zahlen des ganzen Jahres und die noch offenen Erklärungen, und offene Rechnungs- und Angebotsentwürfe gehen mit auf 0 % MwSt. Haben Sie in diesem Jahr schon selbst eine MwSt.-Erklärung abgegeben? Dann weist der Dialog darauf hin, dass ein eingereichtes Jahr eine Berichtigung braucht, bevor die KOR wieder stimmt. Der Tipp erscheint nicht bei Angeboten, Gutschriften oder Rechnungen mit Reverse-Charge und bleibt weg, sobald Sie ihn schließen, eine USt-IdNr. hinterlegt ist oder die KOR an ist.
+Die KOR lässt sich auch direkt im Rechnungsformular einschalten. Eine neue oder im Entwurf befindliche Rechnung mit MwSt., während das Unternehmen keine USt-IdNr. hat und noch nicht teilnimmt, zeigt bei den Zeilen einen KOR-Tipp. **KOR einschalten** fragt zuerst nach einer Bestätigung; der Schalter gilt für die MwSt.-Zahlen des ganzen Jahres und die noch offenen Erklärungen, und offene Rechnungs- und Angebotsentwürfe sowie Arbeitsberichte ohne Unterschrift gehen mit auf 0 % MwSt. Haben Sie in diesem Jahr schon selbst eine MwSt.-Erklärung abgegeben? Dann weist der Dialog darauf hin, dass ein eingereichtes Jahr eine Berichtigung braucht, bevor die KOR wieder stimmt. Der Tipp erscheint nicht bei Angeboten, Gutschriften oder Rechnungen mit Reverse-Charge und bleibt weg, sobald Sie ihn schließen, eine USt-IdNr. hinterlegt ist oder die KOR an ist.
 
 Ist die KOR an, brauchen Rechnungen keine USt-IdNr.: Die Prüfung vor dem Versand verlangt eine IBAN und hält die Rechnung nicht mehr wegen einer fehlenden USt-IdNr. zurück. Der Einrichtungsassistent stellt die KOR-Frage mit echten Antworten: ja, nein oder weiß ich nicht. Bei "weiß ich nicht" steht vorn, dass nur die eigene Anmeldung bei der Belastingdienst Sie in die Regelung bringt; ein niedriger Umsatz allein reicht nicht, und der Brief der Steuerbehörde gibt Gewissheit. Wählen Sie ja, wird die Regelung eingeschaltet und Rechnungen werden ohne MwSt. erstellt, mit einem Hinweis auf Ihre Teilnahme an der KOR.
 

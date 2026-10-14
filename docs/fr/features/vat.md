@@ -1,7 +1,7 @@
 ---
 title: TVA
 description: "Suivez la TVA collectée et payée, préparez votre déclaration et anticipez les échéances, selon le formulaire de la Belastingdienst."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
 
 <!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
@@ -208,7 +208,7 @@ La kleineondernemersregeling se gère dans **Paramètres › TVA** : une carte c
 
 Si vous dépassez 20 000 € tout en participant encore, un bandeau d'avertissement apparaît en haut de l'éditeur de facture. Il indique que vous êtes au-dessus du seuil du KOR, explique que la facture doit comporter de la TVA au lieu de 0 %, et son bouton ouvre **Paramètres › TVA** pour que vous puissiez vous désinscrire auprès de la Belastingdienst et désactiver le KOR.
 
-Le KOR peut aussi être activé depuis le formulaire de facture. Une facture nouvelle ou en brouillon portant de la TVA, alors que l'entreprise n'a pas de numéro de TVA et n'est pas encore inscrite, affiche une suggestion KOR près des lignes. **Activer le KOR** demande d'abord une confirmation ; l'activation s'applique aux chiffres de TVA de toute l'année et aux déclarations encore ouvertes, et les factures et devis en brouillon passent également à 0 % de TVA. Vous avez déjà déposé vous-même une déclaration de TVA cette année ? La boîte de dialogue précise qu'une année déclarée nécessite une rectification avant que le KOR concorde à nouveau. La suggestion n'apparaît pas sur les devis, les avoirs ni les factures en autoliquidation, et disparaît dès que vous la fermez, qu'un numéro de TVA est enregistré ou que le KOR est activé.
+Le KOR peut aussi être activé depuis le formulaire de facture. Une facture nouvelle ou en brouillon portant de la TVA, alors que l'entreprise n'a pas de numéro de TVA et n'est pas encore inscrite, affiche une suggestion KOR près des lignes. **Activer le KOR** demande d'abord une confirmation ; l'activation s'applique aux chiffres de TVA de toute l'année et aux déclarations encore ouvertes, et les factures et devis en brouillon ainsi que les bons d'intervention non signés passent également à 0 % de TVA. Vous avez déjà déposé vous-même une déclaration de TVA cette année ? La boîte de dialogue précise qu'une année déclarée nécessite une rectification avant que le KOR concorde à nouveau. La suggestion n'apparaît pas sur les devis, les avoirs ni les factures en autoliquidation, et disparaît dès que vous la fermez, qu'un numéro de TVA est enregistré ou que le KOR est activé.
 
 Tant que le KOR est activé, les factures n'ont pas besoin de numéro de TVA : la vérification avant envoi demande un IBAN et ne bloque plus la facture pour un numéro de TVA manquant. L'assistant de configuration pose la question du KOR avec de vraies réponses : oui, non ou je ne sais pas. « Je ne sais pas » rappelle d'abord que seule votre propre inscription auprès de la Belastingdienst vous fait entrer dans le régime ; un faible chiffre d'affaires ne suffit pas, et le courrier de l'administration fiscale vous le confirme. Si vous répondez oui, le régime est activé et les factures sont établies sans TVA, avec une mention indiquant que vous participez au KOR.
 

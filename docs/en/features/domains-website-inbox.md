@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox: what is included in Desk and Office and how they work together."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
 
 # Domains, Website, and Inbox
@@ -120,14 +120,14 @@ Transferring a domain registered through MyCompanyDesk to another registrar has 
 - **Free claimed domains**: the free-domain perk is lost. The workspace can never claim another free domain. Note that buying out the domain during the trial (see buy-out section above) is not a transfer, but a holder handover that gives the customer ownership before any transfer happens, so the free-domain perk is preserved for the duration of the trial.
 - **Purchased domains**: no perk is lost. The domain is simply marked as transferred.
 
-The claim window warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. A "Held during trial" notice explains that the domain is registered under MyCompanyDesk during the trial and will be transferred to the customer for free when they become a paying Office customer, or available for buy-out at €15 on early exit. What a transfer revokes is recorded so support can look it up.
+The claim window warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. A "Held during trial" notice explains that the domain is registered under MyCompanyDesk during the trial and will be transferred to the customer for free when they become a paying Office customer, or available for buy-out at €15 on early exit. A workspace that is already a paying Office customer sees its own text: the domain moves to your name right away and renews free of charge every year you keep Office; stop Office and you renew it yourself afterwards. What a transfer revokes is recorded so support can look it up.
 
 #### Buy or claim a domain
 
 The domain purchase card sits in the domain chooser on the Your domain page. The card lets
 
 - **Buy**: Paid purchase via OpenProvider. You enter a domain name, the card checks availability and price, and then opens the purchase window. After you fill in the registrant details, you pay via Stripe in the same window. Once the payment is complete, MyCompanyDesk registers the domain with OpenProvider and connects it to Cloudflare in nameserver mode.
-- **Free claim**: Eligible workspaces on an Office trial can claim one `.nl` domain free of charge for the first year. The card checks whether your workspace meets the conditions. The window asks for the registrant details and then submits the claim. MyCompanyDesk pays the first-year registration fee.
+- **Free claim**: Eligible workspaces on an Office trial or with a paid Office subscription can claim one `.nl` domain free of charge for the first year. The card checks whether your workspace meets the conditions. The window asks for the registrant details and then submits the claim. MyCompanyDesk pays the first-year registration fee.
 
 How the domain renews after the first year:
 

@@ -1,7 +1,7 @@
 ---
 title: Btw
 description: "Volg ontvangen en betaalde btw, bereid je aangifte voor en blijf deadlines voor. De btw-pagina's volgen het aangifteformulier van de Belastingdienst."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
 
 <!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
@@ -208,7 +208,7 @@ De kleineondernemersregeling beheer je bij **Instellingen › Btw**: een kaart z
 
 Ga je boven € 20.000 terwijl je nog meedoet, dan verschijnt bovenaan de factuureditor een waarschuwing. Die zegt dat je boven de KOR-grens zit, legt uit dat de factuur btw moet bevatten in plaats van 0%, en de knop opent **Instellingen › Btw**, zodat je je bij de Belastingdienst kunt afmelden en de KOR kunt uitzetten.
 
-Je kunt de KOR ook vanuit het factuurformulier aanzetten. Een nieuwe factuur of conceptfactuur met btw, terwijl het bedrijf geen btw-nummer heeft en nog niet meedoet, toont bij de regels een KOR-tip. **KOR aanzetten** vraagt eerst om bevestiging, en de schakelaar geldt voor de btw-cijfers van het hele jaar en de aangiftes die nog openstaan; open conceptfacturen en conceptoffertes gaan mee naar 0% btw. Heb je dit jaar zelf al btw-aangifte gedaan? Dan zegt het venster dat een ingediend jaar een suppletie nodig heeft voordat de KOR weer klopt. De tip verschijnt niet bij offertes, creditnota's of facturen met verlegde btw, en blijft weg zodra je hem wegklikt, er een btw-nummer bekend is of de KOR aan staat.
+Je kunt de KOR ook vanuit het factuurformulier aanzetten. Een nieuwe factuur of conceptfactuur met btw, terwijl het bedrijf geen btw-nummer heeft en nog niet meedoet, toont bij de regels een KOR-tip. **KOR aanzetten** vraagt eerst om bevestiging, en de schakelaar geldt voor de btw-cijfers van het hele jaar en de aangiftes die nog openstaan; open conceptfacturen, conceptoffertes en ongetekende werkbonnen gaan mee naar 0% btw. Heb je dit jaar zelf al btw-aangifte gedaan? Dan zegt het venster dat een ingediend jaar een suppletie nodig heeft voordat de KOR weer klopt. De tip verschijnt niet bij offertes, creditnota's of facturen met verlegde btw, en blijft weg zodra je hem wegklikt, er een btw-nummer bekend is of de KOR aan staat.
 
 Staat de KOR aan, dan hebben facturen geen btw-nummer nodig: de controle voor verzenden vraagt om een IBAN en houdt de factuur niet meer tegen vanwege een ontbrekend btw-id. De instelwizard stelt de KOR-vraag met echte antwoorden: ja, nee of weet ik niet. Bij weet ik niet staat voorop dat je alleen meedoet als je je zelf bij de Belastingdienst hebt aangemeld; een lage omzet alleen is niet genoeg, en de brief van de Belastingdienst geeft zekerheid. Kies je ja, dan gaat de regeling aan en worden facturen zonder btw gemaakt, met een vermelding dat je meedoet aan de KOR.
 
