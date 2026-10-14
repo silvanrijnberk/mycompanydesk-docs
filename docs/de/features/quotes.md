@@ -22,7 +22,7 @@ Der Angebotsbereich ermöglicht es Ihnen, Angebote zu erstellen, zu versenden un
 
 Das Angebotsformular ähnelt dem Rechnungsformular: Wenn Sie wissen, wie man eine Rechnung erstellt, wissen Sie bereits, wie man ein Angebot erstellt. Angebote erstellen Sie unbegrenzt, in jedem Abonnement, auch in Desk.
 
-Das Formular trägt denselben Schalter **Beträge inkl. MwSt.** wie das Rechnungsformular. Ist er an, tippen Sie die Preise ein, die der Kunde zahlt, und die MwSt. kommt heraus. Siehe [Rechnungen](/de/features/invoices#preise-inklusive-mehrwertsteuer).
+Das Formular trägt dieselbe Wahl, Preise mit oder ohne MwSt., wie das Rechnungsformular, im Spaltenkopf des Preisfelds. Steht sie auf inklusive MwSt., tippen Sie die Preise ein, die der Kunde zahlt, und die MwSt. kommt heraus. Siehe [Rechnungen](/de/features/invoices#preise-inklusive-mehrwertsteuer).
 
 ## Fotos bei einem Angebot
 

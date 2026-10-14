@@ -41,7 +41,7 @@ Positionen wiederkehrender Rechnungen funktionieren wie bei regulären Rechnunge
 - Ein Prozentrabatt kann nicht höher als 100 % sein.
 - Ein Rabattwert darf nicht negativ sein.
 
-Das Formular trägt denselben Schalter **Beträge inkl. MwSt.** wie das Rechnungsformular. Ist er an, sind die getippten Preise das, was der Kunde zahlt, MwSt. inklusive. Siehe [Rechnungen](/de/features/invoices#preise-inklusive-mehrwertsteuer).
+Das Formular trägt dieselbe Wahl, Preise mit oder ohne MwSt., wie das Rechnungsformular, im Spaltenkopf des Preisfelds. Steht sie auf inklusive MwSt., sind die getippten Preise das, was der Kunde zahlt, MwSt. inklusive. Siehe [Rechnungen](/de/features/invoices#preise-inklusive-mehrwertsteuer).
 
 ## Zahlungsoptionen und Rechnungsdaten
 

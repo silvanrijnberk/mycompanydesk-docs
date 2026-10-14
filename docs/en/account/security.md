@@ -88,6 +88,8 @@ You can sign in without a password using a one-time link sent to your email:
 
 The link is valid for 15 minutes and can only be used once. For security, requesting a new link invalidates any outstanding ones.
 
+Has the email address on the account not been verified yet? Then the sign-in link request sends the verification email instead: its link verifies your address and signs you in at the same time.
+
 ::: tip
 If you verify your email after signing up, you are signed in automatically. No extra login step is needed.
 :::

@@ -41,7 +41,7 @@ Les lignes des factures récurrentes fonctionnent comme les lignes des factures 
 - Une remise en pourcentage ne peut pas dépasser 100 %.
 - Une valeur de remise ne peut pas être négative.
 
-Le formulaire porte le même interrupteur **Montants TTC** que celui des factures. Une fois activé, les prix saisis sont ce que paie le client, TVA incluse. Voir [Factures](/fr/features/invoices#prix-ttc).
+Le formulaire porte le même choix que celui des factures, dans l'en-tête de colonne du champ prix : prix avec ou sans TVA. Avec des prix TTC, les prix saisis sont ce que paie le client, TVA incluse. Voir [Factures](/fr/features/invoices#prix-ttc).
 
 ## Options de paiement et détails de facture
 
