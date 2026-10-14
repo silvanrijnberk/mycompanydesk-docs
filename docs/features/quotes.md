@@ -49,6 +49,8 @@ Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mai
 
 Een offerte heeft ook minstens één regel nodig voordat hij definitief kan worden gemaakt of verstuurd: de app weigert een lege offerte en vraagt je eerst een regel toe te voegen.
 
+Heet je werkruimte nog **Mijn werkruimte** omdat je bij aanmelding nog geen bedrijfsnaam hebt opgegeven, dan vraagt de app eerst je bedrijfsnaam voordat de offerte naar je klant gaat. De naam komt als afzender op je offerte en je facturen; je vult hem één keer in, daarna staat hij er vanzelf op. Dit geldt voor **Versturen** en ook voor het tekenverzoek, zowel via **Naar tekenen versturen** als via de knoppen in de ondertekeningskaart.
+
 ## Klantactiviteit
 
 Zodra een offerte per e-mail is verstuurd, toont de detailpagina een rij signalen die precies hetzelfde werken als bij facturen:

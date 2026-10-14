@@ -49,6 +49,8 @@ Si votre espace de travail contient des conditions générales dans Documents, l
 
 Un devis a aussi besoin d'au moins une ligne avant de pouvoir être finalisé ou envoyé : l'application refuse un devis vide et vous demande d'ajouter d'abord une ligne.
 
+Si votre espace de travail s'appelle encore **Mijn werkruimte**, parce que vous n'avez pas saisi de nom d'entreprise lors de l'inscription, l'application vous demande d'abord votre nom d'entreprise avant que le devis ne parte vers votre client. Ce nom figure comme expéditeur sur vos devis et vos factures ; vous le saisissez une fois, ensuite il y figure automatiquement. Cela vaut pour **Envoyer** et pour la demande de signature, via **Envoyer pour signature** comme via les boutons dans la carte de signature.
+
 ## Activité client
 
 Une fois qu'un devis a été envoyé par e-mail, la page de détail affiche des pastilles d'activité qui fonctionnent comme pour les factures :
