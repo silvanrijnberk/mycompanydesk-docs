@@ -1,7 +1,7 @@
 ---
 title: Domaines, site web et boîte de réception
 description: "Domaines personnalisés, site vitrine hébergé et boîte partagée : ce qui est inclus dans Desk et Office et comment ils fonctionnent ensemble."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
 
 # Domaines, site web et boîte de réception
@@ -120,14 +120,14 @@ Transférer un domaine enregistré via MyCompanyDesk vers un autre registrar a d
 - **Domaines réclamés gratuitement** : l'avantage du domaine gratuit est perdu. L'espace de travail ne pourra plus jamais réclamer un autre domaine gratuit. À noter : le rachat du domaine pendant l'essai (voir section rachat ci-dessus) n'est pas un transfert, c'est un changement de titulaire qui donne la propriété au client avant tout transfert, préservant ainsi l'avantage du domaine gratuit pour la durée de l'essai.
 - **Domaines achetés** : aucun avantage ne disparaît. Le domaine apparaît simplement comme transféré.
 
-La fenêtre de réclamation avertit de ces conséquences avant qu'une réclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Une notice "Fonctionnement de votre domaine gratuit" explique que le domaine est enregistré au nom de MyCompanyDesk pendant l'essai, qu'il sera transféré gratuitement au nom du client lorsque celui-ci devient un client Office payant, et qu'il peut être racheté pour €15 en cas de départ anticipé. Ce qui disparaît lors d'un transfert est consigné, pour que le support puisse le retrouver.
+La fenêtre de réclamation avertit de ces conséquences avant qu'une réclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Une notice "Fonctionnement de votre domaine gratuit" explique que le domaine est enregistré au nom de MyCompanyDesk pendant l'essai, qu'il sera transféré gratuitement au nom du client lorsque celui-ci devient un client Office payant, et qu'il peut être racheté pour €15 en cas de départ anticipé. Si l'espace de travail est déjà un client Office payant, la fenêtre affiche ses propres textes : le domaine passe immédiatement à votre nom et se renouvelle gratuitement chaque année tant que vous gardez Office ; arrêtez Office et vous le renouvelez vous-même ensuite. Ce qui disparaît lors d'un transfert est consigné, pour que le support puisse le retrouver.
 
 #### Acheter ou réclamer un domaine
 
 La carte d'achat de domaine se trouve dans le sélecteur de domaine de la page Votre domaine. La carte permet à l'utilisateur de choisir et d'acquérir un domaine via deux chemins, qui ouvrent tous deux une fenêtre d'achat en deux étapes. La première étape collecte les données du titulaire (requises par le registrar pour le WHOIS). La deuxième étape gère le paiement ou la soumission :
 
 - **Acheter**: Achat payant via OpenProvider. Vous saisissez un nom de domaine, la carte vérifie la disponibilité et le prix, puis ouvre la fenêtre d'achat. Après les données du titulaire, vous payez via Stripe dans la même fenêtre. Une fois le paiement terminé, MyCompanyDesk enregistre le domaine chez OpenProvider et le relie à Cloudflare en mode nameserver.
-- **Réclamation gratuite**: Les espaces de travail éligibles en période d'essai Office peuvent réclamer gratuitement un domaine `.nl` pour la première année. La carte vérifie si votre espace de travail remplit les conditions. La fenêtre demande les données du titulaire, puis envoie la réclamation. MyCompanyDesk prend en charge les frais d'enregistrement de la première année.
+- **Réclamation gratuite**: Les espaces de travail éligibles en période d'essai Office ou abonnés à un Office payant peuvent réclamer gratuitement un domaine `.nl` pour la première année. La carte vérifie si votre espace de travail remplit les conditions. La fenêtre demande les données du titulaire, puis envoie la réclamation. MyCompanyDesk prend en charge les frais d'enregistrement de la première année.
 
 Comment le domaine se renouvelle après la première année :
 

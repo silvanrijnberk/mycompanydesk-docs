@@ -1,7 +1,7 @@
 ---
 title: Domains, Website und Posteingang
 description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach: was in Desk und Office enthalten ist und wie sie zusammenarbeiten."
-last_verified: 2026-10-13
+last_verified: 2026-10-14
 ---
 
 # Domains, Website und Posteingang
@@ -120,14 +120,14 @@ Die Übertragung einer über MyCompanyDesk registrierten Domain zu einem anderen
 - **Kostenlos beanspruchte Domains**: Der Gratis-Domain-Vorteil geht verloren. Der Arbeitsbereich kann nie wieder eine andere Gratis-Domain beanspruchen. Hinweis: Die Übernahme der Domain während der Testphase (siehe Übernahme-Abschnitt oben) ist keine Übertragung, sondern eine Inhaberübergabe, die dem Kunden Eigentum verschafft, bevor eine Übertragung stattfindet, sodass der Gratis-Domain-Vorteil für die Dauer der Testphase erhalten bleibt.
 - **Gekaufte Domains**: Es entfällt kein Vorteil. Die Domain steht danach einfach als umgezogen.
 
-Das Claim-Fenster warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Ein "So funktioniert Ihre Gratis-Domain"-Hinweis erklärt, dass die Domain während der Testphase auf MyCompanyDesk registriert ist, beim Wechsel zu Office kostenlos auf Ihren Namen übertragen wird und bei vorzeitigem Ausstieg für €15 übernommen werden kann. Was bei einem Umzug entfällt, halten wir fest, damit der Support es nachvollziehen kann.
+Das Claim-Fenster warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Ein "So funktioniert Ihre Gratis-Domain"-Hinweis erklärt, dass die Domain während der Testphase auf MyCompanyDesk registriert ist, beim Wechsel zu Office kostenlos auf Ihren Namen übertragen wird und bei vorzeitigem Ausstieg für €15 übernommen werden kann. Ist der Arbeitsbereich bereits zahlender Office-Kunde, zeigt das Fenster seine eigenen Texte: die Domain kommt sofort auf Ihren Namen und verlängert jedes Jahr kostenlos, solange Sie Office haben; beenden Sie Office, verlängern Sie sie danach selbst. Was bei einem Umzug entfällt, halten wir fest, damit der Support es nachvollziehen kann.
 
 #### Domain kaufen oder beanspruchen
 
 Die Domain-Kaufkarte sitzt in der Domain-Auswahl auf der Seite Ihre Domain. Über die Karte wählen Sie eine Domain aus und sichern sie sich auf zwei Wegen, die beide ein Kauffenster in zwei Schritten öffnen. Schritt 1 erfasst die Registrantdaten (die Angaben, die der Registrar für WHOIS braucht). Schritt 2 erledigt Zahlung oder Claim:
 
 - **Kaufen**: Bezahlter Kauf über OpenProvider. Sie geben einen Domainnamen ein, die Karte prüft Verfügbarkeit und Preis und öffnet dann das Kauffenster. Nachdem Sie die Registrantdaten eingegeben haben, bezahlen Sie im selben Fenster über Stripe. Nach Abschluss registriert MyCompanyDesk die Domain bei OpenProvider und verbindet sie im Nameserver-Modus mit Cloudflare.
-- **Gratis-Claim**: Berechtigte Workspaces in einer Office-Testphase können eine `.nl`-Domain für das erste Jahr kostenlos beanspruchen. Die Karte prüft, ob Ihr Arbeitsbereich die Bedingungen erfüllt. Das Fenster erfasst die Registrantdaten und reicht danach den Claim ein. MyCompanyDesk trägt die Registrierungsgebühr für das erste Jahr.
+- **Gratis-Claim**: Berechtigte Workspaces in einer Office-Testphase oder mit einem bezahlten Office-Abonnement können eine `.nl`-Domain für das erste Jahr kostenlos beanspruchen. Die Karte prüft, ob Ihr Arbeitsbereich die Bedingungen erfüllt. Das Fenster erfasst die Registrantdaten und reicht danach den Claim ein. MyCompanyDesk trägt die Registrierungsgebühr für das erste Jahr.
 
 So verlängert sich die Domain nach dem ersten Jahr:
 

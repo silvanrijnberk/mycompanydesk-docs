@@ -1,9 +1,9 @@
 ---
 title: "Fehlgeschlagene Rechnungs-E-Mail"
-description: "So beheben Sie eine fehlgeschlagene Rechnungs-E-Mail und wissen, was zu tun ist, wenn eine Nachricht zur Inhaltsprüfung zurückgehalten wird."
-last_verified: 2026-10-01
+description: "So beheben Sie eine fehlgeschlagene Rechnungs-E-Mail, und was zu tun ist bei Inhaltsprüfung oder wenn eine gesendete Rechnung noch zurückkommt."
+last_verified: 2026-10-14
 chatbot:
-  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu"]
+  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu", "bounce", "factuur niet aangekomen", "adres bestaat niet"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
     - { label: "Open email settings", to: "/settings/email" }
@@ -37,5 +37,13 @@ Meldet die App, dass die Nachricht noch nicht gesendet wurde, weil wir sie zuers
 Die Prüfung überspringt sich selbst, sobald sich Ihr Arbeitsbereich bewährt hat: mit einer verifizierten Absendedomain, einem bezahlten Abonnement (eine Testphase zählt nicht), einer Reihe reibungslos zugestellter Nachrichten oder nachdem wir eine zurückgehaltene Nachricht freigegeben haben. Das Eintragen Ihrer KVK-Nummer hilft hier nicht: Das Register zeigt nicht, wer tatsächlich hinter einem Konto steckt.
 
 Wird Ihre Nachricht nach einer Stunde immer noch zurückgehalten, oder kommt keine Benachrichtigung? Wenden Sie sich an uns, dann sehen wir nach.
+
+## Eine gesendete E-Mail kann noch zurückkommen
+
+Steht Ihre Rechnung, Ihr Angebot oder Ihre Erinnerung auf Gesendet und kam die E-Mail beim Kunden doch nicht an? Auch dann kann die E-Mail einige Minuten später noch zurückkommen: manche Mailserver nehmen eine Nachricht zuerst an und lehnen sie danach ab. Dann erhalten Sie eine Benachrichtigung in der Glocke, die zur Rechnung oder zum Angebot führt, und eine E-Mail an die Person, die das Dokument gesendet hat; gehört sie nicht (mehr) zum Arbeitsbereich, geht die E-Mail an den Inhaber. Es gibt eine Benachrichtigung pro fehlgeschlagenem Versuch, und nur solange seitdem keine erfolgreiche Sendung desselben Dokuments ausgegangen ist. Markiert Ihr Kunde die E-Mail nur als Spam, kommt keine Benachrichtigung, denn er hat sie erhalten.
+
+Die Zeitlinie auf der Dokumentdetailseite nennt den Grund. Meldet der Mailserver, dass die Adresse nicht existiert, nennt sie die Adresse: „Die E-Mail-Adresse info@firma.nl existiert nicht“. So gehen Sie dann vor:
+1. Tragen Sie die richtige E-Mail-Adresse bei den Kundendaten ein
+2. Senden Sie das Dokument über die Detailseite erneut
 
 Tipp: Sehen Sie sich zuerst die Vorschau der Rechnung an, wenn Sie vor dem erneuten Senden Kunde und Dokument bestätigen möchten.

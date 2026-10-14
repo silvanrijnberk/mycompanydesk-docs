@@ -1,9 +1,9 @@
 ---
 title: "Échec d'envoi d'une facture"
-description: "Corrigez un e-mail de facture échoué et sachez quoi faire quand un message est retenu par le contrôle du contenu des envois."
-last_verified: 2026-10-01
+description: "Corrigez un e-mail de facture échoué et sachez quoi faire en cas de contrôle du contenu ou si une facture envoyée rebondit après envoi."
+last_verified: 2026-10-14
 chatbot:
-  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu"]
+  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu", "bounce", "factuur niet aangekomen", "adres bestaat niet"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
     - { label: "Open email settings", to: "/settings/email" }
@@ -37,5 +37,13 @@ L'application indique que le message n'est pas encore parti parce que nous le v�
 Le contrôle se désactive de lui-même dès que votre espace de travail a fait ses preuves : avec un domaine d'envoi vérifié, un abonnement payant (une période d'essai ne compte pas), une série de messages bien délivrés, ou après que nous avons validé un message retenu. Remplir votre numéro KVK n'aide pas ici : le registre ne montre pas qui se trouve réellement derrière un compte.
 
 Votre message est toujours retenu après une heure, ou aucune notification n'est arrivée ? Contactez-nous, nous regarderons.
+
+## Un e-mail déjà envoyé peut encore rebondir
+
+Votre facture, devis ou rappel est marqué Envoyé, mais rien n'est arrivé chez le client ? Il peut aussi rebondir quelques minutes plus tard : certains serveurs de messagerie acceptent d'abord le message puis le refusent. Vous recevez alors une notification dans la cloche, qui ouvre la facture ou le devis, ainsi qu'un e-mail adressé à la personne qui a envoyé le document ; si elle n'est plus dans l'espace de travail, l'e-mail part vers le propriétaire. Une notification par tentative échouée, et uniquement tant qu'aucun envoi réussi du même document n'a suivi. Si votre client marque simplement l'e-mail comme spam, aucune notification n'arrive, car il l'a bien reçu.
+
+La chronologie sur la page de détail du document nomme la raison. Si le serveur de messagerie indique que l'adresse n'existe pas, la chronologie cite l'adresse : « L'adresse e-mail info@bedrijf.nl n'existe pas ». Voici alors quoi faire :
+1. Inscrivez la bonne adresse e-mail sur la fiche du client
+2. Renvoyez le document depuis sa page de détail
 
 Astuce : affichez d'abord l'aperçu de la facture si vous voulez confirmer le bon client et le bon document avant de renvoyer.
