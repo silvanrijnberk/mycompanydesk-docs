@@ -94,12 +94,14 @@ What the page lets you do:
 - **URL redirects** for the selected domain: three free Cloudflare Page Rules per zone. Source pattern + destination + 301/302.
 - **Email security** for the selected domain: SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`). If your domain already carries its own SPF or DMARC record, it stays in place and the check accepts any single policy record of that kind.
 - **Analytics** for the selected domain: last 30 days of requests, bandwidth, threats, visitors, pageviews. When Cloudflare does not deliver those numbers, the tab shows an empty state instead of an error.
-- **Remove** the selected domain: the domain leaves your workspace and the Cloudflare zone (or the website link in CNAME mode) is cleaned up. If this domain carried your website, the site falls back to another active website domain or to the free mycompanydesk.site address.
+- **Remove** the selected domain: the domain leaves your workspace and the Cloudflare zone (or the website link in CNAME mode) is cleaned up. If this domain carried your website, the site falls back to another active website domain or to the free mycompanydesk.site address. Is the domain registered through MyCompanyDesk? Removal asks for an explicit confirmation first: website and email on the address stop working right away, renewals stop, and the transfer code can no longer be retrieved afterwards. Want to move the domain? Fetch the transfer code first.
 - **Review inactive domains** in their own card: expired domains, domains transferred away, and CNAME domains that never connected are listed with a status badge and a short explanation, each with a Remove action; expired domains also offer a contact-support route.
 
 #### Renewal lifecycle
 
 Domain renewal follows three paths depending on how the domain was acquired:
+
+Every renewal window shows its price before you pay.
 
 1. **Free renewal with Office** (a free claimed domain in a workspace that became a paying Office customer): MyCompanyDesk pays for the renewal. The domain auto-renews as long as the workspace is really on Office; if the subscription is cancelled to run until the end of its period and Office stops before the domain expires, the free renewal no longer applies and renewing the domain is up to you. No payment method needed.
 2. **Paid auto-renewal** (a purchased domain, or a free claimed domain in a workspace without Office): Charged annually via the saved card. Works like any subscription renewal.
