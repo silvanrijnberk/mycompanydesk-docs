@@ -94,12 +94,14 @@ Wat je op de pagina kunt doen:
 - **URL-doorverwijzingen** voor het geselecteerde domein: drie gratis Cloudflare Page Rules per zone. Bronpatroon + bestemming + 301/302.
 - **E-mailbeveiliging** voor het geselecteerde domein: SPF/DMARC/DKIM-controle met een een-klik "fix" die veilige standaardwaarden schrijft (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`). Als je domein al een eigen SPF- of DMARC-record heeft, blijft die staan en accepteert de controle elk enkel beleidsrecord van dat soort.
 - **Analytics** voor het geselecteerde domein: laatste 30 dagen van verzoeken, bandbreedte, dreigingen, bezoekers, paginaweergaven. Levert Cloudflare die cijfers niet, dan toont het tabblad een lege status in plaats van een foutmelding.
-- **Verwijderen** van het geselecteerde domein: het domein verdwijnt uit je werkruimte en de Cloudflare-zone (of in CNAME-modus de websitekoppeling) wordt opgeruimd. Draait je website op dit domein, dan valt de site terug op een ander actief websitedomein of op het gratis mycompanydesk.site-adres.
+- **Verwijderen** van het geselecteerde domein: het domein verdwijnt uit je werkruimte en de Cloudflare-zone (of in CNAME-modus de websitekoppeling) wordt opgeruimd. Draait je website op dit domein, dan valt de site terug op een ander actief websitedomein of op het gratis mycompanydesk.site-adres. Is het domein via MyCompanyDesk geregistreerd? Verwijderen vraagt eerst om een expliciete bevestiging: website en e-mail op het adres werken er meteen niet meer, we verlengen niet meer, en de verhuiscode is erna niet meer op te halen. Wil je het domein meenemen, haal de verhuiscode er dan eerst op.
 - **Inactieve domeinen** bekijken in hun eigen kaart: verlopen domeinen, verhuisde domeinen en CNAME-domeinen die nooit koppelden, staan er met een statusbadge en een korte uitleg, elk met een Verwijder-actie; verlopen domeinen bieden ook een contactroute.
 
 #### Verlengingscyclus
 
 Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
+
+Elk verlengvenster toont eerst het verlengingstarief.
 
 1. **Gratis verlenging bij Office** (een gratis geclaimd domein in een werkruimte die betalend Office-klant is geworden): MyCompanyDesk betaalt de verlenging. Het domein verlengt automatisch zolang de werkruimte werkelijk op Office loopt; heb je het abonnement per einde periode opgezegd en stopt Office vóórdat het domein verloopt, dan verleng je het domein daarna zelf. Geen betaalmiddel nodig.
 2. **Betaalde automatische verlenging** (een gekocht domein, of een gratis geclaimd domein in een werkruimte zonder Office): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.

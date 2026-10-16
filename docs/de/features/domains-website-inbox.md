@@ -94,12 +94,14 @@ Was Sie auf der Seite tun konnen:
 - **URL-Weiterleitungen** für die ausgewählte Domain: drei kostenlose Cloudflare Page Rules pro Zone. Quellmuster + Ziel + 301/302.
 - **E-Mail-Sicherheit** für die ausgewählte Domain: SPF/DMARC/DKIM-Prüfung mit einer Ein-Klick-"Fix"-Option, die sichere Standardwerte schreibt (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`). Wenn Ihre Domain bereits einen eigenen SPF- oder DMARC-Record hat, bleibt dieser stehen, und die Prüfung akzeptiert jeden einzelnen Policy-Record dieser Art.
 - **Analyse** für die ausgewählte Domain: die letzten 30 Tage mit Anfragen, Bandbreite, Bedrohungen, Besuchern, Seitenaufrufen. Liefert Cloudflare diese Zahlen nicht, zeigt die Registerkarte einen leeren Zustand statt einer Fehlermeldung.
-- **Entfernen** der ausgewählten Domain: die Domain verschwindet aus Ihrem Arbeitsbereich, und die Cloudflare-Zone (im CNAME-Modus die Website-Verknüpfung) wird abgebaut. Lief Ihre Website über diese Domain, fällt die Website auf eine andere aktive Website-Domain oder auf die kostenlose mycompanydesk.site-Adresse zurück.
+- **Entfernen** der ausgewählten Domain: die Domain verschwindet aus Ihrem Arbeitsbereich, und die Cloudflare-Zone (im CNAME-Modus die Website-Verknüpfung) wird abgebaut. Lief Ihre Website über diese Domain, fällt die Website auf eine andere aktive Website-Domain oder auf die kostenlose mycompanydesk.site-Adresse zurück. Ist die Domain über MyCompanyDesk registriert? Die Entfernung verlangt zuerst eine ausdrückliche Bestätigung: Website und E-Mail unter der Adresse funktionieren sofort nicht mehr, Verlängerungen enden, und der Transfercode ist danach nicht mehr abrufbar. Möchten Sie die Domain mitnehmen, rufen Sie den Transfercode vorher ab.
 - **Inaktive Domains** in einer eigenen Karte: abgelaufene Domains, zu einem anderen Anbieter übertragene Domains und CNAME-Domains, die nie verbunden wurden, erscheinen dort mit Badge und kurzer Erklärung, jeweils mit einer Entfernen-Aktion; abgelaufene Domains bieten zusätzlich den Kontakt zum Support.
 
 #### Verlängerungszyklus
 
 Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben wurde:
+
+Jedes Verlängerungsfenster zeigt zuerst den Preis.
 
 1. **Kostenlose Verlängerung mit Office** (eine kostenlos beanspruchte Domain in einem Arbeitsbereich, der zahlender Office-Kunde geworden ist): MyCompanyDesk zahlt die Verlängerung. Die Domain verlängert sich automatisch, solange der Workspace wirklich auf Office läuft; läuft das Abonnement auf das Periodenende aus und stoppt Office, bevor die Domain fällig ist, verlängern Sie die Domain danach selbst. Keine Zahlungsmethode erforderlich.
 2. **Kostenpflichtige automatische Verlängerung** (eine gekaufte Domain oder eine kostenlos beanspruchte Domain in einem Arbeitsbereich ohne Office): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.

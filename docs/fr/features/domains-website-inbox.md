@@ -94,12 +94,14 @@ Ce que la page vous permet de faire :
 - **Redirections URL** pour le domaine sélectionné : trois Cloudflare Page Rules gratuites par zone. Modèle source + destination + 301/302.
 - **Sécurité des e-mails** pour le domaine sélectionné : vérification SPF/DMARC/DKIM avec une option "corriger" en un clic qui écrit des valeurs par défaut sécurisées (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`). Si votre domaine comporte déjà son propre enregistrement SPF ou DMARC, il est conservé, et la vérification accepte tout enregistrement de stratégie unique de ce type.
 - **Analyse** pour le domaine sélectionné : 30 derniers jours de requêtes, bande passante, menaces, visiteurs, pages vues. Si Cloudflare ne fournit pas ces chiffres, l'onglet affiche un état vide plutôt qu'une erreur.
-- **Supprimer** le domaine sélectionné : le domaine quitte votre espace de travail et la zone Cloudflare (ou, en mode CNAME, la liaison du site) est supprimée. Si votre site tournait sur ce domaine, il revient vers un autre domaine de site actif ou vers l'adresse mycompanydesk.site gratuite.
+- **Supprimer** le domaine sélectionné : le domaine quitte votre espace de travail et la zone Cloudflare (ou, en mode CNAME, la liaison du site) est supprimée. Si votre site tournait sur ce domaine, il revient vers un autre domaine de site actif ou vers l'adresse mycompanydesk.site gratuite. Le domaine est enregistré via MyCompanyDesk ? La suppression demande d'abord une confirmation explicite : le site et les e-mails sur cette adresse cessent immédiatement de fonctionner, les renouvellements s'arrêtent, et le code de transfert ne pourra plus être récupéré ensuite. Vous voulez emmener le domaine ? Récupérez d'abord le code de transfert.
 - **Domaines inactifs** dans une carte dédiée : les domaines expirés, les domaines transférés ailleurs et les domaines en CNAME jamais connectés y apparaissent avec un badge d'état et une courte explication, chacun avec une action de suppression ; les domaines expirés proposent aussi de contacter le support.
 
 #### Cycle de renouvellement
 
 Le renouvellement de domaine suit trois chemins selon la manière dont le domaine a été acquis :
+
+Chaque fenêtre de renouvellement affiche d'abord le prix.
 
 1. **Renouvellement gratuit avec Office** (un domaine réclamé gratuitement dans un espace de travail devenu client Office payant) : MyCompanyDesk prend en charge le renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail est réellement sur Office ; quand l'abonnement est résilié pour la fin de période et qu'Office s'arrête avant l'expiration du domaine, le renouvellement vous incombe ensuite. Aucun moyen de paiement requis.
 2. **Renouvellement automatique payant** (un domaine acheté, ou un domaine réclamé gratuitement dans un espace de travail sans Office) : Facturé annuellement via la carte enregistrée. Fonctionne comme tout autre renouvellement d'abonnement.
