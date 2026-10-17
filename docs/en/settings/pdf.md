@@ -18,7 +18,7 @@ Go to **Settings** and open **Logo and colour**. This page sets your brand ident
 
 - **Display name:** the name customers see, if it differs from your registered company name.
 - **Brand colour:** pick any colour, or start from one of the presets. This colour is used on your website, newsletter, emails, invoices and quotes. A warning appears when a colour is too light to stay readable. If you choose a separate accent colour in Invoice design, invoices, quotes, emails and the payment page follow that colour instead. You can adopt that accent as your brand colour in one click.
-- **Company Logo:** upload an SVG (recommended), PNG or JPG; PNG and JPG go up to 10 MB, SVG stays at 2 MB, and MyCompanyDesk downsizes an oversized raster image itself on upload. For photo-style logos there is a one-click background remover. No logo yet? **Generate Logo from Text** creates a simple one from your initials and a background colour, right on this page.
+- **Company Logo:** upload an SVG (recommended), PNG or JPG; PNG and JPG go up to 10 MB, SVG stays at 2 MB, and an oversized raster image is downsized automatically on upload. For photo-style logos there is a one-click background remover. No logo yet? **Generate Logo from Text** creates a simple one from your initials and a background colour, right on this page.
 - **Preview:** a sample header shows your logo and colour together, so you see the result before it reaches a customer.
 
 Changes save automatically.
