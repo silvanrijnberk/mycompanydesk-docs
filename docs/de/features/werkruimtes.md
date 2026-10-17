@@ -157,7 +157,7 @@ Handelsregisternummer, MwSt.-Nummer, Bankverbindung und Rechnungsnummernkreis we
 
 ### Unternehmen inaktiv setzen
 
-Wählen Sie **Inaktiv setzen**, wenn Sie in einem Unternehmen nicht mehr arbeiten, aber die Unterlagen aufbewahren müssen. Die Administration bleibt lesbar und Sie können weiter alles exportieren, weil Sie die Bücher für die gesetzliche Aufbewahrungsfrist aufbewahren müssen. Sie können keine neuen Rechnungen, Ausgaben oder Kunden erfassen, und das Unternehmen wird nicht mehr für Ihr Abonnement gezählt. Auch die automatische Post stoppt: Ein inaktives Unternehmen verschickt keine automatischen Rechnungen oder Erinnerungen mehr an Kunden. Sobald Sie das Unternehmen wieder aktivieren, läuft alles sofort wieder.
+Wählen Sie **Inaktiv setzen**, wenn Sie in einem Unternehmen nicht mehr arbeiten, aber die Unterlagen aufbewahren müssen. Die Administration bleibt lesbar und Sie können weiter alles exportieren, weil Sie die Bücher für die gesetzliche Aufbewahrungsfrist aufbewahren müssen. Sie können keine neuen Rechnungen, Ausgaben oder Kunden erfassen, und das Unternehmen wird nicht mehr für Ihr Abonnement gezählt. Auch die Automatik stoppt: Ein inaktives Unternehmen verschickt keine automatischen Rechnungen oder Erinnerungen mehr an Kunden. Sobald Sie das Unternehmen wieder aktivieren, läuft alles sofort wieder.
 
 Die Schublade zeigt vorab an, wie viel Sie pro Monat oder pro Jahr weniger zahlen.
 
