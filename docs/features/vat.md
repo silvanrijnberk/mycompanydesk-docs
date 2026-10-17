@@ -102,6 +102,7 @@ Een checklist die vóór het indienen tegen het actieve tijdvak draait. Elke con
 - **ICP open**: zakelijke verkopen binnen de EU die apart op de ICP-opgaaf moeten. Bedrag en aantal gebruiken dezelfde indeling als de ICP-opgaaf zelf, dus ze komen overeen met de regels die echt op de opgave komen.
 - **Herkomst bij verlegde btw**: uitgaven met verlegde btw waarvan het land of KVK-nummer van de leverancier ontbreekt, zodat rubriek 2a/4a/4b niet te onderbouwen is.
 - **Aftrekverschil**: uitgaven waarvan de aftrekbare btw niet gelijk is aan de totale btw, bijvoorbeeld omdat de categorie niet volledig aftrekbaar is of omdat er privégebruik speelt. Dit loopt gelijk met de markeringen op het tabblad Transacties.
+- **Uitgaven te bevestigen**: uitgaven uit je bank die nog op jouw bevestiging wachten. Ze tellen nog niet mee in de aangifte, ook hun btw niet; bevestig of verwijder ze onder Te bevestigen bij Uitgaven. Deze controle verschijnt alleen als je tijdvak zulke uitgaven bevat.
 
 De kop toont hoeveel punten er nog openstaan, of dat alles in orde is voor het tijdvak. Regelingen als de KOR, de vrijstelling en privégebruik van de auto verschijnen hier alleen als ze op jouw situatie van toepassing zijn. Zit je omzet nog binnen de KOR-grens, dan toont dit tabblad ook een hint met een link naar de KOR-instellingen. Een regel onderaan opent je archief van het jaar: bonnen, facturen en overeenkomsten op één plek.
 

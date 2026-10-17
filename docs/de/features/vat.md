@@ -102,6 +102,7 @@ Eine Checkliste, die vor der Abgabe gegen den aktiven Zeitraum läuft. Jede Prü
 - **ICP offen**: innergemeinschaftliche B2B-Verkäufe, die separat in der ICP-opgaaf gemeldet werden müssen. Betrag und Anzahl folgen denselben Regeln wie die ICP-opgaaf selbst und stimmen daher mit den Zeilen überein, die tatsächlich gemeldet werden.
 - **Herkunft bei Reverse-Charge**: Ausgaben mit verlagerter MwSt., bei denen Land oder KVK-Nummer des Lieferanten fehlen, sodass Rubrik 2a/4a/4b nicht belegt werden kann.
 - **Abzugsdifferenz**: Ausgaben, deren abzugsfähige MwSt. nicht der gesamten MwSt. entspricht, etwa weil die Kategorie nicht voll abzugsfähig ist oder Privatnutzung vorliegt. Das entspricht den Markierungen im Tab Transaktionen.
+- **Ausgaben zum Bestätigen**: Bankausgaben, die noch auf Ihre Bestätigung warten. Sie zählen noch nicht in die Erklärung, auch ihre MwSt. nicht; bestätigen oder entfernen Sie sie in den Ausgaben unter Zu bestätigen. Diese Prüfung erscheint nur, wenn Ihr Zeitraum solche Ausgaben enthält.
 
 Der Kopf zeigt, wie viele Punkte noch offen sind, oder dass für den Zeitraum alles in Ordnung ist. Regelungen wie KOR, Steuerbefreiung und private Pkw-Nutzung erscheinen hier nur, wenn sie auf Sie zutreffen. Liegt Ihr Umsatz noch im Bereich der KOR, zeigt dieser Tab außerdem einen Hinweis mit Link zu den KOR-Einstellungen. Eine Zeile unten öffnet Ihr Archiv des Jahres: Belege, Rechnungen und Vereinbarungen an einem Ort.
 

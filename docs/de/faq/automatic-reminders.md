@@ -16,7 +16,7 @@ So richten Sie automatische Zahlungserinnerungen ein:
 2. Aktivieren Sie den Schalter „Zu spät? Automatisch eine Erinnerung senden“
 3. Änderungen werden automatisch gespeichert
 
-Ist eine versendete Rechnung drei Tage über dem Fälligkeitsdatum, sendet MyCompanyDesk automatisch eine freundliche Erinnerung, und danach jede Woche erneut, bis bezahlt wurde. In der Erinnerung steht der noch offene Restbetrag: der Rechnungsbetrag abzüglich der bereits eingegangenen Zahlungen. Hat ein Kunde bereits eine Anzahlung oder Ratenzahlung geleistet, mahnt die Erinnerung den Restbetrag ein, nicht den vollen Betrag.
+Ist eine versendete Rechnung drei Tage über dem Fälligkeitsdatum, sendet MyCompanyDesk automatisch eine freundliche Erinnerung, und danach jede Woche erneut, bis bezahlt wurde. In der Erinnerung steht der noch offene Restbetrag: der Rechnungsbetrag abzüglich der bereits eingegangenen Zahlungen. Hat ein Kunde bereits eine Anzahlung oder Ratenzahlung geleistet, mahnt die Erinnerung den Restbetrag ein, nicht den vollen Betrag. Wurde die Rechnung erst nach dem Fälligkeitsdatum zum ersten Mal versendet, wartet die erste automatische Erinnerung sieben Tage nach diesem Versand; der Kunde hat sie ja gerade erst erhalten. Ein späteres erneutes Senden einer Kopie hält die Erinnerung nicht auf.
 
 Wenn Ihr Arbeitsbereich Online-Zahlungen aktiviert hat, bietet die Erinnerungsmail dem Kunden dieselben Zahlungsoptionen wie die ursprüngliche Rechnung: einen Button **Jetzt bezahlen**, einen Button **Schon bezahlt? Kurz melden** und einen QR-Code auf der PDF zum Scannen und Bezahlen.
 

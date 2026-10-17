@@ -18,7 +18,7 @@ Allez dans les **paramètres** et ouvrez **Logo et couleur**. Cette page défini
 
 - **Nom d'affichage :** le nom que voient vos clients, s'il diffère de votre dénomination enregistrée.
 - **Couleur de marque :** choisissez n'importe quelle couleur, ou partez d'une des propositions. Cette couleur s'applique à votre site web, votre newsletter, vos e-mails, vos factures et vos devis. Un avertissement apparaît quand une couleur est trop claire pour rester lisible. Si vous choisissez une couleur d'accentuation différente dans la mise en page des factures, les factures, devis, e-mails et la page de paiement suivent cette couleur. Vous pouvez adopter cet accent comme couleur de marque en un clic.
-- **Logo de l'entreprise :** importez un SVG (recommandé), PNG ou JPG, 2 Mo maximum. Pour les logos de type photo, un clic suffit pour retirer l'arrière-plan. Pas encore de logo ? **Générer un logo à partir du texte** en crée un simple à partir de vos initiales et d'une couleur de fond, directement sur cette page.
+- **Logo de l'entreprise :** importez un SVG (recommandé), PNG ou JPG ; PNG et JPG acceptent jusqu'à 10 Mo, SVG reste à 2 Mo, et une grande image matricielle est réduite automatiquement lors de l'import. Pour les logos de type photo, un clic suffit pour retirer l'arrière-plan. Pas encore de logo ? **Générer un logo à partir du texte** en crée un simple à partir de vos initiales et d'une couleur de fond, directement sur cette page.
 - **Aperçu :** un en-tête d'exemple montre votre logo et votre couleur ensemble, pour voir le résultat avant vos clients.
 
 Les modifications sont enregistrées automatiquement.
@@ -57,7 +57,7 @@ Les PDF de documents existent en néerlandais, anglais, allemand et français. L
 
 Pour le meilleur résultat sur les PDF :
 
-- **Format :** le SVG offre la meilleure qualité ; PNG (de préférence à fond transparent) et JPG sont aussi acceptés, jusqu'à 2 Mo
+- **Format :** le SVG offre la meilleure qualité et reste à 2 Mo ; PNG (de préférence à fond transparent) et JPG sont aussi acceptés, jusqu'à 10 Mo
 - **Résolution :** au moins 300 pixels de large
 - **Forme :** les logos horizontaux ou carrés s'intègrent le mieux aux mises en page
 

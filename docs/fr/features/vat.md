@@ -102,6 +102,7 @@ Une liste de vérifications exécutée sur la période active avant le dépôt. 
 - **ICP en attente** : ventes B2B intra-UE à déclarer séparément sur l'ICP-opgaaf. Le montant et le nombre suivent les mêmes règles que l'ICP-opgaaf elle-même et correspondent donc aux lignes réellement déclarées.
 - **Origine de l'autoliquidation** : dépenses en autoliquidation dont le pays ou le numéro KVK du fournisseur manque, de sorte que les rubriques 2a/4a/4b ne peuvent pas être justifiées.
 - **Écart de déductibilité** : dépenses dont la TVA déductible diffère de la TVA totale, par exemple parce que la catégorie n'est pas entièrement déductible ou qu'il y a un usage privé. Cela correspond aux indicateurs de l'onglet Transactions.
+- **Dépenses à confirmer** : dépenses issues de votre banque qui attendent encore votre confirmation. Elles ne comptent pas encore dans la déclaration, TVA incluse ; confirmez-les ou supprimez-les sous À confirmer dans les Dépenses. Cette vérification n'apparaît que si votre période en contient.
 
 L'en-tête indique combien de points restent ouverts, ou que tout est en ordre pour la période. Les régimes comme le KOR, l'exonération et l'usage privé de la voiture n'apparaissent ici que s'ils vous concernent. Tant que votre chiffre d'affaires reste dans la zone du KOR, cet onglet affiche aussi une suggestion avec un lien vers les réglages du KOR. Une ligne en bas ouvre vos archives de l'année : reçus, factures et contrats au même endroit.
 

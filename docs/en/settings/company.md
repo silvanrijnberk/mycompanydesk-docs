@@ -101,7 +101,7 @@ Your branding for invoices, quotes, emails and your website, with a live preview
 
 - **Display name**: an optional brand name on your emails and PDFs. Leave it empty and your company name is used. Once it differs from the company name, it also decides what your invoice and the app menu show; the Business details form then shows under the name field what displays at the moment ("Your invoice and menu currently show: ..."), with a link back to this page.
 - **Brand colour**: one colour for your website, newsletter, emails and documents. Enter a colour code or pick one of the presets; a warning appears when a colour is too light to stay readable. If you set a different accent colour in **Invoice design**, that colour is what customers see on invoices, quotes, emails and the payment page. A note under the colour offers a one-click option to make that accent colour your brand colour too.
-- **Company Logo**: upload your logo as SVG (recommended), PNG or JPG, 2 MB at most. It appears on every PDF and at the top of your emails. For photo logos there is a button that removes the background.
+- **Company Logo**: upload your logo as SVG (recommended), PNG or JPG. PNG and JPG go up to 10 MB, SVG up to 2 MB; MyCompanyDesk downsizes an oversized raster image itself on upload. It appears on every PDF and at the top of your emails. For photo logos there is a button that removes the background.
 - **Generate Logo from Text**: no logo yet? Create one here from a text, such as your initials, and a background colour.
 - **Preview**: shows how your brand looks on invoices and emails.
 

@@ -16,7 +16,7 @@ To set up automatic payment reminders:
 2. Turn on the switch "Overdue? Automatically send a reminder"
 3. Changes save automatically
 
-When a sent invoice is three days past its due date, MyCompanyDesk automatically sends a friendly reminder, and repeats it every week until the invoice is paid. The reminder states the remaining outstanding amount, which is the invoice total minus payments already received. If a customer has paid a deposit or an instalment, the reminder asks for the rest, not the full amount.
+When a sent invoice is three days past its due date, MyCompanyDesk automatically sends a friendly reminder, and repeats it every week until the invoice is paid. The reminder states the remaining outstanding amount, which is the invoice total minus payments already received. If a customer has paid a deposit or an instalment, the reminder asks for the rest, not the full amount. Was the invoice first sent after its due date, the first automatic reminder waits seven days past that first send; the customer had only just received it. Sending a copy again later does not hold the reminder back.
 
 If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **Pay now** button, an **Already paid? Let us know** button, and a scan-and-pay QR code on the PDF.
 
