@@ -18,7 +18,7 @@ Gehen Sie zu den **Einstellungen** und öffnen Sie **Logo und Farbe**. Diese Sei
 
 - **Anzeigename:** der Name, den Kunden sehen, falls er von Ihrem eingetragenen Firmennamen abweicht.
 - **Markenfarbe:** Wählen Sie eine beliebige Farbe oder starten Sie mit einer der Voreinstellungen. Diese Farbe gilt für Ihre Website, Ihren Newsletter, Ihre E-Mails, Rechnungen und Angebote. Eine Warnung erscheint, wenn eine Farbe zu hell ist, um lesbar zu bleiben. Wenn Sie in der Rechnungsgestaltung einen eigenen Akzent wählen, folgen Rechnungen, Angebote, E-Mails und die Zahlungsseite dieser Farbe. Sie können diesen Akzent mit einem Klick auch als Markenfarbe übernehmen.
-- **Firmenlogo:** Laden Sie ein SVG (empfohlen), PNG oder JPG hoch, höchstens 2 MB. Für Foto-Logos gibt es eine Hintergrundentfernung mit einem Klick. Noch kein Logo? Mit **Logo aus Text generieren** erzeugen Sie direkt auf dieser Seite eines aus Ihren Initialen und einer Hintergrundfarbe.
+- **Firmenlogo:** Laden Sie ein SVG (empfohlen), PNG oder JPG hoch; PNG und JPG dürfen bis 10 MB groß sein, SVG bleibt bei 2 MB, und ein zu großes Rasterbild verkleinert MyCompanyDesk beim Hochladen selbst. Für Foto-Logos gibt es eine Hintergrundentfernung mit einem Klick. Noch kein Logo? Mit **Logo aus Text generieren** erzeugen Sie direkt auf dieser Seite eines aus Ihren Initialen und einer Hintergrundfarbe.
 - **Vorschau:** Ein Beispielkopf zeigt Logo und Farbe zusammen, damit Sie das Ergebnis sehen, bevor ein Kunde es sieht.
 
 Änderungen werden automatisch gespeichert.
@@ -57,7 +57,7 @@ Dokument-PDFs sind auf Niederländisch, Englisch, Deutsch und Französisch verf�
 
 Für das beste Ergebnis auf PDFs:
 
-- **Format:** SVG liefert die beste Qualität; PNG (am besten mit transparentem Hintergrund) und JPG gehen ebenfalls, bis 2 MB
+- **Format:** SVG liefert die beste Qualität und bleibt bei 2 MB; PNG (am besten mit transparentem Hintergrund) und JPG gehen ebenfalls, bis 10 MB
 - **Auflösung:** mindestens 300 Pixel breit
 - **Form:** liegende oder quadratische Logos passen am besten in die Layouts
 

@@ -18,7 +18,7 @@ Ga naar **Instellingen** en open **Logo en kleur**. Deze pagina bepaalt je merki
 
 - **Weergavenaam:** de naam die klanten zien, als die afwijkt van je geregistreerde bedrijfsnaam.
 - **Merkkleur:** kies elke kleur, of begin met een van de voorinstellingen. Deze kleur geldt voor je website, nieuwsbrief, e-mails, facturen en offertes. Er verschijnt een waarschuwing als een kleur te licht is om leesbaar te blijven. Heb je in Factuurontwerp een eigen accentkleur gekozen? Dan volgen facturen, offertes, e-mails en de betaalpagina die kleur. Je kunt die accentkleur in één klik ook als merkkleur instellen.
-- **Bedrijfslogo:** upload een SVG (aanbevolen), PNG of JPG, maximaal 2 MB. Voor fotologo's is er een achtergrondverwijderaar met één klik. Nog geen logo? Met **Logo maken uit tekst** maak je er op deze pagina een uit je initialen en een achtergrondkleur.
+- **Bedrijfslogo:** upload een SVG (aanbevolen), PNG of JPG; PNG en JPG mogen tot 10 MB, SVG blijft op 2 MB, en een grote rasterafbeelding verkleint MyCompanyDesk bij het uploaden zelf. Voor fotologo's is er een achtergrondverwijderaar met één klik. Nog geen logo? Met **Logo maken uit tekst** maak je er op deze pagina een uit je initialen en een achtergrondkleur.
 - **Voorbeeld:** een voorbeeldkop toont je logo en kleur samen, zodat je het resultaat ziet voordat een klant het ziet.
 
 Wijzigingen worden automatisch opgeslagen.
@@ -57,7 +57,7 @@ Document-PDF's zijn beschikbaar in het Nederlands, Engels, Duits en Frans. Docum
 
 Voor het beste resultaat op PDF's:
 
-- **Formaat:** SVG geeft de beste kwaliteit; PNG (bij voorkeur met transparante achtergrond) en JPG kunnen ook, tot 2 MB
+- **Formaat:** SVG geeft de beste kwaliteit en blijft op 2 MB; PNG (bij voorkeur met transparante achtergrond) en JPG kunnen ook, tot 10 MB
 - **Resolutie:** minstens 300 pixels breed
 - **Vorm:** liggende of vierkante logo's passen het best in de indelingen
 

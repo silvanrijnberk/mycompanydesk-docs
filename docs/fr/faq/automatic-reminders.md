@@ -16,7 +16,7 @@ Pour configurer les rappels de paiement automatiques :
 2. Activez l'interrupteur « En retard ? Envoyer automatiquement un rappel »
 3. Les modifications sont enregistrées automatiquement
 
-Quand une facture envoyée dépasse de trois jours sa date d'échéance, MyCompanyDesk envoie automatiquement un rappel courtois, puis le répète chaque semaine jusqu'au paiement. Le rappel indique le montant restant dû : le montant total de la facture moins les paiements déjà reçus. Si un client a déjà versé un acompte ou un paiement partiel, le rappel demande le solde, pas la totalité.
+Quand une facture envoyée dépasse de trois jours sa date d'échéance, MyCompanyDesk envoie automatiquement un rappel courtois, puis le répète chaque semaine jusqu'au paiement. Le rappel indique le montant restant dû : le montant total de la facture moins les paiements déjà reçus. Si un client a déjà versé un acompte ou un paiement partiel, le rappel demande le solde, pas la totalité. Si la facture a été envoyée pour la première fois après sa date d'échéance, le premier rappel automatique attend sept jours après cet envoi ; le client vient de la recevoir. Renvoyer par la suite une copie ne retient pas le rappel.
 
 Si votre espace de travail a activé les paiements en ligne, le courriel de rappel offre au client les mêmes options de paiement que la facture d'origine : un bouton **Payer maintenant**, un bouton **Déjà payé ? Signalez-le** et un QR-code sur le PDF pour scanner et payer.
 

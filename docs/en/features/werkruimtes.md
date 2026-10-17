@@ -157,7 +157,7 @@ For each of your own businesses, open the row menu and choose **Manage**. A draw
 
 ### Set a business to inactive
 
-Choose **Set inactive** when you stop working in a business but still need to keep its records. The administration stays readable and you can still export everything, because you are required to keep the books for the statutory retention period. You cannot add new invoices, expenses or customers, and the business no longer counts toward your subscription.
+Choose **Set inactive** when you stop working in a business but still need to keep its records. The administration stays readable and you can still export everything, because you are required to keep the books for the statutory retention period. You cannot add new invoices, expenses or customers, and the business no longer counts toward your subscription. Automatic mailings stop too: an inactive business no longer sends automatic invoices or reminders to customers. Reactivate the business and everything picks up right away.
 
 The drawer states how much less you will pay per month or year before you confirm.
 
@@ -165,7 +165,7 @@ To resume, open the same drawer and choose **Reactivate**.
 
 ### Delete a business
 
-Choose **Delete** only for a business you created by mistake. The workspace checks whether anything has been booked; as soon as an invoice, expense or customer exists, deletion is refused and you must set the business to inactive instead. This guard is server-side, so the refusal wording always matches the actual data.
+Choose **Delete** only for a business you created by mistake. The workspace checks whether anything has been booked; as soon as an invoice, expense or customer exists, or the bookkeeping already holds anything such as journal entries or a VAT return, deletion is refused and you must set the business to inactive instead. This guard is server-side, so the refusal wording always matches the actual data.
 
 ## Inviting a client
 

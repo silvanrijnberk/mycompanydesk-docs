@@ -157,7 +157,7 @@ Open voor elk eigen bedrijf het rijmenu en kies **Beheren**. Er opent een zijpan
 
 ### Op non-actief zetten
 
-Kies **Op non-actief zetten** als je stopt met werken in een bedrijf maar de administratie moet bewaren. De administratie blijft leesbaar en je kunt alles blijven exporteren, omdat je de boeken voor de wettelijke bewaartermijn moet bewaren. Je kunt geen nieuwe facturen, uitgaven of klanten toevoegen, en het bedrijf telt niet meer mee voor je abonnement.
+Kies **Op non-actief zetten** als je stopt met werken in een bedrijf maar de administratie moet bewaren. De administratie blijft leesbaar en je kunt alles blijven exporteren, omdat je de boeken voor de wettelijke bewaartermijn moet bewaren. Je kunt geen nieuwe facturen, uitgaven of klanten toevoegen, en het bedrijf telt niet meer mee voor je abonnement. Ook de automatische post stopt: een non-actief bedrijf stuurt geen automatische facturen of herinneringen meer naar klanten. Zet je het bedrijf weer actief, dan gaat alles meteen weer.
 
 Het zijpaneel vermeldt vooraf hoeveel je per maand of per jaar minder gaat betalen.
 
@@ -165,7 +165,7 @@ Om verder te gaan, open je hetzelfde zijpaneel en kies je **Weer activeren**.
 
 ### Een bedrijf verwijderen
 
-Kies **Verwijderen** alleen voor een bedrijf dat je per ongeluk hebt aangemaakt. De werkruimte controleert of er al iets is geboekt; zodra er een factuur, uitgave of klant bestaat, wordt verwijderen geweigerd en moet je het bedrijf op non-actief zetten. Deze controle gebeurt aan de serverkant, zodat de melding altijd klopt met de werkelijke data.
+Kies **Verwijderen** alleen voor een bedrijf dat je per ongeluk hebt aangemaakt. De werkruimte controleert of er al iets is geboekt; zodra er een factuur, uitgave of klant bestaat, of de boekhouding al iets bevat zoals journaalposten of een btw-aangifte, wordt verwijderen geweigerd en moet je het bedrijf op non-actief zetten. Deze controle gebeurt aan de serverkant, zodat de melding altijd klopt met de werkelijke data.
 
 ## Een klant uitnodigen
 

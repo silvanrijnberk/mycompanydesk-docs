@@ -102,6 +102,7 @@ A checklist that runs against the active period before you file. Every check has
 - **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf. The amount and count use the same classification rules as the ICP return, so they match the lines that will actually appear on the submission.
 - **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4a/4b cannot be proven.
 - **Deductible mismatch**: expenses whose deductible VAT does not equal their total VAT, for example because the category is not fully deductible or private use applies. This mirrors the flags shown on the Transactions tab.
+- **Expenses to confirm**: bank expenses still waiting on your confirmation. They do not count in the aangifte yet, their VAT included; confirm or remove them under To confirm in Expenses. This check appears only when the period holds such expenses.
 
 The header shows how many points are open, or that everything is in order for the period. Schemes such as the KOR, the exemption and private use of a car only appear here when they apply to you. While your revenue is still in KOR territory, this tab also shows a hint with a link to the KOR settings. A row at the bottom opens your archive for the year: receipts, invoices and agreements in one place.
 

@@ -101,7 +101,7 @@ Ihr Erscheinungsbild für Rechnungen, Angebote, E-Mails und Ihre Website, mit ei
 
 - **Anzeigename**: ein optionaler Markenname auf Ihren E-Mails und PDFs. Bleibt er leer, wird Ihr Firmenname verwendet. Weicht er vom Firmennamen ab, bestimmt er auch, was auf Ihrer Rechnung und im App-Menü steht; das Formular Unternehmensdaten zeigt dann unter dem Namensfeld, was gerade angezeigt wird („Rechnung und Menü zeigen derzeit: ...“), mit einem Link zurück zu dieser Seite.
 - **Markenfarbe**: eine Farbe für Website, Newsletter, E-Mails und Dokumente. Geben Sie einen Farbcode ein oder wählen Sie eine der Voreinstellungen; ist eine Farbe zu hell, um lesbar zu bleiben, erscheint eine Warnung. Haben Sie in der **Rechnungsgestaltung** eine eigene Akzentfarbe gewählt, sehen Kunden diese Farbe auf Rechnungen, Angeboten, E-Mails und der Zahlungsseite. Ein Hinweis unter der Farbe bietet an, diese Akzentfarbe mit einem Klick auch als Markenfarbe zu übernehmen.
-- **Firmenlogo**: Laden Sie Ihr Logo als SVG (empfohlen), PNG oder JPG hoch, höchstens 2 MB. Es erscheint auf jedem PDF und oben in Ihren E-Mails. Für Fotologos gibt es eine Schaltfläche, die den Hintergrund entfernt.
+- **Firmenlogo**: Laden Sie Ihr Logo als SVG (empfohlen), PNG oder JPG hoch. PNG und JPG dürfen bis 10 MB groß sein, SVG bis 2 MB; ein zu großes Rasterbild verkleinert MyCompanyDesk beim Hochladen selbst. Es erscheint auf jedem PDF und oben in Ihren E-Mails. Für Fotologos gibt es eine Schaltfläche, die den Hintergrund entfernt.
 - **Logo aus Text generieren**: Noch kein Logo? Erstellen Sie hier eines aus einem Text, etwa Ihren Initialen, und einer Hintergrundfarbe.
 - **Vorschau**: zeigt, wie Ihre Marke auf Rechnungen und E-Mails aussieht.
 

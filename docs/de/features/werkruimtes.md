@@ -157,7 +157,7 @@ Handelsregisternummer, MwSt.-Nummer, Bankverbindung und Rechnungsnummernkreis we
 
 ### Unternehmen inaktiv setzen
 
-Wählen Sie **Inaktiv setzen**, wenn Sie in einem Unternehmen nicht mehr arbeiten, aber die Unterlagen aufbewahren müssen. Die Administration bleibt lesbar und Sie können weiter alles exportieren, weil Sie die Bücher für die gesetzliche Aufbewahrungsfrist aufbewahren müssen. Sie können keine neuen Rechnungen, Ausgaben oder Kunden erfassen, und das Unternehmen wird nicht mehr für Ihr Abonnement gezählt.
+Wählen Sie **Inaktiv setzen**, wenn Sie in einem Unternehmen nicht mehr arbeiten, aber die Unterlagen aufbewahren müssen. Die Administration bleibt lesbar und Sie können weiter alles exportieren, weil Sie die Bücher für die gesetzliche Aufbewahrungsfrist aufbewahren müssen. Sie können keine neuen Rechnungen, Ausgaben oder Kunden erfassen, und das Unternehmen wird nicht mehr für Ihr Abonnement gezählt. Auch die automatische Post stoppt: Ein inaktives Unternehmen verschickt keine automatischen Rechnungen oder Erinnerungen mehr an Kunden. Sobald Sie das Unternehmen wieder aktivieren, läuft alles sofort wieder.
 
 Die Schublade zeigt vorab an, wie viel Sie pro Monat oder pro Jahr weniger zahlen.
 
@@ -165,7 +165,7 @@ Um fortzufahren, öffnen Sie dieselbe Schublade und wählen Sie **Reaktivieren**
 
 ### Ein Unternehmen löschen
 
-Wählen Sie **Löschen** nur für ein Unternehmen, das Sie versehentlich angelegt haben. Der Arbeitsbereich prüft, ob bereits Buchungen vorhanden sind; sobald eine Rechnung, Ausgabe oder ein Kunde existiert, wird das Löschen verweigert und Sie müssen das Unternehmen stattdessen inaktiv setzen. Diese Prüfung läuft serverseitig, sodass die Meldung immer mit den tatsächlichen Daten übereinstimmt.
+Wählen Sie **Löschen** nur für ein Unternehmen, das Sie versehentlich angelegt haben. Der Arbeitsbereich prüft, ob bereits Buchungen vorhanden sind; sobald eine Rechnung, Ausgabe oder ein Kunde existiert oder die Buchhaltung bereits etwas enthält, etwa Buchungssätze oder eine USt-Erklärung, wird das Löschen verweigert und Sie müssen das Unternehmen stattdessen inaktiv setzen. Diese Prüfung läuft serverseitig, sodass die Meldung immer mit den tatsächlichen Daten übereinstimmt.
 
 ## Einen Mandanten einladen
 

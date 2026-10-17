@@ -101,7 +101,7 @@ Je huisstijl voor facturen, offertes, mails en je website, met een live voorbeel
 
 - **Weergavenaam**: een optionele merknaam op je mails en pdf's. Laat je hem leeg, dan wordt je bedrijfsnaam gebruikt. Wijkt hij af van je bedrijfsnaam, dan bepaalt hij ook wat er op je factuur en in het menu van de app staat; het formulier Bedrijfsgegevens laat dan onder het naamveld zien wat er op dit moment getoond wordt ("Je factuur en menu tonen nu: ..."), met een link terug naar deze pagina.
 - **Huisstijlkleur**: één kleur voor je website, nieuwsbrief, mails en documenten. Kies een eigen kleurcode of een van de voorinstellingen; is een kleur te licht om leesbaar te blijven, dan zie je een waarschuwing. Heb je in **Factuurontwerp** een eigen accentkleur gekozen, dan zien klanten die kleur op facturen, offertes, mails en de betaalpagina. Een melding onder de kleur biedt aan om die accentkleur met één klik ook als huisstijlkleur te gebruiken.
-- **Bedrijfslogo**: upload je logo als SVG (aanbevolen), PNG of JPG, maximaal 2 MB. Het staat op elke pdf en bovenaan je mails. Voor fotologo's is er een knop die de achtergrond verwijdert.
+- **Bedrijfslogo**: upload je logo als SVG (aanbevolen), PNG of JPG. PNG en JPG mogen tot 10 MB, SVG tot 2 MB; een grote rasterafbeelding verkleint MyCompanyDesk bij het uploaden zelf. Het staat op elke pdf en bovenaan je mails. Voor fotologo's is er een knop die de achtergrond verwijdert.
 - **Logo maken uit tekst**: nog geen logo? Maak er hier een uit een tekst, zoals je initialen, en een achtergrondkleur.
 - **Voorbeeld**: laat zien hoe je merk eruitziet op facturen en mails.
 

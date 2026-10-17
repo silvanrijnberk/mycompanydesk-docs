@@ -157,7 +157,7 @@ Ouvrez pour chaque entreprise le menu de ligne et choisissez **Gérer**. Un pann
 
 ### Désactiver une entreprise
 
-Choisissez **Désactiver** quand vous arrêtez de travailler dans une entreprise mais devez conserver ses archives. L'administration reste lisible et vous pouvez toujours tout exporter, car vous devez conserver les livres pour la durée légale de conservation. Vous ne pouvez plus ajouter de factures, de dépenses ou de clients, et l'entreprise ne compte plus dans votre abonnement.
+Choisissez **Désactiver** quand vous arrêtez de travailler dans une entreprise mais devez conserver ses archives. L'administration reste lisible et vous pouvez toujours tout exporter, car vous devez conserver les livres pour la durée légale de conservation. Vous ne pouvez plus ajouter de factures, de dépenses ou de clients, et l'entreprise ne compte plus dans votre abonnement. Les envois automatiques s'arrêtent eux aussi : une entreprise désactivée n'envoie plus de factures automatiques ni de rappels aux clients. Dès que vous la réactivez, tout reprend immédiatement.
 
 Le panneau indique avant confirmation de combien votre paiement mensuel ou annuel va diminuer.
 
@@ -165,7 +165,7 @@ Pour reprendre, ouvrez le même panneau et choisissez **Réactiver**.
 
 ### Supprimer une entreprise
 
-Choisissez **Supprimer** uniquement pour une entreprise créée par erreur. L'espace de travail vérifie si des écritures existent ; dès qu'une facture, une dépense ou un client existe, la suppression est refusée et vous devez désactiver l'entreprise à la place. Cette vérification est côté serveur, de sorte que le message correspond toujours aux données réelles.
+Choisissez **Supprimer** uniquement pour une entreprise créée par erreur. L'espace de travail vérifie si des écritures existent ; dès qu'une facture, une dépense ou un client existe, ou que la comptabilité contient déjà quelque chose, comme des écritures ou une déclaration de TVA, la suppression est refusée et vous devez désactiver l'entreprise à la place. Cette vérification est côté serveur, de sorte que le message correspond toujours aux données réelles.
 
 ## Inviter un client
 

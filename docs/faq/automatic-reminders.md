@@ -16,7 +16,7 @@ Zo stel je automatische betalingsherinneringen in:
 2. Zet de schakelaar "Te laat? Automatisch een herinnering sturen" aan
 3. Wijzigingen worden automatisch opgeslagen
 
-Is een verstuurde factuur drie dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw tot er betaald is. In de herinnering staat het resterende openstaande bedrag: het factuurbedrag minus de betalingen die al zijn ontvangen. Heeft een klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het hele bedrag.
+Is een verstuurde factuur drie dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw tot er betaald is. In de herinnering staat het resterende openstaande bedrag: het factuurbedrag minus de betalingen die al zijn ontvangen. Heeft een klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het hele bedrag. Werd de factuur pas ná de vervaldatum voor het eerst verstuurd, dan wacht de eerste automatische herinnering zeven dagen na die verzending; de klant had hem immers net ontvangen. Een kopie later opnieuw versturen houdt de herinnering niet tegen.
 
 Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmail de klant dezelfde betaalopties als de originele factuur: een knop **Betaal nu**, een knop **Al betaald? Laat het weten** en een QR-code op de PDF om te scannen en te betalen.
 
