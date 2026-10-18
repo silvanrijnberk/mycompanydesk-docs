@@ -26,8 +26,11 @@ countries:
     small_business_scheme_name: KOR (Kleineondernemersregeling)
     notes: |
       KOR is opt-in per calendar year. Once opted in, VAT is not charged on
-      invoices and input VAT is not deductible. Sticks for at least 3 years
-      unless threshold is exceeded.
+      invoices and input VAT is not deductible. Since 2025 there is no
+      minimum participation of 3 years any more. After deregistering, or after
+      exceeding the threshold, a waiting period applies until the end of the
+      following calendar year (the rest of the year in which participation
+      ended, plus the year after). Source: belastingdienst.nl afmelden-kor.
     # KOR-details, nagelopen tegen belastingdienst.nl.
     small_business_last_verified: 2026-10-13
     small_business_verified_by: silvanrijnberk
