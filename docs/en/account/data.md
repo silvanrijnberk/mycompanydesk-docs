@@ -1,7 +1,7 @@
 ---
 title: "Data Import & Export"
 description: "Import customers, invoices and expenses from CSV, and export your records for backup or for use in another tool."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Data Import & Export
@@ -75,7 +75,20 @@ The CSV exports of your invoices, expenses and customer list, plus the complete 
 
 The same page offers a **complete backup**: all your data in one JSON file. Use it as a periodic backup or as a full snapshot of your records, for example for a GDPR data request.
 
-Exports contain only the data you have access to. PDF versions of invoices are downloaded separately, from each invoice's own page. Photos and PDFs of your receipts are not in the export; they stay with the expense itself.
+### Download everything
+
+Next to the CSV exports, the same page offers **Download everything**: one ZIP file with everything your workspace holds. That includes the PDFs of your invoices, quotes, work orders and contracts, the photos and PDFs of your receipts, your documents, your business email, your website files and your VAT returns, plus an audit file per year that an accountant or the tax authorities can import.
+
+Making the file takes a while when there is a lot in it, so MyCompanyDesk emails you when it is ready instead of keeping you waiting. A few rules that come with it:
+
+- Only the owner or an admin of the workspace can download everything at once. Others download the lists they have access to.
+- You can create one new download per day.
+- The file stays downloadable for a limited period and is then deleted from our side. Save it somewhere safe yourself.
+- If something could not be included, that is listed per item in a LEESMIJ.txt in the ZIP.
+
+CSV exports include only the data you have access to.
+
+Export everything you need before you delete your account; see [Delete account](/en/faq/delete-account).
 
 ## Location data
 

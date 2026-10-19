@@ -1,7 +1,7 @@
 ---
 title: Credit note
 description: "To create a credit note: open the original invoice you want to credit, click Create credit note / correction on the detail page."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -16,6 +16,8 @@ To create a credit note:
 4. Send the credit note to the customer
 
 Canceled invoices cannot be credited. If you need to correct an invoice that was already canceled, duplicate the canceled invoice and make the changes there.
+
+For an invoice that went out to your customer, a credit note is now also the route that replaced withdrawing it: since the invoice reached them through sending, paying, or a downloaded or shared PDF, marking it Canceled is refused, and the page offers the credit note instead. The confirmation explains this before you continue; the credit note reverses the invoice completely and gets its own number.
 
 You cannot adjust the amounts during creation; sent documents are locked, so the credit note always mirrors the original exactly. For a partial correction, create the full credit note first and then issue a new invoice for the correct amount.
 

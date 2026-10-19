@@ -1,7 +1,7 @@
 ---
 title: "Btw op een factuur"
 description: "Zo stel je btw in op een factuur: bewerk of maak een factuur."
-last_verified: 2026-07-02
+last_verified: 2026-10-19
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]
   actions:
@@ -20,5 +20,7 @@ Zo stel je btw in op een factuur:
 Nieuwe factuurregels krijgen automatisch je standaard-btw-tarief. Wil je dat standaardtarief aanpassen, ga dan naar Instellingen › "Btw". Het tarief is altijd 0% wanneer de factuur de schakelaar btw verlegd gebruikt.
 
 MyCompanyDesk accepteert de huidige Nederlandse tarieven 0%, 9% en 21% (sources/vat-rates.yaml#countries.NL.zero/reduced/standard).
+
+Staat er btw op de factuur? Dan verwacht de app ook je btw-nummer voordat hij de deur uit gaat: de wet schrijft hem voor op een factuur met btw, en je klant heeft hem nodig om die btw terug te vorderen. Vul het in bij je bedrijfsgegevens, of haal de btw van de regels af als de factuur echt geen btw hoort te dragen.
 
 Tip: Factureer je een zakelijke klant in de EU? Gebruik dan de schakelaar "Btw verlegd" in plaats van zelf 0% te kiezen.

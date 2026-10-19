@@ -14,7 +14,7 @@ Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.
    - **Account aanmaken** met e-mail en een wachtwoord (minimaal 8 tekens).
    - Of gebruik een sociale provider: **Aanmelden met Google** of **Aanmelden met Outlook**. In de iOS-app en bij een uitnodiging van je boekhouder staan die knoppen er niet; dan maak je je account aan met e-mail en wachtwoord.
 3. Het registratiescherm toont ook een live voorbeeldweergave: een gesimuleerd dashboard met voorbeeldinkomsten, openstaande items en activiteitschips, zodat je de ervaring kunt bekijken voordat je je vastlegt. De voorbeeldweergave gebruikt geen echte data.
-4. Als je je met e-mail hebt geregistreerd, controleer dan je inbox op een **verificatie-e-mail** en klik op de link om je account te bevestigen. Geen mail ontvangen? Stuur hem opnieuw via het verificatiescherm. Verkeerde e-mailadres gebruikt? Klik op **Verkeerd e-mailadres? Begin opnieuw** om terug te keren naar het registratiescherm.
+4. Als je je met e-mail hebt geregistreerd, controleer dan je inbox op een **verificatie-e-mail** en klik op de link om je account te bevestigen. Geen mail ontvangen? Stuur hem opnieuw via het verificatiescherm. Verkeerde e-mailadres gebruikt? Klik op **Verkeerd e-mailadres? Begin opnieuw** om terug te keren naar het registratiescherm. Voordat je klaar bent, vraagt de aanmelding je akkoord te gaan met de algemene voorwaarden en de verwerkersovereenkomst (met een verwijzing naar de privacyverklaring), en laat je kiezen of je tips en aanbiedingen per mail wilt ontvangen; die keuze staat standaard uit en is later bij de meldingen weer aan te passen
 5. Na verificatie ontvang je een welkomstmail en kom je direct in de app terecht, in je eigen werkruimte.
 
 :::tip Beginnen vanaf de website

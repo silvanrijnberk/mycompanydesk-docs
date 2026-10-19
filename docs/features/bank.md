@@ -21,10 +21,11 @@ De bankfeed zit in het Uitgaven-gedeelte en in de instellingen:
 
 1. Ga naar **Instellingen › Bankrekening koppelen**.
 2. Klik in het bankgedeelte op **Koppel je eerste bank**, of kies je bank direct wanneer er een bankkiezer staat.
-3. Bevestig de koppeling in de app of website van je eigen bank. Dit is een beveiligde PSD2-stroom: MyCompanyDesk kan alleen de transacties lezen die jij toestaat en kan nooit geld overmaken.
-4. Daarna kom je terug in MyCompanyDesk. De eerste sync haalt transacties van de afgelopen 90 dagen op; daarna blijft de feed automatisch actueel.
+3. Stonen de bankkoppelingen van je werkruimte nog niet aan, dan vraag je de koppeling vanaf die pagina direct aan: stuur het supportverzoek met de naam van je bank en je krijgt een mail zodra hij is ingeschakeld. Kom daarna hier terug en koppel de bank zelf.
+4. Bevestig de koppeling in de app of website van je eigen bank. Dit is een beveiligde PSD2-stroom: MyCompanyDesk kan alleen de transacties lezen die jij toestaat en kan nooit geld overmaken.
+5. Daarna kom je terug in MyCompanyDesk. De eerste sync haalt transacties van de afgelopen 90 dagen op; daarna blijft de feed automatisch actueel.
 
-Je kunt maximaal 3 bankrekeningen koppelen, ook van verschillende banken. Elke rekening staat als eigen rij met het actuele saldo en het moment van de laatste sync. Met **Nog een bank koppelen** voeg je er meer toe. De banktoestemming verloopt periodiek volgens de PSD2-regels (meestal elke 90 dagen); je krijgt vooraf een seintje.
+Je kunt maximaal 3 bankrekeningen koppelen, ook van verschillende banken. Elke rekening staat als eigen rij met het actuele saldo en het moment van de laatste sync. Met **Nog een bank koppelen** voeg je er meer toe. De banktoestemming verloopt periodiek volgens de PSD2-regels (meestal elke 90 dagen). Vooraf krijg je bericht: een melding, een banner met **Verlengen** bij koppelingen die bijna verlopen, en een duidelijke banner als een koppeling is verlopen of gestopt. Verleng of koppel opnieuw vanuit de banner of de accountrij en de feed pakt het door waar hij was.
 
 Per rekening kun je:
 

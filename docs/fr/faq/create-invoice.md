@@ -1,7 +1,7 @@
 ---
 title: "Créer une facture"
 description: "Voici comment créer une facture : allez dans Factures et cliquez sur Créer, sélectionnez un client ou ajoutez-en un depuis le sélecteur de clients."
-last_verified: 2026-07-02
+last_verified: 2026-10-19
 chatbot:
   triggers: ["create invoice", "new invoice", "make invoice", "add invoice", "write invoice", "send invoice", "first invoice", "how to invoice", "maak factuur", "nieuwe factuur", "factuur maken", "factuur aanmaken", "hoe maak ik een factuur", "rechnung erstellen", "wie erstelle ich eine rechnung", "neue rechnung", "creer facture", "comment creer une facture"]
   actions:
@@ -13,7 +13,7 @@ Voici comment créer une facture :
 1. Allez dans Factures et cliquez sur « Créer »
 2. Sélectionnez un client, ou ajoutez-en un avec « Ajouter un nouveau client » en bas du sélecteur de clients
 3. Ajoutez les lignes avec description, quantité, prix et TVA
-4. Définissez la date de facture et la date d'échéance dans la carte des détails de la facture
+4. Définissez la date de facture et la date d'échéance dans la carte des détails de la facture. Avez-vous fait le travail un autre jour que la date de facture ? Renseignez alors aussi la date de livraison, ou la période sur laquelle le travail s'est étalé ; sur le PDF, elle figure avec les dates. Un seul jour ? Ne remplissez que la date de livraison
 5. Utilisez « Enregistrer comme brouillon » si la facture n'est pas encore prête, ou « Finaliser » quand elle l'est (MyCompanyDesk vérifie d'abord votre numéro de TVA et votre IBAN, vous pouvez les remplir directement si besoin)
 6. Après l'enregistrement, ouvrez la page de détail de la facture pour l'afficher ou l'envoyer
 

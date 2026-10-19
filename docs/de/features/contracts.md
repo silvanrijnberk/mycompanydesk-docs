@@ -187,6 +187,7 @@ Ist ein Vertrag unterschrieben, zeigt die Vertragsseite eine Signaturkarte mit:
 
 - dem Status jeder Partei (eingeladen, angesehen, unterschrieben oder abgelaufen)
 - einer Schaltfläche **Ansehen**, die eine Vorschau des unterschriebenen Dokuments öffnet
+- dem festgehaltenen Fingerabdruck (SHA-256) des unterschriebenen Inhalts, damit Sie und Ihr Kunde später belegen können, dass die PDF sich seit dem Unterschreiben nicht verändert hat; eine öffentliche Verifikationsseite prüft eine unterschriebene PDF dagegen
 - einer Download-Schaltfläche, um das PDF zu speichern
 
 Die Vorschauseite hat eine Leiste zum Drucken und Herunterladen und zeigt den unterschriebenen Vertrag direkt im Browser. Das unterschriebene PDF und das Prüf-PDF enthalten beide den vollständigen Vertragstext, jede heruntergeladene Kopie steht also für sich.

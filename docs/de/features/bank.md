@@ -21,10 +21,11 @@ Der Bankfeed gehört zum Bereich Ausgaben:
 
 1. Gehen Sie zu **Einstellungen › Bankkonto verbinden**.
 2. Klicken Sie im Bankbereich auf **Erstes Bankkonto verbinden**, oder wählen Sie Ihre Bank direkt aus, wenn eine Bankauswahl angezeigt wird.
-3. Bestätigen Sie die Verbindung in der App oder auf der Website Ihrer eigenen Bank. Das ist ein sicherer PSD2-Ablauf: MyCompanyDesk kann nur die Transaktionen lesen, die Sie freigeben, und niemals Geld bewegen.
-4. Danach kehren Sie zu MyCompanyDesk zurück. Die erste Synchronisation importiert Transaktionen der letzten 90 Tage; danach bleibt der Feed automatisch aktuell.
+3. Stehen die Bankverbindungen Ihres Arbeitsbereichs noch nicht bereit, fordern Sie die Verbindung direkt auf dieser Seite an: schicken Sie die Supportanfrage mit dem Namen Ihrer Bank los, und Sie erhalten eine E-Mail, sobald sie freigeschaltet ist. Danach kehren Sie hierher zurück und verbinden die Bank selbst.
+4. Bestätigen Sie die Verbindung in der App oder auf der Website Ihrer eigenen Bank. Das ist ein sicherer PSD2-Ablauf: MyCompanyDesk kann nur die Transaktionen lesen, die Sie freigeben, und niemals Geld bewegen.
+5. Danach kehren Sie zu MyCompanyDesk zurück. Die erste Synchronisation importiert Transaktionen der letzten 90 Tage; danach bleibt der Feed automatisch aktuell.
 
-Sie können bis zu 3 Bankkonten verbinden, auch von verschiedenen Banken. Jedes Konto erscheint als eigene Zeile mit dem aktuellen Saldo und dem Zeitpunkt der letzten Synchronisation. Über **Weitere Bank verbinden** fügen Sie mehr hinzu. Die Bankfreigabe läuft nach den PSD2-Regeln regelmäßig ab (üblicherweise alle 90 Tage); Sie werden vorab benachrichtigt.
+Sie können bis zu 3 Bankkonten verbinden, auch von verschiedenen Banken. Jedes Konto erscheint als eigene Zeile mit dem aktuellen Saldo und dem Zeitpunkt der letzten Synchronisation. Über **Weitere Bank verbinden** fügen Sie mehr hinzu. Die Bankfreigabe läuft nach den PSD2-Regeln regelmäßig ab (üblicherweise alle 90 Tage). Vorab melden: eine Benachrichtigung, ein Banner mit **Erneuern** bei Verbindungen nahe am Ablauf, und ein klares Banner, wenn eine Verbindung abgelaufen oder gestoppt ist. Erneuern oder verbinden Sie erneut aus dem Banner oder der Kontenzeile, und der Feed macht weiter, wo er war.
 
 Pro Konto können Sie:
 

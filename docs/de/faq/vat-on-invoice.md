@@ -1,7 +1,7 @@
 ---
 title: "MwSt. auf einer Rechnung"
 description: "So legen Sie die MwSt. auf einer Rechnung fest: bearbeiten oder erstellen Sie eine Rechnung."
-last_verified: 2026-07-02
+last_verified: 2026-10-19
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]
   actions:
@@ -20,5 +20,7 @@ So legen Sie die MwSt. auf einer Rechnung fest:
 Neue Rechnungspositionen erhalten automatisch Ihren Standard-MwSt.-Satz. Um diesen Standard zu ändern, gehen Sie zu Einstellungen › "MwSt." und passen Sie den Standardsatz an. Der Satz ist immer 0 %, wenn die Rechnung den Reverse-Charge-Schalter verwendet.
 
 MyCompanyDesk akzeptiert die aktuellen niederländischen Sätze 0%, 9% und 21% (sources/vat-rates.yaml#countries.NL.zero/reduced/standard).
+
+Steht MwSt. auf der Rechnung? Dann erwartet die App auch Ihre USt-IdNr., bevor sie hinausgeht: das Gesetz schreibt sie auf einer Rechnung mit MwSt. vor, und Ihr Kunde braucht sie, um die MwSt. zurückzufordern. Tragen Sie sie bei Ihren Unternehmensdaten ein, oder nehmen Sie die MwSt. von den Positionen, wenn die Rechnung wirklich keine tragen darf.
 
 Tipp: Stellen Sie einem Geschäftskunden in der EU eine Rechnung? Nutzen Sie den Schalter "Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)", statt selbst 0 % zu wählen.

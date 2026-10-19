@@ -1,7 +1,7 @@
 ---
 title: "Avoir"
 description: "Pour créer un avoir : ouvrez la facture d'origine que vous souhaitez créditer, cliquez sur Créer un avoir / une correction sur la page de détail."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -16,6 +16,8 @@ Pour créer un avoir :
 4. Envoyez l'avoir au client
 
 Les factures annulées ne peuvent pas faire l'objet d'un avoir. Si vous devez corriger une facture déjà annulée, dupliquez la facture annulée et apportez-y les modifications.
+
+Pour une facture parvenue au client, l'avoir est en plus devenu la voie qui a remplacé le retrait : parce que la facture lui est parvenue par l'envoi, un paiement ou un PDF téléchargé ou partagé, l'application refuse de la marquer comme annulée et la page propose l'avoir à la place. La confirmation explique d'abord pourquoi ; l'avoir annule ensuite la facture complètement et reçoit son propre numéro.
 
 Vous ne pouvez pas ajuster les montants pendant la création ; les documents envoyés sont verrouillés, l'avoir reflète donc toujours exactement l'original. Pour une correction partielle, créez d'abord l'avoir complet, puis émettez une nouvelle facture avec le bon montant.
 

@@ -33,7 +33,9 @@ Klicken Sie eine Person an (der Name, gefolgt von **fragen**), öffnet sich ein 
 
 ### Sie sprechen mit einer KI
 
-Der Assistent zeigt immer, dass Sie mit einer KI sprechen, wie es die KI-Verordnung der EU (Artikel 50) verlangt. Neben dem Namen steht ein Label, und in einem leeren Gespräch steht der Satz „Antworten sind Richtwerte und können Fehler enthalten.“ Prüfen Sie finanzielle und steuerliche Schlussfolgerungen deshalb immer selbst.
+Der Assistent zeigt immer, dass Sie mit einer KI sprechen, wie es die KI-Verordnung der EU (Artikel 50) verlangt. Neben dem Namen steht ein Label, und in einem leeren Gespräch steht der Satz „Antworten kommen von einer KI und können Fehler enthalten. Prüfen Sie Wichtiges.“ Prüfen Sie finanzielle und steuerliche Schlussfolgerungen deshalb immer selbst.
+
+Dasselbe gilt für die einzelnen KI-Aktionen außerhalb des Chats: die Buttons nennen die KI direkt im Label, etwa **Entwurf einer Antwort (KI)** in Ihrem Posteingang, **Aus Ihren Rechnungen (KI)** in Ihrem Katalog, und das Scannen von Belegen, das meldet, wenn etwas von der KI gelesen oder geschätzt wurde.
 
 ## KI-Vorschläge
 

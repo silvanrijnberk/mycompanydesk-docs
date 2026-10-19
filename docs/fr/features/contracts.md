@@ -187,6 +187,7 @@ Une fois un contrat signé, sa page affiche une carte de signature avec :
 
 - le statut de chaque partie (invitée, a consulté, a signé ou expiré)
 - un bouton **Voir** qui ouvre un aperçu du document signé
+- l'empreinte (SHA-256) consignée du contenu signé, pour que vous et votre client puissiez prouver plus tard que le PDF n'a pas changé depuis la signature ; une page de vérification publique contrôle un PDF signé contre elle
 - un bouton de téléchargement pour enregistrer le PDF
 
 La page d'aperçu comporte une barre pour imprimer et télécharger, et affiche le contrat signé directement dans le navigateur. Le PDF signé et le PDF de contrôle contiennent tous deux le texte complet du contrat : chaque copie téléchargée se suffit à elle-même.

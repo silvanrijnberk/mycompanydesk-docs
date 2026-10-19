@@ -1,7 +1,7 @@
 ---
 title: Cookies en analytics
 description: "Hoe MyCompanyDesk omgaat met cookies, lokale opslag, analytics en sessie-opnames, en hoe je je keuze wijzigt."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Cookies en analytics
@@ -34,9 +34,10 @@ De app toont **geen** cookiebanner. In plaats daarvan is hij zo ingericht dat er
 
 - Analytics-state staat in `sessionStorage`, niet in cookies. Het overleeft herladen binnen hetzelfde tabblad, maar wordt verwijderd zodra je het tabblad sluit.
 - De app respecteert het Do Not Track-signaal van je browser.
-- Sessie-opnames staan in de app uit, met één uitzondering: in de eerste 30 dagen van een nieuwe werkruimte nemen we sessies op, zodat we zien waar nieuwe gebruikers vastlopen. Alles wat je in invoervelden typt wordt gemaskeerd, net als bedragen, aantallen, namen en andere tekst in je lijsten. Er wordt niet opgenomen als een boekhouder in de administratie van een klant werkt, in de demo, of als je browser Do Not Track stuurt.
+- Ben je ingelogd, dan stelt de app je één keer de vraag of hij mag bijhouden hoe je de app gebruikt: **Statistieken** (welke pagina's je bezoekt en op welke knoppen je klikt, gekoppeld aan je account) en **Schermopnames** (hoe je door de app beweegt, met alle tekst onleesbaar gemaakt). Je kiest allebei, alleen statistieken, of geen van beide. Je keuze wordt bij je account bewaard en geldt op al je apparaten; aanpassen kan altijd bij Instellingen › **Privacy**.
+- Tot je antwoordt, wordt voor je account niets bijgehouden.
+- Schermopnames gebeuren daarnaast alleen in de eerste 30 dagen van een nieuwe werkruimte, alleen met je uitdrukkelijke ja op schermopnames, en nooit terwijl een boekhouder in de administratie van een klant werkt, in de demo, of als je browser Do Not Track stuurt. Je inbox en je contractpagina's worden nooit opgenomen, ook niet met toestemming.
 - Op websites die je met MyCompanyDesk publiceert en in het klantportaal draait geen analytics van ons.
-- Zodra je inlogt, identificeert de app je op basis van je echte gebruikers-id, zodat latere gebeurtenissen aan hetzelfde account gekoppeld worden.
 
 Dit betekent dat anonieme paginaweergaven in de app niet over meerdere bezoeken aan elkaar worden gekoppeld. De funnel van aanmelding naar betalende gebruiker wordt vooral gemeten met server-side events gekoppeld aan je gebruikers-id, niet aan browseropslag.
 

@@ -33,7 +33,9 @@ Klik je iemand aan (**Vraag het** met de naam erachter), dan opent een kort form
 
 ### Je praat met AI
 
-De assistent laat altijd zien dat je met AI praat, zoals de Europese AI-verordening (artikel 50) vraagt. Naast de naam staat een label, en in een leeg gesprek staat de regel "Antwoorden zijn indicatief en kunnen fouten bevatten." Controleer financiële en fiscale conclusies dus altijd zelf.
+De assistent laat altijd zien dat je met AI praat, zoals de Europese AI-verordening (artikel 50) vraagt. Naast de naam staat een label, en in een leeg gesprek staat de regel "Antwoorden komen van AI en kunnen fouten bevatten. Controleer belangrijke dingen." Controleer financiële en fiscale conclusies dus altijd zelf.
+
+Dezelfde regel geldt voor de losse AI-acties buiten de chat: de knoppen noemen AI gewoon in het label, zoals **Conceptantwoord (AI)** in je inbox, **Uit je facturen (AI)** in je catalogus, en het scannen van bonnen, dat vermeldt wanneer iets door AI is gelezen of gegokt.
 
 ## AI-suggesties
 

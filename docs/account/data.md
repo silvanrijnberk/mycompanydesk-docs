@@ -1,7 +1,7 @@
 ---
 title: "Gegevens importeren & exporteren"
 description: "Importeer klanten, facturen en uitgaven uit CSV, en exporteer je administratie als back-up of voor gebruik in een ander programma."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Gegevens importeren & exporteren
@@ -75,7 +75,20 @@ De CSV-exports van je facturen, uitgaven en klantenlijst, plus de volledige back
 
 Dezelfde pagina biedt een **volledige back-up**: al je gegevens in één JSON-bestand. Gebruik hem als periodieke back-up of als compleet overzicht van je administratie, bijvoorbeeld voor een AVG-inzageverzoek.
 
-Exports bevatten alleen gegevens waar jij toegang toe hebt. PDF-versies van facturen download je apart, op de pagina van elke factuur. De foto's en pdf's van je bonnetjes zitten niet in de export; die bewaar je bij de uitgave zelf.
+### Alles downloaden
+
+Naast de csv-exports biedt dezelfde pagina **Alles downloaden** aan: één ZIP-bestand met alles wat er in je werkruimte zit. Daarin zitten de pdf's van je facturen, offertes, werkbonnen en contracten, de foto's en pdf's van je bonnetjes, je documenten, je zakelijke e-mail, je website en je btw-aangiften, plus per jaar een auditfile die een accountant of de Belastingdienst kan inlezen.
+
+Het maken van het bestand duurt even als er veel in zit, dus MyCompanyDesk mailt je wanneer het klaar is in plaats van je te laten wachten. Daar horen een paar regels bij:
+
+- Alleen de eigenaar of een beheerder van de werkruimte kan alles tegelijk downloaden. Anderen downloaden de lijsten waar ze toegang toe hebben.
+- Je kunt één nieuwe download per dag aanmaken.
+- Het bestand blijft een beperkte tijd downloadbaar en wordt daarna bij ons gewist. Bewaar het zelf op een goede plek.
+- Kon iets niet mee? Dat staat per onderdeel in een LEESMIJ.txt in de ZIP.
+
+Csv-exports bevatten alleen gegevens waar jij toegang toe hebt.
+
+Haal alles op wat je wilt bewaren voordat je je account verwijdert; zie Account verwijderen.
 
 ## Locatiegegevens
 

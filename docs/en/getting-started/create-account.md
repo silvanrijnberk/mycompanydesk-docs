@@ -14,7 +14,7 @@ Getting started with MyCompanyDesk takes just a few minutes.
    - **Create account** with email and a password (minimum 8 characters).
    - Or use a social provider: **Sign up with Google** or **Sign up with Outlook**. In the iOS app and when your accountant invited you, those buttons are not shown; you then create your account with email and password.
 3. The signup screen also shows a live staging area: a simulated dashboard with sample revenue, due items, and activity chips so you can preview the experience before you commit. The staging does not use real data.
-4. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account. If you don't see it, you can resend it from the verification screen. Entered the wrong address? Click **Wrong email address? Start over** to return to registration.
+4. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account. If you don't see it, you can resend it from the verification screen. Entered the wrong address? Click **Wrong email address? Start over** to return to registration. Before you finish, the signup asks you to agree to the terms of service and the data processing agreement (with a pointer to the privacy statement), and lets you choose whether you want tips and offers by email; that choice is off by default and can be changed later under notifications.
 5. After verification you receive a welcome email and land straight in the app, in your own workspace.
 
 :::tip Start from the website

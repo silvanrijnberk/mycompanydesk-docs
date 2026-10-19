@@ -187,6 +187,7 @@ Is een contract getekend, dan toont de contractpagina een tekenkaart met:
 
 - De status van elke partij (uitgenodigd, bekeken, getekend of verlopen)
 - Een knop **Bekijken** die een voorbeeld van het getekende document opent
+- De vastgelegde vingerafdruk (SHA-256) van de getekende inhoud, zodat jij en je klant later kunnen aantonen dat de PDF niet is veranderd sinds het tekenen; een openbare verificatiepagina controleert een getekende PDF ernaast
 - Een downloadknop om de PDF op te slaan
 
 De voorbeeldpagina heeft een balk met afdrukken en downloaden, en toont het getekende contract direct in de browser. De getekende PDF en de controle-PDF bevatten allebei de volledige contracttekst, dus elke gedownloade kopie staat op zichzelf.

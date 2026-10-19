@@ -1,7 +1,7 @@
 ---
 title: Cookies and analytics
 description: "How MyCompanyDesk handles cookies, local storage, analytics and session recordings, and how to manage your consent."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Cookies and analytics
@@ -34,9 +34,10 @@ The app does **not** show a cookie banner. Instead, it is designed to avoid anal
 
 - Analytics state lives in `sessionStorage`, not cookies. It survives reloads within the same tab, but is deleted when you close the tab.
 - The app respects the browser's Do Not Track signal.
-- Session recording is off in the app, with one exception: during the first 30 days of a new workspace we record sessions, so we can see where new users get stuck. Everything you type into input fields is masked, as are amounts, counts, names and other text in your lists. Nothing is recorded while an accountant works in a client's records, in the demo, or when your browser sends Do Not Track.
+- Once you have signed in, the app asks you one time whether it may measure how you use it: **Statistics** (which pages you visit and which buttons you click, linked to your account) and **Screen recordings** (how you move through the app, with all text made unreadable). You can answer both, statistics only, or neither. Your choice is saved with your account and applies to all your devices; you can change it any time under Settings › **Privacy**.
+- Until you answer, nothing is measured for your account.
+- Session recording also happens only for a fresh workspace in its first 30 days, only with your explicit yes to screen recordings, and never while an accountant works in a client's records, in the shared demo, or when your browser sends Do Not Track. Your inbox and your contracts pages are never recorded, not even with consent.
 - None of our analytics runs on websites you publish with MyCompanyDesk or in the customer portal.
-- Once you log in, the app identifies you by your real user id so later events are tied to the same account.
 
 This means anonymous page views in the app are not linked across visits. The signup to paid funnel is primarily measured with server-side events keyed to your user id, not with browser storage.
 

@@ -1,7 +1,7 @@
 ---
 title: Cookies und Analytics
 description: "Wie MyCompanyDesk Cookies, lokalen Speicher, Analytics und Session-Aufzeichnungen nutzt, und wie Sie Ihre Auswahl ändern."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Cookies und Analytics
@@ -34,9 +34,10 @@ Die App zeigt **kein** Cookie-Banner. Stattdessen ist sie so konzipiert, dass ke
 
 - Analytics-Status liegt im `sessionStorage`, nicht in Cookies. Er übersteht Neuladungen innerhalb desselben Tabs, wird aber gelöscht, sobald Sie den Tab schließen.
 - Die App respektiert das Do-Not-Track-Signal Ihres Browsers.
-- Session-Aufzeichnungen sind in der App ausgeschaltet, mit einer Ausnahme: In den ersten 30 Tagen eines neuen Arbeitsbereichs zeichnen wir Sessions auf, damit wir sehen, wo neue Nutzer hängen bleiben. Alles, was Sie in Eingabefelder tippen, wird maskiert, ebenso Beträge, Anzahlen, Namen und andere Texte in Ihren Listen. Nicht aufgezeichnet wird, wenn ein Buchhalter in der Verwaltung eines Kunden arbeitet, in der Demo oder wenn Ihr Browser Do Not Track sendet.
+- Sind Sie angemeldet, stellt die App Ihnen einmal die Frage, ob sie mitverfolgen darf, wie Sie die App nutzen: **Statistiken** (welche Seiten Sie besuchen und welche Buttons Sie klicken, mit Ihrem Account verknüpft) und **Bildschirmaufzeichnungen** (wie Sie sich durch die App bewegen, wobei der gesamte Text unlesbar gemacht wird). Sie können beides erlauben, nur Statistiken oder keins von beiden. Ihre Wahl wird an Ihrem Account gespeichert und gilt auf allen Ihren Geräten; ändern lässt sie sich jederzeit unter Einstellungen › **Datenschutz**.
+- Bis Sie geantwortet haben, wird für Ihren Account nichts mitverfolgt.
+- Bildschirmaufzeichnungen geschehen darüber hinaus nur in den ersten 30 Tagen eines neuen Arbeitsbereichs, nur mit Ihrem ausdrücklichen Ja zu Bildschirmaufzeichnungen, und nie, wenn ein Buchhalter in der Verwaltung eines Kunden arbeitet, in der Demo, oder wenn Ihr Browser Do Not Track sendet. Ihr Posteingang und Ihre Vertragsseiten werden niemals aufgezeichnet, auch nicht mit Einwilligung.
 - Auf Websites, die Sie mit MyCompanyDesk veröffentlichen, und im Kundenportal läuft keine Analytics von uns.
-- Sobald Sie sich anmelden, identifiziert die App Sie anhand Ihrer echten Benutzer-ID, sodass spätere Ereignisse demselben Account zugeordnet werden.
 
 Das bedeutet, dass anonyme Seitenaufrufe in der App nicht über mehrere Besuche hinweg verknüpft werden. Die Funnel von Anmeldung bis zahlendem Nutzer wird primär durch serverseitige Ereignisse gemessen, die an Ihre Benutzer-ID gebunden sind, nicht an Browserspeicher.
 
