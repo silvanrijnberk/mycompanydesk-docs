@@ -48,6 +48,8 @@ D'un bon signé, vous créez une facture en un clic. Elle commence comme brouill
 
 Dans la liste des bons, cochez plusieurs bons signés du même client et choisissez **Facturer ensemble**. Vous obtenez un brouillon de facture avec les heures et fournitures de chaque bon coché, et chaque ligne porte la date de son propre bon. La colonne de cases n'apparaît que pendant la sélection.
 
+Dès qu'un bon est coché, la barre du bas propose **Tous ceux du client** : un seul appui coche les bons de ce client qui peuvent encore s'ajouter à la sélection. Quand plus rien ne peut s'ajouter, le bouton disparaît.
+
 Tous les bons ne peuvent pas venir : seuls les bons signés sans facture, et seulement ceux du même client. Les bons liés à deux devis différents ne partagent pas une facture ; un bon sans devis (travaux supplémentaires) rejoint volontiers des bons qui en ont un. Et quand un bon relève de l'autoliquidation de TVA pendant que les autres bons cochés portent de la TVA, l'application refuse la combinaison au lieu de tout facturer silencieusement à 0 % : facturez ces bons séparément.
 
 ## Fusion de clients

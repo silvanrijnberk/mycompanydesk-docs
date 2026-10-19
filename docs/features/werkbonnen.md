@@ -48,6 +48,8 @@ Van een getekende werkbon maak je met één klik een factuur. Die begint als con
 
 Op de werkbonnenlijst vink je meerdere getekende werkbonnen van dezelfde klant aan en kies je **Samen factureren**. Er komt één conceptfactuur uit, met de uren en materialen van elke aangevinkte werkbon, en elke regel draagt de datum van zijn eigen bon. De vinkjeskolom verschijnt pas tijdens selecteren.
 
+Selecteer je een werkbon, dan biedt de balk onderin **Alle van klant**: met één tik vink je alle werkbonnen van die klant bij die er nog bij kunnen. Kan er niets meer bij, dan verdwijnt de knop.
+
 Niet elke werkbon kan mee: alleen getekende werkbonnen zonder factuur, en alleen bonnen die bij dezelfde klant horen. Werkbonnen die bij twee verschillende offertes horen, gaan niet op één factuur samen; een bon zonder offerte (meerwerk) voegt zich wel bij bonnen die er één hebben. En valt één werkbon onder btw verlegd terwijl de andere aangevinkte bonnen btw rekenen, dan weigert de app de combinatie in plaats van stilletjes alles op 0% te factureren: factureer die apart.
 
 ## Klanten samenvoegen

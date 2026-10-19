@@ -48,6 +48,8 @@ Aus einem unterschriebenen Arbeitsbericht erstellen Sie mit einem Klick eine Rec
 
 In der Liste der Arbeitsberichte setzen Sie mehreren unterschriebenen Arbeitsberichten desselben Kunden ein Häkchen und wählen **Gemeinsam abrechnen**. Heraus kommt ein Rechnungsentwurf mit den Stunden und Materialien jedes angehakten Berichts, und jede Position trägt das Datum ihres eigenen Berichts. Die Auswahl läuft über eine Häkchenspalte, die nur während einer Auswahl erscheint.
 
+Haben Sie einen Arbeitsbericht angehakt, bietet die Leiste unten **Alle vom Kunden** an: mit einem Tipp haken Sie alle Arbeitsberichte dieses Kunden ab, die noch dazukommen können. Sobald keiner mehr dazukommen kann, verschwindet der Knopf.
+
 Nicht jeder Arbeitsbericht kann mitkommen: nur unterschriebene ohne Rechnung, und nur solche desselben Kunden. Arbeitsberichte aus zwei verschiedenen Angeboten gehen nicht auf eine Rechnung zusammen; ein Bericht ohne Angebot (Mehrarbeit) schließt sich gern Berichten mit Angebot an. Und unterliegt ein Arbeitsbericht dem Reverse Charge, während die anderen angehakten Berichte Umsatzsteuer berechnen, lehnt die App die Kombination ab, statt still alles mit 0% abzurechnen: Stellen Sie diese separat in Rechnung.
 
 ## Kunden zusammenführen
