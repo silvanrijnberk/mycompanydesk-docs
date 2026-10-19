@@ -1,7 +1,7 @@
 ---
 title: "Datenimport & -export"
 description: "Importieren Sie Kunden, Rechnungen und Ausgaben aus CSV, und exportieren Sie Ihre Daten als Sicherung oder für die Nutzung in anderen Programmen."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Datenimport & -export
@@ -75,7 +75,20 @@ Die CSV-Exporte Ihrer Rechnungen, Ausgaben und Kundenliste sowie die komplette J
 
 Dieselbe Seite bietet eine **komplette Sicherung**: alle Ihre Daten in einer JSON-Datei. Nutzen Sie sie als regelmäßige Sicherung oder als vollständige Momentaufnahme Ihrer Unterlagen, zum Beispiel für eine DSGVO-Auskunft.
 
-Exporte enthalten nur die Daten, auf die Sie Zugriff haben. PDF-Versionen von Rechnungen laden Sie separat herunter, auf der Seite der jeweiligen Rechnung. Fotos und PDFs Ihrer Belege sind nicht im Export enthalten; sie bleiben bei der jeweiligen Ausgabe.
+### Alles herunterladen
+
+Neben den CSV-Exporten bietet dieselbe Seite **Alles herunterladen** an: eine ZIP-Datei mit allem, was in Ihrem Arbeitsbereich liegt. Darin sind die PDFs Ihrer Rechnungen, Angebote, Arbeitsaufträge und Verträge, die Fotos und PDFs Ihrer Belege, Ihre Dokumente, Ihre geschäftlichen E-Mails, Ihre Website und Ihre Umsatzsteuer-Anmeldungen, dazu pro Jahr eine Prüfsicherungsdatei, die ein Buchhalter oder das Finanzamt einlesen kann.
+
+Das Erstellen der Datei dauert eine Weile, wenn viel darin liegt; MyCompanyDesk schickt Ihnen daher eine E-Mail, sobald sie fertig ist, statt Sie warten zu lassen. Ein paar Regeln gehören dazu:
+
+- Nur der Inhaber oder ein Admin des Arbeitsbereichs kann alles auf einmal herunterladen. Alle anderen laden die Listen herunter, auf die sie Zugriff haben.
+- Sie können einen neuen Download pro Tag erstellen.
+- Die Datei bleibt eine begrenzte Zeit abrufbar und wird danach auf unserer Seite gelöscht. Bewahren Sie sie sicher auf.
+- Konnte etwas nicht aufgenommen werden? Das steht in einer LEESMIJ.txt in der ZIP, Punkt für Punkt.
+
+CSV-Exporte enthalten nur die Daten, auf die Sie Zugriff haben.
+
+Sichern Sie sich alles, was Sie behalten möchten, bevor Sie Ihr Konto löschen; siehe Konto löschen.
 
 ## Standortdaten
 

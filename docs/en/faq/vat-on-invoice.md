@@ -1,7 +1,7 @@
 ---
 title: VAT on invoice
 description: "To set VAT on an invoice: edit or create the invoice and pick the VAT rate per line, so each line can carry its own rate."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]
   actions:
@@ -20,5 +20,7 @@ To set VAT on an invoice:
 New invoice lines default to your standard VAT rate. To change that default, go to Settings › "VAT" and update the default rate. The rate is always 0% when the invoice uses the VAT reverse charge toggle.
 
 MyCompanyDesk accepts the current Dutch rates 0%, 9% and 21% (sources/vat-rates.yaml#countries.NL.zero/reduced/standard).
+
+Does the invoice carry VAT? Then the app also expects your VAT number before it goes out: the law requires it on an invoice with VAT, and your customer needs it to reclaim the VAT. Fill it in under your company details, or remove the VAT from the lines if the invoice really should not carry any.
 
 Tip: Invoicing a business customer in the EU? Use the "VAT Reverse Charge (BTW verlegd)" toggle instead of picking 0% yourself.

@@ -1,7 +1,7 @@
 ---
 title: "Creditnota"
 description: "Zo maak je een creditnota: open de originele factuur die je wilt crediteren, klik op Creditnota / correctie maken op de detailpagina."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -16,6 +16,8 @@ Zo maak je een creditnota:
 4. Verstuur de creditnota naar de klant
 
 Geannuleerde facturen kun je niet crediteren. Wil je een al geannuleerde factuur alsnog corrigeren? Dupliceer de geannuleerde factuur en pas daar de wijzigingen aan.
+
+Voor een factuur die bij je klant terechtgekomen is, is de creditnota bovendien de route geworden die intrekken verving: omdat de factuur via versturen, betalen of een gedownloade of gedeelde PDF bij hem zit, weigert de app hem als geannuleerd te markeren en biedt de pagina de creditnota aan. De bevestiging legt eerst uit waarom; de creditnota draait de factuur daarna volledig terug en krijgt een eigen nummer.
 
 Je kunt de bedragen tijdens het aanmaken niet aanpassen; verstuurde documenten zijn vergrendeld, dus de creditnota is altijd een exacte spiegel van het origineel. Wil je maar een deel corrigeren? Maak dan eerst de volledige creditnota en stuur daarna een nieuwe factuur met het juiste bedrag.
 

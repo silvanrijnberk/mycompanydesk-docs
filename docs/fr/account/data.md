@@ -1,7 +1,7 @@
 ---
 title: Import et export de données
 description: "Importez clients, factures et dépenses depuis un CSV, et exportez vos données pour les sauvegarder ou les utiliser dans un autre outil."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Import et export de données
@@ -75,7 +75,20 @@ Les exports CSV de vos factures, de vos dépenses et de votre liste de clients, 
 
 La même page propose une **sauvegarde complète** : toutes vos données dans un seul fichier JSON. Utilisez-la comme sauvegarde périodique ou comme instantané complet de vos enregistrements, par exemple pour une demande d'accès RGPD.
 
-Les exports ne contiennent que les données auxquelles vous avez accès. Les versions PDF des factures se téléchargent séparément, depuis la page de chaque facture. Les photos et PDF de vos justificatifs ne figurent pas dans l'export ; ils restent attachés à la dépense elle-même.
+### Tout télécharger
+
+À côté des exports CSV, la même page propose **Tout télécharger** : un fichier ZIP avec tout ce que contient votre espace de travail. S'y trouvent les PDF de vos factures, devis, bons de travail et contrats, les photos et PDF de vos justificatifs, vos documents, vos e-mails professionnels, votre site et vos déclarations de TVA, plus, chaque année, un fichier d'audit qu'un comptable ou l'administration fiscale peut importer.
+
+La préparation du fichier prend un peu de temps quand il y a beaucoup de contenu ; MyCompanyDesk vous envoie donc un e-mail dès qu'il est prêt, au lieu de vous faire patienter. Quelques règles s'y attachent :
+
+- Seuls la propriétaire ou le propriétaire de l'espace de travail, ou un admin, peuvent tout télécharger d'un coup. Les autres personnes téléchargent les listes auxquelles elles ont accès.
+- Vous pouvez créer un nouveau téléchargement par jour.
+- Le fichier reste téléchargeable pendant une durée limitée, puis il est supprimé chez nous. Mettez-le en lieu sûr chez vous.
+- Un élément n'a pas pu être emporté ? Il est listé, un par un, dans un LEESMIJ.txt dans le ZIP.
+
+Les exports CSV ne contiennent que les données auxquelles vous avez accès.
+
+Récupérez tout ce que vous voulez garder avant de supprimer votre compte ; voir Supprimer le compte.
 
 ## Données de localisation
 

@@ -1,7 +1,7 @@
 ---
 title: "Plan & payments"
 description: "What you pay us, your invoices from us and your payment card, under Settings, Your subscription at /settings/abonnement."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Plan & payments
@@ -111,7 +111,9 @@ When a workspace moves to Desk, its public website and site-builder pages remain
 
 A paid subscription never stops silently. When it ends, the app shows a notification and sends an email (its wording is "Office has stopped"), in two variants: one for a failed payment, one for a cancellation you asked for yourself. You can subscribe again right away after a failed payment; checkout no longer routes you to the Stripe portal for a subscription that no longer exists.
 
-You can also move to Desk yourself while Office is running: on the billing page, the Desk card carries a **Switch to Desk** button, and **Cancel subscription** sits under what you pay. Both open the cancel page (/settings/opzeggen), which lists what keeps working and what stops, on which date, before it sends you to the Stripe portal to confirm. Once the cancellation is confirmed, the same page says the subscription is canceled and names the date Office stops, and offers an **Undo cancellation** button as long as the paid period has not ended; it opens the Stripe portal, where you can undo the pending cancellation. On iOS the button is hidden and the Stripe portal itself remains the way to undo. When Office stops, your outgoing emails to customers and the payment and signing pages carry the "Made with MyCompanyDesk" badge again. After the cancellation, the **Manage billing** button stays on the billing page, so the invoices and receipts the Stripe portal holds remain one click away.
+You can also move to Desk yourself while Office is running: on the billing page, the Desk card carries a **Switch to Desk** button, and **Cancel subscription** sits under what you pay. Both open the cancel page (/settings/opzeggen), which shows first what you choose: Office stops on a named date, after that you continue on Desk and pay nothing more, and your data stays. Confirm in the app itself, including in the iOS and Android apps. For a yearly subscription that has run for more than a year, the preview also shows the per-month outcome: Office stops at the end of the running month and you get the months you no longer use back, to the account or card you paid with. In its first year a yearly subscription runs until the end of the paid year. Once the cancellation is confirmed, the same page says the subscription is canceled and names the date Office stops, and offers an **Undo cancellation** button as long as the paid period has not ended. When Office stops, your outgoing emails to customers and the payment and signing pages carry the "Made with MyCompanyDesk" badge again. After the cancellation, the **Manage billing** button stays on the billing page, so the invoices and receipts the Stripe portal holds remain one click away.
+
+If you are not happy with Office after your first payment, the money-back promise works in the app too: on the billing page you can stop right away and get your first payment back in full, straight back to Desk with all your data kept. You can use this once.
 
 Your own domain stays visible on the Domains page after the plan ends: name, status and transfer code remain readable, with an upgrade prompt next to them, because changing domain settings needs Office again. A domain you received free with Office is renewed by MyCompanyDesk only while Office actually runs: once the plan has ended, renewing that domain is yours to arrange. Domains under an earlier fixed arrangement keep renewing for free.
 

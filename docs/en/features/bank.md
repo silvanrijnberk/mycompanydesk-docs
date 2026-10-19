@@ -22,10 +22,11 @@ The bank feed lives in the Expenses area and in settings:
 
 1. Go to **Settings › Connect bank account**.
 2. In the bank section, click **Link your first bank**, or pick your bank directly when a bank picker is shown.
-3. Confirm the connection in your bank's own app or website. This is a secure PSD2 flow: MyCompanyDesk can only read the transactions you allow and can never move money.
-4. You are sent back to MyCompanyDesk when you are done. The first sync imports transactions from the past 90 days; after that the feed stays current automatically.
+3. If your workspace's bank connections are not switched on yet, you can request the connection directly from that page: send the support request with your bank's name and you get an email as soon as it is enabled. After that, come back here and connect the bank yourself.
+4. Confirm the connection in your bank's own app or website. This is a secure PSD2 flow: MyCompanyDesk can only read the transactions you allow and can never move money.
+5. You are sent back to MyCompanyDesk when you are done. The first sync imports transactions from the past 90 days; after that the feed stays current automatically.
 
-You can link up to 3 bank accounts, also from different banks. Each account appears as its own row with the current balance and the time of the last sync. Use **Link another bank** to add more. Bank consent expires periodically under PSD2 rules (typically every 90 days), and you get a heads-up before it does.
+You can link up to 3 bank accounts, also from different banks. Each account appears as its own row with the current balance and the time of the last sync. Use **Link another bank** to add more. Bank consent expires periodically under PSD2 rules (typically every 90 days). You get a heads-up before it does: a notification, a banner with **Renew** for connections close to expiring, and a clear banner when a connection has expired or stopped. Renew or reconnect from the banner or the account row and the feed picks up where it left off.
 
 Per account you can:
 

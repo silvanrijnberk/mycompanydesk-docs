@@ -33,7 +33,9 @@ Cliquez sur une personne (**Demander à** suivi de son nom) et un court formulai
 
 ### Vous parlez à une IA
 
-L'assistant indique toujours que vous parlez à une IA, comme l'exige le règlement européen sur l'IA (article 50). Une étiquette figure à côté de son nom, et une conversation vide affiche la phrase « Les réponses sont indicatives et peuvent contenir des erreurs. » Vérifiez donc toujours vous-même les conclusions financières et fiscales.
+L'assistant indique toujours que vous parlez à une IA, comme l'exige le règlement européen sur l'IA (article 50). Une étiquette figure à côté de son nom, et une conversation vide affiche la phrase « Les réponses viennent d'une IA et peuvent contenir des erreurs. Vérifiez l'essentiel. » Vérifiez donc toujours vous-même les conclusions financières et fiscales.
+
+La même règle vaut pour les actions IA en dehors de la conversation : les boutons nomment l'IA dans leur libellé même, par exemple **Brouillon de réponse (IA)** dans votre boîte de réception, **De vos factures (IA)** dans votre catalogue, et le scan de justificatifs, qui signale quand un élément a été lu ou deviné par l'IA.
 
 ## Suggestions IA
 

@@ -1,7 +1,7 @@
 ---
 title: Send reminder
 description: "To follow up on unpaid invoices: open the overdue invoice, use the Send Reminder action, the system generates a professional reminder email."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -37,6 +37,17 @@ When an invoice becomes overdue, the invoice detail page shows a next step under
 - **Send an urgent reminder**: for invoices that are long overdue. The button opens the reminder dialog; the detail line also suggests calling the customer or offering a payment plan.
 - **Create a credit note or correction**: if the customer disputes the invoice or the amounts have changed
 
-Rather not keep track yourself? Turn on **Overdue? Automatically send a reminder** under Settings › **Invoices and quotes** (Office). Once an invoice is three days past its due date, MyCompanyDesk sends a friendly reminder by itself, then again every week until it is paid. If it stays quiet, give your customer a call.
+Rather not keep track yourself? Turn on **Overdue? Automatically send a reminder** under Settings › **Invoices and quotes** (Office). Once an invoice is three days past its due date, MyCompanyDesk sends a friendly reminder by itself, then again every week up to the number of reminders you choose there. After the last one, the flow below takes over. If it stays quiet, give your customer a call.
 
-You can change the text of your reminder email under Settings › **Email** › **Invoice and quote emails**.
+## Paid late: the final reminder and collection costs
+
+When your customer keeps not paying, the law prescribes what happens next, and MyCompanyDesk walks that path with you:
+
+1. **Reminders run out.** After the number of reminders you set, sending stops automatically and you get a notification. Reminders never cost your customer money; only the step after the final reminder can.
+2. **The final reminder.** You can send it yourself from the invoice, or MyCompanyDesk can send it automatically if you turn that on under the same setting. The text is fixed, because the law prescribes what it must say. What it names depends on the customer: for a private customer it shows the collection costs that may follow after a term; for a business it names the fixed amount and the statutory interest that are already due. Whether your customer counts as a business follows their record: a customer set as a business without a Chamber of Commerce or VAT number is treated as a private person.
+3. **The waiting term.** After the final reminder your customer gets time to pay. The invoice page shows until when. If the email failed to deliver because the address does not work, you cannot charge costs yet: correct the address and email again, or send the letter by post and mark it as sent.
+4. **Charging the costs.** Once the term has passed without payment, the invoice page offers to charge the costs. MyCompanyDesk makes a draft invoice for the collection costs (and, for a business, the interest), which you check and send. Multiple unpaid invoices of the same customer are grouped into one letter, as the law requires.
+
+Every step sends you a notification, so you know where each late invoice stands. Settings › **Invoices and quotes** also lets you limit how many reminders are sent and whether the final reminder goes out automatically.
+
+You can change the text of your reminder email under Settings › **Email** › **Invoice and quote emails**. The final reminder text is fixed by law and is not editable.

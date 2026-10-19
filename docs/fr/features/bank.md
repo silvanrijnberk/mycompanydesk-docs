@@ -21,10 +21,11 @@ Le flux bancaire se trouve dans la partie Dépenses :
 
 1. Allez dans **Paramètres › Connecter un compte bancaire**.
 2. Dans la section banque, cliquez sur **Connecter votre première banque**, ou choisissez votre banque directement quand un sélecteur de banques est affiché.
-3. Confirmez la connexion dans l'application ou le site de votre propre banque. C'est un parcours PSD2 sécurisé : MyCompanyDesk peut uniquement lire les transactions que vous autorisez et ne peut jamais déplacer d'argent.
-4. Vous revenez ensuite dans MyCompanyDesk. La première synchronisation importe les transactions des 90 derniers jours ; ensuite le flux reste à jour automatiquement.
+3. Les connexions bancaires de votre espace de travail ne sont pas encore activées ? Demandez la connexion directement depuis cette page : envoyez la demande au support avec le nom de votre banque, et vous recevez un e-mail dès qu'elle est activée. Revenez ensuite ici et reliez la banque vous-même.
+4. Confirmez la connexion dans l'application ou le site de votre propre banque. C'est un parcours PSD2 sécurisé : MyCompanyDesk peut uniquement lire les transactions que vous autorisez et ne peut jamais déplacer d'argent.
+5. Vous revenez ensuite dans MyCompanyDesk. La première synchronisation importe les transactions des 90 derniers jours ; ensuite le flux reste à jour automatiquement.
 
-Vous pouvez relier jusqu'à 3 comptes bancaires, y compris de banques différentes. Chaque compte apparaît sur sa propre ligne avec le solde actuel et le moment de la dernière synchronisation. Utilisez **Connecter une autre banque** pour en ajouter. Le consentement bancaire expire périodiquement selon les règles PSD2 (en général tous les 90 jours) ; vous êtes prévenu à l'avance.
+Vous pouvez relier jusqu'à 3 comptes bancaires, y compris de banques différentes. Chaque compte apparaît sur sa propre ligne avec le solde actuel et le moment de la dernière synchronisation. Utilisez **Connecter une autre banque** pour en ajouter. Le consentement bancaire expire périodiquement selon les règles PSD2 (en général tous les 90 jours). Vous êtes prévenu à l'avance : une notification, un bandeau avec **Renouveler** pour les connexions proches de l'échéance, et un bandeau clair quand une connexion a expiré ou s'est arrêtée. Renouvelez ou reconnectez depuis le bandeau ou la ligne du compte, et le flux reprend là où il s'était arrêté.
 
 Pour chaque compte, vous pouvez :
 

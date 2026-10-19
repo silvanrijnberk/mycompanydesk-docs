@@ -1,7 +1,7 @@
 ---
 title: Cookies et analytics
 description: "Comment MyCompanyDesk utilise les cookies, le stockage local, les analytics et les enregistrements de session, et comment changer votre choix."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Cookies et analytics
@@ -34,9 +34,10 @@ L'application n'affiche **pas** de bannière de cookies. Elle est conçue pour �
 
 - L'état analytics réside dans le `sessionStorage`, pas dans les cookies. Il survit aux rechargements au sein du même onglet, mais est supprimé lorsque vous fermez l'onglet.
 - L'application respecte le signal Do Not Track du navigateur.
-- L'enregistrement de session est désactivé dans l'application, avec une exception : pendant les 30 premiers jours d'un nouvel espace de travail, nous enregistrons les sessions pour voir où les nouveaux utilisateurs bloquent. Tout ce que vous tapez dans les champs de saisie est masqué, tout comme les montants, les quantités, les noms et les autres textes de vos listes. Rien n'est enregistré lorsqu'un comptable travaille dans le dossier d'un client, dans la démo, ou si votre navigateur envoie Do Not Track.
+- Une fois connecté, l'application vous pose une seule fois la question : peut-elle suivre votre utilisation ? **Statistiques** (les pages que vous visitez et les boutons sur lesquels vous cliquez, liés à votre compte) et **Enregistrements d'écran** (votre déplacement dans l'application, avec tout le texte rendu illisible). Vous pouvez accepter les deux, les statistiques seules, ou ni l'un ni l'autre. Votre choix est conservé avec votre compte et vaut sur tous vos appareils ; vous pouvez le changer à tout moment dans Paramètres › **Confidentialité**.
+- Jusqu'à votre réponse, rien n'est suivi pour votre compte.
+- Les enregistrements d'écran ne se produisent en outre que pendant les 30 premiers jours d'un nouvel espace de travail, uniquement avec votre oui explicite aux enregistrements d'écran, et jamais lorsqu'un comptable travaille dans le dossier d'un client, dans la démo, ou si votre navigateur envoie Do Not Track. Votre boîte de réception et vos pages de contrats ne sont jamais enregistrées, consentement compris.
 - Aucune de nos mesures d'audience ne tourne sur les sites que vous publiez avec MyCompanyDesk ni dans le portail client.
-- Une fois connecté, l'application vous identifie à l'aide de votre véritable identifiant utilisateur, afin que les événements ultérieurs soient associés au même compte.
 
 Cela signifie que les pages vues anonymes dans l'application ne sont pas reliées d'une visite à l'autre. L'entonnoir inscription → client payant est principalement mesuré par des événements côté serveur liés à votre identifiant utilisateur, et non par le stockage du navigateur.
 

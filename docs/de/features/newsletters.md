@@ -1,7 +1,7 @@
 ---
 title: Newsletter
 description: "Schreiben, planen und versenden Sie Mailings an Ihre Kunden. Der Editor hängt an Ihrer Kundenliste, Empfänger bleiben ohne CSV-Import aktuell."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Newsletter
@@ -57,6 +57,27 @@ Ihre Änderungen werden beim Tippen automatisch gespeichert; eine eigene Speiche
 Sobald eine Kampagne eingereiht oder versendet wurde, kann sie nicht mehr gelöscht werden; eine fehlgeschlagene Kampagne können Sie über das Überlauf-Menü erneut senden.
 
 Die Bestätigungs- und Willkommens-Mail für neue Abonnenten kommt von Ihrem eigenen Unternehmen: Ihr Name als Absender und Ihre eigene Antwortadresse, statt einer anonymen MyCompanyDesk-Adresse. Lässt sich eine geplante Kampagne nicht versenden, bekommen Sie eine Benachrichtigung („Nieuwsbrief niet verstuurd“, Newsletter nicht versendet) und können sie danach erneut senden.
+
+## Abonnenten hinzufügen: worauf dürfen Sie mailen?
+
+Wenn Sie selbst Adressen hinzufügen, aus einer Liste oder von Ihren Kunden, fragt die App zuerst, worauf Sie diesen Menschen E-Mails schicken dürfen:
+
+- **Sie haben selbst gesagt, dass sie Ihren Newsletter möchten.** Wählen Sie dies, wenn sich Menschen bei Ihnen angemeldet haben oder zugestimmt haben.
+<!-- TODO(source-missing): der rechtliche Rahmen für Mails an eigene Kunden über eigene, ähnliche Produkte (Soft-Opt-in) fehlt noch in sources/. Der Hinweis der App steht unten wörtlich; machen Sie daraus keine weitere rechtliche Auslegung, bis es eine Quelldatei gibt. -->
+- **Sie sind Kunden, die bei Ihnen gekauft haben.** Die App erklärt an Ort und Stelle, was das für Ihre Mailings bedeutet (eigene, vergleichbare Produkte oder Dienstleistungen, und nur, wenn sie beim Kauf ablehnen konnten) und fügt nur Kunden hinzu, die eine versendete Rechnung haben. Jeder Newsletter enthält einen Abmeldelink.
+
+Die Antwort wird beim Import gespeichert, damit Sie jederzeit zeigen können, warum jemand auf der Liste steht.
+
+Zwei weitere Sicherungen:
+
+- **Zuerst eine Bestätigungsmail** (Double-Opt-in): Menschen kommen erst auf die Liste, wenn sie auf den Link in dieser Mail klicken. Die Bestätigungsmails gehen in kleinen Portionen über einige Stunden hinaus, damit sie nicht als Spam enden. Das ist die sicherste Wahl, wenn Sie nicht sicher sind, ob sie Ja gesagt haben.
+- **Von Kunden**: nur Kunden mit einer versendeten Rechnung werden hinzugefügt.
+
+## Einwilligungs-Aufzeichnungen
+
+Jedes Mal, wenn Sie selbst Adressen hinzufügen, speichert MyCompanyDesk, wann das geschah, durch wen, auf welcher Grundlage (deren Einwilligung oder Ihr eigener Kunde), mit welcher Erklärung, die Sie bestätigten, und mit welchem Ergebnis (hinzugefügt, in Erwartung der Bestätigungsmail, oder übersprungen). Die Aufzeichnungen liegen in ihrer eigenen Ansicht beim Newsletter-Modul, sie lassen sich als CSV exportieren, und es ist klug, sie aufzubewahren: Wenn jemand fragt, warum er Ihren Newsletter erhält, ist das Ihre Antwort.
+
+Menschen, die sich über Ihre eigene Website anmelden, bestätigen per E-Mail; dafür braucht es keine separate Aufzeichnung.
 
 ## Ergebnisse
 

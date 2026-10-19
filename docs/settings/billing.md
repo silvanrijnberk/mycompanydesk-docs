@@ -1,7 +1,7 @@
 ---
 title: "Abonnement & betalingen"
 description: "Wat je ons betaalt, je facturen van ons en je betaalkaart, onder Instellingen, Je abonnement op /settings/abonnement."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Abonnement & betalingen
@@ -111,7 +111,9 @@ Als een werkruimte naar Desk gaat, blijven de openbare website en sitebouwer onl
 
 Een betaald abonnement stopt nooit meer in stilte. Zodra het stopt, toont de app een melding en verstuurt ze een e-mail (met als kop "Office is gestopt"), in twee varianten: één bij een mislukte betaling en één bij een opzegging die je zelf vroeg. Na een mislukte betaling kun je meteen weer abonneren; de checkout stuurt je niet langer door naar het Stripe-portaal voor een abonnement dat er niet meer is.
 
-Je kunt ook zelf naar Desk teruggaan terwijl Office nog loopt: op de abonnementspagina staat op de Desk-kaart de knop **Overstappen naar Desk**, en onder wat je betaalt staat **Abonnement opzeggen**. Beide openen de opzegpagina (/settings/opzeggen), die eerst bijzet wat blijft werken en wat stopt, op welke datum, voordat je de opzegging in het Stripe-portaal bevestigt. Na de bevestiging zegt dezelfde pagina dat het abonnement is opgezegd en noemt de datum waarop Office stopt, met een knop **Opzegging intrekken** zolang de betaalde periode doorloopt; de knop opent het Stripe-portaal, waar je de aankomende opzegging kunt terugdraaien. In de iOS-app ontbreekt de knop en blijft het Stripe-portaal zelf de weg om terug te draaien. Na de opzegging blijft de knop **Facturatie beheren** op de abonnementspagina staan, zodat de facturen en bonnen in het Stripe-portaal één klik bereikbaar blijven. Als Office stopt, dragen je e-mails aan klanten en je betaal- en ondertekenpagina weer het merkteken "Gemaakt met MyCompanyDesk".
+Je kunt ook zelf naar Desk teruggaan terwijl Office nog loopt: op de abonnementspagina staat op de Desk-kaart de knop **Overstappen naar Desk**, en onder wat je betaalt staat **Abonnement opzeggen**. Beide openen de opzegpagina (/settings/opzeggen), die eerst laat zien wat je kiest: Office stopt op een genoemde datum, daarna ga je op Desk verder en betaal je niets meer, en je gegevens blijven. Bevestigen doe je in de app zelf, ook in de iOS- en Android-apps. Loopt een jaarabonnement al langer dan een jaar, dan laat de voorafmelding ook de maandafbouw zien: Office stopt aan het eind van de lopende maand en je krijgt de maanden die je niet meer gebruikt terug, naar de rekening of kaart waar je mee betaalde. In het eerste jaar loopt een jaarabonnement door tot het eind van het betaalde jaar. Na de bevestiging zegt dezelfde pagina dat het abonnement is opgezegd en noemt de datum waarop Office stopt, met een knop **Opzegging intrekken** zolang de betaalde periode doorloopt. Als Office stopt, dragen je e-mails aan klanten en je betaal- en ondertekenpagina weer het merkteken "Gemaakt met MyCompanyDesk". Na de opzegging blijft de knop **Facturatie beheren** op de abonnementspagina staan, zodat de facturen en bonnen in het Stripe-portaal één klik bereikbaar blijven.
+
+Ben je na je eerste betaling niet tevreden over Office, dan werkt de geld-terug-belofte ook in de app: op de abonnementspagina stop je meteen en krijg je je eerste betaling volledig terug, meteen terug naar Desk met al je gegevens bewaard. Een keer mogelijk.
 
 Je eigen domein blijft na het aflopen van het abonnement zichtbaar op de Domeinen-pagina: naam, status en verhuiscode blijven leesbaar, met een upgrade-aanwijzing ernaast, want domeininstellingen veranderen kan pas weer met Office. Een domein dat je gratis bij Office kreeg, verlengt MyCompanyDesk alleen zo lang Office echt loopt: als het abonnement is afgelopen, regel je die verlenging zelf. Domeinen uit een eerdere vaste afspraak verlengen gewoon gratis mee.
 

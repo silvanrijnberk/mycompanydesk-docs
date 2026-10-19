@@ -1,7 +1,7 @@
 ---
 title: Infolettres
 description: "Rédigez, planifiez et envoyez des mailings à vos clients. L'éditeur est relié à votre liste clients, sans import CSV pour tenir les destinataires à jour."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Infolettres
@@ -57,6 +57,27 @@ Vos modifications sont enregistrées automatiquement pendant que vous tapez ; il
 Une fois qu'une campagne est en file d'attente ou envoyée, elle ne peut plus être supprimée ; une campagne échouée peut être renvoyée depuis le menu débordant.
 
 Les e-mails de confirmation et de bienvenue des nouveaux abonnés viennent de votre entreprise : votre nom comme expéditeur et votre propre adresse de réponse, plutôt qu'une adresse MyCompanyDesk anonyme. Si l'envoi d'une campagne planifiée échoue, vous recevez une notification (Nieuwsbrief niet verstuurd, newsletter non envoyée) et pouvez la renvoyer ensuite.
+
+## Ajouter des abonnés : sur quoi avez-vous le droit de leur écrire ?
+
+Quand vous ajoutez vous-même des adresses, depuis une liste ou depuis vos clients, l'application vous demande d'abord sur quoi vous avez le droit d'écrire à ces personnes :
+
+- **Elles ont elles-mêmes dit qu'elles veulent votre newsletter.** Choisissez ceci quand des personnes se sont inscrites chez vous ou ont dit oui.
+<!-- TODO(source-missing) : le cadre juridique pour écrire à ses propres clients sur ses propres produits similaires (soft opt-in) n'est pas encore dans sources/. La formulation de l'application est citée ci-dessous littéralement ; n'en faites pas une explication juridique plus large tant qu'il n'y a pas de fichier source. -->
+- **Ce sont des clients qui ont acheté chez vous.** L'application explique sur place ce que cela signifie pour vos envois (vos propres produits ou services similaires, et seulement s'ils ont pu refuser à l'achat) et n'ajoute que les clients qui ont une facture envoyée. Chaque newsletter comporte un lien de désabonnement.
+
+La réponse est conservée avec l'import, pour que vous puissiez toujours montrer pourquoi telle personne figure sur la liste.
+
+Deux garde-fous de plus :
+
+- **D'abord un e-mail de confirmation** (double opt-in) : les gens ne rejoignent la liste qu'en cliquant sur le lien dans cet e-mail. Les e-mails de confirmation partent en petites vagues sur quelques heures, pour ne pas finir en spam. C'est le choix le plus sûr quand vous n'êtes pas certain qu'ils aient dit oui.
+- **Depuis les clients** : seuls les clients avec une facture envoyée sont ajoutés.
+
+## Registres de consentement
+
+Chaque fois que vous ajoutez vous-même des adresses, MyCompanyDesk conserve quand c'est arrivé, par qui, sur quelle base (leur consentement ou votre propre client), avec quelle déclaration vous avez confirmé et avec quel résultat (ajouté, en attente de l'e-mail de confirmation, ou ignorés). Les registres vivent dans leur propre vue au sein du module newsletter, ils s'exportent en CSV, et il est sage de les garder : quand quelqu'un demande pourquoi il reçoit votre newsletter, voilà votre réponse.
+
+Les personnes qui s'inscrivent sur votre propre site confirment par e-mail ; cela ne demande pas de registre séparé.
 
 ## Résultats
 

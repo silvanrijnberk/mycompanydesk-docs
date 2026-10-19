@@ -1,7 +1,7 @@
 ---
 title: "Herinnering versturen"
 description: "Om een herinnering te versturen voor een onbetaalde factuur: open de factuur, klik op Verstuur herinnering."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -37,6 +37,17 @@ Wanneer een factuur te laat is, toont de factuurdetailpagina onder **Aanbevolen 
 - **Stuur een dringende herinnering**: voor facturen die al lang te laat zijn. De knop opent de herinneringsdialoog; de toelichting raadt ook aan om de klant te bellen of een betaalregeling voor te stellen.
 - **Maak creditnota of correctie**: als de klant de factuur betwist of de bedragen zijn gewijzigd
 
-Wil je dit niet zelf bijhouden? Zet dan onder Instellingen › **Facturen en offertes** de schakelaar **Te laat? Automatisch een herinnering sturen** aan (Office). Is een factuur drie dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw tot er betaald is. Blijft het stil, bel je klant dan even.
+Wil je dit niet zelf bijhouden? Zet dan onder Instellingen › **Facturen en offertes** de schakelaar **Te laat? Automatisch een herinnering sturen** aan (Office). Is een factuur drie dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw, tot op het aantal herinneringen dat je daar kiest. Daarna neemt de flow hieronder het over. Blijft het stil, bel je klant dan even.
 
-De tekst van je herinneringsmail pas je aan onder Instellingen › **E-mail** › **Factuur- en offertemails**.
+## Te laat betalen: de aanmaning en de incassokosten
+
+Als je klant niet betaalt, schrijft de wet voor wat er dan mag gebeuren. MyCompanyDesk loopt dat pad met je mee:
+
+1. **De herinneringen lopen op.** Na het aantal herinneringen dat je hebt ingesteld stopt het automatisch en krijg je een melding. Herinneringen kosten je klant nooit geld; dat kan pas na de aanmaning.
+2. **De aanmaning.** Die kun je zelf versturen vanaf de factuur, of MyCompanyDesk stuurt hem automatisch als je dat in dezelfde instelling aanzet. De tekst staat vast, want de wet schrijft voor wat erin moet staan. Wat erin staat hangt af van de klant: een particuliere klant krijgt te zien welke incassokosten na een termijn volgen, een zakelijke klant krijgt het vaste bedrag en de wettelijke rente genoemd die al verschuldigd zijn. Of je klant als zakelijk telt volgt uit het klantenkaartje: een zakelijke klant zonder KvK-nummer en btw-nummer wordt behandeld als particulier.
+3. **De wachttijd.** Na de aanmaning krijgt je klant tijd om te betalen. Op de factuurpagina staat tot wanneer. Is de mail niet aangekomen omdat het e-mailadres niet werkt, dan mag je nog geen kosten rekenen: zet eerst het adres goed en mail opnieuw, of verstuur de brief per post en markeer hem als verstuurd.
+4. **De kosten rekenen.** Is de termijn voorbij zonder betaling, dan biedt de factuurpagina aan om de kosten te rekenen. MyCompanyDesk maakt een factuurconcept met de incassokosten (en bij een zakelijke klant de rente) die je controleert en verstuurt. Meerdere onbetaalde facturen van dezelfde klant gaan in één brief, zoals de wet voorschrijft.
+
+Van elke stap krijg je een melding, zodat je weet waar elke late factuur staat. Onder Instellingen › **Facturen en offertes** stel je ook in hoeveel herinneringen eruit gaan en of de aanmaning automatisch verstuurd wordt.
+
+De tekst van je herinneringsmail pas je aan onder Instellingen › **E-mail** › **Factuur- en offertemails**. De tekst van de aanmaning staat bij wet vast en is niet aan te passen.

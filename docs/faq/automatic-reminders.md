@@ -1,7 +1,7 @@
 ---
 title: "Automatische herinneringen"
 description: "Automatische betalingsherinneringen zitten in Office. Zet ze aan bij Instellingen › Facturen en offertes, handmatig herinneren is gratis."
-last_verified: 2026-08-16
+last_verified: 2026-10-19
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
@@ -16,7 +16,9 @@ Zo stel je automatische betalingsherinneringen in:
 2. Zet de schakelaar "Te laat? Automatisch een herinnering sturen" aan
 3. Wijzigingen worden automatisch opgeslagen
 
-Is een verstuurde factuur drie dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw tot er betaald is. In de herinnering staat het resterende openstaande bedrag: het factuurbedrag minus de betalingen die al zijn ontvangen. Heeft een klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het hele bedrag. Werd de factuur pas ná de vervaldatum voor het eerst verstuurd, dan wacht de eerste automatische herinnering zeven dagen na die verzending; de klant had hem immers net ontvangen. Een kopie later opnieuw versturen houdt de herinnering niet tegen.
+Is een verstuurde factuur drie dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw. In de herinnering staat het resterende openstaande bedrag: het factuurbedrag minus de betalingen die al zijn ontvangen. Heeft een klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het hele bedrag. Werd de factuur pas ná de vervaldatum voor het eerst verstuurd, dan wacht de eerste automatische herinnering zeven dagen na die verzending; de klant had hem immers net ontvangen. Een kopie later opnieuw versturen houdt de herinnering niet tegen.
+
+Je stelt zelf in hoeveel herinneringen eruit gaan, bij Instellingen › "Facturen en offertes". Is het gekozen aantal verstuurd, dan stopt MyCompanyDesk en krijg je bericht; de volgende stap blijft bij jou. Herinneringen die je zelf stuurt tellen mee voor dat aantal.
 
 Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmail de klant dezelfde betaalopties als de originele factuur: een knop **Betaal nu**, een knop **Al betaald? Laat het weten** en een QR-code op de PDF om te scannen en te betalen.
 
@@ -30,3 +32,7 @@ Automatische herinneringen worden niet verstuurd als:
 De herinneringsmails gebruiken vaste systeemsjablonen; de tekst kun je niet aanpassen.
 
 Tip: Wil je een klant nu meteen een duwtje geven? Je kunt ook handmatig een herinnering sturen vanaf de factuur.
+
+### Als de herinneringen op zijn
+
+Is de laatste herinnering verstuurd, dan neemt de vervolgflow uit Herinnering sturen het over: een laatste aanmaning zoals de wet voorschrijft, en na de wachttijd de mogelijkheid om incassokosten te rekenen.

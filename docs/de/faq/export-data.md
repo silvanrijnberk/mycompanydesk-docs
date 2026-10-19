@@ -1,7 +1,7 @@
 ---
 title: "Daten exportieren"
 description: "So exportieren Sie Daten: gehen Sie zu Einstellungen › Daten herunterladen für die schnellen Exportaktionen."
-last_verified: 2026-10-03
+last_verified: 2026-10-19
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
   actions:
@@ -13,5 +13,6 @@ So exportieren Sie Daten:
 1. Gehen Sie zu Einstellungen › „Daten herunterladen“ für die schnellen Exportaktionen
 2. Laden Sie dort CSV-Exporte für Rechnungen, Kunden und Ausgaben oder das Vollbackup herunter
 3. Nutzen Sie Exporte auf Bereichsebene in Rechnungen, Ausgaben oder Berichten, wenn Sie nur einen Datensatz brauchen
+4. Brauchen Sie alles auf einmal, einschließlich PDFs, Belege und Ihrer Website? Nutzen Sie **Alles herunterladen** auf derselben Seite: eine ZIP mit allem darin, dazu eine Prüfsicherungsdatei pro Jahr. Die Erstellung dauert eine Weile und Sie erhalten eine E-Mail, sobald sie fertig ist. Diese steht der Inhaberin oder dem Inhaber bzw. einem Admin zu, ein Download pro Tag
 
 Alle CSV-Exporte (Rechnungen, Ausgaben, Kundenliste) und das Vollbackup sind in jedem Tarif kostenlos. Wählen Sie den Export, der zu der Seite oder dem Datensatz passt, den Sie benötigen.

@@ -1,7 +1,7 @@
 ---
 title: "Gutschrift"
 description: "So erstellen Sie eine Gutschrift: öffnen Sie die Originalrechnung, die Sie gutschreiben möchten."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -16,6 +16,8 @@ So erstellen Sie eine Gutschrift:
 4. Senden Sie die Gutschrift an den Kunden
 
 Stornierte Rechnungen können nicht gutgeschrieben werden. Wenn Sie eine bereits stornierte Rechnung korrigieren möchten, duplizieren Sie die stornierte Rechnung und nehmen Sie dort die Änderungen vor.
+
+Für eine Rechnung, die beim Kunden gelandet ist, ist die Gutschrift außerdem der Weg geworden, der das Zurückziehen abgelöst hat: weil die Rechnung über den Versand, eine Zahlung oder eine heruntergeladene oder geteilte PDF beim Kunden ist, markiert die App sie nicht als storniert und bietet die Seite stattdessen die Gutschrift an. Der Bestätigungsdialog erklärt zuerst das Warum; danach macht die Gutschrift die Rechnung vollständig rückgängig und erhält eine eigene Nummer.
 
 Die Beträge lassen sich beim Erstellen nicht anpassen; versendete Dokumente sind gesperrt, die Gutschrift spiegelt das Original daher immer exakt wider. Für eine Teilkorrektur erstellen Sie zuerst die vollständige Gutschrift und stellen anschließend eine neue Rechnung über den richtigen Betrag aus.
 

@@ -1,7 +1,7 @@
 ---
 title: AI Features
 description: "Every AI feature in MyCompanyDesk, what it does, what Desk and Office include, and how Google Gemini keeps your data in the EU."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # AI Features
@@ -34,7 +34,9 @@ Click someone (**Ask** followed by their name) and a short form opens: your ques
 
 ### You are talking to AI
 
-The assistant always shows that you are talking to AI, as the EU AI Act (article 50) requires. A label sits next to its name, and an empty conversation shows the line "Answers are indicative and may contain mistakes." Always check financial and tax conclusions yourself.
+The assistant always shows that you are talking to AI, as the EU AI Act (article 50) requires. A label sits next to its name, and an empty conversation shows the line "Answers come from AI and can contain mistakes. Check important things." Always check financial and tax conclusions yourself.
+
+The same rule applies to the individual AI actions outside the chat: the buttons say AI right in the label, for example **Draft a reply (AI)** in your inbox, **From your invoices (AI)** in your catalog, and receipt scanning that tells you when something was read or guessed by AI.
 
 ## AI suggestions
 

@@ -1,7 +1,7 @@
 ---
 title: Create an invoice
 description: "Here's how to create an invoice: go to Invoices and click Create, select a customer or add one from the customer picker."
-last_verified: 2026-07-02
+last_verified: 2026-10-19
 chatbot:
   triggers: ["create invoice", "new invoice", "make invoice", "add invoice", "write invoice", "send invoice", "first invoice", "how to invoice", "maak factuur", "nieuwe factuur", "factuur maken", "factuur aanmaken", "hoe maak ik een factuur", "rechnung erstellen", "wie erstelle ich eine rechnung", "neue rechnung", "creer facture", "comment creer une facture"]
   actions:
@@ -13,7 +13,7 @@ Here's how to create an invoice:
 1. Go to Invoices and click "Create"
 2. Select a customer, or add one with "Add new customer" at the bottom of the customer picker
 3. Add the line items with description, quantity, price, and VAT
-4. In the Invoice Details card, set the invoice date and due date
+4. In the Invoice Details card, set the invoice date and due date. Did you do the work on a different day than the invoice date? Also fill in the delivery date, or the period it covered; on the PDF it sits with the dates. Only one day? Fill in the delivery date on its own
 5. Use "Save as Draft" if it is not ready yet, or "Finalize" when the invoice is ready (MyCompanyDesk checks your btw-id and IBAN first, you can fill them in on the spot if needed)
 6. After saving, open the invoice detail page to preview or send it
 

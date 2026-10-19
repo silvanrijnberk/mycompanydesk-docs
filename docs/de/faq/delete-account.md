@@ -1,7 +1,7 @@
 ---
 title: Konto löschen
 description: "So löschen Sie Ihr Konto: laden Sie zuerst Ihre Daten über Einstellungen › Daten herunterladen herunter, wenn Sie eine Kopie behalten möchten."
-last_verified: 2026-10-03
+last_verified: 2026-10-19
 chatbot:
   triggers: ["delete account", "close account", "remove account", "cancel subscription", "account verwijderen", "account opzeggen", "konto loschen", "supprimer compte", "resilier abonnement"]
   actions:
@@ -10,7 +10,7 @@ chatbot:
   follow_up: ["How do I export my data first?", "How do I back up my data?", "Can I temporarily deactivate instead?"]
 ---
 So löschen Sie Ihr Konto:
-1. Laden Sie zuerst Ihre Daten über Einstellungen › „Daten herunterladen“ herunter, wenn Sie eine Kopie behalten möchten
+1. Laden Sie zuerst Ihre Daten über Einstellungen › „Daten herunterladen“ herunter, wenn Sie eine Kopie behalten möchten. **Alles herunterladen** gibt Ihnen eine ZIP mit Ihren Unterlagen, einschließlich der PDFs und Belege
 2. Gehen Sie zu Einstellungen › „Konto kündigen“
 3. Klicken Sie unter „Konto dauerhaft löschen“ auf „Löschen“
 4. Bestätigen Sie mit Ihrem aktuellen Passwort. Melden Sie sich über Google, Microsoft oder Apple an, gibt es kein Passwortfeld und bestätigen Sie ohne.
@@ -18,8 +18,10 @@ So löschen Sie Ihr Konto:
 Was danach passiert, hängt von Ihrer Rolle ab:
 
 - **Kein Eigentümer eines Arbeitsbereichs**: Ihr Konto und alle Ihre persönlichen Daten werden endgültig gelöscht. Melden Sie sich über Google, Microsoft oder Apple an und haben noch kein eigenes Passwort, fordert die App Sie auf, zuerst ein Passwort festzulegen. Das geht unter Einstellungen › „Anmelden“ mit der Schaltfläche „Stuur link om een wachtwoord in te stellen“ (Link zum Festlegen eines Passworts senden); danach klappt das Löschen hier wie üblich.
-- **Eigentümer eines Arbeitsbereichs**: Ihr Konto und der Arbeitsbereich gehören zusammen, und das Löschen der Unterlagen erledigt der Support, mit Aufbewahrungspflicht und vorherigem Export als offenen Fragen. Die Schaltfläche stellt dann einen Antrag beim Support: Sie bekommen eine Eingangsbestätigung per E-Mail, und der Support meldet sich bei Ihnen, um alles abzuschließen. Ein offener Antrag pro Woche; erneutes Anklicken erzeugt keinen zweiten.
+- **Eigentümer eines Arbeitsbereichs**: Ihr Antrag plant die Löschung Ihres Kontos und des gesamten Arbeitsbereichs. Gelöscht wird nicht sofort: in den ersten 30 Tagen können Sie sich noch anmelden, Ihre Unterlagen abrufen und die Löschung abbrechen, und Sie erhalten eine E-Mail, sobald der Antrag eingegangen ist, und eine weitere eine Woche vor dem Termin. Danach werden Ihr Konto, der Arbeitsbereich und alles darin gelöscht: Rechnungen, Kunden, Ausgaben, E-Mails, Website und Dateien. Ihr Buchhalter und alle anderen mit Zugriff auf Ihre Unterlagen werden informiert und verlieren den Zugriff; die Konten Ihrer Teammitglieder werden zusammen mit dem Arbeitsbereich gelöscht. Ihre Unterlagen müssen Sie selbst jahrelang aufbewahren können, holen Sie sich also, was Sie brauchen, bevor Sie bestätigen: nach der Löschung haben wir sie nicht mehr.
 
-Auf derselben Seite können Sie auch nur Ihr bezahltes Abonnement kündigen. Sie zahlen dann nichts mehr, Ihr Konto und Ihre Daten bleiben aber erhalten, da das niederländische Steuerrecht eine Aufbewahrung Ihrer Unterlagen für 7 Jahre verlangt. Bevor Sie bestätigen, listet die Seite auf, was weiterläuft und was stoppt, damit Sie wissen, was Sie wählen. Die Karte zum Abonnement und die Datenlöschung sieht nur der Administrator des Arbeitsbereichs; ein Teammitglied, das die Seite öffnet, findet nur die Karte zum endgültigen Löschen des eigenen Kontos. Löschen Sie Ihr Konto, sind Ihr Konto und alle Ihre Daten endgültig weg.
+Die Löschung rechnet Ihr Abonnement auf dieselbe Weise ab wie die Kündigung: es verlängert sich nicht und wird nicht erneut abgebucht. Haben Sie Office gerade zum ersten Mal bezahlt? Dann gilt die Geld-zurück-Garantie aus Abonnement & Zahlungen, und Sie bekommen Ihre erste Zahlung vollständig zurück; Office stoppt dann sofort. Ein abgebrochener Löschvorgang stellt Ihr Abonnement so wieder her, wie es war.
+
+Auf derselben Seite können Sie auch nur Ihr bezahltes Abonnement kündigen. Sie zahlen dann nichts mehr, Ihr Konto und Ihre Daten bleiben aber erhalten, ebenso wie die Unterlagen, die Sie aufbewahren müssen. Bevor Sie bestätigen, listet die Seite auf, was weiterläuft und was stoppt, damit Sie wissen, was Sie wählen. Die Karte zum Abonnement und die Datenlöschung sieht nur der Administrator des Arbeitsbereichs; ein Teammitglied, das die Seite öffnet, findet nur die Karte zum endgültigen Löschen des eigenen Kontos. Löschen Sie Ihr Konto, sind Ihr Konto und alle Ihre Daten endgültig weg.
 
 Wichtig: Die Kontolöschung kann nicht rückgängig gemacht werden. Exportieren Sie alles, was Sie brauchen, bevor Sie fortfahren.

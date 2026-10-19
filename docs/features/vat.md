@@ -1,7 +1,7 @@
 ---
 title: Btw
 description: "Volg ontvangen en betaalde btw, bereid je aangifte voor en blijf deadlines voor. De btw-pagina's volgen het aangifteformulier van de Belastingdienst."
-last_verified: 2026-10-14
+last_verified: 2026-10-19
 ---
 
 <!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
@@ -207,9 +207,19 @@ Gelijktijdige pogingen om hetzelfde tijdvak in te dienen worden na elkaar afgeha
 
 De kleineondernemersregeling beheer je bij **Instellingen › Btw**: een kaart zet je jaaromzet af tegen de grens van € 20.000 ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)) met een voortgangsbalk, legt uit wat meedoen betekent voor je facturen en heeft de schakelaar om mee te doen. Je blijft in aanmerking komen tot en met precies € 20.000 jaaromzet; pas omzet daarboven maakt een einde aan de KOR. Zit je omzet nog binnen de KOR-grens, dan toont het tabblad Controle een hint met een link daarheen. Staat de KOR aan, dan klappen de overige btw-instellingen (aangiftefrequentie, standaardtarief, vrijstelling) weg achter de knop **Andere btw-instellingen tonen**, en bovenaan staat "Je doet mee aan de KOR: je rekent geen btw."
 
-Ga je boven € 20.000 terwijl je nog meedoet, dan verschijnt bovenaan de factuureditor een waarschuwing. Die zegt dat je boven de KOR-grens zit, legt uit dat de factuur btw moet bevatten in plaats van 0%, en de knop opent **Instellingen › Btw**, zodat je je bij de Belastingdienst kunt afmelden en de KOR kunt uitzetten.
+Ga je boven € 20.000 terwijl je nog meedoet, dan verschijnt bovenaan de factuureditor een waarschuwing. Die zegt dat je boven de KOR-grens zit, noemt de factuur die erover ging (met nummer en datum) en legt uit dat je vanaf die factuur weer btw rekent, en de knop opent **Instellingen › Btw** zodat je je bij de Belastingdienst kunt afmelden. In je btw-aangifte telt de KOR nog tot en met die grensoverschrijdende factuur; daarna reken je weer btw en mag je voorbelasting aftrekken. De instellingskaart biedt ook aan een KOR-einddatum vast te leggen (zie hieronder).
 
-Je kunt de KOR ook vanuit het factuurformulier aanzetten. Een nieuwe factuur of conceptfactuur met btw, terwijl het bedrijf geen btw-nummer heeft en nog niet meedoet, toont bij de regels een KOR-tip. **KOR aanzetten** vraagt eerst om bevestiging, en de schakelaar geldt voor de btw-cijfers van het hele jaar en de aangiftes die nog openstaan; open conceptfacturen, conceptoffertes en ongetekende werkbonnen gaan mee naar 0% btw. Heb je dit jaar zelf al btw-aangifte gedaan? Dan zegt het venster dat een ingediend jaar een suppletie nodig heeft voordat de KOR weer klopt. De tip verschijnt niet bij offertes, creditnota's of facturen met verlegde btw, en blijft weg zodra je hem wegklikt, er een btw-nummer bekend is of de KOR aan staat.
+Facturen die zonder btw de deur uit zijn gegaan nadat je over de grens ging, moeten gecorrigeerd. Aan een verstuurde factuur verander je niets: de instellingskaart zet ze op een rij, en voor elke factuur is de oplossing een creditnota gevolgd door een nieuwe factuur met btw. De kaart loopt ze met je door.
+
+Je kunt de KOR ook vanuit het factuurformulier aanzetten. Een nieuwe factuur of conceptfactuur met btw, terwijl het bedrijf geen btw-nummer heeft en nog niet meedoet, toont bij de regels een KOR-tip. **KOR aanzetten** vraagt eerst om bevestiging, en de schakelaar geldt vanaf die dag: de facturen en aangiften van voor blijven zoals ze zijn, en open conceptfacturen, conceptoffertes en ongetekende werkbonnen gaan mee naar 0% btw. Ging je KOR eerder in? Pas dan de startdatum aan bij **Instellingen › Btw**. De tip verschijnt niet bij offertes, creditnota's of facturen met verlegde btw, en blijft weg zodra je hem wegklikt, er een btw-nummer bekend is of de KOR aan staat.
+
+### Begin en einde van je deelname
+
+De instellingskaart houdt bij vanaf wanneer tot wanneer je meedeed: "Deed mee van" een startdatum, "tot en met" een einddatum. Zet je de KOR vanuit het factuurformulier aan, dan vraagt het venster of de startdatum echt vandaag is; ging hij eerder in, kies die datum bij Instellingen.
+
+Stop je zelf met de KOR? Dan meld je je af bij de Belastingdienst en leg je de laatste dag vast waarop je meedeed. Aangiften tot en met die dag vallen onder de KOR; daarna rek je weer btw en mag je voorbelasting aftrekken. Het venster legt de regels rond die laatste dag uit, waaronder dat opzeggen ingaat vanaf het begin van een aangiftetijdvak. Ging je over de omzetgrens? Dan is de dag vóór de factuur die erover ging automatisch de einddatum.
+
+Over de grens gaan sluit de KOR voor de rest van dat jaar en het jaar erna (sources/vat-rates.yaml#countries.NL.small_business_on_exceed). Tot je weer kunt meedoen, toont de kaart vanaf wanneer je je weer kunt aanmelden en blijft ze je vragen je tussentijds bij de Belastingdienst af te melden; facturen die zonder btw de deur uit zijn gegaan breng je met de creditnota-flow hierboven weer op de juiste cijfers.
 
 Staat de KOR aan, dan hebben facturen geen btw-nummer nodig: de controle voor verzenden vraagt om een IBAN en houdt de factuur niet meer tegen vanwege een ontbrekend btw-id. De instelwizard stelt de KOR-vraag met echte antwoorden: ja, nee of weet ik niet. Bij weet ik niet staat voorop dat je alleen meedoet als je je zelf bij de Belastingdienst hebt aangemeld; een lage omzet alleen is niet genoeg, en de brief van de Belastingdienst geeft zekerheid. Kies je ja, dan gaat de regeling aan en worden facturen zonder btw gemaakt, met een vermelding dat je meedoet aan de KOR.
 

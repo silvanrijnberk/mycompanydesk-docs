@@ -1,7 +1,7 @@
 ---
 title: VAT
 description: "Track collected and paid VAT, prepare your return and stay ahead of deadlines. The page mirrors the Dutch btw form for companies in the Netherlands."
-last_verified: 2026-10-14
+last_verified: 2026-10-19
 ---
 
 <!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
@@ -207,9 +207,19 @@ Concurrent filing attempts for the same period are serialized. If two submission
 
 The kleineondernemersregeling is managed under **Settings › VAT**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the Checks tab shows a hint linking there. With the KOR on, the rest of the VAT settings (filing frequency, default rate, exemption) fold away behind a **Show other VAT settings** button, and the top of the page reads "You take part in the KOR: you charge no VAT."
 
-If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the button opens **Settings › VAT** so you can deregister with the Belastingdienst and turn KOR off.
+If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body names the invoice that crossed it (by number and date) and explains that from that invoice on you charge VAT again, and the button opens **Settings › VAT** so you can deregister with the Belastingdienst. In your VAT return the KOR still applies up to and including that crossing invoice; after it you charge VAT and may deduct input VAT again. The settings card also offers to record a KOR end date (see below).
 
-The KOR can also be turned on from the invoice form itself. A new or draft invoice that carries VAT while the company has no VAT number and is not enrolled yet shows a KOR tip at the lines. **Turn on KOR** asks for confirmation first, and the switch applies to the VAT figures of the whole year and the returns that are still open, with open draft invoices, draft quotes and unsigned work orders going to 0% VAT along with it. Filed a VAT return yourself this year already? The dialog tells you a filed year needs a suppletie correction before the KOR lines up again. The tip does not appear on quotes, credit notes or reverse-charge invoices, and it stays away once you dismiss it, once a VAT number is on record or once the KOR is on.
+Invoices that went out without VAT after you crossed the threshold need correcting. You do not change an invoice you have sent: the settings card lists them and, for each one, the fix is a credit note followed by a new invoice with VAT. The card offers to walk through them one by one.
+
+The KOR can also be turned on from the invoice form itself. A new or draft invoice that carries VAT while the company has no VAT number and is not enrolled yet shows a KOR tip at the lines. **Turn on KOR** asks for confirmation first, and the switch applies from that day: the invoices and VAT returns from before stay as they are, and open draft invoices, draft quotes and unsigned work orders go to 0% VAT along with it. Did your KOR start earlier? Then change the start date under **Settings › VAT**. The tip does not appear on quotes, credit notes or reverse-charge invoices, and it stays away once you dismiss it, once a VAT number is on record or once the KOR is on.
+
+### Start and end of your participation
+
+The settings card records from when up to when you took part: "Took part from" a start date, "up to and including" an end date. When you turn the KOR on from the invoice form, the dialog asks if the start date is really today; if it started earlier, pick that date in Settings.
+
+Are you stopping with the KOR yourself? Then you deregister with the Belastingdienst and record the last day you took part. Returns up to and including that day stay under the KOR; after it you charge VAT and may deduct input VAT again. The dialog explains the rules around that last day, including that deregistering takes effect from the start of a VAT return period. Did you cross the turnover threshold instead? Then the day before the invoice that did it becomes the end date by itself.
+
+Going over the threshold closes the KOR to you for the rest of that year and the next (sources/vat-rates.yaml#countries.NL.small_business_on_exceed). Until you can take part again, the card shows the date you can register from and keeps asking you to deregister with the Belastingdienst in the meantime; open invoices that went out without VAT are walked back to the correct figures with the credit-note flow above.
 
 While the KOR is on, invoices do not need a VAT number: the check before sending asks for an IBAN and no longer holds the invoice for a missing VAT ID. The setup wizard asks the KOR question with real answers: yes, no, or I don't know. I don't know leads with the rule that only signing up for the scheme with the Belastingdienst yourself puts you in it; low turnover alone is not enough, and the letter from the tax office tells you for sure. Choosing yes switches the scheme on and invoices are made without VAT, carrying a note that you take part in the KOR.
 

@@ -1,7 +1,7 @@
 ---
 title: Newsletters
 description: "Write, schedule and send mailings to your customers. The editor is linked to your customer list, so recipients stay in sync without CSV imports."
-last_verified: 2026-10-13
+last_verified: 2026-10-19
 ---
 
 # Newsletters
@@ -57,6 +57,27 @@ Your changes are saved automatically as you type; there is no separate save butt
 Once a campaign is queued or sent it can no longer be deleted; you can resend a failed campaign from the overflow menu.
 
 The confirmation and welcome mail for new subscribers come from your own company: your name as the sender and your own reply-to address, rather than an anonymous MyCompanyDesk address. When a scheduled mailing cannot be sent, you get a notification (Nieuwsbrief niet verstuurd, newsletter not sent) and can resend it afterwards.
+
+## Adding subscribers: the basis you email on
+
+When you add addresses yourself, from a list or from your customers, the app first asks what you may email these people:
+
+- **They said themselves that they want your newsletter.** Choose this when people signed up or agreed with you directly.
+<!-- TODO(source-missing): the legal rule for mailing your own customers about own, similar products (soft opt-in) is not yet in sources/. The app's own hint is quoted below; until a source file exists, do not expand this into a legal explanation. -->
+- **They are customers who bought something from you.** The app explains on the spot what that means for your mailings (your own, similar products or services, and only when they could say no when they bought) and only adds customers who have a sent invoice. Every newsletter carries an unsubscribe link.
+
+The answer is recorded with the import, so you can always show why each person is on the list.
+
+Two extra safeguards:
+
+- **Confirmation email first** (double opt-in): people only join the list once they click the link in that email. The confirmation mails go out in small batches over a few hours, so they do not land as spam. This is the safest choice when you are not sure they said yes.
+- **From customers**: only customers who actually have a sent invoice are added.
+
+## Consent records
+
+Every time you add addresses yourself, MyCompanyDesk keeps a record of when it happened, by whom, on what basis (their consent or your own customer), which statement you confirmed and with which result (added, waiting for the confirmation email, or skipped). The records live in their own view under the newsletters module, they can be exported as CSV, and they are worth keeping: when someone asks why they receive your newsletter, this is your answer.
+
+People who sign up on your own website confirm by email themselves; that needs no separate record.
 
 ## Results
 
