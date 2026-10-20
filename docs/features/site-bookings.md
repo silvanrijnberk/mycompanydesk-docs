@@ -103,7 +103,7 @@ Daarna loopt je vaste afspraak vanzelf:
 - Voor het ingaan laat de voorvertoning **Komende afspraken** de data zien die komen, met botsingen in oranje; een datum wegkiezen slaat hem over, de rest gaat gewoon door.
 - Annuleer of verzet je één afspraak, dan vraagt de app eerst of dat alleen voor die dag geldt of voor die en alle volgende (de reeks stopt na die datum). Een korte e-mail kan de klant vertellen wat er veranderde.
 - Een groepsles-reeks heeft per datum eigen plekken en per sessie eigen aanmeldingen. **Hele reeks aanpassen** past één wijziging toe op elke volgende datum, en bij annuleren krijgt elke deelnemer een eigen bericht, per e-mail waar een adres is en via WhatsApp waar alleen een telefoonnummer is.
-- **Wie was er?** op de sessie vinkt aanwezigheid per deelnemer aan. Vink je iemand aan met een strippenkaart, dan streep je meteen één keer af op die kaart; het vinkje weg draait het terug. Zie [Strippenkaarten](/features/customers#strijpenkaarten) voor hoe kaarten en strepen werken.
+- **Wie was er?** op de sessie vinkt aanwezigheid per deelnemer aan. Vink je iemand aan met een strippenkaart, dan streep je meteen één keer af op die kaart; het vinkje weg draait het terug. Zie [Strippenkaarten](/features/customers#strippenkaarten) voor hoe kaarten en strepen werken.
 
 ## Een afspraak boeken vanuit het portaal
 
