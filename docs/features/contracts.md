@@ -29,6 +29,10 @@ Contracten horen bij Office en zijn een onderdeel dat je zelf aanzet. Zie je **C
    - **Welke periode staat er op de factuur?**: zie [Factuurperiode](#factuurperiode)
 3. Klik op **Opslaan**
 
+Je kunt ook vanuit een offerte starten: de regels komen mee, zodat een geaccepteerde offerte een contract wordt zonder dat je iets overtypt.
+
+Het formulier kiest ook het passende sjabloon voor je: past er precies één contractsjabloon op het contract, dan staat die er al in. Past er geen, dan zegt een opmerking onder het formulier dat het contract zonder voorwaarden de deur uit zou gaan.
+
 ::: tip Meer opties
 Het formulier houdt optionele gegevens netjes opgeborgen: onder **Meer opties** vind je extra velden, zoals een servicetoeslag met een eigen bedrag en btw-tarief. Die heb je niet nodig om het contract te maken, maar je klapt ze open als je ze wel nodig hebt.
 :::
@@ -40,7 +44,7 @@ Elk contract beantwoordt de vraag **Hoe is de prijs afgesproken?**:
 - **Vast bedrag**: elke periode hetzelfde bedrag, zoals huur of een vast maandbedrag.
 - **Uurtarief**: je factureert de uren die je schrijft op projecten die aan dit contract hangen.
 - **Dagtarief**: je factureert de gewerkte dagen op projecten die aan dit contract hangen.
-- **Vaste projectprijs**: één afgesproken totaalbedrag voor de hele opdracht, dat je één keer factureert.
+- **Vaste projectprijs**: één afgesproken totaalbedrag voor de hele opdracht, dat je één keer factureert. Zo'n eenmalige opdracht heeft geen factuurdatum nodig.
 
 Bij een uur- of dagtarief toont de contractpagina de kaart **Werk onder dit contract** met de afgesproken, gefactureerde en geschreven totalen, plus de gekoppelde projecten. Een dag telt als 8 uur.
 
@@ -79,6 +83,8 @@ Is er een einddatum:
 - Gaat de status vanzelf naar **Afgelopen** zodra de einddatum voorbij is en de laatste periode gefactureerd is.
 
 ## Automatisch factureren
+
+Een contract dat nog niet getekend is staat in de lijst op **Wacht op handtekening** en maakt geen factuur: de eerste komt pas als het contract écht getekend is.
 
 Een actief contract met een herhaling maakt elke periode vanzelf een factuur. Het systeem:
 
@@ -181,7 +187,7 @@ In het archief kies je **Herstellen naar actief** of **Naar prullenbak**; in de 
 
 ## Ondertekenen
 
-Contracten laat je digitaal ondertekenen. Je voegt partijen toe in het contractformulier en verstuurt het contract met **Verstuur ter ondertekening**; elke partij krijgt een tekenlink per e-mail.
+Contracten laat je digitaal ondertekenen. Je voegt partijen toe in het contractformulier en verstuurt het contract met **Verstuur ter ondertekening**; elke partij krijgt een tekenlink per e-mail. Het versturen opent eerst een verzendblad, met de ontvanger, het onderwerp en de tekst van de mail zoals de server die opmaakt: er gaat niets weg voordat je op **Versturen** drukt. **Verstuur link** en **Opnieuw versturen** op de tekenkaart openen hetzelfde blad, zodat elke verzending eerst zijn mail toont.
 
 Is een contract getekend, dan toont de contractpagina een tekenkaart met:
 

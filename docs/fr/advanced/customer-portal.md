@@ -31,6 +31,10 @@ Une fois le lien ouvert, votre client reste connecté 30 jours sur cet appareil,
 
 ## Fonctionnalités du portail
 
+### Cartes à tampons
+
+Un client qui a acheté chez vous une carte à tampons la voit ici : la carte avec ce qu'il reste à tamponner, sa validité, ce pour quoi elle vaut et quand elle a servi pour la dernière fois. Le tamponnage est pour vous (depuis un rendez-vous, une séance de groupe ou la carte même dans l'application) ; le portail montre le solde et l'historique, y compris par un lien de partage qui fonctionne sans aucune connexion.
+
 ### Aperçu
 
 L'aperçu est la page d'accueil du portail : votre image de marque et une salutation en haut, avec votre propre texte de bienvenue en dessous si vous en avez mis un, à côté de la carte fixe de l'entreprise avec vos coordonnées. Une courte liste **À faire** rassemble ce qui attend encore le client (payer une facture, signer un document, lire un nouveau message), et quand tout est réglé, la page le dit tout simplement : **Tout est payé, rien n'est en attente.** Si un paiement signalé par le client est encore en cours de contrôle, la page le dit aussi, au lieu de demander l'argent une seconde fois.

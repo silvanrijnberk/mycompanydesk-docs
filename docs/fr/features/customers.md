@@ -89,6 +89,16 @@ Si vous possédez plus d'une entreprise, une carte **Entreprise propre** peut ap
 - Le lien se crée automatiquement quand le numéro de TVA du client correspond à l'un de vos autres espaces de travail. La carte affiche alors une note pour que vous sachiez que cela s'est fait automatiquement et puissiez le corriger si c'est erroné.
 - Un lien manuel prime toujours sur un lien automatique. Le lien automatique n'écrase jamais un lien que vous avez défini vous-même.
 
+## Cartes à tampons
+
+Une carte à tampons (aussi : carte de trajets ou forfait de cours) permet à votre client de payer à l'avance pour un nombre de fois. Vous la créez depuis un article de votre catalogue : activez-y **Carte à tampons**, puis renseignez le nom, le nombre de fois couvert et le prix à chaque fois, les services qu'elle couvre (laissez vide et elle vaut pour tout rendez-vous), sa durée de validité, et si le client reçoit un rappel quand il ne reste qu'un tampon. Un seul taux s'applique à toute la carte : des services à un autre taux ne partagent pas une carte, et tant que le régime des petites entreprises (KOR) ou l'exonération est actif, elle sort sans TVA.
+
+La vente se fait depuis la fiche du client avec **Vendre une carte**, en un seul écran : la carte vient de votre catalogue avec son prix, modifiable pour ce client, vous indiquez s'il a déjà payé (espèces, Tikkie ou virement, rien n'est présélectionné), et MyCompanyDesk crée au même moment la facture définitive pour vos livres, la carte liée à cette ligne de facture. Dans l'autre sens, une facture créée normalement fait autant : finaliser une facture qui porte une ligne carte à tampons fait naître la carte avec elle.
+
+Le client retrouve ses cartes dans le portail client et sur un lien de partage qui ne demande aucune connexion : ce qu'il reste sur la carte et l'historique de la vente et de chaque tampon. Le solde ou un rappel s'envoient à la main, par WhatsApp ou par e-mail, et le lien peut être révoqué puis remplacé. Un client qui veut cesser ? **Rembourser** rend les fois non utilisées via une note de crédit, ou **Arrêter** clôt la carte ; vos livres suivent d'eux-mêmes et une carte arrêtée ne se tamponne plus.
+
+Le tamponnage se fait aussi là où le travail se fait. Terminez le rendez-vous d'un client porteur de carte, l'application propose **Tamponner 1** (le tampon passe le rendez-vous en Terminé) à côté d'**Absent**, avec l'annulation à portée de main sur le même écran. Dans une séance de groupe, cocher quelqu'un sous **Qui était là ?** tamponne aussitôt sa carte ; décocher remet le tampon. Qui avait déjà payé cette séance apparaît sur la liste avec la mention qu'aucun tampon n'est nécessaire. Le tableau de bord regroupe les cartes presque finies ou finies, le rappel à un clic.
+
 ## Actions
 
 - **Modifier** : mettre à jour les informations du client

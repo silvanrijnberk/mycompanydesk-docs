@@ -34,9 +34,11 @@ Twee routes:
 1. **Zoeken:** typ je bedrijfsnaam (twee tekens of meer) en kies je bedrijf uit de live suggesties. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Er worden alleen lege velden gevuld; wat je zelf al had ingevuld blijft staan.
 2. **Vul handmatig in**: een kort formulier voor bedrijfsnaam, KVK-nummer, adres, postcode en plaats. Handig als je bedrijf te nieuw is om in de zoekresultaten te staan, of als je handelsnaam niet overeenkomt met wat je zocht. Je invoer wordt direct bij je bedrijfsgegevens opgeslagen. Via een link kun je altijd terug naar zoeken.
 
-Geen KVK-inschrijving? Ga verder zonder bedrijfsgegevens en vul ze later in onder **Bedrijfsgegevens** in Instellingen.
+Geen KVK-inschrijving? **Ik heb geen KVK-nummer** opent dit handmatige formulier, met de naam die je typte alvast ingevuld en KVK-nummer als optioneel veld. Straat, postcode en plaats zijn daar verplicht: een adres hoort op elke factuur die je stuurt.
 
 Levert een zoekopdracht niets op, dan zegt de wizard dat en biedt hij aan om over te schakelen naar handmatig invullen, met de naam die je typte alvast ingevuld.
+
+Adressen krijgen ook een controle van zichzelf. Kies je een suggestie waarvan de postcode anders is dan de postcode die je typte, dan zegt de wizard dat onder de adreskaart, laat postcode en plaats bewerkbaar staan en biedt aan ze aan te passen voordat je verder gaat.
 
 ## Stap: Waar wil je mee beginnen?
 
@@ -55,7 +57,7 @@ Deze stap (**Hoe word je betaald?**) vraagt de twee dingen die op elke factuur h
 **Reken je btw?** Kies een van drie antwoorden:
 
 - **Ja, ik reken btw**: de meeste zzp'ers. Vul je btw-id in, of kies **Ik weet mijn btw-id nu niet, ik vul hem later in**; de app vraagt er dan nog een keer naar zodra je je eerste factuur verstuurt.
-- **Nee, ik doe mee aan de KOR**: alleen als je je zelf bij de Belastingdienst hebt aangemeld en daar bericht over kreeg. Weinig omzet alleen is niet genoeg. Je facturen worden dan zonder btw opgemaakt en vermelden dat je meedoet aan de KOR.
+- **Nee, ik doe mee aan de KOR**: alleen als je je zelf bij de Belastingdienst hebt aangemeld en daar bericht over kreeg. Weinig omzet alleen is niet genoeg. Je facturen worden dan zonder btw opgemaakt en vermelden dat je meedoet aan de KOR. De stap vraagt daarna **Sinds wanneer doe je mee aan de KOR?** en zet 1 januari van dit jaar er alvast in, aan te passen; meldde je je eerder af en doe je nu weer mee, dan start de KOR vandaag.
 - **Nee, mijn werk is vrijgesteld van btw**: voor sommige beroepen, zoals zorg door een geregistreerde zorgverlener of les door een CRKBO-docent. Je facturen worden zonder btw opgemaakt.
 
 Twijfel je over de KOR, dan vraagt de stap **Doe je mee aan de KOR (kleineondernemersregeling)?** met **Ja, ik doe mee**, **Nee** en **Weet ik niet**. Bij Weet ik niet legt hij uit dat je niet meedoet als je je niet zelf hebt aangemeld, en dat de brief van de Belastingdienst het zeker zegt.
@@ -64,7 +66,7 @@ Twijfel je over de KOR, dan vraagt de stap **Doe je mee aan de KOR (kleineondern
 
 ## Afronden
 
-**Alles afronden** past je bedrijfsgegevens, btw-status en IBAN toe. Het afrondscherm (**Je bent klaar om te factureren**) zet een knop **Maak je eerste factuur** klaar en noemt wat nog volgt: je account beveiligen en je website worden later voorgesteld, wanneer het uitkomt, onder **Zet dit op** op het dashboard. Er wordt nergens op de achtergrond een website gebouwd; de eerste keer dat je het gebied **Website** zelf opent, wordt daar de standaardconceptsite aangemaakt (home, diensten, over ons, contact, met bij de juridische pagina's je gegevens), nog wachtend op jouw publicatie.
+**Alles afronden** past je bedrijfsgegevens, btw-status en IBAN toe. Het afrondscherm (**Je bent klaar om te factureren**) zegt alleen dat je gegevens goed staan als het ze echt gecontroleerd heeft: naam, straat, postcode en plaats moeten er staan, en een IBAN met een foute controlesom wordt daar gemeld in plaats van doorgelaten. Hij zet een knop **Maak je eerste factuur** klaar en noemt wat nog volgt: je account beveiligen en je website worden later voorgesteld, wanneer het uitkomt, onder **Zet dit op** op het dashboard. Er wordt nergens op de achtergrond een website gebouwd; de eerste keer dat je het gebied **Website** zelf opent, wordt daar de standaardconceptsite aangemaakt (home, diensten, over ons, contact, met bij de juridische pagina's je gegevens), nog wachtend op jouw publicatie.
 
 Elke nieuwe werkruimte start met 60 dagen Office, gratis en zonder creditcard. Kom je binnen via een uitnodigingslink van een partnerkantoor, dan duurt die proefperiode 12 maanden. Na afloop gaat je werkruimte terug naar Desk, zonder betaalmuur.
 

@@ -34,9 +34,11 @@ Deux chemins :
 1. **Rechercher :** tapez le nom de votre entreprise (deux caractères ou plus) et choisissez-la parmi les suggestions en direct. MyCompanyDesk récupère alors votre profil de base KVK et préremplit vos informations : dénomination légale, noms commerciaux, forme juridique, adresse et activité. Seuls les champs vides sont remplis ; ce que vous avez saisi à la main est conservé.
 2. **Remplir manuellement :** un court formulaire pour le nom de l'entreprise, le numéro KVK, l'adresse, le code postal et la ville. Utile quand votre entreprise est trop récente pour apparaître dans les résultats, ou quand votre nom commercial ne correspond pas à votre recherche. Vos saisies sont enregistrées immédiatement dans vos informations d'entreprise. Un lien permet de revenir à la recherche à tout moment.
 
-**Pas d'immatriculation KVK :** continuez sans informations d'entreprise et complétez-les plus tard dans les paramètres, sous **Données de l'entreprise**.
+Pas d'immatriculation KVK ? **Je n'ai pas de numéro KVK** ouvre ce formulaire manuel, avec le nom déjà tapé en place et le numéro KVK facultatif. Rue, code postal et ville y sont obligatoires : une adresse appartient sur chaque facture que vous envoyez.
 
 Quand une recherche ne donne rien, l'assistant le dit et propose de passer à la saisie manuelle, avec le nom déjà tapé prérempli.
+
+Les adresses ont aussi leur contrôle. Choisissez une suggestion dont le code postal diffère du vôtre tapé, l'assistant le dit sous la carte d'adresse, laisse le code postal et la ville modifiables, et propose de les ajuster avant de continuer.
 
 ## Étape : Par quoi voulez-vous commencer ?
 
@@ -55,7 +57,7 @@ Cette étape (**Comment êtes-vous payé ?**) demande les deux éléments qui fi
 **Facturez-vous la TVA ?** Choisissez l'une des trois réponses :
 
 - **Oui, je facture la TVA** : la plupart des indépendants. Saisissez votre numéro de TVA, ou choisissez **Je ne connais pas mon numéro de TVA maintenant, je le renseignerai plus tard** ; l'application vous le redemande à l'envoi de votre première facture.
-- **Non, je participe à la KOR** : seulement si vous vous êtes inscrit vous-même auprès de la Belastingdienst et avez reçu un courrier à ce sujet. Un faible chiffre d'affaires ne suffit pas. Vos factures sont alors établies sans TVA et indiquent que vous participez à la KOR.
+- **Non, je participe à la KOR** : seulement si vous vous êtes inscrit vous-même auprès de la Belastingdienst et avez reçu un courrier à ce sujet. Un faible chiffre d'affaires ne suffit pas. Vos factures sont alors établies sans TVA et indiquent que vous participez à la KOR. L'étape demande ensuite **Depuis quand participez-vous au KOR ?** et propose le 1er janvier de l'année en cours, modifiable ; désinscrit autrefois et de nouveau inscrit aujourd'hui, la participation commence aujourd'hui.
 - **Non, je suis exonéré** : pour certaines professions, comme les soins par un prestataire de santé enregistré ou l'enseignement par un formateur inscrit au CRKBO. Vos factures sont établies sans TVA.
 
 Si vous hésitez pour la KOR, l'étape demande **Participes-tu au KOR (régime des petites entreprises) ?** avec **Oui, j'y participe**, **Non** et **Je ne sais pas**. Avec Je ne sais pas, elle explique que vous n'y participez pas si vous ne vous êtes pas inscrit vous-même, et que le courrier de la Belastingdienst le dit avec certitude.
@@ -64,7 +66,7 @@ Si vous hésitez pour la KOR, l'étape demande **Participes-tu au KOR (régime d
 
 ## Finalisation
 
-**Terminer la configuration** applique vos informations d'entreprise, votre statut de TVA et votre IBAN. L'écran de fin (**Vous êtes prêt à facturer**) propose le bouton **Créez votre première facture** et indique la suite : sécuriser votre compte et votre site web vous seront proposés plus tard, au bon moment, sous **À configurer** sur le tableau de bord. Aucun site n'est construit en arrière-plan ; la première fois que vous ouvrez vous-même l'espace **Site web**, le site brouillon par défaut y est créé (accueil, services, à propos, contact, avec vos informations sur les pages juridiques), en attente de votre publication.
+**Terminer la configuration** applique vos informations d'entreprise, votre statut de TVA et votre IBAN. L'écran de fin (**Vous êtes prêt à facturer**) ne dit vos informations bonnes que lorsqu'il les a vraiment contrôlées : nom, rue, code postal et ville doivent y être, et un IBAN à la clé de contrôle fausse y est signalé plutôt que laissé passer. Il propose le bouton **Créez votre première facture** et indique la suite : sécuriser votre compte et votre site web vous seront proposés plus tard, au bon moment, sous **À configurer** sur le tableau de bord. Aucun site n'est construit en arrière-plan ; la première fois que vous ouvrez vous-même l'espace **Site web**, le site brouillon par défaut y est créé (accueil, services, à propos, contact, avec vos informations sur les pages juridiques), en attente de votre publication.
 
 Chaque nouvel espace de travail démarre avec 60 jours d'Office, gratuits et sans carte bancaire. Si vous vous inscrivez via un lien d'invitation d'un comptable partenaire, cet essai dure 12 mois. À la fin, votre espace de travail repasse sur Desk, sans mur de paiement.
 

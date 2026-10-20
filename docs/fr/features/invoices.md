@@ -46,6 +46,8 @@ Sous les champs, vous voyez à quoi ressemblera votre prochain numéro de factur
 
 Sous **Dans quelle langue créez-vous vos documents ?**, vous choisissez la langue de vos factures, de vos devis et des e-mails à vos clients. Le néerlandais est la langue par défaut. Les factures dans d'autres langues font partie d'Office. Une facture finalisée garde la langue dans laquelle elle a été créée.
 
+La langue se choisit aussi par client et par facture : posez-la sur le client, et ses documents sortent tous dans sa langue ; posez-la sur une facture brouillon pour l'exception d'une seule fois. MyCompanyDesk lit le choix dans l'ordre facture, puis client, puis espace de travail. Au moment d'envoyer, la langue se fige : le PDF, l'e-mail, la vue du portail, la note de crédit et le dernier rappel restent dans la langue dans laquelle le document est parti. Les devis suivent le client.
+
 ### Facturation électronique Peppol
 
 Un interrupteur sur la même page de paramètres active la [facturation électronique Peppol](/fr/features/peppol) (Office). Les données de votre entreprise sont alors enregistrées auprès du point d'accès Peppol et vous pouvez envoyer et recevoir des factures électroniques en plus de l'e-mail. La page Peppol détaille la vérification d'identité, la réception et les données manquantes.
@@ -76,6 +78,8 @@ Chaque en-tête de groupe indique le nombre du groupe entier et, le cas échéan
 5. Ajoutez si besoin des **notes** ou des **remarques internes**
 6. Cliquez sur **Enregistrer** pour créer un brouillon
 
+La facture vient-elle d'un devis ? La note du devis se trouve alors juste au-dessus de la vôtre, comme **Note du devis (ne figure pas sur la facture)**, avec **Reprendre** à côté quand vous la voulez sur la facture.
+
 Sur le téléphone, une nouvelle facture ouvre non pas un long formulaire mais un court parcours par étapes : d'abord le client, puis les lignes, puis une étape de vérification avant d'enregistrer et d'envoyer.
 
 ### À partir d'un modèle
@@ -83,6 +87,12 @@ Sur le téléphone, une nouvelle facture ouvre non pas un long formulaire mais u
 Dans le formulaire de facture, cliquez sur **À partir d'un modèle** (ce bouton n'apparaît que si vous avez des modèles de facture). Choisissez un modèle et le formulaire se remplit sur place avec les lignes, le client et les autres données enregistrées. Ajustez ce qu'il faut, enregistrez et envoyez. Vous enregistrez une facture comme modèle avec **Enregistrer comme modèle** dans le menu des autres actions de la facture.
 
 Un modèle conserve la ligne complète : description, quantité, unité, prix unitaire, taux de TVA, remise et exonération éventuelle de TVA. Il ne garde volontairement pas le lien vers un élément de votre offre, car cet élément peut être supprimé plus tard et le modèle ne fonctionnerait alors plus.
+
+### Le mois d'un client dans un seul tiroir
+
+Le tiroir **Facturer {client}** rassemble ce qu'un client a encore ouvert chez vous sur une période : un prix fixe par mois, les rendez-vous passés, les heures saisies, les trajets et les frais à refacturer. **Tout facturer** fait la même chose pour tous les clients d'un coup ; sur la fiche du client sur téléphone, **Facturer {mois}** se trouve juste sous le titre. À vous de choisir la période quand un autre mois est celui qu'il faut, et le tiroir groupe le travail par ligne par jour ou par une ligne de total par groupe.
+
+**Préparer la facture** transforme la sélection en brouillons : vous y regardez d'abord, rien ne part vers le client, et pour tous les clients le tiroir fait un brouillon chacun. Ce que vous avez facturé est figé sur les lignes, pour que les mêmes heures, rendez-vous et trajets ne soient pas proposés une seconde fois par les autres flux ; une ligne porte les liens réels plutôt qu'une copie du texte.
 
 ## Prix TTC
 
@@ -148,9 +158,13 @@ Téléchargez la facture sous forme de PDF soigné, avec votre logo, vos couleur
 
 Si une facture dépasse une page, le PDF la coupe proprement : les totaux restent avec les dernières lignes, sous une mention indiquant que la facture continue, et le bloc de paiement reçoit ensuite une page à lui. Aucune page de suite ne commence par un tableau vide ou une copie répétée des chiffres.
 
+Un PDF peut arriver chez votre client, aussi l'application pose d'abord une petite question. Une fois le PDF sorti, les montants, les lignes et les données du client de cette facture ne peuvent plus changer ; autant tout relire avant. Depuis le dialogue, vous continuez vers le téléchargement ou le partage, ou vous relisez d'abord la facture.
+
 ### Marquer comme payée
 
-Confirmez vous-même un paiement quand le client paie par virement ou autrement, en dehors de l'application.
+Confirmez vous-même un paiement quand le client paie par virement ou autrement, en dehors de l'application. Le dialogue demande **Quand a-t-elle été payée ?** : prenez le jour où l'argent est arrivé, le jour de votre relevé bancaire ; une date dans le futur est refusée. Un paiement que vous avez rendu demande de la même façon ce jour-là.
+
+Marquée par erreur ? **Annuler l'opération** renvoie la facture au statut d'où elle venait. En groupe, le dialogue dit combien de factures sont revenues, et les brouillons passés directement en payée restent payés.
 
 ### Annuler
 
@@ -271,6 +285,8 @@ Quand vous finalisez ou envoyez une facture, MyCompanyDesk vérifie que votre nu
 S'il manque l'un des deux, une fenêtre s'ouvre pour le saisir tout de suite. Après l'enregistrement, votre facture est finalisée automatiquement.
 
 L'application bloque aussi la finalisation si les données de votre entreprise sont incomplètes (par exemple un nom ou une adresse manquants) ou si la facture n'a aucune ligne. Le message d'erreur indique précisément ce qui manque, pour que vous corrigiez avant que la facture parte chez le client.
+
+Les données du client passent aussi par la vérification. Avec de la TVA sur la facture et un client qui est une entreprise, son adresse ne peut pas manquer : sans elle, il ne peut pas déduire la TVA de son côté, et la finalisation s'arrête là avec l'explication du formulaire.
 
 Les quantités du PDF suivent la langue du reste du document : une facture en anglais utilise la notation anglaise des nombres, une facture en néerlandais la notation néerlandaise.
 

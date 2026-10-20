@@ -17,11 +17,11 @@ Switch between four views with the selector at the top (swipe between periods on
 - **Month**: totals per day; select a day to jump to it.
 - **List**: a searchable table of all entries with filters for invoice status, customer, project, and travel, plus totals for the current selection.
 
-Planned entries carry a **Tentative** badge; press **Confirm** once the work actually happened to turn them into logged hours. Confirming an entry whose date still lies in the future asks first, so hours that have not happened do not slip into your totals unnoticed.
+Hours count as worked right away. There is no confirm step and no auto-confirm switch anymore, so nothing waits on your bookkeeping: an entry is among your worked hours the moment it exists, and that goes for every workspace with a team as well.
 
-If you want, enable **Auto-confirm tentative time** in the calendar settings. When this is on, tentative entries are confirmed automatically once their scheduled date has passed, even if nobody opens the Schedule page.
+Time you want to put in the plan for a day still to come enters through the **Hours for {date}** sheet: **Log hours** accepts it, and the sheet says it counts automatically once the date has passed, ready for the invoice then. Nothing to confirm. Entries you create on a future day without that route are warned about: they count as worked straight away unless you mark them as a **Tentative entry** at the entry itself, which is the one way to hold time out of the worked hours, and only for today or a later date. Planned entries show up separately from logged hours in the day and week views.
 
-Totals only count hours that were actually worked. Planned entries for later days stay out of the tracked-hours totals on the dashboard (Hours this year), in reports (**Tracked hours**), and on the **Work & time** view until they are confirmed; the side panel states that basis. The hours criterion meter for the income tax return counts by its own basis, shown underneath the meter: only your own confirmed hours plus travel time, so its number can differ from the totals here.
+Totals only count hours that are in as worked. Tentative entries for days that have not arrived stay out of the tracked-hours totals on the dashboard (Hours this year), in reports (**Tracked hours**), on the **Work & time** view and out of automatic billing until the day has passed; the side panel states that basis. The hours criterion meter for the income tax return counts by its own basis, shown underneath the meter: only your own worked hours plus travel time, so its number can differ from the totals here.
 
 ## Logging time
 
@@ -120,7 +120,7 @@ Appointments that customers book through the bookings block on your website are 
 
 Calendar settings live under **Settings** › **Hours & calendar**. Here you configure:
 
-- **Entry behavior**: **Hours only mode** and **Auto-confirm tentative time**
+- **Entry behavior**: **Hours only mode**
 - The working hours shown on the timeline
 - The **Default hourly rate** and **Time rounding** (admins)
 - **Travel to customers**: addresses, default transport, car (private or company) and mileage rate
@@ -131,6 +131,6 @@ For a trip in the entry form you can use your current location as the starting p
 ## Tips
 
 - Log time daily for accurate records; the suggestions make re-logging recurring work a one-tap action
-- Plan your week ahead with tentative entries and confirm them as you go
+- Put time in the plan for coming days as tentative entries; they move into worked hours on their own
 - Check uninvoiced time regularly so no billable hours slip through
 - Connect your calendar once and your meetings become loggable entries automatically

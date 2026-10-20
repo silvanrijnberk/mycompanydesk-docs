@@ -31,6 +31,10 @@ Na het openen van de link blijft je klant 30 dagen ingelogd op dat apparaat, zon
 
 ## Portaalfuncties
 
+### Strippenkaarten
+
+Een klant die bij je een strippenkaart kocht, ziet hem hier: de kaart met hoeveel er nog op staat, tot wanneer hij geldt, waarvoor hij telt en wanneer hij voor het laatst werd gebruikt. Afstrepen doe jij (vanuit een afspraak, een groepsles of de kaart zelf in de app); het portaal toont de stand en de geschiedenis, ook via een deellink die zonder inloggen werkt.
+
 ### Overzicht
 
 Het overzicht is de thuispagina van het portaal: je huisstijl en een begroeting bovenaan, met daaronder je eigen welkomsttekst als je die gezet hebt, naast de vaste bedrijfskaart met je contactgegevens. Een korte **Te doen**-lijst verzamelt wat de klant nog moet doen (een factuur betalen, een document tekenen, een nieuw bericht lezen) en als alles rond is, zegt de pagina dat gewoon: **Alles is betaald, er staat niets open.** Wordt er na een melding van de klant nog een betaling gecontroleerd, dan zegt de pagina dat ook, in plaats van opnieuw om geld te vragen.

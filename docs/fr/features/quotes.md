@@ -125,6 +125,8 @@ Dès que votre client accepte votre devis, convertissez-le en facture en un clic
 4. Faites les ajustements nécessaires
 5. Enregistrez et envoyez la facture
 
+La note que le client pouvait lire sur le devis est reprise comme **Note du devis (ne figure pas sur la facture)**, avec **Reprendre** à côté, à vous de décider si elle va sur la facture.
+
 ## Acompte à l'acceptation
 
 Un devis peut inclure un acompte, facturé dès que le client signe. Dans le formulaire de devis, cherchez la section **Acompte à l'acceptation** et choisissez :

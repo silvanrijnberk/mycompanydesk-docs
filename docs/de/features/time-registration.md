@@ -17,11 +17,11 @@ Wechseln Sie mit der Auswahl oben zwischen vier Ansichten (auf Mobilgeräten wis
 - **Monat**: Summen pro Tag; wählen Sie einen Tag, um dorthin zu springen.
 - **Liste**: eine durchsuchbare Tabelle aller Einträge mit Filtern für Rechnungsstatus, Kunde, Projekt und Fahrten, plus Summen für die aktuelle Auswahl.
 
-Geplante Einträge tragen das Label **Vorläufig**; drücken Sie **Bestätigen**, sobald die Arbeit tatsächlich erledigt ist, um sie in erfasste Stunden umzuwandeln. Bestätigen Sie einen Eintrag, dessen Datum noch in der Zukunft liegt, fragt die App zuerst, ob diese Stunden schon mitzählen dürfen.
+Stunden zählen sofort als gearbeitet. Einen Bestätigungsschritt und die Schalter für das automatische Bestätigen gibt es nicht mehr, nichts wartet auf Ihre Buchhaltung: ein Eintrag gehört ab dem Moment zu Ihren gearbeiteten Stunden, in dem er existiert, und in einem Workspace mit Team gilt dasselbe.
 
-Möchten Sie das nicht manuell erledigen? Aktivieren Sie **Vorläufige Zeit automatisch bestätigen** in den Kalendereinstellungen. Vorläufige Einträge werden dann automatisch bestätigt, sobald ihr geplanter Termin verstrichen ist, auch wenn niemand den Zeitplan öffnet.
+Zeit, die Sie für einen Tag einplanen wollen, der noch kommt, geht über das Formular **Stunden für {Datum}**: über **Stunden erfassen** halten Sie sie fest, und das Formular sagt, dass es erst ab diesem Datum mitzählt, dann abrechnungsbereit. Nichts zu bestätigen. Legen Sie an einem künftigen Tag außerhalb dieses Wegs einen Eintrag an, weist die App darauf hin: diese Stunden zählen sofort als gearbeitet, es sei denn, Sie markieren sie am Eintrag selbst als **Vorläufige Erfassung**; das ist der einzige Weg, Zeit außerhalb der gearbeiteten Stunden zu halten, und nur für heute oder ein späteres Datum möglich. Vorläufige Einträge erscheinen in der Tages- und Wochenansicht getrennt von den erfassten.
 
-Summen zählen nur Stunden, die tatsächlich gearbeitet wurden. Vorläufige Einträge für spätere Tage bleiben außerhalb der Stundensummen im Dashboard, in den Berichten (**Erfasste Stunden**) und unter **Arbeit & Zeit**, bis Sie sie bestätigen; das Seitenpanel nennt diese Grundlage. Die Anzeige zum Stundenkriterium für die Einkommensteuer rechnet mit einer eigenen Grundlage, die unter der Anzeige steht: nur Ihre eigenen bestätigten Stunden plus Reisezeit, daher darf diese Zahl von den Summen hier abweichen.
+Summen zählen nur Stunden, die als gearbeitet erfasst sind. Vorläufige Einträge für einen Tag, der noch kommt, bleiben außerhalb der Stundensummen im Dashboard, in den Berichten (**Erfasste Stunden**), unter **Arbeit & Zeit** und außerhalb der automatischen Abrechnung, bis der Tag vorbei ist; das Seitenpanel nennt diese Grundlage. Die Anzeige zum Stundenkriterium für die Einkommensteuer rechnet mit einer eigenen Grundlage, die unter der Anzeige steht: nur Ihre eigenen gearbeiteten Stunden plus Reisezeit, daher darf diese Zahl von den Summen hier abweichen.
 
 ## Zeit erfassen
 
@@ -120,7 +120,7 @@ Termine, die Kunden über den Terminblock auf Ihrer Website buchen, werden nach 
 
 Die Kalendereinstellungen finden Sie unter **Einstellungen** › **Zeiterfassung & Kalender** oder über das Zahnrad auf der Zeitplan-Seite. Hier konfigurieren Sie:
 
-- **Eingabeverhalten**: **Nur Stunden Modus** und **Vorläufige Zeit automatisch bestätigen**
+- **Eingabeverhalten**: **Nur Stunden Modus**
 - Die auf der Zeitleiste sichtbaren Arbeitszeiten
 - Den **Standard-Stundensatz** und die **Zeitrundung** (Administratoren)
 - **Fahrten zu Kunden**: Adressen, Standard-Verkehrsmittel, Auto (privat oder Firmenwagen) und Kilometersatz
@@ -131,6 +131,6 @@ Bei einer Fahrt im Eintragsformular können Sie Ihren aktuellen Standort als Sta
 ## Tipps
 
 - Erfassen Sie Ihre Stunden täglich für genaue Aufzeichnungen; mit den Vorschlägen erfassen Sie wiederkehrende Arbeit mit einem Tipp erneut
-- Planen Sie Ihre Woche mit vorläufigen Einträgen im Voraus und bestätigen Sie sie nach und nach
+- Halten Sie Zeit für kommende Tage als vorläufige Einträge fest; sie gehen von selbst in gearbeitete Stunden über
 - Prüfen Sie regelmäßig Ihre nicht abgerechnete Zeit, damit keine abrechenbaren Stunden liegen bleiben
 - Verbinden Sie Ihren Kalender einmal, und Ihre Termine werden automatisch zu erfassbaren Einträgen

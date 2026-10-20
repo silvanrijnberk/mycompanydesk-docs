@@ -29,9 +29,13 @@ Contracts are part of Office and an optional module. Switch it on under **Settin
    - **Which period does the invoice cover?**: see [Invoice period](#invoice-period)
 3. Click **Save**
 
+You can also start a contract from a quote: the lines carry over, so an accepted quote becomes a contract without retyping it.
+
 ::: tip More options
 The new-contract form keeps optional details tidy: the **More options** section reveals extra fields such as a service charge with its own amount and VAT rate. These are not required to create the contract, but you can expand them when you need them.
 :::
+
+The form also picks the matching template for you: when exactly one contract template fits the contract, it is already selected. No template fits? A note under the form says the contract will carry no terms, so you cannot overlook it.
 
 ## Rate basis
 
@@ -40,7 +44,7 @@ Every contract answers **How is the price agreed?**:
 - **Fixed amount**: the same amount each period, such as rent or a fixed monthly fee.
 - **Hourly rate**: you invoice the hours logged on projects linked to this contract.
 - **Daily rate**: you invoice the days worked on projects linked to this contract.
-- **Fixed project price**: a single agreed total for the whole assignment, invoiced once.
+- **Fixed project price**: a single agreed total for the whole assignment, invoiced once. A one-off assignment like this needs no invoice date on the contract.
 
 For hourly and daily contracts, the contract detail page shows a **Work under this contract** card with the agreed, invoiced and logged totals, plus the linked projects. A day is counted as 8 hours.
 
@@ -79,6 +83,8 @@ When an end date is set:
 - When the end date passes and the last period has been invoiced, the status changes to **Ended** automatically.
 
 ## Automatic invoicing
+
+A contract that is not signed yet shows **Waiting for signature** in the list and generates no invoice: the first invoice only comes when the contract has actually been signed.
 
 Active contracts with a recurrence schedule automatically generate invoices at each billing period. The system:
 
@@ -181,7 +187,7 @@ In the archive you use **Restore to active** or **Move to trash**; in the trash 
 
 ## Signing
 
-Contracts support electronic signing. You add parties through the contract form and send the contract with **Send for signing**; each party receives a signing link via email.
+Contracts support electronic signing. You add parties through the contract form and send the contract with **Send for signing**; each party receives a signing link via email. Sending opens a send sheet first, with the recipient, the subject and the text of the email as the server composes it: nothing is sent until you press **Send**. **Send link** and **Resend** on the signing card open the same sheet, so every send shows its email first.
 
 When a contract has been signed, the contract detail page shows a signing card with:
 

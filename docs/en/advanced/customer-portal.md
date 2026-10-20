@@ -31,6 +31,10 @@ Once the link is opened, the customer stays signed in on that device for 30 days
 
 ## Portal features
 
+### Punch cards
+
+A customer who bought a punch card from you sees it here: the card with how many punches are left, its validity, where it is good for and when it was last used. Punching happens from your side (from an appointment, a group session or the card itself in the app); the portal shows the count and the history, including on a share link that works without any sign-in.
+
 ### Overview
 
 The overview is the home page of the portal: your branding and a greeting up top (with your own welcome text under it, if you set one), next to a fixed company card with your contact details. A short **To do** list gathers what still needs the customer (pay an invoice, sign a document, read a new message), and once everything is settled the page says so plainly: **Everything is paid, nothing is outstanding.** If a payment is still being checked after a bank-transfer acknowledgement, the page mentions that too instead of asking for money a second time.

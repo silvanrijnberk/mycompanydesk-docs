@@ -90,6 +90,20 @@ Les visiteurs s'inscrivent via le bloc **Groepsafspraken** sur votre site, pour 
 
 Sur la page de la séance, vous trouvez les participants : écrivez-leur en une fois, ajoutez quelqu'un à la main, marquez une absence, ou annulez une seule personne (elle reçoit un e-mail et les places redeviennent libres). Vous pouvez aussi déplacer ou annuler la séance entière ; un avis de déplacement ne part qu'aux participants réellement joignables par e-mail. Une inscription non payée qui reste impayée devient **expirée** plutôt qu'annulée, et seule une inscription expirée récupère ses places si le paiement finit par arriver. Les inscriptions que vous ou le visiteur avez annulées ne reviennent pas, et l'argent repart. Les participants retrouvent leur séance, comme tout rendez-vous avec vous, dans leur portail client sous **Rendez-vous**.
 
+## Rendez-vous récurrents
+
+Un rendez-vous qui revient n'a pas besoin d'être planifié un par un. Dans **Prendre rendez-vous** et dans **Nouvelle séance de groupe**, le formulaire demande **Répéter** : chaque semaine, une semaine sur deux, toutes les quelques semaines (de un à douze) ou chaque mois, et pour combien de temps : **jusqu'à ce que j'arrête** (vous pouvez arrêter depuis n'importe quel rendez-vous), **un certain nombre de fois** ou **jusqu'à une date incluse**.
+
+La façon de le faire savoir se choisit juste dessous : un message WhatsApp prêt à envoyer sur votre téléphone, un e-mail pour la série entière (jour, heure et un lien de reprogrammation, avec un rappel la veille de chaque séance), ou aucune confirmation du tout. Le WhatsApp, vous l'envoyez vous-même ; l'e-mail part depuis MyCompanyDesk.
+
+Ensuite, le rendez-vous régulier roule tout seul :
+
+- L'agenda planifie toujours une année glissante à l'avance, et une ronde nocturne la remplit à nouveau, si bien que les prochains rendez-vous sont simplement là. La liste et l'agenda marquent chaque répétition avec l'icône de répétition, et la ligne du rendez-vous montre qui a planifié la série et pour combien de temps elle tourne.
+- Avant l'entrée, l'aperçu **Prochains rendez-vous** montre les dates à venir, les collisions en orange ; décocher une date la saute, le reste passe.
+- Annuler ou déplacer un rendez-vous demande d'abord : **cette date seule** (la série continue) ou **celle-ci et toutes les suivantes** (la série s'arrête après cette date). Un court e-mail peut dire au client ce qui a changé.
+- Une série de séances de groupe a ses places propres par date et ses inscriptions propres par séance. **Modifier toute la série** applique un changement à chaque date suivante, et lors d'une annulation chaque participant reçoit son propre message, par e-mail là où est une adresse et par WhatsApp là où il n'y a qu'un numéro de téléphone.
+- **Qui était là ?** sur une séance tient la présence de chaque personne. Cocher quelqu'un qui détient une carte à tampons la tamponne à l'instant ; décocher remet le tampon. Voir [Cartes à tampons](/fr/features/customers#cartes-à-tampons) pour la manière dont les cartes et les tampons fonctionnent.
+
 ## Réserver un rendez-vous depuis le portail
 
 Les visiteurs voient sur votre site un aperçu des créneaux disponibles. Après avoir choisi un horaire, ils saisissent leurs coordonnées et confirment la demande. Selon vos paramètres :

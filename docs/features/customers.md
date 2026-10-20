@@ -89,6 +89,16 @@ Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen 
 - De koppeling wordt automatisch gemaakt als het btw-nummer van de klant overeenkomt met een van je andere werkruimtes. De kaart toont dan een melding zodat je ziet dat het automatisch is gebeurd en het kunt corrigeren als het niet klopt.
 - Een handmatige koppeling wint altijd van een automatische. De automatische koppeling overschrijft nooit een koppeling die je zelf hebt gezet.
 
+## Strippenkaarten
+
+Een strippenkaart (ook: rittenkaart of lespakket) laat een klant vooraf betalen voor een aantal keer. Maak er een via een item in je aanbod: zet daar **Strippenkaart** aan en vul de naam in, voor hoeveel keer hij geldt en wat je per keer rekent, voor welke diensten hij telt (leeg laten en hij geldt voor elke afspraak), hoe lang hij geldig blijft, en of je klant een herinnering krijgt als er nog één keer op de kaart staat. Eén btw-tarief geldt voor de hele kaart: diensten met een ander btw-tarief kunnen niet op dezelfde kaart, en met de KOR of vrijgesteld aan gaat hij zonder btw de deur uit.
+
+Verkopen doe je vanaf de klantpagina met **Strippenkaart verkopen**, in één blad: de kaart komt uit je aanbod met zijn prijs, aan te passen voor deze klant, je zegt of de klant al betaald heeft (contant, Tikkie of bank; niets staat vooraf ingevuld), en MyCompanyDesk maakt op hetzelfde moment de definitieve factuur voor je administratie, met de kaart gekoppeld aan die factuurregel. Een factuur die je de gewone weg maakt doet hetzelfde: maak je er één definitief met een strippenkaartregel erin, dan ontstaat de kaart mee.
+
+De klant ziet zijn kaarten in het klantportaal en via een deellink waarvoor niets hoeft in te loggen: hoeveel er nog op de kaart staat en de geschiedenis van de verkoop en elke streep. De stand of een herinnering stuur je zelf, via WhatsApp of e-mail, en de link kan je intrekken en vervangen als hij zijn werk gedaan heeft. Wil een klant eruit? Met **Geld terug** betaal je de ongebruikte keren terug via een creditnota, of je zet de kaart met **Stoppen** stil; je administratie werkt dat zelf bij en een gestopte kaart kan niet meer afstrepen.
+
+Afstrepen gebeurt ook waar het werk zit. Rond je een afspraak af voor een klant met een kaart, dan biedt de app **Streep 1 af** (de streep zet de afspraak op Afgerond) naast **Niet gekomen**, met terugdraaien als chip in hetzelfde blad. In een groepsles vink je bij **Wie was er?** iemand aan en dan streep je meteen één keer af van diens kaart; een vinkje weg halen draait het terug. Wie voor die les al betaald heeft, staat op de lijst met de melding dat er niet hoeft te worden afgestreept. Het dashboard houdt de kaarten die bijna op of helemaal op zijn bij elkaar bij, met de herinnering één tik weg.
+
 ## Acties
 
 - **Bewerken**: werk de gegevens van de klant bij

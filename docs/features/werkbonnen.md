@@ -9,7 +9,7 @@ Een werkbon legt vast wat je bij een klant hebt gedaan: het bezoek, de uren, de 
 
 ## Aanzetten
 
-Werkbonnen zijn een onderdeel dat je zelf aanzet. Doe dat bij **Instellingen › Onderdelen**. Er zit geen abonnementsdrempel op: het onderdeel is gratis op elk abonnement, en de toegang volgt hetzelfde paginarecht als facturen.
+Werkbonnen zijn een onderdeel dat je zelf aanzet. Doe dat bij **Instellingen › Onderdelen**. Er zit geen abonnementsdrempel op: het onderdeel is gratis op elk abonnement, en de toegang volgt hetzelfde paginarecht als facturen. De app stelt ze ook voor waar ze passen: wie aan het eind van de instelwizard klaar is en een vak doet dat op locatie werkt, zoals bouw of installatie, krijgt een voorstel om werkbonnen met één tik aan te zetten.
 
 ## De werkbonnenlijst
 
@@ -28,6 +28,8 @@ De lijst staat onder **Werkbonnen** in de navigatie. Tabs bovenaan zetten de wer
 
 Bewaar de werkbon, of kies meteen **Opslaan en laten tekenen**. Je kunt een werkbon ook vanuit een offerte aanmaken: de regels worden overgenomen.
 
+Heeft de klant al werk van je in de app? Dan stelt het formulier voor wat er al staat: de uren die je bij hem schreef (met hun reistijd en reiskosten erbij) en de ritten naar hem (met de voorrijkosten). Met **Op de werkbon zetten** gaan ze in een keer op het formulier. Uren en voorrijkosten die op een werkbon staan, factureer je voortaan alleen via die werkbon, zodat de andere flows ze niet nog een keer aanbieden.
+
 ## Laten tekenen
 
 Kies op de werkbonpagina **Laten tekenen**. Vul de naam van de ondertekenaar in en laat de klant op je telefoon tekenen met een vinger of stylus. Met de handtekening bevestigt de klant dat de werkzaamheden op de bon zijn uitgevoerd.
@@ -42,7 +44,7 @@ De werkbon-PDF volgt standaard je [factuurontwerp](/settings/pdf), met dezelfde 
 
 ## Van werkbon naar factuur
 
-Van een getekende werkbon maak je met één klik een factuur. Die begint als concept met de uren en materialen al op de regels, en hij toont het bonnummer als verwijzing. Er hoort één factuur bij een werkbon; bestaat hij al, dan brengt de link op de werkbonpagina je er meteen heen. Controleer de conceptfactuur en verstuur hem zoals gewoonlijk.
+Van een getekende werkbon maak je met één klik een factuur. Die begint als concept met de uren en materialen al op de regels, en hij toont het bonnummer als verwijzing. Er hoort één factuur bij een werkbon; bestaat hij al, dan brengt de link op de werkbonpagina je er meteen heen. Controleer de conceptfactuur en verstuur hem zoals gewoonlijk. De factuur neemt **Bedragen incl. btw** over van de offerte waar de bon uit kwam, en bij een particulier zet hij prijzen inclusief btw zelf aan.
 
 ### Meerdere werkbonnen samen factureren
 

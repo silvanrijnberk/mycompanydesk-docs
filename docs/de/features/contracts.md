@@ -29,6 +29,10 @@ Verträge gehören zu Office und sind ein Modul, das Sie selbst einschalten. Seh
    - **Welchen Zeitraum deckt die Rechnung ab?**: siehe [Rechnungszeitraum](#rechnungszeitraum)
 3. Klicken Sie auf **Speichern**
 
+Sie können auch von einem Angebot aus starten: die Positionen kommen mit, so wird aus einem akzeptierten Angebot ein Vertrag, ohne dass Sie etwas abtippen.
+
+Das Formular wählt auch die passende Vorlage gleich mit: passt genau eine Vertragsvorlage auf den Vertrag, steht sie schon drin. Passt keine, sagt ein Hinweis unter dem Formular, dass der Vertrag ohne Bedingungen hinausginge.
+
 ::: tip Mehr Optionen
 Das Formular hält optionale Angaben ordentlich verstaut: Unter **Mehr Optionen** finden Sie weitere Felder, etwa einen Servicezuschlag mit eigenem Betrag und Steuersatz. Für den Vertrag selbst brauchen Sie sie nicht, aber Sie klappen sie auf, wenn Sie sie brauchen.
 :::
@@ -40,7 +44,7 @@ Jeder Vertrag beantwortet die Frage **Wie wurde der Preis vereinbart?**:
 - **Fester Betrag**: jede Periode derselbe Betrag, etwa Miete oder eine feste Monatsgebühr.
 - **Stundensatz**: Sie rechnen die Stunden ab, die auf Projekten zu diesem Vertrag erfasst werden.
 - **Tagessatz**: Sie rechnen die gearbeiteten Tage auf Projekten zu diesem Vertrag ab.
-- **Fester Projektpreis**: ein vereinbarter Gesamtbetrag für den ganzen Auftrag, der einmal abgerechnet wird.
+- **Fester Projektpreis**: ein vereinbarter Gesamtbetrag für den ganzen Auftrag, der einmal abgerechnet wird. Ein solcher Einmalauftrag braucht kein Rechnungsdatum.
 
 Bei Stunden- und Tagessatz zeigt die Vertragsseite die Karte **Arbeit unter diesem Vertrag** mit vereinbarten, abgerechneten und erfassten Summen sowie den verknüpften Projekten. Ein Tag zählt als 8 Stunden.
 
@@ -79,6 +83,8 @@ Ist ein Enddatum gesetzt:
 - wechselt der Status automatisch auf **Abgelaufen**, sobald das Enddatum vorbei und die letzte Periode abgerechnet ist
 
 ## Automatisch abrechnen
+
+Ein Vertrag, der noch nicht unterschrieben ist, steht in der Liste auf **Warten auf Unterschrift** und erzeugt keine Rechnung: die erste kommt erst, wenn der Vertrag wirklich unterschrieben ist.
 
 Ein aktiver Vertrag mit Wiederholung erzeugt in jeder Periode von selbst eine Rechnung. Das System:
 
@@ -181,7 +187,7 @@ Im Archiv wählen Sie **Wiederherstellen (aktiv)** oder **In Papierkorb verschie
 
 ## Unterschreiben
 
-Verträge lassen Sie digital unterschreiben. Sie fügen Parteien im Vertragsformular hinzu und versenden den Vertrag mit **Zur Unterzeichnung senden**; jede Partei bekommt einen Unterschriftslink per E-Mail.
+Verträge lassen Sie digital unterschreiben. Sie fügen Parteien im Vertragsformular hinzu und versenden den Vertrag mit **Zur Unterzeichnung senden**; jede Partei bekommt einen Unterschriftslink per E-Mail. Das Versenden öffnet zuerst ein Versandformular, mit Empfänger, Betreff und dem Text der E-Mail, wie ihn der Server aufbaut: nichts geht hinaus, bis Sie auf **Senden** drücken. **Link senden** und **Erneut senden** auf der Unterschriftskarte öffnen dasselbe Formular, sodass jeder Versand zuerst seine E-Mail zeigt.
 
 Ist ein Vertrag unterschrieben, zeigt die Vertragsseite eine Signaturkarte mit:
 

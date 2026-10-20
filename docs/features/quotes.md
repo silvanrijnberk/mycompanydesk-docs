@@ -47,6 +47,8 @@ Voor een offerte moet er minstens één van deze schakelaars aan staan; anders k
 
 Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Deze staat standaard aan voor offertes. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
+Komt de offerte uit een aanvraag die via je website binnenkwam? Dan toont de offertedetailpagina vóór het versturen een melding: het bedrag op de geschatte regels is een schatting, kijk eerst even naar de bedragen. Met **Bedragen controleren** spring je op de regels.
+
 Een offerte heeft ook minstens één regel nodig voordat hij definitief kan worden gemaakt of verstuurd: de app weigert een lege offerte en vraagt je eerst een regel toe te voegen.
 
 Heet je werkruimte nog **Mijn werkruimte** omdat je bij aanmelding nog geen bedrijfsnaam hebt opgegeven, dan vraagt de app eerst je bedrijfsnaam voordat de offerte naar je klant gaat. De naam komt als afzender op je offerte en je facturen; je vult hem één keer in, daarna staat hij er vanzelf op. Dit geldt voor **Versturen** en ook voor het tekenverzoek, zowel via **Naar tekenen versturen** als via de knoppen in de ondertekeningskaart.
@@ -66,7 +68,7 @@ De signalen blijven uit tot de offerte daadwerkelijk is gemaild. Daarvoor is de 
 
 ## Offerte online laten ondertekenen
 
-Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem alleen als PDF te versturen. Open de offertedetailpagina en kies **Naar tekenen versturen** om een tekenverzoek naar de klant te sturen. De status van de offerte wijzigt in **Verzonden**, zodat je het proces kunt volgen. De tekenlink opent in de browser van je klant, niet in de MyCompanyDesk-app, ook als de app op zijn telefoon staat.
+Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem alleen als PDF te versturen. Open de offertedetailpagina en kies **Naar tekenen versturen**. Er opent dan eerst een verzendblad, met de ontvanger, het onderwerp en de tekst van de mail precies zoals de tekenmail wordt, en er gaat niets weg totdat je op **Versturen** drukt; het offertenummer komt er pas in op dat moment. Daarna wijzigt de status van de offerte in **Verzonden**, zodat je het proces kunt volgen. De tekenlink opent in de browser van je klant, niet in de MyCompanyDesk-app, ook als de app op zijn telefoon staat.
 
 Heeft je werkruimte algemene voorwaarden in Documenten staan, dan bevestigt de klant die eerst op de tekenpagina voordat hij kan accepteren: de pagina noemt het bedrijf bij wie de voorwaarden horen, linkt de volledige tekst en vraagt de klant aan te vinken dat hij de voorwaarden heeft ontvangen en ermee akkoord gaat. Zonder dat haakje kan de offerte niet worden geaccepteerd. De voorwaarden precies zoals je klant ze zag en accepteerde kun je daarna uit de tekenkaart downloaden.
 
@@ -124,6 +126,8 @@ Zodra een klant je offerte accepteert, zet je deze met een klik om naar een fact
 3. Bekijk de vooraf ingevulde factuur (alle regelitems worden overgenomen)
 4. Pas indien nodig aan
 5. Sla op en verstuur de factuur
+
+De notitie die de klant op de offerte kon lezen neemt de app mee als **Notitie uit de offerte (staat niet op de factuur)**, met **Overnemen** ernaast, zodat jij bepaalt of hij op de factuur komt.
 
 ## Aanbetaling bij akkoord
 

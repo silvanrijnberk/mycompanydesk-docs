@@ -34,9 +34,11 @@ Zwei Wege:
 1. **Suchen:** Tippen Sie Ihren Firmennamen (zwei Zeichen oder mehr) und wählen Sie Ihr Unternehmen aus den Live-Vorschlägen. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; manuell Eingetragenes bleibt erhalten.
 2. **Manuell eintragen:** ein kurzes Formular für Firmennamen, KVK-Nummer, Adresse, Postleitzahl und Ort. Nützlich, wenn Ihr Unternehmen zu neu ist, um in den Suchergebnissen zu erscheinen, oder Ihr Handelsname nicht dem entspricht, wonach Sie gesucht haben. Ihre Eingaben werden sofort bei Ihren Unternehmensdaten gespeichert. Über einen Link gelangen Sie jederzeit zurück zur Suche.
 
-**Kein Handelsregister-Eintrag?**: Fahren Sie ohne Unternehmensdaten fort und tragen Sie sie später unter Unternehmensdaten in den Einstellungen nach.
+Kein Handelsregister-Eintrag? **Ich habe keine KVK-Nummer** öffnet dasselbe manuelle Formular, mit dem eingetippten Namen vorausgefüllt und der KVK-Nummer als optionalem Feld. Straße, Postleitzahl und Ort sind dort Pflicht: eine Adresse gehört auf jede Rechnung, die Sie senden.
 
 Findet eine Suche nichts, sagt der Assistent das und bietet den Wechsel zur manuellen Eingabe an, mit dem bereits eingetippten Namen vorausgefüllt.
+
+Auch Adressen bekommen ihre eigene Prüfung. Wählen Sie einen Vorschlag, dessen Postleitzahl von der von Ihnen eingetippten abweicht, sagt der Assistent das unter der Adresskarte, lässt Postleitzahl und Ort bearbeitbar und bietet an, sie anzupassen, bevor es weitergeht.
 
 ## Schritt: Womit wollen Sie starten?
 
@@ -55,7 +57,7 @@ Dieser Schritt (**Wie werden Sie bezahlt?**) fragt nach den zwei Dingen, die auf
 **Berechnen Sie MwSt.?** Wählen Sie eine von drei Antworten:
 
 - **Ja, ich berechne MwSt.**: die meisten Selbstständigen. Tragen Sie Ihre USt-IdNr. ein oder wählen Sie **Ich kenne meine USt-IdNr. jetzt nicht, ich trage sie später ein**; die App fragt dann erneut, wenn Sie Ihre erste Rechnung senden.
-- **Nein, ich nehme an der KOR teil**: nur, wenn Sie sich selbst bei der Belastingdienst angemeldet und darüber Bescheid bekommen haben. Wenig Umsatz allein reicht nicht. Ihre Rechnungen werden dann ohne MwSt. erstellt und vermerken, dass Sie an der KOR teilnehmen.
+- **Nein, ich nehme an der KOR teil**: nur, wenn Sie sich selbst bei der Belastingdienst angemeldet und darüber Bescheid bekommen haben. Wenig Umsatz allein reicht nicht. Ihre Rechnungen werden dann ohne MwSt. erstellt und vermerken, dass Sie an der KOR teilnehmen. Der Schritt fragt danach **Seit wann nehmen Sie an der KOR teil?** und stellt den 1. Januar des Jahres ein, änderbar; waren Sie früher abgemeldet und machen jetzt wieder mit, beginnt die Teilnahme heute.
 - **Nein, ich bin befreit**: für manche Berufe, etwa Pflege durch registrierte Gesundheitsdienstleister oder Unterricht durch eine CRKBO-registrierte Lehrkraft. Ihre Rechnungen werden ohne MwSt. erstellt.
 
 Sind Sie bei der KOR unsicher, fragt der Schritt "Nimmst du an der KOR (Kleinunternehmerregelung) teil?" mit **Ja, ich nehme teil**, **Nein** und **Weiß ich nicht**. Bei Weiß ich nicht erklärt er, dass Sie nicht teilnehmen, wenn Sie sich nicht selbst angemeldet haben, und dass der Brief der Belastingdienst es sicher sagt.
@@ -64,7 +66,7 @@ Sind Sie bei der KOR unsicher, fragt der Schritt "Nimmst du an der KOR (Kleinunt
 
 ## Abschluss
 
-**Setup abschließen** wendet Ihre Unternehmensdaten, Ihren MwSt.-Status und Ihre IBAN an. Der Abschlussbildschirm ("Du kannst jetzt Rechnungen stellen") bietet die Schaltfläche **Erste Rechnung erstellen** und nennt, was noch folgt: Ihr Konto absichern und Ihre Website werden später vorgeschlagen, wenn es passt, unter **Richten Sie das ein** im Dashboard. Im Hintergrund wird keine Website gebaut; wenn Sie den Bereich **Website** zum ersten Mal selbst öffnen, wird dort die Standard-Entwurfsseite angelegt (Startseite, Leistungen, Über uns, Kontakt, mit Ihren Daten auf den Rechtsseiten), die auf Ihre Veröffentlichung wartet.
+**Setup abschließen** wendet Ihre Unternehmensdaten, Ihren MwSt.-Status und Ihre IBAN an. Der Abschlussbildschirm ("Du kannst jetzt Rechnungen stellen") sagt nur, dass Ihre Daten stimmen, wenn er sie wirklich geprüft hat: Name, Straße, Postleitzahl und Ort müssen vorhanden sein, und eine IBAN mit falscher Prüfziffer wird dort gemeldet statt still durchzulassen. Er bietet die Schaltfläche **Erste Rechnung erstellen** und nennt, was noch folgt: Ihr Konto absichern und Ihre Website werden später vorgeschlagen, wenn es passt, unter **Richten Sie das ein** im Dashboard. Im Hintergrund wird keine Website gebaut; wenn Sie den Bereich **Website** zum ersten Mal selbst öffnen, wird dort die Standard-Entwurfsseite angelegt (Startseite, Leistungen, Über uns, Kontakt, mit Ihren Daten auf den Rechtsseiten), die auf Ihre Veröffentlichung wartet.
 
 Jeder neue Arbeitsbereich startet mit 60 Tagen Office, kostenlos und ohne Kreditkarte. Melden Sie sich über einen Einladungslink eines Partner-Buchhalters an, dauert diese Testphase 12 Monate. Danach wechselt Ihr Arbeitsbereich zurück zu Desk, ohne Bezahlschranke.
 

@@ -9,7 +9,7 @@ A work order records what you did at a customer's: the visit, the hours, the mat
 
 ## Turning it on
 
-Work orders are an opt-in module. Switch them on under **Settings › Modules**. There is no plan gate: the module is free on every plan, and access follows the same page permission as invoices.
+Work orders are an opt-in module. Switch them on under **Settings › Modules**. There is no plan gate: the module is free on every plan, and access follows the same page permission as invoices. The app also suggests them where they fit: at the end of the setup wizard, a trade that works on location, such as building or installation, gets a one-tap suggestion to switch work orders on.
 
 ## The work order list
 
@@ -28,6 +28,8 @@ The list lives at **Work orders** in the navigation. Tabs at the top order the w
 
 Save the work order, or choose **Save and get it signed** right away. You can also create a work order from a quote: the lines are pre-filled from the quote.
 
+Does the customer already have work of yours in the app? The form then proposes what exists: the hours you logged for them (with their travel time and travel costs) and the rides to them (with the call-out fee). **Add to work order** takes it onto the form in one go. Hours and call-out fees that sit on a work order are invoiced from that work order alone, so the other flows no longer offer them a second time.
+
 ## Getting it signed
 
 On the work order page, choose **Get it signed**. Fill in the name of the person signing and let the customer sign with a finger or stylus on your phone. By signing, the customer confirms that the work shown on the work order was carried out.
@@ -42,7 +44,7 @@ The work order PDF follows your [invoice design](/en/settings/pdf) by default, s
 
 ## From work order to invoice
 
-A signed work order turns into an invoice in one click. The invoice starts as a draft with the hours and materials already on the lines, and it shows the work order number as a reference. There is one invoice per work order; if it already exists, the link on the work order page takes you straight to it. Check the draft invoice and send it as usual.
+A signed work order turns into an invoice in one click. The invoice starts as a draft with the hours and materials already on the lines, and it shows the work order number as a reference. There is one invoice per work order; if it already exists, the link on the work order page takes you straight to it. Check the draft invoice and send it as usual. The draft takes over **Amounts incl. VAT** from the quote the work order came from, and for a private customer it turns prices including VAT on by itself.
 
 ### Invoicing several work orders together
 

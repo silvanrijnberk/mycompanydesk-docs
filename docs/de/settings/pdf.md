@@ -53,6 +53,8 @@ Das Design gilt für jedes PDF, das MyCompanyDesk für Sie erstellt: Rechnungen,
 
 Dokument-PDFs sind auf Niederländisch, Englisch, Deutsch und Französisch verfügbar. Dokumente aus einem niederländischen Arbeitsbereich werden standardmäßig auf Niederländisch erstellt, damit die Beschriftungen auf Ihren Rechnungen zu Ihren Kunden passen.
 
+Die Wahl sitzt auch beim Kunden und beim Dokument selbst. Eine Sprache auf der Kundin oder dem Kunden gilt für ihre oder seine Dokumente, und eine Sprache auf einem Rechnungsentwurf gewinnt für diese eine Rechnung; MyCompanyDesk liest sie in der Reihenfolge Rechnung, dann Kunde, dann Workspace. Angebote folgen dem Kunden. Sobald ein Dokument hinausgeht, friert seine Sprache ein: PDF, E-Mail, Portalansicht und letzte Erinnerung bleiben in der Sprache, in der das Dokument aufbrach.
+
 ## Logo-Tipps
 
 Für das beste Ergebnis auf PDFs:

@@ -9,7 +9,7 @@ Un bon d'intervention consigne ce que vous avez fait chez un client : la visite,
 
 ## Activer le module
 
-Les bons d'intervention sont un module que vous activez vous-même. Cela se fait dans **Paramètres › Modules**. Aucun palier d'abonnement ne s'applique : le module est gratuit dans chaque offre, et l'accès suit la même permission de page que les factures.
+Les bons d'intervention sont un module que vous activez vous-même. Cela se fait dans **Paramètres › Modules**. Aucun palier d'abonnement ne s'applique : le module est gratuit dans chaque offre, et l'accès suit la même permission de page que les factures. L'application les suggère aussi là où ils conviennent : à la fin de l'assistant d'installation, un métier qui travaille sur place, comme la construction ou l'installation, reçoit la suggestion d'activer les bons d'intervention en un clic.
 
 ## La liste des bons
 
@@ -28,6 +28,8 @@ La liste se trouve sous **Bons d'intervention** dans la navigation. Des onglets 
 
 Enregistrez le bon, ou choisissez tout de suite **Enregistrer et faire signer**. Vous pouvez aussi créer un bon à partir d'un devis : les lignes sont reprises.
 
+Le client a-t-il déjà du travail de vous dans l'application ? Le formulaire propose alors ce qui existe : les heures que vous avez saisies chez lui (avec leur temps et leurs frais de trajet) et les trajets vers lui (avec les frais de déplacement). **Ajouter au bon d'intervention** les met en une fois sur le formulaire. Des heures et des frais de déplacement qui siègent sur un bon ne se facturent qu'à partir de ce bon, pour que les autres flux ne les proposent plus une deuxième fois.
+
 ## Faire signer
 
 Choisissez **Faire signer** sur la page du bon. Saisissez le nom de la personne qui signe et laissez le client signer sur votre téléphone, avec le doigt ou un stylet. En signant, le client confirme que les travaux indiqués sur le bon ont été effectués.
@@ -42,7 +44,7 @@ Le PDF du bon suit par défaut votre [design de facture](/fr/settings/pdf), avec
 
 ## Du bon à la facture
 
-D'un bon signé, vous créez une facture en un clic. Elle commence comme brouillon avec les heures et les fournitures déjà sur les lignes, et elle affiche le numéro du bon comme référence. Une facture correspond à un bon ; si elle existe déjà, le lien sur la page du bon vous y conduit directement. Vérifiez le brouillon de facture et envoyez-le comme d'habitude.
+D'un bon signé, vous créez une facture en un clic. Elle commence comme brouillon avec les heures et les fournitures déjà sur les lignes, et elle affiche le numéro du bon comme référence. Une facture correspond à un bon ; si elle existe déjà, le lien sur la page du bon vous y conduit directement. Vérifiez le brouillon de facture et envoyez-le comme d'habitude. La facture reprend **Montants TTC** du devis d'où vient le bon, et pour un particulier elle active les prix TTC d'elle-même.
 
 ### Facturer plusieurs bons ensemble
 
