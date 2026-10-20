@@ -29,6 +29,10 @@ Les contrats font partie d'Office et sont un module que vous activez vous-même.
    - **Quelle période la facture couvre-t-elle ?** : voir [Période facturée](#periode-facturee)
 3. Cliquez sur **Enregistrer**
 
+Vous pouvez aussi partir d'un devis : les lignes sont reprises, et un devis accepté devient un contrat sans que vous ne retypiez rien.
+
+Le formulaire choisit aussi le modèle qui convient : quand un seul modèle de contrat correspond, il est déjà sélectionné ; aucun ne correspond ? Une note sous le formulaire indique que le contrat partirait sans conditions.
+
 ::: tip Plus d'options
 Le formulaire range les données facultatives : sous **Plus d'options** se trouvent des champs supplémentaires, comme des frais de service avec leur propre montant et taux de TVA. Ils ne sont pas nécessaires pour créer le contrat, mais vous les dépliez quand vous en avez besoin.
 :::
@@ -40,7 +44,7 @@ Chaque contrat répond à la question **Comment le prix a-t-il été convenu ?**
 - **Montant fixe** : le même montant à chaque période, comme un loyer ou un forfait mensuel.
 - **Taux horaire** : vous facturez les heures saisies sur les projets liés à ce contrat.
 - **Taux journalier** : vous facturez les jours travaillés sur les projets liés à ce contrat.
-- **Prix forfaitaire de projet** : un montant total convenu pour toute la mission, facturé une seule fois.
+- **Prix forfaitaire de projet** : un montant total convenu pour toute la mission, facturé une seule fois. Une mission ponctuelle de ce genre n'a pas besoin de date de facture.
 
 Pour un taux horaire ou journalier, la page du contrat affiche la carte **Travail sous ce contrat** avec les totaux convenus, facturés et saisis, ainsi que les projets liés. Une journée compte pour 8 heures.
 
@@ -79,6 +83,8 @@ Quand une date de fin est fixée :
 - le statut passe automatiquement à **Terminé** une fois la date de fin passée et la dernière période facturée
 
 ## Facturation automatique
+
+Un contrat pas encore signé porte dans la liste **En attente de signature** et ne produit aucune facture : la première vient quand le contrat est réellement signé.
 
 Un contrat actif avec une récurrence génère de lui-même une facture à chaque période. Le système :
 
@@ -181,7 +187,7 @@ Dans l'archive, vous choisissez **Restaurer (actif)** ou **Mettre à la corbeill
 
 ## Signature
 
-Vos contrats se signent électroniquement. Vous ajoutez des parties dans le formulaire du contrat et envoyez le contrat avec **Envoyer pour signature** ; chaque partie reçoit un lien de signature par e-mail.
+Vos contrats se signent électroniquement. Vous ajoutez des parties dans le formulaire du contrat et envoyez le contrat avec **Envoyer pour signature** ; chaque partie reçoit un lien de signature par e-mail. L'envoi ouvre d'abord une feuille d'envoi, avec le destinataire, l'objet et le texte de l'e-mail tels que le serveur les compose : rien ne part avant que vous appuyiez sur **Envoyer**. **Envoyer le lien** et **Renvoyer** sur la carte de signature ouvrent la même feuille, si bien que chaque envoi montre d'abord son e-mail.
 
 Une fois un contrat signé, sa page affiche une carte de signature avec :
 

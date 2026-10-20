@@ -47,6 +47,8 @@ At least one of these must be turned on for a quote, otherwise the customer has 
 
 If your workspace has general terms in Documents, the email preview also shows an **Include terms and conditions** switch. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
+Is the quote drafted from a request that came in through your website? The quote detail page then shows a notice before you send: the price on the estimated lines is an estimate, so check the amounts first. **Check amounts** takes you straight to the lines.
+
 A quote also needs at least one line before it can be finalized or sent: the app refuses an empty quote and asks you to add a line first.
 
 If your workspace is still called **Mijn werkruimte** because you signed up without entering a business name, the app asks for your business name before the quote goes out to your customer. That name appears as the sender on your quotes and invoices; you fill it in once, after that it appears on its own. This applies to **Send** and to the signing request, via **Send for signing** as well as the buttons in the signing card.
@@ -66,7 +68,7 @@ The pills remain off until the quote is actually emailed. Before that, the activ
 
 ## Online quote signing
 
-You can ask a customer to sign a quote online instead of sending it only as a PDF. On the quote detail page, choose **Send for signing** to send a signing request to the customer. The quote status changes to **Sent** so you can track it. The signing link opens in the customer's web browser, not inside the MyCompanyDesk app, even when the app is installed on their phone.
+You can ask a customer to sign a quote online instead of sending it only as a PDF. On the quote detail page, choose **Send for signing**. A send sheet opens first, with the recipient, the subject and the text of the email exactly as the signing mail will read, and nothing is sent until you press **Send**; the quote number is only added at that moment as well. After sending, the quote status changes to **Sent** so you can track it. The signing link opens in the customer's web browser, not inside the MyCompanyDesk app, even when the app is installed on their phone.
 
 If your workspace has general terms in Documents, the customer confirms them at the signing page before they can accept: the page names the company the terms belong to, links the full text, and asks the customer to tick that they received the terms and agree to them. The quote cannot be accepted without it. You can download the exact terms your customer saw and accepted from the signing card afterwards.
 

@@ -53,6 +53,8 @@ Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offer
 
 Document-PDF's zijn beschikbaar in het Nederlands, Engels, Duits en Frans. Documenten uit een Nederlandse werkruimte worden standaard in het Nederlands gemaakt, zodat de labels op je facturen (zoals "Factuur" en "Vervaldatum") kloppen voor je klanten.
 
+De keuze zit ook bij de klant en het document zelf. Taal op de klant geldt voor zijn documenten, en taal op een conceptfactuur wint voor die ene factuur; MyCompanyDesk leest ze in de volgorde factuur, dan klant, dan werkruimte. Offertes volgen de klant. Zodra een document de deur uit gaat, bevriest zijn taal: de PDF, de e-mail, de portaalweergave en de laatste herinnering blijven in de taal waarin het document vertrok.
+
 ## Logotips
 
 Voor het beste resultaat op PDF's:

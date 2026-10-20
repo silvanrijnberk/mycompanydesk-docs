@@ -89,6 +89,16 @@ If you own more than one business, a card titled **Own business** can appear on 
 - Links are created automatically when the customer's VAT number matches one of your other workspaces. When this happens, the card shows a note so you can tell it was automatic and change it if it is wrong.
 - A manual link always wins over an automatic one. The automatic linker never overwrites a link you set by hand.
 
+## Punch cards
+
+A punch card lets a customer pay in advance for a number of times, like a ride card or a lesson bundle. Make one from an item in your offering: switch on **Punch card** there, then fill in the name, the number of times it covers and what you charge per time, the services it covers (leave empty and it applies to every appointment), how long it stays valid, and whether the customer gets a reminder when one punch is left. One VAT rate applies to the whole card: services with a different VAT rate cannot share one card, and while the KOR or the exemption is on, the card is without VAT.
+
+Selling happens from the customer's detail page with **Sell a punch card**, in one sheet: the card comes from your offering with its price, changeable for this customer, you choose whether the customer has already paid (cash, Tikkie or bank, nothing preselected), and MyCompanyDesk creates the final invoice for your records at the same moment, with the card linked to that invoice line. An invoice made the ordinary way does the same: when you finalize one with a punch-card line, the card comes into being with it.
+
+The customer sees their cards in the customer portal and on a share link that asks for no sign-in: how many punches are left, and the history of the sale and every stamp. You send the count or a nudge yourself, from WhatsApp or email, and the link can be revoked and replaced when it is out of use. When a customer wants out, **Refund** pays the unused times back with a credit note, or **Stop** ends the card; your records update by themselves and a stopped card can no longer be punched.
+
+Punching happens where the work happens too. Completing an appointment for a customer with a card offers **Punch 1** (the stamp marks the appointment done) next to **No-show**, and undoing is a chip on the same sheet. In a group session, ticking someone under **Who was there?** punches 1 from their card straight away and unticking undoes it again; someone who already paid for that session sits on the list with a note that no punch is needed. The dashboard keeps the cards that are almost used up together, with the reminder one tap away.
+
 ## Actions
 
 - **Edit**: update customer information

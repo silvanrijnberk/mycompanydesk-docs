@@ -46,6 +46,8 @@ The preview under the fields shows what your next invoice number will look like.
 
 Under **Which language do you create your documents in?** you choose the language for invoices, quotes and emails to your customers. Dutch is the default. Invoices in other languages are part of Office. An invoice that has been finalized keeps the language it was made in.
 
+The language is also a per-customer and per-invoice choice: set it on the customer and every document for that customer comes out in their language, and set it on a draft invoice for the one-off exception. MyCompanyDesk reads the choice in the order invoice, then customer, then workspace. It freezes when the document is sent: the PDF, the email, the portal view, a credit note and the latest reminder keep speaking the language the document left in. Quotes follow the customer. The same plan limit carries over: documents in other languages are part of Office.
+
 ### Peppol e-invoicing
 
 A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol) (Office). When you switch it on, your company details are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity verification, receiving, and missing-field checks.
@@ -78,11 +80,19 @@ Next to the dates, each row carries a **Status** column that says the state in p
 
 On the phone, a new invoice opens as a short step-by-step flow instead of the full form: customer first, then the lines, then a review step before saving and sending.
 
+Did the invoice start from a quote? The quote's own note then sits right above yours as **Note from the quote (not on the invoice)**, with **Take over** beside it when you want the note copied onto the invoice.
+
 ### From a template
 
 In the invoice form, click **From template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send. You save an invoice as a template with **Save as Template** in the more menu on the invoice.
 
 Saved templates keep the full line: description, quantity, unit, unit price, VAT rate, discount, and whether the line is VAT exempt. They deliberately do not keep the link to a catalog item, because catalog items can be deleted later and the template would then fail when used.
+
+### Invoicing a customer's month in one drawer
+
+The drawer **Invoice {customer}** gathers what one customer still has open in one period: a fixed price per month, appointments that took place, logged hours, trips and costs to pass on. **Invoice everything** does the same for all customers at once; on a customer's page on the phone, **Invoice {month}** sits right under the heading. The period is yours to pick when another month is the one you want, and the drawer groups the work as one line per day or one total line per group.
+
+**Prepare invoice** turns the selection into drafts: you check them first, nothing goes to the customer yet, and preparing for all customers makes one draft each. The sources you invoiced are locked as the lines are added, so the same hours, appointments and trips no longer appear in the other flows; a line carries the links to what it bills instead of a copy of the text.
 
 ## Prices including VAT
 
@@ -148,9 +158,13 @@ Download the invoice as a professionally formatted PDF document. The PDF include
 
 Some invoices are longer than one page. The PDF then keeps the totals together with the final lines, marks them with a note that the invoice continues, and gives the payment details a final page of their own. No continuation page opens with an empty table or a repeated copy of the numbers.
 
+A PDF can end up with your customer, so downloading or sharing one first asks a short question. Once the PDF is out, the amounts, the lines and the customer details of the invoice can no longer be changed, and the app would rather you check everything before that moment. Carry on from the dialog to download or share, or look the invoice over first.
+
 ### Mark as paid
 
-Manually confirm payment when a customer pays via bank transfer or other offline method.
+Manually confirm payment when a customer pays via bank transfer or other offline method. The dialog asks **When was it paid?**: you pick the day the money came in, the day your bank statement shows, and a date in the future is refused. A payment you paid back again asks for that refund date in the same way.
+
+Marked by mistake? **Undo** puts the invoice back to the status it came from. In bulk, the undo reports how many invoices went back, and drafts that went straight from draft to paid stay paid through it.
 
 ### Cancel
 
@@ -271,6 +285,8 @@ When you finalize or send an invoice, MyCompanyDesk checks that your company has
 If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
 
 The app also blocks finalization if your company details are incomplete (for example a missing business name or address) or if the invoice has no line items. The error message points to exactly what is missing, so you can fix it before the invoice goes to the customer.
+
+The customer's own details are checked too. A business customer with VAT on the invoice needs their address on it, otherwise they cannot deduct the VAT on their side; with an address missing, finalizing stops and the form explains why.
 
 Invoice quantities on the PDF are formatted in the same language as the rest of the document, so an English invoice uses English number formatting and a Dutch invoice uses Dutch formatting.
 

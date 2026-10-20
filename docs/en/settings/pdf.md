@@ -53,6 +53,8 @@ The design applies to every PDF MyCompanyDesk creates for you: invoices, quotes,
 
 Document PDFs are available in Dutch, English, German and French. Documents from a Dutch workspace are produced in Dutch by default, so the labels on your invoices (like "Factuur" and "Vervaldatum") match what your customers expect.
 
+The choice also lives with the customer and the document itself. A language set on the customer applies to their documents, and a language on a draft invoice wins for that one invoice; MyCompanyDesk reads the choice in the order invoice, then customer, then workspace. Quotes follow the customer. Once a document goes out, its language freezes: the PDF, the email, the portal view and the last reminder keep speaking the language the document left in.
+
 ## Logo tips
 
 For the best result on PDFs:

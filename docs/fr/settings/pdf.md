@@ -53,6 +53,8 @@ La mise en page s'applique à chaque PDF que MyCompanyDesk crée pour vous : fac
 
 Les PDF de documents existent en néerlandais, anglais, allemand et français. Les documents d'un espace de travail néerlandais sont produits en néerlandais par défaut, pour que les libellés de vos factures correspondent à ce que vos clients attendent.
 
+Le choix se trouve aussi chez le client et sur le document même. Une langue posée sur le client vaut pour ses documents, et une langue sur une facture brouillon l'emporte pour cette seule facture ; MyCompanyDesk lit le choix dans l'ordre facture, puis client, puis espace de travail. Les devis suivent le client. Quand un document part, sa langue se fige : le PDF, l'e-mail, la vue du portail et le dernier rappel restent dans la langue dans laquelle le document est parti.
+
 ## Conseils pour le logo
 
 Pour le meilleur résultat sur les PDF :

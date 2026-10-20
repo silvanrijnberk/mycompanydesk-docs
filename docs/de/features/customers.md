@@ -89,6 +89,16 @@ Wenn Sie mehr als ein eigenes Unternehmen haben, kann auf der Kundenseite eine K
 - Die Verknüpfung wird automatisch erstellt, wenn die USt.-Nummer des Kunden mit einem Ihrer anderen Arbeitsbereiche übereinstimmt. Die Karte zeigt dann einen Hinweis, damit Sie erkennen, dass es automatisch passiert ist, und es korrigieren können, wenn es nicht stimmt.
 - Eine manuelle Verknüpfung hat immer Vorrang vor einer automatischen. Die automatische Verknüpfung überschreibt nie eine Verknüpfung, die Sie selbst gesetzt haben.
 
+## Stempelkarten
+
+Eine Stempelkarte (auch: Fahrkarte oder Stundenpaket) lässt Ihre Kundin oder Ihren Kunden im Voraus für eine Anzahl von Terminen bezahlen. Sie erstellen sie über einen Artikel in Ihrem Leistungskatalog: schalten dort **Stempelkarte** ein und tragen den Namen ein, für wie viele Termine sie gilt und was pro Termin zu zahlen ist, für welche Leistungen sie gilt (leer lassen und sie gilt für jeden Termin), wie lange sie gültig bleibt und ob die Kundin oder der Kunde eine Erinnerung bekommt, wenn noch eine Entwertung übrig ist. Für die ganze Karte gilt ein einziger Umsatzsteuersatz: Leistungen mit anderem Satz teilen keine Karte, und solange die Kleinunternehmerregelung oder die Steuerbefreiung an ist, geht die Karte ohne Umsatzsteuer aus dem Haus.
+
+Verkauft wird ab der Kundendetailseite über **Stempelkarte verkaufen**, in einem einzigen Formular: die Karte kommt aus Ihrem Leistungskatalog mit seinem Preis, änderbar für diesen Kunden, Sie geben an, ob bereits bezahlt wurde (Bargeld, Tikkie oder Banküberweisung, nichts steht vorab fest), und MyCompanyDesk erstellt im selben Moment die endgültige Rechnung für Ihre Bücher, mit der Karte verknüpft mit dieser Rechnungsposition. Umgekehrt passiert dasselbe bei einer gewöhnlichen Rechnung: Machen Sie eine endgültig mit einer Stempelkarten-Position, entsteht die Karte gleich mit.
+
+Ihr Kunde sieht seine Karten im Kundenportal und über einen Teilen-Link, der kein Login verlangt: wie viele Entwertungen übrig sind und die Historie von Verkauf und jeder Entwertung. Den Stand oder eine Erinnerung senden Sie selbst, über WhatsApp oder E-Mail, und der Link lässt sich entziehen und neu ausgeben. Will ein Kunde aussteigen? Mit **Rückerstattung** bekommen die ungenutzten Termine ihr Geld über eine Gutschrift zurück, oder Sie legen die Karte mit **Beenden** still; Ihre Bücher werden automatisch nachgezogen und eine beendete Karte lässt sich nicht mehr entwerten.
+
+Entwertet wird auch dort, wo gearbeitet wird. Schließen Sie einen Termin für einen Kunden mit Karte ab, bietet die App **1 entwerten** (die Entwertung setzt den Termin auf Abgeschlossen) neben **Nicht erschienen**, mit der Rückgängig-Aktion direkt daneben. In einer Gruppensitzung haken Sie unter **Wer war da?** jemanden ab und entwerten damit sofort eine Karte dieses Teilnehmenden; das Häkchen weg zieht es zurück. Wer für diese Sitzung schon bezahlt hat, steht auf der Liste mit dem Hinweis, dass nichts entwertet wird. Das Dashboard hält die fast leeren und leeren Karten zusammen, mit der Erinnerung einen Tipp entfernt.
+
 ## Aktionen
 
 - **Bearbeiten**: Kundeninformationen aktualisieren

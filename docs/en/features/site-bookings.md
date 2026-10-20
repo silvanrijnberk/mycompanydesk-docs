@@ -90,6 +90,20 @@ Visitors sign up through the **Groepsafspraken** block on your website, for one 
 
 On the session page you find the participants: email them in one go, add someone by hand, mark a no-show, or cancel one person (they receive an email and the places become available again). You can also move or cancel the whole session; a notice about a move is only mailed to participants who actually receive email. An unpaid registration that stays unpaid becomes **expired** instead of cancelled, and only an expired registration gets its places back when the payment still lands in time. Registrations you or the visitor cancelled do not come back, and their money goes back. Participants find their booked session, like any appointment with you, in their customer portal under **Appointments**.
 
+## Repeating appointments
+
+An appointment that keeps coming back does not have to be planned one by one. In **Schedule an appointment** and in **New group session**, the form asks **Repeat**: every week, every other week, every few weeks (one to twelve) or every month, and for how long: **until I stop** (you can always stop from any appointment), **a number of times**, or **up to and including a date**.
+
+The choice of confirmation sits right under it: a WhatsApp message that opens ready to send, one email for the whole series (day, time and a link to reschedule, with a reminder the day before every session), or no confirmation at all. Sending one WhatsApp is your tap on send; sending email happens from one confirmation per series.
+
+After that, your regular appointment runs itself:
+
+- The agenda always plans a rolling year ahead, and a nightly round refills it, so the next appointments are simply there. The list and the agenda mark every repeat with the repeat icon, and the row on the appointment sheet shows who planned the series and for how long it runs.
+- Before it goes in, the **Upcoming appointments** preview shows the dates to come with any collisions in orange, and unticking a date skips it; the series plans the rest.
+- Cancelling or moving one appointment asks first: **only this date** (the series continues) or **this one and all the following** (the series stops after that date). A short email can tell the customer what changed.
+- A group session series has its own places per date and its own sign-ups per session. **Edit the whole series** applies one change to every following date, and cancelling a session sends the participants their own message, by email where there is an address and by WhatsApp where there is only a phone number.
+- **Who was there?** on the session ticks attendance per participant. Ticking someone who holds a punch card punches it at once; unticking undoes it. See [Punch cards](/en/features/customers#punch-cards) for how the stamps and the cards work.
+
 ## Booking an appointment from the portal
 
 Visitors see an overview of available moments on your website. Once they pick a time slot, they enter their details and confirm the request. Depending on your settings:

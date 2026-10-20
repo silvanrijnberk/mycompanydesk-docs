@@ -31,6 +31,10 @@ Nach dem Öffnen des Links bleibt Ihr Kunde 30 Tage auf diesem Gerät eingeloggt
 
 ## Portal-Funktionen
 
+### Stempelkarten
+
+Wer bei Ihnen eine Stempelkarte gekauft hat, sieht sie hier: die Karte mit dem Rest an Entwertungen, ihrer Gültigkeit, wofür sie gilt und wann sie zuletzt benutzt wurde. Entwerten Sie (aus einem Termin, einer Gruppensitzung oder der Karte selbst in der App); das Portal zeigt den Stand und die Historie, auch über einen Teilen-Link, der ohne Login funktioniert.
+
 ### Übersicht
 
 Die Übersicht ist die Startseite des Portals: Ihr Design und eine Begrüßung oben, mit Ihrer eigenen Begrüßungszeile darunter, wenn Sie eine gesetzt haben, neben der festen Firmenkarte mit Ihren Kontaktdaten. Eine kurze **Zu erledigen**-Liste sammelt, was noch vom Kunden verlangt wird (eine Rechnung bezahlen, ein Dokument unterschreiben, eine neue Nachricht lesen), und wenn alles erledigt ist, sagt die Seite es genau so: **Alles ist bezahlt, es ist nichts offen.** Wird eine Zahlung nach einer Meldung des Kunden noch geprüft, sagt die Seite auch das, statt ein zweites Mal um Geld zu bitten.

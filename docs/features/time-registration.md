@@ -17,11 +17,11 @@ Wissel tussen vier weergaven met de kiezer bovenaan (veeg tussen periodes op mob
 - **Maand**: totalen per dag; selecteer een dag om ernaartoe te springen.
 - **Lijst**: een doorzoekbare tabel van alle registraties met filters voor factuurstatus, klant, project en reizen, plus totalen voor de huidige selectie.
 
-Geplande registraties dragen het label **Gepland**; druk op **Bevestigen** zodra het werk echt is gedaan om ze om te zetten naar gelogde uren. Bevestig je er een waarvan de datum nog in de toekomst ligt, dan vraagt de app eerst of die uren al mee mogen tellen.
+Uren tellen meteen als gewerkt. Er is geen bevestigingsstap en geen schakelaar voor automatisch bevestigen meer, dus er staat niets te wachten op je boekhouding: een registratie zit bij je gewerkte uren zodra hij bestaat, en dat geldt in een werkruimte met een team net zo.
 
-Wil je dit niet handmatig doen? Zet **Geplande tijd automatisch bevestigen** aan in de agenda-instellingen. Geplande registraties worden dan automatisch bevestigd zodra de geplande datum is verstreken, ook als je de agenda niet opent.
+Tijd die je voor een dag die nog moet komen in de planning wilt zetten, gaat via het blad **Uren voor {datum}**: met **Uren noteren** zet je hem vast, en het blad zegt dat hij telt zodra de datum voorbij is, dan klaar voor de factuur. Je hoeft niets te bevestigen. Maak je op een toekomstige dag buiten die weg een registratie, dan zegt de app er iets van: die uren tellen meteen als gewerkt, tenzij je ze bij de registratie zelf aanmerkt als **Geplande registratie**. Dat is de enige manier om tijd buiten je gewerkte uren te houden, en die kan alleen voor vandaag of een latere datum. Geplande registraties staan in de dag- en weekweergave apart van gelogde uren.
 
-Totalen tellen alleen uren die echt gewerkt zijn. Geplande registraties voor latere dagen staan buiten de urentotalen op het dashboard (**Uren dit jaar**), in de rapportages (**Geregistreerde uren**) en onder **Werk & tijd**, totdat je ze bevestigt; het zijpaneel benoemt die grondslag. De urencriteriummeter voor de inkomstenbelasting rekent met een eigen grondslag, die onder de meter staat: alleen je eigen bevestigde uren plus reistijd, dus dat getal mag afwijken van de totalen hier.
+Totalen tellen alleen uren die als gewerkt in staan. Geplande registraties voor een dag die nog moet komen blijven buiten de urentotalen op het dashboard (**Uren dit jaar**), in de rapportages (**Geregistreerde uren**), onder **Werk & tijd** en buiten het automatische factureren, totdat de dag voorbij is; het zijpaneel benoemt die grondslag. De urencriteriummeter voor de inkomstenbelasting rekent met een eigen grondslag, die onder de meter staat: alleen je eigen gewerkte uren plus reistijd, dus dat getal mag afwijken van de totalen hier.
 
 ## Uren schrijven
 
@@ -120,7 +120,7 @@ Afspraken die klanten via het afsprakenblok op je website boeken, worden na goed
 
 De agenda-instellingen vind je onder **Instellingen** › **Uren & agenda** of via het tandwiel op de pagina Uren & agenda. Hier stel je in:
 
-- **Invoergedrag**: **Alleen uren modus** en **Geplande tijd automatisch bevestigen**
+- **Invoergedrag**: **Alleen uren modus**
 - De werktijden die op de tijdlijn zichtbaar zijn
 - Het **Standaard uurtarief** en de **Afronding tijdregistratie** (beheerders)
 - **Reizen naar klanten**: adressen, standaard vervoer, auto (privé of van de zaak) en kilometertarief
@@ -131,6 +131,6 @@ Bij een rit in het urenformulier kun je je huidige locatie als vertrekpunt gebru
 ## Tips
 
 - Schrijf dagelijks je uren voor nauwkeurige administratie; met de suggesties log je terugkerend werk met een tik opnieuw
-- Plan je week vooruit met geplande registraties en bevestig ze gaandeweg
+- Zet tijd voor de komende dagen in de planning als geplande registratie; die gaat vanzelf over naar gewerkte uren
 - Controleer regelmatig je niet-gefactureerde uren, zodat er geen declarabele uren blijven liggen
 - Koppel je agenda een keer en je afspraken worden automatisch logbare registraties

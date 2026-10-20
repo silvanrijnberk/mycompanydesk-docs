@@ -90,6 +90,20 @@ Besuchende melden sich über den Block **Gruppentermine** auf Ihrer Website an, 
 
 Auf der Sitzungsseite finden Sie die Teilnehmenden: in einem Zug mailen, jemanden per Hand hinzufügen, als Nichterscheinen kennzeichnen oder eine Einzelperson abmelden (sie erhält eine E-Mail und die Plätze werden wieder frei). Sie können die ganze Sitzung auch verschieben oder absagen; eine Verschiebemeldung geht nur an Teilnehmende, die auch wirklich per E-Mail erreichbar sind. Eine unbezahlte Anmeldung, die unbezahlt bleibt, wird **abgelaufen** statt abgesagt, und erst eine abgelaufene Anmeldung bekommt ihre Plätze zurück, wenn die Zahlung noch rechtzeitig eintrifft. Anmeldungen, die Sie selbst oder die besuchende Person abgemeldet hat, kommen nicht zurück, und das Geld geht zurück. Teilnehmende finden ihre gebuchte Sitzung wie jeden Termin mit Ihnen in ihrem Kundenportal unter **Termine**.
 
+## Wiederkehrende Termine
+
+Ein Termin, der immer wieder kommt, muss nicht einzeln geplant werden. Bei **Termin planen** und bei **Neue Gruppensitzung** fragt das Formular **Wiederholen**: jede Woche, alle zwei Wochen, alle paar Wochen (eins bis zwölf) oder jeden Monat, und für wie lange: **bis ich stoppe** (Sie können von jedem Termin aus jederzeit stoppen), **eine Anzahl von Malen** oder **bis einschließlich einem Datum**.
+
+Direkt darunter sitzt die Wahl der Bestätigung: eine WhatsApp-Nachricht, die auf Ihrem Telefon versandbereit liegt, eine E-Mail für die ganze Serie (Tag, Zeit und ein Link zum Verschieben, mit einer Erinnerung am Vortag jedes Termins), oder gar keine Bestätigung. WhatsApp senden Sie selbst; die E-Mail verschickt MyCompanyDesk.
+
+Danach läuft Ihr wiederkehrender Termin von selbst:
+
+- Der Kalender plant immer ein rollierendes Jahr voraus, eine nächtliche Runde füllt nach, so stehen die nächsten Termine einfach da. Liste und Kalender markieren jede Wiederholung mit dem Wiederholungs-Symbol, und die Zeile auf dem Terminblatt zeigt, wer die Serie geplant hat und wie lange sie läuft.
+- Vor dem Anlegen zeigt die Vorschau **Kommende Termine** die kommenden Daten, Konflikte in Orange; ein Datum abwählen lässt es aus, der Rest geht durch.
+- Beim Stornieren oder Verschieben eines Termins fragt die App zuerst: **nur dieses Datum** (die Serie läuft weiter) oder **dieses und alle folgenden** (die Serie endet nach diesem Datum). Eine kurze E-Mail kann die Kundin oder den Kunden informieren.
+- Eine Gruppensitzungs-Serie hat pro Datum eigene Plätze und eigene Anmeldungen pro Sitzung. **Ganze Serie bearbeiten** wendet eine Änderung auf jedes folgende Datum an, und beim Absagen bekommt jede Person ihre eigene Nachricht, per E-Mail wo eine Adresse existiert und per WhatsApp wo nur eine Telefonnummer hinterlegt ist.
+- **Wer war da?** an der Sitzung nimmt die Anwesenheit pro Person auf. Haken Sie jemanden mit einer Stempelkarte an, wird sofort eine Entwertung auf der Karte vorgenommen; das Häkchen weg macht es rückgängig. Wie Karten und Entwertungen funktionieren, steht unter [Stempelkarten](/de/features/customers#stempelkarten).
+
 ## Einen Termin über das Portal buchen
 
 Besucher sehen auf Ihrer Website eine Übersicht mit verfügbaren Zeiten. Sobald sie ein Zeitfenster wählen, geben sie ihre Daten ein und bestätigen die Anfrage. Je nach Einstellung:

@@ -46,6 +46,8 @@ Onder de velden zie je hoe je volgende factuurnummer eruitziet. Al verstuurde fa
 
 Bij **In welke taal maak je je documenten?** kies je de taal van je facturen, offertes en e-mails aan klanten. Nederlands is de standaard. Facturen in andere talen horen bij Office. Een factuur die definitief is gemaakt, houdt de taal waarin hij gemaakt is.
 
+De taal is ook een keuze per klant en per factuur: zet hem op de klantenkaart en elk document voor die klant komt in zijn taal uit, of op een conceptfactuur voor het eenmalige uitzonderingsgeval. MyCompanyDesk leest de keuze in de volgorde factuur, dan klant, dan werkruimte. Bij het versturen bevriest de taal: de PDF, de e-mail, de portaalweergave, een creditnota en de laatste herinnering blijven in de taal waarin het document de deur uitging. Offertes volgen de klant.
+
 ### Peppol e-facturatie
 
 Met een schakelaar op dezelfde instellingenpagina zet je [Peppol e-facturatie](/features/peppol) aan (Office). Je bedrijfsgegevens worden dan aangemeld bij het Peppol-toegangspunt en je kunt naast e-mail ook e-facturen versturen en ontvangen. Op de Peppol-pagina lees je over de identiteitscontrole, het ontvangen en ontbrekende gegevens.
@@ -78,11 +80,19 @@ Naast de data draagt elke rij een kolom **Stand** die de toestand in gewone woor
 
 Op de telefoon opent een nieuwe factuur geen lang formulier maar een korte stappenflow: eerst de klant, dan de regels, dan een controlestap voor opslaan en versturen.
 
+Komt de factuur uit een offerte, dan staat de notitie van die offerte vlak boven die van jou als **Notitie uit de offerte (staat niet op de factuur)**, met **Overnemen** erbij om hem over te zetten naar de factuur.
+
 ### Vanuit een sjabloon
 
 Klik in het factuurformulier op **Vanuit sjabloon** (die knop zie je alleen als je factuursjablonen hebt). Kies een sjabloon en het formulier vult zich ter plekke met de regels, de klant en de andere opgeslagen gegevens. Pas aan wat nodig is, sla op en verstuur. Een factuur bewaar je als sjabloon met **Opslaan als sjabloon** in het menu met meer acties op de factuur.
 
 Een sjabloon bewaart de volledige regel: omschrijving, aantal, eenheid, prijs per stuk, btw-tarief, korting en of de regel vrijgesteld is van btw. De koppeling met een item uit je aanbod bewaart hij bewust niet: dat item kan later verwijderd worden, en dan zou het sjabloon niet meer werken.
+
+### De maand van een klant in één lade factureren
+
+De lade **Factureer {klant}** verzamelt wat één klant in één periode nog open heeft van je: een vaste prijs per maand, afspraken die geweest zijn, gelogde uren, ritten en doorbelaste kosten. **Alles factureren** doet hetzelfde voor al je klanten tegelijk; op de klantpagina op de telefoon zit **Factureer {maand}** direct onder de kop. Kies je een andere periode nodig, dan stel je die zelf in, en in de lade kies je per groep of elke dag een eigen regel krijgt of alles op één totaler regel komt.
+
+Met **Factuur voorbereiden** worden de keuzes concepten: jij kijkt er eerst naar, er gaat nog niets naar de klant, en bij alle klanten tegelijk wordt het een concept per klant. Wat je factureerde wordt vastgelegd bij de regels, zodat dezelfde uren, afspraken en ritten niet nog een keer door de andere flows worden aangeboden; een regel draagt de echte koppelingen in plaats van een kopie van de tekst.
 
 ## Prijzen inclusief btw
 
@@ -148,9 +158,13 @@ Download de factuur als net opgemaakte PDF met je logo, je huisstijlkleuren en a
 
 Is een factuur langer dan één pagina, dan breekt het PDF hem netjes af: de totalen blijven bij de laatste regels staan, onder een strookje dat meldt dat de factuur verdergaat, en het betaalblok krijgt daarna een blad voor zichzelf. Geen vervolgpagina opent met een lege tabel of een herhaalde kopie van de cijfers.
 
+Een PDF kan bij je klant belanden, dus daarvoor vraagt de app eerst even iets. Als de PDF eenmaal uit is, kunnen bedragen, regels en klantgegevens van die factuur niet meer veranderd worden, en liefst kijk je alles daarvóór nog goed na. In het venster ga je door met downloaden of delen, of je bekijkt de factuur eerst nog een keer.
+
 ### Markeer als betaald
 
-Bevestig zelf een betaling als de klant per overboeking of op een andere manier buiten de app betaalt.
+Bevestig zelf een betaling als de klant per overboeking of op een andere manier buiten de app betaalt. Het venster vraagt **Wanneer werd er betaald?**: kies de dag waarop het geld binnenkwam, de dag van je bankafschrift, en een datum in de toekomst mag niet. Betaalde je geld terug, dan vraagt hetzelfde venster op welke dag je dat deed.
+
+Per ongeluk gemarkeerd? Met **Ongedaan maken** komt de factuur terug in de status waar hij vandaan kwam. In het bulkwerk zegt het venster hoeveel facturen er terug gingen, en concepten die direct naar betaald gingen blijven betaald.
 
 ### Annuleren
 
@@ -271,6 +285,8 @@ Maak je een factuur definitief of verstuur je hem, dan controleert MyCompanyDesk
 Ontbreekt een van beide, dan opent er een venster waarin je ze meteen invult. Na het opslaan wordt je factuur vanzelf definitief.
 
 De app houdt het definitief maken ook tegen als je bedrijfsgegevens onvolledig zijn (bijvoorbeeld een ontbrekende bedrijfsnaam of adres) of als de factuur geen regels heeft. De foutmelding zegt precies wat er ontbreekt, zodat je het oplost voordat de factuur naar de klant gaat.
+
+De gegevens van de klant worden ook gecontroleerd. Staat er btw op de factuur en is de klant een bedrijf, dan mag het adres niet ontbreken: zonder dat kan de klant de btw niet aftrekken, dus dan kun je niet door maken en legt het formulier uit wat er nodig is.
 
 Aantallen op de PDF staan in dezelfde taal als de rest van het document: een Engelse factuur gebruikt Engelse getalnotatie, een Nederlandse factuur Nederlandse.
 

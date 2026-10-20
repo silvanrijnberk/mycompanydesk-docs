@@ -17,11 +17,11 @@ Passez d'une vue à l'autre avec le sélecteur en haut (balayez entre les pério
 - **Mois** : les totaux par jour ; sélectionnez un jour pour y accéder.
 - **Liste** : un tableau consultable de toutes les entrées avec des filtres par statut de facturation, client, projet et déplacements, plus les totaux de la sélection en cours.
 
-Les entrées planifiées portent le badge **Provisoire** ; appuyez sur **Confirmer** une fois le travail réellement effectué pour les transformer en heures enregistrées. Quand vous confirmez une entrée dont la date est encore dans le futur, l'application demande d'abord si ces heures peuvent déjà compter.
+Les heures comptent comme travaillées immédiatement. Il n'y a plus d'étape de confirmation ni de réglage de confirmation automatique, donc rien n'attend votre comptabilité : une saisie fait partie de vos heures travaillées dès qu'elle existe, et dans un espace avec une équipe, c'est pareil pour tout le monde.
 
-Vous préférez ne pas le faire manuellement ? Activez **Confirmer automatiquement le temps provisoire** dans les paramètres de l'agenda. Les entrées provisoires sont alors confirmées automatiquement une fois leur date prévue passée, même si personne n'ouvre l'agenda.
+Du temps que vous voulez placer dans le planning pour un jour qui reste à venir passe par l'écran **Heures pour le {date}** : **Saisir les heures** l'enregistre, et l'écran dit qu'il compte automatiquement une fois la date passée, prêt pour la facture à ce moment-là. Rien à confirmer. Une saisie faite sur un jour à venir en dehors de ce chemin est signalée : elle compte comme travaillée tout de suite, sauf si vous la marquez comme **Entrée provisoire** sur la saisie elle-même ; c'est la seule façon de tenir du temps hors des heures travaillées, et seulement pour aujourd'hui ou plus tard. Les entrées provisoires apparaissent à part des heures enregistrées dans les vues jour et semaine.
 
-Les totaux ne comptent que les heures réellement travaillées. Les entrées planifiées pour des jours ultérieurs restent hors des totaux d'heures du tableau de bord, des rapports (**Heures enregistrées**) et de **Travail et temps** jusqu'à leur confirmation ; le panneau latéral énonce cette base. Le compteur du critère d'heures pour l'impôt sur le revenu suit sa propre base, indiquée sous le compteur : uniquement vos propres heures confirmées plus le temps de trajet, ce chiffre peut donc différer des totaux ici.
+Les totaux ne comptent que les heures parties comme travaillées. Les entrées provisoires pour un jour qui reste à venir restent hors des totaux d'heures du tableau de bord, des rapports (**Heures enregistrées**), de **Travail et temps** et hors de la facturation automatique, tant que le jour n'est pas passé ; le panneau latéral énonce cette base. Le compteur du critère d'heures pour l'impôt sur le revenu suit sa propre base, indiquée sous le compteur : uniquement vos propres heures travaillées plus le temps de trajet, ce chiffre peut donc différer des totaux ici.
 
 ## Enregistrer du temps
 
@@ -120,7 +120,7 @@ Les rendez-vous que les clients réservent via le bloc de rendez-vous de votre s
 
 Les paramètres de l'agenda se trouvent sous **Paramètres** › **Heures et agenda** ou via la roue dentée sur la page Agenda. Vous y configurez :
 
-- **Comportement de saisie** : **Mode heures uniquement** et **Confirmer automatiquement le temps provisoire**
+- **Comportement de saisie** : **Mode heures uniquement**
 - Les heures de travail affichées sur la chronologie
 - Le **Tarif horaire par défaut** et l'**Arrondi du temps** (administrateurs)
 - **Déplacements chez les clients** : adresses, mode de transport par défaut, voiture (personnelle ou de société) et tarif kilométrique
@@ -131,6 +131,6 @@ Pour un déplacement dans le formulaire d'entrée, vous pouvez utiliser votre po
 ## Conseils
 
 - Enregistrez vos heures chaque jour pour des données fiables ; grâce aux suggestions, réenregistrer un travail récurrent ne prend qu'un appui
-- Planifiez votre semaine à l'avance avec des entrées provisoires et confirmez-les au fur et à mesure
+- Placez du temps pour les jours à venir comme entrées provisoires ; elles passent d'elles-mêmes en heures travaillées
 - Vérifiez régulièrement le temps non facturé pour ne laisser passer aucune heure facturable
 - Connectez votre calendrier une fois et vos rendez-vous deviennent automatiquement des entrées prêtes à enregistrer

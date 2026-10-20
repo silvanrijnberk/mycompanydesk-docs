@@ -91,6 +91,20 @@ Bezoekers melden zich aan via het blok **Groepsafspraken** op je website, in é�
 
 Op de sessiepagina vind je de deelnemers: mail ze in één keer, voeg iemand met de hand toe, markeer een no-show of annuleer één persoon (die krijgt een e-mail en de plekken komen vrij). Je kunt de hele sessie ook verzetten of annuleren; een verzetmelding gaat alleen naar deelnemers die ook daadwerkelijk per mail bereikbaar zijn. Een onbetaalde aanmelding die zo blijft liggen wordt **verlopen** in plaats van geannuleerd, en alleen een verlopen aanmelding krijgt zijn plekken terug als de betaling alsnog binnenkomt. Aanmeldingen die jij of de bezoeker zelf afmeldde komen niet terug, en het geld gaat terug. Deelnemers vinden hun sessie, zoals elke afspraak met jou, in hun klantportaal onder **Afspraken**.
 
+## Vaste afspraken
+
+Een afspraak die terugkomt hoef je niet één voor één in te plannen. Bij **Afspraak inplannen** en bij **Nieuwe groepsafspraak** vraagt het formulier **Herhalen**: elke week, om de week, elke paar weken (een tot twaalf) of elke maand, en voor hoe lang: **tot ik stop** (je kunt altijd stoppen vanaf elke afspraak), **een aantal keer** of **tot en met een datum**.
+
+De keuze hoe je het ze laat weten zit er direct onder: een WhatsApp-bericht dat op je telefoon klaar staat om te versturen, één e-mail voor de hele reeks (dag, tijd en een link om te verzetten, met een herinnering de dag voor elke keer), of helemaal geen bevestiging. WhatsApp stuur je zelf, de e-mail verstuurt MyCompanyDesk.
+
+Daarna loopt je vaste afspraak vanzelf:
+
+- De agenda plant altijd een jaar vooruit en een nachtelijke ronde vult hem aan, zo staan de volgende afspraken er gewoon. De lijst en de agenda markeren elke herhaling met het herhaal-icoon, en de rij op het afspraakblad laat zien wie de reeks inplande en hoe lang hij loopt.
+- Voor het ingaan laat de voorvertoning **Komende afspraken** de data zien die komen, met botsingen in oranje; een datum wegkiezen slaat hem over, de rest gaat gewoon door.
+- Annuleer of verzet je één afspraak, dan vraagt de app eerst of dat alleen voor die dag geldt of voor die en alle volgende (de reeks stopt na die datum). Een korte e-mail kan de klant vertellen wat er veranderde.
+- Een groepsles-reeks heeft per datum eigen plekken en per sessie eigen aanmeldingen. **Hele reeks aanpassen** past één wijziging toe op elke volgende datum, en bij annuleren krijgt elke deelnemer een eigen bericht, per e-mail waar een adres is en via WhatsApp waar alleen een telefoonnummer is.
+- **Wie was er?** op de sessie vinkt aanwezigheid per deelnemer aan. Vink je iemand aan met een strippenkaart, dan streep je meteen één keer af op die kaart; het vinkje weg draait het terug. Zie [Strippenkaarten](/features/customers#strippenkaarten) voor hoe kaarten en strepen werken.
+
 ## Een afspraak boeken vanuit het portaal
 
 Bezoekers zien op je website een overzicht met beschikbare momenten. Zodra zij een tijdvak kiezen, vullen ze hun gegevens in en bevestigen ze het verzoek. Afhankelijk van je instellingen:

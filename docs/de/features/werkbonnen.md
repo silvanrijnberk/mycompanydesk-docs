@@ -42,7 +42,7 @@ Das Arbeitsbericht-PDF folgt standardmäßig Ihrem [Rechnungsdesign](/de/setting
 
 ## Vom Arbeitsbericht zur Rechnung
 
-Aus einem unterschriebenen Arbeitsbericht erstellen Sie mit einem Klick eine Rechnung. Sie beginnt als Entwurf mit den Stunden und Materialien bereits auf den Positionen, und sie zeigt die Berichtsnummer als Verweis. Zu einem Arbeitsbericht gehört eine Rechnung; existiert sie bereits, bringt Sie der Link auf der Arbeitsberichtseite direkt dorthin. Prüfen Sie den Rechnungsentwurf und senden Sie ihn wie gewohnt.
+Aus einem unterschriebenen Arbeitsbericht erstellen Sie mit einem Klick eine Rechnung. Sie beginnt als Entwurf mit den Stunden und Materialien bereits auf den Positionen, und sie zeigt die Berichtsnummer als Verweis. Zu einem Arbeitsbericht gehört eine Rechnung; existiert sie bereits, bringt Sie der Link auf der Arbeitsberichtseite direkt dorthin. Prüfen Sie den Rechnungsentwurf und senden Sie ihn wie gewohnt. Die Rechnung übernimmt **Beträge inklusive MwSt.** aus dem Angebot, aus dem der Bericht stammt, und bei einer Privatperson schaltet sie Preise inklusive MwSt. von selbst ein.
 
 ### Mehrere Arbeitsberichte zusammen abrechnen
 

@@ -46,6 +46,8 @@ Unter den Feldern sehen Sie, wie Ihre nächste Rechnungsnummer aussieht. Bereits
 
 Bei **In welcher Sprache erstellen Sie Ihre Dokumente?** wählen Sie die Sprache Ihrer Rechnungen, Angebote und E-Mails an Kunden. Niederländisch ist die Vorgabe. Rechnungen in anderen Sprachen gehören zu Office. Eine abgeschlossene Rechnung behält die Sprache, in der sie erstellt wurde.
 
+Die Sprache ist auch eine Wahl pro Kundin oder Kunde und pro Rechnung: legen Sie sie auf der Kundenkarte fest, dann kommen alle Dokumente für diesen Kunden in seiner Sprache aus, legen Sie sie auf einem Rechnungsentwurf fest, gilt sie für diese eine Rechnung. MyCompanyDesk liest die Wahl in der Reihenfolge Rechnung, dann Kunde, dann Workspace. Beim Senden friert die Sprache ein: PDF, E-Mail, Portalansicht, Gutschrift und letzte Erinnerung bleiben in der Sprache, in der das Dokument das Haus verlassen hat. Angebote folgen dem Kunden.
+
 ### Peppol-E-Rechnungen
 
 Mit einem Schalter auf derselben Einstellungsseite aktivieren Sie [Peppol-E-Rechnungen](/de/features/peppol) (Office). Ihre Unternehmensdaten werden dann beim Peppol-Zugangspunkt angemeldet, und Sie können neben E-Mail auch E-Rechnungen senden und empfangen. Auf der Peppol-Seite lesen Sie mehr über die Identitätsprüfung, den Empfang und fehlende Angaben.
@@ -78,11 +80,19 @@ Neben den Daten trägt jede Zeile eine Spalte **Stand**, die den Zustand in einf
 
 Auf dem Handy öffnet eine neue Rechnung kein langes Formular, sondern einen kurzen Ablauf in Schritten: zuerst der Kunde, dann die Positionen, dann ein Prüfschritt vor dem Speichern und Senden.
 
+Kommt die Rechnung aus einem Angebot, steht die Notiz des Angebots direkt über Ihrer als **Notiz aus dem Angebot (steht nicht auf der Rechnung)**, mit **Übernehmen** daneben, wenn die Notiz auf die Rechnung soll.
+
 ### Aus einer Vorlage
 
 Klicken Sie im Rechnungsformular auf **Aus Vorlage** (die Schaltfläche erscheint nur, wenn Sie Rechnungsvorlagen haben). Wählen Sie eine Vorlage, und das Formular füllt sich an Ort und Stelle mit den Positionen, dem Kunden und den übrigen gespeicherten Angaben. Passen Sie an, was nötig ist, speichern und senden Sie. Eine Rechnung speichern Sie als Vorlage mit **Als Vorlage speichern** im Menü mit weiteren Aktionen auf der Rechnung.
 
 Eine Vorlage speichert die vollständige Position: Beschreibung, Menge, Einheit, Einzelpreis, Mehrwertsteuersatz, Rabatt und ob die Position steuerfrei ist. Die Verknüpfung mit einem Eintrag aus Ihrem Angebot an Leistungen speichert sie bewusst nicht: Dieser Eintrag kann später gelöscht werden, und dann würde die Vorlage nicht mehr funktionieren.
+
+### Die Monate eines Kunden in einer Ablage fakturieren
+
+Die Ablage **{Kundenname} fakturieren** sammelt, was bei einer Kundin oder einem Kunden in einem Zeitraum noch offen ist: ein fester Preis pro Monat, stattgefundene Termine, erfasste Stunden, Fahrten und durchgereichte Kosten. **Alles fakturieren** tut dasselbe für alle Kunden auf einmal; auf der Kundenseite auf dem Handy sitzt **{Monat} fakturieren** direkt unter der Überschrift. Passt der Zeitraum nicht, stellen Sie ihn selbst ein, und in der Ablage wählen Sie je Gruppe, ob jeder Tag eine eigene Zeile bekommt oder alles auf eine Sammelzeile geht.
+
+Mit **Rechnung vorbereiten** werden aus der Auswahl Entwürfe: Sie sehen zuerst hin, noch nichts geht an die Kundin oder den Kunden, und bei allen Kunden auf einmal entsteht ein Entwurf pro Kunde. Was Sie fakturiert haben, wird an den Positionen festgehalten, damit dieselben Stunden, Termine und Fahrten von den anderen Flüssen nicht ein zweites Mal angeboten werden; eine Position trägt die echten Verknüpfungen statt einer Kopie des Textes.
 
 ## Preise inklusive Mehrwertsteuer
 
@@ -148,9 +158,13 @@ Laden Sie die Rechnung als sauber gestaltetes PDF mit Ihrem Logo, Ihren Markenfa
 
 Ist eine Rechnung länger als eine Seite, bricht das PDF sie ordentlich um: Die Summen bleiben bei den letzten Positionen, mit einem Hinweis, dass die Rechnung weitergeht, und der Zahlungsteil bekommt danach eine eigene Seite. Keine Folgeseite beginnt mit einer leeren Tabelle oder einer wiederholten Kopie der Zahlen.
 
+Ein PDF kann bei Ihrer Kundin oder Ihrem Kunden landen, deshalb fragt die App vorher kurz nach. Ist das PDF erst einmal draußen, lassen sich Beträge, Positionen und Kundendaten dieser Rechnung nicht mehr ändern, und besser sehen Sie alles vorher noch einmal an. Im Dialog geht es weiter mit Herunterladen oder Teilen, oder Sie prüfen die Rechnung erst noch einmal.
+
 ### Als bezahlt markieren
 
-Bestätigen Sie eine Zahlung selbst, wenn der Kunde per Überweisung oder auf anderem Weg außerhalb der App zahlt.
+Bestätigen Sie eine Zahlung selbst, wenn der Kunde per Überweisung oder auf anderem Weg außerhalb der App zahlt. Der Dialog fragt **Wann wurde bezahlt?**: Wählen Sie den Tag, an dem das Geld eingegangen ist, den Tag Ihres Kontoauszugs; ein Datum in der Zukunft ist nicht erlaubt. Haben Sie Geld zurückgezahlt, fragt derselbe Dialog nach jenem Tag.
+
+Aus Versehen markiert? Mit **Rückgängig** kommt die Rechnung in den Status zurück, aus dem sie kam. In der Sammelaktion sagt der Dialog, wie viele Rechnungen zurückgingen, und Entwürfe, die direkt auf bezahlt gingen, bleiben bezahlt.
 
 ### Stornieren
 
@@ -271,6 +285,8 @@ Wenn Sie eine Rechnung abschließen oder senden, prüft MyCompanyDesk, ob Ihre n
 Fehlt eines davon, öffnet sich ein Fenster, in dem Sie es gleich eintragen. Nach dem Speichern wird Ihre Rechnung automatisch abgeschlossen.
 
 Die App verhindert das Abschließen auch, wenn Ihre Unternehmensdaten unvollständig sind (etwa ein fehlender Firmenname oder eine fehlende Adresse) oder wenn die Rechnung keine Positionen hat. Die Fehlermeldung sagt genau, was fehlt, damit Sie es beheben, bevor die Rechnung zum Kunden geht.
+
+Auch die Angaben der Kundin oder des Kunden werden geprüft. Steht Umsatzsteuer auf der Rechnung und ist der Kunde ein Unternehmen, dann darf seine Adresse darauf nicht fehlen: sonst kann er dort die Umsatzsteuer nicht abziehen. Ohne Adresse endet das Abschließen, und das Formular erklärt, was fehlt.
 
 Mengen auf dem PDF stehen in derselben Sprache wie der Rest des Dokuments: Eine englische Rechnung nutzt englische Zahlenschreibweise, eine niederländische die niederländische.
 

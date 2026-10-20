@@ -34,9 +34,11 @@ Two ways through:
 1. **Search:** type your company name (two characters or more) and pick your business from the live suggestions. MyCompanyDesk then retrieves your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. Prefill only fills empty fields; anything you already entered by hand is preserved.
 2. **Fill in manually**: a short form for company name, KVK number, address, postal code and city. Use it when your business is too new to appear in the search results, or when your trade name does not match what you searched for. Your entries are saved to your company details right away. A link takes you back to search at any time.
 
-No KVK registration? Continue without company data and fill it in later under **Business details** in Settings.
+No KVK registration? **I have no KVK number** opens this manual form as well, with the name you typed already filled in and the KVK number field optional. Street, postal code and city are required there: an address belongs on every invoice you send.
 
 When a search finds nothing, the wizard says so and offers to switch to manual entry with the name you typed already filled in.
+
+Addresses get a check of their own. When you pick a suggestion whose postal code differs from the one you typed, the wizard says so under the address card, leaves the postal code and city editable, and offers to change them before you move on.
 
 ## Step: What do you want to start with?
 
@@ -55,7 +57,7 @@ This step (**How do you get paid?**) asks for the two things every invoice needs
 **Do you charge VAT?** Pick one of three answers:
 
 - **Yes, I charge VAT**: most freelancers. Enter your VAT ID, or choose **I don't know my VAT ID right now, I'll fill it in later**; the app then asks again when you send your first invoice.
-- **No, I take part in the KOR**: only if you registered for it yourself with the Belastingdienst and received a letter about it. Low turnover alone is not enough. Your invoices are then made without VAT and state that you take part in the KOR.
+- **No, I take part in the KOR**: only if you registered for it yourself with the Belastingdienst and received a letter about it. Low turnover alone is not enough. Your invoices are then made without VAT and state that you take part in the KOR. The step asks **Since when do you take part in the KOR?** and fills in 1 January of the current year, changeable. Receipts from before your registration day then also sit inside the KOR, and the KOR deducts no input VAT; did you deregister before and rejoin now? Then the participation starts today.
 - **No, I'm exempt**: for some professions, such as care by a registered care provider or teaching by a CRKBO-registered teacher. Your invoices are made without VAT.
 
 If you are unsure about the KOR, the step asks **Do you use the KOR (small business scheme)?** with **Yes, I use it**, **No** and **I don't know**. With I don't know it explains that you are not in the KOR unless you registered yourself, and that the Belastingdienst letter tells you for sure.
@@ -64,7 +66,7 @@ If you are unsure about the KOR, the step asks **Do you use the KOR (small busin
 
 ## Finish
 
-**Finish setup** applies your company details, VAT status and IBAN. The finish screen (**You're ready to invoice**) offers a **Create your first invoice** button and names what comes next: securing your account and your website are suggested later, when it suits, under **Zet dit op** on the dashboard. No website is built in the background; the first time you open the **Website** area yourself, the default draft site is created there (home, services, about, contact, with your details on the legal pages), still waiting for you to publish it.
+**Finish setup** applies your company details, VAT status and IBAN. The finish screen (**You're ready to invoice**) says your details are good only when it checked them: name, street, postal code and city need to be in place, and an IBAN with a wrong checksum is flagged there instead of sliding through. It offers a **Create your first invoice** button and names what comes next: securing your account and your website are suggested later, when it suits, under **Zet dit op** on the dashboard. No website is built in the background; the first time you open the **Website** area yourself, the default draft site is created there (home, services, about, contact, with your details on the legal pages), still waiting for you to publish it.
 
 Every new workspace starts with 60 days of Office, free, no credit card needed. If you sign up through an invitation link from a partner accountant, that trial lasts 12 months. When it ends, your workspace moves back to Desk, with no paywall.
 

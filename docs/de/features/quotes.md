@@ -47,6 +47,8 @@ Für ein Angebot muss mindestens einer dieser Schalter aktiviert sein; sonst hat
 
 Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitsenden** an. Er ist für Angebote standardmäßig aktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
 
+Stammt das Angebot aus einer Anfrage, die über Ihre Website kam? Dann zeigt die Angebotsdetailseite vor dem Versand einen Hinweis: der Betrag auf den geschätzten Zeilen ist eine Schätzung, prüfen Sie die Beträge zuerst. Über **Beträge prüfen** springen Sie direkt auf die Zeilen.
+
 Ein Angebot braucht außerdem mindestens eine Position, bevor es finalisiert oder versendet werden kann: Die App lehnt ein leeres Angebot ab und bittet Sie, zuerst eine Position hinzuzufügen.
 
 Heißt Ihr Arbeitsbereich noch **Mijn werkruimte**, weil Sie sich bei der Anmeldung noch keinen Firmennamen angegeben haben, fragt die App zuerst nach Ihrem Firmennamen, bevor das Angebot an Ihren Kunden geht. Der Name steht als Absender auf Ihren Angeboten und Rechnungen; Sie tragen ihn einmal ein, danach erscheint er automatisch. Das gilt für **Senden** und auch für die Unterschriftenanfrage, über **Zur Unterschrift versenden** ebenso wie über die Buttons in der Unterschriftenkarte.
@@ -66,7 +68,7 @@ Die Chips bleiben inaktiv, bis das Angebot tatsächlich per E-Mail versendet wur
 
 ## Angebot online unterschreiben lassen
 
-Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt es nur als PDF zu versenden. Öffnen Sie die Angebotsdetailseite und wählen Sie **Zur Unterschrift versenden**, um eine Unterschriftenanfrage an den Kunden zu senden. Der Angebotsstatus wechselt zu **Gesendet**, damit Sie den Fortschritt verfolgen können. Der Unterschriften-Link öffnet sich im Browser des Kunden, nicht in der MyCompanyDesk-App, auch wenn die App auf seinem Telefon installiert ist.
+Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt es nur als PDF zu versenden. Öffnen Sie die Angebotsdetailseite und wählen Sie **Zur Unterschrift versenden**. Zuerst öffnet sich ein Versandformular, mit Empfänger, Betreff und dem Text der E-Mail genau so, wie die Unterschriftenmail wird, und nichts geht hinaus, bis Sie auf **Senden** drücken; die Angebotsnummer kommt erst in diesem Moment hinein. Danach wechselt der Angebotsstatus zu **Gesendet**, damit Sie den Fortschritt verfolgen können. Der Unterschriften-Link öffnet sich im Browser des Kunden, nicht in der MyCompanyDesk-App, auch wenn die App auf seinem Telefon installiert ist.
 
 Hat Ihr Arbeitsbereich allgemeine Geschäftsbedingungen in Dokumenten liegen, bestätigt der Kunde sie zuerst auf der Unterschriftenseite, bevor er annehmen kann: die Seite nennt das Unternehmen, zu dem die Bedingungen gehören, verlinkt den vollständigen Text und bittet den Kunden, anzukreuzen, dass er die Bedingungen erhalten hat und ihnen zustimmt. Ohne dieses Häkchen lässt sich das Angebot nicht annehmen. Die Bedingungen, genau wie Ihr Kunde sie sah und akzeptierte, laden Sie im Anschluss aus der Unterschriftenkarte herunter.
 
@@ -124,6 +126,8 @@ Sobald ein Kunde Ihr Angebot annimmt, wandeln Sie es mit einem Klick in eine Rec
 3. Überprüfen Sie die vorausgefüllte Rechnung (alle Positionen werden übernommen)
 4. Nehmen Sie bei Bedarf Anpassungen vor
 5. Speichern und versenden Sie die Rechnung
+
+Die Notiz, die der Kunde auf dem Angebot lesen konnte, nimmt die App als **Notiz aus dem Angebot (steht nicht auf der Rechnung)** mit, mit **Übernehmen** daneben, damit Sie entscheiden, ob sie auf die Rechnung kommt.
 
 ## Anzahlung bei Auftragserteilung
 
