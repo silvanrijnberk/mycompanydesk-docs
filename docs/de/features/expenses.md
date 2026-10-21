@@ -1,7 +1,7 @@
 ---
 title: Ausgaben
 description: "Erfassen Sie Ausgaben, scannen Sie Belege, verwalten Sie Kategorien mit eigenen Steuersätzen und lassen Sie Abschreibungen automatisch laufen."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Ausgaben
@@ -74,6 +74,10 @@ Der Belegscanner ist in jedem Tarif verfügbar, auch in Desk. Die Anzahl der Sca
 :::
 
 Wenn eine weitergeleitete E-Mail oder ein Scan zwar eine Ausgabe erzeugt, der Beleg selbst aber nicht angehängt werden kann (zum Beispiel ein nicht unterstützter Dateityp oder eine zu große Datei), wird die Ausgabe dennoch erstellt und mit einem Hinweis versehen, dass der Anhang fehlt. Laden Sie den Beleg anschließend manuell auf der Detailseite der Ausgabe hoch.
+
+### Ihr Beleg als PDF
+
+Die Schaltfläche **Beleg herunterladen** auf der Ausgabedetailseite liefert Ihnen den Beleg als PDF. Ein Beleg, der bereits eine PDF ist, kommt unverändert zurück. Ein fotografiertes Belegbild wird auf eine A4-Seite gebracht: das Foto steht danach aufrecht und ist leicht aufbereitet, und am Fuß trägt die Seite eine graue Zeile mit Lieferant, Datum, Betrag und Ausgabennummer, damit ein Ausdruck oder eine Datei im Archiv des Steuerberaters wieder zur Buchung zurückführt. Der Dateiname bildet dieselben Felder ab, zum Beispiel Bon_Schreinerei_Maier_2026-10-21_nr41.pdf. Lässt sich ein Foto nicht umwandeln, laden Sie stattdessen das Originalbild herunter. Ihr gespeicherter Beleg bleibt so, wie er hereinkam: die PDF entsteht erst mit dem Download oder der Weiterleitung.
 
 ### Gesperrte MwSt.-Perioden
 

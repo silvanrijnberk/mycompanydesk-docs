@@ -1,7 +1,7 @@
 ---
 title: Doorsturen naar boekhouder
 description: "Stuur facturen en uitgaven automatisch door naar het pakket van je boekhouder, zoals Exact, SnelStart, Twinfield of Yuki, in plaats van stuk voor stuk."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Doorsturen naar boekhouder
@@ -25,7 +25,7 @@ Elk werkruimtelid kan de instellingen bekijken; alleen team-admins kunnen ze wij
 | **Uitgaven** | Niet doorsturen, of Zodra ik ze toevoeg |
 | **Hoe vaak** | Direct, Dagelijks, Wekelijks op maandag, Maandelijks of Per kwartaal |
 | **Alleen uitgaven met bon** | Houd uitgaven zonder bon tegen |
-| **Bonnetjes meesturen als bijlage** | Bonafbeeldingen als bijlage meesturen |
+| **Bonnetjes meesturen als bijlage** | Bonnen als bijlage meesturen; een gefotografeerde bon gaat als A4-PDF mee |
 | **Factuur-PDF meesturen** | De factuur-PDF bijvoegen |
 | **Offertes ook meesturen** | Ook geaccepteerde offertes doorsturen |
 | **Automatisch doorsturen** | Hoofdschakelaar |
@@ -41,6 +41,10 @@ De bijgevoegde `leesmij.txt` legt uit dat dit percentage maar een deel van het v
 ### Bonplicht
 
 Als **Alleen uitgaven met bon** aan staat, worden uitgaven zonder bon niet doorgestuurd. Ze blijven in de werkruimte staan en het aantal wordt vermeld in de doorstuurmail, zodat je weet wat er nog ontbreekt. Je boekhouder heeft de bon nodig om de btw terug te vragen, dus met deze schakelaar verlaat geen onvolledige administratie de werkruimte.
+
+### Bonnen als PDF
+
+Bonnen reizen als PDF mee, bij automatisch doorsturen en bij een handmatige verzending. Een bon die al een PDF is, gaat ongewijzigd mee. Een gefotografeerde bon wordt omgezet naar één A4-pagina, met leverancier, datum, bedrag en uitgavenummer in een grijze regel onderaan, onder een leesbare bestandsnaam zoals Bon_Janssen_2026-10-21_nr41.pdf. Dat is dezelfde PDF als de knop **Bon downloaden** bij een uitgave geeft. Lukt de omzetting van een foto niet, dan gaat het origineel mee.
 
 ## Rechten om instellingen te wijzigen
 
@@ -64,7 +68,7 @@ De pagina **Je boekhouder** houdt onder **Laatst verstuurd** een afleverlog bij 
 
 ## Handmatig doorsturen vanuit een record
 
-Je kunt ook een losse factuur, uitgave of offerte direct vanaf de detailpagina naar je boekhouder sturen, op elk abonnement. Zoek de knop **Versturen naar boekhouder** bij de e-mailacties. Dit legt een handmatige aflevering vast in hetzelfde log, zodat je het naast automatisch doorsturen ziet. Mislukt een handmatige verzending, dan wordt dat ook gelogd, zodat je hetzelfde stuk niet per ongeluk twee keer verstuurt.
+Je kunt ook een losse factuur, uitgave of offerte direct vanaf de detailpagina naar je boekhouder sturen, op elk abonnement. Zoek de knop **Versturen naar boekhouder** bij de e-mailacties. Dit legt een handmatige aflevering vast in hetzelfde log, zodat je het naast automatisch doorsturen ziet. Mislukt een handmatige verzending, dan wordt dat ook gelogd, zodat je hetzelfde stuk niet per ongeluk twee keer verstuurt. Heeft de uitgave een bon, dan reist die als PDF mee: dezelfde omzetting als het automatisch doorsturen gebruikt.
 
 ## Verzonden-items
 

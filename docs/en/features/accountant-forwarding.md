@@ -1,7 +1,7 @@
 ---
 title: Accountant forwarding
 description: "Send invoices and expenses to your accountant's own package, such as Exact, SnelStart, Twinfield or Yuki, automatically instead of one by one."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Accountant forwarding
@@ -25,7 +25,7 @@ Any workspace member can read the settings; only team admins can change them.
 | **Expenses** | Off, or when created |
 | **How often** | Directly, daily, weekly (Monday), monthly, or quarterly |
 | **Only expenses with receipt** | Hold back expenses that do not have a receipt yet |
-| **Attach receipts** | Include receipt images as attachments |
+| **Attach receipts** | Include receipts as attachments; a photographed receipt goes along as an A4 PDF |
 | **Attach invoice PDF** | Include the invoice PDF |
 | **Include quotes** | Include accepted quotes as well |
 | **Enabled** | Master switch for automatic forwarding |
@@ -41,6 +41,10 @@ The included `leesmij.txt` explains that this percentage accounts for part of th
 ### Receipt requirement
 
 When **Only expenses with receipt** is on, expenses without a receipt are not forwarded. They stay in the workspace and the count is included in the forwarding email so you know what is still pending. Your accountant needs the receipt to reclaim VAT, so this switch prevents incomplete records from leaving the workspace.
+
+### Receipts as PDF
+
+Receipts travel as a PDF, in automatic forwarding and in a manual send alike. A receipt that is already a PDF is included unchanged. A photographed receipt is converted to one A4 page, with the supplier, the date, the amount and the expense number in a grey line at the foot, under a readable file name such as Bon_Janssen_2026-10-21_nr41.pdf. This is the same PDF the **Download Receipt** button on an expense produces. If a photo cannot be converted, the original file goes along instead.
 
 ## Permission to change settings
 
@@ -64,7 +68,7 @@ The **Your accountant** page keeps a delivery log under **Last sent**, showing w
 
 ## Manual forwarding from a record
 
-You can also send a single invoice, expense, or quote to your accountant straight from its detail page, on every plan. Look for the **Send to accountant** button near the email actions. This records a manual delivery in the same log, so you can see it next to automatic forwarding. Failed manual sends are logged too, so you do not resend the same record by accident.
+You can also send a single invoice, expense, or quote to your accountant straight from its detail page, on every plan. Look for the **Send to accountant** button near the email actions. This records a manual delivery in the same log, so you can see it next to automatic forwarding. Failed manual sends are logged too, so you do not resend the same record by accident. When the expense carries a receipt, it is included as a PDF, the same conversion the automatic forwarding applies.
 
 ## Sent box
 
