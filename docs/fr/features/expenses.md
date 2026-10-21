@@ -1,7 +1,7 @@
 ---
 title: Dépenses
 description: "Suivez vos dépenses, scannez vos reçus, gérez des catégories avec leur propre TVA et laissez les amortissements se dérouler automatiquement."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Dépenses
@@ -74,6 +74,10 @@ La numérisation de reçus est disponible sur tous les plans, y compris Desk. Le
 :::
 
 Si un e-mail transféré ou un scan crée une dépense mais que le reçu ne peut pas être joint (par exemple un type de fichier non pris en charge ou un fichier trop volumineux), la dépense est quand même créée et un message indique que la pièce jointe est manquante. Ajoutez ensuite le reçu manuellement sur la page de détail de la dépense.
+
+### Votre reçu en PDF
+
+Le bouton **Télécharger le reçu** de la page de détail d'une dépense vous remet le reçu en PDF. Un reçu déjà au format PDF revient tel quel. Un reçu photographié devient une page A4 : la photo est redressée et légèrement nettoyée, et une ligne grise au pied reprend fournisseur, date, montant et numéro de dépense, pour qu'une impression ou un fichier dans l'archive du comptable reste rattaché à son écriture. Le fichier porte un nom lisible plutôt qu'un code de stockage, par exemple Bon_Boulangerie_Martin_2026-10-21_nr41.pdf. Si une photo ne peut pas être convertie, c'est l'image d'origine qui se télécharge. Votre reçu enregistré reste tel qu'il est arrivé : le PDF est généré au moment du téléchargement ou de l'envoi.
 
 ### Périodes de TVA verrouillées
 

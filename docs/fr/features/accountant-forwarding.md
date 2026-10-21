@@ -1,7 +1,7 @@
 ---
 title: Transmission au comptable
 description: "Transmettez factures et dépenses automatiquement au logiciel de votre comptable, comme Exact, SnelStart, Twinfield ou Yuki, au lieu d'un envoi manuel."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Transmission au comptable
@@ -25,7 +25,7 @@ Chaque membre de l'espace de travail peut voir les réglages ; seuls les adminis
 | **Dépenses** | Désactivée, ou à la création |
 | **Fréquence** | Directement, quotidiennement, hebdomadaire (lundi), mensuel ou trimestriel |
 | **Uniquement les dépenses avec justificatif** | Retenir les dépenses sans justificatif |
-| **Joindre les justificatifs** | Inclure les images de justificatifs en pièce jointe |
+| **Joindre les justificatifs** | Inclure les justificatifs en pièce jointe ; un reçu photographié part en PDF A4 |
 | **Joindre le PDF de la facture** | Inclure le PDF de la facture |
 | **Inclure aussi les devis** | Inclure également les devis acceptés |
 | **Transmission automatique activée** | Interrupteur principal |
@@ -41,6 +41,10 @@ Le fichier `leesmij.txt` inclus explique que ce pourcentage ne couvre qu'une par
 ### Obligation de justificatif
 
 Quand **Uniquement les dépenses avec justificatif** est activé, les dépenses sans justificatif ne sont pas transmises. Elles restent dans l'espace de travail et le nombre est indiqué dans l'e-mail de transmission, pour que vous sachiez ce qui manque encore. Votre comptable a besoin du justificatif pour récupérer la TVA, donc ce commutateur empêche les pièces incomplètes de quitter l'espace de travail.
+
+### Les justificatifs en PDF
+
+Les justificatifs partent en PDF, aussi bien dans la transmission automatique que dans un envoi manuel. Un reçu déjà au format PDF part tel quel. Un reçu photographié est converti en une page A4, avec fournisseur, date, montant et numéro de dépense dans une ligne grise au pied, sous un nom de fichier lisible comme Bon_Boulangerie_Martin_2026-10-21_nr41.pdf. C'est le même PDF que le bouton **Télécharger le reçu** d'une dépense produit. Si une photo ne peut pas être convertie, c'est le fichier d'origine qui part.
 
 ## Permission de modifier les réglages
 
@@ -64,7 +68,7 @@ La page **Votre comptable** conserve sous **Derniers envois** un journal de livr
 
 ## Transmission manuelle depuis une pièce
 
-Vous pouvez aussi envoyer une seule facture, dépense ou devis à votre comptable depuis sa page de détail, sur tous les abonnements. Cherchez le bouton **Envoyer au comptable** près des actions e-mail. Cela enregistre une livraison manuelle dans le même journal, pour que vous la voyiez à côté de la transmission automatique. Les envois manuels échoués sont aussi enregistrés, afin que vous ne renvoyiez pas la même pièce par inadvertance.
+Vous pouvez aussi envoyer une seule facture, dépense ou devis à votre comptable depuis sa page de détail, sur tous les abonnements. Cherchez le bouton **Envoyer au comptable** près des actions e-mail. Cela enregistre une livraison manuelle dans le même journal, pour que vous la voyiez à côté de la transmission automatique. Les envois manuels échoués sont aussi enregistrés, afin que vous ne renvoyiez pas la même pièce par inadvertance. Si la dépense porte un justificatif, il part en PDF : la même conversion que la transmission automatique.
 
 ## Éléments envoyés
 

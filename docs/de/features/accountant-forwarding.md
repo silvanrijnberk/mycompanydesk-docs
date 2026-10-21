@@ -1,7 +1,7 @@
 ---
 title: Weiterleitung an Steuerberater
 description: "Senden Sie Rechnungen und Ausgaben automatisch an das Programm Ihres Steuerberaters, etwa Exact, SnelStart, Twinfield oder Yuki, statt einzeln."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Weiterleitung an Steuerberater
@@ -25,7 +25,7 @@ Jedes Arbeitsbereichsmitglied kann die Einstellungen sehen; nur Team-Admins kön
 | **Ausgaben** | Aus, oder beim Anlegen |
 | **Wie häufig** | Direkt, täglich, wöchentlich (Montag), monatlich oder vierteljährlich |
 | **Nur Ausgaben mit Beleg** | Ausgaben ohne Beleg zurückhalten |
-| **Belege mitschicken** | Belegbilder als Anhang mitschicken |
+| **Belege mitschicken** | Belege als Anhang mitschicken; ein fotografiertes Belegbild reist als A4-PDF |
 | **Rechnungs-PDF mitschicken** | Die Rechnungs-PDF beifügen |
 | **Angebote mitschicken** | Auch akzeptierte Angebote weiterleiten |
 | **Automatische Weiterleitung aktiv** | Hauptschalter |
@@ -41,6 +41,10 @@ Die beigefügte `leesmij.txt` erklärt, dass dieser Prozentsatz nur einen Teil d
 ### Belegpflicht
 
 Wenn **Nur Ausgaben mit Beleg** aktiv ist, werden Ausgaben ohne Beleg nicht weitergeleitet. Sie bleiben im Arbeitsbereich, und die Anzahl wird in der Weiterleitungs-E-Mail ausgewiesen, damit Sie wissen, was noch fehlt. Ihr Steuerberater braucht den Beleg, um die USt. zurückzufordern, sodass mit diesem Schalter keine unvollständigen Unterlagen den Arbeitsbereich verlassen.
+
+### Belege als PDF
+
+Belege reisen als PDF mit, in der automatischen Weiterleitung genauso wie bei einer manuellen Sendung. Ein Beleg, der bereits eine PDF ist, geht unverändert mit. Ein fotografiertes Belegbild wird auf eine A4-Seite gebracht, mit Lieferant, Datum, Betrag und Ausgabennummer in einer grauen Zeile am Fuß, unter einem sprechenden Dateinamen wie Bon_Schreinerei_Maier_2026-10-21_nr41.pdf. Das ist dieselbe PDF, die der Button **Beleg herunterladen** bei einer Ausgabe liefert. Lässt sich ein Foto nicht umwandeln, geht die ursprüngliche Datei mit.
 
 ## Berechtigung zum Ändern der Einstellungen
 
@@ -64,7 +68,7 @@ Die Seite **Ihr Buchhalter** führt unter **Zuletzt gesendet** ein Zustellungspr
 
 ## Manuelle Weiterleitung aus einem Beleg
 
-Sie können auch eine einzelne Rechnung, Ausgabe oder ein Angebot direkt von der Detailseite an Ihren Steuerberater übermitteln, in jedem Tarif. Suchen Sie die Schaltfläche **An Buchhalter senden** neben den E-Mail-Aktionen. Damit wird eine manuelle Zustellung im selben Protokoll erfasst, sodass Sie sie neben der automatischen Weiterleitung sehen. Auch fehlgeschlagene manuelle Sendungen werden protokolliert, damit Sie denselben Beleg nicht versehentlich zweimal senden.
+Sie können auch eine einzelne Rechnung, Ausgabe oder ein Angebot direkt von der Detailseite an Ihren Steuerberater übermitteln, in jedem Tarif. Suchen Sie die Schaltfläche **An Buchhalter senden** neben den E-Mail-Aktionen. Damit wird eine manuelle Zustellung im selben Protokoll erfasst, sodass Sie sie neben der automatischen Weiterleitung sehen. Auch fehlgeschlagene manuelle Sendungen werden protokolliert, damit Sie denselben Beleg nicht versehentlich zweimal senden. Trägt die Ausgabe einen Beleg, reist er als PDF mit: dieselbe Umwandlung wie bei der automatischen Weiterleitung.
 
 ## Gesendete Elemente
 

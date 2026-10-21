@@ -1,7 +1,7 @@
 ---
 title: Uitgaven
 description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen btw-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Uitgaven
@@ -86,6 +86,10 @@ Staat er voor een gescande bon al een uitgave in je boeken, meestal de bankboeki
 ::: info
 Bonnen scannen is beschikbaar op elk abonnement, ook op Desk. Het aantal scans per maand hangt af van je abonnement: 3 op Desk en 200 op Office. Het btw-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
+
+### Je bon als PDF
+
+De knop **Bon downloaden** op de uitgavedetailpagina geeft je de bon als PDF. Is de bon al een PDF, dan komt hij ongewijzigd terug. Een gefotografeerde bon wordt één A4-pagina: de foto staat rechtop en is licht opgeschoond, en onderaan loopt een grijze regel met leverancier, datum, bedrag en uitgavenummer, zodat een uitprint of een bestand in het archief van de boekhouder nog bij zijn boeking terug te vinden is. Het bestand heet niet naar een opslagcode, maar naar wat erop staat, bijvoorbeeld Bon_Janssen_2026-10-21_nr41.pdf. Lukt de omzetting niet, dan download je gewoon de originele foto. Je opgeslagen bon blijft altijd zoals hij binnenkwam: de PDF ontstaat pas op het moment dat je downloadt of doorstuurt.
 
 ### Vergrendelde btw-periodes
 

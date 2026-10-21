@@ -1,7 +1,7 @@
 ---
 title: Expenses
 description: "Track business expenses, scan receipts, manage categories with their own VAT defaults, and let depreciation schedules run for investments."
-last_verified: 2026-10-13
+last_verified: 2026-10-21
 ---
 
 # Expenses
@@ -72,6 +72,10 @@ For image or PDF receipts:
 When a scanned receipt matches an expense already standing in your books, typically the bank's booking of the same payment, the review card carries **Add receipt to this one** (for an expense that has no receipt yet): the receipt is attached to the existing expense instead of a second booking, and the row drops out of the review. Repeated amounts on one receipt are flagged while staying separate costs. See [Receipt scanning](/en/advanced/receipt-scanning) for the detail.
 
 Receipt scanning is available on every plan, including Desk. The number of scans per month depends on your plan: 3 on Desk and 200 on Office.
+
+### Your receipt as a PDF
+
+The **Download Receipt** button on the expense detail page gives you the receipt as a PDF. A receipt that is already a PDF comes back unchanged. A photographed receipt becomes one A4 page: the photo is set upright and lightly cleaned up, and a grey line at the foot repeats what the booking carries, the supplier, the date, the amount and the expense number, so a printout or a file in the accountant's archive can still be traced to its expense. The file carries a readable name instead of a storage code, for example Bon_Janssen_2026-10-21_nr41.pdf. If a photo cannot be converted, the original image downloads instead. Your stored receipt always stays as it came in: the PDF is generated the moment you download or forward it.
 
 ### Locked VAT periods
 
