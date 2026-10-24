@@ -98,7 +98,7 @@ A banner above the hero warns when your data is incomplete (draft invoices or ex
 
 Below the hero, the period cards for the year show revenue, VAT out and in, and the balance per period, with the filing deadline. A period that has been filed shows its filing date. Click a card to switch the page-wide period. Upcoming periods stay empty until they contain actual data.
 
-A year card closes the tab: revenue, VAT owed and input VAT for the whole year, plus an estimate of the income tax (or corporate income tax for a BV) for that year with a **View the calculation** link.
+A year card closes the tab: revenue, VAT owed and input VAT for the whole year, plus an estimate of the income tax (or corporate income tax for a BV) for that year with a **View the calculation** link. The overview also carries a set-aside card: it suggests about how much to set aside this month for the income tax and the health insurance contribution (or the corporate income tax), from your figures at the current pace, divided over the months of the year. The assumptions stand in plain language on the card, starting later in the year adds a catch-up line for the months before, and a per-month view shows how the amount builds up. The estimate runs on your own figures and is not tax advice; the taxes card on the dashboard shows the same amount as one line.
 
 MyCompanyDesk also emails you once per VAT period as the filing deadline approaches. The email links straight to the VAT pages and follows the **When a deadline is coming up** toggle in Settings › Notifications, so you can turn it off there.
 

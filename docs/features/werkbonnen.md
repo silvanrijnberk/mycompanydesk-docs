@@ -22,11 +22,11 @@ De lijst staat onder **Werkbonnen** in de navigatie. Tabs bovenaan zetten de wer
 3. Controleer het **werkadres**. Die haalt hij uit de klantkaart, en je kunt hem aanpassen als je ergens anders hebt gewerkt
 4. Vul de **datum** en de begin- en eindtijd in
 5. Omschrijf de **uitgevoerde werkzaamheden**
-6. Zet regels onder **Arbeid** (uren met een uurtarief) en **Materiaal** (aantal met een stukprijs en btw)
+6. Zet regels onder **Arbeid** (uren met een uurtarief) en **Materiaal** (aantal met een stukprijs en btw, en evt. een inkoopprijs: met jouw opslag rekent de app de verkoopprijs uit)
 7. Een **korting** per regel werkt net als bij offertes en facturen
 8. De **interne notitie** is alleen voor jou: die staat nooit op de werkbon of de factuur
 
-Bewaar de werkbon, of kies meteen **Opslaan en laten tekenen**. Je kunt een werkbon ook vanuit een offerte aanmaken: de regels worden overgenomen.
+Bewaar de werkbon, of kies meteen **Opslaan en laten tekenen**. Je kunt een werkbon ook vanuit een offerte aanmaken: de regels worden overgenomen. Ook materiaal van een gekoppelde groothandel staat op werkbonnen: de knop **Materiaal bij groothandel** werkt hier hetzelfde als bij offertes en facturen.
 
 Heeft de klant al werk van je in de app? Dan stelt het formulier voor wat er al staat: de uren die je bij hem schreef (met hun reistijd en reiskosten erbij) en de ritten naar hem (met de voorrijkosten). Met **Op de werkbon zetten** gaan ze in een keer op het formulier. Uren en voorrijkosten die op een werkbon staan, factureer je voortaan alleen via die werkbon, zodat de andere flows ze niet nog een keer aanbieden.
 

@@ -48,6 +48,10 @@ Under **Which language do you create your documents in?** you choose the languag
 
 The language is also a per-customer and per-invoice choice: set it on the customer and every document for that customer comes out in their language, and set it on a draft invoice for the one-off exception. MyCompanyDesk reads the choice in the order invoice, then customer, then workspace. It freezes when the document is sent: the PDF, the email, the portal view, a credit note and the latest reminder keep speaking the language the document left in. Quotes follow the customer. The same plan limit carries over: documents in other languages are part of Office.
 
+### Markup
+
+**Markup** is what you charge on top of your cost price. Under **Settings › Invoices and quotes** you set the default markup for material lines; on each line you can deviate. Enter a cost price on a line and MyCompanyDesk works out the selling price from it. The margin itself is for the owner's eyes only: the PDF, the e-invoice and the customer always see the selling price, never the cost price or the markup.
+
 ### Peppol e-invoicing
 
 A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol) (Office). When you switch it on, your company details are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity verification, receiving, and missing-field checks.
@@ -117,6 +121,8 @@ Each invoice has a detail page showing:
 - Total amount
 - Status and history
 - Payment link (if sent)
+
+A customer whose invoices are paid by someone else (a parent, employer or insurer) keeps their own name on the document, but the invoice goes to that payer, so do the payment requests and reminders, and the reverse charge and the audit file follow the payer. See [a separate payer for a customer](/en/features/customers#a-separate-payer-for-a-customer) for how to set it up.
 
 ## Document preview
 

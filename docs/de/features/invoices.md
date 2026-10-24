@@ -48,6 +48,10 @@ Bei **In welcher Sprache erstellen Sie Ihre Dokumente?** wählen Sie die Sprache
 
 Die Sprache ist auch eine Wahl pro Kundin oder Kunde und pro Rechnung: legen Sie sie auf der Kundenkarte fest, dann kommen alle Dokumente für diesen Kunden in seiner Sprache aus, legen Sie sie auf einem Rechnungsentwurf fest, gilt sie für diese eine Rechnung. MyCompanyDesk liest die Wahl in der Reihenfolge Rechnung, dann Kunde, dann Workspace. Beim Senden friert die Sprache ein: PDF, E-Mail, Portalansicht, Gutschrift und letzte Erinnerung bleiben in der Sprache, in der das Dokument das Haus verlassen hat. Angebote folgen dem Kunden.
 
+### Aufschlag
+
+**Aufschlag** ist, was Sie auf Ihren Einkaufspreis aufschlagen. Unter **Einstellungen › Rechnungen und Angebote** setzen Sie die Standardmarge für Materialpositionen; pro Position können Sie abweichen. Geben Sie bei einer Position den Einkaufspreis ein, rechnet MyCompanyDesk daraus den Verkaufspreis. Die Marge selbst sieht nur der Inhaber: auf der PDF, der E-Rechnung und beim Kunden steht immer nur der Verkaufspreis, nie der Einkaufspreis oder der Aufschlag.
+
 ### Peppol-E-Rechnungen
 
 Mit einem Schalter auf derselben Einstellungsseite aktivieren Sie [Peppol-E-Rechnungen](/de/features/peppol) (Office). Ihre Unternehmensdaten werden dann beim Peppol-Zugangspunkt angemeldet, und Sie können neben E-Mail auch E-Rechnungen senden und empfangen. Auf der Peppol-Seite lesen Sie mehr über die Identitätsprüfung, den Empfang und fehlende Angaben.
@@ -117,6 +121,8 @@ Jede Rechnung hat eine eigene Seite mit:
 - dem Gesamtbetrag
 - Status und Verlauf
 - dem Zahlungslink (wenn die Rechnung versendet ist)
+
+Für einen Kunden, dessen Rechnungen jemand anderer zahlt (ein Elternteil, Arbeitgeber oder Versicherer), bleibt der Name auf dem Dokument der eigene, aber die Rechnung geht an den Zahler, ebenso Zahlungsanfragen und Erinnerungen, und Reverse-Charge und Auditdatei folgen dem Zahler. Siehe [ein separater Zahler für einen Kunden](/de/features/customers#ein-separater-zahler-für-einen-kunden).
 
 ## Dokumentvorschau
 

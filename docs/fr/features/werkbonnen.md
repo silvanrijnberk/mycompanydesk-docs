@@ -22,11 +22,11 @@ La liste se trouve sous **Bons d'intervention** dans la navigation. Des onglets 
 3. Vérifiez l'**adresse d'intervention**. Elle vient de la fiche du client, et vous pouvez la modifier si vous avez travaillé ailleurs
 4. Indiquez la **date** ainsi que l'heure de début et de fin
 5. Décrivez les **travaux effectués**
-6. Ajoutez des lignes sous **Main-d'œuvre** (heures avec un taux horaire) et **Fournitures** (quantité avec un prix unitaire et la TVA)
+6. Ajoutez des lignes sous **Main-d'œuvre** (heures avec un taux horaire) et **Fournitures** (quantité avec un prix unitaire et la TVA, et au besoin un prix d'achat : avec votre majoration, le prix de vente se calcule tout seul)
 7. Une **remise** par ligne fonctionne comme sur les devis et les factures
 8. La **note interne** ne concerne que vous : elle n'apparaît jamais sur le bon ni sur la facture
 
-Enregistrez le bon, ou choisissez tout de suite **Enregistrer et faire signer**. Vous pouvez aussi créer un bon à partir d'un devis : les lignes sont reprises.
+Enregistrez le bon, ou choisissez tout de suite **Enregistrer et faire signer**. Vous pouvez aussi créer un bon à partir d'un devis : les lignes sont reprises. Le matériel d'un grossiste connecté trouve aussi sa place sur les bons : le bouton **Matériel chez le grossiste** fonctionne ici comme sur les devis et les factures.
 
 Le client a-t-il déjà du travail de vous dans l'application ? Le formulaire propose alors ce qui existe : les heures que vous avez saisies chez lui (avec leur temps et leurs frais de trajet) et les trajets vers lui (avec les frais de déplacement). **Ajouter au bon d'intervention** les met en une fois sur le formulaire. Des heures et des frais de déplacement qui siègent sur un bon ne se facturent qu'à partir de ce bon, pour que les autres flux ne les proposent plus une deuxième fois.
 

@@ -141,7 +141,7 @@ Les blocs au-dessous de la rangée KPI n'apparaissent que s'ils méritent leur p
 | **Devis** | Pipeline des devis ouverts et devis qui expirent |
 | **Mix des dépenses** | Répartition des coûts par catégorie, sous forme de barres |
 | **Graphique de trésorerie** | Position de trésorerie sur 12 mois avec prévision |
-| **Carte TVA** | Période de TVA actuelle, avancement de la liste de contrôle et prochaine échéance |
+| **Carte TVA** | Période de TVA actuelle, avancement de la liste de contrôle et prochaine échéance, et avec des écritures dans la période une ligne qui suggère environ combien mettre de côté ce mois-ci pour l'impôt sur votre bénéfice |
 | **Heures ces semaines** | Vos heures saisies des dernières semaines, facturables et internes |
 | **Marges par projet** | Chiffre d'affaires, coûts et marge par projet |
 | **Charges fixes** | Revenus et coûts récurrents mensuels, et la part de vos charges fixes couverte par vos contrats |

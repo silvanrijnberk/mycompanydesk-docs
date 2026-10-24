@@ -22,11 +22,11 @@ Die Liste finden Sie unter **Arbeitsberichte** in der Navigation. Reiter oben or
 3. Prüfen Sie die **Arbeitsadresse**. Sie kommt aus der Kundenkarte, und Sie können sie ändern, wenn Sie woanders gearbeitet haben
 4. Tragen Sie **Datum** sowie Beginn und Ende ein
 5. Beschreiben Sie die **ausgeführten Arbeiten**
-6. Legen Sie Positionen unter **Arbeit** (Stunden mit Stundensatz) und **Material** (Menge mit Stückpreis und USt) an
+6. Legen Sie Positionen unter **Arbeit** (Stunden mit Stundensatz) und **Material** (Menge mit Stückpreis und USt, optional mit Einkaufspreis: mit Ihrem Aufschlag rechnet die App den Verkaufspreis aus)
 7. Ein **Rabatt** pro Position funktioniert wie bei Angeboten und Rechnungen
 8. Die **interne Notiz** ist nur für Sie: sie erscheint nie auf dem Arbeitsbericht oder der Rechnung
 
-Speichern Sie den Arbeitsbericht, oder wählen Sie gleich **Speichern und unterschreiben lassen**. Sie können einen Arbeitsbericht auch aus einem Angebot erstellen: die Positionen werden übernommen.
+Speichern Sie den Arbeitsbericht, oder wählen Sie gleich **Speichern und unterschreiben lassen**. Sie können einen Arbeitsbericht auch aus einem Angebot erstellen: die Positionen werden übernommen. Material von einem gekoppelten Großhändler gehört auch auf Arbeitsberichte: die Schaltfläche **Material vom Großhändler** funktioniert hier wie bei Angeboten und Rechnungen.
 
 ## Unterschreiben lassen
 

@@ -141,7 +141,7 @@ The blocks below the KPI row appear only when they earn their place. The catalog
 | **Quotes** | Open quote pipeline and expiring quotes |
 | **Expense mix** | Cost breakdown by category, shown as bars |
 | **Cash chart** | Cash position over 12 months with forecast |
-| **VAT card** | Current VAT period, checklist progress, and next deadline |
+| **VAT card** | Current VAT period, checklist progress, and next deadline; with bookings in the period, the line that suggests about how much to set aside this month for the tax on your profit |
 | **Hours these weeks** | Hours logged over the past weeks, billable and internal |
 | **Project margins** | Revenue, costs and margin per project |
 | **Fixed costs** | Monthly recurring income and costs, and how much of your fixed costs your contracts cover |

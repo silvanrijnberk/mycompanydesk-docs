@@ -142,7 +142,7 @@ De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De cat
 | **Offertes** | Open offertepijplijn en verlopende offertes |
 | **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes |
 | **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
-| **Btw-kaart** | Huidige btw-periode, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag |
+| **Btw-kaart** | Huidige btw-periode, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag; met boekingen in de periode ook hoeveel je deze maand ongeveer opzij zet voor de belasting over je winst |
 | **Uren deze weken** | Je geschreven uren van de afgelopen weken, factureerbaar en intern |
 | **Projectmarges** | Omzet, kosten en marge per project |
 | **Vaste lasten** | Maandelijkse terugkerende inkomsten en kosten, hoeveel procent van de vaste lasten je contracten dekken, en de grootste overeenkomsten aan beide kanten |

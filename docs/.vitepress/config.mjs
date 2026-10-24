@@ -156,6 +156,7 @@ function sidebarEN() {
         { text: 'VAT Management', link: '/en/features/vat' },
         { text: 'Domains, Website & Inbox', link: '/en/features/domains-website-inbox' },
         { text: 'Newsletters', link: '/en/features/newsletters' },
+        { text: 'Wholesalers', link: '/en/features/groothandels' },
       ],
     },
     {
@@ -241,6 +242,7 @@ function sidebarNL() {
         { text: 'BTW-beheer', link: '/features/vat' },
         { text: 'Domeinen, website & inbox', link: '/features/domains-website-inbox' },
         { text: 'Nieuwsbrieven', link: '/features/newsletters' },
+        { text: 'Groothandels', link: '/features/groothandels' },
       ],
     },
     {
@@ -326,6 +328,7 @@ function sidebarDE() {
         { text: 'USt.-Verwaltung', link: '/de/features/vat' },
         { text: 'Domains, Website & Posteingang', link: '/de/features/domains-website-inbox' },
         { text: 'Newsletter', link: '/de/features/newsletters' },
+        { text: 'Großhändler', link: '/de/features/groothandels' },
       ],
     },
     {
@@ -411,6 +414,7 @@ function sidebarFR() {
         { text: 'Gestion de la TVA', link: '/fr/features/vat' },
         { text: 'Domaines, site web et boîte de réception', link: '/fr/features/domains-website-inbox' },
         { text: 'Infolettres', link: '/fr/features/newsletters' },
+        { text: 'Grossistes', link: '/fr/features/groothandels' },
       ],
     },
     {

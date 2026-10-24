@@ -98,7 +98,7 @@ Boven die kaart waarschuwt een banner als je gegevens onvolledig zijn (conceptfa
 
 Daaronder tonen de tijdvakkaarten van het jaar per tijdvak de omzet, de btw uit en in en het saldo, met de aangiftedeadline. Een ingediend tijdvak toont de datum van indienen. Klik op een kaart om het tijdvak voor de hele pagina te wisselen. Toekomstige tijdvakken blijven leeg tot er echte gegevens in staan.
 
-Een jaarkaart sluit het tabblad af: omzet, verschuldigde btw en voorbelasting over het hele jaar, plus een schatting van de inkomstenbelasting (of de vennootschapsbelasting bij een bv) over dat jaar, met de link **Bekijk de berekening**.
+Een jaarkaart sluit het tabblad af: omzet, verschuldigde btw en voorbelasting over het hele jaar, plus een schatting van de inkomstenbelasting (of de vennootschapsbelasting bij een bv) over dat jaar, met de link **Bekijk de berekening**. Het overzicht heeft er ook een opzij-kaart bij: die suggereert ongeveer hoeveel je deze maand opzij zet voor de inkomstenbelasting en de Zvw-bijdrage (of de vennootschapsbelasting), op basis van je eigen cijfers op het huidige tempo, verdeeld over de maanden van het jaar. De aannames staan in gewone taal op de kaart, begin je pas later in het jaar dan komt er een inhaalregel bij voor de maanden ervoor, en een per-maand-overzicht laat zien hoe het bedrag oploopt. De schatting rekent met je eigen cijfers en is geen belastingadvies; de belastingkaart op het dashboard toont hetzelfde bedrag als één regel.
 
 MyCompanyDesk mailt je ook één keer per btw-tijdvak als de aangiftedeadline nadert. De mail linkt direct naar de btw-pagina's en volgt de schakelaar **Als er een deadline aankomt** in Instellingen › Meldingen, dus daar zet je hem uit.
 

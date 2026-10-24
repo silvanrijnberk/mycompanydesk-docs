@@ -80,6 +80,10 @@ Ein Warnbanner erscheint oben auf der Kundendetailseite, wenn die E-Mail-Adresse
 
 Diese Informationen stammen von Provider-Ereignissen und dem Zustellstatus ausgehender Nachrichten und helfen Ihnen, Zustellprobleme zu erkennen, bevor Sie die nächste Rechnung oder das nächste Angebot versenden.
 
+## Ein separater Zahler für einen Kunden
+
+Manche Kunden zahlen ihre Rechnungen nicht selbst: ein Elternteil, Arbeitgeber oder Versicherer tut das. Im Kundenformular treffen Sie diese Wahl unter **Wer zahlt?**: **Zahlt selbst** oder **Jemand anderes zahlt**, mit einem anderen Kunden (einem bestehenden oder neuen) als Zahler. Danach gehen Rechnungen, Angebote, Erinnerungen, Unterschriftenanfragen, Stempelkarten-Nachrichten und das Kundenportal an den Zahler, während das Dokument den eigentlichen Kunden nennt. Auf der Kundenseite sehen Sie die Verbindung in beide Richtungen, als **Bezahlt von** und **Zahlt für**. Die Adresse des Zahlers ist die, die beim Finalisieren einer Rechnung vollständig sein muss, der Reverse-Charge folgt der USt-ID des Zahlers, die Auditdatei nennt den Zahler als Schuldner, und der Bankfeed erkennt Zahlungen, die vom Zahler kommen. Im Kundenportal sieht der Zahler nur die Rechnungen, die an ihn gingen, und eine Bewertungsanfrage nach einer bezahlten Rechnung geht ebenfalls an den Zahler.
+
 ## Einen Kunden mit einem eigenen Unternehmen verknüpfen
 
 Wenn Sie mehr als ein eigenes Unternehmen haben, kann auf der Kundenseite eine Karte **Eigenes Unternehmen** erscheinen. Damit geben Sie an, dass dieser Kunde eines Ihrer eigenen Unternehmen ist, sodass seine Position in die untereinander-Positionen auf der Seite Arbeitsbereiche einfließt.
@@ -98,6 +102,10 @@ Verkauft wird ab der Kundendetailseite über **Stempelkarte verkaufen**, in eine
 Ihr Kunde sieht seine Karten im Kundenportal und über einen Teilen-Link, der kein Login verlangt: wie viele Entwertungen übrig sind und die Historie von Verkauf und jeder Entwertung. Den Stand oder eine Erinnerung senden Sie selbst, über WhatsApp oder E-Mail, und der Link lässt sich entziehen und neu ausgeben. Will ein Kunde aussteigen? Mit **Rückerstattung** bekommen die ungenutzten Termine ihr Geld über eine Gutschrift zurück, oder Sie legen die Karte mit **Beenden** still; Ihre Bücher werden automatisch nachgezogen und eine beendete Karte lässt sich nicht mehr entwerten.
 
 Entwertet wird auch dort, wo gearbeitet wird. Schließen Sie einen Termin für einen Kunden mit Karte ab, bietet die App **1 entwerten** (die Entwertung setzt den Termin auf Abgeschlossen) neben **Nicht erschienen**, mit der Rückgängig-Aktion direkt daneben. In einer Gruppensitzung haken Sie unter **Wer war da?** jemanden ab und entwerten damit sofort eine Karte dieses Teilnehmenden; das Häkchen weg zieht es zurück. Wer für diese Sitzung schon bezahlt hat, steht auf der Liste mit dem Hinweis, dass nichts entwertet wird. Das Dashboard hält die fast leeren und leeren Karten zusammen, mit der Erinnerung einen Tipp entfernt.
+
+## Um eine Bewertung bitten
+
+Die Schaltfläche **Um eine Bewertung bitten** steht bei einem Kunden, auf einer bezahlten Rechnung und bei einem abgeschlossenen Termin. Das Fenster zeigt vorab, was versendet wird: eine E-Mail, die Sie bearbeiten können, oder einen WhatsApp-Text, der beim Bestätigen WhatsApp öffnet. Wohin Ihr Kunde gelangt, bestimmt Ihr **Bewertungslink**, gespeichert im Fenster und unter **Einstellungen › Um Bewertungen bitten**. Dort wählen Sie auch, wo Bewertungen gesammelt werden (Ihr Google-Profil, Trustpilot oder Ihr eigener Link), und Sie können automatische Anfragen einschalten: nach einem abgeschlossenen Termin und nach einer vollständig bezahlten Rechnung, eine Anfrage pro Auftrag, nie eine Erinnerung. Ein Protokoll hält fest, was versendet wurde, wer durchgeklickt hat und warum eine Anfrage übersprungen wurde.
 
 ## Aktionen
 

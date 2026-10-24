@@ -37,6 +37,8 @@ Every workspace starts with six default categories: general costs, office costs,
 
 ## Creating an expense
 
+The **Add** panel can link a new expense to the work right away: pick a project or a customer (optional) and, with a customer, switch on **Recharge to** to put the costs on that customer's invoice; pick only a project and the customer comes from the project. Investments and pass-through costs do not carry the recharge toggle. The links travel along: a receipt you continue on the scan screen keeps them.
+
 ### Manual entry
 
 1. Go to **Expenses**, click **Add** and pick **Need more fields?** at the bottom to open the full form.
@@ -180,6 +182,8 @@ Train tickets and other car costs can also be recorded as regular expenses under
 ## Trips
 
 The **Trips** screen under Expenses holds your kilometres for the year, with or without hours. A trip carries a date, where you went from and to, the kilometres one way, whether it was business or private, an optional customer and a note. An hour entry is no longer needed to record kilometres: every kilometre entry (the one on **Expenses**, in the search palette and in the travel settings) opens the trip form.
+
+You no longer need from and to either: under **Add**, **Log kilometres** opens the trip form without a route, so date, distance and a note are enough on a busy day. When you want the route later, **Fill in from and to** on the trip adds it.
 
 A route is more than from and to. The trip form carries **stops**: intermediate addresses on the way, and **Back to the start** plans the return along them without counting the kilometres twice. Trips to your appointments, work orders and hours at a client show up by themselves, from home past your addresses and back again; nothing needs confirming. A trip you changed by hand stays as you entered it when the appointment moves later, and one you left alone adjusts with it.
 

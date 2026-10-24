@@ -98,7 +98,7 @@ Unter dem Saldo stehen zwei Schaltflächen: **Erklärung öffnen** springt zum T
 
 Darunter zeigen die Zeitraumkarten des Jahres je Zeitraum Umsatz, MwSt. aus und ein und den Saldo, mit der Abgabefrist. Ein eingereichter Zeitraum zeigt das Einreichungsdatum. Ein Klick auf eine Karte wechselt den Zeitraum für die ganze Seite. Künftige Zeiträume bleiben leer, bis echte Daten darin stehen.
 
-Eine Jahreskarte schließt den Tab ab: Umsatz, geschuldete MwSt. und Vorsteuer für das ganze Jahr, dazu eine Schätzung der Einkommensteuer (oder der Körperschaftsteuer bei einer BV) für dieses Jahr mit dem Link **Berechnung ansehen**.
+Eine Jahreskarte schließt den Tab ab: Umsatz, geschuldete MwSt. und Vorsteuer für das ganze Jahr, dazu eine Schätzung der Einkommensteuer (oder der Körperschaftsteuer bei einer BV) für dieses Jahr mit dem Link **Berechnung ansehen**. Die Übersicht hat dazu eine Rücklagekarte: Sie schlägt vor, ungefähr wie viel Sie diesen Monat für die Einkommensteuer und den Zvw-Beitrag (oder die Körperschaftsteuer) zurücklegen, aus Ihren eigenen Zahlen im aktuellen Tempo, verteilt über die Monate des Jahres. Die Annahmen stehen in normaler Sprache auf der Karte, wer erst später im Jahr anfängt, bekommt eine Aufhollinie für die Monate davor, und eine Pro-Monat-Ansicht zeigt, wie der Betrag anwächst. Die Schätzung rechnet mit Ihren eigenen Zahlen und ist keine Steuerberatung; die Steuerkarte im Dashboard zeigt denselben Betrag als eine Zeile.
 
 MyCompanyDesk schickt Ihnen außerdem einmal pro MwSt.-Zeitraum eine E-Mail, wenn die Abgabefrist näher rückt. Die E-Mail verlinkt direkt auf die MwSt.-Seiten und folgt dem Schalter **Wenn Sie bald eine MwSt.-Erklärung abgeben müssen** unter Einstellungen › Benachrichtigungen; dort schalten Sie sie ab.
 

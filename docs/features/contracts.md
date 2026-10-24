@@ -29,9 +29,9 @@ Contracten horen bij Office en zijn een onderdeel dat je zelf aanzet. Zie je **C
    - **Welke periode staat er op de factuur?**: zie [Factuurperiode](#factuurperiode)
 3. Klik op **Opslaan**
 
-Je kunt ook vanuit een offerte starten: de regels komen mee, zodat een geaccepteerde offerte een contract wordt zonder dat je iets overtypt.
+Je kunt ook vanuit een offerte starten: de regels van de offerte komen mee, met het afgesproken bedrag inclusief btw, de datum van de klus en de dagen of uren per week, zodat een geaccepteerde offerte een contract wordt zonder dat je iets overtypt.
 
-Het formulier kiest ook het passende sjabloon voor je: past er precies één contractsjabloon op het contract, dan staat die er al in. Past er geen, dan zegt een opmerking onder het formulier dat het contract zonder voorwaarden de deur uit zou gaan.
+Het formulier kiest ook het passende sjabloon voor je: past er precies één contractsjabloon op het contract, dan staat die er al in. Past er geen, dan zegt een opmerking onder het formulier dat het contract zonder voorwaarden de deur uit zou gaan. Bij een particuliere klant kiest het formulier automatisch een particulier-sjabloon: een opdrachtbevestiging voor particulieren, of, bij verhuur, de huurovereenkomst vakantiewoning.
 
 ::: tip Meer opties
 Het formulier houdt optionele gegevens netjes opgeborgen: onder **Meer opties** vind je extra velden, zoals een servicetoeslag met een eigen bedrag en btw-tarief. Die heb je niet nodig om het contract te maken, maar je klapt ze open als je ze wel nodig hebt.
