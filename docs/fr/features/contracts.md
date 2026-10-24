@@ -29,9 +29,9 @@ Les contrats font partie d'Office et sont un module que vous activez vous-même.
    - **Quelle période la facture couvre-t-elle ?** : voir [Période facturée](#periode-facturee)
 3. Cliquez sur **Enregistrer**
 
-Vous pouvez aussi partir d'un devis : les lignes sont reprises, et un devis accepté devient un contrat sans que vous ne retypiez rien.
+Vous pouvez aussi partir d'un devis : les lignes du devis passent avec lui, avec le montant convenu TTC, la date du chantier et les jours ou heures par semaine, si bien qu'un devis accepté devient un contrat sans que vous ne recopiez quoi que ce soit.
 
-Le formulaire choisit aussi le modèle qui convient : quand un seul modèle de contrat correspond, il est déjà sélectionné ; aucun ne correspond ? Une note sous le formulaire indique que le contrat partirait sans conditions.
+Le formulaire choisit aussi le modèle qui convient : quand un seul modèle de contrat correspond, il est déjà sélectionné ; aucun ne correspond ? Une note sous le formulaire indique que le contrat partirait sans conditions. Pour un client particulier, un modèle grand public est préféré d'office : une confirmation de commande pour particuliers, ou, en cas de location, le bail de maison de vacances.
 
 ::: tip Plus d'options
 Le formulaire range les données facultatives : sous **Plus d'options** se trouvent des champs supplémentaires, comme des frais de service avec leur propre montant et taux de TVA. Ils ne sont pas nécessaires pour créer le contrat, mais vous les dépliez quand vous en avez besoin.

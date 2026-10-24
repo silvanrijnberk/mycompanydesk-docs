@@ -22,11 +22,11 @@ The list lives at **Work orders** in the navigation. Tabs at the top order the w
 3. Check the **work address**. It is taken from the customer, and you can change it when you worked somewhere else
 4. Fill in the **date** and the start and end time
 5. Describe the **work carried out**
-6. Add lines under **Labour** (hours with an hourly rate) and **Materials** (quantity with a unit price and VAT)
+6. Add lines under **Labour** (hours with an hourly rate) and **Materials** (quantity with a unit price and VAT, and, if you want, a cost price: with your markup, the selling price is worked out for you)
 7. A **discount** per line works the same way as on quotes and invoices
 8. The **internal note** is just for you: it never appears on the work order or the invoice
 
-Save the work order, or choose **Save and get it signed** right away. You can also create a work order from a quote: the lines are pre-filled from the quote.
+Save the work order, or choose **Save and get it signed** right away. You can also create a work order from a quote: the lines are pre-filled from the quote. Materials from a connected wholesale supplier fit on work orders too: the **Materials from wholesaler** button works here the same as on quotes and invoices.
 
 Does the customer already have work of yours in the app? The form then proposes what exists: the hours you logged for them (with their travel time and travel costs) and the rides to them (with the call-out fee). **Add to work order** takes it onto the form in one go. Hours and call-out fees that sit on a work order are invoiced from that work order alone, so the other flows no longer offer them a second time.
 

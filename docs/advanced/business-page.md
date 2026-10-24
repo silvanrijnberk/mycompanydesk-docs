@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-10-13
+last_verified: 2026-10-24
 ---
 
 # Sitebouwer
@@ -88,6 +88,10 @@ Koppen die de wizard, een herschrijving of een nieuw blok voor je schrijven, kom
 ### Adres, kaart, werkgebied en parkeren op de contactpagina
 
 De contactpagina laat zien waar je werkt en hoe je er komt. Het blok **Locaties** valt terug op je bedrijfsadres als je geen eigen locaties hebt, en een contactblok laat een adres weg dat een Locaties-blok op dezelfde pagina al toont. Een nieuwe contactpagina begint niet meer met een leeg Locaties-blok. Een kaart (**Kaart tonen**) komt uit je adres als je die wilt, **Werkgebied** is een van de voorinstellingen bij **Blok toevoegen** als je wilt laten zien waar je jouw klanten opzoekt, en de bereikbaarheidssectie heet **Bereikbaarheid en parkeren**.
+
+### Een apart adres voor je website
+
+Voor een bedrijf aan huis hoeft de site dat woonadres niet te tonen. Onder **Instellingen › Bedrijfsgegevens** vul je een apart **adres voor je website** in: de footer, het contactblok, de adresgegevens voor zoekmachines en de juridische pagina's tonen dan dat adres. Je facturen blijven het vestigingsadres gebruiken. In de websitewizard, bij aan huis, noemt de hint het adres dat anders onderaan de pagina staat. Laat je het veld leeg, dan toont de site gewoon het vestigingsadres, zoals voorheen.
 
 ### De aanspreekvorm op je site
 

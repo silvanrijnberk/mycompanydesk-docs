@@ -1,7 +1,7 @@
 ---
 title: Website-Builder
 description: "Bauen Sie eine mehrseitige Unternehmenswebsite im Drag-and-drop-Editor: Abschnitte und Blöcke, eigene Farben und Schriften, und veröffentlichen."
-last_verified: 2026-10-11
+last_verified: 2026-10-24
 ---
 
 # Website-Builder
@@ -88,6 +88,10 @@ Text tippen Sie auch direkt auf der Arbeitsfläche: Klicken Sie auf den Text, ti
 ### Adresse, Karte, Arbeitsgebiet und Parken auf der Kontaktseite
 
 Die Kontaktseite zeigt, wo Sie arbeiten und wie Sie dorthin kommen. Der Block **Locaties** fällt auf Ihre Firmenadresse zurück, wenn Sie keine eigenen Standorte haben, und ein Kontaktblock lässt eine Adresse weg, die ein Locaties-Block auf derselben Seite schon zeigt. Eine neue Kontaktseite beginnt nicht mehr mit einem leeren Locaties-Block. Eine Karte (**Kaart tonen**) entsteht aus Ihrer Adresse, wenn Sie eine wollen, **Werkgebied** ist eine der Vorlagen bei **Blok toevoegen** (Block hinzufügen), wenn Sie zeigen wollen, wo Sie Ihre Kunden aufsuchen, und der Anfahrt-Abschnitt heißt **Bereikbaarheid en parkeren** (Anfahrt und Parken).
+
+### Eine separate Adresse für Ihre Website
+
+Für ein Unternehmen in den eigenen Wänden muss die Website diese Wohnadresse nicht zeigen. Unter **Einstellungen › Firmendaten** tragen Sie eine separate **Adresse für Ihre Website** ein: Footer, Kontaktblock, Adressdaten für Suchmaschinen und die rechtlichen Seiten zeigen dann diese Adresse. Ihre Rechnungen nutzen weiter die Geschäftsadresse. Der Einrichtungsassistent nennt in dem Schritt die Adresse, die sonst unten auf der Seite stünde. Bleibt das Feld leer, zeigt die Website wie bisher die Geschäftsadresse.
 
 ### Die Anrede auf Ihrer Site
 

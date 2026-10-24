@@ -1,7 +1,7 @@
 ---
 title: TVA
 description: "Suivez la TVA collectée et payée, préparez votre déclaration et anticipez les échéances, selon le formulaire de la Belastingdienst."
-last_verified: 2026-10-19
+last_verified: 2026-10-24
 ---
 
 <!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
@@ -98,7 +98,7 @@ Au-dessus de cette carte, un bandeau vous avertit lorsque vos données sont inco
 
 En dessous, les cartes de période de l'année indiquent pour chaque période le chiffre d'affaires, la TVA sortante et entrante et le solde, avec l'échéance. Une période déclarée affiche sa date de dépôt. Cliquez sur une carte pour changer la période de toute la page. Les périodes à venir restent vides tant qu'elles ne contiennent pas de données réelles.
 
-Une carte annuelle clôt l'onglet : chiffre d'affaires, TVA due et TVA déductible sur l'année, plus une estimation de l'impôt sur le revenu (ou de l'impôt sur les sociétés pour une BV) de cette année, avec le lien **Voir le calcul**.
+Une carte annuelle clôt l'onglet : chiffre d'affaires, TVA due et TVA déductible sur l'année, plus une estimation de l'impôt sur le revenu (ou de l'impôt sur les sociétés pour une BV) de cette année, avec le lien **Voir le calcul**. La page présente aussi une carte d'épargne : elle suggère environ combien mettre de côté ce mois-ci pour l'impôt sur le revenu et la cotisation Zvw (ou pour l'impôt sur les sociétés), à partir de vos propres chiffres au rythme actuel, répartis sur les mois de l'année. Les hypothèses figurent en langage clair sur la carte, un départ en cours d'année ajoute une ligne de rattrapage pour les mois précédents, et une vue par mois montre comment le montant se construit. L'estimation s'appuie sur vos propres chiffres et ne constitue pas un conseil fiscal ; la carte d'impôt du tableau de bord affiche le même montant sur une seule ligne.
 
 MyCompanyDesk vous envoie aussi un e-mail une fois par période de TVA à l'approche de l'échéance. L'e-mail renvoie directement vers les pages TVA et suit l'interrupteur **Quand votre déclaration de TVA approche** dans Paramètres › Notifications, où vous pouvez le désactiver.
 

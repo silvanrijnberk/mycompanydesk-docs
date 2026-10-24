@@ -1,7 +1,7 @@
 ---
 title: Expenses
 description: "Track business expenses, scan receipts, manage categories with their own VAT defaults, and let depreciation schedules run for investments."
-last_verified: 2026-10-21
+last_verified: 2026-10-24
 ---
 
 # Expenses
@@ -36,6 +36,8 @@ Categories belong to your workspace; they are not a fixed list in the app. Each 
 Every workspace starts with six default categories: general costs, office costs, car and travel, phone and internet, entertainment, and purchasing and materials. **Run magic-setup wizard** adds a set that fits your trade on top, so a software business gets a category for EU cloud services and a hospitality business one for food at client meetings. Default categories can be edited and archived, but not deleted. You can archive a category to hide it from the form. An archived category still appears in the dropdown for expenses that already use it, marked as "(archived)", so you can keep editing those expenses. Create, edit and delete your own categories from **Settings › Expense categories**. Deleting a category is blocked while expenses or recurring expenses still use it; archive it instead.
 
 ## Creating an expense
+
+The **Add** panel can link a new expense to the work right away: pick a project or a customer (optional) and, with a customer, switch on **Recharge to** to put the costs on that customer's invoice; pick only a project and the customer comes from the project. Investments and pass-through costs do not carry the recharge toggle. The links travel along: a receipt you continue on the scan screen keeps them.
 
 ### Manual entry
 
@@ -180,6 +182,8 @@ Train tickets and other car costs can also be recorded as regular expenses under
 ## Trips
 
 The **Trips** screen under Expenses holds your kilometres for the year, with or without hours. A trip carries a date, where you went from and to, the kilometres one way, whether it was business or private, an optional customer and a note. An hour entry is no longer needed to record kilometres: every kilometre entry (the one on **Expenses**, in the search palette and in the travel settings) opens the trip form.
+
+You no longer need from and to either: under **Add**, **Log kilometres** opens the trip form without a route, so date, distance and a note are enough on a busy day. When you want the route later, **Fill in from and to** on the trip adds it.
 
 A route is more than from and to. The trip form carries **stops**: intermediate addresses on the way, and **Back to the start** plans the return along them without counting the kilometres twice. Trips to your appointments, work orders and hours at a client show up by themselves, from home past your addresses and back again; nothing needs confirming. A trip you changed by hand stays as you entered it when the appointment moves later, and one you left alone adjusts with it.
 

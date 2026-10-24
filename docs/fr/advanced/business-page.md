@@ -1,7 +1,7 @@
 ---
 title: Constructeur de site
 description: "Construisez un site web de plusieurs pages dans l'éditeur glisser-déposer : sections et blocs, vos couleurs et polices, publication quand vous voulez."
-last_verified: 2026-10-11
+last_verified: 2026-10-24
 ---
 
 # Constructeur de site
@@ -88,6 +88,10 @@ Les titres que l'assistant, une réécriture ou un nouveau bloc écrivent pour v
 ### Adresse, carte, zone d'activité et stationnement sur la page de contact
 
 La page de contact montre où vous travaillez et comment y arriver. Le bloc **Locaties** sert de retour à votre adresse d'entreprise quand vous n'avez pas d'emplacements à vous, et un bloc de contact laisse tomber une adresse qu'un bloc Locaties montre déjà sur la même page. Une page de contact neuve ne démarre plus avec un bloc Locaties vide. Une carte (**Kaart tonen**) sort de votre adresse quand vous en voulez une, **Werkgebied** est l'un des préréglages de **Blok toevoegen** (ajouter un bloc) pour montrer où vous rejoignez vos clients, et la section d'accès s'appelle **Bereikbaarheid en parkeren** (accès et stationnement).
+
+### Une adresse distincte pour votre site
+
+Pour une entreprise à domicile, le site n'a pas à montrer cette adresse du domicile. Dans **Paramètres › Données de l'entreprise**, vous saisissez une **adresse distincte pour votre site** : le pied de page, le bloc contact, les données d'adresse pour les moteurs de recherche et les pages légales affichent alors cette adresse. Vos factures gardent l'adresse enregistrée. L'assistant du site, à l'étape maison, nomme l'adresse qui s'afficherait sinon en bas de page. Laissez le champ vide et le site montre l'adresse enregistrée, comme avant.
 
 ### La forme d'adresse sur votre site (Aanspreekvorm)
 

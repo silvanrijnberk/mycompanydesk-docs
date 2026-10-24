@@ -1,7 +1,7 @@
 ---
 title: Dépenses
 description: "Suivez vos dépenses, scannez vos reçus, gérez des catégories avec leur propre TVA et laissez les amortissements se dérouler automatiquement."
-last_verified: 2026-10-21
+last_verified: 2026-10-24
 ---
 
 # Dépenses
@@ -22,6 +22,8 @@ Les dépenses encore en attente de confirmation (brouillons issus de la connexio
 Vous pouvez toujours filtrer par catégorie, statut, facturé ou non et période, et sous **Afficher** vous basculez entre **Actif**, **Archives** et **Corbeille**. Cliquez sur une dépense pour ouvrir la page de détail. Cliquez sur **Ajouter** pour en enregistrer une : vous y numérisez un reçu ou saisissez vous-même les données.
 
 ## Créer une dépense
+
+L'écran **Nouvelle dépense** peut lier un nouveau reçu au chantier immédiatement : choisissez un projet ou un client (facultatif) et, avec un client, activez **À refacturer** pour placer les coûts sur la facture de ce client ; choisi seul, le projet donne le client. Investissements et frais répercutés n'ont pas ce commutateur. Le lien voyage avec le reçu : un reçu poursuivi sur l'écran de scan les conserve.
 
 ### Saisie manuelle
 
@@ -188,6 +190,8 @@ Les billets de train et autres frais de voiture peuvent aussi être enregistrés
 ## Trajets
 
 L'écran **Trajets** sous Dépenses garde vos kilomètres de l'année, avec ou sans heures. Un trajet porte une date, un point de départ et une destination, le nombre de kilomètres en simple, professionnel ou privé, un client optionnel et une note. Ajouter des heures n'est plus nécessaire : chaque entrée kilométrique (celle de **Dépenses**, dans le panel de recherche et dans les réglages de déplacement) ouvre directement le formulaire de trajet.
+
+Le départ et l'arrivée ne sont plus obligatoires non plus : sous **Nouveau**, **Noter des kilomètres** ouvre le formulaire de trajet sans itinéraire, pour qu'une date, une distance et une note suffisent les jours chargés. Pour l'itinéraire plus tard, **Indiquer départ et arrivée** sur le trajet l'ajoute.
 
 Un itinéraire, c'est plus qu'un départ et une arrivée. Le formulaire de trajet prend des **arrêts** intermédiaires : des adresses en route, et **Retour au départ** planifie le retour en les suivant, sans compter les kilomètres deux fois. Les trajets vers vos rendez-vous, vos bons d'intervention et vos heures chez un client apparaissent d'eux-mêmes, de la maison en passant par vos adresses et retour ; rien à confirmer. Un trajet que vous avez modifié vous-même reste tel que vous l'avez saisi quand le rendez-vous bouge plus tard ; un trajet que vous avez laissé tel quel suit.
 

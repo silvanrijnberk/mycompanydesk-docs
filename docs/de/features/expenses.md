@@ -1,7 +1,7 @@
 ---
 title: Ausgaben
 description: "Erfassen Sie Ausgaben, scannen Sie Belege, verwalten Sie Kategorien mit eigenen Steuersätzen und lassen Sie Abschreibungen automatisch laufen."
-last_verified: 2026-10-21
+last_verified: 2026-10-24
 ---
 
 # Ausgaben
@@ -22,6 +22,8 @@ Ausgaben, die noch bestätigt werden müssen (Entwürfe aus der Bankverbindung o
 Sie können weiterhin nach Kategorie, Status, fakturiert oder nicht und Zeitraum filtern, und unter **Anzeigen** wechseln Sie zwischen **Aktiv**, **Archiv** und **Papierkorb**. Klicken Sie auf eine Ausgabe, um die Detailseite zu öffnen. Mit **Hinzufügen** erfassen Sie eine neue Ausgabe: Dort scannen Sie einen Beleg oder geben die Daten selbst ein.
 
 ## Ausgabe erstellen
+
+Das Fenster **Neue Ausgabe** kann eine neue Ausgabe gleich mit der Arbeit verknüpfen: wählen Sie ein Projekt oder einen Kunden (optional) und, bei einem Kunden, schalten Sie **Weiterberechnen** ein, um die Kosten auf die Rechnung dieses Kunden zu setzen; wählen Sie nur ein Projekt, kommt der Kunde aus dem Projekt. Investitionen und durchgereichte Posten haben diesen Schalter nicht. Die Verknüpfung reist mit: ein Beleg, den Sie danach im Scanbildschirm fortsetzen, behält sie.
 
 ### Manuelle Eingabe
 
@@ -188,6 +190,8 @@ Zugtickets und andere Autokosten können Sie auch als reguläre Ausgabe erfassen
 ## Fahrten
 
 Das Verzeichnis **Fahrten** unter Ausgaben hält Ihre Kilometer des Jahres fest, mit oder ohne Stunden. Eine Fahrt trägt ein Datum, Start und Ziel, die Kilometer einfache Strecke, geschäftlich oder privat, einen optionalen Kunden und eine Notiz. Stundenbrauch gibt es keinen mehr: jeder Kilometer-Einstieg (der auf **Ausgaben**, in der Befehlspalette und in den Reiseeinstellungen) öffnet direkt das Fahrtenformular.
+
+Auch Start und Ziel sind nicht mehr Pflicht: unter **Neu**, **Kilometer eintragen** öffnet das Fahrtenformular ohne Route, damit Datum, Kilometer und eine Notiz an einem vollen Tag genügen. Wollen Sie die Route später nachtragen, ergänzen Sie sie mit **Von und nach eintragen** auf der Fahrt selbst.
 
 Eine Route ist mehr als Start und Ziel. Das Fahrtenformular nimmt **Zwischenstopps** auf: Adressen unterwegs, und **Zurück zum Start** plant den Rückweg über sie, ohne die Kilometer doppelt zu zählen. Fahrten zu Ihren Terminen, Arbeitsaufträgen und Stunden bei einer Kundin oder einem Kunden erscheinen von selbst, aus dem Haus über alle Ihre Adressen und zurück; nichts muss bestätigt werden. Haben Sie eine Fahrt selbst angepasst, bleibt sie so stehen, wie Sie sie eingegeben haben, wenn der Termin später rückt; eine Fahrt, die Sie so gelassen haben, zieht mit.
 

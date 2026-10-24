@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "Der Startbildschirm Ihres Arbeitsbereichs zeigt, was jetzt Aufmerksamkeit braucht, das Geld und eine Karte pro Modul; die tiefen Zahlen auf Kennzahlen."
-last_verified: 2026-09-30
+last_verified: 2026-10-24
 ---
 
 # Dashboard
@@ -141,7 +141,7 @@ Die Bausteine unter der KPI-Reihe erscheinen nur, wenn sie ihren Platz verdienen
 | **Angebote** | Offene Angebots-Pipeline und ablaufende Angebote |
 | **Ausgaben-Mix** | Kostenaufteilung nach Kategorie, als Balken |
 | **Kassendiagramm** | Kassenposition über 12 Monate mit Prognose |
-| **USt-Karte** | Aktuelle USt-Periode, Checklistenfortschritt und nächste Frist |
+| **USt-Karte** | Aktuelle USt-Periode, Checklistenfortschritt und nächste Frist, bei Buchungen in der Periode der Anhalt, wie viel Sie diesen Monat etwa für die Steuer auf Ihren Gewinn zurücklegen |
 | **Stunden in diesen Wochen** | Ihre erfassten Stunden der letzten Wochen, abrechenbar und intern |
 | **Projektmargen** | Umsatz, Kosten und Marge pro Projekt |
 | **Fixkosten** | Monatlich wiederkehrende Einnahmen und Kosten und wie viel Ihrer Fixkosten Ihre Verträge decken |

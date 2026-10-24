@@ -1,7 +1,7 @@
 ---
 title: Site Builder
 description: "Build a multi-page business website with the drag-and-drop editor: sections and blocks, your own colours and fonts, and publish when you are ready."
-last_verified: 2026-10-13
+last_verified: 2026-10-24
 ---
 
 # Site Builder
@@ -88,6 +88,10 @@ Headings that the wizard, a rewrite or a new block write for you come out in sen
 ### Address, map, service area and parking on the contact page
 
 The contact page shows where you work and how to reach it. The **Locaties** block falls back to your business address when you have no locations of your own, and a contact block leaves out an address that a Locaties block already shows on the same page. A new contact page no longer starts with an empty Locaties block. A map (**Kaart tonen**) is drawn from your address when you want one, **Werkgebied** (work area) is one of the presets under **Blok toevoegen** (add block) when you want to show where you come to your customers, and the access section is named **Bereikbaarheid en parkeren** (access and parking).
+
+### A separate address for your website
+
+For a business at home, the site does not have to show that home address. Under **Settings › Business details** you fill in a separate **address for your website**, and the footer, the contact block, the address data for search engines and the legal pages show that address instead. Your invoices keep the registered address. The website wizard's at-home step mentions the address that would otherwise appear at the bottom of the page. Leave the field empty and the site shows the business address, as before.
 
 ### The form of address on your site (Aanspreekvorm)
 

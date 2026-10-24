@@ -1,7 +1,7 @@
 ---
 title: Uitgaven
 description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen btw-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
-last_verified: 2026-10-21
+last_verified: 2026-10-24
 ---
 
 # Uitgaven
@@ -36,6 +36,8 @@ Categorieën horen bij je werkruimte; het is geen vaste lijst in de app. Elke ca
 Elke werkruimte begint met zes standaardcategorieën: Algemene kosten, Kantoorkosten, Autokosten & reizen, Telefoon & internet, Representatiekosten en Inkoop & materiaal. Met **Categorieën voorstellen** voeg je daar een set aan toe die bij je branche past, zodat een softwarebedrijf bijvoorbeeld **Clouddiensten (EU-leverancier)** krijgt en een horecabedrijf **Eten en drinken (klantafspraak)**. Standaardcategorieën kun je bewerken en archiveren, maar niet verwijderen. Archiveren verbergt een categorie uit het formulier. Eigen categorieën toevoegen, bewerken en verwijderen doe je via **Instellingen › Uitgavencategorieën**. Verwijderen lukt niet zolang uitgaven of terugkerende uitgaven de categorie nog gebruiken; archiveer hem dan in plaats daarvan.
 
 ## Een uitgave aanmaken
+
+Het blad **Nieuwe uitgave** kan een nieuwe bon meteen aan het werk koppelen: kies een project of een klant (optioneel) en, bij een klant, zet **Doorbelasten** aan om de kosten op de factuur van die klant te zetten; kies alleen een project, dan komt de klant uit het project. Investeringen en doorlopende posten hebben de doorbelastschakelaar niet. De koppeling reist mee: een bon die je daarna op het scanscherm vervolgt, houdt ze vast.
 
 ### Handmatige invoer
 
@@ -196,6 +198,8 @@ Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Ui
 ## Ritten
 
 Het overzicht **Ritten** onder Uitgaven houdt je kilometers van het jaar bij, met of zonder uren. Een rit heeft een datum, een vertrekpunt en een bestemming, het aantal kilometers gewoon één kant op, zakelijk of privé, een optionele klant en een notitie. Je hoeft er geen uren bij te zetten: elke kilometer-ingang (op de pagina **Uitgaven**, in het zoekpaneel en in de reisinstellingen) opent direct het ritformulier.
+
+Ook van en naar is niet meer verplicht: onder **Nieuw**, **Kilometers noteren** opent het ritformulier zonder route, zodat datum, kilometers en een notitie genoeg zijn op een drukke dag. Wil je de route later alsnog, dan voeg je hem op de rit zelf toe met **Van en naar invullen**.
 
 Een route is meer dan van-naar. Het ritformulier neemt **tussenstops**: adressen onderweg, en **Terug naar start** plant de terugweg langs hen mee, zonder de kilometers dubbel te tellen. Ritten naar je afspraken, werkbonnen en uren bij een klant verschijnen vanzelf, van thuis langs al je adressen en weer terug; er hoeft niets bevestigd te worden. Heb je een rit zelf aangepast, dan blijft hij staan zoals jij hem invoerde als de afspraak later verschuift, en bij een rit die je liet zoals hij was, past hij mee.
 

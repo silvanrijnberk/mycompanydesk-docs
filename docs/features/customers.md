@@ -80,6 +80,10 @@ Er verschijnt een waarschuwingsbanner bovenaan de klantdetailpagina wanneer het 
 
 Deze informatie komt van provider-events en de bezorgstatus van uitgaande berichten, zodat je bezorgproblemen ziet voordat je de volgende factuur of offerte verstuurt.
 
+## Een aparte betaler voor een klant
+
+Sommige klanten betalen hun facturen niet zelf: een ouder, werkgever of verzekeraar doet dat. In het klantformulier maak je die keuze bij **Wie betaalt?**: **Betaalt zelf** of **Iemand anders betaalt**, met een andere klant (een bestaande of een nieuwe) als betaler. Vanaf dat moment gaan facturen, offertes, herinneringen, tekenverzoeken, strippenkaartberichten en het klantportaal naar de betaler, terwijl het document de naam van de echte klant noemt. Op de klantpagina zie je de band in beide richtingen, als **Betaald door** en **Betaalt voor**. Het adres van de betaler is het adres dat compleet moet zijn bij het definitief maken van een factuur, btw verlegd kijkt naar het btw-nummer van de betaler, de auditfile noemt de betaler als debiteur, en de bank herkent betalingen die van de betaler komen. In het klantportaal ziet de betaler alleen de facturen die aan hem gingen, en een reviewverzoek na een betaalde factuur gaat ook naar de betaler.
+
 ## Een klant koppelen aan een eigen bedrijf
 
 Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen bedrijf** verschijnen. Daarmee geef je aan dat deze klant een van je eigen bedrijven is, zodat zijn positie wordt meegenomen in de onderlinge posities op Werkruimtes.
@@ -98,6 +102,10 @@ Verkopen doe je vanaf de klantpagina met **Strippenkaart verkopen**, in één bl
 De klant ziet zijn kaarten in het klantportaal en via een deellink waarvoor niets hoeft in te loggen: hoeveel er nog op de kaart staat en de geschiedenis van de verkoop en elke streep. De stand of een herinnering stuur je zelf, via WhatsApp of e-mail, en de link kan je intrekken en vervangen als hij zijn werk gedaan heeft. Wil een klant eruit? Met **Geld terug** betaal je de ongebruikte keren terug via een creditnota, of je zet de kaart met **Stoppen** stil; je administratie werkt dat zelf bij en een gestopte kaart kan niet meer afstrepen.
 
 Afstrepen gebeurt ook waar het werk zit. Rond je een afspraak af voor een klant met een kaart, dan biedt de app **Streep 1 af** (de streep zet de afspraak op Afgerond) naast **Niet gekomen**, met terugdraaien als chip in hetzelfde blad. In een groepsles vink je bij **Wie was er?** iemand aan en dan streep je meteen één keer af van diens kaart; een vinkje weg halen draait het terug. Wie voor die les al betaald heeft, staat op de lijst met de melding dat er niet hoeft te worden afgestreept. Het dashboard houdt de kaarten die bijna op of helemaal op zijn bij elkaar bij, met de herinnering één tik weg.
+
+## Zelf om een review vragen
+
+De knop **Vraag om een review** staat op een klant, op een betaalde factuur en bij een afgeronde afspraak. Het blad laat eerst zien wat er verstuurd wordt: een mail die je kunt bijwerken, of een WhatsApp-tekst die bij bevestiging WhatsApp opent. Waar je klant terechtkomt bepaalt je **reviewlink**, in te stellen in het blad en onder **Instellingen › Beoordelingen vragen**. Daar kies je ook waar de reviews komen (je Google-profiel, Trustpilot of je eigen link) en zet je automatische verzoeken aan: na een afgeronde afspraak en na een volledig betaalde factuur, één verzoek per klus, nooit een herinnering. In het logboek staat wat verstuurd is, wat er doorgeklikt is en waar een verzoek overgeslagen is.
 
 ## Acties
 

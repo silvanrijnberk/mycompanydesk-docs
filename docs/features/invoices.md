@@ -48,6 +48,10 @@ Bij **In welke taal maak je je documenten?** kies je de taal van je facturen, of
 
 De taal is ook een keuze per klant en per factuur: zet hem op de klantenkaart en elk document voor die klant komt in zijn taal uit, of op een conceptfactuur voor het eenmalige uitzonderingsgeval. MyCompanyDesk leest de keuze in de volgorde factuur, dan klant, dan werkruimte. Bij het versturen bevriest de taal: de PDF, de e-mail, de portaalweergave, een creditnota en de laatste herinnering blijven in de taal waarin het document de deur uitging. Offertes volgen de klant.
 
+### Opslag
+
+**Opslag** is wat je bovenop je inkoopprijs rekent. Onder **Instellingen › Facturen en offertes** zet je de standaardopslag voor materiaalregels; per regel kun je afwijken. Vul je bij een regel de inkoopprijs in, dan rekent MyCompanyDesk de verkoopprijs uit. De marge zelf is alleen voor de eigenaar zichtbaar: op de pdf, de e-factuur en bij de klant staat altijd alleen de verkoopprijs, nooit de inkoopprijs of de opslag.
+
 ### Peppol e-facturatie
 
 Met een schakelaar op dezelfde instellingenpagina zet je [Peppol e-facturatie](/features/peppol) aan (Office). Je bedrijfsgegevens worden dan aangemeld bij het Peppol-toegangspunt en je kunt naast e-mail ook e-facturen versturen en ontvangen. Op de Peppol-pagina lees je over de identiteitscontrole, het ontvangen en ontbrekende gegevens.
@@ -117,6 +121,8 @@ Elke factuur heeft een eigen pagina met:
 - Het totaalbedrag
 - De status en het verloop
 - De betaallink (als de factuur verstuurd is)
+
+Een klant waarvoor iemand anders betaalt (een ouder, werkgever of verzekeraar) houdt z'n eigen naam op het document, maar de factuur gaat naar die betaler, net als de betaalverzoeken en herinneringen, en btw verlegd en de auditfile volgen de betaler. Zie [een aparte betaler voor een klant](/features/customers#een-aparte-betaler-voor-een-klant) voor het instellen.
 
 ## Voorbeeld van het document
 

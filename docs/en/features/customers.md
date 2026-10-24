@@ -80,6 +80,14 @@ A warning banner appears at the top of the customer detail page when the custome
 
 This information comes from provider events and outbound message delivery status, helping you spot delivery problems before sending the next invoice or quote.
 
+## A separate payer for a customer
+
+Some customers do not pay their own invoices: a parent, employer or insurer does. In the customer form, the **Who pays?** section makes that choice: **Pays themselves** or **Someone else pays**, with another customer (an existing one or a new one) as the payer. From then on, invoices, quotes, reminders, signing requests, punch-card messages and the customer portal go to the payer, while the document keeps naming the actual customer. On the customer page you see the tie in both directions, as **Paid by** and **Pays for**. The payer's address is the one that has to be complete when you finalize an invoice, the reverse charge follows the payer's VAT number, the audit file lists the payer as the debtor, and the bank feed recognizes payments that come from the payer. In the customer portal the payer sees only the invoices addressed to the payer, and a review request after a paid invoice goes to the payer as well.
+
+## Ask for a review
+
+The **Ask for a review** button stands on a customer, on a paid invoice and on a finished appointment. The sheet shows the message before anything goes out: an email you can edit, or WhatsApp text that opens WhatsApp when you confirm. Where customers land is your **review link**, saved in the sheet and under **Settings › Ask for reviews**. There you also choose where reviews are collected (your Google profile, Trustpilot or your own link) and you can switch on automatic requests: after a completed appointment and after a fully paid invoice, one request per job, never a reminder. A log keeps what was sent, what was clicked through, and why a request was skipped.
+
 ## Linking a customer to one of your own businesses
 
 If you own more than one business, a card titled **Own business** can appear on the customer detail page. It lets you say that this customer is one of your own companies, which is used to calculate the intercompany positions on the Workspaces page.

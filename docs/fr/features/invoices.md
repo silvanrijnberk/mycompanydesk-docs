@@ -48,6 +48,10 @@ Sous **Dans quelle langue créez-vous vos documents ?**, vous choisissez la lang
 
 La langue se choisit aussi par client et par facture : posez-la sur le client, et ses documents sortent tous dans sa langue ; posez-la sur une facture brouillon pour l'exception d'une seule fois. MyCompanyDesk lit le choix dans l'ordre facture, puis client, puis espace de travail. Au moment d'envoyer, la langue se fige : le PDF, l'e-mail, la vue du portail, la note de crédit et le dernier rappel restent dans la langue dans laquelle le document est parti. Les devis suivent le client.
 
+### Majoration
+
+**La majoration** est ce que vous ajoutez à votre prix d'achat. Dans **Paramètres › Devis et factures**, vous fixez la majoration par défaut des lignes de matériel ; chaque ligne peut en dévier. Saisissez un prix d'achat sur une ligne et MyCompanyDesk en calcule le prix de vente. La marge elle-même reste réservée au titulaire : sur le PDF, la facture électronique et pour le client, seul le prix de vente figure, jamais le prix d'achat ni la majoration.
+
 ### Facturation électronique Peppol
 
 Un interrupteur sur la même page de paramètres active la [facturation électronique Peppol](/fr/features/peppol) (Office). Les données de votre entreprise sont alors enregistrées auprès du point d'accès Peppol et vous pouvez envoyer et recevoir des factures électroniques en plus de l'e-mail. La page Peppol détaille la vérification d'identité, la réception et les données manquantes.
@@ -117,6 +121,8 @@ Chaque facture a sa propre page avec :
 - le montant total
 - le statut et l'historique
 - le lien de paiement (une fois la facture envoyée)
+
+Un client dont les factures sont payées par une autre personne (un parent, un employeur ou un assureur) garde son propre nom sur le document, mais la facture part vers le payeur, comme les demandes de paiement et les rappels, et l'autoliquidation et le fichier d'audit suivent le payeur. Voir [un payeur distinct pour un client](/fr/features/customers#un-payeur-distinct-pour-un-client).
 
 ## Aperçu du document
 

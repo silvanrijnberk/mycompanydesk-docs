@@ -80,6 +80,10 @@ Une bannière d'avertissement apparaît en haut de la page du client quand l'adr
 
 Ces informations proviennent des événements du fournisseur et du statut de livraison des messages sortants, pour que vous repériez les problèmes avant d'envoyer la prochaine facture ou le prochain devis.
 
+## Un payeur distinct pour un client
+
+Certains clients ne paient pas leurs factures eux-mêmes : un parent, un employeur ou un assureur le fait. Dans le formulaire client, ce choix se fait sous **Qui paie ?** : **Paie lui-même** ou **Quelqu'un d'autre paie**, avec un autre client (existant ou nouveau) comme payeur. À partir de là, factures, devis, rappels, demandes de signature, messages de cartes à tampons et portail client partent vers le payeur, tandis que le document garde le nom du vrai client. Sur la page du client, vous voyez le lien dans les deux sens, sous **Payé par** et **Paie pour**. L'adresse du payeur est celle qui doit être complète à la finalisation d'une facture, l'autoliquidation suit le numéro de TVA du payeur, le fichier d'audit nomme le payeur comme débiteur, et la banque reconnaît les paiements qui viennent du payeur. Dans le portail client, le payeur ne voit que les factures qui lui sont destinées, et une demande d'avis après une facture payée part aussi vers le payeur.
+
 ## Lier un client à l'une de vos propres entreprises
 
 Si vous possédez plus d'une entreprise, une carte **Entreprise propre** peut apparaître sur la page du client. Elle permet d'indiquer que ce client est l'une de vos propres entreprises, pour que sa position soit prise en compte dans les positions entre vos entreprises sur la page Espaces de travail.
@@ -98,6 +102,10 @@ La vente se fait depuis la fiche du client avec **Vendre une carte**, en un seul
 Le client retrouve ses cartes dans le portail client et sur un lien de partage qui ne demande aucune connexion : ce qu'il reste sur la carte et l'historique de la vente et de chaque tampon. Le solde ou un rappel s'envoient à la main, par WhatsApp ou par e-mail, et le lien peut être révoqué puis remplacé. Un client qui veut cesser ? **Rembourser** rend les fois non utilisées via une note de crédit, ou **Arrêter** clôt la carte ; vos livres suivent d'eux-mêmes et une carte arrêtée ne se tamponne plus.
 
 Le tamponnage se fait aussi là où le travail se fait. Terminez le rendez-vous d'un client porteur de carte, l'application propose **Tamponner 1** (le tampon passe le rendez-vous en Terminé) à côté d'**Absent**, avec l'annulation à portée de main sur le même écran. Dans une séance de groupe, cocher quelqu'un sous **Qui était là ?** tamponne aussitôt sa carte ; décocher remet le tampon. Qui avait déjà payé cette séance apparaît sur la liste avec la mention qu'aucun tampon n'est nécessaire. Le tableau de bord regroupe les cartes presque finies ou finies, le rappel à un clic.
+
+## Demander un avis
+
+Le bouton **Demander un avis** se trouve sur un client, sur une facture payée et sur un rendez-vous terminé. L'écran montre d'abord ce qui part : un e-mail que vous pouvez modifier, ou un texte WhatsApp qui ouvre WhatsApp à la confirmation. L'endroit où le client atterrit dépend de votre **lien d'avis**, enregistré dans l'écran et sous **Paramètres › Demander des avis**. Là, vous choisissez aussi où les avis se rassemblent (votre profil Google, Trustpilot ou votre propre lien) et vous activez si besoin les demandes automatiques : après un rendez-vous terminé et après une facture entièrement payée, une demande par chantier, jamais de rappel. Un journal garde ce qui a été envoyé, ce qui a été cliqué et pourquoi une demande a été sautée.
 
 ## Actions
 

@@ -29,9 +29,9 @@ Verträge gehören zu Office und sind ein Modul, das Sie selbst einschalten. Seh
    - **Welchen Zeitraum deckt die Rechnung ab?**: siehe [Rechnungszeitraum](#rechnungszeitraum)
 3. Klicken Sie auf **Speichern**
 
-Sie können auch von einem Angebot aus starten: die Positionen kommen mit, so wird aus einem akzeptierten Angebot ein Vertrag, ohne dass Sie etwas abtippen.
+Sie können auch von einem Angebot aus starten: die Positionen des Angebots kommen mit, mits dem vereinbarten Betrag inklusive MwSt., dem Datum des Auftrags und den Tagen oder Stunden pro Woche, so wird aus einem akzeptierten Angebot ein Vertrag, ohne dass Sie etwas abtippen.
 
-Das Formular wählt auch die passende Vorlage gleich mit: passt genau eine Vertragsvorlage auf den Vertrag, steht sie schon drin. Passt keine, sagt ein Hinweis unter dem Formular, dass der Vertrag ohne Bedingungen hinausginge.
+Das Formular wählt auch die passende Vorlage gleich mit: passt genau eine Vertragsvorlage auf den Vertrag, steht sie schon drin. Passt keine, sagt ein Hinweis unter dem Formular, dass der Vertrag ohne Bedingungen hinausginge. Bei einem Privatkunden wählt das Formular automatisch eine Vorlage für Privatkunden aus: eine Auftragsbestätigung für Privatkunden oder, bei Vermietung, den Ferienhaus-Mietvertrag.
 
 ::: tip Mehr Optionen
 Das Formular hält optionale Angaben ordentlich verstaut: Unter **Mehr Optionen** finden Sie weitere Felder, etwa einen Servicezuschlag mit eigenem Betrag und Steuersatz. Für den Vertrag selbst brauchen Sie sie nicht, aber Sie klappen sie auf, wenn Sie sie brauchen.

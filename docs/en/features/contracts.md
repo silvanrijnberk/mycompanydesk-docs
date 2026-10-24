@@ -29,13 +29,13 @@ Contracts are part of Office and an optional module. Switch it on under **Settin
    - **Which period does the invoice cover?**: see [Invoice period](#invoice-period)
 3. Click **Save**
 
-You can also start a contract from a quote: the lines carry over, so an accepted quote becomes a contract without retyping it.
+You can also start a contract from a quote: the quote's lines carry over, together with the agreed amount including VAT, the job's date and the days or hours per week, so an accepted quote becomes a contract without retyping it.
 
 ::: tip More options
 The new-contract form keeps optional details tidy: the **More options** section reveals extra fields such as a service charge with its own amount and VAT rate. These are not required to create the contract, but you can expand them when you need them.
 :::
 
-The form also picks the matching template for you: when exactly one contract template fits the contract, it is already selected. No template fits? A note under the form says the contract will carry no terms, so you cannot overlook it.
+The form also picks the matching template for you: when exactly one contract template fits the contract, it is already selected. No template fits? A note under the form says the contract will carry no terms, so you cannot overlook it. For a private customer, a consumer template is preferred automatically: an assignment confirmation for private customers, or, for renting out, the holiday home rental agreement.
 
 ## Rate basis
 
