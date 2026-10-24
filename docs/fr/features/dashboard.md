@@ -1,7 +1,7 @@
 ---
 title: Tableau de bord
 description: "L'écran d'accueil montre ce qui a besoin de vous maintenant, l'argent et une carte par module ; les chiffres profonds sont sur Chiffres."
-last_verified: 2026-09-30
+last_verified: 2026-10-24
 ---
 
 # Tableau de bord

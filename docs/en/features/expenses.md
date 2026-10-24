@@ -1,7 +1,7 @@
 ---
 title: Expenses
 description: "Track business expenses, scan receipts, manage categories with their own VAT defaults, and let depreciation schedules run for investments."
-last_verified: 2026-10-21
+last_verified: 2026-10-24
 ---
 
 # Expenses

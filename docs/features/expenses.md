@@ -1,7 +1,7 @@
 ---
 title: Uitgaven
 description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen btw-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
-last_verified: 2026-10-21
+last_verified: 2026-10-24
 ---
 
 # Uitgaven

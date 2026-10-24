@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-10-13
+last_verified: 2026-10-24
 ---
 
 # Sitebouwer

@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "The workspace home screen answers how the business is doing and what needs you now, with the deeper figures one click away on Figures."
-last_verified: 2026-09-30
+last_verified: 2026-10-24
 ---
 
 # Dashboard

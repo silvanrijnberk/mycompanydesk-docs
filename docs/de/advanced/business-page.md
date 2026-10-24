@@ -1,7 +1,7 @@
 ---
 title: Website-Builder
 description: "Bauen Sie eine mehrseitige Unternehmenswebsite im Drag-and-drop-Editor: Abschnitte und Blöcke, eigene Farben und Schriften, und veröffentlichen."
-last_verified: 2026-10-11
+last_verified: 2026-10-24
 ---
 
 # Website-Builder

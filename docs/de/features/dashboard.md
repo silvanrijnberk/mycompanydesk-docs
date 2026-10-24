@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "Der Startbildschirm Ihres Arbeitsbereichs zeigt, was jetzt Aufmerksamkeit braucht, das Geld und eine Karte pro Modul; die tiefen Zahlen auf Kennzahlen."
-last_verified: 2026-09-30
+last_verified: 2026-10-24
 ---
 
 # Dashboard

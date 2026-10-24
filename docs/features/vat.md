@@ -1,7 +1,7 @@
 ---
 title: Btw
 description: "Volg ontvangen en betaalde btw, bereid je aangifte voor en blijf deadlines voor. De btw-pagina's volgen het aangifteformulier van de Belastingdienst."
-last_verified: 2026-10-19
+last_verified: 2026-10-24
 ---
 
 <!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->

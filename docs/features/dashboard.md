@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "Het dashboard: één pagina met wat nu van je vraagt, de geldkaart en per onderdeel een kaart. De diepere cijfers staan op Cijfers."
-last_verified: 2026-09-30
+last_verified: 2026-10-24
 ---
 
 # Dashboard

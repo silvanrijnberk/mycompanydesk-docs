@@ -1,7 +1,7 @@
 ---
 title: Dépenses
 description: "Suivez vos dépenses, scannez vos reçus, gérez des catégories avec leur propre TVA et laissez les amortissements se dérouler automatiquement."
-last_verified: 2026-10-21
+last_verified: 2026-10-24
 ---
 
 # Dépenses

@@ -1,7 +1,7 @@
 ---
 title: Constructeur de site
 description: "Construisez un site web de plusieurs pages dans l'éditeur glisser-déposer : sections et blocs, vos couleurs et polices, publication quand vous voulez."
-last_verified: 2026-10-11
+last_verified: 2026-10-24
 ---
 
 # Constructeur de site
